@@ -1,0 +1,90 @@
+\input{Sections/Common/begin_special}
+\begin{document}
+
+\definecolor{labelkey}{rgb}{1,1,1}
+\renewcommand{\include}[1]{}
+\renewcommand\documentclass[2][]{}
+
+
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\setcounter{page}{0}
+%%%%%%%%%%%%%%%%% Title page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+
+
+%preprint number
+\begin{flushright} 
+Dissertation
+%RIKEN-iTHEMS-Report-?? \\
+%OU-HET-??? 
+\end{flushright}
+
+
+
+%title
+\vskip5cm%\vskip3cm
+\begin{center}
+{\LARGE {\bf Defects in Supersymmetric Gauge Theory \\
+			and Integrable Lattice Models}}
+
+
+
+%name
+\vskip3cm%\vskip1.5cm
+{\large 
+\bf {Toshihiro Ota} %$^{a, b}$\footnote{\href{mailto:toshihiro.ota@riken.jp}{toshihiro.ota@riken.jp}}
+} 
+
+
+
+%affiliation
+\vskip3cm%\vskip1cm
+%\it ${}^{a}$RIKEN Interdisciplinary Theoretical \& Mathematical Sciences Program (iTHEMS), \\
+%Wako, Saitama 351-0198, Japan \\
+%\it ${}^{b}$
+\it Department of Physics, Osaka University,  Toyonaka, Osaka 560-0043, Japan 
+\end{center}
+
+
+
+%\newpage
+%\vskip1cm
+\begin{abstract} %abstract
+\end{abstract}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\setcounter{footnote}{0}
+
+
+
+\vfill\eject
+
+\tableofcontents
+
+
+
+
+\input{Sections/Sec1}
+\input{Sections/Sec2}
+\input{Sections/Sec4}
+\input{Sections/Sec3}
+\input{Sections/Sec5}
+\appendix
+\input{Sections/SecA}
+
+
+
+
+\clearpage
+%%%%%%%%%%%%%%%%%% References %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{Sections/Common/endbib}
+\bibliographystyle{Sections/Common/utphys}
+%\nocite{*}
+\bibliography{Sections/Common/Ref}
+
+
+\end{document}

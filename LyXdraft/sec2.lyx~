@@ -1,0 +1,3967 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing other 1.1
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Dissertation section 2
+\end_layout
+
+\begin_layout Author
+Toshihiro Ota
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Email: tota@het.phys.sci.osaka-u.ac.jp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+interdisciplinary Theoretical & Mathematical Sciences Program (iTHEMS),
+ RIKEN, Wako, Saitama 351-0198, Japan
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+Department of Physics, Osaka University, Toyonaka, Osaka 560-0043, Japan
+\end_layout
+
+\begin_layout Abstract
+Abstract.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Integrability from extra dimensions
+\end_layout
+
+\begin_layout Standard
+Throughout this paper, we would like to discuss correspondences between
+ a certain class of supersymmetric gauge theories and integrable lattice
+ models: 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{I}_{\mathsf{T}_{4d}\left[\mathsf{L}_{2d}\right]}=Z_{\mathsf{L}_{2d}\left[\mathsf{T}_{4d}\right]},
+\end{equation}
+
+\end_inset
+
+where the left-hand side is the supersymmetric index of a four-dimensional
+ gauge theory 
+\begin_inset Formula $\mathsf{T}_{4d}$
+\end_inset
+
+ and the right-hand side denotes the statistical partition function of the
+ corresponding integrable lattice model 
+\begin_inset Formula $\mathsf{L}_{2d}$
+\end_inset
+
+ specified by the four-dimensional theory 
+\begin_inset Formula $\mathsf{T}_{4d}$
+\end_inset
+
+.
+ As it turns out, the correspondence emerges from TQFT with extra dimensions
+ [Yagi].
+ The aim of this section is to give the step-by-step explanation of the
+ above correspondence from an elementary level.
+ Besides, to explain these, we will start by clarifying in order what the
+ terms TQFT, lattice model, and integrability mean.
+ 
+\end_layout
+
+\begin_layout Subsection
+Preliminaries
+\end_layout
+
+\begin_layout Standard
+In the next subsection, we would like to introduce lattice model as discrete
+ quantum field theory (QFT).
+ So let us start from the general settings of QFT.
+ We first briefly review one-dimensional QFT, which is nothing but quantum
+ mechanics, and then extend the discussion to general quantum field theory
+ in (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensions.
+ Though we do not have a complete definition of general QFT, a special class
+ of QFT which is called 
+\emph on
+topological
+\emph default
+ QFT is axiomatized by Atiyah [Atiyah].
+ 
+\end_layout
+
+\begin_layout Subsubsection
+What is quantum field theory?
+\end_layout
+
+\begin_layout Standard
+Let us now begin with one-dimensional QFT, as known as quantum mechanics
+ (QM).
+ Suppose we have a one-dimensional manifold
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Throughout the paper, we assume all the manifold is smooth and oriented,
+ unless otherwise stated.
+ 
+\end_layout
+
+\end_inset
+
+, which may be thought of as 
+\begin_inset Quotes eld
+\end_inset
+
+time
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $M^{1}=$
+\end_inset
+
+ interval or 
+\begin_inset Formula $S^{1}$
+\end_inset
+
+ (or 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+), and the data to specify the QM: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ : a vector space (Hilbert space/state space), 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{O}$
+\end_inset
+
+ : a set of self-adjoint operators (observables, acting on 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $H$
+\end_inset
+
+ : an operator called 
+\emph on
+Hamiltonian
+\emph default
+, 
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $H\in\mathcal{O}$
+\end_inset
+
+ and the state space 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ is a finite or infinite dimensional 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+-vector space.
+ We sometimes need to consider a set of operators 
+\begin_inset Formula $\mathcal{O}$
+\end_inset
+
+ including not self-adjoint operators, but for simplicity we do not care
+ about that at this moment.
+ In undergraduate, we have learnt that one should consider the Schrodinger
+ equation and find a good basis in 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ diagonalizing the Hamiltonian.
+ 
+\end_layout
+
+\begin_layout Standard
+Formally, the procedure of solving the Schrodinger equation leads to an
+ expression of time evolution of states by a linear map
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We here do not get into the argument of Euclideanization.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $e^{-tH}$
+\end_inset
+
+ in quantum mechanics, and the partition function in many-body statistical
+ mechanics.
+ In turn, we have two most crucial properties of QM: Given an interval 
+\begin_inset Formula $M^{1}=\left[t_{0},t_{1}\right]$
+\end_inset
+
+, we have state vectors at the endpoints of the interval and a time evolution
+ between the states: 
+\begin_inset Formula 
+\begin{equation}
+e^{-\left(t_{1}-t_{0}\right)H}:\mathcal{H}\longrightarrow\mathcal{H},
+\end{equation}
+
+\end_inset
+
+ and given a circle 
+\begin_inset Formula $M^{1}=S_{\beta}^{1}$
+\end_inset
+
+, we get a number called 
+\emph on
+partition function
+\emph default
+: 
+\emph on
+
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Tr}_{\mathcal{H}}e^{-\beta H}.
+\end{equation}
+
+\end_inset
+
+
+\emph default
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+ Figure of these two
+\end_layout
+
+\end_inset
+
+In addition, from the physical facts it is quite reasonable to assume that
+ the time evolution and the partition function are compatible with cutting
+ and gluing intervals and 
+\begin_inset Formula $S^{1}$
+\end_inset
+
+s.
+ This simply means that the time evolution from time 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ to 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ followed by another time evolution from 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ to 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ is equal to the single time evolution from 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ to 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+, etc.
+ Summarizing, the properties that quantum mechanics or one-dimensional QFT
+ has are rephrased by the language of given one-dimensional manifold 
+\begin_inset Formula $M^{1}$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Itemize
+Given an interval, produces state vectors at the endpoints and a linear
+ map between them.
+ 
+\end_layout
+
+\begin_layout Itemize
+Given an 
+\begin_inset Formula $S^{1}$
+\end_inset
+
+, produces a number.
+ 
+\end_layout
+
+\begin_layout Itemize
+Compatible with cutting and gluing intervals and 
+\begin_inset Formula $S^{1}$
+\end_inset
+
+s.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus, in the abstract we conclude that one-dimensional QFT, or quantum mechanics
+, is a gadget satisfying the above properties for each given one-dimensional
+ manifold 
+\begin_inset Formula $M^{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+From these observations of quantum mechanics, we wish to extend the discussion
+ to general (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional QFT.
+ The starting point of defining a (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional QFT is the choice of a (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional manifold 
+\begin_inset Formula $M^{d+1}$
+\end_inset
+
+, which has 
+\begin_inset Formula $d$
+\end_inset
+
+ spatial directions and one 
+\begin_inset Quotes eld
+\end_inset
+
+time
+\begin_inset Quotes erd
+\end_inset
+
+ direction.
+ For most QFTs the manifold 
+\begin_inset Formula $M^{d+1}$
+\end_inset
+
+ is viewed as a Riemannian manifold with a smooth metric on it.
+ As already noticed, we will mostly consider a positive definite Riemannian
+ metric, QFT on which is usually referred to as an Euclidean QFT, and hence
+ precisely there is no notion of 
+\begin_inset Quotes eld
+\end_inset
+
+time
+\begin_inset Quotes erd
+\end_inset
+
+ in such a theory, at least globally.
+ The manifold 
+\begin_inset Formula $M^{d+1}$
+\end_inset
+
+ may or may not have boundaries.
+ In case it does have boundaries some additional information is needed at
+ the boundaries to define the QFT.
+ In addition to a Riemannian metric, depending on the situation one wants
+ to consider, one often needs some more structures on the manifold 
+\begin_inset Formula $M^{d+1}$
+\end_inset
+
+, e.g.
+ smooth structure, conformal structure, spin structure, etc.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+To obtain the data to specify a QFT, we now would like to extend the observation
+s seen in QM.
+ Suppose we have a (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional manifold 
+\begin_inset Formula $M^{d+1}$
+\end_inset
+
+, then we wish to 
+\begin_inset Quotes eld
+\end_inset
+
+define
+\begin_inset Quotes erd
+\end_inset
+
+ a QFT by a gadget 
+\begin_inset Formula $Z$
+\end_inset
+
+, which should produce a vector when 
+\begin_inset Formula $M^{d+1}$
+\end_inset
+
+ has a boundary 
+\begin_inset Formula 
+\begin{equation}
+Z\left(M^{d+1}\right)\in\mathcal{H}_{bdy},
+\end{equation}
+
+\end_inset
+
+ and should produce a number when 
+\begin_inset Formula $M^{d+1}$
+\end_inset
+
+ has no boundary 
+\begin_inset Formula 
+\begin{equation}
+Z\left(M^{d+1}\right)\in\mathbb{C}.
+\end{equation}
+
+\end_inset
+
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Figure of these four?
+\end_layout
+
+\end_inset
+
+In the case of 
+\begin_inset Formula $M^{d+1}$
+\end_inset
+
+ with a boundary, the vector space defined on the boundary is called the
+ space of states or just Hilbert space in the physics literature.
+ On the one hand, if 
+\begin_inset Formula $M^{d+1}$
+\end_inset
+
+ does not have boundary, the number 
+\begin_inset Formula $Z\left(M^{d+1}\right)$
+\end_inset
+
+ is called the partition function.
+ If the boundary of 
+\begin_inset Formula $M^{d+1}$
+\end_inset
+
+ has several disconnected components, namely the boundaries are given by
+ the disjoint union of simply connected 
+\begin_inset Formula $d$
+\end_inset
+
+-dimensional closed manifolds 
+\begin_inset Formula $\left\{ N_{i}^{d}\right\} $
+\end_inset
+
+: 
+\begin_inset Formula $\partial M^{d+1}=\sqcup_{i}N_{i}^{d}$
+\end_inset
+
+, 
+\begin_inset Formula $Z$
+\end_inset
+
+ should define a linear map among the vector spaces defined on the boundaries.
+ In particular, in the case 
+\begin_inset Formula $M^{d+1}=N^{d}\times I$
+\end_inset
+
+, where 
+\begin_inset Formula $I$
+\end_inset
+
+ is an interval of length 
+\begin_inset Formula $T$
+\end_inset
+
+, 
+\begin_inset Formula $M^{d+1}$
+\end_inset
+
+ has two boundaries 
+\begin_inset Formula $N^{d}$
+\end_inset
+
+ and 
+\begin_inset Formula $Z$
+\end_inset
+
+ now gives rise to a linear map 
+\begin_inset Formula $Z\left(N^{d}\times I\right)=:U\left(T\right)$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{equation}
+U\left(T\right):\mathcal{H}_{N}\longrightarrow\mathcal{H}_{N}.
+\end{equation}
+
+\end_inset
+
+ By physical facts, 
+\begin_inset Formula $Z$
+\end_inset
+
+ also should be compatible with cutting and gluing of (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional manifolds, and thus we learn that the linear map given above
+ satisfies 
+\begin_inset Formula $U\left(T_{1}\right)U\left(T_{2}\right)=U\left(T_{1}+T_{2}\right)$
+\end_inset
+
+.
+ This in turn defines an operator 
+\begin_inset Formula $H$
+\end_inset
+
+ as the generator of 
+\begin_inset Formula $U$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{equation}
+U\left(T\right)=\exp\left(-TH\right).
+\end{equation}
+
+\end_inset
+
+ 
+\begin_inset Formula $H$
+\end_inset
+
+ is called the Hamiltonian of the system, acting on the space of states
+ 
+\begin_inset Formula $\mathcal{H}_{N}$
+\end_inset
+
+.
+ If one considers a Riemannian manifold with Lorentzian metric, 
+\begin_inset Formula $U\left(T\right)$
+\end_inset
+
+ is represented as 
+\begin_inset Formula 
+\begin{equation}
+U\left(T\right)=\exp\left(-iTH\right),
+\end{equation}
+
+\end_inset
+
+and then the interval 
+\begin_inset Formula $I$
+\end_inset
+
+ is regarded as 
+\begin_inset Quotes eld
+\end_inset
+
+physical time.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Construction of 
+\begin_inset Formula $Z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So far we have discussed only in an abstract way what quantum field theory
+ is, or in other words what the gadget 
+\begin_inset Formula $Z$
+\end_inset
+
+ should satisfy.
+ Let us now see how we specify 
+\begin_inset Formula $Z$
+\end_inset
+
+ to define a QFT.
+ Broadly speaking, there are three kinds of constructions of 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ They are not totally independent and have many aspects of applicabilities.
+ In the rest of this section, 
+\begin_inset Formula $M$
+\end_inset
+
+ denotes a (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional manifold with or without boundary, and 
+\begin_inset Formula $N$
+\end_inset
+
+ denotes a 
+\begin_inset Formula $d$
+\end_inset
+
+-dimensional closed manifold without boundary.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Construct from the axiom
+\end_layout
+
+\begin_layout Standard
+The first construction is in a sense the simplest one; we write down appropriate
+ properties that a QFT must satisfy, and axiomatize them.
+ Construction of 
+\begin_inset Formula $Z$
+\end_inset
+
+ is to give a mathematical formulation which satisfy the axioms as the data
+ to specify the theory.
+ This is actually the only way that one can define a QFT by mathematically
+ rigorous procedures.
+ Normally, such a theory is first studied by physicists as an ideal or a
+ toy model from the physical motivation, and then refined as rigorous mathematic
+s by mathematicians.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The fact that a QFT can be treated in a mathematically rigorous way implies
+ that the theory may have an enormous amount of symmetry, and the difficulties
+ of the QFT are completely controlled by them.
+ Even better, these theories can often be exactly solved in an appropriate
+ sense.
+\end_layout
+
+\end_inset
+
+ There are several kinds of such theories.
+ We now introduce typical three examples.
+ 
+\end_layout
+
+\begin_layout Standard
+The first one is 
+\emph on
+free theories
+\emph default
+ in any dimensions, which are toy models of field theories and play important
+ roles as a probe of more complicated QFTs.
+ In any spacetime dimensions, for the Riemannian manifolds with or without
+ spin structure, we can rigorously define the free field theories.
+ One of them is the free scalar field theory.
+ Besides a (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional closed manifold 
+\begin_inset Formula $M$
+\end_inset
+
+, pick a 
+\begin_inset Formula $G$
+\end_inset
+
+-bundle 
+\begin_inset Formula $P\rightarrow M$
+\end_inset
+
+ with connection 
+\begin_inset Formula $A$
+\end_inset
+
+ and a 
+\begin_inset Formula $G$
+\end_inset
+
+-vector space 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then we construct the associated vector bundle 
+\begin_inset Formula $P\times_{G}V$
+\end_inset
+
+, whose covariant derivative is denoted by 
+\begin_inset Formula $D_{A}$
+\end_inset
+
+.
+ We now have the Laplacian 
+\begin_inset Formula $\Delta_{A}$
+\end_inset
+
+ given by the covariant derivative 
+\begin_inset Formula $D_{A}$
+\end_inset
+
+, and then the free scalar field theory is defined by the partition function
+ 
+\begin_inset Formula 
+\begin{equation}
+Z_{\mathrm{scalar}}\left(M;A\right):=1/\det\Delta_{A}.
+\end{equation}
+
+\end_inset
+
+ If the determinant of the Laplacian involves a divergence, it must be properly
+ removed.
+ 
+\end_layout
+
+\begin_layout Standard
+Another free theory is the free fermion theory.
+ In this case 
+\begin_inset Formula $M$
+\end_inset
+
+ also needs a spin structure and the spin representations 
+\begin_inset Formula $S$
+\end_inset
+
+, 
+\begin_inset Formula $S'$
+\end_inset
+
+.
+ Then we construct the Dirac operator 
+\begin_inset Formula $\mathcal{D}_{A}$
+\end_inset
+
+ on the spin bundles and the partition function of the free fermion theory
+ is given by 
+\begin_inset Formula 
+\begin{equation}
+Z_{\mathrm{fermion}}\left(M;A\right):=\det\mathcal{D}_{A},
+\end{equation}
+
+\end_inset
+
+ again the determinant is taken appropriately.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Fermion theories may have anomalies.
+ If it is the case, the axiom needs to be somehow modified.
+ In particular the partition function for a closed manifold is given by
+ the eta invariant [Dai-Freed, Witten].
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Next, in two dimensions, we have another axiomatic quantum field theory,
+ that is 
+\emph on
+conformal field theory
+\emph default
+ (CFT).
+ Conformal field theory in two dimensions was originally formulated by Belavin,
+ Polyakov, and Zamolodchikov [BPZ] as a model of physical systems at critical
+ points.
+ They established the renowned Virasoro algebra as an infinite dimensional
+ symmetry of the system and fully investigated the minimal model.
+ The holomorphic part of the Virasoro algebra is captured by vertex operator
+ algebras, and since then there are many mathematically rigorous discussions
+ on them.
+ Their kinematic behaviors on Riemann surfaces are governed by the conformal
+ blocks, and its geometric meaning has been studied in [Freed-Shenker].
+ In turn, the study of irrational CFTs has led to the AGT correspondence
+ [AGT], which has brought to us large amount of developments in both physics
+ and mathematics.
+ 
+\end_layout
+
+\begin_layout Standard
+The final example is 
+\emph on
+topological quantum field theories
+\emph default
+ (TQFTs).
+ TQFT is one of the main focuses in this paper.
+ These theories are originating from Witten's proposals of topological field
+ theories [Witten TQFT, topological sigma, Jones-Witten].
+ Inspired by Witten's proposals, Atiyah and Segal axiomatized the topological
+ QFT,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Precisely speaking, what Segal axiomatized is the definition of conformal
+ field theories.
+ However, at any rate the definition of CFT by Segal is quite similar to
+ the definition of Atiyah's TQFT, i.e.
+ it is a categorical one.
+ For the geometric definition of CFT, see [Freed-Shenker].
+ 
+\end_layout
+
+\end_inset
+
+ and happily this also has brought to us a numerous amount of applications
+ both to physics and to pure mathematics.
+ For example, (
+\begin_inset Formula $1+1$
+\end_inset
+
+)-dimensional topological QFTs are known to be categorically equivalent
+ to commutative Frobenius algebras.
+ (
+\begin_inset Formula $2+1$
+\end_inset
+
+)-dimensional Chern-Simons theory for a compact Lie group 
+\begin_inset Formula $G$
+\end_inset
+
+ is rigorously constructed by the Turaev-Viro and Reshetikhin-Turaev constructio
+n using quantum groups, and has applications to knot or link invariants
+ and 
+\begin_inset Formula $3$
+\end_inset
+
+-manifold invariants.
+ Moreover, both 2d and 3d TQFTs have applications to the mirror symmetry,
+ or topological string theory, those have led to fruitful interactions between
+ physics and mathematics.
+ We will take more time for TQFT and introduce the Atiyah's axioms in some
+ detail in the next subsection.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Path integrate the Boltzmann weight
+\end_layout
+
+\begin_layout Standard
+Before going to Atiyah's TQFT axioms, let us see two more constructions
+ of 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ These are no longer mathematically rigorous, but rather familiar constructions
+ for physicists.
+ The second construction is to define a partition function by 
+\emph on
+path integral
+\emph default
+.
+ The general prescription is given as follows: One first introduces an action
+ functional over the classical field configurations, which deduces the classical
+ equation of motion by the variational principle.
+ Then one exponentiates the action and integrate it over the space of fields.
+ 
+\end_layout
+
+\begin_layout Standard
+The partition function for the free fields given above can also be defined
+ by the path integral expression.
+ For example, for the free complex scalar field theory consider a section
+ 
+\begin_inset Formula $\phi$
+\end_inset
+
+ of the vector bundle 
+\begin_inset Formula $P\times_{G}V$
+\end_inset
+
+ over 
+\begin_inset Formula $M$
+\end_inset
+
+, where 
+\begin_inset Formula $V$
+\end_inset
+
+ is a representation of a compact Lie group 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Then define an action functional 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S:\Gamma\left(P\times_{G}V\right)\longrightarrow\mathbb{R},
+\end{equation}
+
+\end_inset
+
+ such that
+\begin_inset Formula 
+\begin{equation}
+S\left(\phi\right)=\int_{M}\frac{1}{2}D_{A}\phi\wedge\ast D_{A}\phi,
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $*$
+\end_inset
+
+ is the Hodge star on 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ 
+\begin_inset Formula $D_{A}$
+\end_inset
+
+ is again the covariant derivative given by the connection 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Using this action functional, physicists 
+\begin_inset Quotes eld
+\end_inset
+
+define
+\begin_inset Quotes erd
+\end_inset
+
+ its partition function by 
+\begin_inset Formula 
+\begin{equation}
+Z_{\mathrm{scalar}}\left(M;A\right):=\int_{\Gamma\left(P\times_{G}V\right)}\mathcal{D}\phi\,e^{-S\left(\phi\right)}.
+\end{equation}
+
+\end_inset
+
+The integrand 
+\begin_inset Formula $e^{-S}$
+\end_inset
+
+ of path integral is generically called the 
+\emph on
+Boltzmann weight
+\emph default
+.
+ For the free field theories, the path integral can be expressed as an infinite
+ product of the Gaussian integral.
+ Introducing an appropriate regularization, one can compute the exact partition
+ function and it leads to the same result as mentioned above.
+ 
+\end_layout
+
+\begin_layout Standard
+As another example, let us consider Yang-Mills theory.
+ We now introduce the kinetic term of the connection 
+\begin_inset Formula $A$
+\end_inset
+
+, and define the action functional 
+\begin_inset Formula 
+\begin{equation}
+S\left(A\right)=\int_{M}\frac{1}{4g^{2}}F_{A}\wedge*F_{A},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $F_{A}$
+\end_inset
+
+ is the curvature of the 
+\begin_inset Formula $G$
+\end_inset
+
+-connection 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Define the partition function of Yang-Mills theory by 
+\begin_inset Formula 
+\begin{equation}
+Z_{\mathrm{YM}}\left(M\right)=\int_{\mathcal{A}_{M}/\mathcal{G}}\mathcal{D}A\,e^{-S\left(A\right)},
+\end{equation}
+
+\end_inset
+
+where the integral is taken over the space of connections on 
+\begin_inset Formula $M$
+\end_inset
+
+ modulo gauge transformations.
+ Unlike the free scalar theory, making this path integral mathematically
+ precise is an extremely difficult problem.
+ Although it is still ill-defined, physicists have been working on this
+ expression to understand many properties of quantum gauge theories.
+ Experimentally, physicists discretize the manifold 
+\begin_inset Formula $M$
+\end_inset
+
+ to a (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional lattice and put it on a supercomputer.
+ At least, numerical calculations show the above construction may be a mathemati
+cally meaningful and reproduce many experimental results to reasonable accuracy.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Deduce from string/M-theory
+\end_layout
+
+\begin_layout Standard
+The final construction of 
+\begin_inset Formula $Z$
+\end_inset
+
+ is to use string or M-theory.
+ This is also our main tool to construct a QFT to realize the correspondence
+ (the first equation of this section).
+ Nonetheless, string or M-theory is less rigorous than path-integral expression
+ of the construction of 
+\begin_inset Formula $Z$
+\end_inset
+
+, and thus it is more hopeless to give a mathematical precise meaning to
+ the construction.
+ We here would like to show just two examples which 
+\begin_inset Quotes eld
+\end_inset
+
+define
+\begin_inset Quotes erd
+\end_inset
+
+ a class of quantum field theories through string/M-theory.
+ 
+\end_layout
+
+\begin_layout Standard
+The first example is the AdS/CFT correspondence.
+ 
+\end_layout
+
+\begin_layout Standard
+The second example is the so-called six-dimensional 
+\begin_inset Formula $\mathcal{N}=\left(2,0\right)$
+\end_inset
+
+ theories.
+ We start from a 10-dimensional string theory called the type IIB string
+ theory, which roughly speaking assigns the partition function 
+\begin_inset Formula $Z_{\mathrm{IIB}}\left(\tilde{M}\right)$
+\end_inset
+
+ to a 10-dimensional manifold 
+\begin_inset Formula $\tilde{M}$
+\end_inset
+
+.
+ Pick a finite subgroup 
+\begin_inset Formula $\Gamma_{G}$
+\end_inset
+
+ of SU(
+\begin_inset Formula $2$
+\end_inset
+
+) of type 
+\begin_inset Formula $G=A_{n},\,D_{n}$
+\end_inset
+
+ or 
+\begin_inset Formula $E_{6,7,8}$
+\end_inset
+
+.
+ We define a six-dimensional QFT 
+\begin_inset Formula $Q_{G}$
+\end_inset
+
+ by its partition function for a six-dimensional manifold 
+\begin_inset Formula $M$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{equation}
+Z_{Q_{G}}\left(M\right)=Z_{\mathrm{IIB}}\left(M\times\mathbb{C}^{2}/\Gamma_{G}\right).
+\end{equation}
+
+\end_inset
+
+ They are examples of six-dimensional 
+\begin_inset Formula $\mathcal{N}=\left(2,0\right)$
+\end_inset
+
+ superconformal QFTs.
+ These theories are known not to have a Lagrangian description, namely their
+ partition function cannot be obtained from the path integral formalism.
+ They have another description via M-theory, as the low-energy dynamics
+ of M5-branes.
+ The construction from M5-branes leads to the AGT correspondence and the
+ notion of class 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ theories, which we will explain in later sections.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Atiyah's topological QFT
+\end_layout
+
+\begin_layout Standard
+As mentioned some times, in this paper TQFT in extra dimensions will play
+ a crucial role to realize the correspondence between supersymmetric gauge
+ theories and integrable lattice models.
+ So now let us pause here and introduce the Atiyah's axioms of TQFT.
+ We first list the axioms, and right then give their physical meanings.
+ Readers will notice that most of these axioms are physically quite natural
+ and actually mathematical rephrasing of the properties that 
+\begin_inset Formula $Z$
+\end_inset
+
+ should satisfy, which we have already seen.
+ In addition, we would like to define lattice model as a discrete version
+ of QFT in the next subsection.
+ Reviewing the definitions of TQFT here will be really a good help of the
+ argument of lattice model.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Axiom (Atiyah's (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional TQFT)
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional TQFT is defined by 
+\begin_inset Formula $Z$
+\end_inset
+
+ consisting of the following two data and five assignments: 
+\end_layout
+
+\begin_layout Itemize
+For each oriented 
+\begin_inset Formula $d$
+\end_inset
+
+-dimensional closed manifold 
+\begin_inset Formula $N$
+\end_inset
+
+, assigns a finite dimensional 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+-vector space 
+\begin_inset Formula $\mathcal{H}_{N}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+Z\left(N\right)=\mathcal{H}_{N}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This corresponds to (a half of) canonical quantization, or geometric quantizatio
+n, known in physics literature.
+ Why we say it is 
+\begin_inset Quotes eld
+\end_inset
+
+a half of
+\begin_inset Quotes erd
+\end_inset
+
+ will be explained in a moment.
+ In physics, especially for a field theory which has a Lagrangian description,
+ we consider the phase space of fields, take a constant-time surface, and
+ then perform canonical quantization by imposing canonical commutation relations
+ on fields and their conjugates.
+ The constant-time surface is a codimension-1 hypersurface in (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional manifold 
+\begin_inset Formula $M$
+\end_inset
+
+, which in this case is nothing but the 
+\begin_inset Formula $d$
+\end_inset
+
+-dimensional closed manifold 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ So, the manifold 
+\begin_inset Formula $N$
+\end_inset
+
+ is viewed as a collection of 
+\begin_inset Formula $d$
+\end_inset
+
+ spatial directions.
+ One can think of the assigned vector space 
+\begin_inset Formula $\mathcal{H}_{N}$
+\end_inset
+
+ as 
+\begin_inset Quotes eld
+\end_inset
+
+the space of functionals on the classical fields on 
+\begin_inset Formula $N$
+\end_inset
+
+,
+\begin_inset Quotes erd
+\end_inset
+
+ usually called the space of states or just Hilbert space of the system.
+ The only major difference here is that for topological theory the Hilbert
+ space is of finite dimension.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+One can remove the finiteness condition from the axiom.
+ In fact, in TQFT we can define a non-degenerate bilinear form from the
+ other axioms, and from that as a corollary we can deduce the space of states
+ is finite-dimensional.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+For each oriented (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional manifold 
+\begin_inset Formula $M$
+\end_inset
+
+ with a boundary 
+\begin_inset Formula $\partial M=N$
+\end_inset
+
+, assigns a vector 
+\begin_inset Formula 
+\begin{equation}
+Z\left(M\right)\in\mathcal{H}_{N}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This expresses the path integral quantization on 
+\begin_inset Formula $M$
+\end_inset
+
+ with boundary.
+ Recall that if one has a spacetime manifold with boundary, one needs to
+ impose a boundary condition on fields on the boundary, and it leads to
+ the state vector associated to the boundary condition by path integral
+ expression, namely let 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ be a fixed field configuration on 
+\begin_inset Formula $N$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{equation}
+Z\left(M;\varphi\right)=\int_{X\mid_{N}=\varphi}\mathcal{D}X\,e^{-S\left(X\right)}\,\in\mathcal{H}_{N}.
+\end{equation}
+
+\end_inset
+
+ In other words, the quantum state at a generic time 
+\begin_inset Formula $t$
+\end_inset
+
+ is given by the path integral of the Boltzmann weight over all the classical
+ fields with time 
+\begin_inset Formula $<t$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+These data are subject to the following assignments: 
+\end_layout
+
+\begin_layout Enumerate
+(involutory) Let 
+\begin_inset Formula $-N$
+\end_inset
+
+ denote a manifold 
+\begin_inset Formula $N$
+\end_inset
+
+ with the opposite orientation, then 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{H}_{-N}=\mathcal{H}_{N}^{*},
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\mathcal{H}_{N}^{*}$
+\end_inset
+
+ is the dual to 
+\begin_inset Formula $\mathcal{H}_{N}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+(multiplicative) If 
+\begin_inset Formula $N$
+\end_inset
+
+ is a disjoint union of two 
+\begin_inset Formula $d$
+\end_inset
+
+-dimensional closed manifolds 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+, then the vector space associated on it is factorized to a tensor product:
+ 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{H}_{N_{1}\sqcup N_{2}}=\mathcal{H}_{N_{1}}\otimes\mathcal{H}_{N_{2}}.
+\end{equation}
+
+\end_inset
+
+ This is really natural in the physical point of view.
+ This condition means that if we have two physical systems defined on spatially
+ disjoint union 
+\begin_inset Formula $N_{1}\sqcup N_{2}$
+\end_inset
+
+, then the space of states is represented as the tensor product of each
+ state space.
+ Also, from the conditions so far one finds that if (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional manifold 
+\begin_inset Formula $M'$
+\end_inset
+
+ has two boundaries such that 
+\begin_inset Formula 
+\begin{equation}
+\partial M'=-N_{1}\sqcup N_{2},
+\end{equation}
+
+\end_inset
+
+then 
+\begin_inset Formula $Z$
+\end_inset
+
+ defines a linear map
+\begin_inset Formula 
+\begin{equation}
+Z\left(M'\right)\in\mathrm{Hom}_{\mathbb{C}}\left(\mathcal{H}_{N_{1}},\mathcal{H}_{N_{2}}\right),
+\end{equation}
+
+\end_inset
+
+ namely, for a cobordism between 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+, we have a linear map between 
+\begin_inset Formula $\mathcal{H}_{N_{1}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{H}_{N_{2}}$
+\end_inset
+
+.
+ This defines a time evolution, or transition amplitude, between the states
+ in 
+\begin_inset Formula $\mathcal{H}_{N_{1}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{H}_{N_{2}}$
+\end_inset
+
+.
+ When the field theory has a Hamiltonian, 
+\begin_inset Formula $Z\left(M'\right)$
+\end_inset
+
+ may correspond to the time evolution operator 
+\begin_inset Formula 
+\begin{equation}
+Z\left(M'\right):=e^{-tH}:\mathcal{H}_{N_{1}}\longrightarrow\mathcal{H}_{N_{2}}.
+\end{equation}
+
+\end_inset
+
+Since canonical quantization is a procedure to make an assignment of Hilbert
+ spaces and the time evolution on them, as we saw in QM, this association
+ of linear maps gives the other half of canonical quantization.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Perhaps no need this part
+\end_layout
+
+\end_inset
+
+ One can also explicitly express 
+\begin_inset Formula $Z\left(M'\right)$
+\end_inset
+
+ in the path integral expression by the Feynman kernel (also as known as
+ propagator or Green's function).
+ Suppose we have an initial state 
+\begin_inset Formula $\Psi_{0}\in\mathcal{H}_{N_{1}}$
+\end_inset
+
+, then the state 
+\begin_inset Formula $\Psi_{t}\in\mathcal{H}_{N_{2}}$
+\end_inset
+
+ at time 
+\begin_inset Formula $t$
+\end_inset
+
+ is expressed by
+\begin_inset Formula 
+\begin{align}
+\Psi_{t}\left(\varphi_{t}\right) & =\left(e^{-tH}\Psi_{0}\right)\left(\varphi_{t}\right)\nonumber \\
+ & =\int K\left(\varphi_{t},\varphi_{0}\right)\Psi_{0}\left(\varphi_{0}\right)\mathcal{D}\varphi_{0},
+\end{align}
+
+\end_inset
+
+ where 
+\begin_inset Formula 
+\begin{equation}
+K\left(\varphi_{t},\varphi_{0}\right)=\int_{X\mid_{N_{1}}=\varphi_{0}}^{X\mid_{N_{2}}=\varphi_{t}}\mathcal{D}X\,e^{-S\left(X\right)}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For two cobordisms such that 
+\begin_inset Formula 
+\begin{equation}
+\partial M'=-N_{1}\sqcup N_{2},\quad\partial M"=-N_{2}\sqcup N_{3},
+\end{equation}
+
+\end_inset
+
+ it follows that 
+\begin_inset Formula 
+\begin{equation}
+Z\left(M'\cup_{N_{2}}M"\right)=Z\left(M"\right)Z\left(M'\right),
+\end{equation}
+
+\end_inset
+
+where the cobordisms 
+\begin_inset Formula $M'$
+\end_inset
+
+ and 
+\begin_inset Formula $M"$
+\end_inset
+
+ are glued along 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+ by a certain diffeomorphism on 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+.
+ This asserts that the linear maps are transitive when we compose cobordisms.
+ This is nothing but the physical requirement that the time evolution is
+ compatible with the cutting and gluing the manifolds.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Given 
+\begin_inset Formula $N=\emptyset$
+\end_inset
+
+ as an empty 
+\begin_inset Formula $d$
+\end_inset
+
+-dimensional manifold, then the associated vector space is one-dimensional:
+\begin_inset Formula 
+\begin{equation}
+Z\left(\emptyset\right)=\mathbb{C}.
+\end{equation}
+
+\end_inset
+
+This is a non-triviality condition.
+ Therefore, for each (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional manifold 
+\begin_inset Formula $M$
+\end_inset
+
+ without boundary, 
+\begin_inset Formula $\partial M=\emptyset$
+\end_inset
+
+, 
+\begin_inset Formula $Z$
+\end_inset
+
+ assigns a number: 
+\begin_inset Formula 
+\begin{equation}
+Z\left(M\right)\in\mathbb{C}.
+\end{equation}
+
+\end_inset
+
+ This number associated to a closed (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional manifold is called the partition function.
+ Not only is it an important quantity physically, but it also has mathematical
+ applications, such as giving a topological invariant of the closed manifold
+ 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $I$
+\end_inset
+
+ be an interval, then for each cylinder 
+\begin_inset Formula $M=N\times I$
+\end_inset
+
+, the linear map on 
+\begin_inset Formula $\mathcal{H}_{N}$
+\end_inset
+
+ is trivial: 
+\begin_inset Formula 
+\begin{equation}
+Z\left(N\times I\right)=\mathrm{id}_{\mathcal{H}_{N}}.
+\end{equation}
+
+\end_inset
+
+ Since in a topological theory manifolds diffeomorphic to each other should
+ be considered as the identical, each cobordism class defines a linear map.
+ This means that the addition of a cylinder is a trivial operation, the
+ associated linear map is the identity.
+ This condition is another major difference from ordinary QFTs.
+ For example, for (
+\begin_inset Formula $2+1$
+\end_inset
+
+)-dimensional Chern-Simons theory one can explicitly see its Hamiltonian
+ is identically 
+\begin_inset Formula $0$
+\end_inset
+
+ and hence the time evolution of Chern-Simons theory is trivial [Witten].
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is all the assignments for Atiyah's TQFT.
+ Although we gave the path integral expressions at the explanation of the
+ physical meanings for some conditions, the axioms themselves are really
+ the basis for the rigorous mathematical definition of 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ One can actually take an equivalent definition of TQFT in slightly different
+ axioms.
+ For more details, see the original paper by Atiyah [Atiyah].
+ 
+\end_layout
+
+\begin_layout Standard
+At first sight, this might look a little bit complicated and too abstract.
+ This definition, however, is really natural and works quite well in a sense
+ that it gives a kind of 
+\begin_inset Quotes eld
+\end_inset
+
+homomorphism
+\begin_inset Quotes erd
+\end_inset
+
+ between geometry and algebra: 
+\begin_inset Formula 
+\[
+Z:\mathrm{'geometry'}\longrightarrow\mathrm{'algebra'}.
+\]
+
+\end_inset
+
+ In fact, all in all the axioms of Atiyah's TQFT define a functor from the
+ category of (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional cobordisms to the category of finite-dimensional 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+-vector spaces:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Even better, the category of cobordisms and the category of vector spaces
+ are endowed with the product structures, that is, taking disjoint union
+ and taking tensor product, which are really symmetric operations.
+ As such, the functor between them is keeping such structures and then called
+ symmetric monoidal functor.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+Z:\mathrm{Bord}_{d+1}\longrightarrow\mathrm{Vect}_{\mathbb{C}}.
+\end{equation}
+
+\end_inset
+
+ TQFT luckily has a mathematical precise definition.
+ For a general QFT, i.e.
+ not TQFT, in many cases there is no precise definition as we saw the examples
+ of the construction of 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ However, a QFT is generically expected to be characterized by some functor
+ from the geometric structure of spacetime manifolds to the algebraic descriptio
+n of physical states and observables.
+ 
+\end_layout
+
+\begin_layout Subsection
+Lattice model as discrete QFT
+\end_layout
+
+\begin_layout Standard
+Now let us move on to the discussion on lattice model.
+ First of all, let us begin with the question of 
+\begin_inset Quotes eld
+\end_inset
+
+what is lattice model?
+\begin_inset Quotes erd
+\end_inset
+
+ Probably there is no unique definition of lattice model.
+ We here would like to characterize lattice model by a discrete version
+ of QFT.
+ What we have learnt in the previous subsection is that a (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional QFT may be defined by an appropriate functor 
+\begin_inset Formula $Z_{\mathrm{Q}}^{d+1}$
+\end_inset
+
+, which produces a number for each (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional closed manifold 
+\begin_inset Formula $M$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+Z_{\mathrm{Q}}^{d+1}\left(M\right)\in\mathbb{C},
+\end{equation}
+
+\end_inset
+
+ which is called the partition function of the model, and 
+\begin_inset Formula $Z_{\mathrm{Q}}^{d+1}$
+\end_inset
+
+ satisfies additional some reasonable conditions for each QFT of interest.
+ 
+\end_layout
+
+\begin_layout Standard
+We introduce lattice model in the same way.
+ For a (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional closed lattice 
+\begin_inset Formula $L$
+\end_inset
+
+, a (
+\begin_inset Formula $d+1$
+\end_inset
+
+)-dimensional lattice model is defined by 
+\begin_inset Formula $Z_{\mathrm{L}}^{d+1}$
+\end_inset
+
+, which produces a number 
+\begin_inset Formula 
+\begin{equation}
+Z_{\mathrm{L}}^{d+1}\left(L\right)\in\mathbb{C},
+\end{equation}
+
+\end_inset
+
+which is again called the partition function, and 
+\begin_inset Formula $Z_{\mathrm{L}}^{d+1}$
+\end_inset
+
+ satisfies additional some reasonable conditions.
+ The most typical example of lattice model in particle physics is lattice
+ gauge theory or lattice QCD.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+For sure, for any field theories when one computes a physical quantity on
+ a computer, one needs to discretize the theory and put it on a lattice.
+ In this sense, numerical analysis of field theory is always regarded as
+ a lattice model.
+ 
+\end_layout
+
+\end_inset
+
+ For such theories, it is really clear that the model is defined by a discrete
+ version of QFTs; One compactifies the spacetime manifold 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+ to four-torus 
+\begin_inset Formula $T^{4}$
+\end_inset
+
+, and then discretize the theory and put it on a lattice on the torus.
+ 
+\end_layout
+
+\begin_layout Standard
+Throughout the paper, we will consider only 
+\begin_inset Formula $d=0$
+\end_inset
+
+ or 
+\begin_inset Formula $1$
+\end_inset
+
+ case of lattice model, and we call each case as 1d or 2d lattice model.
+ To prepare for the discussion of integrability, we take the prominent example
+ of statistical lattice model called the Ising model.
+ We first briefly review the generality of the Ising model and compare with
+ field theory, and then introduce the transfer matrix which is essentially
+ a time evolution operator in a discrete quantum system.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Prominent example – the Ising model
+\end_layout
+
+\begin_layout Standard
+The Ising model is a very good introduction to integrable lattice model.
+ The 1d and 2d Ising model is known to be exactly solvable, whose meaning
+ we will clarify in a moment, and it is called integrable.
+ To see the generality of the Ising model, we first define 2d lattice and
+ spin configurations on it.
+ 
+\end_layout
+
+\begin_layout Standard
+Define a 2d periodic lattice on two-torus 
+\begin_inset Formula $T^{2}$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\begin{align}
+L & :=\mathbb{Z}_{M}\times\mathbb{Z}_{N}\nonumber \\
+ & =\left\{ 1,\ldots,M\right\} \times\left\{ 1,\ldots,N\right\} .
+\end{align}
+
+\end_inset
+
+ A spin configuration on the lattice 
+\begin_inset Formula $L$
+\end_inset
+
+ is defined by a map
+\begin_inset Formula 
+\begin{equation}
+\mathbf{s}:L\longrightarrow\left\{ +1,-1\right\} ,
+\end{equation}
+
+\end_inset
+
+where usually 
+\begin_inset Formula $+1$
+\end_inset
+
+ is called up spin and 
+\begin_inset Formula $-1$
+\end_inset
+
+ is down spin.
+ The map defines up or down spin at each site of the lattice 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ So it can also be thought of as an assignment of 
+\begin_inset Formula $+1$
+\end_inset
+
+ or 
+\begin_inset Formula $-1$
+\end_inset
+
+ on all the sites of the lattice 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ We often denote the spin at each site by its image 
+\begin_inset Formula $s_{I}:=\mathbf{s}\left(I\right),\,I\in L$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $S\left(L\right)$
+\end_inset
+
+ be the set of all the spin configurations.
+ Since spin configurations are defined on the 
+\begin_inset Formula $M\times N$
+\end_inset
+
+ periodic lattice, the number of elements in 
+\begin_inset Formula $S\left(L\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $2^{MN}$
+\end_inset
+
+.
+ In other words, the number of all the allowed configurations of spins on
+ the lattice 
+\begin_inset Formula $L$
+\end_inset
+
+ is 
+\begin_inset Formula $2^{MN}$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Figures
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For each spin configuration 
+\begin_inset Formula $\mathbf{s}\in S\left(L\right)$
+\end_inset
+
+, define the energy functional of the Ising model by
+\begin_inset Formula 
+\begin{align}
+E_{\mathrm{Ising}}\left(\mathbf{s}\right) & =-J\sum_{\left\langle I,I'\right\rangle }s_{I}s_{I'}\nonumber \\
+ & :=-J\left(\sum_{i,j=1}^{M,N}s_{ij}s_{i,j+1}+\sum_{i,j}s_{ij}s_{i+1,j}\right),
+\end{align}
+
+\end_inset
+
+ where the 
+\begin_inset Formula $s_{ij}=s_{i+M,j}=s_{i,j+N}$
+\end_inset
+
+, and 
+\begin_inset Formula $J\in\mathbb{R}_{>0}$
+\end_inset
+
+ is a constant parameter.
+ This is one of the simplest spin systems, in which only the nearest neighbor
+ spins have interactions.
+ From this energy functional, the partition function of the Ising model
+ is defined by 
+\begin_inset Formula 
+\begin{equation}
+Z\left(L,E_{\mathrm{Ising}};\beta\right):=\sum_{\mathbf{s}\in S\left(L\right)}e^{-\beta E_{\mathrm{Ising}}\left(\mathbf{s}\right)},
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\beta\in\mathbb{R}_{\geq0}$
+\end_inset
+
+ is an inverse temperature.
+ The summand is generically called the Boltzmann weight as well as in field
+ theory.
+ In this expression, one recognizes that the right-hand side is a discrete
+ version of path integral expression in field theory.
+ The energy functional is corresponding to the action functional of a field
+ theory, 
+\begin_inset Formula $\beta^{-1}$
+\end_inset
+
+ is the Planck's constant, and the sum over all the spin configurations
+ is the path integral over all the field configurations.
+ Given a periodic lattice 
+\begin_inset Formula $L$
+\end_inset
+
+, the partition function returns a number, which is a discrete version of
+ the partition function of QFT which returns a number as well if a closed
+ manifold 
+\begin_inset Formula $M$
+\end_inset
+
+ is given.
+ For later use, define another quantity called the free energy, 
+\begin_inset Formula 
+\begin{equation}
+f\left(\beta\right):=-\frac{1}{\beta}\frac{1}{MN}\log Z\left(\beta\right),
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $Z\left(\beta\right)$
+\end_inset
+
+ is the partition function defined above.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Perhaps no need this part
+\end_layout
+
+\end_inset
+
+According to the general theory of statistical mechanics, the probability
+ that a configuration 
+\begin_inset Formula $\mathbf{s}$
+\end_inset
+
+ with energy 
+\begin_inset Formula $E\left(\mathbf{s}\right)$
+\end_inset
+
+ will be realized is given by the canonical ensemble
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+To the end of this subsection, we argue for a general energy functional,
+ but the reader may assume the Ising model.
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+p\left(\mathbf{s}\right)=\frac{1}{Z}e^{-\beta E\left(\mathbf{s}\right)},
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $Z$
+\end_inset
+
+ is the partition function introduced above.
+ In lattice model, a physical observable is in general given by a functional
+ on the space of spin configurations: 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{O}:S\left(L\right)\longrightarrow\mathbb{R},
+\end{equation}
+
+\end_inset
+
+and its expectation value is given by the canonical ensemble as 
+\begin_inset Formula 
+\begin{equation}
+\left\langle \mathcal{O}\right\rangle _{p}:=\sum_{\mathbf{s}\in S\left(L\right)}\mathcal{O}\left(\mathbf{s}\right)p\left(\mathbf{s}\right)=\frac{1}{Z}\sum_{\mathbf{s}\in S\left(L\right)}\mathcal{O}\left(\mathbf{s}\right)e^{-\beta E\left(\mathbf{s}\right)}.
+\end{equation}
+
+\end_inset
+
+ In particular, an energy functional is an example of physical observable,
+ 
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{MN}\left\langle E\right\rangle _{p}=\frac{1}{MN}\frac{1}{Z}\sum_{\mathbf{s}\in S\left(L\right)}E\left(\mathbf{s}\right)e^{-\beta E\left(\mathbf{s}\right)},
+\end{equation}
+
+\end_inset
+
+ which is obtained from the derivative of the free energy, 
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{MN}\left\langle E\right\rangle _{p}=\frac{\partial}{\partial\beta}\left(\beta f\left(\beta\right)\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Generally speaking, the free energy provides us all the information of the
+ system.
+ For example, the state most likely to happen is given by the critical point
+ of the free energy, and we can in principle compute physical quantities
+ such as expectation value of energy, fluctuation, specific heat, and so
+ on.
+ To make a lattice model as a physically meaningful system, however, one
+ needs to take the thermodynamic limit; 
+\begin_inset Formula $M,N\rightarrow\infty$
+\end_inset
+
+.
+ Therefore, in this sense, integrability of lattice model is characterized
+ by the calculability of an exact free energy at the thermodynamic limit.
+ This may be rephrased by the calculability of the partition function as
+ well.
+ Based on these argument, we shall see the integrability of the Ising model
+ in the next subsection.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Transfer matrix and integrability
+\end_layout
+
+\begin_layout Standard
+It is well known that 1d and 2d Ising model is exactly solvable in the sense
+ that one can exactly compute its free energy in the thermodynamic limit.
+ Both 1d and 2d cases are solved by so-called the method of transfer matrix.
+ To see this, for simplicity in this section we consider 1d Ising model.
+ 
+\end_layout
+
+\begin_layout Standard
+The setup is almost the same as in the 2d case.
+ A 1d lattice on torus and a spin configuration is defined by
+\begin_inset Formula 
+\begin{equation}
+L_{1d}=\mathbb{Z}_{N}=\left\{ 1,\ldots,N\right\} ,
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\mathbf{s}:L_{1d}\longrightarrow\left\{ \pm1\right\} .
+\end{equation}
+
+\end_inset
+
+Define the energy functional of 1d Ising model by 
+\begin_inset Formula 
+\begin{equation}
+E_{1d\,\mathrm{Ising}}\left(\mathbf{s}\right)=-J\sum_{i=1}^{N}s_{i}s_{i+1},\quad\,s_{N+1}=s_{1}.
+\end{equation}
+
+\end_inset
+
+ Then the partition function of 1d Ising model is defined by 
+\begin_inset Formula 
+\begin{align}
+Z\left(L_{1d},E_{\mathrm{1d}};\beta\right) & :=\sum_{\mathbf{s}}e^{-\beta E_{1d}\left(\mathbf{s}\right)}\nonumber \\
+ & =\sum_{s_{1},\ldots,s_{N}=\pm1}e^{Ks_{1}s_{N}}\cdots e^{Ks_{3}s_{2}}e^{Ks_{2}s_{1}},
+\end{align}
+
+\end_inset
+
+ where 
+\begin_inset Formula $K:=\beta J$
+\end_inset
+
+.
+ Let us now introduce the 
+\emph on
+transfer matrix
+\emph default
+, 
+\begin_inset Formula 
+\begin{equation}
+T:=\left(e^{Kss'}\right)_{s,s'=\pm1}=\left(\begin{array}{cc}
+e^{K} & e^{-K}\\
+e^{-K} & e^{K}
+\end{array}\right),
+\end{equation}
+
+\end_inset
+
+ where the indices of row and column are specified by 
+\begin_inset Formula $+1$
+\end_inset
+
+ and 
+\begin_inset Formula $-1$
+\end_inset
+
+, respectively.
+ Using this matrix 
+\begin_inset Formula $T$
+\end_inset
+
+, the partition function is rewritten as
+\begin_inset Formula 
+\begin{equation}
+Z\left(\beta\right)=\sum_{s_{1},\ldots,s_{N}=\pm1}T_{s_{1}s_{N}}\cdots T_{s_{3}s_{2}}T_{s_{2}s_{1}}.
+\end{equation}
+
+\end_inset
+
+ By definition of matrix multiplication, the partition function is eventually
+ given by a trace: 
+\begin_inset Formula 
+\begin{align}
+Z\left(\beta\right) & =\sum_{s_{1}=\pm1}\left(T^{N}\right)_{s_{1}s_{1}}\nonumber \\
+ & =\mathrm{Tr}_{\mathbb{C}^{2}}\left(T^{N}\right).
+\end{align}
+
+\end_inset
+
+ This expression tells us that we have the quantum Hilbert space 
+\begin_inset Formula $\mathbb{C}^{2}$
+\end_inset
+
+ at the boundary of each 1d segment, and the transfer matrix 
+\begin_inset Formula $T$
+\end_inset
+
+ sends a state to the adjacent site, which is the discrete 
+\begin_inset Quotes eld
+\end_inset
+
+time evolution
+\begin_inset Quotes erd
+\end_inset
+
+ of this system; 
+\begin_inset Formula $\log T\propto$
+\end_inset
+
+ Hamiltonian as we saw in 1d QFT in section (what is QFT?).
+ This corresponds to the analogue of Hamiltonian or operator formalism in
+ field theory.
+ In operator formalism, spins are replaced by the Pauli matrices, and original
+ classical up spin and down spin are replaced by the eigenvalues and eigenvector
+s of the Pauli matrix 
+\begin_inset Formula $\sigma^{z}$
+\end_inset
+
+.
+ Further, the non-commutativity is now manifest in a way that the spins
+ and their time evolution is given by matrices, this is the consequence
+ of quantization.
+ 
+\end_layout
+
+\begin_layout Standard
+In the expression above of the partition function, let us consider the thermodyn
+amic limit 
+\begin_inset Formula $N\rightarrow\infty$
+\end_inset
+
+.
+ The eigenvalues of 
+\begin_inset Formula $T$
+\end_inset
+
+ are easily obtained and let them be 
+\begin_inset Formula $\lambda_{0}>\lambda_{1}$
+\end_inset
+
+, then we have the free energy
+\begin_inset Formula 
+\begin{align}
+-\beta f\left(\beta\right) & =\lim_{N\rightarrow\infty}\frac{1}{N}\log Z\left(\beta\right)\nonumber \\
+ & =\lim_{N\rightarrow\infty}\frac{1}{N}\log\lambda_{0}\left(1+\left(\frac{\lambda_{1}}{\lambda_{0}}\right)^{N}\right)\nonumber \\
+ & =\log\lambda_{0}.
+\end{align}
+
+\end_inset
+
+ We conclude that the free energy in the thermodynamic limit is just given
+ by the largest eigenvalue of the transfer matrix.
+ Again, integrability of lattice model is rephrased as 
+\begin_inset Formula 
+\begin{align*}
+ & \textrm{One can exatly find the eigenvalues of transfer matrix}\\
+ & \Rightarrow\,\textrm{Can exactly compute the free enrgy}\\
+ & \Rightarrow\,\textrm{The system is integrable. }
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The transfer matrices of 1d and 2d Ising model are diagonalizable and one
+ can exactly find their eigenvectors and eigenvalues using, for example,
+ algebraic Bethe ansatz.
+ In this sense, 1d and 2d Ising model are said to be integrable, or exactly
+ solvable.
+ Then, a natural question arises; when can we diagonalize the transfer matrix
+ of a lattice model? This actually leads to the most fundamental answer
+ to the question of 
+\begin_inset Quotes eld
+\end_inset
+
+what is integrable model.
+\begin_inset Quotes erd
+\end_inset
+
+ A canonical answer is 
+\emph on
+Yang-Baxter equation
+\emph default
+.
+ When the Boltzmann weight with spectral parameters, which take values in
+ a Riemann surface, satisfies the Yang-Baxter equation, the lattice model
+ is integrable.
+ We will give an explanation of this definition of integrability in next
+ subsection in some detail, with its origin from TQFT with extra dimensions.
+ 
+\end_layout
+
+\begin_layout Subsection
+Integrability from TQFT in extra dimensions
+\end_layout
+
+\begin_layout Standard
+In this section we provide a general discussion to relate four-dimensional
+ supersymmetric gauge theories and integrable lattice models.
+ We clarify that such a correspondence between gauge theories and lattice
+ models emerges from a TQFT in extra dimensions.
+ We first give a step-by-step explanation from two-dimensional TQFT to integrabl
+e lattice model, and then put the argument in the setup of brane tilings.
+ Branes in string theory are powerful enough to yield the systematic method
+ to relate a class of supersymmetric gauge theories with integrable lattice
+ models, as we will see.
+ To begin with, we present a general prescription of brane constructions
+ at a formal level.
+ Concrete setups and more details will be given in later sections.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Lattice models from TQFTs with line operators
+\end_layout
+
+\begin_layout Standard
+Suppose that we have a two-dimensional TQFT 
+\begin_inset Formula $\mathsf{T}$
+\end_inset
+
+ on a two-torus 
+\begin_inset Formula $T^{2}$
+\end_inset
+
+ equipped with line operators 
+\begin_inset Formula $\mathcal{L}_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $i=1,\ldots,l$
+\end_inset
+
+.
+ Wrap them around one-cycles 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ on the torus in such a way that they form an 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ lattice.
+ We wish to consider the correlation function of this configuration of line
+ operators.
+ To compute it, our strategy is to break up the torus into pieces and perform
+ in turn the path integral piecewise.
+ Then the original correlation function is reconstructed by combining these
+ pieces.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In the following, we will compute the correlation function by embedding
+ the closed TQFT with line operators into an open/closed TQFT with line
+ operators, or defect TQFT.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Let us consider the following piece of surface which contains an intersection
+ of two line operators 
+\begin_inset Formula $\mathcal{L}_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{L}_{j}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+i\,j.
+\end{equation}
+
+\end_inset
+
+ If one thinks of the above picture as the world-sheet of two scattering
+ open strings, one can regard the above picture as follows: The endpoints
+ of the open strings sweep out the double-lined arcs, on which D-branes
+ are there and the boundary conditions (Chern-Paton factors) are specified
+ by labels 
+\begin_inset Formula $a,\,b,\,c,\,d$
+\end_inset
+
+.
+ The line operators are the world-lines of particles associated with the
+ open strings.
+ 
+\end_layout
+
+\begin_layout Standard
+The path integral for the above surface produces a linear map
+\begin_inset Formula 
+\begin{equation}
+R_{ij}\left(\begin{array}{cc}
+a & d\\
+b & c
+\end{array}\right):V_{ab,i}\otimes V_{bc,j}\longrightarrow V_{ad,j}\otimes V_{dc,i},
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $V_{ab,i}$
+\end_inset
+
+ is the space of states of the open string propagating along 
+\begin_inset Formula $\mathcal{L}_{i}$
+\end_inset
+
+ with the boundary conditions on the left and the right ends specified by
+ 
+\begin_inset Formula $a,\,b$
+\end_inset
+
+, respectively.
+ We call this map the R-matrix (or R-operator) associated with this decorated
+ surface.
+ To reconstruct the original configuration of line operators, we glue pieces
+ together.
+ Gluing them amounts to the composition of R-matrices.
+ For example, gluing two pieces horizontally gives 
+\begin_inset Formula 
+\begin{equation}
+=R_{ik}\left(\begin{array}{cc}
+d & e\\
+c & f
+\end{array}\right)\circ_{V_{dc,i}}R_{ij}\left(\begin{array}{cc}
+a & d\\
+b & c
+\end{array}\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The original configuration is thus obtained by gluing all the pieces.
+ It, however, still has holes assigned boundary conditions as in figures,
+ which we must fill by summing over the boundary conditions.
+ To do this, let us recall that the path integral on a finite-length cylinder
+ with boundary condition 
+\begin_inset Formula $a$
+\end_inset
+
+ imposed on one end defines a closed string state 
+\begin_inset Formula $\left|a\right\rangle $
+\end_inset
+
+ as known as a boundary state.
+ Similarly, the path integral on a disk with no insertion of operators defines
+ a state 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+ on the boundary, see figures.
+ Assume that we have chosen the set of boundary conditions 
+\begin_inset Formula $B$
+\end_inset
+
+ to be sufficiently large so that the state 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+ can be written as a superposition of boundary states:
+\begin_inset Formula 
+\begin{equation}
+\left|1\right\rangle =\sum_{a\in B}c_{a}\left|a\right\rangle .
+\end{equation}
+
+\end_inset
+
+ Then, the sum over the boundary conditions gives the state 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+ on the boundary of each hole, which is replaced with a disk: 
+\begin_inset Formula 
+\begin{equation}
+\sum_{a\in B}c_{a}\left(a\right)=\sum_{a\in B}c_{a}\left(\left|a\right\rangle \right)=\left|1\right\rangle .
+\end{equation}
+
+\end_inset
+
+ Thus the holes are filled and the original configuration on the torus is
+ reconstructed.
+ 
+\end_layout
+
+\begin_layout Standard
+Now that we have understood how to reconstruct the correlation function
+ of line operators in the field theoretic point of view, let us reinterpret
+ this procedure as an operation in statistical lattice model.
+ Rephrasing the procedures so far, it is clear that the above configuration
+ defines a partition function of a statistical spin model.
+ The model has spins located at two kinds of sites, 
+\begin_inset Formula $\ocircle$
+\end_inset
+
+ and 
+\begin_inset Formula $\circledcirc$
+\end_inset
+
+.
+ They correspond to the open string states and the boundary states.
+ A spin at 
+\begin_inset Formula $\ocircle$
+\end_inset
+
+ takes values in the chosen basis for the relevant open string states 
+\begin_inset Formula $V_{ab,i}$
+\end_inset
+
+, while that at 
+\begin_inset Formula $\circledcirc$
+\end_inset
+
+ is valued in 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ The Boltzmann weights for each spin configuration are given by the matrix
+ elements of R-matrix and the coefficients of boundary states 
+\begin_inset Formula $c_{a}$
+\end_inset
+
+.
+ Thus, we conclude that the correlation function of line operators 
+\begin_inset Formula $\left\{ \mathcal{L}_{i}\right\} $
+\end_inset
+
+ on the torus coincides with the partition function of a statistical spin
+ model defined on the periodic lattice formed by the line operators:
+\begin_inset Formula 
+\begin{equation}
+\left\langle \prod_{i=1}^{l}\mathcal{L}_{i}\left(C_{i}\right)\right\rangle _{\mathsf{T},T^{2}}=Z_{\mathsf{L}\left(\mathsf{T}\right),\left\{ \mathcal{L}_{i}\left(C_{i}\right)\right\} }.
+\end{equation}
+
+\end_inset
+
+ 
+\begin_inset Formula $\mathsf{L}\left(\mathsf{T}\right)$
+\end_inset
+
+ denotes the lattice model arising from the TQFT 
+\begin_inset Formula $\mathsf{T}$
+\end_inset
+
+ with the line operators and 
+\begin_inset Formula $\left\{ \mathcal{L}_{i}\left(C_{i}\right)\right\} $
+\end_inset
+
+ is the lattice formed by line operators 
+\begin_inset Formula $\mathcal{L}_{i}$
+\end_inset
+
+ wrapping around 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+.
+ By this construction, we can view typical examples of lattice models.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+IRF model
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\dim V_{ab,i}=1$
+\end_inset
+
+ for any 
+\begin_inset Formula $a,\,b,\,i$
+\end_inset
+
+, in this case we can ignore the spins at 
+\begin_inset Formula $\ocircle$
+\end_inset
+
+.
+ We just sum over the boundary conditions and such a spin system 
+\begin_inset Formula $\mathsf{L}\left(\mathsf{T}\right)$
+\end_inset
+
+ is called 
+\emph on
+interaction-round-a-face model
+\emph default
+, or 
+\emph on
+IRF model
+\emph default
+ for short.
+ The spins are placed on the faces of the lattice, and interaction takes
+ place among four spins surrounding a vertex.
+ The 2d Ising model actually can be formulated as an IRF model by taking
+ vertex-face transformation.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Vertex model
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $B$
+\end_inset
+
+ consists of a single boundary condition, say 
+\begin_inset Formula $a$
+\end_inset
+
+, we can simply write the open string state space by 
+\begin_inset Formula $V_{i}:=V_{aa,i}$
+\end_inset
+
+, and the R-matrix is represented only by a crossing of two lines: 
+\begin_inset Formula 
+\[
+R_{ij}=,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+R_{ij}:V_{i}\otimes V_{j}\longrightarrow V_{j}\otimes V_{i}.
+\end{equation}
+
+\end_inset
+
+The space of states 
+\begin_inset Formula $V_{i}$
+\end_inset
+
+ can also be thought of as the Hilbert space of a particle propagating on
+ the line operator 
+\begin_inset Formula $\mathcal{L}_{i}$
+\end_inset
+
+.
+ In this case we can ignore the spins at 
+\begin_inset Formula $\circledcirc$
+\end_inset
+
+ since there is no summation over boundary conditions.
+ This means that the lattice model 
+\begin_inset Formula $\mathsf{L}\left(\mathsf{T}\right)$
+\end_inset
+
+ is called a 
+\emph on
+vertex model
+\emph default
+: Spins are living on the edges of the lattice and interact with each other
+ at the vertices.
+ 
+\end_layout
+
+\begin_layout Standard
+We can always recast our lattice model into a vertex model by setting 
+\begin_inset Formula $V_{i}:=\bigoplus_{a,b\in B}V_{ab,i}$
+\end_inset
+
+, at least formally, and declaring that all newly introduced R-matrix elements,
+ which correspond to scattering processes with inconsistent Chan-Paton factors,
+ vanish.
+ We can also absorb the coefficients 
+\begin_inset Formula $c_{a}$
+\end_inset
+
+ into the R-matrix elements by appropriate rescaling.
+ In what follows we implicitly perform this reformulation, and restrict
+ ourselves to vertex model.
+\end_layout
+
+\begin_layout Standard
+A remarkable aspect of this construction of lattice models is that it allows
+ us to understand integrability from a higher-dimensional point of view.
+ This is crucial observation by Costelllo [Costello].
+ In our lattice model, consider a horizontal line operator 
+\begin_inset Formula $\mathcal{L}_{i}$
+\end_inset
+
+ intersecting vertical line operators 
+\begin_inset Formula $\mathcal{L}_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $j=1,\ldots,n$
+\end_inset
+
+.
+ Concatenating the R-matrices in this row, we get the row-to-row transfer
+ matrix: 
+\begin_inset Formula 
+\begin{equation}
+T_{i}==\mathrm{Tr}_{V_{i}}\left(R_{i,n}\circ_{V_{i}}\cdots\circ_{V_{i}}R_{i,1}\right).
+\end{equation}
+
+\end_inset
+
+ The hooks on the horizontal line are to remind us that the periodic boundary
+ condition is imposed.
+ This gives an endomorphism of 
+\begin_inset Formula $\bigotimes_{j=1}^{n}V_{j}$
+\end_inset
+
+ which maps a state just below 
+\begin_inset Formula $\mathcal{L}_{j}$
+\end_inset
+
+ to another state above it, namely the transfer matrix defines the time
+ evolution of this spin system and 
+\begin_inset Formula $\bigotimes_{j=1}^{n}V_{j}$
+\end_inset
+
+ is the quantum Hilbert space.
+ In terms of transfer matrices, the partition function is written as a trace,
+ 
+\begin_inset Formula 
+\begin{equation}
+Z_{\mathsf{L}\left(\mathsf{T}\right),\left\{ \mathcal{L}_{i}\left(C_{i}\right)\right\} }=\mathrm{Tr}\left(T_{n+m}\cdots T_{n+1}\right),
+\end{equation}
+
+\end_inset
+
+ where the trace is taken over the total Hilbert space 
+\begin_inset Formula $\bigotimes_{j=1}^{n}V_{j}$
+\end_inset
+
+.
+ An important point is that the underlying field theory is a TQFT, and hence
+ a state evolves trivially on a cylinder unless it hits something, line
+ operators in the present case.
+ 
+\end_layout
+
+\begin_layout Standard
+Now suppose that each line operator depends on a continuous parameter which
+ is an element of some smooth manifold 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ This parameter is called 
+\emph on
+spectral parameter
+\emph default
+ of the lattice model.
+ We denote the spectral parameter of 
+\begin_inset Formula $\mathcal{L}_{i}$
+\end_inset
+
+ by 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+, then the R-matrix and the transfer matrix are rewritten by
+\begin_inset Formula 
+\begin{align}
+R_{ij} & \longrightarrow R_{ij}\left(u_{i},u_{j}\right),\\
+T_{i} & \longrightarrow T_{i}\left(u_{i};u_{1},\ldots,u_{n}\right).
+\end{align}
+
+\end_inset
+
+ To avoid clutter, we fix 
+\begin_inset Formula $u_{1},\ldots,u_{n}$
+\end_inset
+
+ and suppress them below.
+ A vertex model is said to be integrable if the transfer matrices 
+\begin_inset Formula $T_{i}\left(u_{i}\right)$
+\end_inset
+
+ are meromorphic functions of 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ and commute with each other:
+\begin_inset Formula 
+\begin{equation}
+\left[T_{i}\left(u_{i}\right),T_{j}\left(u_{j}\right)\right]=0,\quad u_{i}\neq u_{j}.
+\end{equation}
+
+\end_inset
+
+ When the transfer matrices with different spectral parameters commute,
+ we can find a series of mutually commuting operators on the total Hilbert
+ space 
+\begin_inset Formula $\bigotimes_{j=1}^{n}V_{j}$
+\end_inset
+
+ by Laurent expansion of the transfer matrix.
+ In particular, they commute with the transfer matrix, which means they
+ produce an infinite number of conserved quantities.
+ In fact, the commutativity of transfer matrix implies that one can find
+ the exact eigenvalues and eigenvectors of the transfer matrix, as we saw
+ in the Ising model in the previous section.
+ 
+\end_layout
+
+\begin_layout Standard
+The situation considered here, namely the addition of spectral parameters
+ and commuting transfer matrix, is naturally realized if the TQFT has 
+\begin_inset Quotes eld
+\end_inset
+
+extra dimensions.
+\begin_inset Quotes erd
+\end_inset
+
+ In this scenario, we really start with a higher-dimensional theory 
+\begin_inset Formula $\tilde{\mathsf{T}}$
+\end_inset
+
+ formulated on the product space 
+\begin_inset Formula $S\times T^{2}$
+\end_inset
+
+, which is topological on the torus 
+\begin_inset Formula $T^{2}$
+\end_inset
+
+ but not on 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ We wrap line operators 
+\begin_inset Formula $\mathcal{L}_{i}$
+\end_inset
+
+ around 
+\begin_inset Formula $\left\{ u_{i}\right\} \times C_{i}$
+\end_inset
+
+, where 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ are points on 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ If one can see only the torus 
+\begin_inset Formula $T^{2}$
+\end_inset
+
+ and is unaware of the extra dimensions 
+\begin_inset Formula $S$
+\end_inset
+
+, the theory seems to be the previous two-dimensional TQFT 
+\begin_inset Formula $\mathsf{T}\cong\tilde{\mathsf{T}}\left[S\right]$
+\end_inset
+
+ that has parameters taking values in 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ One finds that line operators 
+\begin_inset Formula $\mathcal{L}_{i}\left[u_{i}\right]$
+\end_inset
+
+ wrapping around 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ carry continuous parameters 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ in the seemingly two-dimensional theory, and the correlation function for
+ this configuration of line operators is given by the partition function
+ of a lattice model 
+\begin_inset Formula $\mathsf{L}\left(\tilde{\mathsf{T}}\left[S\right]\right)$
+\end_inset
+
+ defined on the lattice 
+\begin_inset Formula $\left\{ \mathcal{L}_{i}\left[u_{i}\right]\left(C_{i}\right)\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For a generic choice of 
+\begin_inset Formula $\left\{ u_{i}\right\} $
+\end_inset
+
+, the transfer matrices of the lattice model 
+\begin_inset Formula $\mathsf{L}\left(\tilde{\mathsf{T}}\left[S\right]\right)$
+\end_inset
+
+ commute since the two horizontal line operators in the above equation can
+ move freely and interchange their positions owing to the topological nature
+ along 
+\begin_inset Formula $T^{2}$
+\end_inset
+
+; no phase transition occurs when they pass each other as they do not meet
+ in the full spacetime 
+\begin_inset Formula $S\times T^{2}$
+\end_inset
+
+.
+ Thus, integrability follows from the existence of extra dimensions, whose
+ coordinates provide continuous spectral parameters.
+ 
+\end_layout
+
+\begin_layout Standard
+In fact, we can deduce integrability from another point of view.
+ By the same logic, we have the unitarity relation 
+\begin_inset Formula 
+\begin{equation}
+R_{ji}\left(u_{j},u_{i}\right)R_{ij}\left(u_{i},u_{j}\right)=\mathrm{id}_{V_{i}\otimes V_{j}},
+\end{equation}
+
+\end_inset
+
+ and the Yang-Baxter equation
+\begin_inset Formula 
+\begin{equation}
+R_{ij}\left(u_{i},u_{j}\right)R_{ik}\left(u_{i},u_{k}\right)R_{jk}\left(u_{j},u_{k}\right)=R_{jk}\left(u_{j},u_{k}\right)R_{ik}\left(u_{i},u_{k}\right)R_{ij}\left(u_{i},u_{j}\right),
+\end{equation}
+
+\end_inset
+
+ where the R-matrix 
+\begin_inset Formula $R_{ij}$
+\end_inset
+
+ acts on 
+\begin_inset Formula $V_{i}\otimes V_{j}$
+\end_inset
+
+ as an intertwiner and trivial on 
+\begin_inset Formula $V_{k}$
+\end_inset
+
+, etc.
+ From these two relations we can reproduce the commutativity of the transfer
+ matrix.
+ We should emphasize that the Yang-Baxter equation is a local condition.
+ When the Boltzmann weight locally satisfies the Yang-Baxter equation, it
+ extends to the commutativity of the transfer matrix and hence the integrability
+ of the model.
+ In this sense, the Yang-Baxter equation is the fundamental condition of
+ integrability of a lattice model.
+ 
+\end_layout
+
+\begin_layout Standard
+Before going into the discussion of brane construction, we would like to
+ generalize the above arguments further higher-dimensional situations.
+ First of all, replace the two-torus 
+\begin_inset Formula $T^{2}$
+\end_inset
+
+ with a general two-dimensional surface 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+, along which line operators are wrapped.
+ We now have 
+\begin_inset Formula $S\times\Sigma$
+\end_inset
+
+, and similarly to the above a lattice model is defined on 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ by line operators with spectral parameters.
+ Let us consider the case that we really have more extra dimensions and
+ a higher-dimensional theory is formulated on 
+\begin_inset Formula $S\times M\times\Sigma$
+\end_inset
+
+ , where 
+\begin_inset Formula $M$
+\end_inset
+
+ is some smooth manifold.
+ The line operators we had may descend from extended operators of dimension
+ greater than one.
+ Let 
+\begin_inset Formula $\mathsf{T}$
+\end_inset
+
+ again be the new higher-dimensional theory, and suppose that it is topological
+ on 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ and has extended operators 
+\begin_inset Formula $\mathcal{E}_{i}$
+\end_inset
+
+ whose codimension is greater than 
+\begin_inset Formula $\dim S$
+\end_inset
+
+.
+ Place 
+\begin_inset Formula $\mathcal{E}_{i}$
+\end_inset
+
+ on submanifolds of the form 
+\begin_inset Formula $\left\{ u_{i}\right\} \times N_{i}\times C_{i}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\mathsf{T}\left[S\times M\right]$
+\end_inset
+
+ is again regarded as a two-dimensional TQFT defined on 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+, the correlation function of the operators 
+\begin_inset Formula $\mathcal{E}_{i}$
+\end_inset
+
+ still should coincides with the partition function of an integrable lattice
+ model 
+\begin_inset Formula $\mathsf{L}\left(\mathsf{T}\left[S\times M\right]\right)$
+\end_inset
+
+.
+ The model is defined on the lattice formed by the line operators 
+\begin_inset Formula $\mathcal{E}_{i}\left[\left\{ u_{i}\right\} \times N_{i}\right]$
+\end_inset
+
+, which are the image of 
+\begin_inset Formula $\mathcal{E}_{i}$
+\end_inset
+
+ in the two-dimensional theory 
+\begin_inset Formula $\mathsf{T}\left[S\times M\right]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+As well as we can view the higher-dimensional theory as a two-dimensional
+ TQFT, we may also view it as a theory 
+\begin_inset Formula $\mathsf{T}\left[\Sigma\right]$
+\end_inset
+
+, which is a QFT on 
+\begin_inset Formula $S\times M$
+\end_inset
+
+ specified by the surface 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ In this theory, the operators 
+\begin_inset Formula $\mathcal{E}_{i}$
+\end_inset
+
+ are seen as extended operators 
+\begin_inset Formula $\mathcal{E}_{i}\left[C_{i}\right]$
+\end_inset
+
+ supported on 
+\begin_inset Formula $\left\{ u_{i}\right\} \times N_{i}$
+\end_inset
+
+.
+ Then, we have another relation
+\begin_inset Formula 
+\begin{equation}
+\left\langle \prod_{i=1}^{l}\mathcal{E}_{i}\left[C_{i}\right]\left(\left\{ u_{i}\right\} \times N_{i}\right)\right\rangle _{\mathsf{T}\left[\Sigma\right],S\times M}=Z_{\mathsf{L}\left(\mathsf{T}\left[S\times M\right]\right),\left\{ \mathcal{E}_{i}\left[\left\{ u_{i}\right\} \times N_{i}\right]\left(C_{i}\right)\right\} }.
+\end{equation}
+
+\end_inset
+
+ Thus, we finally arrive at a correspondence between a QFT on 
+\begin_inset Formula $S\times M$
+\end_inset
+
+ equipped with extended operators and an integrable lattice model on 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Brane construction and correspondence
+\end_layout
+
+\begin_layout Standard
+We have seen above that a lattice model is realized by a lattice of line
+ operators in a two-dimensional TQFT, and it is integrable if the TQFT is
+ embedded in higher dimensions and the line operators come from extended
+ operators localized in some directions of the extra dimensions.
+ Now we explain how to get such structures of correspondence of (previous
+ equation) using branes in string theory.
+ The brane construction here is still rather abstract.
+ A little bit more concrete setups will be given in next section.
+ The readers may skip this subsection for the first reading and jump to
+ the next section.
+ 
+\end_layout
+
+\begin_layout Standard
+Consider a type II string theory in a ten-dimensional spacetime 
+\begin_inset Formula 
+\begin{equation}
+\mathbb{R}^{4}\times T^{*}\Sigma\times\mathbb{R}^{2},
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is a two-dimensional surface embedded in 
+\begin_inset Formula $T^{*}\Sigma$
+\end_inset
+
+ as a zero section.
+ Introduce a stack of 
+\begin_inset Formula $N$
+\end_inset
+
+ NS5-branes supported on 
+\begin_inset Formula $\mathbb{R}^{4}\times\Sigma\times\left\{ 0\right\} $
+\end_inset
+
+ in this spacetime, and D
+\begin_inset Formula $p$
+\end_inset
+
+-branes D
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ on 
+\begin_inset Formula $\mathbb{R}^{p-1}\times\Sigma_{i}\times\left\{ 0\right\} $
+\end_inset
+
+ ending on the NS5-branes, where 
+\begin_inset Formula $\mathbb{R}^{p-1}$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+ (assuming 
+\begin_inset Formula $p\leq5$
+\end_inset
+
+) and 
+\begin_inset Formula $\Sigma_{i}$
+\end_inset
+
+ are surfaces in 
+\begin_inset Formula $T^{*}\Sigma$
+\end_inset
+
+ such that 
+\begin_inset Formula $\Sigma_{i}\cap\Sigma=C_{i}$
+\end_inset
+
+.
+ See figures.
+ Provided that 
+\begin_inset Formula $\Sigma_{i}$
+\end_inset
+
+ are suitably chosen, this brane system preserves four supercharges.
+ 
+\end_layout
+
+\begin_layout Standard
+The low-energy dynamics of the NS5-branes is governed by a six-dimensional
+ theory 
+\begin_inset Formula $\mathsf{T}_{\mathrm{NS5}}$
+\end_inset
+
+ on 
+\begin_inset Formula $\mathbb{R}^{4}\times\Sigma$
+\end_inset
+
+.
+ The theory 
+\begin_inset Formula $\mathsf{T}_{\mathrm{NS5}}$
+\end_inset
+
+ is depending on whether IIA or IIB theory we are considering: 
+\begin_inset Formula 
+\begin{align*}
+\textrm{IIA : } & \textrm{\ensuremath{\mathcal{N}=\left(2,0\right)} superconformal QFT of type \ensuremath{A_{N-1}}},\\
+\textrm{IIB : } & \textrm{\ensuremath{\mathcal{N}=\left(1,1\right)} super Yang-Mills theory with gauge group SU\ensuremath{\left(N\right)}}.
+\end{align*}
+
+\end_inset
+
+ The theory 
+\begin_inset Formula $\mathsf{T}_{\mathrm{NS5}}$
+\end_inset
+
+ is formulated on 
+\begin_inset Formula $\mathbb{R}^{4}\times\Sigma$
+\end_inset
+
+, with topological twist along 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ which breaks half of sixteen supercharges.
+ In this twisted theory, D
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ create 
+\begin_inset Formula $p$
+\end_inset
+
+-dimensional defects 
+\begin_inset Formula $\mathcal{E}_{\mathrm{D}p_{i}}$
+\end_inset
+
+ on 
+\begin_inset Formula $\mathbb{R}^{p-1}\times C_{i}$
+\end_inset
+
+, reducing the number of unbroken supercharges to four.
+ From the point of view of a four-dimensional observer, this brane configuration
+ gives half-BPS defects 
+\begin_inset Formula $\mathcal{E}_{\mathrm{D}p_{i}}\left[C_{i}\right]$
+\end_inset
+
+ in an 
+\begin_inset Formula $\mathcal{N}=2$
+\end_inset
+
+ theory 
+\begin_inset Formula $\mathsf{T}_{\mathrm{NS5}}\left[\Sigma\right]$
+\end_inset
+
+.
+ The total system is invariant under a U(
+\begin_inset Formula $1$
+\end_inset
+
+) R-symmetry originating from the rotational symmetry on the 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ factor of the ten-dimensional spacetime.
+\end_layout
+
+\begin_layout Standard
+Let us take a three-manifold 
+\begin_inset Formula $M$
+\end_inset
+
+ and (
+\begin_inset Formula $p-2$
+\end_inset
+
+)-submanifolds 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ of 
+\begin_inset Formula $M$
+\end_inset
+
+, and modify the above construction so that the world-volumes of the NS5-branes
+ and the D
+\begin_inset Formula $p$
+\end_inset
+
+-branes become 
+\begin_inset Formula $S^{1}\times M\times\Sigma$
+\end_inset
+
+ and 
+\begin_inset Formula $S^{1}\times N_{i}\times\Sigma_{i}$
+\end_inset
+
+, respectively.
+ At low energies, we get the same theory 
+\begin_inset Formula $\mathsf{T}_{\mathrm{NS5}}$
+\end_inset
+
+ formulated on 
+\begin_inset Formula $S^{1}\times M\times\Sigma$
+\end_inset
+
+ and defects 
+\begin_inset Formula $\mathcal{E}_{\mathrm{D}p_{i}}$
+\end_inset
+
+ located on 
+\begin_inset Formula $S^{1}\times N_{i}\times C_{i}$
+\end_inset
+
+.
+ In general, this modification completely breaks supersymmetry.
+ For certain choices of 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+, however, there is a string background in which a fraction of supersymmetry
+ is still preserved.
+ In such a background, the path integral computes the 
+\emph on
+supersymmetric index
+\emph default
+ of 
+\begin_inset Formula $\mathsf{T}_{\mathrm{NS5}}$
+\end_inset
+
+, defined with respect to the Hilbert space on 
+\begin_inset Formula $M\times\Sigma$
+\end_inset
+
+ in the presence of defects 
+\begin_inset Formula $\mathcal{E}_{\mathrm{D}p_{i}}$
+\end_inset
+
+ inserted on 
+\begin_inset Formula $N_{i}\times C_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A salient feature of supersymmetric indices is that they are protected against
+ continuous changes of various parameters of the theory.
+ This means that the index of our theory is invariant under deformations
+ of the geometric data of 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+, namely the metric on 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ and the shapes of 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+.
+ In other words, the theory 
+\begin_inset Formula $\mathsf{T}_{\mathrm{NS5}}$
+\end_inset
+
+ on 
+\begin_inset Formula $S^{1}\times M\times\Sigma$
+\end_inset
+
+ is topological on 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+, as far as the computation of the index is concerned.
+ 
+\end_layout
+
+\begin_layout Standard
+To relate the present setup to the one considered in the previous subsection,
+ we apply T-duality along 
+\begin_inset Formula $S^{1}$
+\end_inset
+
+.
+ It turns D
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ into D
+\begin_inset Formula $\left(p-1\right)$
+\end_inset
+
+-branes D
+\begin_inset Formula $\left(p-1\right)_{i}$
+\end_inset
+
+, localized at points 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ along the dual circle 
+\begin_inset Formula $\tilde{S}^{1}$
+\end_inset
+
+, while sending the NS5-branes to those in the other type II string theory.
+ The new NS5-branes produce the dual six-dimensional theory 
+\begin_inset Formula $\tilde{\mathsf{T}}_{\mathrm{NS5}}$
+\end_inset
+
+ on 
+\begin_inset Formula $\tilde{S}^{1}\times M\times\Sigma$
+\end_inset
+
+, and in this theory D
+\begin_inset Formula $\left(p-1\right)_{i}$
+\end_inset
+
+ create (
+\begin_inset Formula $p-1$
+\end_inset
+
+)-dimensional defects 
+\begin_inset Formula $\mathcal{E}_{\mathrm{D}\left(p-1\right)_{i}}$
+\end_inset
+
+ on 
+\begin_inset Formula $\left\{ u_{i}\right\} \times N_{i}\times C_{i}$
+\end_inset
+
+.
+ Thus we are in the situation studied in the last subsection, and the correlatio
+n function for this configuration coincides with the partition function
+ of an integrable lattice model: 
+\begin_inset Formula 
+\begin{equation}
+\left\langle \prod_{i=1}^{l}\mathcal{E}_{\mathrm{D}p_{i}}\left[C_{i}\right]\left(S^{1}\times N_{i}\right)\right\rangle _{\mathsf{T}_{\mathrm{NS5}}\left[\Sigma\right],S^{1}\times M}=Z_{\mathsf{L}\left(\tilde{\mathsf{T}}_{\mathrm{NS5}}\left[\tilde{S}^{1}\times M\right]\right),\left\{ \mathcal{E}_{\mathrm{D}\left(p-1\right)_{i}}\left[\left\{ u_{i}\right\} \times N_{i}\right]\left(C_{i}\right)\right\} }.
+\end{equation}
+
+\end_inset
+
+ Here the left-hand side is expressed in the original frame; it implicitly
+ depends on each spectral parameter 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ through the holonomy 
+\begin_inset Formula $\exp\left(2\pi\mathrm{i}u_{i}\right)$
+\end_inset
+
+ around 
+\begin_inset Formula $S^{1}$
+\end_inset
+
+ of the gauge field for the flavor symmetry U
+\begin_inset Formula $(1)_{i}$
+\end_inset
+
+ supported on D
+\begin_inset Formula $p_{i}$
+\end_inset
+
+.
+ The holonomy appears in the index as a refinement parameter, or 
+\emph on
+fugacity
+\emph default
+, associated with U
+\begin_inset Formula $(1)_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Defects as transfer matrices
+\end_layout
+
+\begin_layout Standard
+Finally, we apply the construction developed in the precious subsections
+ to the main theme of this paper; integrable lattice models and defects
+ as transfer matrices.
+ Let us consider 
+\begin_inset Formula $p=5$
+\end_inset
+
+ case of the brane construction in the last subsection.
+ To conform with the standard convention, take S-duality first and we still
+ have D5- and NS5-branes 
+\begin_inset Formula 
+\begin{align*}
+N\,\mathrm{D5} & \quad S^{1}\times M\times\Sigma,\\
+\mathrm{NS5}_{i} & \quad S^{1}\times N_{i}\times\Sigma_{i},
+\end{align*}
+
+\end_inset
+
+ where NS
+\begin_inset Formula $5_{i}$
+\end_inset
+
+ create defects 
+\begin_inset Formula $\mathcal{E}_{\mathrm{NS}5_{i}}$
+\end_inset
+
+ on 
+\begin_inset Formula $S^{1}\times N_{i}\times C_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+One should notice that in this setup we necessarily have 
+\begin_inset Formula $N_{i}=M$
+\end_inset
+
+ and thus the defects 
+\begin_inset Formula $\mathcal{E}_{\mathrm{NS}5_{i}}$
+\end_inset
+
+ fill the whole 
+\begin_inset Formula $S^{1}\times M$
+\end_inset
+
+, which produces a four-dimensional theory 
+\begin_inset Formula 
+\[
+\mathsf{T}_{\mathrm{D5NS5}}\left[\Sigma\right]
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula $\mathcal{N}=1$
+\end_inset
+
+ supersymmetry.
+ Then we now have 
+\begin_inset Formula 
+\begin{equation}
+\left\langle 1\right\rangle _{\mathsf{T}_{\mathrm{D5NS5}}\left[\Sigma\right],S^{1}\times M}=Z_{\mathsf{L}\left(\mathsf{T}_{\mathrm{D5NS5}}\left[S^{1}\times M\right]\right),\left\{ \mathcal{E}_{i}\left[S^{1}\times M\right]\left(C_{i}\right)\right\} }.
+\end{equation}
+
+\end_inset
+
+For example, when 
+\begin_inset Formula $M=S^{3}$
+\end_inset
+
+, the left-hand side is given by the supersymmetric index for 
+\begin_inset Formula $\mathcal{N}=1$
+\end_inset
+
+ theory and the right-hand side corresponds to the partition function of
+ Bazhanov-Sergeev integrable lattice model [Bazhanov-Sergeev, Spiridonov,
+ Yamazaki].
+ When 
+\begin_inset Formula $M=L\left(p,1\right)$
+\end_inset
+
+, lens space, the left-hand side is computed in [Yamazaki], which defines
+ a new integrable lattice model through this correspondence.
+ 
+\end_layout
+
+\begin_layout Standard
+The brane tiling construction of integrable lattice models can be enriched
+ by introduction of additional defects.
+ Besides the previously defined D5NS5-brane system, introduce a D3-brane
+ such as 
+\begin_inset Formula 
+\begin{align}
+\mathrm{D3} & \quad S^{1}\times N\times C\times\mathbb{R}_{+},\\
+\mathrm{D3'} & \quad S^{1}\times\left\{ 0\right\} \times C'\times\mathbb{R}^{2},
+\end{align}
+
+\end_inset
+
+ where 
+\begin_inset Formula $N$
+\end_inset
+
+ is a curve in 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $C,\,C'$
+\end_inset
+
+ are 1-cycles on 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ A single D3-brane insertion corresponds to a new oriented line in the integrabl
+e lattice model, which we represent by a dashed line.
+ Now that we have two kinds of lines, we can define three R-matrices: 
+\begin_inset Formula 
+\begin{equation}
+R=,\quad\,L=,\quad\,\mathcal{R}=.
+\end{equation}
+
+\end_inset
+
+ The middle one is usually called 
+\emph on
+L-operator
+\emph default
+.
+ Correspondingly, we have four Yang-Baxter equations, involving zero to
+ three dashed lines.
+ Those that involving one or two dashed line, 
+\begin_inset Formula 
+\begin{equation}
+RLL
+\end{equation}
+
+\end_inset
+
+ are called 
+\emph on
+RLL relations
+\emph default
+.
+ The effect of the insertion of such an additional defect on the lattice
+ model is seen in terms of the L-operator.
+ The neighborhood of the dashed line looks like 
+\begin_inset Formula 
+\begin{equation}
+transferfromL
+\end{equation}
+
+\end_inset
+
+This diagram shows that the defect acts on the lattice model by a transfer
+ matrix constructed from L-operators.
+ Thus, the insertion of a defect operator in four-dimensional theory is
+ mapped into lattice model side as the action of a transfer matrix constructed
+ from L-operators.
+ 
+\end_layout
+
+\begin_layout Standard
+What we would like to discuss in detail in the subsequent sections are the
+ introduction of a single D3-brane (equation of D3D3') to the D5NS5-brane
+ system, and clarify that the correspondence with the additional defects.
+ In the next two sections, we are considering the followings: 
+\end_layout
+
+\begin_layout Enumerate
+For the case of single D3, let 
+\begin_inset Formula $M=S^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\Sigma=T^{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $N=S^{1}$
+\end_inset
+
+.
+ Then the D3 creates a surface defect on 
+\begin_inset Formula $S^{1}\times S^{1}$
+\end_inset
+
+ and it acts on supersymmetric index as a transfer matrix in the corresponding
+ lattice model: 
+\begin_inset Formula 
+\begin{align}
+\left\langle 1\right\rangle _{\mathsf{T}_{\mathrm{D5NS5}}\left[\Sigma\right],S^{1}\times S^{3}} & =\mathcal{I}_{S^{1}\times S^{3}}\left(p,q,t\right),\\
+Z_{\mathsf{L}\left(\mathsf{T}_{\mathrm{D5NS5}}\left[S^{1}\times S^{3}\right]\right),\left\{ \mathcal{E}_{i}\left[S^{1}\times S^{3}\right]\left(C_{i}\right)\right\} } & =Z_{\mathrm{Bazhanov-Sergeev}},
+\end{align}
+
+\end_inset
+
+ the surface defect index is represented as a difference operator acting
+ on the original supersymmetric index [Gaiotto-Rastelli-Razamat, Gadde-Gukov],
+ 
+\begin_inset Formula 
+\begin{equation}
+\left\langle S_{\left(r,s\right)}\right\rangle _{\mathsf{T}_{\mathrm{D5NS5}}\left[\Sigma\right]}=\mathfrak{S}_{\left(r,s\right)}\mathcal{I}_{S^{1}\times S^{3}}\left(p,q,t\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For the case of single D3', let 
+\begin_inset Formula $M=\mathbb{R}^{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Sigma=T^{2}$
+\end_inset
+
+.
+ D3' creates a line defect wrapping 
+\begin_inset Formula $S^{1}$
+\end_inset
+
+ and it acts on quantum Hilbert space of a spin chain as a transfer matrix,
+ since now we have non-compact three-manifold 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+.
+ The line defect in the four-dimensional theory is realized as a Wilson-'t
+ Hooft line operator 
+\begin_inset Formula $T$
+\end_inset
+
+, and its magnetic and electric charge 
+\begin_inset Formula $\left(\mathbf{m},\mathbf{e}\right)$
+\end_inset
+
+ is specified by the one-cycle C' wrapping the torus 
+\begin_inset Formula $T^{2}$
+\end_inset
+
+.
+ As it turns out, the vacuum expectation values (vevs) of Wilson-'t Hooft
+ lines realize the deformation quantization of the Hitchin moduli space,
+ and are naturally quantized by the Weyl quantization: 
+\begin_inset Formula 
+\begin{equation}
+\textrm{Weyl quantization of }\left\langle T_{\left(\mathbf{m},\mathbf{e}\right)}\right\rangle =\textrm{trigonometric transfer matrix.}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

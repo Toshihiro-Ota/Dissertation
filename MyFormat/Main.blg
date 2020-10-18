@@ -1,0 +1,83 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Main.aux
+The style file: Sections/Common/utphys.bst
+Database file #1: Sections/Common/Ref.bib
+You're missing a field name---line 553 of file Sections/Common/Ref.bib
+ : 
+ : %       URL = {https://doi.org/10.1007/s002200050437},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 601 of file Sections/Common/Ref.bib
+ : 
+ : %       URL = {https://doi.org/10.1007/s002200050137},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 631 of file Sections/Common/Ref.bib
+ : 
+ : %       URL = {https://doi.org/10.1007/BF00420302},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 934 of file Sections/Common/Ref.bib
+ : 
+ : %volume = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1473 of file Sections/Common/Ref.bib
+ : 
+ : %      doi            = "10.1088/1126-6708/2008/07/089",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1487 of file Sections/Common/Ref.bib
+ : 
+ : %      pages          = "1200",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1598 of file Sections/Common/Ref.bib
+ : 
+ : %      pages          = "1200",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 55 entries,
+            2328 wiz_defined-function locations,
+            996 strings with 12872 characters,
+and the built_in function-call counts, 16395 in all, are:
+= -- 1650
+> -- 394
+< -- 0
++ -- 159
+- -- 104
+* -- 1611
+:= -- 1900
+add.period$ -- 63
+call.type$ -- 55
+change.case$ -- 60
+chr.to.int$ -- 0
+cite$ -- 55
+duplicate$ -- 905
+empty$ -- 1715
+format.name$ -- 104
+if$ -- 4241
+int.to.chr$ -- 0
+int.to.str$ -- 55
+missing$ -- 203
+newline$ -- 174
+num.names$ -- 55
+pop$ -- 282
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 616
+stack$ -- 0
+substring$ -- 911
+swap$ -- 438
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 153
+width$ -- 57
+write$ -- 434
+is.kanji.str$ -- 0
+(There were 7 error messages)
