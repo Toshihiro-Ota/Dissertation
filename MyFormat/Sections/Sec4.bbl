@@ -1,0 +1,9 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{Maruyoshi:2016caf}
+K.~Maruyoshi and J.~Yagi, ``{Surface defects as transfer matrices},''
+  \href{http://dx.doi.org/10.1093/ptep/ptw151}{{\em PTEP} {\bfseries 2016}
+  no.~11, (2016) 113B01}, \href{http://arxiv.org/abs/1606.01041}{{\ttfamily
+  arXiv:1606.01041 [hep-th]}}.
+
+\end{thebibliography}\endgroup
