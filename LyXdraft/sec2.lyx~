@@ -2926,13 +2926,13 @@ T_{i}==\mathrm{Tr}_{V_{i}}\left(R_{i,n}\circ_{V_{i}}\cdots\circ_{V_{i}}R_{i,1}\r
  
 \begin_inset Formula 
 \begin{equation}
-Z_{\mathsf{L}\left(\mathsf{T}\right),\left\{ \mathcal{L}_{i}\left(C_{i}\right)\right\} }=\mathrm{Tr}\left(T_{n+m}\cdots T_{n+1}\right),
+Z_{\mathsf{L}\left(\mathsf{T}\right),\left\{ \mathcal{L}_{i}\left(C_{i}\right)\right\} }=\mathrm{Tr}_{\mathcal{H}}\left(T_{n+m}\cdots T_{n+1}\right),
 \end{equation}
 
 \end_inset
 
  where the trace is taken over the total Hilbert space 
-\begin_inset Formula $\bigotimes_{j=1}^{n}V_{j}$
+\begin_inset Formula $\mathcal{H}:=\bigotimes_{j=1}^{n}V_{j}$
 \end_inset
 
 .

@@ -722,17 +722,6 @@ d, also follows from this equality.
  out in [Hanany-Vegh].
 \end_layout
 
-\begin_layout Standard
-Based on these observations, in the next subsection we argue that given
- the four-manifold 
-\begin_inset Formula $S^{1}\times S^{3}$
-\end_inset
-
- the supersymmtric index indeed matches the partition function of the integrable
- lattice model called Bazhanov-Sergeev model.
- 
-\end_layout
-
 \begin_layout Subsubsection
 Supersymmetric index on 
 \begin_inset Formula $S^{1}\times S^{3}$
