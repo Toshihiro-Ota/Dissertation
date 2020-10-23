@@ -579,9 +579,9 @@ The unitarity relations are satisfied if the contributions to the index
  are properly normalized.
  For example, consider the relation
 \begin_inset Formula 
-\[
+\begin{equation}
 unitarityrelation
-\]
+\end{equation}
 
 \end_inset
 
@@ -613,9 +613,9 @@ delta function
  that we cancel the contributions from the surviving baryon and anti-baryon.
  Another unitarity relation
 \begin_inset Formula 
-\[
+\begin{equation}
 anotherunitarity
-\]
+\end{equation}
 
 \end_inset
 
@@ -646,9 +646,9 @@ The Yang-Baxter equation with three zigzag paths is harder to understand,
  To circumvent the difficulty, we take a pair of zigzag paths of different
  types and think of it as a single line:
 \begin_inset Formula 
-\[
+\begin{equation}
 doubleandsinglelines
-\]
+\end{equation}
 
 \end_inset
 
@@ -663,9 +663,9 @@ doubleandsinglelines
 
  background, we can make the R-matrix
 \begin_inset Formula 
-\[
+\begin{equation}
 R-matrix
-\]
+\end{equation}
 
 \end_inset
 
@@ -688,9 +688,9 @@ Alternatively, we can place these lines in an
  background and force them to exchange their constituent zigzag paths as
  they cross:
 \begin_inset Formula 
-\[
+\begin{equation}
 anotherR-matrix
-\]
+\end{equation}
 
 \end_inset
 
@@ -699,9 +699,9 @@ anotherR-matrix
  The corresponding Yang-Baxter equation, after cancellation of some factors
  with the help of the unitarity relation (eq:unitarity), reads
 \begin_inset Formula 
-\[
+\begin{equation}
 Seibergduality
-\]
+\end{equation}
 
 \end_inset
 
@@ -722,12 +722,265 @@ d, also follows from this equality.
  out in [Hanany-Vegh].
 \end_layout
 
+\begin_layout Standard
+Based on these observations, in the next subsection we argue that given
+ the four-manifold 
+\begin_inset Formula $S^{1}\times S^{3}$
+\end_inset
+
+ the supersymmtric index indeed matches the partition function of the integrable
+ lattice model called Bazhanov-Sergeev model.
+ 
+\end_layout
+
 \begin_layout Subsubsection
 Supersymmetric index on 
 \begin_inset Formula $S^{1}\times S^{3}$
 \end_inset
 
  and an integrable lattice model
+\end_layout
+
+\begin_layout Standard
+Now we focus on the case 
+\begin_inset Formula $M=S^{3}$
+\end_inset
+
+, in which geometry the supersymmetric index is well-studied from the work
+ by [Romelsberger, Kinney et al, Festuccia-Seiberg].
+ Parametrize 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+ by two complex variables 
+\begin_inset Formula $\left(\zeta_{p},\zeta_{q}\right)$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $\left|\zeta_{p}\right|^{2}+\left|\zeta_{q}\right|^{2}=1$
+\end_inset
+
+, and denote the isometry groups acting on 
+\begin_inset Formula $\zeta_{p}$
+\end_inset
+
+ and 
+\begin_inset Formula $\zeta_{q}$
+\end_inset
+
+ by U(1)p and U(1)q, respectively.
+ We take 
+\begin_inset Formula $S^{1}\times S^{3}$
+\end_inset
+
+ to be a twisted product; we prepare a trivial 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+-fibration over an interval 
+\begin_inset Formula $[0,\beta]$
+\end_inset
+
+ and identify the fibers at the ends of the base using an isometry 
+\begin_inset Formula $\left(e^{i\theta_{p}},e^{i\theta_{q}}\right)\in U(1)_{p}\times U(1)_{q}$
+\end_inset
+
+.
+ On this spacetime, the partition function of the quiver gauge theory realized
+ by a brane tiling gives the supersymmetric index refined by the isometries
+ and the flavor symmetries.
+ 
+\end_layout
+
+\begin_layout Standard
+The index is defined as a trace of refined Boltzmann weight over the space
+ of states on 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+, which is computed exactly using state-operator correspondence in conformal
+ case or by localization of the path integral.
+ 
+\begin_inset Formula 
+\begin{equation}
+superconformalindex
+\end{equation}
+
+\end_inset
+
+ The result is generically given by a combination of vector and chiral multiplet
+s included in the theory.
+ These multiplets are expressed in terms of the elliptic gamma function
+ 
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left(z;p,q\right)=\prod_{j,k=0}^{\infty}\frac{1-z^{-1}p^{j+1}q^{k+1}}{1-zp^{j}q^{k}}
+\end{equation}
+
+\end_inset
+
+ with 
+\begin_inset Formula $p=e^{-\beta+i\theta_{p}}$
+\end_inset
+
+ and 
+\begin_inset Formula $q=e^{-\beta+i\theta_{q}}$
+\end_inset
+
+.
+ To write down the formula, let 
+\begin_inset Formula $a_{i}=e^{2\pi iu_{i}}$
+\end_inset
+
+ be the fugacity for the flavor group U(1)i associated with the 
+\begin_inset Formula $i$
+\end_inset
+
+th zigzag path.
+ Also, we introduce the Pochhammar symble 
+\begin_inset Formula $\left(z;q\right)_{\infty}=\prod_{k=0}^{\infty}\left(1-q^{k}z\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A bifundamental chiral multiplet with R-charge 
+\begin_inset Formula $R$
+\end_inset
+
+ and U(1)i charge 
+\begin_inset Formula $F_{i}$
+\end_inset
+
+ contributes to the index by the factor
+\begin_inset Formula 
+\begin{equation}
+\prod_{I,J=1}^{N}\Gamma\left(\left(pq\right)^{R/2}\prod_{i}a_{i}^{F_{i}}\frac{w_{I}}{z_{J}};p,q\right),
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $z_{J}$
+\end_inset
+
+ are fugacities for the node at the tail of the arrow and 
+\begin_inset Formula $w_{I}$
+\end_inset
+
+ are those for the node at the tip.
+ To find the full index, we take the product of the contributions from all
+ arrows, and then for each gauge node, integrate over its fugacities 
+\begin_inset Formula $z_{I}$
+\end_inset
+
+ with the measure
+\begin_inset Formula 
+\begin{equation}
+vector
+\end{equation}
+
+\end_inset
+
+ The integration contour is the unit circle for each fugacity.
+ 
+\end_layout
+
+\begin_layout Standard
+The unitarity relation (eq:unitarity) is satisfied if we normalize the contribut
+ion from each arrow with 
+\begin_inset Formula $R=0$
+\end_inset
+
+ by dividing it by the factor 
+\begin_inset Formula $\Gamma(\prod_{i}a_{i}^{NF_{i}};p,q)$
+\end_inset
+
+, which cancels the contribution from the corresponding baryon.
+ The Yang-Baxter equation (eq:yang-baxter) is an integral identity obeyed
+ by the elliptic gamma function [Dolan-Osborn, Spiridonov, Rains].
+ 
+\end_layout
+
+\begin_layout Standard
+There are two circles in 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+ around which we can place half-BPS surface defects without breaking the
+ isometries, namely 
+\begin_inset Formula $\left\{ \zeta_{p}=0\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ \zeta_{q}=0\right\} $
+\end_inset
+
+.
+ Accordingly, dashed lines come in two types, related by an interchange
+ of 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ If a dashed line is in an 
+\begin_inset Formula $n$
+\end_inset
+
+-dimensional representation, the L-operator in an 
+\begin_inset Formula $\left(N,-1\right)$
+\end_inset
+
+ background 
+\begin_inset Formula 
+\begin{equation}
+L=
+\end{equation}
+
+\end_inset
+
+may be represented as an 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ matrix, whose entries are difference operators acting on the fugacities
+ for the flavor node associated with the 
+\begin_inset Formula $\left(N,0\right)$
+\end_inset
+
+ region below the dashed line.
+ It satisfies the RLL relation with the R-matrix (eq:R-matrix) This R-matrix
+ defines the Bazhanov-Sergeev model of type SU(N) [Bazhanov-Sergeev].
+ 
+\end_layout
+
+\begin_layout Standard
+For the fundamental representation of SU(2), the above L-operator is essentially
+ identified with Sklyanin's L-operator, which satisfies the RLL relation
+ with Baxter's R-matrix for the eight-vertex model and generates the so-called
+ Sklyanin algebra.
+ For the fundamental representation of SU(N) with general 
+\begin_inset Formula $N$
+\end_inset
+
+, we get the L-operator for Belavin's elliptic R-matrix [Belavin].
+ If instead placed in an 
+\begin_inset Formula $\left(N,0\right)$
+\end_inset
+
+ background, the L-operator gives a representation of Felder's elliptic
+ quantum group for 
+\begin_inset Formula $\mathfrak{sl}_{N}$
+\end_inset
+
+.
+ For the details, see [Yagi].
 \end_layout
 
 \begin_layout Subsection
