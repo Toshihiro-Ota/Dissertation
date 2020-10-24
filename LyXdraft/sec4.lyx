@@ -132,10 +132,6 @@ Abstract.
 Surface defects as transfer matrices
 \end_layout
 
-\begin_layout Subsection
-Brane tilings and integrable lattice models 
-\end_layout
-
 \begin_layout Standard
 In this section, we apply the general construction of integrable lattice
  models from branes in string theory to the simplest case of the so-called
@@ -149,7 +145,7 @@ In this section, we apply the general construction of integrable lattice
 \end_inset
 
 , on which quiver gauge theories are defined, the path integral of the twisted
- partition function of the theory computes supersymmetric index.
+ partition function of the theory computes the supersymmetric index.
  We first explain the correspondence between the supersymmetric index and
  the partition function of two-dimensional integrable lattice model.
  Then we proceed to the additional surface defects in the gauge theory side.
@@ -157,6 +153,10 @@ In this section, we apply the general construction of integrable lattice
  and they are identified with the transfer matrices of the corresponding
  integrable lattice model.
  
+\end_layout
+
+\begin_layout Subsection
+Brane tilings and integrable lattice models 
 \end_layout
 
 \begin_layout Standard
@@ -167,9 +167,9 @@ In order to give the general argument of the correspondence, let me briefly
 brane tilings
 \emph default
 .
- For more details, the reader should be referred to [Hanany et al, Kennaway,
- Yamazaki].
- Recall the five-brane configuration given in the last part of the previous
+ For more details, the reader should be referred to the original paper and
+ the excellent reviews [Hanany et al, Kennaway, Yamazaki].
+ Recall the 5-brane configuration given in the last part of the previous
  section (equation of D5NS5), 
 \begin_inset Formula 
 \begin{align*}
@@ -197,7 +197,7 @@ For such a configuration, what one needs to notice is that when an NS5-brane
 \begin_inset Formula $\left(N,-1\right)$
 \end_inset
 
- 5-brane , depending on the relative positions of the branes; see figure.
+ 5-brane, depending on the relative positions of the branes; see figure.
  Therefore, the extended defects 
 \begin_inset Formula $\mathcal{E}_{\mathrm{NS5}_{i}}$
 \end_inset
@@ -322,7 +322,7 @@ Each unshaded region supports
 \begin_inset Formula $N$
 \end_inset
 
-) flavor symmetry; quiver notation, we represent a dynamical vector multiplet
+) flavor symmetry; in quiver notation, we represent a dynamical vector multiplet
  by a gauge node (circle) and a non-dynamical one by a flavor node (square).
  From open strings stretched between two unshaded regions (namely ending
  on 
@@ -335,9 +335,9 @@ Each unshaded region supports
  the other.
  We write it by an arrow between the two nodes: 
 \begin_inset Formula 
-\[
-bifundamental
-\]
+\begin{equation}
+bifundamental\label{eq:bifund}
+\end{equation}
 
 \end_inset
 
@@ -382,7 +382,16 @@ Each NS5
 \begin_inset Formula $F_{i}$
 \end_inset
 
- of U(1)i can be normalized in such a way that the arrow in (eq:bifundamental)
+ of U(1)i can be normalized in such a way that the arrow in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:bifund"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
  has 
 \begin_inset Formula $F_{i}=-1$
 \end_inset
@@ -529,7 +538,7 @@ From the supersymmetric index of the four-dimensional
 
 \begin_layout Standard
 If the theory is described by a quiver, translation between the gauge theory
- and the lattice model goes as follows [Yamazaki].
+ and the lattice model goes as follows [Yamazaki^2].
  Nodes are interpreted as spin sites.
  For each flavor node, we can turn on a holonomy of the associated gauge
  field.
@@ -580,7 +589,7 @@ The unitarity relations are satisfied if the contributions to the index
  For example, consider the relation
 \begin_inset Formula 
 \begin{equation}
-unitarityrelation
+unitarityrelation\label{eq:unitarity_delta}
 \end{equation}
 
 \end_inset
@@ -594,6 +603,11 @@ delta function
 \end_inset
 
  that equates two flavor nodes when one of them is gauged.
+ The precise meaning will be given for the 
+\begin_inset Formula $S^{1}\times S^{3}$
+\end_inset
+
+ case below.
  The theory on the left-hand side is SQCD with 
 \begin_inset Formula $N$
 \end_inset
@@ -664,7 +678,7 @@ doubleandsinglelines
  background, we can make the R-matrix
 \begin_inset Formula 
 \begin{equation}
-R-matrix
+R-matrix\label{eq:R_N-1}
 \end{equation}
 
 \end_inset
@@ -689,7 +703,7 @@ Alternatively, we can place these lines in an
  they cross:
 \begin_inset Formula 
 \begin{equation}
-anotherR-matrix
+anotherR-matrix\label{eq:R_N0}
 \end{equation}
 
 \end_inset
@@ -697,7 +711,17 @@ anotherR-matrix
  This R-matrix leads to an IRF model described by a quiver with triangles
  of arrows, as shown in figure.
  The corresponding Yang-Baxter equation, after cancellation of some factors
- with the help of the unitarity relation (eq:unitarity), reads
+ with the help of the unitarity relation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:unitarity_delta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, reads
 \begin_inset Formula 
 \begin{equation}
 Seibergduality
@@ -716,10 +740,19 @@ Seibergduality
  flavors, so their indices are indeed equal.
  The Yang-Baxter equation in the lattice model in this case is hence also
  identified with the Seiberg duality in gauge theory side.
- The Yang-Baxter equation for the R-matrix (eq:R-matrix), though more complicate
-d, also follows from this equality.
- The relation between the Yang-Baxter move and Seiberg duality was pointed
- out in [Hanany-Vegh].
+ The Yang-Baxter equation for the R-matrix 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:R_N-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, though more complicated, also follows from this equality.
+ The relation between the Yang-Baxter move and Seiberg duality was first
+ pointed out in [Hanany-Vegh] and established in [Yamazaki].
 \end_layout
 
 \begin_layout Standard
@@ -802,14 +835,14 @@ The index is defined as a trace of refined Boltzmann weight over the space
  case or by localization of the path integral.
  
 \begin_inset Formula 
-\begin{equation}
+\[
 superconformalindex
-\end{equation}
+\]
 
 \end_inset
 
- The result is generically given by a combination of vector and chiral multiplet
-s included in the theory.
+The result is generically given by a combination of vector and chiral multiplets
+ included in the theory.
  These multiplets are expressed in terms of the elliptic gamma function
  
 \begin_inset Formula 
@@ -819,7 +852,7 @@ s included in the theory.
 
 \end_inset
 
- with 
+with 
 \begin_inset Formula $p=e^{-\beta+i\theta_{p}}$
 \end_inset
 
@@ -900,8 +933,17 @@ Gauge/YBEdictionary
 \end_layout
 
 \begin_layout Standard
-The unitarity relation (eq:unitarity) is satisfied if we normalize the contribut
-ion from each arrow with 
+The unitarity relation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:unitarity_delta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is satisfied if we normalize the contribution from each arrow with 
 \begin_inset Formula $R=0$
 \end_inset
 
@@ -966,8 +1008,18 @@ may be represented as an
 \end_inset
 
  region below the dashed line.
- It satisfies the RLL relation with the R-matrix (eq:R-matrix) This R-matrix
- defines the Bazhanov-Sergeev model of type SU(N) [Bazhanov-Sergeev].
+ It satisfies the RLL relation with the R-matrix 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:R_N-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ This R-matrix defines the Bazhanov-Sergeev model of type SU(N) [Bazhanov-Sergee
+v].
  
 \end_layout
 
@@ -994,7 +1046,382 @@ For the fundamental representation of SU(2), the above L-operator is essentially
  For the details, see [Yagi].
 \end_layout
 
+\begin_layout Subsubsection*
+Index on 
+\begin_inset Formula $S^{1}\times S^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Building blocks of 4d 
+\begin_inset Formula $\mathcal{N}=1$
+\end_inset
+
+ supersymmetric quiver gauge theories are vector multiplets and bifundamental
+ chiral multiplets.
+ A vector multiplet is present at a gauge node.
+ A bifundamental chiral multiplet has two flavor groups, say SU(N)z and
+ SU(N)w.
+\end_layout
+
+\begin_layout Standard
+Given a theory 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ with flavor group SU(N)w and another theory 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ with flavor group SU(N)w', we can couple them to obtain a new theory 
+\begin_inset Formula $\left(\mathcal{T}\times\mathcal{T}'\right)/SU(N)_{z}$
+\end_inset
+
+ by gauging the diagonal subgroup SU(N)z of 
+\begin_inset Formula $SU(N)_{w}\times SU(N)_{w'}$
+\end_inset
+
+.
+ To construct a quiver gauge theory, we take a number of bifundamental chiral
+ multiplets and couple them by gauging all or part of the flavor nodes.
+ 
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $\mathcal{N}=1$
+\end_inset
+
+ quiver gauge theories 
+\begin_inset Formula $S^{1}\times S^{3}$
+\end_inset
+
+, the index is defined by the trace
+\begin_inset Formula 
+\begin{equation}
+\mathcal{I}\left(p,q,\left\{ a_{i}\right\} \right)=\mathrm{Tr}_{\mathcal{H}_{S^{3}}}\left(\left(-1\right)^{F}p^{j_{1}+j_{2}+R/2}q^{j_{1}-j_{2}+R/2}\prod_{i}a_{i}^{F_{i}}\right),
+\end{equation}
+
+\end_inset
+
+taken over the space 
+\begin_inset Formula $\mathcal{H}_{S^{3}}$
+\end_inset
+
+ of states on 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+.
+ Here 
+\begin_inset Formula $\left(-1\right)^{F}$
+\end_inset
+
+ is the fermion parity, and 
+\begin_inset Formula $j_{1},\,j_{2}$
+\end_inset
+
+ are generators of the maximal torus 
+\begin_inset Formula $U(1)_{1}\times U(1)_{2}$
+\end_inset
+
+ of the isometry group 
+\begin_inset Formula $Spin(4)\simeq SU(2)_{1}\times SU(2)_{2}$
+\end_inset
+
+ of 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+, 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+ is the R-charge, 
+\begin_inset Formula $F_{i}$
+\end_inset
+
+ is the charge of U(1)i
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Formula $p,\,q$
+\end_inset
+
+ are complex parameters.
+ 
+\end_layout
+
+\begin_layout Standard
+The index 
+\begin_inset Formula $\mathcal{I}_{\mathcal{T}}$
+\end_inset
+
+ of a 4d 
+\begin_inset Formula $\mathcal{N}=1$
+\end_inset
+
+ theory 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ with flavor group 
+\begin_inset Formula $SU(N)z$
+\end_inset
+
+ is a symmetric meromorphic function of the fugacities 
+\begin_inset Formula $z_{1},\ldots,z_{N}$
+\end_inset
+
+.
+ This symmetric property reflects the gauge invariance of the index.
+ At the level of the index, gauging of a flavor group is realized by introductio
+n of the corresponding vector multiplet and integration over its fugacities.
+ In particular 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{I}_{\left(\mathcal{T}\times\mathcal{T}'\right)/SU(N)_{z}}=\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}\left(z\right)\mathcal{I}_{\mathcal{T}}\left(z\right)\mathcal{I}_{\mathcal{T}'}\left(z\right),
+\end{equation}
+
+\end_inset
+
+ with the integration performed over the unit circle 
+\begin_inset Formula $\mathbb{T}$
+\end_inset
+
+ for each variable 
+\begin_inset Formula $z_{I}$
+\end_inset
+
+.
+ The index 
+\begin_inset Formula $\mathcal{I}_{\mathcal{T}}\left(z\right)$
+\end_inset
+
+ of the vector multiplet is given by elliptic gamma functions: 
+\begin_inset Formula 
+\begin{equation}
+z=\mathcal{I}_{\mathcal{T}}\left(z;p,q\right)=\frac{\left(p;p\right)_{\infty}^{N-1}\left(q;q\right)_{\infty}^{N-1}}{N!}\prod_{I,J=1(I\neq J)}^{N}\frac{1}{\Gamma\left(z_{I/z_{J}};p,q\right)}.
+\end{equation}
+
+\end_inset
+
+ See appendix ?? for the definition of the elliptic gamma function and various
+ identities it satisfies.
+ From now on we fix 
+\begin_inset Formula $p.\,q$
+\end_inset
+
+ and omit them from the notation unless needed.
+ 
+\end_layout
+
+\begin_layout Standard
+The index of a bifundamental chiral multiplet with fugacity 
+\begin_inset Formula $a$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\begin{equation}
+a=\mathcal{I}_{B}\left(z,w;a\right)=\prod_{I,J=1}^{N}\Gamma\left(a\frac{w_{I}}{z_{J}}\right).
+\end{equation}
+
+\end_inset
+
+ This function satisfies 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{I}_{B}\left(z,w;a\right)\mathcal{I}_{B}\left(w,z;\frac{pq}{a}\right)=1.
+\end{equation}
+
+\end_inset
+
+ This identity says that as far as the index is concerned, we can cancel
+ a pair of arrows making a loop if their R-charges add up to 
+\begin_inset Formula $2$
+\end_inset
+
+ and flavor charges add up to 
+\begin_inset Formula $0$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+a=.
+\end{equation}
+
+\end_inset
+
+ Physically, the reason is that we can turn on mass term for such a pair.
+ The index is invariant under this deformation, and the bifundamental chiral
+ multiplets decouple from the theory if we send the mass to infinity, leaving
+ a trivial contribution to the index.
+ We will make use of this identity frequently.
+ 
+\end_layout
+
+\begin_layout Standard
+Another useful fact is that if we define the 
+\begin_inset Quotes eld
+\end_inset
+
+delta function
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+deltafunction
+\end{equation}
+
+\end_inset
+
+ by the relation
+\begin_inset Formula 
+\begin{equation}
+\mathcal{I}_{\mathcal{T}}\left(w\right)=\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}\left(z\right)\mathcal{I}_{\mathcal{T}}\left(z\right)delta,
+\end{equation}
+
+\end_inset
+
+ then we have 
+\begin_inset Formula 
+\begin{align}
+a-a^{-1} & =\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dx_{I}}{2\pi ix_{I}}\mathcal{I}_{V}\left(x\right)\mathcal{I}_{B}\left(z,x;a\right)\mathcal{I}_{B}\left(x,w;a^{-1}\right)\nonumber \\
+ & =\Gamma\left(a^{\pm N}\right)delta.
+\end{align}
+
+\end_inset
+
+This is a consequence of confinement and chiral symmetry breaking [Seiberg,
+ Spiridonov-Vartanov].
+ At low energies the theory on the left-hand side is described by the mesons
+ and the baryons.
+ It has a vacuum in which the mesons take nonzero expectation values and
+ the flavor symmetry 
+\begin_inset Formula $SU(N)_{w}\times SU(N)_{z}$
+\end_inset
+
+ is broken to the diagonal subgroup.
+ In this vacuum the fugacities 
+\begin_inset Formula $w$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+ are identified, so we get the quiver on the second line.
+ The 
+\begin_inset Formula $\Gamma\left(a^{\pm N}\right):=\Gamma\left(a^{N}\right)\Gamma\left(a^{-N}\right)$
+\end_inset
+
+ is the contribution from the baryons.
+ 
+\end_layout
+
+\begin_layout Standard
+We can readily write down the formula for the index of a general quiver
+ gauge theory.
+ For simplicity, suppose that the theory is described by a quiver that contains
+ no flavor node.
+ Then, the index is computed by 
+\begin_inset Formula 
+\begin{equation}
+\prod_{z}\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}\left(z\right)\prod_{x\rightarrow y}\mathcal{I}_{B}\left(x,y\right),\label{eq:fullindex}
+\end{equation}
+
+\end_inset
+
+ where the two products are taken over all nodes and all arrows, respectively.
+ the index is a function of the parameters 
+\begin_inset Formula $p,\,q$
+\end_inset
+
+ and the flavor fugacities 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+, which are suppressed in the above expression.
+ If the quiver contains flavor nodes, the index is also a function of their
+ fugacities.
+ 
+\end_layout
+
+\begin_layout Standard
+In the expression of the supersymmetric index 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fullindex"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, it is manifest that the index of a quiver gauge theory may be interpreted
+ as the partition function of a statistical mechanical model with continuous
+ spins.
+ Indeed, this formula precisely computes the partition function of a spin
+ model in which spins are placed at the gauge nodes.
+ The spin variables at 
+\begin_inset Formula $z$
+\end_inset
+
+ are the fugacities 
+\begin_inset Formula $z_{1},\ldots,z_{N}$
+\end_inset
+
+, and they interact among themselves as well as with spins at nearest-neighbor
+ nodes, namely those connected by arrows.
+ The Boltzmann weights for the self-interaction and the nearest-neighbor
+ interaction are 
+\begin_inset Formula $\mathcal{I}_{V}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{I}_{B}$
+\end_inset
+
+, respectively.
+ 
+\end_layout
+
+\begin_layout Standard
+Surprisingly, the quantities in 4d gauge theories have one-to-one correspondence
+ in the lattice model side.
+ The dictionary is given in Table and such a correspondence is called 
+\emph on
+Gauge/YBE correspondence
+\emph default
+.
+ 
+\end_layout
+
 \begin_layout Subsection
+Surface defects as transfer matrices
+\end_layout
+
+\begin_layout Subsubsection
+Surface defects and L-operators
+\end_layout
+
+\begin_layout Subsubsection
+Fundamental representation of SU(2)
+\end_layout
+
+\begin_layout Subsubsection
 Surface defects in 
 \begin_inset Formula $A_{1}$
 \end_inset
@@ -1004,14 +1431,6 @@ Surface defects in
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsubsection
-Surface defects and L-operators
-\end_layout
-
-\begin_layout Subsubsection
-Surface defects as transfer matrices
 \end_layout
 
 \end_body
