@@ -132,10 +132,6 @@ Abstract.
 Surface defects as transfer matrices
 \end_layout
 
-\begin_layout Subsection
-Brane tilings and integrable lattice models 
-\end_layout
-
 \begin_layout Standard
 In this section, we apply the general construction of integrable lattice
  models from branes in string theory to the simplest case of the so-called
@@ -149,7 +145,7 @@ In this section, we apply the general construction of integrable lattice
 \end_inset
 
 , on which quiver gauge theories are defined, the path integral of the twisted
- partition function of the theory computes supersymmetric index.
+ partition function of the theory computes the supersymmetric index.
  We first explain the correspondence between the supersymmetric index and
  the partition function of two-dimensional integrable lattice model.
  Then we proceed to the additional surface defects in the gauge theory side.
@@ -157,6 +153,10 @@ In this section, we apply the general construction of integrable lattice
  and they are identified with the transfer matrices of the corresponding
  integrable lattice model.
  
+\end_layout
+
+\begin_layout Subsection
+Brane tilings and integrable lattice models 
 \end_layout
 
 \begin_layout Standard
@@ -167,9 +167,9 @@ In order to give the general argument of the correspondence, let me briefly
 brane tilings
 \emph default
 .
- For more details, the reader should be referred to [Hanany et al, Kennaway,
- Yamazaki].
- Recall the five-brane configuration given in the last part of the previous
+ For more details, the reader should be referred to the original paper and
+ the excellent reviews [Hanany et al, Kennaway, Yamazaki].
+ Recall the 5-brane configuration given in the last part of the previous
  section (equation of D5NS5), 
 \begin_inset Formula 
 \begin{align*}
@@ -197,7 +197,7 @@ For such a configuration, what one needs to notice is that when an NS5-brane
 \begin_inset Formula $\left(N,-1\right)$
 \end_inset
 
- 5-brane , depending on the relative positions of the branes; see figure.
+ 5-brane, depending on the relative positions of the branes; see figure.
  Therefore, the extended defects 
 \begin_inset Formula $\mathcal{E}_{\mathrm{NS5}_{i}}$
 \end_inset
@@ -322,7 +322,7 @@ Each unshaded region supports
 \begin_inset Formula $N$
 \end_inset
 
-) flavor symmetry; quiver notation, we represent a dynamical vector multiplet
+) flavor symmetry; in quiver notation, we represent a dynamical vector multiplet
  by a gauge node (circle) and a non-dynamical one by a flavor node (square).
  From open strings stretched between two unshaded regions (namely ending
  on 
@@ -335,9 +335,9 @@ Each unshaded region supports
  the other.
  We write it by an arrow between the two nodes: 
 \begin_inset Formula 
-\[
-bifundamental
-\]
+\begin{equation}
+bifundamental\label{eq:bifund}
+\end{equation}
 
 \end_inset
 
@@ -382,7 +382,16 @@ Each NS5
 \begin_inset Formula $F_{i}$
 \end_inset
 
- of U(1)i can be normalized in such a way that the arrow in (eq:bifundamental)
+ of U(1)i can be normalized in such a way that the arrow in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:bifund"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
  has 
 \begin_inset Formula $F_{i}=-1$
 \end_inset
@@ -529,7 +538,7 @@ From the supersymmetric index of the four-dimensional
 
 \begin_layout Standard
 If the theory is described by a quiver, translation between the gauge theory
- and the lattice model goes as follows [Yamazaki].
+ and the lattice model goes as follows [Yamazaki^2].
  Nodes are interpreted as spin sites.
  For each flavor node, we can turn on a holonomy of the associated gauge
  field.
@@ -580,7 +589,7 @@ The unitarity relations are satisfied if the contributions to the index
  For example, consider the relation
 \begin_inset Formula 
 \begin{equation}
-unitarityrelation
+unitarityrelation\label{eq:unitarity_delta}
 \end{equation}
 
 \end_inset
@@ -594,6 +603,11 @@ delta function
 \end_inset
 
  that equates two flavor nodes when one of them is gauged.
+ The precise meaning will be given for the 
+\begin_inset Formula $S^{1}\times S^{3}$
+\end_inset
+
+ case below.
  The theory on the left-hand side is SQCD with 
 \begin_inset Formula $N$
 \end_inset
@@ -664,7 +678,7 @@ doubleandsinglelines
  background, we can make the R-matrix
 \begin_inset Formula 
 \begin{equation}
-R-matrix
+R-matrix\label{eq:R_N-1}
 \end{equation}
 
 \end_inset
@@ -689,7 +703,7 @@ Alternatively, we can place these lines in an
  they cross:
 \begin_inset Formula 
 \begin{equation}
-anotherR-matrix
+anotherR-matrix\label{eq:R_N0}
 \end{equation}
 
 \end_inset
@@ -697,7 +711,17 @@ anotherR-matrix
  This R-matrix leads to an IRF model described by a quiver with triangles
  of arrows, as shown in figure.
  The corresponding Yang-Baxter equation, after cancellation of some factors
- with the help of the unitarity relation (eq:unitarity), reads
+ with the help of the unitarity relation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:unitarity_delta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, reads
 \begin_inset Formula 
 \begin{equation}
 Seibergduality
@@ -716,10 +740,19 @@ Seibergduality
  flavors, so their indices are indeed equal.
  The Yang-Baxter equation in the lattice model in this case is hence also
  identified with the Seiberg duality in gauge theory side.
- The Yang-Baxter equation for the R-matrix (eq:R-matrix), though more complicate
-d, also follows from this equality.
- The relation between the Yang-Baxter move and Seiberg duality was pointed
- out in [Hanany-Vegh].
+ The Yang-Baxter equation for the R-matrix 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:R_N-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, though more complicated, also follows from this equality.
+ The relation between the Yang-Baxter move and Seiberg duality was first
+ pointed out in [Hanany-Vegh] and established in [Yamazaki].
 \end_layout
 
 \begin_layout Standard
@@ -802,14 +835,14 @@ The index is defined as a trace of refined Boltzmann weight over the space
  case or by localization of the path integral.
  
 \begin_inset Formula 
-\begin{equation}
+\[
 superconformalindex
-\end{equation}
+\]
 
 \end_inset
 
- The result is generically given by a combination of vector and chiral multiplet
-s included in the theory.
+The result is generically given by a combination of vector and chiral multiplets
+ included in the theory.
  These multiplets are expressed in terms of the elliptic gamma function
  
 \begin_inset Formula 
@@ -819,7 +852,7 @@ s included in the theory.
 
 \end_inset
 
- with 
+with 
 \begin_inset Formula $p=e^{-\beta+i\theta_{p}}$
 \end_inset
 
@@ -889,8 +922,28 @@ vector
 \end_layout
 
 \begin_layout Standard
-The unitarity relation (eq:unitarity) is satisfied if we normalize the contribut
-ion from each arrow with 
+\begin_inset Formula 
+\[
+Gauge/YBEdictionary
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The unitarity relation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:unitarity_delta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is satisfied if we normalize the contribution from each arrow with 
 \begin_inset Formula $R=0$
 \end_inset
 
@@ -955,8 +1008,18 @@ may be represented as an
 \end_inset
 
  region below the dashed line.
- It satisfies the RLL relation with the R-matrix (eq:R-matrix) This R-matrix
- defines the Bazhanov-Sergeev model of type SU(N) [Bazhanov-Sergeev].
+ It satisfies the RLL relation with the R-matrix 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:R_N-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ This R-matrix defines the Bazhanov-Sergeev model of type SU(N) [Bazhanov-Sergee
+v].
  
 \end_layout
 
@@ -983,7 +1046,1331 @@ For the fundamental representation of SU(2), the above L-operator is essentially
  For the details, see [Yagi].
 \end_layout
 
+\begin_layout Subsubsection*
+Index on 
+\begin_inset Formula $S^{1}\times S^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Building blocks of 4d 
+\begin_inset Formula $\mathcal{N}=1$
+\end_inset
+
+ supersymmetric quiver gauge theories are vector multiplets and bifundamental
+ chiral multiplets.
+ A vector multiplet is present at a gauge node.
+ A bifundamental chiral multiplet has two flavor groups, say SU(N)z and
+ SU(N)w.
+\end_layout
+
+\begin_layout Standard
+Given a theory 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ with flavor group SU(N)w and another theory 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ with flavor group SU(N)w', we can couple them to obtain a new theory 
+\begin_inset Formula $\left(\mathcal{T}\times\mathcal{T}'\right)/SU(N)_{z}$
+\end_inset
+
+ by gauging the diagonal subgroup SU(N)z of 
+\begin_inset Formula $SU(N)_{w}\times SU(N)_{w'}$
+\end_inset
+
+.
+ To construct a quiver gauge theory, we take a number of bifundamental chiral
+ multiplets and couple them by gauging all or part of the flavor nodes.
+ 
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $\mathcal{N}=1$
+\end_inset
+
+ quiver gauge theories 
+\begin_inset Formula $S^{1}\times S^{3}$
+\end_inset
+
+, the index is defined by the trace
+\begin_inset Formula 
+\begin{equation}
+\mathcal{I}\left(p,q,\left\{ a_{i}\right\} \right)=\mathrm{Tr}_{\mathcal{H}_{S^{3}}}\left(\left(-1\right)^{F}p^{j_{1}+j_{2}+R/2}q^{j_{1}-j_{2}+R/2}\prod_{i}a_{i}^{F_{i}}\right),
+\end{equation}
+
+\end_inset
+
+taken over the space 
+\begin_inset Formula $\mathcal{H}_{S^{3}}$
+\end_inset
+
+ of states on 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+.
+ Here 
+\begin_inset Formula $\left(-1\right)^{F}$
+\end_inset
+
+ is the fermion parity, and 
+\begin_inset Formula $j_{1},\,j_{2}$
+\end_inset
+
+ are generators of the maximal torus 
+\begin_inset Formula $U(1)_{1}\times U(1)_{2}$
+\end_inset
+
+ of the isometry group 
+\begin_inset Formula $Spin(4)\simeq SU(2)_{1}\times SU(2)_{2}$
+\end_inset
+
+ of 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+, 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+ is the R-charge, 
+\begin_inset Formula $F_{i}$
+\end_inset
+
+ is the charge of U(1)i
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Formula $p,\,q$
+\end_inset
+
+ are complex parameters.
+ 
+\end_layout
+
+\begin_layout Standard
+The index 
+\begin_inset Formula $\mathcal{I}_{\mathcal{T}}$
+\end_inset
+
+ of a 4d 
+\begin_inset Formula $\mathcal{N}=1$
+\end_inset
+
+ theory 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ with flavor group 
+\begin_inset Formula $SU(N)z$
+\end_inset
+
+ is a symmetric meromorphic function of the fugacities 
+\begin_inset Formula $z_{1},\ldots,z_{N}$
+\end_inset
+
+.
+ This symmetric property reflects the gauge invariance of the index.
+ At the level of the index, gauging of a flavor group is realized by introductio
+n of the corresponding vector multiplet and integration over its fugacities.
+ In particular 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{I}_{\left(\mathcal{T}\times\mathcal{T}'\right)/SU(N)_{z}}=\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}\left(z\right)\mathcal{I}_{\mathcal{T}}\left(z\right)\mathcal{I}_{\mathcal{T}'}\left(z\right),
+\end{equation}
+
+\end_inset
+
+ with the integration performed over the unit circle 
+\begin_inset Formula $\mathbb{T}$
+\end_inset
+
+ for each variable 
+\begin_inset Formula $z_{I}$
+\end_inset
+
+.
+ The index 
+\begin_inset Formula $\mathcal{I}_{\mathcal{T}}\left(z\right)$
+\end_inset
+
+ of the vector multiplet is given by elliptic gamma functions: 
+\begin_inset Formula 
+\begin{equation}
+z=\mathcal{I}_{\mathcal{T}}\left(z;p,q\right)=\frac{\left(p;p\right)_{\infty}^{N-1}\left(q;q\right)_{\infty}^{N-1}}{N!}\prod_{I,J=1(I\neq J)}^{N}\frac{1}{\Gamma\left(z_{I/z_{J}};p,q\right)}.
+\end{equation}
+
+\end_inset
+
+ See appendix ?? for the definition of the elliptic gamma function and various
+ identities it satisfies.
+ From now on we fix 
+\begin_inset Formula $p.\,q$
+\end_inset
+
+ and omit them from the notation unless needed.
+ 
+\end_layout
+
+\begin_layout Standard
+The index of a bifundamental chiral multiplet with fugacity 
+\begin_inset Formula $a$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\begin{equation}
+a=\mathcal{I}_{B}\left(z,w;a\right)=\prod_{I,J=1}^{N}\Gamma\left(a\frac{w_{I}}{z_{J}}\right).
+\end{equation}
+
+\end_inset
+
+ This function satisfies 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{I}_{B}\left(z,w;a\right)\mathcal{I}_{B}\left(w,z;\frac{pq}{a}\right)=1.
+\end{equation}
+
+\end_inset
+
+ This identity says that as far as the index is concerned, we can cancel
+ a pair of arrows making a loop if their R-charges add up to 
+\begin_inset Formula $2$
+\end_inset
+
+ and flavor charges add up to 
+\begin_inset Formula $0$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+a=.
+\end{equation}
+
+\end_inset
+
+ Physically, the reason is that we can turn on mass term for such a pair.
+ The index is invariant under this deformation, and the bifundamental chiral
+ multiplets decouple from the theory if we send the mass to infinity, leaving
+ a trivial contribution to the index.
+ We will make use of this identity frequently.
+ 
+\end_layout
+
+\begin_layout Standard
+Another useful fact is that if we define the 
+\begin_inset Quotes eld
+\end_inset
+
+delta function
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+deltafunction
+\end{equation}
+
+\end_inset
+
+ by the relation
+\begin_inset Formula 
+\begin{equation}
+\mathcal{I}_{\mathcal{T}}\left(w\right)=\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}\left(z\right)\mathcal{I}_{\mathcal{T}}\left(z\right)delta,
+\end{equation}
+
+\end_inset
+
+ then we have 
+\begin_inset Formula 
+\begin{align}
+a-a^{-1} & =\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dx_{I}}{2\pi ix_{I}}\mathcal{I}_{V}\left(x\right)\mathcal{I}_{B}\left(z,x;a\right)\mathcal{I}_{B}\left(x,w;a^{-1}\right)\nonumber \\
+ & =\Gamma\left(a^{\pm N}\right)delta.
+\end{align}
+
+\end_inset
+
+®This is a consequence of confinement and chiral symmetry breaking [Seiberg,
+ Spiridonov-Vartanov].
+ At low energies the theory on the left-hand side is described by the mesons
+ and the baryons.
+ It has a vacuum in which the mesons take nonzero expectation values and
+ the flavor symmetry 
+\begin_inset Formula $SU(N)_{w}\times SU(N)_{z}$
+\end_inset
+
+ is broken to the diagonal subgroup.
+ In this vacuum the fugacities 
+\begin_inset Formula $w$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+ are identified, so we get the quiver on the second line.
+ The 
+\begin_inset Formula $\Gamma\left(a^{\pm N}\right):=\Gamma\left(a^{N}\right)\Gamma\left(a^{-N}\right)$
+\end_inset
+
+ is the contribution from the baryons.
+ 
+\end_layout
+
+\begin_layout Standard
+We can readily write down the formula for the index of a general quiver
+ gauge theory.
+ For simplicity, suppose that the theory is described by a quiver that contains
+ no flavor node.
+ Then, the index is computed by 
+\begin_inset Formula 
+\begin{equation}
+\prod_{z}\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}\left(z\right)\prod_{x\rightarrow y}\mathcal{I}_{B}\left(x,y\right),\label{eq:fullindex}
+\end{equation}
+
+\end_inset
+
+ where the two products are taken over all nodes and all arrows, respectively.
+ the index is a function of the parameters 
+\begin_inset Formula $p,\,q$
+\end_inset
+
+ and the flavor fugacities 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+, which are suppressed in the above expression.
+ If the quiver contains flavor nodes, the index is also a function of their
+ fugacities.
+ 
+\end_layout
+
+\begin_layout Standard
+In the expression of the supersymmetric index 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fullindex"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, it is manifest that the index of a quiver gauge theory may be interpreted
+ as the partition function of a statistical mechanical model with continuous
+ spins.
+ Indeed, this formula precisely computes the partition function of a spin
+ model in which spins are placed at the gauge nodes.
+ The spin variables at 
+\begin_inset Formula $z$
+\end_inset
+
+ are the fugacities 
+\begin_inset Formula $z_{1},\ldots,z_{N}$
+\end_inset
+
+, and they interact among themselves as well as with spins at nearest-neighbor
+ nodes, namely those connected by arrows.
+ The Boltzmann weights for the self-interaction and the nearest-neighbor
+ interaction are 
+\begin_inset Formula $\mathcal{I}_{V}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{I}_{B}$
+\end_inset
+
+, respectively.
+ 
+\end_layout
+
+\begin_layout Standard
+Surprisingly, the quantities in 4d gauge theories have one-to-one correspondence
+ in the lattice model side.
+ The dictionary is given in Table and such a correspondence is called 
+\emph on
+Gauge/YBE correspondence
+\emph default
+.
+ 
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dictionary for the Gauge/YBE correspondence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="14" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Integrable model
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quiver gauge theory
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Spin lattice
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quiver diagram
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rapidity line
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Zig-zag path
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Spectral parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R-charge
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Statistical partition function
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Supersymmetric partition function (index)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Temperature-like parameters
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quantum parameters (such as 
+\begin_inset Formula $p,\,q$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Spin variables
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gauge holonomies along non-contractible cycles
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of spin components
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rank of a gauge group
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Self-interaction
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vector multiplet
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nearest-neighbor interaction
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bifundamental matter multiplet
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Star-star relation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Seiberg(-like) duality
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R-matrix
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Composition of R-matrices
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yang-Baxter equation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
+Surface defects as transfer matrices
+\end_layout
+
+\begin_layout Subsubsection
+Surface defects and L-operators
+\end_layout
+
+\begin_layout Standard
+Now we introduce a half-BPS surface defect, and put it on 
+\begin_inset Formula $S^{1}\times S^{1}\subset S^{3}\times S^{1}$
+\end_inset
+
+.
+ The first 
+\begin_inset Formula $S^{1}$
+\end_inset
+
+ factor may be taken to be either 
+\begin_inset Formula $\left\{ \zeta_{1}=0\right\} $
+\end_inset
+
+ or 
+\begin_inset Formula $\left\{ \zeta_{2}=0\right\} $
+\end_inset
+
+ in the parametrization 
+\begin_inset Formula $\left|\zeta_{1}\right|^{2}+\left|\zeta_{2}\right|^{2}=1$
+\end_inset
+
+ of 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+.
+ These are the circles in 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+ that are left invariant under the action of the isometry group 
+\begin_inset Formula $U(1)_{p}\times U(1)_{q}$
+\end_inset
+
+.
+ As explained in section ??, the index in the presence of the surface defect
+ is again given by a correlation function os line operators in a 2d TQFT
+ on 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ The correlator now contains a new line operator created by the D3-brane
+ ending on the D5-branes, which was denoted by dashed line: 
+\begin_inset Formula 
+\begin{equation}
+dashedline.
+\end{equation}
+
+\end_inset
+
+ This line operator is specified by a representation of SU(N) [Gadde-Gukov,
+ Gukov-Witten].
+ In fact, it is labeled with a pair of representations 
+\begin_inset Formula $\left(R_{1},R_{2}\right)$
+\end_inset
+
+ since in general we can take superposition of two surface defects, each
+ wrapped around either circle in 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In any case, the correlation function equals the partition function of a
+ lattice model whose lattice is made of two kinds of lines, zig-zag paths
+ coming from NS5-branes and the dashed line coming from the D3-branes.
+ An extra dimension emerges as the M-theory circle if the brane system is
+ embedded in the M-theory via T-duality along the second 
+\begin_inset Formula $S^{1}$
+\end_inset
+
+ factor.
+ Under this embedding, the D3-branes are mapped to M2-branes supported at
+ points on the M-theory circle.
+ Thus, the inclusion of the dashed line does not spoil the integrability
+ of the lattice model.
+ Moreover, by deforming the zig-zag paths near the dashed line, we can always
+ make the neighborhood of the dashed line look like 
+\begin_inset Formula 
+\begin{equation}
+dashedandsolids\label{eq:transferL}
+\end{equation}
+
+\end_inset
+
+in some 
+\begin_inset Formula $\left(N,q\right)$
+\end_inset
+
+ 5-brane background.
+ Each crossing of a solid line and the dashed one gives us an R-operator,
+ which we call L-operator.
+ Thus we conclude that the surface defect is represented in the lattice
+ model by the insertion of a transfer matrix constructed from L-operators.
+ 
+\end_layout
+
+\begin_layout Standard
+Let us consider the simplest interesting setup where we have just two D5-branes
+ and a single D3-brane, and identify the concrete form of the transfer matrix
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:transferL"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ in this case.
+ For 
+\begin_inset Formula $N=2$
+\end_inset
+
+, 
+\begin_inset Formula $\left(N,q\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(N,q+2\right)$
+\end_inset
+
+ 5-branes are related by an SL(
+\begin_inset Formula $2;\mathbb{Z}$
+\end_inset
+
+) transformation of type IIB string theory.
+ Therefore, we can go to a duality frame in which the transfer matrix only
+ involves either 
+\begin_inset Formula $\left(N,0\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $\left(N,-1\right)$
+\end_inset
+
+ regions or 
+\begin_inset Formula $\left(N,0\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $\left(N,1\right)$
+\end_inset
+
+ regions.
+ The two cases are on an equal footing, and in fact related in a simple
+ way, as we will see.
+ We first consider the transfer matrix in the 
+\begin_inset Formula $\left(N,-1\right)$
+\end_inset
+
+ background.
+ 
+\end_layout
+
+\begin_layout Standard
+We denote the L-operator in this case by 
+\begin_inset Formula $L^{\diamondsuit}$
+\end_inset
+
+ since it is the operator that arises when a dashed line is inserted in
+ a brane tiling model described by the diamond quiver constructed from the
+ R-operator (eq:diamond quiver).
+ In the situation under consideration, the gauge group of a brane tiling
+ model is a product of SU(2) groups, and the surface defect is labeled 
+\begin_inset Formula $\left(R_{1},R_{2}\right)=\left(\emptyset,fund\right)$
+\end_inset
+
+; the D3-brane wraps the circle 
+\begin_inset Formula $\left\{ \zeta_{2}=0\right\} $
+\end_inset
+
+ in 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $V^{\diamondsuit}$
+\end_inset
+
+ be the space of meromorphic functions 
+\begin_inset Formula $f(z)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f(z)=f(1/z)$
+\end_inset
+
+, and 
+\begin_inset Formula $W=\mathbb{C}^{2}$
+\end_inset
+
+.
+ Then we can represent 
+\begin_inset Formula $L^{\diamondsuit}:W\otimes V^{\diamondsuit}\rightarrow V^{\diamondsuit}\otimes W$
+\end_inset
+
+ as 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix whose entries are operators acting on functions in 
+\begin_inset Formula $V^{\diamondsuit}$
+\end_inset
+
+.
+ The R-matrix 
+\begin_inset Formula $\mathcal{R}_{ij}^{\diamondsuit}:W_{i}\otimes W_{j}\rightarrow W_{j}\otimes W_{i}$
+\end_inset
+
+ is a 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ matrix.
+ These operators, together with the R-operator 
+\begin_inset Formula $R^{\diamondsuit}$
+\end_inset
+
+, satisfy the Yang-Baxter equations (4equations).
+ 
+\end_layout
+
+\begin_layout Standard
+On the other hand, in the context of integrable lattice models Sklyanin
+ constructed an L-operator 
+\begin_inset Formula $L^{\mathrm{S}}:W\otimes V^{\diamondsuit}\rightarrow V^{\diamondsuit}\otimes W$
+\end_inset
+
+ that solves the RLL relation [Sklyanin^2]
+\begin_inset Formula 
+\begin{equation}
+\mathcal{R}_{12}^{\mathrm{B}}\left(u_{1},u_{2}\right)L_{1}^{\mathrm{S}}\left(u_{1},\left(\nu,l\right)\right)L_{2}^{\mathrm{S}}\left(u_{2},\left(\nu,l\right)\right)=L_{2}^{\mathrm{S}}\left(u_{2},\left(\nu,l\right)\right)L_{1}^{\mathrm{S}}\left(u_{1},\left(\nu,l\right)\right)\mathcal{R}_{12}^{\mathrm{B}}\left(u_{1},u_{2}\right),
+\end{equation}
+
+\end_inset
+
+with Baxter's R-matrix 
+\begin_inset Formula $\mathcal{R}_{ij}^{\mathrm{B}}:W_{i}\otimes W_{j}\rightarrow W_{j}\otimes W_{i}$
+\end_inset
+
+ for the eight-vertex model [Baxter^2].
+ Here 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ is a complex spectral parameter for 
+\begin_inset Formula $W_{i}$
+\end_inset
+
+, and 
+\begin_inset Formula $\left(\nu,l\right)$
+\end_inset
+
+ is a pair of complex spectral parameters for 
+\begin_inset Formula $V^{\diamondsuit}$
+\end_inset
+
+.
+ Baxter's R-matrix solves the Yang-Baxter equation
+\begin_inset Formula 
+\begin{equation}
+\mathcal{R}_{12}^{\mathrm{B}}\left(u_{1},u_{2}\right)\mathcal{R}_{13}^{\mathrm{B}}\left(u_{1},u_{3}\right)\mathcal{R}_{23}^{\mathrm{B}}\left(u_{2},u_{3}\right)=\mathcal{R}_{23}^{\mathrm{B}}\left(u_{2},u_{3}\right)\mathcal{R}_{13}^{\mathrm{B}}\left(u_{1},u_{3}\right)\mathcal{R}_{12}^{\mathrm{B}}\left(u_{1},u_{2}\right),
+\end{equation}
+
+\end_inset
+
+ and the solution is given by 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{R}_{ij}^{\mathrm{B}}\left(u_{i},u_{j}\right)=P\sum_{a=0}^{3}w_{a}\left(u_{i}-u_{j}\right)\sigma_{a}\otimes\sigma_{a},\quad\,w_{a}\left(u\right)=\frac{\theta_{a+1}\left(u+\eta\right)}{\theta_{a+1}\left(\eta\right)},
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $P:W_{i}\otimes W_{j}\rightarrow W_{j}\otimes W_{i}$
+\end_inset
+
+ is the permutation operator, 
+\begin_inset Formula $\sigma_{a}$
+\end_inset
+
+ are the Pauli matrices and 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ unit matrix, 
+\begin_inset Formula $\theta_{a+1}\left(u\right)=\theta_{a+1}\left(u|\tau\right)$
+\end_inset
+
+ are the Jacobi theta functions, and 
+\begin_inset Formula $\tau,\,\eta$
+\end_inset
+
+ are complex parameters of the eight-vertex model.
+ Sklyanin's L-operator is defined by 
+\begin_inset Formula 
+\begin{equation}
+L^{\mathrm{S}}\left(u,\left(\nu,l\right)\right)=P\sum_{a=0}^{3}w_{a}\left(u+\eta\right)\sigma_{a}\otimes\mathbf{S}_{a}^{(l)}.
+\end{equation}
+
+\end_inset
+
+ The operators 
+\begin_inset Formula $\mathbf{S}_{a}^{(l)}$
+\end_inset
+
+ act on meromorphic functions 
+\begin_inset Formula $f(\zeta)$
+\end_inset
+
+ as difference operators:
+\begin_inset Formula 
+\begin{equation}
+\left(\mathbf{S}_{a}^{(l)}f\right)\left(\zeta\right)=i^{\delta_{a,0}}\frac{\theta_{a+1}\left(\eta\right)}{\theta_{a+1}\left(2\zeta\right)}\left(\theta_{a+1}\left(2\zeta-2\eta l\right)f(\zeta+\eta)-\theta_{a+1}\left(-2\zeta-2\eta l\right)f(\zeta-\eta)\right).
+\end{equation}
+
+\end_inset
+
+ They generate the so-called Sklyanin algebra [Sklyanin^2].
+\end_layout
+
+\begin_layout Standard
+In [Derkachov-Spiridonov], Derkachov and Spiridonov constructed an R-operator
+ 
+\begin_inset Formula $R_{ij}^{\mathrm{DS}}:V_{i}^{\diamondsuit}\otimes V_{j}^{\diamondsuit}\rightarrow V_{j}^{\diamondsuit}\otimes V_{i}^{\diamondsuit}$
+\end_inset
+
+ that satisfies the RLL relation
+\begin_inset Formula 
+\begin{align}
+ & R_{12}^{\mathrm{DS}}\left(\left(\nu_{1},l_{1}\right),\left(\nu_{2},l_{2}\right)\right)L_{2}^{\mathrm{DS}}\left(u,\left(\nu_{2},l_{2}\right)\right)L_{1}^{\mathrm{DS}}\left(u,\left(\nu_{1},l_{1}\right)\right)\nonumber \\
+ & =L_{1}^{\mathrm{DS}}\left(u,\left(\nu_{1},l_{1}\right)\right)L_{2}^{\mathrm{DS}}\left(u,\left(\nu_{2},l_{2}\right)\right)R_{12}^{\mathrm{DS}}\left(\left(\nu_{1},l_{1}\right),\left(\nu_{2},l_{2}\right)\right),
+\end{align}
+
+\end_inset
+
+ The L-operator 
+\begin_inset Formula $L^{\mathrm{DS}}:W\otimes V^{\diamondsuit}\rightarrow V^{\diamondsuit}\otimes W$
+\end_inset
+
+ is essentially Sklyanin's L-operator, differing only by an automorphism
+ of the Sklyanin algebra:
+\begin_inset Formula 
+\begin{equation}
+L^{\mathrm{DS}}\left(u,\left(\nu,l\right)\right)=\varphi\sigma_{3}L^{\mathrm{S}}\varphi^{-1},\quad\,\left(\varphi f\right)(\zeta):=\exp(\pi i\zeta^{2}/\eta)f(\zeta).
+\end{equation}
+
+\end_inset
+
+This L-operator also satisfies the RLL relation with Baxter's R-matrix 
+\begin_inset Formula $\mathcal{R}^{\mathrm{B}}$
+\end_inset
+
+.
+ At this point, what is important is that they show their R-operator 
+\begin_inset Formula $R^{\mathrm{DS}}$
+\end_inset
+
+ is precisely the R-operator for the diamond quiver in the brane tiling
+ model 
+\begin_inset Formula $R^{\diamondsuit}$
+\end_inset
+
+, that is, 
+\begin_inset Formula 
+\begin{equation}
+R_{ij}^{\mathrm{DS}}\left(\left(\nu_{i},l_{i}\right),\left(\nu_{j},l_{j}\right)\right)=R_{ij}^{\diamondsuit}\left(\left(a_{i},b_{i}\right),\left(a_{j},b_{j}\right)\right),
+\end{equation}
+
+\end_inset
+
+ with the variables 
+\begin_inset Formula $\zeta$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+ are related by 
+\begin_inset Formula $z=\exp(2\pi i\zeta)$
+\end_inset
+
+ and the parameters matched as
+\begin_inset Formula 
+\begin{align}
+a_{i}b_{i} & =\exp(-2\pi i\nu_{i}),\quad\,\frac{a_{i}}{b_{i}}=\exp(2\pi i\eta(2l_{i}+1)),\\
+\left(p,q\right) & =\left(\exp(2\pi i\tau),\exp(4\pi i\eta)\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Based on these observations, we propose that the L-operator for the diamond
+ quiver 
+\begin_inset Formula 
+\begin{equation}
+L^{\diamondsuit}\left(c,\left(a,b\right)\right)=
+\end{equation}
+
+\end_inset
+
+ is the L-operator of Derkachov and Spiridonov:
+\begin_inset Formula 
+\begin{equation}
+L^{\mathrm{DS}}\left(u,\left(\nu,l\right)\right)=L^{\diamondsuit}\left(c,\left(a,b\right)\right).
+\end{equation}
+
+\end_inset
+
+ Requiring 
+\begin_inset Formula $L^{\diamondsuit}\left(c,\left(a,b\right)\right)=L^{\diamondsuit}\left(1,\left(a/c,b/c\right)\right)$
+\end_inset
+
+ fixes the relation between the two spectral parameters for the dashed line
+ to be
+\begin_inset Formula 
+\begin{equation}
+c=\exp(\pi iu).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the computation of the transfer matrix, we exploit the fact that 
+\begin_inset Formula $L^{\diamondsuit}$
+\end_inset
+
+ really consists of three parts separated by zig-zag paths:
+\begin_inset Formula 
+\begin{equation}
+L_{i}^{\diamondsuit}\left(c,\left(a_{i},b_{i}\right)\right)=.\label{eq:pieceL}
+\end{equation}
+
+\end_inset
+
+ Reflecting this structure, 
+\begin_inset Formula $L^{\diamondsuit}$
+\end_inset
+
+ can be expressed in the following factorized form:
+\begin_inset Formula 
+\begin{equation}
+L_{i}^{\diamondsuit}\left(c,\left(a_{i},b_{i}\right)\right)=B\left(z_{i};\frac{b_{i}}{c}\right)\cdot\varphi(z_{i})\frac{1}{\theta_{1}(z_{i}^{2})}\left(\begin{array}{cc}
+\Delta_{i}^{1/2} & 0\\
+0 & \Delta_{i}^{-1/2}
+\end{array}\right)\varphi^{-1}(z_{i})\cdot A\left(z_{i};\frac{a_{i}}{c}\right).\label{eq:diamondL}
+\end{equation}
+
+\end_inset
+
+ In this expression, 
+\begin_inset Formula $\Delta_{i}^{\pm1/2}$
+\end_inset
+
+ are difference operators acting on functions of 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ as 
+\begin_inset Formula $\left(\Delta_{i}^{\pm1/2}f\right)(z_{i})=f(q^{\pm1/2}z_{i})$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\begin{equation}
+A(z;a)=\left(\begin{array}{cc}
+\bar{\theta}_{4}(a/z) & \bar{\theta}_{3}(a/z)\\
+\bar{\theta}_{4}(az) & \bar{\theta}_{3}(az)
+\end{array}\right),\quad\,B(z;b)=\left(\begin{array}{cc}
+\bar{\theta}_{3}(bz) & -\bar{\theta}_{3}(b/z)\\
+\bar{\theta}_{4}(bz) & -\bar{\theta}_{4}(b/z)
+\end{array}\right),
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\bar{\theta}_{a}(z)=\theta_{a}(z;\sqrt{p})$
+\end_inset
+
+ and we used the multiplicative notation for the theta functions.
+ Roughly speaking, one can think of the three matrices in the expression
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:diamondL"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ as corresponding to the left, middle and right parts of the above diagram.
+ 
+\end_layout
+
+\begin_layout Standard
+The transfer matrix 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:transferL"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is obtained by concatenating 
+\begin_inset Formula $n$
+\end_inset
+
+ copies of the pieces 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:pieceL"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ along a loop: 
+\begin_inset Formula 
+\begin{equation}
+concatenate.
+\end{equation}
+
+\end_inset
+
+ Thus, multiplying 
+\begin_inset Formula $n$
+\end_inset
+
+ copies of the L-operators 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:diamondL"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and using formulas in the appendix, we obtain the following formula for
+ the transfer matrix:
+\begin_inset Formula 
+\begin{align}
+ & \mathrm{Tr}_{W}\left(L_{n}^{\diamondsuit}\left(c,\left(a_{n},b_{n}\right)\right)\circ_{W}\cdots\circ_{W}L_{1}^{\diamondsuit}\left(c,\left(a_{1},b_{1}\right)\right)\right)\nonumber \\
+ & =\sum_{s_{1}=\pm1}\cdots\sum_{s_{n}=\pm1}\prod_{i=1}^{n}\ell\left(z_{i-1}^{s_{i-1}},z_{i}^{s_{i}};\frac{b_{i-1}}{c},\frac{a_{i}}{c}\right)\prod_{j=1}^{n}\Delta_{j}^{s_{j}/2},\label{eq:proposal}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\begin{equation}
+\ell\left(w,z;b,a\right)=\frac{1}{\theta(z^{2})}\theta\left(\sqrt{\frac{p}{q}}ba\frac{w}{z}\right)\theta\left(\sqrt{\frac{p}{q}}\frac{a}{b}\frac{1}{wz}\right).
+\end{equation}
+
+\end_inset
+
+In this formula we have dropped off an overall constant independent of the
+ spectral parameters.
+ At any rate, the overall normalization of the L-operators cannot be determined
+ by the RLL relations.
+ The RLL relations actually admit more degrees of freedom than just the
+ overall normalization.
+ For example, we can multiply 
+\begin_inset Formula $L^{\diamondsuit}\left(c,\left(a,b\right)\right)$
+\end_inset
+
+ by a function 
+\begin_inset Formula $f(c,(a,b))$
+\end_inset
+
+ of its spectral parameters, and the new one still solves the RLL relations.
+ In the next subsection we will check the proposal by comparing it with
+ independent computations from gauge theory.
+ 
+\end_layout
+
+\begin_layout Standard
+So far we have considered the surface defect labeled 
+\begin_inset Formula $\left(R_{1},R_{2}\right)=\left(\emptyset,fund\right)$
+\end_inset
+
+.
+ Of course, we may also consider the case with 
+\begin_inset Formula $\left(R_{1},R_{2}\right)=\left(fund,\emptyset\right)$
+\end_inset
+
+ in the same manner, by letting surface defects wrap around the other 
+\begin_inset Formula $S^{1}$
+\end_inset
+
+ inside 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+.
+ Hence, there are two sets of L-operators related by the symmetry exchanging
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ The underlying algebraic structure is the product of two copies of the
+ Sklyanin algebra, known as the 
+\emph on
+elliptic modular double
+\emph default
+ [Spiridonov].
+ 
+\end_layout
+
+\begin_layout Subsubsection
 Surface defects in 
 \begin_inset Formula $A_{1}$
 \end_inset
@@ -995,12 +2382,553 @@ Surface defects in
 
 \end_layout
 
-\begin_layout Subsubsection
-Surface defects and L-operators
+\begin_layout Standard
+Now we aim to check the proposal on surface defects and transfer matrices
+ by comparing them with independent calculations.
+ In this section we perform the simplest such check for surface defects
+ in 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ theories of class 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ [Gaiotto, GMN], which arise from compactification of the 6d 
+\begin_inset Formula $\mathcal{N}=\left(2,0\right)$
+\end_inset
+
+ theory of type 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ on punctured Riemann surfaces.
+ The action of surface defects on the supersymmetric indices of class-
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ theories have been studied in [Gaiotto-Rastelli-Razamat, Gadde-Gukov, Alday
+ et al, Bullimore et al].
+ Here we first review the computation for the surface defect labeled with
+ the fundamental representation of SU(2) based on the method developed in
+ [GRR], and show that the result agrees with the prediction from the transfer
+ matrix 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:proposal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
 \end_layout
 
-\begin_layout Subsubsection
-Surface defects as transfer matrices
+\begin_layout Standard
+Typical examples of class-
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ theories are 
+\begin_inset Formula $\mathcal{N}=2$
+\end_inset
+
+ gauge theories characterized by linear and circular quivers with SU(N)
+ nodes.
+ They are actually also examples of brane tiling models discussed in the
+ previous sections.
+ As such, they allow us to translate key notions in class-
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ theories to the language of brane tilings, and vice versa.
+ So let us first describe these theories as class-
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ theories as well as brane tiling models, and understand the relation between
+ the two descriptions.
+ Although we will mainly work with 
+\begin_inset Formula $N=2$
+\end_inset
+
+, for now we keep 
+\begin_inset Formula $N$
+\end_inset
+
+ general.
+ 
+\end_layout
+
+\begin_layout Standard
+Let us consider the standard type IIA brane configuration for an 
+\begin_inset Formula $\mathcal{N}=2$
+\end_inset
+
+ linear quiver theory with 
+\begin_inset Formula $m+1$
+\end_inset
+
+ nodes.
+ It consists of 
+\begin_inset Formula $N$
+\end_inset
+
+ D4-branes spanning the 01236 directions, intersected by 
+\begin_inset Formula $m$
+\end_inset
+
+ -branes extending along the 012345 directions (see table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:D4NS5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ 
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+D4-NS5 brane configuration
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:D4NS5"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="11">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NS5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+This brane configuration is lifted in M-theory to M5-branes, wrapped on
+ a cylinder with 
+\begin_inset Formula $m$
+\end_inset
+
+ punctures created by intersecting M5-branes.
+ Therefore, the 
+\begin_inset Formula $\mathcal{N}=2$
+\end_inset
+
+ linear quiver theory is obtained by compactification of the 6d 
+\begin_inset Formula $\mathcal{N}=\left(2,0\right)$
+\end_inset
+
+ theory of type 
+\begin_inset Formula $A_{N-1}$
+\end_inset
+
+ on a cylinder with 
+\begin_inset Formula $m$
+\end_inset
+
+ punctures, or a sphere with 
+\begin_inset Formula $m+2$
+\end_inset
+
+ punctures.
+ We distinguish the two punctures coming from the ends of the cylinder from
+ the 
+\begin_inset Formula $m$
+\end_inset
+
+ punctures in between.
+ They are referred to as maximal and minimal punctures, respectively.
+ In the class-
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ language, the 
+\begin_inset Formula $\mathcal{N}=2$
+\end_inset
+
+ linear quiver theory is a theory associated to a sphere with 
+\begin_inset Formula $2$
+\end_inset
+
+ maximal and 
+\begin_inset Formula $m$
+\end_inset
+
+ minimal punctures, see figure.
+ 
 \end_layout
 
 \end_body
