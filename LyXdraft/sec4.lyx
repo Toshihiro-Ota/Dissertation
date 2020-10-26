@@ -2375,11 +2375,42 @@ Surface defects in
 \begin_inset Formula $A_{1}$
 \end_inset
 
- theories of class 
-\begin_inset Formula $\mathcal{S}$
+
+\end_layout
+
+\begin_layout Standard
+Building blocks of 4d 
+\begin_inset Formula $\mathcal{N}=1$
 \end_inset
 
+ supersymmetric quiver gauge theories are vector multiplets and bifundamental
+ chiral multiplets.
+ A vector multiplet is present at a gauge node.
+ A bifundamental chiral multiplet has two flavor groups, say SU(N)z and
+ SU(N)w.
+\end_layout
 
+\begin_layout Standard
+Given a theory 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ with flavor group SU(N)w and another theory 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ with flavor group SU(N)w', we can couple them to obtain a new theory 
+\begin_inset Formula $\left(\mathcal{T}\times\mathcal{T}'\right)/SU(N)_{z}$
+\end_inset
+
+ by gauging the diagonal subgroup SU(N)z of 
+\begin_inset Formula $SU(N)_{w}\times SU(N)_{w'}$
+\end_inset
+
+.
+ To construct a quiver gauge theory, we take a number of bifundamental chiral
+ multiplets and couple them by gauging all or part of the flavor nodes.
+ 
 \end_layout
 
 \begin_layout Standard
