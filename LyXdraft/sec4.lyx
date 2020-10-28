@@ -218,10 +218,10 @@ For such a configuration, what one needs to notice is that when an NS5-brane
 
  along which these domain walls are located are known as 
 \emph on
-zigzag paths
+zig-zag paths
 \emph default
 .
- Across a zigzag path the charge 
+ Across a zig-zag path the charge 
 \begin_inset Formula $q$
 \end_inset
 
@@ -239,7 +239,7 @@ Conversely, given a configuration of curves
 \end_inset
 
  and a 5-brane charge assignment consistent with it, we can construct a
- 5-brane system whose zigzag paths are 
+ 5-brane system whose zig-zag paths are 
 \begin_inset Formula $C_{i}$
 \end_inset
 
@@ -312,17 +312,17 @@ Each unshaded region supports
 \begin_inset Formula $N$
 \end_inset
 
- D5-branes, hence an SU(
-\begin_inset Formula $N$
+ D5-branes, hence an 
+\begin_inset Formula $SU(N)$
 \end_inset
 
-) vector multiplet lives there.
+ vector multiplet lives there.
  If the region contains part of the boundary, the multiplet is frozen by
- boundary conditions and the associated symmetry is an SU(
-\begin_inset Formula $N$
+ boundary conditions and the associated symmetry is an 
+\begin_inset Formula $SU(N)$
 \end_inset
 
-) flavor symmetry; in quiver notation, we represent a dynamical vector multiplet
+ flavor symmetry; in quiver notation, we represent a dynamical vector multiplet
  by a gauge node (circle) and a non-dynamical one by a flavor node (square).
  From open strings stretched between two unshaded regions (namely ending
  on 
@@ -347,7 +347,7 @@ bifundamental\label{eq:bifund}
 \end_layout
 
 \begin_layout Standard
-Moreover, for every set of zigzag paths bounding a shaded region, we have
+Moreover, for every set of zig-zag paths bounding a shaded region, we have
  a loop of arrows and world-sheet instantons generate a superpotential term
  given by the trace of the product of the bifundamental chiral multiplets
  in the loop.
@@ -372,8 +372,20 @@ Each NS5
 \begin_inset Formula $_{i}$
 \end_inset
 
- supports a U(1) flavor symmetry U(1)i.
- An arrow is charged under U(1)i if it is crossed by 
+ supports a 
+\begin_inset Formula $U(1)$
+\end_inset
+
+ flavor symmetry 
+\begin_inset Formula $U(1)_{i}$
+\end_inset
+
+.
+ An arrow is charged under 
+\begin_inset Formula $U(1)_{i}$
+\end_inset
+
+ if it is crossed by 
 \begin_inset Formula $C_{i}$
 \end_inset
 
@@ -382,7 +394,11 @@ Each NS5
 \begin_inset Formula $F_{i}$
 \end_inset
 
- of U(1)i can be normalized in such a way that the arrow in 
+ of 
+\begin_inset Formula $U(1)_{i}$
+\end_inset
+
+ can be normalized in such a way that the arrow in 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:bifund"
@@ -401,23 +417,43 @@ noprefix "false"
 \end_inset
 
 .
- The diagonal combination of all U(1)i acts on the theory trivially since
- every arrow is crossed by exactly two zigzag paths from the opposite sides.
+ The diagonal combination of all 
+\begin_inset Formula $U(1)_{i}$
+\end_inset
+
+ acts on the theory trivially since every arrow is crossed by exactly two
+ zig-zag paths from the opposite sides.
  
 \end_layout
 
 \begin_layout Standard
-The theory also has an R-symmetry U(1)R.
+The theory also has an R-symmetry 
+\begin_inset Formula $U(1)_{R}$
+\end_inset
+
+.
  Its definition is not unique as the R-charge 
 \begin_inset Formula $R$
 \end_inset
 
- can be shifted by a linear combination of U(1) flavor charges.
+ can be shifted by a linear combination of 
+\begin_inset Formula $U(1$
+\end_inset
+
+) flavor charges.
  However, the R-charge assignment is constrained by two conditions.
- The first is that U(1)R must be unbroken by the superpotential and therefore
- the R-charges of the chiral multiplets contained in each superpotential
- term must add up to two.
- The second is that U(1)R must be free of anomaly.
+ The first is that 
+\begin_inset Formula $U(1)_{R}$
+\end_inset
+
+ must be unbroken by the superpotential and therefore the R-charges of the
+ chiral multiplets contained in each superpotential term must add up to
+ two.
+ The second is that 
+\begin_inset Formula $U(1)_{R}$
+\end_inset
+
+ must be free of anomaly.
  This requires that for every gauge node, the sum of the R-charges of the
  arrows starting from or ending at that node must equal the number of the
  arrows minus two.
@@ -425,9 +461,9 @@ The theory also has an R-symmetry U(1)R.
 \end_layout
 
 \begin_layout Standard
-To fix the R-charge assignment, let us assume that we can orient the zigzag
- paths and bound every shaded or unshaded region with zigzag paths all heading
- upward, for some choice of the 
+To fix the R-charge assignment, let us assume that we can orient the zig-zag
+ paths and bound every shaded or unshaded region with zig-zag paths all
+ heading upward, for some choice of the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -437,19 +473,19 @@ vertical
 
  direction in the neighborhood of that region.
  This is the case for the examples in figure.
- The zigzag paths thus oriented fall into two groups; when a zigzag path
+ The zig-zag paths thus oriented fall into two groups; when a zig-zag path
  goes upward and we cross it from the left to the right, 
 \begin_inset Formula $q$
 \end_inset
 
  increases by one.
- We distinguish the latter case from the former by drawing the zigzag path
+ We distinguish the latter case from the former by drawing the zig-zag path
  with a dotted line.
  Then, we give an arrow 
 \begin_inset Formula $R=0$
 \end_inset
 
- if it originates from a crossing of two zigzag paths of the same type,
+ if it originates from a crossing of two zig-zag paths of the same type,
  and 
 \begin_inset Formula $R=1$
 \end_inset
@@ -462,7 +498,7 @@ vertical
 
 \begin_layout Standard
 Summarizing the rules for assignment of the charges, we can read off the
- quiver diagram from zigzag paths as in figure.
+ quiver diagram from zig-zag paths as in figure.
  
 \end_layout
 
@@ -480,7 +516,7 @@ From the supersymmetric index of the four-dimensional
 \begin_inset Formula $\left\{ C_{i}\right\} $
 \end_inset
 
- consisting of the zigzag paths.
+ consisting of the zig-zag paths.
  Each 
 \begin_inset Formula $C_{i}$
 \end_inset
@@ -558,20 +594,20 @@ If the theory is described by a quiver, translation between the gauge theory
 \end_inset
 
 .
- These variables are fugacities for the SU(
-\begin_inset Formula $N$
+ These variables are fugacities for the 
+\begin_inset Formula $SU(N)$
 \end_inset
 
-) flavor symmetry and parametrize the value of the spin at this node, and
- thus the spins take values in the maximal torus U
-\begin_inset Formula $(1)^{N-1}$
+ flavor symmetry and parametrize the value of the spin at this node, and
+ thus the spins take values in the maximal torus 
+\begin_inset Formula $U(1)^{N-1}$
 \end_inset
 
- of SU(
-\begin_inset Formula $N$
+ of 
+\begin_inset Formula $SU(N)$
 \end_inset
 
-).
+.
  For a gauge node, integration is performed over the fugacities since its
  gauge field is a path integral variable.
  This is the summation over the values of a spin placed on an internal face.
@@ -641,7 +677,7 @@ anotherunitarity
 \end_layout
 
 \begin_layout Standard
-The Yang-Baxter equation with three zigzag paths is harder to understand,
+The Yang-Baxter equation with three zig-zag paths is harder to understand,
  as it always involves and 
 \begin_inset Formula $\left(N,q\right)$
 \end_inset
@@ -657,7 +693,7 @@ The Yang-Baxter equation with three zigzag paths is harder to understand,
 \end_inset
 
  changes.
- To circumvent the difficulty, we take a pair of zigzag paths of different
+ To circumvent the difficulty, we take a pair of zig-zag paths of different
  types and think of it as a single line:
 \begin_inset Formula 
 \begin{equation}
@@ -699,7 +735,7 @@ Alternatively, we can place these lines in an
 \begin_inset Formula $\left(N,0\right)$
 \end_inset
 
- background and force them to exchange their constituent zigzag paths as
+ background and force them to exchange their constituent zig-zag paths as
  they cross:
 \begin_inset Formula 
 \begin{equation}
@@ -801,7 +837,15 @@ Now we focus on the case
 \begin_inset Formula $\zeta_{q}$
 \end_inset
 
- by U(1)p and U(1)q, respectively.
+ by 
+\begin_inset Formula $U(1)_{p}$
+\end_inset
+
+ and 
+\begin_inset Formula $U(1)_{q}$
+\end_inset
+
+, respectively.
  We take 
 \begin_inset Formula $S^{1}\times S^{3}$
 \end_inset
@@ -869,7 +913,7 @@ with
 \begin_inset Formula $i$
 \end_inset
 
-th zigzag path.
+th zig-zag path.
  Also, we introduce the Pochhammar symble 
 \begin_inset Formula $\left(z;q\right)_{\infty}=\prod_{k=0}^{\infty}\left(1-q^{k}z\right)$
 \end_inset
@@ -890,7 +934,7 @@ A bifundamental chiral multiplet with R-charge
  contributes to the index by the factor
 \begin_inset Formula 
 \begin{equation}
-\prod_{I,J=1}^{N}\Gamma\left(\left(pq\right)^{R/2}\prod_{i}a_{i}^{F_{i}}\frac{w_{I}}{z_{J}};p,q\right),
+\prod_{I,J=1}^{N}\Gamma\left((pq)^{R/2}\prod_{i}a_{i}^{F_{i}}\frac{w_{I}}{z_{J}};p,q\right),
 \end{equation}
 
 \end_inset
@@ -964,11 +1008,11 @@ There are two circles in
 
  around which we can place half-BPS surface defects without breaking the
  isometries, namely 
-\begin_inset Formula $\left\{ \zeta_{p}=0\right\} $
+\begin_inset Formula $\{\zeta_{p}=0\}$
 \end_inset
 
  and 
-\begin_inset Formula $\left\{ \zeta_{q}=0\right\} $
+\begin_inset Formula $\{\zeta_{q}=0\}$
 \end_inset
 
 .
@@ -1024,11 +1068,18 @@ v].
 \end_layout
 
 \begin_layout Standard
-For the fundamental representation of SU(2), the above L-operator is essentially
- identified with Sklyanin's L-operator, which satisfies the RLL relation
- with Baxter's R-matrix for the eight-vertex model and generates the so-called
- Sklyanin algebra.
- For the fundamental representation of SU(N) with general 
+For the fundamental representation of 
+\begin_inset Formula $SU(2)$
+\end_inset
+
+, the above L-operator is essentially identified with Sklyanin's L-operator,
+ which satisfies the RLL relation with Baxter's R-matrix for the eight-vertex
+ model and generates the so-called Sklyanin algebra.
+ For the fundamental representation of 
+\begin_inset Formula $SU(N)$
+\end_inset
+
+ with general 
 \begin_inset Formula $N$
 \end_inset
 
@@ -1062,8 +1113,15 @@ Building blocks of 4d
  supersymmetric quiver gauge theories are vector multiplets and bifundamental
  chiral multiplets.
  A vector multiplet is present at a gauge node.
- A bifundamental chiral multiplet has two flavor groups, say SU(N)z and
- SU(N)w.
+ A bifundamental chiral multiplet has two flavor groups, say 
+\begin_inset Formula $SU(N)_{z}$
+\end_inset
+
+ and 
+\begin_inset Formula $SU(N)_{w}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1071,15 +1129,27 @@ Given a theory
 \begin_inset Formula $\mathcal{T}$
 \end_inset
 
- with flavor group SU(N)w and another theory 
+ with flavor group 
+\begin_inset Formula $SU(N)_{w}$
+\end_inset
+
+ and another theory 
 \begin_inset Formula $\mathcal{T}'$
 \end_inset
 
- with flavor group SU(N)w', we can couple them to obtain a new theory 
+ with flavor group 
+\begin_inset Formula $SU(N)_{w'}$
+\end_inset
+
+, we can couple them to obtain a new theory 
 \begin_inset Formula $\left(\mathcal{T}\times\mathcal{T}'\right)/SU(N)_{z}$
 \end_inset
 
- by gauging the diagonal subgroup SU(N)z of 
+ by gauging the diagonal subgroup 
+\begin_inset Formula $SU(N)_{z}$
+\end_inset
+
+ of 
 \begin_inset Formula $SU(N)_{w}\times SU(N)_{w'}$
 \end_inset
 
@@ -1101,7 +1171,7 @@ For
 , the index is defined by the trace
 \begin_inset Formula 
 \begin{equation}
-\mathcal{I}\left(p,q,\left\{ a_{i}\right\} \right)=\mathrm{Tr}_{\mathcal{H}_{S^{3}}}\left(\left(-1\right)^{F}p^{j_{1}+j_{2}+R/2}q^{j_{1}-j_{2}+R/2}\prod_{i}a_{i}^{F_{i}}\right),
+\mathcal{I}(p,q,\left\{ a_{i}\right\} )=\mathrm{Tr}_{\mathcal{H}_{S^{3}}}\left(\left(-1\right)^{F}p^{j_{1}+j_{2}+R/2}q^{j_{1}-j_{2}+R/2}\prod_{i}a_{i}^{F_{i}}\right),
 \end{equation}
 
 \end_inset
@@ -1174,7 +1244,7 @@ The index
 \end_inset
 
  with flavor group 
-\begin_inset Formula $SU(N)z$
+\begin_inset Formula $SU(N)_{z}$
 \end_inset
 
  is a symmetric meromorphic function of the fugacities 
@@ -1188,7 +1258,7 @@ n of the corresponding vector multiplet and integration over its fugacities.
  In particular 
 \begin_inset Formula 
 \begin{equation}
-\mathcal{I}_{\left(\mathcal{T}\times\mathcal{T}'\right)/SU(N)_{z}}=\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}\left(z\right)\mathcal{I}_{\mathcal{T}}\left(z\right)\mathcal{I}_{\mathcal{T}'}\left(z\right),
+\mathcal{I}_{\left(\mathcal{T}\times\mathcal{T}'\right)/SU(N)_{z}}=\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}(z)\mathcal{I}_{\mathcal{T}}(z)\mathcal{I}_{\mathcal{T}'}(z),
 \end{equation}
 
 \end_inset
@@ -1203,13 +1273,13 @@ n of the corresponding vector multiplet and integration over its fugacities.
 
 .
  The index 
-\begin_inset Formula $\mathcal{I}_{\mathcal{T}}\left(z\right)$
+\begin_inset Formula $\mathcal{I}_{\mathcal{T}}(z)$
 \end_inset
 
  of the vector multiplet is given by elliptic gamma functions: 
 \begin_inset Formula 
 \begin{equation}
-z=\mathcal{I}_{\mathcal{T}}\left(z;p,q\right)=\frac{\left(p;p\right)_{\infty}^{N-1}\left(q;q\right)_{\infty}^{N-1}}{N!}\prod_{I,J=1(I\neq J)}^{N}\frac{1}{\Gamma\left(z_{I/z_{J}};p,q\right)}.
+z=\mathcal{I}_{\mathcal{T}}(z;p,q)=\frac{\left(p;p\right)_{\infty}^{N-1}\left(q;q\right)_{\infty}^{N-1}}{N!}\prod_{I,J=1(I\neq J)}^{N}\frac{1}{\Gamma(z_{I}/z_{J};p,q)}.
 \end{equation}
 
 \end_inset
@@ -1232,7 +1302,7 @@ The index of a bifundamental chiral multiplet with fugacity
  is given by 
 \begin_inset Formula 
 \begin{equation}
-a=\mathcal{I}_{B}\left(z,w;a\right)=\prod_{I,J=1}^{N}\Gamma\left(a\frac{w_{I}}{z_{J}}\right).
+a=\mathcal{I}_{B}(z,w;a)=\prod_{I,J=1}^{N}\Gamma\left(a\frac{w_{I}}{z_{J}}\right).
 \end{equation}
 
 \end_inset
@@ -1240,7 +1310,7 @@ a=\mathcal{I}_{B}\left(z,w;a\right)=\prod_{I,J=1}^{N}\Gamma\left(a\frac{w_{I}}{z
  This function satisfies 
 \begin_inset Formula 
 \begin{equation}
-\mathcal{I}_{B}\left(z,w;a\right)\mathcal{I}_{B}\left(w,z;\frac{pq}{a}\right)=1.
+\mathcal{I}_{B}(z,w;a)\mathcal{I}_{B}\left(w,z;\frac{pq}{a}\right)=1.
 \end{equation}
 
 \end_inset
@@ -1290,7 +1360,7 @@ deltafunction
  by the relation
 \begin_inset Formula 
 \begin{equation}
-\mathcal{I}_{\mathcal{T}}\left(w\right)=\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}\left(z\right)\mathcal{I}_{\mathcal{T}}\left(z\right)delta,
+\mathcal{I}_{\mathcal{T}}(w)=\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}(z)\mathcal{I}_{\mathcal{T}}(z)delta,
 \end{equation}
 
 \end_inset
@@ -1298,7 +1368,7 @@ deltafunction
  then we have 
 \begin_inset Formula 
 \begin{align}
-a-a^{-1} & =\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dx_{I}}{2\pi ix_{I}}\mathcal{I}_{V}\left(x\right)\mathcal{I}_{B}\left(z,x;a\right)\mathcal{I}_{B}\left(x,w;a^{-1}\right)\nonumber \\
+a-a^{-1} & =\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dx_{I}}{2\pi ix_{I}}\mathcal{I}_{V}(x)\mathcal{I}_{B}(z,x;a)\mathcal{I}_{B}\left(x,w;a^{-1}\right)\nonumber \\
  & =\Gamma\left(a^{\pm N}\right)delta.
 \end{align}
 
@@ -1324,7 +1394,7 @@ a-a^{-1} & =\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dx_{I}}{2\pi ix_{I}}\m
 
  are identified, so we get the quiver on the second line.
  The 
-\begin_inset Formula $\Gamma\left(a^{\pm N}\right):=\Gamma\left(a^{N}\right)\Gamma\left(a^{-N}\right)$
+\begin_inset Formula $\Gamma(a^{\pm N}):=\Gamma(a^{N})\Gamma(a^{-N})$
 \end_inset
 
  is the contribution from the baryons.
@@ -1339,7 +1409,7 @@ We can readily write down the formula for the index of a general quiver
  Then, the index is computed by 
 \begin_inset Formula 
 \begin{equation}
-\prod_{z}\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}\left(z\right)\prod_{x\rightarrow y}\mathcal{I}_{B}\left(x,y\right),\label{eq:fullindex}
+\prod_{z}\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}(z)\prod_{x\rightarrow y}\mathcal{I}_{B}(x,y),\label{eq:fullindex}
 \end{equation}
 
 \end_inset
@@ -1746,11 +1816,11 @@ Now we introduce a half-BPS surface defect, and put it on
 \end_inset
 
  factor may be taken to be either 
-\begin_inset Formula $\left\{ \zeta_{1}=0\right\} $
+\begin_inset Formula $\{\zeta_{1}=0\}$
 \end_inset
 
  or 
-\begin_inset Formula $\left\{ \zeta_{2}=0\right\} $
+\begin_inset Formula $\{\zeta_{2}=0\}$
 \end_inset
 
  in the parametrization 
@@ -1787,10 +1857,13 @@ dashedline.
 
 \end_inset
 
- This line operator is specified by a representation of SU(N) [Gadde-Gukov,
- Gukov-Witten].
+ This line operator is specified by a representation of 
+\begin_inset Formula $SU(N)$
+\end_inset
+
+ [Gadde-Gukov, Gukov-Witten].
  In fact, it is labeled with a pair of representations 
-\begin_inset Formula $\left(R_{1},R_{2}\right)$
+\begin_inset Formula $(R_{1},R_{2})$
 \end_inset
 
  since in general we can take superposition of two surface defects, each
@@ -1863,11 +1936,11 @@ noprefix "false"
 \begin_inset Formula $\left(N,q+2\right)$
 \end_inset
 
- 5-branes are related by an SL(
-\begin_inset Formula $2;\mathbb{Z}$
+ 5-branes are related by an 
+\begin_inset Formula $SL(2;\mathbb{Z})$
 \end_inset
 
-) transformation of type IIB string theory.
+ transformation of type IIB string theory.
  Therefore, we can go to a duality frame in which the transfer matrix only
  involves either 
 \begin_inset Formula $\left(N,0\right)$
@@ -1905,12 +1978,16 @@ We denote the L-operator in this case by
  a brane tiling model described by the diamond quiver constructed from the
  R-operator (eq:diamond quiver).
  In the situation under consideration, the gauge group of a brane tiling
- model is a product of SU(2) groups, and the surface defect is labeled 
+ model is a product of 
+\begin_inset Formula $SU(2)$
+\end_inset
+
+ groups, and the surface defect is labeled 
 \begin_inset Formula $\left(R_{1},R_{2}\right)=\left(\emptyset,fund\right)$
 \end_inset
 
 ; the D3-brane wraps the circle 
-\begin_inset Formula $\left\{ \zeta_{2}=0\right\} $
+\begin_inset Formula $\{\zeta_{2}=0\}$
 \end_inset
 
  in 
@@ -1974,7 +2051,7 @@ On the other hand, in the context of integrable lattice models Sklyanin
  that solves the RLL relation [Sklyanin^2]
 \begin_inset Formula 
 \begin{equation}
-\mathcal{R}_{12}^{\mathrm{B}}\left(u_{1},u_{2}\right)L_{1}^{\mathrm{S}}\left(u_{1},\left(\nu,l\right)\right)L_{2}^{\mathrm{S}}\left(u_{2},\left(\nu,l\right)\right)=L_{2}^{\mathrm{S}}\left(u_{2},\left(\nu,l\right)\right)L_{1}^{\mathrm{S}}\left(u_{1},\left(\nu,l\right)\right)\mathcal{R}_{12}^{\mathrm{B}}\left(u_{1},u_{2}\right),
+\mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2})L_{1}^{\mathrm{S}}\left(u_{1},\left(\nu,l\right)\right)L_{2}^{\mathrm{S}}\left(u_{2},\left(\nu,l\right)\right)=L_{2}^{\mathrm{S}}\left(u_{2},\left(\nu,l\right)\right)L_{1}^{\mathrm{S}}\left(u_{1},\left(\nu,l\right)\right)\mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2}),
 \end{equation}
 
 \end_inset
@@ -2004,7 +2081,7 @@ with Baxter's R-matrix
  Baxter's R-matrix solves the Yang-Baxter equation
 \begin_inset Formula 
 \begin{equation}
-\mathcal{R}_{12}^{\mathrm{B}}\left(u_{1},u_{2}\right)\mathcal{R}_{13}^{\mathrm{B}}\left(u_{1},u_{3}\right)\mathcal{R}_{23}^{\mathrm{B}}\left(u_{2},u_{3}\right)=\mathcal{R}_{23}^{\mathrm{B}}\left(u_{2},u_{3}\right)\mathcal{R}_{13}^{\mathrm{B}}\left(u_{1},u_{3}\right)\mathcal{R}_{12}^{\mathrm{B}}\left(u_{1},u_{2}\right),
+\mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2})\mathcal{R}_{13}^{\mathrm{B}}(u_{1},u_{3})\mathcal{R}_{23}^{\mathrm{B}}(u_{2},u_{3})=\mathcal{R}_{23}^{\mathrm{B}}(u_{2},u_{3})\mathcal{R}_{13}^{\mathrm{B}}(u_{1},u_{3})\mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2}),
 \end{equation}
 
 \end_inset
@@ -2012,7 +2089,7 @@ with Baxter's R-matrix
  and the solution is given by 
 \begin_inset Formula 
 \begin{equation}
-\mathcal{R}_{ij}^{\mathrm{B}}\left(u_{i},u_{j}\right)=P\sum_{a=0}^{3}w_{a}\left(u_{i}-u_{j}\right)\sigma_{a}\otimes\sigma_{a},\quad\,w_{a}\left(u\right)=\frac{\theta_{a+1}\left(u+\eta\right)}{\theta_{a+1}\left(\eta\right)},
+\mathcal{R}_{ij}^{\mathrm{B}}(u_{i},u_{j})=P\sum_{a=0}^{3}w_{a}(u_{i}-u_{j})\sigma_{a}\otimes\sigma_{a},\quad\,w_{a}(u)=\frac{\theta_{a+1}(u+\eta)}{\theta_{a+1}(\eta)},
 \end{equation}
 
 \end_inset
@@ -2030,7 +2107,7 @@ with Baxter's R-matrix
 \end_inset
 
  unit matrix, 
-\begin_inset Formula $\theta_{a+1}\left(u\right)=\theta_{a+1}\left(u|\tau\right)$
+\begin_inset Formula $\theta_{a+1}(u)=\theta_{a+1}(u|\tau)$
 \end_inset
 
  are the Jacobi theta functions, and 
@@ -2041,7 +2118,7 @@ with Baxter's R-matrix
  Sklyanin's L-operator is defined by 
 \begin_inset Formula 
 \begin{equation}
-L^{\mathrm{S}}\left(u,\left(\nu,l\right)\right)=P\sum_{a=0}^{3}w_{a}\left(u+\eta\right)\sigma_{a}\otimes\mathbf{S}_{a}^{(l)}.
+L^{\mathrm{S}}\left(u,\left(\nu,l\right)\right)=P\sum_{a=0}^{3}w_{a}(u+\eta)\sigma_{a}\otimes\mathbf{S}_{a}^{(l)}.
 \end{equation}
 
 \end_inset
@@ -2057,7 +2134,7 @@ L^{\mathrm{S}}\left(u,\left(\nu,l\right)\right)=P\sum_{a=0}^{3}w_{a}\left(u+\eta
  as difference operators:
 \begin_inset Formula 
 \begin{equation}
-\left(\mathbf{S}_{a}^{(l)}f\right)\left(\zeta\right)=i^{\delta_{a,0}}\frac{\theta_{a+1}\left(\eta\right)}{\theta_{a+1}\left(2\zeta\right)}\left(\theta_{a+1}\left(2\zeta-2\eta l\right)f(\zeta+\eta)-\theta_{a+1}\left(-2\zeta-2\eta l\right)f(\zeta-\eta)\right).
+\left(\mathbf{S}_{a}^{(l)}f\right)(\zeta)=i^{\delta_{a,0}}\frac{\theta_{a+1}(\eta)}{\theta_{a+1}(2\zeta)}\left(\theta_{a+1}(2\zeta-2\eta l)f(\zeta+\eta)-\theta_{a+1}(-2\zeta-2\eta l)f(\zeta-\eta)\right).
 \end{equation}
 
 \end_inset
@@ -2371,11 +2448,10 @@ elliptic modular double
 \end_layout
 
 \begin_layout Subsubsection
-Surface defects in 
-\begin_inset Formula $A_{1}$
+\begin_inset Formula $\mathcal{N}=2$
 \end_inset
 
-
+ quiver theories and brane tilings
 \end_layout
 
 \begin_layout Standard
@@ -2386,8 +2462,15 @@ Building blocks of 4d
  supersymmetric quiver gauge theories are vector multiplets and bifundamental
  chiral multiplets.
  A vector multiplet is present at a gauge node.
- A bifundamental chiral multiplet has two flavor groups, say SU(N)z and
- SU(N)w.
+ A bifundamental chiral multiplet has two flavor groups, say 
+\begin_inset Formula $SU(N)_{z}$
+\end_inset
+
+ and 
+\begin_inset Formula $SU(N)_{w}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2395,15 +2478,27 @@ Given a theory
 \begin_inset Formula $\mathcal{T}$
 \end_inset
 
- with flavor group SU(N)w and another theory 
+ with flavor group 
+\begin_inset Formula $SU(N)_{w}$
+\end_inset
+
+ and another theory 
 \begin_inset Formula $\mathcal{T}'$
 \end_inset
 
- with flavor group SU(N)w', we can couple them to obtain a new theory 
+ with flavor group 
+\begin_inset Formula $SU(N)_{w'}$
+\end_inset
+
+, we can couple them to obtain a new theory 
 \begin_inset Formula $\left(\mathcal{T}\times\mathcal{T}'\right)/SU(N)_{z}$
 \end_inset
 
- by gauging the diagonal subgroup SU(N)z of 
+ by gauging the diagonal subgroup 
+\begin_inset Formula $SU(N)_{z}$
+\end_inset
+
+ of 
 \begin_inset Formula $SU(N)_{w}\times SU(N)_{w'}$
 \end_inset
 
@@ -2441,9 +2536,12 @@ Now we aim to check the proposal on surface defects and transfer matrices
  theories have been studied in [Gaiotto-Rastelli-Razamat, Gadde-Gukov, Alday
  et al, Bullimore et al].
  Here we first review the computation for the surface defect labeled with
- the fundamental representation of SU(2) based on the method developed in
- [GRR], and show that the result agrees with the prediction from the transfer
- matrix 
+ the fundamental representation of 
+\begin_inset Formula $SU(2)$
+\end_inset
+
+ based on the method developed in [GRR], and show that the result agrees
+ with the prediction from the transfer matrix 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:proposal"
@@ -2466,7 +2564,10 @@ Typical examples of class-
 \begin_inset Formula $\mathcal{N}=2$
 \end_inset
 
- gauge theories characterized by linear and circular quivers with SU(N)
+ gauge theories characterized by linear and circular quivers with 
+\begin_inset Formula $SU(N)$
+\end_inset
+
  nodes.
  They are actually also examples of brane tiling models discussed in the
  previous sections.
@@ -2976,8 +3077,12 @@ R-symmetry of the theory is
 \end_inset
 
  the rotation symmetry of the 45-plane.
- The SU(N) flavor node from each end of the quiver is associated to the
- maximal puncture on the corresponding side of the sphere.
+ The 
+\begin_inset Formula $SU(N)$
+\end_inset
+
+ flavor node from each end of the quiver is associated to the maximal puncture
+ on the corresponding side of the sphere.
  The 
 \begin_inset Formula $i$
 \end_inset
@@ -3132,7 +3237,7 @@ th hypermultiplet consists of two bifundamental chiral multiplets
 
 .
  The pair 
-\begin_inset Formula $\left(Q_{i},\tilde{Q}_{i}^{\dagger}\right)$
+\begin_inset Formula $(Q_{i},\tilde{Q}_{i}^{\dagger})$
 \end_inset
 
  transforms in the doublet of 
@@ -3152,7 +3257,11 @@ th hypermultiplet consists of two bifundamental chiral multiplets
 \begin_inset Formula $\mathcal{N}=1$
 \end_inset
 
- supersymmetry, the U(1) symmetry generated by the combination 
+ supersymmetry, the 
+\begin_inset Formula $U(1)$
+\end_inset
+
+ symmetry generated by the combination 
 \begin_inset Formula 
 \begin{equation}
 \mathcal{F}=r+I_{3}
@@ -3183,11 +3292,11 @@ is a flavor symmetry.
 \end_inset
 
  enter the trace through the combination 
-\begin_inset Formula $\left(pq\right)^{-r}t^{\mathcal{F}}$
+\begin_inset Formula $(pq)^{-r}t^{\mathcal{F}}$
 \end_inset
 
 .
- THen, the fugacities of 
+ Then, the fugacities of 
 \begin_inset Formula $Q_{i},\,\tilde{Q}_{i}$
 \end_inset
 
@@ -3208,6 +3317,1111 @@ is a flavor symmetry.
 \end_inset
 
 , respectively.
+ 
+\end_layout
+
+\begin_layout Standard
+It is helpful for us to prepare two copies for each node of the quiver and
+ impose identification between them.
+ We draw the arrows in such a way that 
+\begin_inset Formula $\Phi_{i}$
+\end_inset
+
+ connects the two copies of the 
+\begin_inset Formula $i$
+\end_inset
+
+th node and makes a triangle with 
+\begin_inset Formula $Q_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\tilde{Q}_{i}$
+\end_inset
+
+, as in figure.
+ Drawn in this form, it is clear that the 
+\begin_inset Formula $\mathcal{N}=2$
+\end_inset
+
+ linear quiver is a special case of the triangle quiver described in section
+ ??, except that the vertical arrow is missing between the flavor nodes
+ at the right end.
+ The corresponding brane tiling diagram is therefore essentially the same,
+ as shown in figure.
+ Note that the cubic superpotentials, generated around the triangles by
+ world-sheet instantons, are precisely what we need for the theory to have
+ 
+\begin_inset Formula $\mathcal{N}=2$
+\end_inset
+
+ supersymmetry.
+\end_layout
+
+\begin_layout Standard
+As we can split the 
+\begin_inset Formula $(m+1)$
+\end_inset
+
+-punctured sphere into a collection of 
+\begin_inset Formula $m$
+\end_inset
+
+ trinioins, we can also break the brane tiling diagram into basic pieces.
+ Each piece represents a single trinioin and is made of three zig-zag paths,
+ see figure??.
+ Gluing two trinions corresponds to concatenating two such diagrams side
+ by side.
+ In the course of this operation, we must interchange the positions of the
+ zig-zag paths labeled 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ near the glued side of one of the diagrams.
+ This results in an additional vertical arrow in the combined quiver, which
+ is the adjoint chiral multiplet in the 
+\begin_inset Formula $\mathcal{N}=2$
+\end_inset
+
+ vector multiplet used in the gauging.
+\end_layout
+
+\begin_layout Standard
+Let us find the relationship between the convention we use for brane tilings
+ and that used above.
+ The R-charge 
+\begin_inset Formula $R$
+\end_inset
+
+ in the brane tiling model is given in terms of the charges of the 
+\begin_inset Formula $\mathcal{N}=2$
+\end_inset
+
+ theory by 
+\begin_inset Formula 
+\begin{equation}
+R=R_{0}+\frac{1}{2}\sum_{i}F_{i},\quad\,R_{0}=-r+I_{3}.
+\end{equation}
+
+\end_inset
+
+ The flavor charges associated to the zig-zag paths can be written as 
+\begin_inset Formula 
+\begin{equation}
+F_{a_{i}}=-F_{i},\quad\,F_{b}=-\mathcal{F}+\frac{1}{2}\sum_{i}F_{i},\quad\,F_{c}=\mathcal{F}+\frac{1}{2}\sum_{i}F_{i}.
+\end{equation}
+
+\end_inset
+
+Without loss of generality, we can set
+\begin_inset Formula 
+\begin{equation}
+a_{i}=\frac{1}{\alpha_{i}}.
+\end{equation}
+
+\end_inset
+
+Plugging these relations into the combination 
+\begin_inset Formula $(pq)^{R/2}\prod_{i}a_{i}^{F_{a_{i}}}b^{F_{b}}c^{F_{c}}$
+\end_inset
+
+ that enters the indices of the bifundamental chiral multiplets, we deduce
+\begin_inset Formula 
+\begin{equation}
+b=\frac{1}{\sqrt{t}},\quad\,c=\sqrt{\frac{t}{pq}}.\label{eq:relation_bc}
+\end{equation}
+
+\end_inset
+
+Before proceeding, we should mention a peculiarity in the 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ case.
+ When 
+\begin_inset Formula $N=2$
+\end_inset
+
+, the U(1) flavor symmetry of a bifundamental hypermultiplet is enhanced
+ to 
+\begin_inset Formula $SU(2)$
+\end_inset
+
+ due to the fact that the fundamental representation of 
+\begin_inset Formula $SU(2)$
+\end_inset
+
+ is pseudoreal.
+ For this reason there is no distinction between minimal and maxmal punctures,
+ and each trinion can be regarded as a half-hypermultiplet in the trifundamental
+ representation of 
+\begin_inset Formula $SU(2)^{3}$
+\end_inset
+
+.
+ This is reflected in the index of a trinion, 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{I}_{B}(w,z;\sqrt{t}a)\mathcal{I}_{B}(z,w;\sqrt{t}/a)=\Gamma(\sqrt{t}\alpha^{\pm1}z^{\pm1}w^{\pm1}),
+\end{equation}
+
+\end_inset
+
+which is manifestly symmetric under permutation of 
+\begin_inset Formula $a,\,z$
+\end_inset
+
+ and 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Surface defects in 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ theories of class 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In [Gaiotto-Rastelli-Razamat], it was explained how to construct a surface
+ defect labeled with a pair of integers 
+\begin_inset Formula $(r,s)$
+\end_inset
+
+, and how to determine its action on the supersymmetric index.
+ Although the method applies to general 
+\begin_inset Formula $\mathcal{N}=2$
+\end_inset
+
+ theories with 
+\begin_inset Formula $SU(N)$
+\end_inset
+
+ flavor symmetry, here we review it in the language of class-
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ theories.
+ 
+\end_layout
+
+\begin_layout Standard
+Suppose we have a class-
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ theory 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+ associated to a Riemann surface that contains a maximal puncture, whose
+ flavor group we call 
+\begin_inset Formula $SU(N)_{z}$
+\end_inset
+
+.
+ To this surface we introduce an extra minimal puncture.
+ Concretely, we can do this as follows.
+ First, we rename the flavor group 
+\begin_inset Formula $SU(N)_{z}$
+\end_inset
+
+ to 
+\begin_inset Formula $SU(N)_{w'}$
+\end_inset
+
+.
+ Then, we take trinion representing a hypermultiplet 
+\begin_inset Formula $(Q,\tilde{Q})$
+\end_inset
+
+ with flavor symmetry 
+\begin_inset Formula $SU(N)_{w''}\times SU(N)_{z}\times U(1)_{\alpha}$
+\end_inset
+
+, and glue it to 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+ by gauging the diagonal subgroup 
+\begin_inset Formula $SU(N)_{w}$
+\end_inset
+
+ of 
+\begin_inset Formula $SU(N)_{w'}\times SU(N)_{w''}$
+\end_inset
+
+.
+ The resulting theory 
+\begin_inset Formula $\mathcal{T}_{\mathrm{UV}}$
+\end_inset
+
+ has one more flavor symmetry, 
+\begin_inset Formula $U(1)_{\alpha}$
+\end_inset
+
+, than 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+.
+ Correspondingly, the surface associated to 
+\begin_inset Formula $\mathcal{T}_{\mathrm{UV}}$
+\end_inset
+
+ has one more minimal puncture than the original surface.
+\end_layout
+
+\begin_layout Standard
+The theory 
+\begin_inset Formula $\mathcal{T}_{\mathrm{UV}}$
+\end_inset
+
+ is related to 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+ via the RG flow induced by a diagonal constant vev given to the quark 
+\begin_inset Formula $Q$
+\end_inset
+
+, or equivalently, to the baryon 
+\begin_inset Formula $B=\det Q$
+\end_inset
+
+.
+ The vev higgses the gauge group 
+\begin_inset Formula $SU(N)_{w}$
+\end_inset
+
+ and breaks 
+\begin_inset Formula $SU(N)_{w}\times SU(N)_{z}$
+\end_inset
+
+ down to the diagonal subgroup.
+ Moreover, it turns the cubic superpotential 
+\begin_inset Formula $\tilde{Q}\Phi Q$
+\end_inset
+
+ into a quadratic one that makes 
+\begin_inset Formula $\tilde{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ massive, where 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ is the adjoint chiral multiplet introduced in the gluing.
+ Up to Nambu-Goldstone multiplets that survive the higgsing, in the infrared
+ the multiplets we added are gone and we recover 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+, with 
+\begin_inset Formula $SU(N)_{w}$
+\end_inset
+
+ replaced with 
+\begin_inset Formula $SU(N)_{z}$
+\end_inset
+
+.
+ In effect, the minimal puncture introduced by gluing the trinion is 
+\begin_inset Quotes eld
+\end_inset
+
+closed.
+\begin_inset Quotes erd
+\end_inset
+
+ The R-charge 
+\begin_inset Formula $I_{3}$
+\end_inset
+
+ is broken by the vev, but the combination 
+\begin_inset Formula $I_{3}+F_{\alpha}/2$
+\end_inset
+
+ is preserved and identified with a Cartan generator of the infrared SU(2)
+ R-symmetry.
+\end_layout
+
+\begin_layout Standard
+To create a surface defect in 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+, we instead give the baryon a position-dependent vev 
+\begin_inset Formula $\left\langle B\right\rangle =\zeta_{1}^{r}\zeta_{2}^{s}$
+\end_inset
+
+.
+ Here, as vefore, 
+\begin_inset Formula $\zeta_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\zeta_{2}$
+\end_inset
+
+ are complex coordinates of the two orthogonal planes rotated by 
+\begin_inset Formula $j_{p}=j_{1}+j_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $j_{q}=j_{1}-j_{2}$
+\end_inset
+
+, respectively.
+ Away from the origin, the effect of the position-dependent vev is the same
+ as that of the constant vev, so we get 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+ in the infrared.
+ If 
+\begin_inset Formula $r\neq0$
+\end_inset
+
+, however, the infrared theory is modified on the plane 
+\begin_inset Formula $\{\zeta_{1}=0\}$
+\end_inset
+
+ since the vev vanishes there.
+ By the same token, the theory is modified on the plane 
+\begin_inset Formula $\{\zeta_{2}=0\}$
+\end_inset
+
+ if 
+\begin_inset Formula $s\neq0$
+\end_inset
+
+.
+ Hence, in general we obtain 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+ with the insertion of a surface defect labeled with the pair of integers
+ 
+\begin_inset Formula $(r,s)$
+\end_inset
+
+, supported on the planes 
+\begin_inset Formula $\{\zeta_{1}=0\}$
+\end_inset
+
+ and 
+\begin_inset Formula $\{\zeta_{2}=0\}$
+\end_inset
+
+.
+ This surface defect is to be identified with the surface defect labeled
+ with the pair 
+\begin_inset Formula $(r\,fund,s\,fund)$
+\end_inset
+
+ of symmetric representation of SU(N) discussed in the previous section
+ [Gadde-Gukov].
+ 
+\end_layout
+
+\begin_layout Standard
+The index of 
+\begin_inset Formula $\mathcal{T}_{\mathrm{UV}}$
+\end_inset
+
+ has a pole in the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-plane at 
+\begin_inset Formula $\alpha=\sqrt{t}p^{r/N}q^{s/N}$
+\end_inset
+
+, and the residue there gives the index of 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+ in the presence of the surface defect of type 
+\begin_inset Formula $(r,s)$
+\end_inset
+
+.
+ The reason is the following.
+ The position-dependent vev 
+\begin_inset Formula $\left\langle B\right\rangle =\zeta_{1}^{r}\zeta_{2}^{s}$
+\end_inset
+
+ breaks 
+\begin_inset Formula $U(1)_{p}$
+\end_inset
+
+, 
+\begin_inset Formula $U(1)_{q}$
+\end_inset
+
+, and 
+\begin_inset Formula $SU(2)_{I}$
+\end_inset
+
+.
+ At this value of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, however, the only combinations of charges that enter the trace defining
+ the index are those that are preserved by the vev.
+ Thus, we can still define the index in this background.
+ As explained above, 
+\begin_inset Formula $\mathcal{T}_{\mathrm{UV}}$
+\end_inset
+
+ flows to 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+ plus Nambu-Goldstone multiplets in the infrared.
+ The latter contains massless degrees of freedom, and they contribute to
+ the index by a diverging factor, in fact a simple pole in the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-plane.
+ Therefore, the residue at this pole gives the index of 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+, together with some factor associated with the Nambu-Goldstone multiplets.
+\end_layout
+
+\begin_layout Standard
+We wish to compute this residue and determine the action of the surface
+ defect on the index in the simplest non-trivial case, namely when 
+\begin_inset Formula $N=2$
+\end_inset
+
+ and 
+\begin_inset Formula $(r,s)=(0,1)$
+\end_inset
+
+.
+ But first, let us look at the trivial case 
+\begin_inset Formula $(r,s)=(0,0)$
+\end_inset
+
+ to gain intuition of the computation.
+\end_layout
+
+\begin_layout Standard
+In the construction of a surface defect described above, 
+\begin_inset Formula $\tilde{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ actually play no role.
+ The essential point is that the vev given to the baryon built from 
+\begin_inset Formula $Q$
+\end_inset
+
+ replaces 
+\begin_inset Formula $SU(N)_{w}$
+\end_inset
+
+ with 
+\begin_inset Formula $SU(N)_{z}$
+\end_inset
+
+ in the infrared.
+ So we couple 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+ just to 
+\begin_inset Formula $Q$
+\end_inset
+
+ for the moment.
+ The index of the combined theory is given by
+\begin_inset Formula 
+\begin{equation}
+\int_{\mathbb{T}}\frac{dw}{2\pi iw}\mathcal{I}_{\mathrm{V}}(w)\mathcal{I}_{\mathrm{B}}(z,w;\rho)\mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(w)=\kappa\int_{\mathbb{T}}\frac{dw}{2\pi iw}\frac{\Gamma(\rho z^{\pm1}w^{\pm1})}{\Gamma(w^{\pm2})}\mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(w),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\rho=\sqrt{t}/a$
+\end_inset
+
+ is the fugacity of 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $\kappa=(p;p)_{\infty}(q;q)_{\infty}/2$
+\end_inset
+
+.
+ In this integral, 
+\begin_inset Formula $|\rho|<1$
+\end_inset
+
+ is assumed, but we can analytically continue 
+\begin_inset Formula $\rho$
+\end_inset
+
+ to a complex parameter and study its pole structure.
+ At 
+\begin_inset Formula $\rho=1$
+\end_inset
+
+, a constant vev be turned on for 
+\begin_inset Formula $B$
+\end_inset
+
+ without conflicting with the definition of the index.
+ The integral should have a pole at this point in the 
+\begin_inset Formula $p$
+\end_inset
+
+-plane, and we want to calculate the residue there.
+\end_layout
+
+\begin_layout Standard
+The integrand has two pairs of poles in the 
+\begin_inset Formula $w$
+\end_inset
+
+-plane at
+\begin_inset Formula 
+\begin{equation}
+w=\rho z,\,\rho^{-1}z;\quad\quad\,w=\rho z^{-1},\,\rho^{-1}z^{-1}.
+\end{equation}
+
+\end_inset
+
+ As 
+\begin_inset Formula $\rho\rightarrow1$
+\end_inset
+
+, the first pair of poles collide and pinch the integration contour, and
+ the integral diverges.
+ Likewise, the second pair also collide in this limit.
+ The pole of the integral in the 
+\begin_inset Formula $\rho$
+\end_inset
+
+-plane arises from the contributions from these poles in 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Using formula (eq:appendix), we find that the contribution from the pole
+ at 
+\begin_inset Formula $w=\rho z$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{2}\frac{\Gamma(\rho^{2}z^{2})\Gamma(z^{-2})}{\Gamma(\rho^{2}z^{2})\Gamma(\rho^{-2}z^{-2})}\Gamma(\rho^{2})\mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(\rho z).
+\end{equation}
+
+\end_inset
+
+ The last factor 
+\begin_inset Formula $\Gamma(\rho^{2})$
+\end_inset
+
+ indeed has a pole at 
+\begin_inset Formula $\rho=1$
+\end_inset
+
+, with residue 
+\begin_inset Formula $1/4\kappa$
+\end_inset
+
+.
+ The pole at 
+\begin_inset Formula $w=\rho z^{-1}$
+\end_inset
+
+ makes an equal contribution, and we get
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Res}_{\rho=1}\left[\int_{\mathbb{T}}\frac{dw}{2\pi iw}\mathcal{I}_{\mathrm{V}}(w)\mathcal{I}_{\mathrm{B}}(z,w;\rho)\mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(w)\right]=\frac{1}{2}\frac{1}{2\kappa}\mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(z).
+\end{equation}
+
+\end_inset
+
+As expected, the residue reproduces the index of 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+, multiplied by some factors.
+ The factor of 
+\begin_inset Formula $1/2$
+\end_inset
+
+ comes from the fact that 
+\begin_inset Formula $B$
+\end_inset
+
+ has fugacity 
+\begin_inset Formula $\rho^{2}$
+\end_inset
+
+, and disappears if we add the equal contribution from the pole at 
+\begin_inset Formula $\rho=-1$
+\end_inset
+
+.
+ The factor 
+\begin_inset Formula $1/2\kappa$
+\end_inset
+
+ is the contribution from a decoupled free chiral multiplet contained in
+ a Nambu-Goldstone multiplet.
+ It is the inverse of the index of a free vector multiplet since higgsing
+ of a U(1) gauge theory with a single chiral multiplet leads to a trivial
+ theory whose index is one.
+ 
+\end_layout
+
+\begin_layout Standard
+In order to express this result in a concise form, we introduce the notation
+ of 
+\begin_inset Quotes eld
+\end_inset
+
+striking out an arrow
+\begin_inset Quotes erd
+\end_inset
+
+ in a quiver diagram to indicate that a constant vev is given to the baryonic
+ operator built from the bifundamental chiral multiplet represented by that
+ arrow, and the notation, what we just found is the identity
+\begin_inset Formula 
+\begin{equation}
+=4\kappa\mathrm{Res}_{\rho=1}=,\label{eq:deltaidentity}
+\end{equation}
+
+\end_inset
+
+ where the right-hand side is the delta function defined by the relation
+ (??).
+ This identity holds when the index of any theory with 
+\begin_inset Formula $SU(2)$
+\end_inset
+
+ flavor symmetry (or more generally, any meromorphic function 
+\begin_inset Formula $f(w)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f(w)=f(1/w)$
+\end_inset
+
+) is coupled to the right node.
+\end_layout
+
+\begin_layout Standard
+With the help of this identity, we can readily show that when a constant
+ vev is turned on for 
+\begin_inset Formula $B$
+\end_inset
+
+, the index of 
+\begin_inset Formula $\mathcal{T}_{\mathrm{UV}}$
+\end_inset
+
+ reduces to that of 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+.
+ All we have to do is to look at the part of 
+\begin_inset Formula $\mathcal{T}_{\mathrm{UV}}$
+\end_inset
+
+ describing the coupling to the trinion, and compute the relevant residue:
+\begin_inset Formula 
+\begin{equation}
+=t=.
+\end{equation}
+
+\end_inset
+
+ In the first equality we use the identity 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:deltaidentity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and set 
+\begin_inset Formula $\rho=1$
+\end_inset
+
+, and in the second we canceled the pair of arrows making a loop.
+ Thus, the vev transforms the trinion into the original flavor node of 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We can compute the index of 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+ in the presence of a surface defect in a similar manner.
+ To indicate that the position-dependent vev 
+\begin_inset Formula $\left\langle B\right\rangle =\zeta_{1}^{r}\zeta_{2}^{s}$
+\end_inset
+
+ is turned on, we put the label 
+\begin_inset Formula $(r,s)$
+\end_inset
+
+ on the struck-out arrow:
+\begin_inset Formula 
+\begin{equation}
+=4\kappa\mathrm{Res}_{\rho=p^{-r/2}q^{-s/2}}\label{eq:surfacedefect_residue}
+\end{equation}
+
+\end_inset
+
+ Then the action of the surface defect of type 
+\begin_inset Formula $(r,s)$
+\end_inset
+
+ on the index is encoded in the diagram
+\begin_inset Formula 
+\begin{equation}
+(r,s).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let us calculate the residue 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:deltaidentity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ for 
+\begin_inset Formula $(r,s)=(0,1)$
+\end_inset
+
+.
+ At 
+\begin_inset Formula $\rho=q^{-1/2}$
+\end_inset
+
+, the index 
+\begin_inset Formula $\mathcal{I}_{B}(z,w;\rho)=\Gamma(\rho z^{\pm1}w^{\pm1})$
+\end_inset
+
+ of 
+\begin_inset Formula $Q$
+\end_inset
+
+ has four sets of colliding poles in the 
+\begin_inset Formula $w$
+\end_inset
+
+-plane.
+ Two of them are 
+\begin_inset Formula 
+\begin{equation}
+w=\rho qz,\,\rho^{-1}z;\quad\quad\,w=\rho z^{-1},\,\rho^{-1}q^{-1}z^{-1},
+\end{equation}
+
+\end_inset
+
+ while the other two are 
+\begin_inset Formula 
+\begin{equation}
+w=\rho qz^{-1},\,\rho^{-1}z^{-1};\quad\quad\,w=\rho z,\,\rho^{-1}q^{-1}z.
+\end{equation}
+
+\end_inset
+
+ The contributions to the residue come from these poles.
+ A small calculation shows that the first two sets of poles contribute in
+ the same way: they set 
+\begin_inset Formula $w=q^{1/2}z$
+\end_inset
+
+ and give a factor of 
+\begin_inset Formula $1/\theta(q^{-1})\theta(z^{2})$
+\end_inset
+
+ in total.
+ Similarly, the contributions from the last two set 
+\begin_inset Formula $w=q^{-1/2}z$
+\end_inset
+
+ and give a factor of 
+\begin_inset Formula $1/\theta(q^{-1})\theta(z^{-2})$
+\end_inset
+
+.
+ Altogether, we find that the result can be expressed as 
+\begin_inset Formula 
+\begin{equation}
+=\frac{1}{\theta(q^{-1})}\sum_{s=\pm1}\frac{1}{\theta(z^{2s})}\Delta^{s/2}
+\end{equation}
+
+\end_inset
+
+ We remind the reader that 
+\begin_inset Formula $\theta(z)=\theta(z;p)$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta^{\pm1/2}$
+\end_inset
+
+ act on functions of 
+\begin_inset Formula $z$
+\end_inset
+
+ as 
+\begin_inset Formula $\left(\Delta^{\pm1/2}f\right)(z)=f(q^{\pm1/2}z)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Unlike the case of the constant vev, this identity does not cause a complete
+ cancelation of the indices of 
+\begin_inset Formula $\tilde{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Phi$
+\end_inset
+
+.
+ Rather, for 
+\begin_inset Formula $\rho=q^{-1/2}$
+\end_inset
+
+ and 
+\begin_inset Formula $w=q^{\pm1/2}z$
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\begin{equation}
+=\theta\left(\frac{t}{q}z^{\mp2}\right)\theta(t).
+\end{equation}
+
+\end_inset
+
+Therefore, the effect of introducing the surface defect of type 
+\begin_inset Formula $(0,1)$
+\end_inset
+
+ on the index is realized by the difference operator
+\begin_inset Formula 
+\begin{equation}
+\mathfrak{S}_{(0,1)}=\frac{\theta(t)}{\theta(q^{-1})}\sum_{s=\pm1}\frac{1}{\theta(z^{2s})}\theta\left(\frac{t}{q}z^{-2}\right)\Delta^{s/2}.\label{eq:surfacedefectaction}
+\end{equation}
+
+\end_inset
+
+ The prefactor 
+\begin_inset Formula $\theta(t)/\theta(q^{-1})$
+\end_inset
+
+ is equal to the index of a free chiral field in two dimensions, and represents
+ the center-of-mass degree of freedom of the surface defect.
+\end_layout
+
+\begin_layout Standard
+The difference operator 
+\begin_inset Formula $\mathfrak{S}_{(0,1)}$
+\end_inset
+
+ acts on the fugacity for the maximal puncture on which the surface defect
+ was constructed.
+ This fact has a natural interpretation.
+ To construct the surface defect, we first introduced an extra minimal puncture,
+ and then took the residue of a pole in the fugacity of the associated flavor
+ symmetry.
+ The latter step can be thought of as transforming the minimal puncture
+ to another kind of puncture which represents the surface defect.
+ By construction, this puncture is located in the neighborhood of a maximal
+ puncture contained in a trinion.
+ We can take the surface defect puncture and collide it to the maximal puncture.
+ The collision produces a new puncture, and defines the action of the surface
+ defect on the maximal puncture.
+\end_layout
+
+\begin_layout Subsubsection
+Comparison with the transfer matrix
+\end_layout
+
+\begin_layout Standard
+Let us finally compare the result with the proposal.
+ For clarity of presentation, take a minimal puncture in 
+\begin_inset Formula $\mathcal{T}_{\mathrm{IR}}$
+\end_inset
+
+ and move it close to the maximal puncture on which the surface defect acts.
+ Then the neighborhood of these punctures looks like a trinion glued to
+ another maximal puncture, and is represented by zig-zag paths as in figure??.
+\end_layout
+
+\begin_layout Standard
+According to the proposal, the surface defect creates a dashed line with
+ some spectral parameter 
+\begin_inset Formula $d$
+\end_inset
+
+, also drawn in the picture.
+ It acts on the lattice model as the transfer matrix
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Tr}\left(L^{\diamondsuit}\left(d,(c,b)\right)\right)=\sum_{s=\pm1}\frac{1}{\theta(z^{2s})}\theta\left(\sqrt{\frac{p}{q}}\frac{bc}{d^{2}}\right)\theta\left(\sqrt{\frac{p}{q}}\frac{c}{b}z^{-2s}\right)\Delta^{s/2}.
+\end{equation}
+
+\end_inset
+
+ From the relation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:relation_bc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we see that if we set
+\begin_inset Formula 
+\begin{equation}
+d=\frac{1}{\sqrt{qt}},
+\end{equation}
+
+\end_inset
+
+ the transfer matrix indeed reproduces the difference operator 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:surfacedefectaction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, up to an overall factor which cannot be fixed by the Yang-Baxter equations.
+\end_layout
+
+\begin_layout Standard
+As noted in [Gaiotto-Rastelli-Razamat], the above transfer matrix is essentially
+ the Hamiltonian of elliptic Ruijsenaars-Schneider model [Ruijsenaars-Schneider,
+ Ruijsenaars] of type 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+.
+ This fact follows from a general result obtained in [Hasegawa].
+ 
+\end_layout
+
+\begin_layout Standard
+Here we have considered only the surface defect of type 
+\begin_inset Formula $(0,1)$
+\end_inset
+
+, but the general story is similar.
+ The surface defect of type 
+\begin_inset Formula $(r,s)$
+\end_inset
+
+ acts on the index by a difference operator 
+\begin_inset Formula $\mathfrak{S}_{(r,s)}$
+\end_inset
+
+.
+ This operator is expected to coincide with the transfer matrix for an appropria
+te L-operator.
+ If so, by the RLL relation, the operators 
+\begin_inset Formula $\mathfrak{S}_{(r,s)}$
+\end_inset
+
+ for all 
+\begin_inset Formula $(r,s)$
+\end_inset
+
+ should commute with each other.
+ This is indeed true [GRR].
+ From the class-
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ point of view, the mutual commutativity is guaranteed by the fact that
+ the index is independent of the positions of punctures representing surface
+ defects.
+ Therefore, the order in which they act on a maximal puncture is irrelevant.
+ Note that this argument also exploits the existence of an extra dimension,
+ which is the M-theory circle that emerges as the type IIA brane configuration
+ is lifted to M-theory.
+\end_layout
+
+\begin_layout Standard
+For the same reason, a surface defect puncture can be placed between any
+ two punctures, whether minimal or maximal, and still yield the same result.
+ From the point of view of the type IIA system, this property appears to
+ be quite non-trivial and is known as the 
+\begin_inset Quotes eld
+\end_inset
+
+hopping invariance
+\begin_inset Quotes erd
+\end_inset
+
+ of the index [Gadde-Gukov].
+ From the lattice model viewpoint, this is guaranteed by the other RLL relation
+ (??).
  
 \end_layout
 
