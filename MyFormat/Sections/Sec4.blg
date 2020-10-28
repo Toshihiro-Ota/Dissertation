@@ -1,0 +1,84 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Sec4.aux
+A level-1 auxiliary file: Common/endbib.aux
+The style file: Common/utphys.bst
+Database file #1: Common/Ref.bib
+You're missing a field name---line 637 of file Common/Ref.bib
+ : 
+ : %       URL = {https://doi.org/10.1007/s002200050437},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 685 of file Common/Ref.bib
+ : 
+ : %       URL = {https://doi.org/10.1007/s002200050137},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 715 of file Common/Ref.bib
+ : 
+ : %       URL = {https://doi.org/10.1007/BF00420302},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1018 of file Common/Ref.bib
+ : 
+ : %volume = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1557 of file Common/Ref.bib
+ : 
+ : %      doi            = "10.1088/1126-6708/2008/07/089",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1571 of file Common/Ref.bib
+ : 
+ : %      pages          = "1200",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1682 of file Common/Ref.bib
+ : 
+ : %      pages          = "1200",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 1 entry,
+            2328 wiz_defined-function locations,
+            574 strings with 4207 characters,
+and the built_in function-call counts, 359 in all, are:
+= -- 34
+> -- 8
+< -- 0
++ -- 3
+- -- 2
+* -- 37
+:= -- 45
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 22
+empty$ -- 33
+format.name$ -- 2
+if$ -- 91
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 4
+newline$ -- 6
+num.names$ -- 1
+pop$ -- 5
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 20
+stack$ -- 0
+substring$ -- 12
+swap$ -- 14
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 2
+width$ -- 2
+write$ -- 10
+is.kanji.str$ -- 0
+(There were 7 error messages)
