@@ -4,81 +4,106 @@ The top-level auxiliary file: Sec4.aux
 A level-1 auxiliary file: Common/endbib.aux
 The style file: Common/utphys.bst
 Database file #1: Common/Ref.bib
-You're missing a field name---line 637 of file Common/Ref.bib
+You're missing a field name---line 42 of file Common/Ref.bib
+ : 
+ : %       URL = {https://doi.org/10.1016/0003-4916(86)90097-7},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 72 of file Common/Ref.bib
+ : 
+ : %       URL = {https://doi.org/10.1090/S1061-0022-09-01073-5},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 171 of file Common/Ref.bib
+ : 
+ : %       URL = {https://doi.org/10.1007/BF02764216},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 188 of file Common/Ref.bib
+ : 
+ : %       URL = {https://doi.org/10.4007/annals.2010.171.169},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 206 of file Common/Ref.bib
+ : 
+ : %       URL = {https://doi.org/10.1090/S1061-0022-04-00839-8},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 963 of file Common/Ref.bib
  : 
  : %       URL = {https://doi.org/10.1007/s002200050437},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 685 of file Common/Ref.bib
+You're missing a field name---line 1011 of file Common/Ref.bib
  : 
  : %       URL = {https://doi.org/10.1007/s002200050137},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 715 of file Common/Ref.bib
+You're missing a field name---line 1041 of file Common/Ref.bib
  : 
  : %       URL = {https://doi.org/10.1007/BF00420302},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1018 of file Common/Ref.bib
+You're missing a field name---line 1344 of file Common/Ref.bib
  : 
  : %volume = "",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1557 of file Common/Ref.bib
+You're missing a field name---line 1883 of file Common/Ref.bib
  : 
  : %      doi            = "10.1088/1126-6708/2008/07/089",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1571 of file Common/Ref.bib
+You're missing a field name---line 1897 of file Common/Ref.bib
  : 
  : %      pages          = "1200",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1682 of file Common/Ref.bib
+You're missing a field name---line 2008 of file Common/Ref.bib
  : 
  : %      pages          = "1200",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 1 entry,
+You've used 38 entries,
             2328 wiz_defined-function locations,
-            574 strings with 4207 characters,
-and the built_in function-call counts, 359 in all, are:
-= -- 34
-> -- 8
+            870 strings with 10207 characters,
+and the built_in function-call counts, 11790 in all, are:
+= -- 1194
+> -- 265
 < -- 0
-+ -- 3
-- -- 2
-* -- 37
-:= -- 45
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 1
++ -- 107
+- -- 69
+* -- 1193
+:= -- 1353
+add.period$ -- 40
+call.type$ -- 38
+change.case$ -- 40
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 22
-empty$ -- 33
-format.name$ -- 2
-if$ -- 91
+cite$ -- 38
+duplicate$ -- 626
+empty$ -- 1226
+format.name$ -- 69
+if$ -- 3033
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 4
-newline$ -- 6
-num.names$ -- 1
-pop$ -- 5
+int.to.str$ -- 38
+missing$ -- 145
+newline$ -- 119
+num.names$ -- 38
+pop$ -- 181
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 20
+skip$ -- 449
 stack$ -- 0
-substring$ -- 12
-swap$ -- 14
+substring$ -- 763
+swap$ -- 315
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 2
-width$ -- 2
-write$ -- 10
+while$ -- 114
+width$ -- 40
+write$ -- 296
 is.kanji.str$ -- 0
-(There were 7 error messages)
+(There were 12 error messages)

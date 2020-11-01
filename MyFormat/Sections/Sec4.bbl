@@ -1,9 +1,233 @@
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
 \bibitem{Maruyoshi:2016caf}
 K.~Maruyoshi and J.~Yagi, ``{Surface defects as transfer matrices},''
   \href{http://dx.doi.org/10.1093/ptep/ptw151}{{\em PTEP} {\bfseries 2016}
   no.~11, (2016) 113B01}, \href{http://arxiv.org/abs/1606.01041}{{\ttfamily
   arXiv:1606.01041 [hep-th]}}.
+
+\bibitem{Hanany:2005ve}
+A.~Hanany and K.~D. Kennaway, ``{Dimer models and toric diagrams},''
+  \href{http://arxiv.org/abs/hep-th/0503149}{{\ttfamily arXiv:hep-th/0503149}}.
+
+\bibitem{Franco:2005rj}
+S.~Franco, A.~Hanany, K.~D. Kennaway, D.~Vegh, and B.~Wecht, ``{Brane dimers
+  and quiver gauge theories},''
+  \href{http://dx.doi.org/10.1088/1126-6708/2006/01/096}{{\em JHEP} {\bfseries
+  01} (2006) 096}, \href{http://arxiv.org/abs/hep-th/0504110}{{\ttfamily
+  arXiv:hep-th/0504110}}.
+
+\bibitem{Kennaway:2007tq}
+K.~D. Kennaway, ``{Brane Tilings},''
+  \href{http://dx.doi.org/10.1142/S0217751X07036877}{{\em Int. J. Mod. Phys. A}
+  {\bfseries 22} (2007) 2977--3038},
+  \href{http://arxiv.org/abs/0706.1660}{{\ttfamily arXiv:0706.1660 [hep-th]}}.
+
+\bibitem{Yamazaki:2008bt}
+M.~Yamazaki, ``{Brane Tilings and Their Applications},''
+  \href{http://dx.doi.org/10.1002/prop.200810536}{{\em Fortsch. Phys.}
+  {\bfseries 56} (2008) 555--686},
+  \href{http://arxiv.org/abs/0803.4474}{{\ttfamily arXiv:0803.4474 [hep-th]}}.
+
+\bibitem{Seiberg:1994bz}
+N.~Seiberg, ``{Exact results on the space of vacua of four-dimensional SUSY
+  gauge theories},'' \href{http://dx.doi.org/10.1103/PhysRevD.49.6857}{{\em
+  Phys. Rev. D} {\bfseries 49} (1994) 6857--6863},
+  \href{http://arxiv.org/abs/hep-th/9402044}{{\ttfamily arXiv:hep-th/9402044}}.
+
+\bibitem{Seiberg:1994pq}
+N.~Seiberg, ``{Electric - magnetic duality in supersymmetric nonAbelian gauge
+  theories},'' \href{http://dx.doi.org/10.1016/0550-3213(94)00023-8}{{\em Nucl.
+  Phys. B} {\bfseries 435} (1995) 129--146},
+  \href{http://arxiv.org/abs/hep-th/9411149}{{\ttfamily arXiv:hep-th/9411149}}.
+
+\bibitem{Hanany:2005ss}
+A.~Hanany and D.~Vegh, ``{Quivers, tilings, branes and rhombi},''
+  \href{http://dx.doi.org/10.1088/1126-6708/2007/10/029}{{\em JHEP} {\bfseries
+  10} (2007) 029}, \href{http://arxiv.org/abs/hep-th/0511063}{{\ttfamily
+  arXiv:hep-th/0511063}}.
+
+\bibitem{Yamazaki:2012cp}
+M.~Yamazaki, ``{Quivers, YBE and 3-manifolds},''
+  \href{http://dx.doi.org/10.1007/JHEP05(2012)147}{{\em JHEP} {\bfseries 05}
+  (2012) 147}, \href{http://arxiv.org/abs/1203.5784}{{\ttfamily arXiv:1203.5784
+  [hep-th]}}.
+
+\bibitem{Romelsberger:2005eg}
+C.~Romelsberger, ``{Counting chiral primaries in N = 1, d=4 superconformal
+  field theories},''
+  \href{http://dx.doi.org/10.1016/j.nuclphysb.2006.03.037}{{\em Nucl. Phys. B}
+  {\bfseries 747} (2006) 329--353},
+  \href{http://arxiv.org/abs/hep-th/0510060}{{\ttfamily arXiv:hep-th/0510060}}.
+
+\bibitem{Kinney:2005ej}
+J.~Kinney, J.~M. Maldacena, S.~Minwalla, and S.~Raju, ``{An Index for 4
+  dimensional super conformal theories},''
+  \href{http://dx.doi.org/10.1007/s00220-007-0258-7}{{\em Commun. Math. Phys.}
+  {\bfseries 275} (2007) 209--254},
+  \href{http://arxiv.org/abs/hep-th/0510251}{{\ttfamily arXiv:hep-th/0510251}}.
+
+\bibitem{Festuccia:2011ws}
+G.~Festuccia and N.~Seiberg, ``{Rigid Supersymmetric Theories in Curved
+  Superspace},'' \href{http://dx.doi.org/10.1007/JHEP06(2011)114}{{\em JHEP}
+  {\bfseries 06} (2011) 114}, \href{http://arxiv.org/abs/1105.0689}{{\ttfamily
+  arXiv:1105.0689 [hep-th]}}.
+
+\bibitem{MR2044635}
+V.~P. Spiridonov, ``Theta hypergeometric integrals,''
+  \href{http://dx.doi.org/10.1090/S1061-0022-04-00839-8}{{\em Algebra i Analiz}
+  {\bfseries 15} no.~6, (2003) 161--215}.
+
+\bibitem{MR2630038}
+E.~M. Rains, ``Transformations of elliptic hypergeometric integrals,''
+  \href{http://dx.doi.org/10.4007/annals.2010.171.169}{{\em Ann. of Math. (2)}
+  {\bfseries 171} no.~1, (2010) 169--243}.
+
+\bibitem{Dolan:2008qi}
+F.~Dolan and H.~Osborn, ``{Applications of the Superconformal Index for
+  Protected Operators and q-Hypergeometric Identities to N=1 Dual Theories},''
+  \href{http://dx.doi.org/10.1016/j.nuclphysb.2009.01.028}{{\em Nucl. Phys. B}
+  {\bfseries 818} (2009) 137--178},
+  \href{http://arxiv.org/abs/0801.4947}{{\ttfamily arXiv:0801.4947 [hep-th]}}.
+
+\bibitem{Bazhanov:2010kz}
+V.~V. Bazhanov and S.~M. Sergeev, ``{A Master solution of the quantum
+  Yang-Baxter equation and classical discrete integrable equations},''
+  \href{http://dx.doi.org/10.4310/ATMP.2012.v16.n1.a3}{{\em Adv. Theor. Math.
+  Phys.} {\bfseries 16} no.~1, (2012) 65--95},
+  \href{http://arxiv.org/abs/1006.0651}{{\ttfamily arXiv:1006.0651 [math-ph]}}.
+
+\bibitem{Bazhanov:2011mz}
+V.~V. Bazhanov and S.~M. Sergeev, ``{Elliptic gamma-function and multi-spin
+  solutions of the Yang-Baxter equation},''
+  \href{http://dx.doi.org/10.1016/j.nuclphysb.2011.10.032}{{\em Nucl. Phys. B}
+  {\bfseries 856} (2012) 475--496},
+  \href{http://arxiv.org/abs/1106.5874}{{\ttfamily arXiv:1106.5874 [math-ph]}}.
+
+\bibitem{Belavin:1981ix}
+A.~Belavin, ``{Dynamical Symmetry of Integrable Quantum Systems},''
+  \href{http://dx.doi.org/10.1016/0550-3213(81)90414-4}{{\em Nucl. Phys. B}
+  {\bfseries 180} (1981) 189--200}.
+
+\bibitem{Felder:1994pb}
+G.~Felder, ``{Conformal field theory and integrable systems associated to
+  elliptic curves},'' \href{http://arxiv.org/abs/hep-th/9407154}{{\ttfamily
+  arXiv:hep-th/9407154}}.
+
+\bibitem{Felder:1994be}
+G.~Felder, ``{Elliptic quantum groups},'' in {\em {11th International
+  Conference on Mathematical Physics (ICMP-11) (Satellite colloquia: New
+  Problems in the General Theory of Fields and Particles, Paris, France, 25-28
+  Jul 1994)}}, pp.~211--218.
+\newblock 7, 1994.
+\newblock \href{http://arxiv.org/abs/hep-th/9412207}{{\ttfamily
+  arXiv:hep-th/9412207}}.
+
+\bibitem{MR1606760}
+G.~Felder and A.~Varchenko, ``Elliptic quantum groups and {R}uijsenaars
+  models,'' \href{http://dx.doi.org/10.1007/BF02764216}{{\em J. Statist. Phys.}
+  {\bfseries 89} no.~5-6, (1997) 963--980}.
+
+\bibitem{Yagi:2017hmj}
+J.~Yagi, ``{Surface defects and elliptic quantum groups},''
+  \href{http://dx.doi.org/10.1007/JHEP06(2017)013}{{\em JHEP} {\bfseries 06}
+  (2017) 013}, \href{http://arxiv.org/abs/1701.05562}{{\ttfamily
+  arXiv:1701.05562 [hep-th]}}.
+
+\bibitem{Spiridonov:2014cxa}
+V.~Spiridonov and G.~Vartanov, ``{Vanishing superconformal indices and the
+  chiral symmetry breaking},''
+  \href{http://dx.doi.org/10.1007/JHEP06(2014)062}{{\em JHEP} {\bfseries 06}
+  (2014) 062}, \href{http://arxiv.org/abs/1402.2312}{{\ttfamily arXiv:1402.2312
+  [hep-th]}}.
+
+\bibitem{Gukov:2006jk}
+S.~Gukov and E.~Witten, ``{Gauge Theory, Ramification, And The Geometric
+  Langlands Program},'' \href{http://arxiv.org/abs/hep-th/0612073}{{\ttfamily
+  arXiv:hep-th/0612073}}.
+
+\bibitem{Gukov:2008sn}
+S.~Gukov and E.~Witten, ``{Rigid Surface Operators},''
+  \href{http://dx.doi.org/10.4310/ATMP.2010.v14.n1.a3}{{\em Adv. Theor. Math.
+  Phys.} {\bfseries 14} no.~1, (2010) 87--178},
+  \href{http://arxiv.org/abs/0804.1561}{{\ttfamily arXiv:0804.1561 [hep-th]}}.
+
+\bibitem{Gadde:2013dda}
+A.~Gadde and S.~Gukov, ``{2d Index and Surface operators},''
+  \href{http://dx.doi.org/10.1007/JHEP03(2014)080}{{\em JHEP} {\bfseries 03}
+  (2014) 080}, \href{http://arxiv.org/abs/1305.0266}{{\ttfamily arXiv:1305.0266
+  [hep-th]}}.
+
+\bibitem{MR684124}
+E.~K. Sklyanin, ``Some algebraic structures connected with the {Y}ang-{B}axter
+  equation,'' {\em Funktsional. Anal. i Prilozhen.} {\bfseries 16} no.~4,
+  (1982) 27--34, 96.
+
+\bibitem{MR725414}
+E.~K. Sklyanin, ``Some algebraic structures connected with the {Y}ang-{B}axter
+  equation. {R}epresentations of a quantum algebra,'' {\em Funktsional. Anal. i
+  Prilozhen.} {\bfseries 17} no.~4, (1983) 34--48.
+
+\bibitem{Derkachov:2012iv}
+S.~Derkachov and V.~Spiridonov, ``{Yang-Baxter equation, parameter
+  permutations, and the elliptic beta integral},''
+  \href{http://dx.doi.org/10.1070/RM2013v068n06ABEH004869}{{\em Russ. Math.
+  Surveys} {\bfseries 68} (2013) 1027--1072},
+  \href{http://arxiv.org/abs/1205.3520}{{\ttfamily arXiv:1205.3520 [math-ph]}}.
+
+\bibitem{MR2492363}
+V.~P. Spiridonov, ``The continuous biorthogonality of an elliptic
+  hypergeometric function,''
+  \href{http://dx.doi.org/10.1090/S1061-0022-09-01073-5}{{\em Algebra i Analiz}
+  {\bfseries 20} no.~5, (2008) 155--185}.
+
+\bibitem{Gaiotto:2009we}
+D.~Gaiotto, ``{$N=2$ dualities},''
+  \href{http://dx.doi.org/10.1007/JHEP08(2012)034}{{\em JHEP} {\bfseries 08}
+  (2012) 034}, \href{http://arxiv.org/abs/0904.2715}{{\ttfamily arXiv:0904.2715
+  [hep-th]}}.
+
+\bibitem{Gaiotto:2009hg}
+D.~Gaiotto, G.~W. Moore, and A.~Neitzke, ``{Wall-crossing, Hitchin Systems, and
+  the WKB Approximation},'' \href{http://arxiv.org/abs/0907.3987}{{\ttfamily
+  arXiv:0907.3987 [hep-th]}}.
+
+\bibitem{Gaiotto:2012xa}
+D.~Gaiotto, L.~Rastelli, and S.~S. Razamat, ``{Bootstrapping the superconformal
+  index with surface defects},''
+  \href{http://dx.doi.org/10.1007/JHEP01(2013)022}{{\em JHEP} {\bfseries 01}
+  (2013) 022}, \href{http://arxiv.org/abs/1207.3577}{{\ttfamily arXiv:1207.3577
+  [hep-th]}}.
+
+\bibitem{Alday:2013kda}
+L.~F. Alday, M.~Bullimore, M.~Fluder, and L.~Hollands, ``{Surface defects, the
+  superconformal index and q-deformed Yang-Mills},''
+  \href{http://dx.doi.org/10.1007/JHEP10(2013)018}{{\em JHEP} {\bfseries 10}
+  (2013) 018}, \href{http://arxiv.org/abs/1303.4460}{{\ttfamily arXiv:1303.4460
+  [hep-th]}}.
+
+\bibitem{Bullimore:2014nla}
+M.~Bullimore, M.~Fluder, L.~Hollands, and P.~Richmond, ``{The superconformal
+  index and an elliptic algebra of surface defects},''
+  \href{http://dx.doi.org/10.1007/JHEP10(2014)062}{{\em JHEP} {\bfseries 10}
+  (2014) 062}, \href{http://arxiv.org/abs/1401.3379}{{\ttfamily arXiv:1401.3379
+  [hep-th]}}.
+
+\bibitem{MR851627}
+S.~N.~M. Ruijsenaars and H.~Schneider, ``A new class of integrable systems and
+  its relation to solitons,''
+  \href{http://dx.doi.org/10.1016/0003-4916(86)90097-7}{{\em Ann. Physics}
+  {\bfseries 170} no.~2, (1986) 370--405}.
+
+\bibitem{Ruijsenaars:1986pp}
+S.~Ruijsenaars, ``{Complete Integrability of Relativistic Calogero-moser
+  Systems and Elliptic Function Identities},''
+  \href{http://dx.doi.org/10.1007/BF01207363}{{\em Commun. Math. Phys.}
+  {\bfseries 110} (1987) 191}.
+
+\bibitem{MR1463830}
+K.~Hasegawa, ``Ruijsenaars' commuting difference operators as commuting
+  transfer matrices,'' \href{http://dx.doi.org/10.1007/s002200050137}{{\em
+  Comm. Math. Phys.} {\bfseries 187} no.~2, (1997) 289--325}.
 
 \end{thebibliography}\endgroup

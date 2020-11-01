@@ -1,21 +1,50 @@
-\include{Common/begin_special}
-\include{Common/begin2}
+%% LyX 2.3.1-1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[11pt,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=3cm}
+\usepackage{verbatim}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\setstretch{1.1}
 
+\makeatletter
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
 
+\makeatother
 
+\usepackage{babel}
+\begin{document}
+\title{Dissertation section 4}
+\title{Surface defects as transfer matrices}
+\author{Toshihiro Ota\thanks{Email: tota@het.phys.sci.osaka-u.ac.jp}}
+\maketitle
+\begin{center}
+\emph{interdisciplinary Theoretical \& Mathematical Sciences Program
+(iTHEMS), RIKEN, Wako, Saitama 351-0198, Japan}
+\par\end{center}
 
-%%%%%%%%%%%%%%%%%% section 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\emph{Department of Physics, Osaka University, Toyonaka, Osaka 560-0043,
+Japan}
+\par\end{center}
+\begin{abstract}
+Abstract. 
+\end{abstract}
+%
+
 \section{Surface defects as transfer matrices}
-
-In this section, we mainly review the results in \cite{Maruyoshi:2016caf}, 
-in which the correspondence we introduce in the previous section was established. 
-
 
 In this section, we apply the general construction of integrable lattice
 models from branes in string theory to the simplest case of the so-called
-class $\mathcal{S}$ theories. Taking the four-manifold to be $S^{1} \times S^{3}$,
+class $\mathcal{S}$ theories. Taking the four-manifold to be $S^{1}\times S^{3}$,
 on which quiver gauge theories are defined, the path integral of the
 twisted partition function of the theory computes the supersymmetric
 index. We first explain the correspondence between the supersymmetric
@@ -25,25 +54,22 @@ theory side. The surface defects act on the supersymmetric index by
 difference operators, and they are identified with the transfer matrices
 of the corresponding integrable lattice model. 
 
-
-
-
-
-\subsection{Brane tilings and integrable lattice models}
+\subsection{Brane tilings and integrable lattice models }
 
 In order to give the general argument of the correspondence, let me
 briefly review the systematic brane construction of quiver gauge theories
 called \emph{brane tilings}. For more details, the reader should be
-referred to the original papers and the excellent reviews \cite{Hanany:2005ve,Franco:2005rj,Kennaway:2007tq,Yamazaki:2008bt}. Recall the 5-brane configuration given
+referred to the original paper and the excellent reviews {[}Hanany
+et al, Kennaway, Yamazaki{]}. Recall the 5-brane configuration given
 in the last part of the previous section (equation of D5NS5), 
 \begin{align*}
-    N\,\mathrm{D5}    & \quad S^{1} \times M \times \Sigma,  \\
-    \mathrm{NS5}_{i} & \quad S^{1} \times N_{i} \times \Sigma_{i}.
+N\,\mathrm{D5} & \quad S^{1}\times M\times\Sigma,\\
+\mathrm{NS5}_{i} & \quad S^{1}\times N_{i}\times\Sigma_{i}.
 \end{align*}
 For such a configuration, what one needs to notice is that when an
 NS5-brane meets $N$ D5-branes, they combine to form a bound state.
-In the language of $\left( p,q \right)$ 5-branes, this bound state
-is either an $\left( N,1 \right)$ or $\left( N,-1 \right)$ 5-brane,
+In the language of $\left(p,q\right)$ 5-branes, this bound state
+is either an $\left(N,1\right)$ or $\left(N,-1\right)$ 5-brane,
 depending on the relative positions of the branes; see figure. Therefore,
 the extended defects $\mathcal{E}_{\mathrm{NS5}_{i}}$ are domain
 walls in $\mathsf{T}_{\mathrm{D5}}$ separate the spacetime into the
@@ -56,24 +82,24 @@ surface $\Sigma$ and a 5-brane charge assignment consistent with
 it, we can construct a 5-brane system whose zig-zag paths are $C_{i}$:
 we take NS5-branes approaching the D5-branes from transverse directions,
 and let them meet along $C_{i}$ and form bound states over regions
-with $q \neq 0$. Such a 5-brane system is called a brane tiling on
-$\Sigma$ \cite{Hanany:2005ve,Franco:2005rj}. 
+with $q\neq0$. Such a 5-brane system is called a brane tiling on
+$\Sigma$ {[}Hanany-Kennaway, Franco et al{]}. 
 
 As we just explained, a brane tiling gives rise to a four-dimensional
 $\mathcal{N}=1$ theory. A concrete description of this theory is
-known for the subset of brane tilings that involve only $\left( N,0 \right)$
-5-branes (i.e. $N$ coincident D5-branes) and $\left( N,\pm1 \right)$
-5-branes. Given a brane tiling in this subset, we indicate $\left( N,1 \right)$
-and $\left( N,-1 \right)$ 5-brane regions by dark and light shading,
-respectively, while leaving $\left( N,0 \right)$ regions unshaded.
+known for the subset of brane tilings that involve only $\left(N,0\right)$
+5-branes (i.e. $N$ coincident D5-branes) and $\left(N,\pm1\right)$
+5-branes. Given a brane tiling in this subset, we indicate $\left(N,1\right)$
+and $\left(N,-1\right)$ 5-brane regions by dark and light shading,
+respectively, while leaving $\left(N,0\right)$ regions unshaded.
 After the shading, we get a checkerboard-like pattern on $\Sigma$
 where shaded faces adjoin unshaded ones and two shaded faces sharing
 a vertex are of different types, see figure. 
 
-Each unshaded region supports $N$ D5-branes, hence an $\SU(N)$ vector
+Each unshaded region supports $N$ D5-branes, hence an $SU(N)$ vector
 multiplet lives there. If the region contains part of the boundary,
 the multiplet is frozen by boundary conditions and the associated
-symmetry is an $\SU(N)$ flavor symmetry; in quiver notation, we represent
+symmetry is an $SU(N)$ flavor symmetry; in quiver notation, we represent
 a dynamical vector multiplet by a gauge node (circle) and a non-dynamical
 one by a flavor node (square). From open strings stretched between
 two unshaded regions (namely ending on $N$ D5-branes partitioned
@@ -82,7 +108,7 @@ in the fundamental representation under one of the associated gauge
 or flavor groups and in the anti-fundamental representation under
 the other. We write it by an arrow between the two nodes: 
 \begin{equation}
-bifundamental  \label{eq:bifund}
+bifundamental\label{eq:bifund}
 \end{equation}
  The arrow points from the anti-fundamental side to the fundamental
 side. See figure for examples of quivers obtained from brane tilings. 
@@ -97,21 +123,21 @@ a brane tiling in the subset under consideration is an $\mathcal{N}=1$
 supersymmetric gauge theory described by a quiver with potential drawn
 on $\Sigma$. 
 
-Each NS5$_{i}$ supports a $\U(1)$ flavor symmetry $\U(1)_{i}$. An
-arrow is charged under $\U(1)_{i}$ if it is crossed by $C_{i}$. The
-charge $F_{i}$ of $\U(1)_{i}$ can be normalized in such a way that
+Each NS5$_{i}$ supports a $U(1)$ flavor symmetry $U(1)_{i}$. An
+arrow is charged under $U(1)_{i}$ if it is crossed by $C_{i}$. The
+charge $F_{i}$ of $U(1)_{i}$ can be normalized in such a way that
 the arrow in (\ref{eq:bifund}) has $F_{i}=-1$ and $F_{j}=+1$. The
-diagonal combination of all $\U(1)_{i}$ acts on the theory trivially
+diagonal combination of all $U(1)_{i}$ acts on the theory trivially
 since every arrow is crossed by exactly two zig-zag paths from the
 opposite sides. 
 
-The theory also has an R-symmetry $\U(1)_{R}$. Its definition is not
+The theory also has an R-symmetry $U(1)_{R}$. Its definition is not
 unique as the R-charge $R$ can be shifted by a linear combination
-of $\U(1$) flavor charges. However, the R-charge assignment is constrained
-by two conditions. The first is that $\U(1)_{R}$ must be unbroken
+of $U(1$) flavor charges. However, the R-charge assignment is constrained
+by two conditions. The first is that $U(1)_{R}$ must be unbroken
 by the superpotential and therefore the R-charges of the chiral multiplets
 contained in each superpotential term must add up to two. The second
-is that $\U(1)_{R}$ must be free of anomaly. This requires that for
+is that $U(1)_{R}$ must be free of anomaly. This requires that for
 every gauge node, the sum of the R-charges of the arrows starting
 from or ending at that node must equal the number of the arrows minus
 two. 
@@ -131,10 +157,6 @@ two conditions describe above are satisfied (figure).
 Summarizing the rules for assignment of the charges, we can read off
 the quiver diagram from zig-zag paths as in figure. 
 
-
-
-
-
 \subsubsection{Integrable lattice models from quiver gauge theories}
 
 From the supersymmetric index of the four-dimensional $\mathcal{N}=1$
@@ -146,7 +168,7 @@ a D4-brane, and its coordinate on the dual circle $\check{S}^{1}$
 is $u_{i}$. Instead, we can apply T-duality on $S^{1}$ and lift
 NS5$_{i}$ to an M5-brane, then $u_{i}$ is the coordinate on the
 M-theory circle. Either way, $u_{i}$ is determined by the holonomy
-of the $\U(1)$ gauge field on NS5$_{i}$ along $S^{1}$. 
+of the U(1) gauge field on NS5$_{i}$ along $S^{1}$. 
 
 If the theory is described by a quiver, translation between the gauge
 theory and the lattice model goes as follows {[}Yamazaki\textasciicircum 2{]}.
@@ -155,11 +177,11 @@ turn on a holonomy of the associated gauge field. The index depends
 on the conjugacy class of the holonomy, which is uniquely represented
 by a diagonal matrix $\mathrm{diag}(z_{1},\ldots,z_{N})$ up to permutations
 of the entries. The index is therefore a symmetric function of the
-$\U(1)$-valued variables $(z_{1},\ldots,z_{N})$ obeying the constraint
-$z_{1}\cdots z_{N}=1$. These variables are fugacities for the $\SU(N)$
+U(1)-valued variables $(z_{1},\ldots,z_{N})$ obeying the constraint
+$z_{1}\cdots z_{N}=1$. These variables are fugacities for the $SU(N)$
 flavor symmetry and parametrize the value of the spin at this node,
-and thus the spins take values in the maximal torus $\U(1)^{N-1}$
-of $\SU(N)$. For a gauge node, integration is performed over the fugacities
+and thus the spins take values in the maximal torus $U(1)^{N-1}$
+of $SU(N)$. For a gauge node, integration is performed over the fugacities
 since its gauge field is a path integral variable. This is the summation
 over the values of a spin placed on an internal face. Finally, arrows
 represent interactions between spins. 
@@ -168,15 +190,15 @@ The unitarity relations are satisfied if the contributions to the
 index from arrows with $R=0$ are properly normalized. For example,
 consider the relation
 \begin{equation}
-unitarityrelation  \label{eq:unitarity_delta}
+unitarityrelation\label{eq:unitarity_delta}
 \end{equation}
  where the right-hand side is a ``delta function'' that equates
 two flavor nodes when one of them is gauged. The precise meaning will
 be given for the $S^{1}\times S^{3}$ case below. The theory on the
 left-hand side is SQCD with $N$ colors and $N$ flavors. If exhibits
 confinement and has a vacuum in which the mesons take nonzero expectation
-values and the flavor symmetry $\SU(N)\times \SU(N)$ is broken to the
-diagonal subgroup \cite{Seiberg:1994bz}. The index computed in this vacuum
+values and the flavor symmetry $SU(N)\times SU(N)$ is broken to the
+diagonal subgroup {[}Seiberg{]}. The index computed in this vacuum
 is given by the right-hand side, provided that we cancel the contributions
 from the surviving baryon and anti-baryon. Another unitarity relation
 \begin{equation}
@@ -188,7 +210,7 @@ to infinity so that these arrows decouple from the theory, and are
 left with the right-hand side. 
 
 The Yang-Baxter equation with three zig-zag paths is harder to understand,
-as it always involves and $\left( N,q \right)$ region with $\left| q \right|>1$
+as it always involves and $\left(N,q\right)$ region with $\left|q\right|>1$
 and a quiver description is not available. The problem stems from
 the fact that our effects are domain walls across which $q$ changes.
 To circumvent the difficulty, we take a pair of zig-zag paths of different
@@ -197,10 +219,10 @@ types and think of it as a single line:
 doubleandsinglelines
 \end{equation}
  This line does not alter the value of $q$. Taking two copies of
-this line and placing them in an $\left( N,-1 \right)$ background,
+this line and placing them in an $\left(N,-1\right)$ background,
 we can make the R-matrix
 \begin{equation}
-R-matrix  \label{eq:R_N-1}
+R-matrix\label{eq:R_N-1}
 \end{equation}
  A lattice model constructed from this R-matrix is a vertex model
 whose quiver consists diamonds of arrows (see figure). The vector
@@ -211,7 +233,7 @@ Alternatively, we can place these lines in an $\left(N,0\right)$
 background and force them to exchange their constituent zig-zag paths
 as they cross:
 \begin{equation}
-anotherR-matrix  \label{eq:R_N0}
+anotherR-matrix\label{eq:R_N0}
 \end{equation}
  This R-matrix leads to an IRF model described by a quiver with triangles
 of arrows, as shown in figure. The corresponding Yang-Baxter equation,
@@ -220,34 +242,32 @@ relation (\ref{eq:unitarity_delta}), reads
 \begin{equation}
 Seibergduality
 \end{equation}
- The two sides are related by Seiberg duality \cite{Seiberg:1994pq} for SQCD
+ The two sides are related by Seiberg duality {[}Seiberg{]} for SQCD
 with $N$ colors and $2N$ flavors, so their indices are indeed equal.
 The Yang-Baxter equation in the lattice model in this case is hence
 also identified with the Seiberg duality in gauge theory side. The
 Yang-Baxter equation for the R-matrix (\ref{eq:R_N-1}), though more
 complicated, also follows from this equality. The relation between
 the Yang-Baxter move and Seiberg duality was first pointed out in
-\cite{Hanany:2005ss} and established in \cite{Yamazaki:2012cp}.
+{[}Hanany-Vegh{]} and established in {[}Yamazaki{]}.
 
 Based on these observations, in the next subsection we argue that
-given the four-manifold $S^{1} \times S^{3}$ the supersymmtric index
+given the four-manifold $S^{1}\times S^{3}$ the supersymmtric index
 indeed matches the partition function of the integrable lattice model
 called Bazhanov-Sergeev model. 
 
-
-
-
-\subsubsection{Supersymmetric index on $S^{1} \times S^{3}$ and an integrable lattice
+\subsubsection{Supersymmetric index on $S^{1}\times S^{3}$ and an integrable lattice
 model}
 
 Now we focus on the case $M=S^{3}$, in which geometry the supersymmetric
-index is well-studied from the work by \cite{Romelsberger:2005eg,Kinney:2005ej,Festuccia:2011ws}. Parametrize $S^{3}$ by two complex variables
+index is well-studied from the work by {[}Romelsberger, Kinney et
+al, Festuccia-Seiberg{]}. Parametrize $S^{3}$ by two complex variables
 $\left(\zeta_{p},\zeta_{q}\right)$ satisfying $\left|\zeta_{p}\right|^{2}+\left|\zeta_{q}\right|^{2}=1$,
 and denote the isometry groups acting on $\zeta_{p}$ and $\zeta_{q}$
-by $\U(1)_{p}$ and $\U(1)_{q}$, respectively. We take $S^{1}\times S^{3}$
+by $U(1)_{p}$ and $U(1)_{q}$, respectively. We take $S^{1}\times S^{3}$
 to be a twisted product; we prepare a trivial $S^{3}$-fibration over
 an interval $[0,\beta]$ and identify the fibers at the ends of the
-base using an isometry $\left(e^{i\theta_{p}},e^{i\theta_{q}}\right)\in \U(1)_{p}\times \U(1)_{q}$.
+base using an isometry $\left(e^{i\theta_{p}},e^{i\theta_{q}}\right)\in U(1)_{p}\times U(1)_{q}$.
 On this spacetime, the partition function of the quiver gauge theory
 realized by a brane tiling gives the supersymmetric index refined
 by the isometries and the flavor symmetries. 
@@ -255,24 +275,24 @@ by the isometries and the flavor symmetries.
 The index is defined as a trace of refined Boltzmann weight over the
 space of states on $S^{3}$, which is computed exactly using state-operator
 correspondence in conformal case or by localization of the path integral.
-\begin{equation}
-    superconformalindex
-\end{equation}
+\[
+superconformalindex
+\]
 The result is generically given by a combination of vector and chiral
 multiplets included in the theory. These multiplets are expressed
 in terms of the elliptic gamma function 
 \begin{equation}
-    \Gamma\left(z;p,q\right)  =  \prod_{j,k=0}^{\infty}  \frac{1-z^{-1}p^{j+1}q^{k+1}}{1-zp^{j}q^{k}}
+\Gamma\left(z;p,q\right)=\prod_{j,k=0}^{\infty}\frac{1-z^{-1}p^{j+1}q^{k+1}}{1-zp^{j}q^{k}}
 \end{equation}
 with $p=e^{-\beta+i\theta_{p}}$ and $q=e^{-\beta+i\theta_{q}}$.
 To write down the formula, let $a_{i}=e^{2\pi iu_{i}}$ be the fugacity
-for the flavor group $\U(1)_i$ associated with the $i$th zig-zag path.
+for the flavor group U(1)i associated with the $i$th zig-zag path.
 Also, we introduce the Pochhammar symble $\left(z;q\right)_{\infty}=\prod_{k=0}^{\infty}\left(1-q^{k}z\right)$. 
 
-A bifundamental chiral multiplet with R-charge $R$ and $\U(1)_i$ charge
+A bifundamental chiral multiplet with R-charge $R$ and U(1)i charge
 $F_{i}$ contributes to the index by the factor
 \begin{equation}
-    \prod_{I,J=1}^{N}  \Gamma\left((pq)^{R/2}\prod_{i}a_{i}^{F_{i}}\frac{w_{I}}{z_{J}};p,q\right),
+\prod_{I,J=1}^{N}\Gamma\left((pq)^{R/2}\prod_{i}a_{i}^{F_{i}}\frac{w_{I}}{z_{J}};p,q\right),
 \end{equation}
  where $z_{J}$ are fugacities for the node at the tail of the arrow
 and $w_{I}$ are those for the node at the tip. To find the full index,
@@ -293,47 +313,44 @@ we normalize the contribution from each arrow with $R=0$ by dividing
 it by the factor $\Gamma(\prod_{i}a_{i}^{NF_{i}};p,q)$, which cancels
 the contribution from the corresponding baryon. The Yang-Baxter equation
 (eq:yang-baxter) is an integral identity obeyed by the elliptic gamma
-function \cite{MR2044635,MR2630038,Dolan:2008qi}. 
+function {[}Dolan-Osborn, Spiridonov, Rains{]}. 
 
 There are two circles in $S^{3}$ around which we can place half-BPS
 surface defects without breaking the isometries, namely $\{\zeta_{p}=0\}$
 and $\{\zeta_{q}=0\}$. Accordingly, dashed lines come in two types,
 related by an interchange of $p$ and $q$. If a dashed line is in
-an $n$-dimensional representation, the L-operator in an $\left( N,-1 \right)$
+an $n$-dimensional representation, the L-operator in an $\left(N,-1\right)$
 background 
 \begin{equation}
 L=
 \end{equation}
-may be represented as an $n \times n$ matrix, whose entries are difference
+may be represented as an $n\times n$ matrix, whose entries are difference
 operators acting on the fugacities for the flavor node associated
-with the $\left( N,0 \right)$ region below the dashed line. It satisfies
+with the $\left(N,0\right)$ region below the dashed line. It satisfies
 the RLL relation with the R-matrix (\ref{eq:R_N-1}) This R-matrix
-defines the Bazhanov-Sergeev model of type $\SU(N)$ \cite{Bazhanov:2010kz,Bazhanov:2011mz}. 
+defines the Bazhanov-Sergeev model of type SU(N) {[}Bazhanov-Sergeev{]}. 
 
-For the fundamental representation of $\SU(2)$, the above L-operator
+For the fundamental representation of $SU(2)$, the above L-operator
 is essentially identified with Sklyanin's L-operator, which satisfies
 the RLL relation with Baxter's R-matrix for the eight-vertex model
 and generates the so-called Sklyanin algebra. For the fundamental
-representation of $\SU(N)$ with general $N$, we get the L-operator
-for Belavin's elliptic R-matrix \cite{Belavin:1981ix}. If instead placed in
-an $\left( N,0 \right)$ background, the L-operator gives a representation
-of Felder's elliptic quantum group for $\mathfrak{sl}_{N}$ \cite{Felder:1994pb,Felder:1994be,MR1606760}. 
-For the
-details, see \cite{Yagi:2017hmj}.
-
-
+representation of $SU(N)$ with general $N$, we get the L-operator
+for Belavin's elliptic R-matrix {[}Belavin{]}. If instead placed in
+an $\left(N,0\right)$ background, the L-operator gives a representation
+of Felder's elliptic quantum group for $\mathfrak{sl}_{N}$. For the
+details, see {[}Yagi{]}.
 
 \subsubsection*{Index on $S^{1}\times S^{3}$}
 
 Building blocks of 4d $\mathcal{N}=1$ supersymmetric quiver gauge
 theories are vector multiplets and bifundamental chiral multiplets.
 A vector multiplet is present at a gauge node. A bifundamental chiral
-multiplet has two flavor groups, say $\SU(N)_{z}$ and $\SU(N)_{w}$.
+multiplet has two flavor groups, say $SU(N)_{z}$ and $SU(N)_{w}$.
 
-Given a theory $\mathcal{T}$ with flavor group $\SU(N)_{w}$ and another
-theory $\mathcal{T}'$ with flavor group $\SU(N)_{w'}$, we can couple
-them to obtain a new theory $\left(\mathcal{T}\times\mathcal{T}'\right)/\SU(N)_{z}$
-by gauging the diagonal subgroup $\SU(N)_{z}$ of $\SU(N)_{w}\times \SU(N)_{w'}$.
+Given a theory $\mathcal{T}$ with flavor group $SU(N)_{w}$ and another
+theory $\mathcal{T}'$ with flavor group $SU(N)_{w'}$, we can couple
+them to obtain a new theory $\left(\mathcal{T}\times\mathcal{T}'\right)/SU(N)_{z}$
+by gauging the diagonal subgroup $SU(N)_{z}$ of $SU(N)_{w}\times SU(N)_{w'}$.
 To construct a quiver gauge theory, we take a number of bifundamental
 chiral multiplets and couple them by gauging all or part of the flavor
 nodes. 
@@ -341,60 +358,50 @@ nodes.
 For $\mathcal{N}=1$ quiver gauge theories $S^{1}\times S^{3}$, the
 index is defined by the trace
 \begin{equation}
-    \mathcal{I}(p,q,\left\{ a_{i}\right\} )  
-      =  \mathrm{Tr}_{\mathcal{H}_{S^{3}}}  
-      \left(    \left( -1 \right)^{F}  p^{j_{1}+j_{2}+R/2}  q^{j_{1}-j_{2}+R/2}  \prod_{i}a_{i}^{F_{i}}    \right),
+\mathcal{I}(p,q,\left\{ a_{i}\right\} )=\mathrm{Tr}_{\mathcal{H}_{S^{3}}}\left(\left(-1\right)^{F}p^{j_{1}+j_{2}+R/2}q^{j_{1}-j_{2}+R/2}\prod_{i}a_{i}^{F_{i}}\right),
 \end{equation}
 taken over the space $\mathcal{H}_{S^{3}}$ of states on $S^{3}$.
 Here $\left(-1\right)^{F}$ is the fermion parity, and $j_{1},\,j_{2}$
-are generators of the maximal torus $\U(1)_{1}\times \U(1)_{2}$ of
-the isometry group $Spin(4)\simeq \SU(2)_{1}\times \SU(2)_{2}$ of $S^{3}$,
-%\begin{comment}
-%$R$ is the R-charge, $F_{i}$ is the charge of U(1)i
-%\end{comment}
-$\{ a_i \}$ and $p,\,q$ are complex parameters. 
+are generators of the maximal torus $U(1)_{1}\times U(1)_{2}$ of
+the isometry group $Spin(4)\simeq SU(2)_{1}\times SU(2)_{2}$ of $S^{3}$,
+\begin{comment}
+$R$ is the R-charge, $F_{i}$ is the charge of U(1)i
+\end{comment}
+{} and $p,\,q$ are complex parameters. 
 
 The index $\mathcal{I}_{\mathcal{T}}$ of a 4d $\mathcal{N}=1$ theory
-$\mathcal{T}$ with flavor group $\SU(N)_{z}$ is a symmetric meromorphic
+$\mathcal{T}$ with flavor group $SU(N)_{z}$ is a symmetric meromorphic
 function of the fugacities $z_{1},\ldots,z_{N}$. This symmetric property
 reflects the gauge invariance of the index. At the level of the index,
 gauging of a flavor group is realized by introduction of the corresponding
 vector multiplet and integration over its fugacities. In particular
 \begin{equation}
-    \mathcal{I}_{\left(\mathcal{T}\times\mathcal{T}'\right)/\SU(N)_{z}}  
-      =  \int_{\mathbb{T}^{N-1}}  \prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}
-          \mathcal{I}_{V}(z)  \mathcal{I}_{\mathcal{T}}(z)  \mathcal{I}_{\mathcal{T}'}(z),
+\mathcal{I}_{\left(\mathcal{T}\times\mathcal{T}'\right)/SU(N)_{z}}=\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}(z)\mathcal{I}_{\mathcal{T}}(z)\mathcal{I}_{\mathcal{T}'}(z),
 \end{equation}
  with the integration performed over the unit circle $\mathbb{T}$
 for each variable $z_{I}$. The index $\mathcal{I}_{\mathcal{T}}(z)$
 of the vector multiplet is given by elliptic gamma functions: 
 \begin{equation}
-    z  
-      =  \mathcal{I}_{\mathcal{T}}(z;p,q)  
-        =  \frac{\left(p;p\right)_{\infty}^{N-1}\left(q;q\right)_{\infty}^{N-1}}{N!}  
-              \prod_{I,J=1(I\neq J)}^{N}\frac{1}{\Gamma(z_{I}/z_{J};p,q)}.
+z=\mathcal{I}_{\mathcal{T}}(z;p,q)=\frac{\left(p;p\right)_{\infty}^{N-1}\left(q;q\right)_{\infty}^{N-1}}{N!}\prod_{I,J=1(I\neq J)}^{N}\frac{1}{\Gamma(z_{I}/z_{J};p,q)}.
 \end{equation}
-See appendix ?? for the definition of the elliptic gamma function
-and various identities it satisfies. From now on we fix $p,\,q$ and
+ See appendix ?? for the definition of the elliptic gamma function
+and various identities it satisfies. From now on we fix $p.\,q$ and
 omit them from the notation unless needed. 
 
 The index of a bifundamental chiral multiplet with fugacity $a$ is
 given by 
 \begin{equation}
-    a  
-      =  \mathcal{I}_{B}(z,w;a)  
-        =\prod_{I,J=1}^{N}\Gamma\left(a\frac{w_{I}}{z_{J}}\right).
+a=\mathcal{I}_{B}(z,w;a)=\prod_{I,J=1}^{N}\Gamma\left(a\frac{w_{I}}{z_{J}}\right).
 \end{equation}
-This function satisfies 
+ This function satisfies 
 \begin{equation}
-    \mathcal{I}_{B}(z,w;a)  \mathcal{I}_{B}  \left(w,z;\frac{pq}{a}\right)  
-    =  1.
+\mathcal{I}_{B}(z,w;a)\mathcal{I}_{B}\left(w,z;\frac{pq}{a}\right)=1.
 \end{equation}
-This identity says that as far as the index is concerned, we can
+ This identity says that as far as the index is concerned, we can
 cancel a pair of arrows making a loop if their R-charges add up to
 $2$ and flavor charges add up to $0$: 
 \begin{equation}
-    a=.
+a=.
 \end{equation}
  Physically, the reason is that we can turn on mass term for such
 a pair. The index is invariant under this deformation, and the bifundamental
@@ -406,24 +413,20 @@ Another useful fact is that if we define the ``delta function''
 \begin{equation}
 deltafunction
 \end{equation}
-by the relation
+ by the relation
 \begin{equation}
-    \mathcal{I}_{\mathcal{T}}(w)  
-      =  \int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}  
-            \mathcal{I}_{V}(z)\mathcal{I}_{\mathcal{T}}(z)delta,
+\mathcal{I}_{\mathcal{T}}(w)=\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}(z)\mathcal{I}_{\mathcal{T}}(z)delta,
 \end{equation}
  then we have 
 \begin{align}
-    a-a^{-1}  
-      &  =  \int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dx_{I}}{2\pi ix_{I}}  
-                \mathcal{I}_{V}(x)\mathcal{I}_{B}(z,x;a)\mathcal{I}_{B}\left(x,w;a^{-1}\right)  \nonumber  \\
-      &  =  \Gamma\left(a^{\pm N}\right)delta.
+a-a^{-1} & =\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dx_{I}}{2\pi ix_{I}}\mathcal{I}_{V}(x)\mathcal{I}_{B}(z,x;a)\mathcal{I}_{B}\left(x,w;a^{-1}\right)\nonumber \\
+ & =\Gamma\left(a^{\pm N}\right)delta.
 \end{align}
-This is a consequence of confinement and chiral symmetry breaking
-\cite{Seiberg:1994bz, Spiridonov:2014cxa}. At low energies the theory on
+®This is a consequence of confinement and chiral symmetry breaking
+{[}Seiberg, Spiridonov-Vartanov{]}. At low energies the theory on
 the left-hand side is described by the mesons and the baryons. It
 has a vacuum in which the mesons take nonzero expectation values and
-the flavor symmetry $\SU(N)_{w}\times \SU(N)_{z}$ is broken to the
+the flavor symmetry $SU(N)_{w}\times SU(N)_{z}$ is broken to the
 diagonal subgroup. In this vacuum the fugacities $w$ and $z$ are
 identified, so we get the quiver on the second line. The $\Gamma(a^{\pm N}):=\Gamma(a^{N})\Gamma(a^{-N})$
 is the contribution from the baryons. 
@@ -433,8 +436,7 @@ gauge theory. For simplicity, suppose that the theory is described
 by a quiver that contains no flavor node. Then, the index is computed
 by 
 \begin{equation}
-    \prod_{z}\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}(z)
-      \prod_{x \to y}\mathcal{I}_{B}(x,y),  \label{eq:fullindex}
+\prod_{z}\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}(z)\prod_{x\rightarrow y}\mathcal{I}_{B}(x,y),\label{eq:fullindex}
 \end{equation}
  where the two products are taken over all nodes and all arrows, respectively.
 the index is a function of the parameters $p,\,q$ and the flavor
@@ -458,39 +460,37 @@ correspondence in the lattice model side. The dictionary is given
 in Table and such a correspondence is called \emph{Gauge/YBE correspondence}.
 \begin{table}
 \caption{Dictionary for the Gauge/YBE correspondence}
-\vspace{0.2cm}
-  \centering
-    \begin{tabular}{c|c}
-Integrable model & Quiver gauge theory  \tabularnewline
+
+\centering{}%
+\begin{tabular}{c|c}
+Integrable model & Quiver gauge theory\tabularnewline
 \hline 
 \hline 
-Spin lattice            & Quiver diagram  \tabularnewline
-Rapidity line          & Zig-zag path  \tabularnewline
-Spectral parameter & R-charge  \tabularnewline
-Statistical partition function    & Supersymmetric partition function (index)  \tabularnewline
-Temperature-like parameters & Quantum parameters (such as $p,\,q$)  \tabularnewline
-Spin variables       & Gauge holonomies along non-contractible cycles  \tabularnewline
-Number of spin components  & Rank of a gauge group  \tabularnewline
-Self-interaction    & Vector multiplet  \tabularnewline
-Nearest-neighbor interaction & Bifundamental matter multiplet  \tabularnewline
-Star-star relation  & Seiberg(-like) duality  \tabularnewline
-R-matrix                  &                        \tabularnewline
-Composition of R-matrices     &      \tabularnewline
-Yang-Baxter equation &                \tabularnewline
-    \end{tabular}
+Spin lattice & Quiver diagram\tabularnewline
+Rapidity line & Zig-zag path\tabularnewline
+Spectral parameter & R-charge\tabularnewline
+Statistical partition function & Supersymmetric partition function (index)\tabularnewline
+Temperature-like parameters & Quantum parameters (such as $p,\,q$)\tabularnewline
+Spin variables & Gauge holonomies along non-contractible cycles\tabularnewline
+Number of spin components & Rank of a gauge group\tabularnewline
+Self-interaction & Vector multiplet\tabularnewline
+Nearest-neighbor interaction & Bifundamental matter multiplet\tabularnewline
+Star-star relation & Seiberg(-like) duality\tabularnewline
+R-matrix & \tabularnewline
+Composition of R-matrices & \tabularnewline
+Yang-Baxter equation & \tabularnewline
+\end{tabular}
 \end{table}
-
-
 
 \subsection{Surface defects as transfer matrices}
 
 \subsubsection{Surface defects and L-operators}
 
-Now we introduce a half-BPS surface defect, and put it on $S^{1} \times S^{1} \subset S^{3} \times S^{1}$.
+Now we introduce a half-BPS surface defect, and put it on $S^{1}\times S^{1}\subset S^{3}\times S^{1}$.
 The first $S^{1}$ factor may be taken to be either $\{\zeta_{1}=0\}$
 or $\{\zeta_{2}=0\}$ in the parametrization $\left|\zeta_{1}\right|^{2}+\left|\zeta_{2}\right|^{2}=1$
 of $S^{3}$. These are the circles in $S^{3}$ that are left invariant
-under the action of the isometry group $\U(1)_{p} \times \U(1)_{q}$.
+under the action of the isometry group $U(1)_{p}\times U(1)_{q}$.
 As explained in section ??, the index in the presence of the surface
 defect is again given by a correlation function os line operators
 in a 2d TQFT on $\Sigma$. The correlator now contains a new line
@@ -499,9 +499,8 @@ denoted by dashed line:
 \begin{equation}
 dashedline.
 \end{equation}
- This line operator is specified by a representation of $\SU(N)$ 
- \cite{Gukov:2006jk,Gukov:2008sn,Gadde:2013dda}. 
- In fact, it is labeled with a pair of representations
+ This line operator is specified by a representation of $SU(N)$ {[}Gadde-Gukov,
+Gukov-Witten{]}. In fact, it is labeled with a pair of representations
 $(R_{1},R_{2})$ since in general we can take superposition of two
 surface defects, each wrapped around either circle in $S^{3}$. 
 
@@ -516,7 +515,7 @@ the dashed line does not spoil the integrability of the lattice model.
 Moreover, by deforming the zig-zag paths near the dashed line, we
 can always make the neighborhood of the dashed line look like 
 \begin{equation}
-dashedandsolids  \label{eq:transferL}
+dashedandsolids\label{eq:transferL}
 \end{equation}
 in some $\left(N,q\right)$ 5-brane background. Each crossing of a
 solid line and the dashed one gives us an R-operator, which we call
@@ -527,21 +526,21 @@ from L-operators.
 Let us consider the simplest interesting setup where we have just
 two D5-branes and a single D3-brane, and identify the concrete form
 of the transfer matrix (\ref{eq:transferL}) in this case. For $N=2$,
-$\left( N,q \right)$ and $\left( N,q+2 \right)$ 5-branes are related
+$\left(N,q\right)$ and $\left(N,q+2\right)$ 5-branes are related
 by an $SL(2;\mathbb{Z})$ transformation of type IIB string theory.
 Therefore, we can go to a duality frame in which the transfer matrix
-only involves either $\left( N,0 \right)$ or $\left( N,-1 \right)$ regions
-or $\left( N,0 \right)$ or $\left( N,1 \right)$ regions. The two cases
+only involves either $\left(N,0\right)$ or $\left(N,-1\right)$ regions
+or $\left(N,0\right)$ or $\left(N,1\right)$ regions. The two cases
 are on an equal footing, and in fact related in a simple way, as we
-will see. We first consider the transfer matrix in the $\left( N,-1 \right)$
+will see. We first consider the transfer matrix in the $\left(N,-1\right)$
 background. 
 
 We denote the L-operator in this case by $L^{\diamondsuit}$ since
 it is the operator that arises when a dashed line is inserted in a
 brane tiling model described by the diamond quiver constructed from
 the R-operator (eq:diamond quiver). In the situation under consideration,
-the gauge group of a brane tiling model is a product of $\SU(2)$ groups,
-and the surface defect is labeled $\left( R_{1},R_{2} \right)=\left( \emptyset,fund \right)$;
+the gauge group of a brane tiling model is a product of $SU(2)$ groups,
+and the surface defect is labeled $\left(R_{1},R_{2}\right)=\left(\emptyset,fund\right)$;
 the D3-brane wraps the circle $\{\zeta_{2}=0\}$ in $S^{3}$. Let
 $V^{\diamondsuit}$ be the space of meromorphic functions $f(z)$
 such that $f(z)=f(1/z)$, and $W=\mathbb{C}^{2}$. Then we can represent
@@ -553,15 +552,9 @@ $R^{\diamondsuit}$, satisfy the Yang-Baxter equations (4equations).
 
 On the other hand, in the context of integrable lattice models Sklyanin
 constructed an L-operator $L^{\mathrm{S}}:W\otimes V^{\diamondsuit}\rightarrow V^{\diamondsuit}\otimes W$
-that solves the RLL relation \cite{MR684124}
+that solves the RLL relation {[}Sklyanin\textasciicircum 2{]}
 \begin{equation}
-    \mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2})
-    L_{1}^{\mathrm{S}}\left(u_{1},\left(\nu,l\right)\right)
-    L_{2}^{\mathrm{S}}\left(u_{2},\left(\nu,l\right)\right)
-      =
-          L_{2}^{\mathrm{S}}\left(u_{2},\left(\nu,l\right)\right)
-          L_{1}^{\mathrm{S}}\left(u_{1},\left(\nu,l\right)\right)
-          \mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2}),
+\mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2})L_{1}^{\mathrm{S}}\left(u_{1},\left(\nu,l\right)\right)L_{2}^{\mathrm{S}}\left(u_{2},\left(\nu,l\right)\right)=L_{2}^{\mathrm{S}}\left(u_{2},\left(\nu,l\right)\right)L_{1}^{\mathrm{S}}\left(u_{1},\left(\nu,l\right)\right)\mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2}),
 \end{equation}
 with Baxter's R-matrix $\mathcal{R}_{ij}^{\mathrm{B}}:W_{i}\otimes W_{j}\rightarrow W_{j}\otimes W_{i}$
 for the eight-vertex model {[}Baxter\textasciicircum 2{]}. Here $u_{i}$
@@ -569,19 +562,11 @@ is a complex spectral parameter for $W_{i}$, and $\left(\nu,l\right)$
 is a pair of complex spectral parameters for $V^{\diamondsuit}$.
 Baxter's R-matrix solves the Yang-Baxter equation
 \begin{equation}
-    \mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2})
-    \mathcal{R}_{13}^{\mathrm{B}}(u_{1},u_{3})
-    \mathcal{R}_{23}^{\mathrm{B}}(u_{2},u_{3})
-      =
-        \mathcal{R}_{23}^{\mathrm{B}}(u_{2},u_{3})
-        \mathcal{R}_{13}^{\mathrm{B}}(u_{1},u_{3})
-        \mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2}),
+\mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2})\mathcal{R}_{13}^{\mathrm{B}}(u_{1},u_{3})\mathcal{R}_{23}^{\mathrm{B}}(u_{2},u_{3})=\mathcal{R}_{23}^{\mathrm{B}}(u_{2},u_{3})\mathcal{R}_{13}^{\mathrm{B}}(u_{1},u_{3})\mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2}),
 \end{equation}
  and the solution is given by 
 \begin{equation}
-    \mathcal{R}_{ij}^{\mathrm{B}}(u_{i},u_{j})
-      =  P\sum_{a=0}^{3}w_{a}(u_{i}-u_{j})  \sigma_{a}  \otimes  \sigma_{a},
-        \quad  w_{a}(u)  =  \frac{\theta_{a+1}(u+\eta)}{\theta_{a+1}(\eta)},
+\mathcal{R}_{ij}^{\mathrm{B}}(u_{i},u_{j})=P\sum_{a=0}^{3}w_{a}(u_{i}-u_{j})\sigma_{a}\otimes\sigma_{a},\quad\,w_{a}(u)=\frac{\theta_{a+1}(u+\eta)}{\theta_{a+1}(\eta)},
 \end{equation}
  where $P:W_{i}\otimes W_{j}\rightarrow W_{j}\otimes W_{i}$ is the
 permutation operator, $\sigma_{a}$ are the Pauli matrices and $2\times2$
@@ -589,37 +574,27 @@ unit matrix, $\theta_{a+1}(u)=\theta_{a+1}(u|\tau)$ are the Jacobi
 theta functions, and $\tau,\,\eta$ are complex parameters of the
 eight-vertex model. Sklyanin's L-operator is defined by 
 \begin{equation}
-    L^{\mathrm{S}}\left(u,\left(\nu,l\right)\right)  
-      =  P\sum_{a=0}^{3}w_{a}(u+\eta)  \sigma_{a}  \otimes  \mathbf{S}_{a}^{(l)}.
+L^{\mathrm{S}}\left(u,\left(\nu,l\right)\right)=P\sum_{a=0}^{3}w_{a}(u+\eta)\sigma_{a}\otimes\mathbf{S}_{a}^{(l)}.
 \end{equation}
-The operators $\mathbf{S}_{a}^{(l)}$ act on meromorphic functions
+ The operators $\mathbf{S}_{a}^{(l)}$ act on meromorphic functions
 $f(\zeta)$ as difference operators:
 \begin{equation}
-    \left(\mathbf{S}_{a}^{(l)}f\right)(\zeta)  
-      =  \iu^{\delta_{a,0}}\frac{\theta_{a+1}(\eta)}{\theta_{a+1}(2\zeta)}
-          \left(\theta_{a+1}(2\zeta-2\eta l)f(\zeta+\eta)-\theta_{a+1}(-2\zeta-2\eta l)f(\zeta-\eta)\right).
+\left(\mathbf{S}_{a}^{(l)}f\right)(\zeta)=i^{\delta_{a,0}}\frac{\theta_{a+1}(\eta)}{\theta_{a+1}(2\zeta)}\left(\theta_{a+1}(2\zeta-2\eta l)f(\zeta+\eta)-\theta_{a+1}(-2\zeta-2\eta l)f(\zeta-\eta)\right).
 \end{equation}
- They generate the so-called Sklyanin algebra \cite{MR725414}.
+ They generate the so-called Sklyanin algebra {[}Sklyanin\textasciicircum 2{]}.
 
-In \cite{Derkachov:2012iv}, Derkachov and Spiridonov constructed
+In {[}Derkachov-Spiridonov{]}, Derkachov and Spiridonov constructed
 an R-operator $R_{ij}^{\mathrm{DS}}:V_{i}^{\diamondsuit}\otimes V_{j}^{\diamondsuit}\rightarrow V_{j}^{\diamondsuit}\otimes V_{i}^{\diamondsuit}$
 that satisfies the RLL relation
-\begin{multline}
-    R_{12}^{\mathrm{DS}}\left(\left(\nu_{1},l_{1}\right),\left(\nu_{2},l_{2}\right)\right)
-    L_{2}^{\mathrm{DS}}\left(u,\left(\nu_{2},l_{2}\right)\right)
-    L_{1}^{\mathrm{DS}}\left(u,\left(\nu_{1},l_{1}\right)\right)    \\
-      =
-        L_{1}^{\mathrm{DS}}\left(u,\left(\nu_{1},l_{1}\right)\right)
-        L_{2}^{\mathrm{DS}}\left(u,\left(\nu_{2},l_{2}\right)\right)
-        R_{12}^{\mathrm{DS}}\left(\left(\nu_{1},l_{1}\right),\left(\nu_{2},l_{2}\right)\right),
-\end{multline}
+\begin{align}
+ & R_{12}^{\mathrm{DS}}\left(\left(\nu_{1},l_{1}\right),\left(\nu_{2},l_{2}\right)\right)L_{2}^{\mathrm{DS}}\left(u,\left(\nu_{2},l_{2}\right)\right)L_{1}^{\mathrm{DS}}\left(u,\left(\nu_{1},l_{1}\right)\right)\nonumber \\
+ & =L_{1}^{\mathrm{DS}}\left(u,\left(\nu_{1},l_{1}\right)\right)L_{2}^{\mathrm{DS}}\left(u,\left(\nu_{2},l_{2}\right)\right)R_{12}^{\mathrm{DS}}\left(\left(\nu_{1},l_{1}\right),\left(\nu_{2},l_{2}\right)\right),
+\end{align}
  The L-operator $L^{\mathrm{DS}}:W\otimes V^{\diamondsuit}\rightarrow V^{\diamondsuit}\otimes W$
 is essentially Sklyanin's L-operator, differing only by an automorphism
 of the Sklyanin algebra:
 \begin{equation}
-    L^{\mathrm{DS}}\left(u,\left(\nu,l\right)\right)  
-      =  \varphi  \sigma_{3}  L^{\mathrm{S}}\varphi^{-1},  
-        \quad  \left(\varphi f\right)(\zeta)  :=  \exp(\pi i\zeta^{2}/\eta)f(\zeta).
+L^{\mathrm{DS}}\left(u,\left(\nu,l\right)\right)=\varphi\sigma_{3}L^{\mathrm{S}}\varphi^{-1},\quad\,\left(\varphi f\right)(\zeta):=\exp(\pi i\zeta^{2}/\eta)f(\zeta).
 \end{equation}
 This L-operator also satisfies the RLL relation with Baxter's R-matrix
 $\mathcal{R}^{\mathrm{B}}$. At this point, what is important is that
@@ -627,75 +602,56 @@ they show their R-operator $R^{\mathrm{DS}}$ is precisely the R-operator
 for the diamond quiver in the brane tiling model $R^{\diamondsuit}$,
 that is, 
 \begin{equation}
-    R_{ij}^{\mathrm{DS}}\left(\left(\nu_{i},l_{i}\right),\left(\nu_{j},l_{j}\right)\right)  
-      =  
-        R_{ij}^{\diamondsuit}\left(\left(a_{i},b_{i}\right),\left(a_{j},b_{j}\right)\right),
+R_{ij}^{\mathrm{DS}}\left(\left(\nu_{i},l_{i}\right),\left(\nu_{j},l_{j}\right)\right)=R_{ij}^{\diamondsuit}\left(\left(a_{i},b_{i}\right),\left(a_{j},b_{j}\right)\right),
 \end{equation}
  with the variables $\zeta$ and $z$ are related by $z=\exp(2\pi i\zeta)$
 and the parameters matched as
 \begin{align}
-    a_{i} b_{i}         &  =  \exp(-2\pi i\nu_{i}),  \quad  \frac{a_{i}}{b_{i}}  =  \exp(2\pi i\eta(2l_{i}+1)),  \\
-\left( p,q \right) &  =  \left(\exp(2\pi i\tau),\exp(4\pi i\eta)\right).
+a_{i}b_{i} & =\exp(-2\pi i\nu_{i}),\quad\,\frac{a_{i}}{b_{i}}=\exp(2\pi i\eta(2l_{i}+1)),\\
+\left(p,q\right) & =\left(\exp(2\pi i\tau),\exp(4\pi i\eta)\right).
 \end{align}
 
 Based on these observations, we propose that the L-operator for the
 diamond quiver 
 \begin{equation}
-    L^{\diamondsuit}\left(c,\left(a,b\right)\right)=
+L^{\diamondsuit}\left(c,\left(a,b\right)\right)=
 \end{equation}
  is the L-operator of Derkachov and Spiridonov:
 \begin{equation}
-    L^{\mathrm{DS}}\left(u,\left(\nu,l\right)\right)  
-      =  
-        L^{\diamondsuit}\left(c,\left(a,b\right)\right).
+L^{\mathrm{DS}}\left(u,\left(\nu,l\right)\right)=L^{\diamondsuit}\left(c,\left(a,b\right)\right).
 \end{equation}
-Requiring $L^{\diamondsuit}\left(c,\left(a,b\right)\right)=L^{\diamondsuit}\left(1,\left(a/c,b/c\right)\right)$
+ Requiring $L^{\diamondsuit}\left(c,\left(a,b\right)\right)=L^{\diamondsuit}\left(1,\left(a/c,b/c\right)\right)$
 fixes the relation between the two spectral parameters for the dashed
 line to be
 \begin{equation}
-    c=\exp(\pi \iu u).
+c=\exp(\pi iu).
 \end{equation}
 
 For the computation of the transfer matrix, we exploit the fact that
 $L^{\diamondsuit}$ really consists of three parts separated by zig-zag
 paths:
 \begin{equation}
-    L_{i}^{\diamondsuit}\left(c,\left(a_{i},b_{i}\right)\right)  =  .  \label{eq:pieceL}
+L_{i}^{\diamondsuit}\left(c,\left(a_{i},b_{i}\right)\right)=.\label{eq:pieceL}
 \end{equation}
  Reflecting this structure, $L^{\diamondsuit}$ can be expressed in
 the following factorized form:
 \begin{equation}
-    L_{i}^{\diamondsuit}\left(c,\left(a_{i},b_{i}\right)\right)  
-      =  
-        B\left(z_{i};\frac{b_{i}}{c}\right)\cdot\varphi(z_{i})
-          \frac{1}{\theta_{1}(z_{i}^{2})}
-          \left(
-          \begin{array}{cc}
-              \Delta_{i}^{1/2}  &  0\\
-              0                            &  \Delta_{i}^{-1/2}
-              \end{array}
-          \right)
-          \varphi^{-1}(z_{i})\cdot A\left(z_{i};\frac{a_{i}}{c}\right).  \label{eq:diamondL}
+L_{i}^{\diamondsuit}\left(c,\left(a_{i},b_{i}\right)\right)=B\left(z_{i};\frac{b_{i}}{c}\right)\cdot\varphi(z_{i})\frac{1}{\theta_{1}(z_{i}^{2})}\left(\begin{array}{cc}
+\Delta_{i}^{1/2} & 0\\
+0 & \Delta_{i}^{-1/2}
+\end{array}\right)\varphi^{-1}(z_{i})\cdot A\left(z_{i};\frac{a_{i}}{c}\right).\label{eq:diamondL}
 \end{equation}
  In this expression, $\Delta_{i}^{\pm1/2}$ are difference operators
 acting on functions of $z_{i}$ as $\left(\Delta_{i}^{\pm1/2}f\right)(z_{i})=f(q^{\pm1/2}z_{i})$
 and 
 \begin{equation}
-    A(z;a)  
-    =\left(
-        \begin{array}{cc}
-          \bar{\theta}_{4}(a/z) & \bar{\theta}_{3}(a/z)\\
-          \bar{\theta}_{4}(az)  & \bar{\theta}_{3}(az)
-        \end{array}
-      \right),
-        \quad
-    B(z;b)  
-    =\left(
-        \begin{array}{cc}
-          \bar{\theta}_{3}(bz) & -\bar{\theta}_{3}(b/z)\\
-          \bar{\theta}_{4}(bz) & -\bar{\theta}_{4}(b/z)
-        \end{array}
-      \right),
+A(z;a)=\left(\begin{array}{cc}
+\bar{\theta}_{4}(a/z) & \bar{\theta}_{3}(a/z)\\
+\bar{\theta}_{4}(az) & \bar{\theta}_{3}(az)
+\end{array}\right),\quad\,B(z;b)=\left(\begin{array}{cc}
+\bar{\theta}_{3}(bz) & -\bar{\theta}_{3}(b/z)\\
+\bar{\theta}_{4}(bz) & -\bar{\theta}_{4}(b/z)
+\end{array}\right),
 \end{equation}
  where $\bar{\theta}_{a}(z)=\theta_{a}(z;\sqrt{p})$ and we used the
 multiplicative notation for the theta functions. Roughly speaking,
@@ -711,24 +667,13 @@ concatenate.
  Thus, multiplying $n$ copies of the L-operators (\ref{eq:diamondL})
 and using formulas in the appendix, we obtain the following formula
 for the transfer matrix:
-\begin{multline}
-    \mathrm{Tr}_{W}\left(  
-      L_{n}^{\diamondsuit}\left(c,\left(a_{n},b_{n}\right)\right)
-      \circ_{W}  \cdots  \circ_{W}
-      L_{1}^{\diamondsuit}\left(c,\left(a_{1},b_{1}\right)\right)
-    \right)  \\
-    =  
-      \sum_{s_{1}=\pm1}\cdots\sum_{s_{n}=\pm1}
-      \prod_{i=1}^{n}\ell\left(z_{i-1}^{s_{i-1}},z_{i}^{s_{i}};\frac{b_{i-1}}{c},\frac{a_{i}}{c}\right)
-      \prod_{j=1}^{n}\Delta_{j}^{s_{j}/2},  \label{eq:proposal}
-\end{multline}
+\begin{align}
+ & \mathrm{Tr}_{W}\left(L_{n}^{\diamondsuit}\left(c,\left(a_{n},b_{n}\right)\right)\circ_{W}\cdots\circ_{W}L_{1}^{\diamondsuit}\left(c,\left(a_{1},b_{1}\right)\right)\right)\nonumber \\
+ & =\sum_{s_{1}=\pm1}\cdots\sum_{s_{n}=\pm1}\prod_{i=1}^{n}\ell\left(z_{i-1}^{s_{i-1}},z_{i}^{s_{i}};\frac{b_{i-1}}{c},\frac{a_{i}}{c}\right)\prod_{j=1}^{n}\Delta_{j}^{s_{j}/2},\label{eq:proposal}
+\end{align}
 where 
 \begin{equation}
-    \ell\left(w,z;b,a\right)  
-      =  
-        \frac{1}{\theta(z^{2})}
-        \theta\left(\sqrt{\frac{p}{q}}ba\frac{w}{z}\right)
-        \theta\left(\sqrt{\frac{p}{q}}\frac{a}{b}\frac{1}{wz}\right).
+\ell\left(w,z;b,a\right)=\frac{1}{\theta(z^{2})}\theta\left(\sqrt{\frac{p}{q}}ba\frac{w}{z}\right)\theta\left(\sqrt{\frac{p}{q}}\frac{a}{b}\frac{1}{wz}\right).
 \end{equation}
 In this formula we have dropped off an overall constant independent
 of the spectral parameters. At any rate, the overall normalization
@@ -740,25 +685,25 @@ one still solves the RLL relations. In the next subsection we will
 check the proposal by comparing it with independent computations from
 gauge theory. 
 
-So far we have considered the surface defect labeled $\left( R_{1},R_{2} \right)=\left( \emptyset,fund \right)$.
-Of course, we may also consider the case with $\left( R_{1},R_{2} \right)=\left( fund,\emptyset \right)$
+So far we have considered the surface defect labeled $\left(R_{1},R_{2}\right)=\left(\emptyset,fund\right)$.
+Of course, we may also consider the case with $\left(R_{1},R_{2}\right)=\left(fund,\emptyset\right)$
 in the same manner, by letting surface defects wrap around the other
 $S^{1}$ inside $S^{3}$. Hence, there are two sets of L-operators
 related by the symmetry exchanging $p$ and $q$. The underlying algebraic
 structure is the product of two copies of the Sklyanin algebra, known
-as the \emph{elliptic modular double} \cite{MR2492363}. 
+as the \emph{elliptic modular double} {[}Spiridonov{]}. 
 
 \subsubsection{$\mathcal{N}=2$ quiver theories and brane tilings}
 
 Building blocks of 4d $\mathcal{N}=1$ supersymmetric quiver gauge
 theories are vector multiplets and bifundamental chiral multiplets.
 A vector multiplet is present at a gauge node. A bifundamental chiral
-multiplet has two flavor groups, say $\SU(N)_{z}$ and $\SU(N)_{w}$.
+multiplet has two flavor groups, say $SU(N)_{z}$ and $SU(N)_{w}$.
 
-Given a theory $\mathcal{T}$ with flavor group $\SU(N)_{w}$ and another
-theory $\mathcal{T}'$ with flavor group $\SU(N)_{w'}$, we can couple
-them to obtain a new theory $\left( \mathcal{T} \times \mathcal{T}' \right)/\SU(N)_{z}$
-by gauging the diagonal subgroup $\SU(N)_{z}$ of $\SU(N)_{w} \times \SU(N)_{w'}$.
+Given a theory $\mathcal{T}$ with flavor group $SU(N)_{w}$ and another
+theory $\mathcal{T}'$ with flavor group $SU(N)_{w'}$, we can couple
+them to obtain a new theory $\left(\mathcal{T}\times\mathcal{T}'\right)/SU(N)_{z}$
+by gauging the diagonal subgroup $SU(N)_{z}$ of $SU(N)_{w}\times SU(N)_{w'}$.
 To construct a quiver gauge theory, we take a number of bifundamental
 chiral multiplets and couple them by gauging all or part of the flavor
 nodes. 
@@ -766,17 +711,18 @@ nodes.
 Now we aim to check the proposal on surface defects and transfer matrices
 by comparing them with independent calculations. In this section we
 perform the simplest such check for surface defects in $A_{1}$ theories
-of class $\mathcal{S}$ \cite{Gaiotto:2009we,Gaiotto:2009hg}, which arise from compactification
+of class $\mathcal{S}$ {[}Gaiotto, GMN{]}, which arise from compactification
 of the 6d $\mathcal{N}=\left(2,0\right)$ theory of type $A_{1}$
 on punctured Riemann surfaces. The action of surface defects on the
 supersymmetric indices of class-$\mathcal{S}$ theories have been
-studied in \cite{Gaiotto:2012xa, Gadde:2013dda, Alday:2013kda,Bullimore:2014nla}. Here we first review the computation for the surface
-defect labeled with the fundamental representation of $\SU(2)$ based
-on the method developed in \cite{Gaiotto:2012xa}, and show that the result agrees
+studied in {[}Gaiotto-Rastelli-Razamat, Gadde-Gukov, Alday et al,
+Bullimore et al{]}. Here we first review the computation for the surface
+defect labeled with the fundamental representation of $SU(2)$ based
+on the method developed in {[}GRR{]}, and show that the result agrees
 with the prediction from the transfer matrix (\ref{eq:proposal}). 
 
 Typical examples of class-$\mathcal{S}$ theories are $\mathcal{N}=2$
-gauge theories characterized by linear and circular quivers with $\SU(N)$
+gauge theories characterized by linear and circular quivers with $SU(N)$
 nodes. They are actually also examples of brane tiling models discussed
 in the previous sections. As such, they allow us to translate key
 notions in class-$\mathcal{S}$ theories to the language of brane
@@ -792,22 +738,21 @@ along the 012345 directions (see table \ref{tab:D4NS5}).
 \begin{table}
 \caption{D4-NS5 brane configuration}
 \label{tab:D4NS5}
-\vspace{0.2cm}
-  \centering
-    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\centering{}%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
 \hline 
-  & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\tabularnewline
+ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\tabularnewline
 \hline 
-D4       & $\times$ & $\times$ & $\times$ & $\times$ &    &    &   $\times$ &    &    &  \tabularnewline
+D4 & $\times$ & $\times$ & $\times$ & $\times$ &  &  & $\times$ &  &  & \tabularnewline
 \hline 
-NS5    & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ &    &    &    &  \tabularnewline
+NS5 & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ &  &  &  & \tabularnewline
 \hline 
-    \end{tabular}
+\end{tabular}
 \end{table}
 This brane configuration is lifted in M-theory to M5-branes, wrapped
 on a cylinder with $m$ punctures created by intersecting M5-branes.
 Therefore, the $\mathcal{N}=2$ linear quiver theory is obtained by
-compactification of the 6d $\mathcal{N}=\left( 2,0 \right)$ theory
+compactification of the 6d $\mathcal{N}=\left(2,0\right)$ theory
 of type $A_{N-1}$ on a cylinder with $m$ punctures, or a sphere
 with $m+2$ punctures. We distinguish the two punctures coming from
 the ends of the cylinder from the $m$ punctures in between. They
@@ -816,13 +761,13 @@ the class-$\mathcal{S}$ language, the $\mathcal{N}=2$ linear quiver
 theory is a theory associated to a sphere with $2$ maximal and $m$
 minimal punctures, see figure. 
 
-R-symmetry of the theory is $\SU(2)_{I} \times \U(1)_{r}$, where $\SU(2)_{I}$
-represents the rotation symmetry of the 789-space, and $\U(1)_{r}$
-the rotation symmetry of the 45-plane. The $\SU(N)$ flavor node from
+R-symmetry of the theory is $SU(2)_{I}\times U(1)_{r}$, where $SU(2)_{I}$
+represents the rotation symmetry of the 789-space, and $U(1)_{r}$
+the rotation symmetry of the 45-plane. The $SU(N)$ flavor node from
 each end of the quiver is associated to the maximal puncture on the
 corresponding side of the sphere. The $i$th gauge node is associated
 to the tube between the $i$th and $(i+1)$th minimal punctures. To
-the $i$th minimal puncture is associated a flavor symmetry $\U(1)_{i}$
+the $i$th minimal puncture is associated a flavor symmetry $U(1)_{i}$
 which acts on the hypermultiplet charged under the $(i-1)$th and
 $i$th gauge nodes. 
 
@@ -845,7 +790,7 @@ obtained by gluing $m$ trinions together, namely by replacing pairs
 of maximal punctures with tubes. In general, we can connect two Riemann
 surfaces with a tube at maximal punctures. From the point of view
 of gauge theory, gluing corresponds to gauging the diagonal combination
-of the $\SU(N)$ flavor symmetries associated to the maximal punctures
+of the SU(N) flavor symmetries associated to the maximal punctures
 involved. Using trinions with one minimal and two maximal punctures,
 we can obtain any linear quiver in this way, and for that manner also
 a circular quiver by further gluing the two ends of a linear quiver
@@ -864,12 +809,12 @@ and a chiral multiplet $\Phi_{i}$ in the adjoint representation with
 $\left(r,I_{3}\right)=\left(-1,0\right)$, while the $i$th hypermultiplet
 consists of two bifundamental chiral multiplets $Q_{i},\,\tilde{Q}_{i}$
 with $\left(r,I_{3}\right)=\left(0,1/2\right)$. Here $I_{3}$ is
-a Cartan generator of $\SU(2)_{I}$. The pair $(Q_{i},\tilde{Q}_{i}^{\dagger})$
-transforms in the doublet of $\SU(2)_{I}$ and have $\U(1)_{i}$ charge
+a Cartan generator of $SU(2)_{I}$. The pair $(Q_{i},\tilde{Q}_{i}^{\dagger})$
+transforms in the doublet of $SU(2)_{I}$ and have $U(1)_{i}$ charge
 $F_{i}=-1$. From the point of view of $\mathcal{N}=1$ supersymmetry,
-the $\U(1)$ symmetry generated by the combination 
+the $U(1)$ symmetry generated by the combination 
 \begin{equation}
-    \mathcal{F}  =  r + I_{3}
+\mathcal{F}=r+I_{3}
 \end{equation}
 is a flavor symmetry. We denote the fugacity for $\mathcal{F}$ by
 $t$. For the standard definition of the $\mathcal{N}=2$ index, $r$
@@ -905,85 +850,75 @@ tilings and that used above. The R-charge $R$ in the brane tiling
 model is given in terms of the charges of the $\mathcal{N}=2$ theory
 by 
 \begin{equation}
-    R  =  R_{0}  +  \frac{1}{2}\sum_{i}F_{i},  
-      \quad  R_{0}  =  -r+I_{3}.
+R=R_{0}+\frac{1}{2}\sum_{i}F_{i},\quad\,R_{0}=-r+I_{3}.
 \end{equation}
  The flavor charges associated to the zig-zag paths can be written
 as 
 \begin{equation}
-    F_{a_{i}}  =  -F_{i},  
-      \quad  F_{b}  =  -\mathcal{F}+\frac{1}{2}\sum_{i}F_{i},  
-      \quad  F_{c}  =  \mathcal{F}+\frac{1}{2}\sum_{i}F_{i}.
+F_{a_{i}}=-F_{i},\quad\,F_{b}=-\mathcal{F}+\frac{1}{2}\sum_{i}F_{i},\quad\,F_{c}=\mathcal{F}+\frac{1}{2}\sum_{i}F_{i}.
 \end{equation}
 Without loss of generality, we can set
 \begin{equation}
-    a_{i}  =  \frac{1}{\alpha_{i}}.
+a_{i}=\frac{1}{\alpha_{i}}.
 \end{equation}
 Plugging these relations into the combination $(pq)^{R/2}\prod_{i}a_{i}^{F_{a_{i}}}b^{F_{b}}c^{F_{c}}$
 that enters the indices of the bifundamental chiral multiplets, we
 deduce
 \begin{equation}
-    b  =  \frac{1}{\sqrt{t}},  
-      \quad  c  =  \sqrt{\frac{t}{pq}}.  \label{eq:relation_bc}
+b=\frac{1}{\sqrt{t}},\quad\,c=\sqrt{\frac{t}{pq}}.\label{eq:relation_bc}
 \end{equation}
 Before proceeding, we should mention a peculiarity in the $A_{1}$
-case. When $N=2$, the $\U(1)$ flavor symmetry of a bifundamental hypermultiplet
-is enhanced to $\SU(2)$ due to the fact that the fundamental representation
-of $\SU(2)$ is pseudoreal. For this reason there is no distinction
+case. When $N=2$, the U(1) flavor symmetry of a bifundamental hypermultiplet
+is enhanced to $SU(2)$ due to the fact that the fundamental representation
+of $SU(2)$ is pseudoreal. For this reason there is no distinction
 between minimal and maxmal punctures, and each trinion can be regarded
-as a half-hypermultiplet in the trifundamental representation of $\SU(2)^{3}$.
+as a half-hypermultiplet in the trifundamental representation of $SU(2)^{3}$.
 This is reflected in the index of a trinion, 
 \begin{equation}
-    \mathcal{I}_{B}(w,z;\sqrt{t}a)\mathcal{I}_{B}(z,w;\sqrt{t}/a)  
-      =  
-        \Gamma(\sqrt{t}\alpha^{\pm1}z^{\pm1}w^{\pm1}),
+\mathcal{I}_{B}(w,z;\sqrt{t}a)\mathcal{I}_{B}(z,w;\sqrt{t}/a)=\Gamma(\sqrt{t}\alpha^{\pm1}z^{\pm1}w^{\pm1}),
 \end{equation}
 which is manifestly symmetric under permutation of $a,\,z$ and $w$. 
 
-
-
-
-
 \subsubsection{Surface defects in $A_{1}$ theories of class $\mathcal{S}$}
 
-In \cite{Gaiotto:2012xa}, it was explained how to construct
+In {[}Gaiotto-Rastelli-Razamat{]}, it was explained how to construct
 a surface defect labeled with a pair of integers $(r,s)$, and how
 to determine its action on the supersymmetric index. Although the
-method applies to general $\mathcal{N}=2$ theories with $\SU(N)$
+method applies to general $\mathcal{N}=2$ theories with $SU(N)$
 flavor symmetry, here we review it in the language of class-$\mathcal{S}$
 theories. 
 
 Suppose we have a class-$\mathcal{S}$ theory $\mathcal{T}_{\mathrm{IR}}$
 associated to a Riemann surface that contains a maximal puncture,
-whose flavor group we call $\SU(N)_{z}$. To this surface we introduce
+whose flavor group we call $SU(N)_{z}$. To this surface we introduce
 an extra minimal puncture. Concretely, we can do this as follows.
-First, we rename the flavor group $\SU(N)_{z}$ to $\SU(N)_{w'}$. Then,
+First, we rename the flavor group $SU(N)_{z}$ to $SU(N)_{w'}$. Then,
 we take trinion representing a hypermultiplet $(Q,\tilde{Q})$ with
-flavor symmetry $\SU(N)_{w''} \times \SU(N)_{z}\times \U(1)_{\alpha}$,
+flavor symmetry $SU(N)_{w''}\times SU(N)_{z}\times U(1)_{\alpha}$,
 and glue it to $\mathcal{T}_{\mathrm{IR}}$ by gauging the diagonal
-subgroup $\SU(N)_{w}$ of $\SU(N)_{w'}\times \SU(N)_{w''}$. The resulting
+subgroup $SU(N)_{w}$ of $SU(N)_{w'}\times SU(N)_{w''}$. The resulting
 theory $\mathcal{T}_{\mathrm{UV}}$ has one more flavor symmetry,
-$\U(1)_{\alpha}$, than $\mathcal{T}_{\mathrm{IR}}$. Correspondingly,
+$U(1)_{\alpha}$, than $\mathcal{T}_{\mathrm{IR}}$. Correspondingly,
 the surface associated to $\mathcal{T}_{\mathrm{UV}}$ has one more
 minimal puncture than the original surface.
 
 The theory $\mathcal{T}_{\mathrm{UV}}$ is related to $\mathcal{T}_{\mathrm{IR}}$
 via the RG flow induced by a diagonal constant vev given to the quark
 $Q$, or equivalently, to the baryon $B=\det Q$. The vev higgses
-the gauge group $\SU(N)_{w}$ and breaks $\SU(N)_{w} \times \SU(N)_{z}$
+the gauge group $SU(N)_{w}$ and breaks $SU(N)_{w}\times SU(N)_{z}$
 down to the diagonal subgroup. Moreover, it turns the cubic superpotential
-$\tilde{Q} \Phi Q$ into a quadratic one that makes $\tilde{Q}$ and
+$\tilde{Q}\Phi Q$ into a quadratic one that makes $\tilde{Q}$ and
 $\Phi$ massive, where $\Phi$ is the adjoint chiral multiplet introduced
 in the gluing. Up to Nambu-Goldstone multiplets that survive the higgsing,
 in the infrared the multiplets we added are gone and we recover $\mathcal{T}_{\mathrm{IR}}$,
-with $\SU(N)_{w}$ replaced with $\SU(N)_{z}$. In effect, the minimal
+with $SU(N)_{w}$ replaced with $SU(N)_{z}$. In effect, the minimal
 puncture introduced by gluing the trinion is ``closed.'' The R-charge
 $I_{3}$ is broken by the vev, but the combination $I_{3}+F_{\alpha}/2$
 is preserved and identified with a Cartan generator of the infrared
-$\SU(2)$ R-symmetry.
+SU(2) R-symmetry.
 
 To create a surface defect in $\mathcal{T}_{\mathrm{IR}}$, we instead
-give the baryon a position-dependent vev $\left\langle B\right\rangle = \zeta_{1}^{r}\zeta_{2}^{s}$.
+give the baryon a position-dependent vev $\left\langle B\right\rangle =\zeta_{1}^{r}\zeta_{2}^{s}$.
 Here, as vefore, $\zeta_{1}$ and $\zeta_{2}$ are complex coordinates
 of the two orthogonal planes rotated by $j_{p}=j_{1}+j_{2}$ and $j_{q}=j_{1}-j_{2}$,
 respectively. Away from the origin, the effect of the position-dependent
@@ -996,14 +931,14 @@ with the insertion of a surface defect labeled with the pair of integers
 $(r,s)$, supported on the planes $\{\zeta_{1}=0\}$ and $\{\zeta_{2}=0\}$.
 This surface defect is to be identified with the surface defect labeled
 with the pair $(r\,fund,s\,fund)$ of symmetric representation of
-$\SU(N)$ discussed in the previous section \cite{Gadde:2013dda}. 
+SU(N) discussed in the previous section {[}Gadde-Gukov{]}. 
 
 The index of $\mathcal{T}_{\mathrm{UV}}$ has a pole in the $\alpha$-plane
 at $\alpha=\sqrt{t}p^{r/N}q^{s/N}$, and the residue there gives the
 index of $\mathcal{T}_{\mathrm{IR}}$ in the presence of the surface
 defect of type $(r,s)$. The reason is the following. The position-dependent
 vev $\left\langle B\right\rangle =\zeta_{1}^{r}\zeta_{2}^{s}$ breaks
-$\U(1)_{p}$, $\U(1)_{q}$, and $\SU(2)_{I}$. At this value of $\alpha$,
+$U(1)_{p}$, $U(1)_{q}$, and $SU(2)_{I}$. At this value of $\alpha$,
 however, the only combinations of charges that enter the trace defining
 the index are those that are preserved by the vev. Thus, we can still
 define the index in this background. As explained above, $\mathcal{T}_{\mathrm{UV}}$
@@ -1021,19 +956,12 @@ $(r,s)=(0,0)$ to gain intuition of the computation.
 
 In the construction of a surface defect described above, $\tilde{Q}$
 and $\Phi$ actually play no role. The essential point is that the
-vev given to the baryon built from $Q$ replaces $\SU(N)_{w}$ with
-$\SU(N)_{z}$ in the infrared. So we couple $\mathcal{T}_{\mathrm{IR}}$
+vev given to the baryon built from $Q$ replaces $SU(N)_{w}$ with
+$SU(N)_{z}$ in the infrared. So we couple $\mathcal{T}_{\mathrm{IR}}$
 just to $Q$ for the moment. The index of the combined theory is given
 by
 \begin{equation}
-    \int_{\mathbb{T}}\frac{dw}{2\pi iw}
-    \mathcal{I}_{\mathrm{V}}(w)
-    \mathcal{I}_{\mathrm{B}}(z,w;\rho)
-    \mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(w)  
-      =  
-        \kappa  \int_{\mathbb{T}}\frac{dw}{2\pi iw}
-        \frac{\Gamma(\rho z^{\pm1}w^{\pm1})}{\Gamma(w^{\pm2})}
-        \mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(w),
+\int_{\mathbb{T}}\frac{dw}{2\pi iw}\mathcal{I}_{\mathrm{V}}(w)\mathcal{I}_{\mathrm{B}}(z,w;\rho)\mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(w)=\kappa\int_{\mathbb{T}}\frac{dw}{2\pi iw}\frac{\Gamma(\rho z^{\pm1}w^{\pm1})}{\Gamma(w^{\pm2})}\mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(w),
 \end{equation}
 where $\rho=\sqrt{t}/a$ is the fugacity of $Q$ and $\kappa=(p;p)_{\infty}(q;q)_{\infty}/2$.
 In this integral, $|\rho|<1$ is assumed, but we can analytically
@@ -1045,9 +973,7 @@ there.
 
 The integrand has two pairs of poles in the $w$-plane at
 \begin{equation}
-    w  =  \rho z,  \,  \rho^{-1}z;  
-    \quad\quad  
-    w  =  \rho z^{-1},  \,  \rho^{-1}z^{-1}.
+w=\rho z,\,\rho^{-1}z;\quad\quad\,w=\rho z^{-1},\,\rho^{-1}z^{-1}.
 \end{equation}
  As $\rho\rightarrow1$, the first pair of poles collide and pinch
 the integration contour, and the integral diverges. Likewise, the
@@ -1056,24 +982,13 @@ the $\rho$-plane arises from the contributions from these poles in
 $w$. Using formula (eq:appendix), we find that the contribution from
 the pole at $w=\rho z$ is 
 \begin{equation}
-    \frac{1}{2}\frac{\Gamma(\rho^{2}z^{2})\Gamma(z^{-2})}{\Gamma(\rho^{2}z^{2})\Gamma(\rho^{-2}z^{-2})}
-    \Gamma(\rho^{2})
-    \mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(\rho z).
+\frac{1}{2}\frac{\Gamma(\rho^{2}z^{2})\Gamma(z^{-2})}{\Gamma(\rho^{2}z^{2})\Gamma(\rho^{-2}z^{-2})}\Gamma(\rho^{2})\mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(\rho z).
 \end{equation}
  The last factor $\Gamma(\rho^{2})$ indeed has a pole at $\rho=1$,
 with residue $1/4\kappa$. The pole at $w=\rho z^{-1}$ makes an equal
 contribution, and we get
 \begin{equation}
-    \mathrm{Res}_{\rho=1}
-    \left[
-      \int_{\mathbb{T}}\frac{dw}{2\pi iw}
-      \mathcal{I}_{\mathrm{V}}(w)
-      \mathcal{I}_{\mathrm{B}}(z,w;\rho)
-      \mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(w)
-    \right]  
-      =  
-        \frac{1}{2}  \frac{1}{2\kappa}
-        \mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(z).
+\mathrm{Res}_{\rho=1}\left[\int_{\mathbb{T}}\frac{dw}{2\pi iw}\mathcal{I}_{\mathrm{V}}(w)\mathcal{I}_{\mathrm{B}}(z,w;\rho)\mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(w)\right]=\frac{1}{2}\frac{1}{2\kappa}\mathcal{I}_{\mathcal{T}_{\mathrm{IR}}}(z).
 \end{equation}
 As expected, the residue reproduces the index of $\mathcal{T}_{\mathrm{IR}}$,
 multiplied by some factors. The factor of $1/2$ comes from the fact
@@ -1081,7 +996,7 @@ that $B$ has fugacity $\rho^{2}$, and disappears if we add the equal
 contribution from the pole at $\rho=-1$. The factor $1/2\kappa$
 is the contribution from a decoupled free chiral multiplet contained
 in a Nambu-Goldstone multiplet. It is the inverse of the index of
-a free vector multiplet since higgsing of a $\U(1)$ gauge theory with
+a free vector multiplet since higgsing of a U(1) gauge theory with
 a single chiral multiplet leads to a trivial theory whose index is
 one. 
 
@@ -1091,10 +1006,10 @@ that a constant vev is given to the baryonic operator built from the
 bifundamental chiral multiplet represented by that arrow, and the
 notation, what we just found is the identity
 \begin{equation}
-=4\kappa\mathrm{Res}_{\rho=1}=,  \label{eq:deltaidentity}
+=4\kappa\mathrm{Res}_{\rho=1}=,\label{eq:deltaidentity}
 \end{equation}
  where the right-hand side is the delta function defined by the relation
-(??). This identity holds when the index of any theory with $\SU(2)$
+(??). This identity holds when the index of any theory with $SU(2)$
 flavor symmetry (or more generally, any meromorphic function $f(w)$
 such that $f(w)=f(1/w)$) is coupled to the right node.
 
@@ -1129,15 +1044,11 @@ At $\rho=q^{-1/2}$, the index $\mathcal{I}_{B}(z,w;\rho)=\Gamma(\rho z^{\pm1}w^{
 of $Q$ has four sets of colliding poles in the $w$-plane. Two of
 them are 
 \begin{equation}
-    w  =  \rho qz,  \,  \rho^{-1}z;  
-    \quad\quad  
-    w  =  \rho z^{-1},  \,  \rho^{-1}q^{-1}z^{-1},
+w=\rho qz,\,\rho^{-1}z;\quad\quad\,w=\rho z^{-1},\,\rho^{-1}q^{-1}z^{-1},
 \end{equation}
  while the other two are 
 \begin{equation}
-    w  =  \rho qz^{-1},  \,  \rho^{-1}z^{-1};  
-    \quad\quad  
-    w  =  \rho z,  \,  \rho^{-1}q^{-1}z.
+w=\rho qz^{-1},\,\rho^{-1}z^{-1};\quad\quad\,w=\rho z,\,\rho^{-1}q^{-1}z.
 \end{equation}
  The contributions to the residue come from these poles. A small calculation
 shows that the first two sets of poles contribute in the same way:
@@ -1160,11 +1071,7 @@ Rather, for $\rho=q^{-1/2}$ and $w=q^{\pm1/2}z$, we have
 Therefore, the effect of introducing the surface defect of type $(0,1)$
 on the index is realized by the difference operator
 \begin{equation}
-    \mathfrak{S}_{(0,1)}  
-      =  
-        \frac{\theta(t)}{\theta(q^{-1})}
-        \sum_{s=\pm1}  \frac{1}{\theta(z^{2s})}
-        \theta\left(  \frac{t}{q}z^{-2}  \right)    \Delta^{s/2}.  \label{eq:surfacedefectaction}
+\mathfrak{S}_{(0,1)}=\frac{\theta(t)}{\theta(q^{-1})}\sum_{s=\pm1}\frac{1}{\theta(z^{2s})}\theta\left(\frac{t}{q}z^{-2}\right)\Delta^{s/2}.\label{eq:surfacedefectaction}
 \end{equation}
  The prefactor $\theta(t)/\theta(q^{-1})$ is equal to the index of
 a free chiral field in two dimensions, and represents the center-of-mass
@@ -1182,10 +1089,6 @@ contained in a trinion. We can take the surface defect puncture and
 collide it to the maximal puncture. The collision produces a new puncture,
 and defines the action of the surface defect on the maximal puncture.
 
-
-
-
-
 \subsubsection{Comparison with the transfer matrix}
 
 Let us finally compare the result with the proposal. For clarity of
@@ -1199,24 +1102,19 @@ According to the proposal, the surface defect creates a dashed line
 with some spectral parameter $d$, also drawn in the picture. It acts
 on the lattice model as the transfer matrix
 \begin{equation}
-    \mathrm{Tr}\left(L^{\diamondsuit}\left(d,(c,b)\right)\right)  
-      =  
-        \sum_{s=\pm1}\frac{1}{\theta(z^{2s})}
-        \theta\left(\sqrt{\frac{p}{q}}\frac{bc}{d^{2}}\right)
-        \theta\left(\sqrt{\frac{p}{q}}\frac{c}{b}z^{-2s}\right)
-        \Delta^{s/2}.
+\mathrm{Tr}\left(L^{\diamondsuit}\left(d,(c,b)\right)\right)=\sum_{s=\pm1}\frac{1}{\theta(z^{2s})}\theta\left(\sqrt{\frac{p}{q}}\frac{bc}{d^{2}}\right)\theta\left(\sqrt{\frac{p}{q}}\frac{c}{b}z^{-2s}\right)\Delta^{s/2}.
 \end{equation}
  From the relation (\ref{eq:relation_bc}), we see that if we set
 \begin{equation}
-    d  =  \frac{1}{\sqrt{qt}},
+d=\frac{1}{\sqrt{qt}},
 \end{equation}
  the transfer matrix indeed reproduces the difference operator (\ref{eq:surfacedefectaction}),
 up to an overall factor which cannot be fixed by the Yang-Baxter equations.
 
-As noted in \cite{Gaiotto:2012xa}, the above transfer matrix
+As noted in {[}Gaiotto-Rastelli-Razamat{]}, the above transfer matrix
 is essentially the Hamiltonian of elliptic Ruijsenaars-Schneider model
-\cite{MR851627,Ruijsenaars:1986pp} of type $A_{1}$. This fact
-follows from a general result obtained in \cite{MR1463830}. 
+{[}Ruijsenaars-Schneider, Ruijsenaars{]} of type $A_{1}$. This fact
+follows from a general result obtained in {[}Hasegawa{]}. 
 
 Here we have considered only the surface defect of type $(0,1)$,
 but the general story is similar. The surface defect of type $(r,s)$
@@ -1224,7 +1122,7 @@ acts on the index by a difference operator $\mathfrak{S}_{(r,s)}$.
 This operator is expected to coincide with the transfer matrix for
 an appropriate L-operator. If so, by the RLL relation, the operators
 $\mathfrak{S}_{(r,s)}$ for all $(r,s)$ should commute with each
-other. This is indeed true \cite{Gaiotto:2012xa}. From the class-$\mathcal{S}$
+other. This is indeed true {[}GRR{]}. From the class-$\mathcal{S}$
 point of view, the mutual commutativity is guaranteed by the fact
 that the index is independent of the positions of punctures representing
 surface defects. Therefore, the order in which they act on a maximal
@@ -1236,19 +1134,6 @@ For the same reason, a surface defect puncture can be placed between
 any two punctures, whether minimal or maximal, and still yield the
 same result. From the point of view of the type IIA system, this property
 appears to be quite non-trivial and is known as the ``hopping invariance''
-of the index \cite{Gadde:2013dda}. From the lattice model viewpoint,
+of the index {[}Gadde-Gukov{]}. From the lattice model viewpoint,
 this is guaranteed by the other RLL relation (??). 
-
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-\include{Common/endbib}
+\end{document}

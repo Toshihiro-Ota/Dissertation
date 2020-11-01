@@ -13,27 +13,29 @@
 \BOOKMARK [3][-]{subsubsection.2.3.3}{2.3.3 Defects as transfer matrices}{subsection.2.3}% 13
 \BOOKMARK [1][-]{section.3}{3 Surface defects as transfer matrices}{}% 14
 \BOOKMARK [2][-]{subsection.3.1}{3.1 Brane tilings and integrable lattice models}{section.3}% 15
-\BOOKMARK [3][-]{subsubsection.3.1.1}{3.1.1 Supersymmetric index and integrable lattice models}{subsection.3.1}% 16
-\BOOKMARK [3][-]{subsubsection.3.1.2}{3.1.2 Integrable lattice models from quiver gauge theories}{subsection.3.1}% 17
-\BOOKMARK [2][-]{subsection.3.2}{3.2 Surface defects in A1 theories of class S}{section.3}% 18
+\BOOKMARK [3][-]{subsubsection.3.1.1}{3.1.1 Integrable lattice models from quiver gauge theories}{subsection.3.1}% 16
+\BOOKMARK [3][-]{subsubsection.3.1.2}{3.1.2 Supersymmetric index on S1 S3 and an integrable lattice model}{subsection.3.1}% 17
+\BOOKMARK [2][-]{subsection.3.2}{3.2 Surface defects as transfer matrices}{section.3}% 18
 \BOOKMARK [3][-]{subsubsection.3.2.1}{3.2.1 Surface defects and L-operators}{subsection.3.2}% 19
-\BOOKMARK [3][-]{subsubsection.3.2.2}{3.2.2 Surface defects as transfer matrices}{subsection.3.2}% 20
-\BOOKMARK [1][-]{section.4}{4 Line defects as transfer matrices}{}% 21
-\BOOKMARK [2][-]{subsection.4.1}{4.1 Integrable lattice models of elliptic and trigonometric type}{section.4}% 22
-\BOOKMARK [3][-]{subsubsection.4.1.1}{4.1.1 L-operator and quantum integrable system}{subsection.4.1}% 23
-\BOOKMARK [3][-]{subsubsection.4.1.2}{4.1.2 Elliptic L-operators}{subsection.4.1}% 24
-\BOOKMARK [3][-]{subsubsection.4.1.3}{4.1.3 Trigonometric L-operators}{subsection.4.1}% 25
-\BOOKMARK [2][-]{subsection.4.2}{4.2 Wilson-'t Hooft lines as transfer matrices}{section.4}% 26
-\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 Wilson\205't Hooft lines in S1 R2 R}{subsection.4.2}% 27
-\BOOKMARK [3][-]{subsubsection.4.2.2}{4.2.2 Transfer matrices from circular quiver theories}{subsection.4.2}% 28
-\BOOKMARK [3][-]{subsubsection.4.2.3}{4.2.3 Monodromy matrices from linear quiver theories}{subsection.4.2}% 29
-\BOOKMARK [3][-]{subsubsection.4.2.4}{4.2.4 Other representations}{subsection.4.2}% 30
-\BOOKMARK [2][-]{subsection.4.3}{4.3 Transfer matrices from Verlinde operators}{section.4}% 31
-\BOOKMARK [3][-]{subsubsection.4.3.1}{4.3.1 Review of AGT correspondence}{subsection.4.3}% 32
-\BOOKMARK [3][-]{subsubsection.4.3.2}{4.3.2 Verlinde operators and Wilson\205't Hooft lines}{subsection.4.3}% 33
-\BOOKMARK [3][-]{subsubsection.4.3.3}{4.3.3 Verlinde operators on a punctured torus}{subsection.4.3}% 34
-\BOOKMARK [2][-]{subsection.4.4}{4.4 Brane realization and string dualities}{section.4}% 35
-\BOOKMARK [3][-]{subsubsection.4.4.1}{4.4.1 M-theory setup and brane realization}{subsection.4.4}% 36
-\BOOKMARK [3][-]{subsubsection.4.4.2}{4.4.2 String duality and 4d Chern-Simons theory}{subsection.4.4}% 37
-\BOOKMARK [1][-]{section.5}{5 Outlook}{}% 38
-\BOOKMARK [1][-]{appendix.A}{A some info.}{}% 39
+\BOOKMARK [3][-]{subsubsection.3.2.2}{3.2.2 N=2 quiver theories and brane tilings}{subsection.3.2}% 20
+\BOOKMARK [3][-]{subsubsection.3.2.3}{3.2.3 Surface defects in A1 theories of class S}{subsection.3.2}% 21
+\BOOKMARK [3][-]{subsubsection.3.2.4}{3.2.4 Comparison with the transfer matrix}{subsection.3.2}% 22
+\BOOKMARK [1][-]{section.4}{4 Line defects as transfer matrices}{}% 23
+\BOOKMARK [2][-]{subsection.4.1}{4.1 Integrable lattice models of elliptic and trigonometric type}{section.4}% 24
+\BOOKMARK [3][-]{subsubsection.4.1.1}{4.1.1 L-operator and quantum integrable system}{subsection.4.1}% 25
+\BOOKMARK [3][-]{subsubsection.4.1.2}{4.1.2 Elliptic L-operators}{subsection.4.1}% 26
+\BOOKMARK [3][-]{subsubsection.4.1.3}{4.1.3 Trigonometric L-operators}{subsection.4.1}% 27
+\BOOKMARK [2][-]{subsection.4.2}{4.2 Wilson-'t Hooft lines as transfer matrices}{section.4}% 28
+\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 Wilson\205't Hooft lines in S1 R2 R}{subsection.4.2}% 29
+\BOOKMARK [3][-]{subsubsection.4.2.2}{4.2.2 Transfer matrices from circular quiver theories}{subsection.4.2}% 30
+\BOOKMARK [3][-]{subsubsection.4.2.3}{4.2.3 Monodromy matrices from linear quiver theories}{subsection.4.2}% 31
+\BOOKMARK [3][-]{subsubsection.4.2.4}{4.2.4 Other representations}{subsection.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.3}{4.3 Transfer matrices from Verlinde operators}{section.4}% 33
+\BOOKMARK [3][-]{subsubsection.4.3.1}{4.3.1 Review of AGT correspondence}{subsection.4.3}% 34
+\BOOKMARK [3][-]{subsubsection.4.3.2}{4.3.2 Verlinde operators and Wilson\205't Hooft lines}{subsection.4.3}% 35
+\BOOKMARK [3][-]{subsubsection.4.3.3}{4.3.3 Verlinde operators on a punctured torus}{subsection.4.3}% 36
+\BOOKMARK [2][-]{subsection.4.4}{4.4 Brane realization and string dualities}{section.4}% 37
+\BOOKMARK [3][-]{subsubsection.4.4.1}{4.4.1 M-theory setup and brane realization}{subsection.4.4}% 38
+\BOOKMARK [3][-]{subsubsection.4.4.2}{4.4.2 String duality and 4d Chern-Simons theory}{subsection.4.4}% 39
+\BOOKMARK [1][-]{section.5}{5 Outlook}{}% 40
+\BOOKMARK [1][-]{appendix.A}{A some info.}{}% 41
