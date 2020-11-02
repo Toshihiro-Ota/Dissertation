@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.76.0-2013061817 (rev 4627)  (format=lualatex 2015.12.17)  16 OCT 2020 10:10
+This is LuaTeX, Version beta-0.76.0-2013061817 (rev 4627)  (format=lualatex 2015.12.17)  2 NOV 2020 10:21
  restricted \write18 enabled.
  file:line:error style messages enabled.
 **Sec2.tex
@@ -1000,16 +1000,16 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 Package xcolor Warning: Incompatible color definition on input line 115.
 
 
-Package xcolor Warning: Incompatible color definition on input line 127.
+Package xcolor Warning: Incompatible color definition on input line 128.
 
 
-Package xcolor Warning: Incompatible color definition on input line 129.
+Package xcolor Warning: Incompatible color definition on input line 130.
 
 
-Package xcolor Warning: Incompatible color definition on input line 140.
+Package xcolor Warning: Incompatible color definition on input line 141.
 
 [2]
-Overfull \hbox (32.53156pt too wide) in paragraph at lines 192--197
+Overfull \hbox (32.53156pt too wide) in paragraph at lines 193--198
 \OT1/cmr/m/n/10.95 1$)-dimensional man-i-folds, and thus we learn that the lin-
 ear map given above sat-is-fies $\OML/cmm/m/it/10.95 U [] U [] \OT1/cmr/m/n/10.
 95 =
@@ -1017,51 +1017,51 @@ ear map given above sat-is-fies $\OML/cmm/m/it/10.95 U [] U [] \OT1/cmr/m/n/10.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 208.
+(hyperref)                removing `math shift' on input line 209.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 208.
+(hyperref)                removing `math shift' on input line 209.
 
 [3]
 
-Package xcolor Warning: Incompatible color definition on input line 268.
+Package xcolor Warning: Incompatible color definition on input line 269.
 
 
-Package xcolor Warning: Incompatible color definition on input line 273.
-
-
-Package xcolor Warning: Incompatible color definition on input line 280.
+Package xcolor Warning: Incompatible color definition on input line 274.
 
 
 Package xcolor Warning: Incompatible color definition on input line 281.
 
+
+Package xcolor Warning: Incompatible color definition on input line 282.
+
 [4]
 
-Package xcolor Warning: Incompatible color definition on input line 287.
+Package xcolor Warning: Incompatible color definition on input line 288.
 
 
-Package xcolor Warning: Incompatible color definition on input line 293.
+Package xcolor Warning: Incompatible color definition on input line 294.
 
 
-Package xcolor Warning: Incompatible color definition on input line 293.
+Package xcolor Warning: Incompatible color definition on input line 294.
 
 
-Package xcolor Warning: Incompatible color definition on input line 300.
+Package xcolor Warning: Incompatible color definition on input line 301.
 
 
-Package xcolor Warning: Incompatible color definition on input line 303.
+Package xcolor Warning: Incompatible color definition on input line 304.
 
 [5]
 
-Package xcolor Warning: Incompatible color definition on input line 377.
+Package xcolor Warning: Incompatible color definition on input line 378.
 
 [6]
 
-Package xcolor Warning: Incompatible color definition on input line 405.
+Package xcolor Warning: Incompatible color definition on input line 406.
 
 
-Overfull \hbox (1.4669pt too wide) in paragraph at lines 419--421
+Overfull \hbox (1.4669pt too wide) in paragraph at lines 420--422
 [][]\OT1/cmr/m/n/10.95 For each ori-ented $\OML/cmm/m/it/10.95 d$\OT1/cmr/m/n/1
 0.95 -dimensional closed man-i-fold $\OML/cmm/m/it/10.95 N$\OT1/cmr/m/n/10.95 ,
  as-signs a fi-nite di-men-sional $\U/msb/m/n/10.95 C$\OT1/cmr/m/n/10.95 -vecto
@@ -1070,77 +1070,77 @@ r
 
 [7]
 
-Package xcolor Warning: Incompatible color definition on input line 489.
+Package xcolor Warning: Incompatible color definition on input line 490.
 
 
-Package xcolor Warning: Incompatible color definition on input line 504.
+Package xcolor Warning: Incompatible color definition on input line 505.
 
 
-Package xcolor Warning: Incompatible color definition on input line 506.
+Package xcolor Warning: Incompatible color definition on input line 507.
 
 [8] [9] [10] [11] [12] [13]
 
-Package xcolor Warning: Incompatible color definition on input line 876.
+Package xcolor Warning: Incompatible color definition on input line 877.
 
 
-Package xcolor Warning: Incompatible color definition on input line 894.
+Package xcolor Warning: Incompatible color definition on input line 895.
 
 
-Package xcolor Warning: Incompatible color definition on input line 896.
+Package xcolor Warning: Incompatible color definition on input line 897.
 
 [14]
 
-Package xcolor Warning: Incompatible color definition on input line 992.
+Package xcolor Warning: Incompatible color definition on input line 993.
 
 [15]
 
-Package xcolor Warning: Incompatible color definition on input line 1007.
+Package xcolor Warning: Incompatible color definition on input line 1008.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1033.
+Package xcolor Warning: Incompatible color definition on input line 1034.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1065.
+Package xcolor Warning: Incompatible color definition on input line 1066.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1090.
+Package xcolor Warning: Incompatible color definition on input line 1091.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1122.
+Package xcolor Warning: Incompatible color definition on input line 1123.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1127.
+Package xcolor Warning: Incompatible color definition on input line 1128.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1132.
+Package xcolor Warning: Incompatible color definition on input line 1133.
 
 [16]
 
-Package xcolor Warning: Incompatible color definition on input line 1211.
+Package xcolor Warning: Incompatible color definition on input line 1212.
 
 [17]
 
-Package xcolor Warning: Incompatible color definition on input line 1368.
+Package xcolor Warning: Incompatible color definition on input line 1369.
 
 [18] [19] [20]
 
-Package xcolor Warning: Incompatible color definition on input line 1630.
+Package xcolor Warning: Incompatible color definition on input line 1631.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1653.
+Package xcolor Warning: Incompatible color definition on input line 1654.
 
 [21] [22]
 
-Package xcolor Warning: Incompatible color definition on input line 1753.
-
-
 Package xcolor Warning: Incompatible color definition on input line 1754.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1755.
 
 [23]
 
-Package xcolor Warning: Incompatible color definition on input line 1882.
+Package xcolor Warning: Incompatible color definition on input line 1883.
 
-LaTeX Font Info:    Try loading font information for U+euf on input line 1885.
+LaTeX Font Info:    Try loading font information for U+euf on input line 1886.
 
 (/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/amsfonts/ueuf.
 fd
@@ -1162,17 +1162,17 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7.
  ) )
-(\end occurred when \iftrue on line 1924 was incomplete)
-(\end occurred when \if on line 1924 was incomplete)
+(\end occurred when \iftrue on line 1925 was incomplete)
+(\end occurred when \if on line 1925 was incomplete)
 
 Here is how much of LuaTeX's memory you used:
- 22089 strings out of 494698
+ 22623 strings out of 494698
  100000,552014 words of node,token memory allocated
  1492 words of node memory still in use:
    7 hlist, 2 vlist, 3 rule, 2 glue, 72 kern, 45 glue_spec, 10 action, 1 write n
 odes
    avail lists: 2:28,3:1985,4:1074,5:205,6:3435,7:178,8:40,9:463,10:320
- 24607 multiletter control sequences out of 65536+600000
+ 25141 multiletter control sequences out of 65536+600000
  105 fonts using 4136551 bytes
  59i,18n,69p,3364b,940s stack positions out of 5000i,500n,10000p,200000b,100000s
 </Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfon
@@ -1206,7 +1206,7 @@ ic/amsfonts/cm/cmtt10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist
 Live/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on Sec2.pdf (26 pages, 413706 bytes).
+Output written on Sec2.pdf (26 pages, 413768 bytes).
 
 PDF statistics: 526 PDF objects out of 1000 (max. 8388607)
  468 compressed objects within 5 object streams

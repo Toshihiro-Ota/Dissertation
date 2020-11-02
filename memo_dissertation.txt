@@ -1,9 +1,5 @@
 18/Oct/2020
-初変更
-
-
-18/Oct/2020
-gitkraken にファイルアップロード
+gitkraken にファイルアップロード，初変更
 
 
 15/Oct/2020
@@ -15,7 +11,9 @@ begin_special.tex で font=\footnotesize になっているが，図中では必
 
 
 8/Oct/2020
-上の変更をしたが，画像をこれまでどおり fig ディレクトリから pdf を読み込んでもコンパイルは通ったしきちんと表示された．
+下の変更をしたが，画像をこれまでどおり fig ディレクトリから pdf を読み込んでもコンパイルは通ったしきちんと表示された．
+そもそも最近では dvipdfmx よりも pdflatex が主要になってきているとのこと．
+
 数式や文章中に図を挿入したいときは tikz を，tikz では不便な図を描きたいときは今まで通り keynote で描いて pdf 画像として読み込むのが良さそう．
 [https://qiita.com/zr_tex8r/items/5413a29d5276acac3771] のタブー3, 4参照
 
@@ -23,7 +21,7 @@ begin_special.tex で font=\footnotesize になっているが，図中では必
 16/Sept/2020
 main.tex をコンパイルする時にタイプセットを tex and DVI ではなく pdftex でコンパイルするとエラーになる．
 [https://texwiki.texjp.org/?hyperref#ec16a11d]
-を参考に，begin.tex の usepackage の二箇所 (l.10, l.14) を pdftex にするとコンパイルは通ったっぽい．
+を参考に，begin.tex の usepackage の二箇所 (l.10, l.14) を pdftex にするとコンパイルは通った．
 
 あとで，図や参考文献を入れた時にちゃんとコンパイルされるかどうかをまた確かめるべき．
 

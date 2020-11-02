@@ -44,12 +44,52 @@ For such a configuration, what one needs to notice is that when an
 NS5-brane meets $N$ D5-branes, they combine to form a bound state.
 In the language of $\left( p,q \right)$ 5-branes, this bound state
 is either an $\left( N,1 \right)$ or $\left( N,-1 \right)$ 5-brane,
-depending on the relative positions of the branes; see figure. Therefore,
+depending on the relative positions of the branes; see figure \ref{fig:D5NS5config}. Therefore,
 the extended defects $\mathcal{E}_{\mathrm{NS5}_{i}}$ are domain
 walls in $\mathsf{T}_{\mathrm{D5}}$ separate the spacetime into the
 regions with different values of the NS5-brane charge $q$. The curves
 $C_{i}$ along which these domain walls are located are known as \emph{zig-zag
 paths}. Across a zig-zag path the charge $q$ jump by one. 
+
+
+%FIGURE
+\begin{figure}
+\centering
+  \subfloat[\label{fig:(N,1)}]{
+    
+    \begin{tikzpicture}[scale=1.2] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \draw[xshift=0.01cm] (0,0) -- node[left] {NS5$_i$} ++(0,1);% -- ++(30:1);
+        \draw[yshift=0.01cm] (-1,1) -- node[above] {$N$ D5} ++(1,0);% -- ++(30:1);
+        \draw[double] (0,1) -- node[below right] {$(N,1)$} ++(30:1);
+        
+        \filldraw[color=olive!80, fill=olive!5] (2,1.2) node[color=black, below right] {$\Sigma$} rectangle (4,0);
+        \filldraw[color=olive!80, fill=cyan!20!blue, opacity=0.6] (3,0) rectangle (4,1.2);
+        \draw[semithick] (3,0) node[below] {$C_i$} -- ++(0,1.2);
+        
+    \end{tikzpicture}
+    }
+  \qquad\qquad
+  \subfloat[\label{fig:(N,-1)}]{
+    
+    \begin{tikzpicture}[scale=1.2] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \def\shift{0.5cm}
+        \draw[xshift=0.01cm, yshift=\shift] (0,0) -- node[left] {NS5$_i$} ++(0,1);% -- ++(30:1);
+        \draw[yshift=-0.01cm+\shift] (-1,0) -- node[below] {$N$ D5} ++(1,0);% -- ++(30:1);
+        \draw[double,yshift=\shift] (0,0) -- node[above right] {$(N,-1)$} ++(-30:1);
+        
+        \filldraw[color=olive!80, fill=olive!5] (2,1.2) node[color=black, below right] {$\Sigma$} rectangle (4,0);
+        \filldraw[color=olive!80, fill=cyan!20!blue, opacity=0.3] (3,0) rectangle (4,1.2);
+        \draw[semithick] (3,0) node[below] {$C_i$} -- ++(0,1.2);
+        
+    \end{tikzpicture}
+    }
+  \caption{An NS5-brane combines with a stack of $N$ D5-branes, forming (a) and $(N,1)$ 5-brane 
+  or (b) an $(N,-1)$ 5-brane. The 5-brane junction is a domain wall in $\mathsf{T}_{\mathrm{D5}}$. 
+  The shaded regions shown above support a nonzero NS5-brane charge $q=\pm 1$}
+  \label{fig:D5NS5config}
+\end{figure}
+
 
 Conversely, given a configuration of curves $C_{i}$ on the two-dimensional
 surface $\Sigma$ and a 5-brane charge assignment consistent with
@@ -70,6 +110,30 @@ After the shading, we get a checkerboard-like pattern on $\Sigma$
 where shaded faces adjoin unshaded ones and two shaded faces sharing
 a vertex are of different types, see figure. 
 
+
+%FIGURE
+\begin{figure}
+\centering
+  \subfloat[\label{}]{  }
+  \subfloat[\label{}]{
+    \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \def\width{3cm}
+        \def\height{2cm}
+        \def\sep{1cm}
+        
+        \draw[color=olive!80] (0,0) rectangle (\width,\height);
+        
+        \node[node, minimum size=7pt] at (0.3cm,0.7cm-\sep) {};
+        \node[node, minimum size=7pt] at (0.3cm,0.7cm) {};    %, shift={(30:2)}
+        \node[node, minimum size=7pt] at (0.3cm,0.7cm+\sep) {};
+        
+    \end{tikzpicture}    
+    }
+  \caption{}
+  \label{fig:tilings_quiverdiagram}
+\end{figure}
+
+
 Each unshaded region supports $N$ D5-branes, hence an $\SU(N)$ vector
 multiplet lives there. If the region contains part of the boundary,
 the multiplet is frozen by boundary conditions and the associated
@@ -82,10 +146,42 @@ in the fundamental representation under one of the associated gauge
 or flavor groups and in the anti-fundamental representation under
 the other. We write it by an arrow between the two nodes: 
 \begin{equation}
-bifundamental  \label{eq:bifund}
+    \begin{tikzpicture}[scale=1.2, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \newcommand{\linelength}{1.2}
+        \path[name path=line1, draw=none] (225:{\linelength*sqrt(2)/2}) -- ++(45:{\linelength*sqrt(2)});
+        \path[name path=line2, draw=none] (-45:{\linelength*sqrt(2)/2}) -- ++(135:{\linelength*sqrt(2)});
+        \path[name path=rect, draw=none] (-0.5,-0.5) rectangle (0.5,0.5);
+        
+        \path[name intersections={of= line1 and rect, by={A, B}}]; % node at (A) {A} node at (B) {B};
+        \path[name intersections={of= line2 and rect, by={C, D}}]; % node at (C) {C} node at (D) {D};
+        \path[name intersections={of= line1 and line2, by={E}}];
+        
+        \fill[color=olive!5] (-0.5,-0.5) rectangle (0.5,0.5);
+        %\fill[color=olive!5] (A) -- (D) -- (E) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.6] (D) -- (B) -- (E) -- cycle;
+        %\fill[color=olive!5] (B) -- (C) -- (E) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.3] (C) -- (A) -- (E) -- cycle;
+        
+        \renewcommand{\linelength}{1}
+        \draw[semithick] (225:{\linelength*sqrt(2)/2}) node[below] {$i$} -- ++(45:{\linelength*sqrt(2)});
+        \draw[semithick] (-45:{\linelength*sqrt(2)/2}) node[below] {$j$} -- ++(135:{\linelength*sqrt(2)});
+        
+    \end{tikzpicture}
+  %
+  \quad  \rightsquigarrow  \quad
+  %
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (0,-0.5) {};
+        \node[fnode] (b) at (0,0.5) {};
+        \draw[semithick, arrows=-latex] (a) to (b);
+        
+    \end{tikzpicture}
+  \quad .
+  \label{eq:bifund}
 \end{equation}
  The arrow points from the anti-fundamental side to the fundamental
-side. See figure for examples of quivers obtained from brane tilings. 
+side. See figure \ref{fig:tilings_quiverdiagram} for examples of quivers obtained from brane tilings. 
 
 Moreover, for every set of zig-zag paths bounding a shaded region,
 we have a loop of arrows and world-sheet instantons generate a superpotential
@@ -120,16 +216,239 @@ To fix the R-charge assignment, let us assume that we can orient the
 zig-zag paths and bound every shaded or unshaded region with zig-zag
 paths all heading upward, for some choice of the ``vertical'' direction
 in the neighborhood of that region. This is the case for the examples
-in figure. The zig-zag paths thus oriented fall into two groups; when
+in figure \ref{fig:tilings_quiverdiagram}. The zig-zag paths thus oriented fall into two groups; when
 a zig-zag path goes upward and we cross it from the left to the right,
 $q$ increases by one. We distinguish the latter case from the former
 by drawing the zig-zag path with a dotted line. Then, we give an arrow
 $R=0$ if it originates from a crossing of two zig-zag paths of the
 same type, and $R=1$ otherwise. With this R-charge assignment the
-two conditions describe above are satisfied (figure). 
+two conditions describe above are satisfied (see figure \ref{fig:twoexamples}). 
+
+
+%FIGURE
+\begin{figure}
+\centering
+  \subfloat[\label{}]{
+    \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \def\radius{1.2cm}
+        
+        \path[name path=dot1, draw=none] (280:\radius) to[bend left=10] (190:\radius);
+        \path[name path=dot2, draw=none] (225:\radius) to[bend right=10] (135:\radius);
+        \path[name path=dot3, draw=none] (170:\radius) to[bend left=10] (60:\radius);
+        \path[name path=solid1, draw=none] (260:\radius) to[bend left=10] (340:\radius);
+        \path[name path=solid2, draw=none] (315:\radius) to[bend left=10] (30:\radius);
+        \path[name path=solid3, draw=none] (0:\radius) -- (100:\radius);
+        
+        \path[name intersections={of= dot1 and solid1, by={A}}];
+        \path[name intersections={of= dot1 and dot2, by={B}}];
+        \path[name intersections={of= dot2 and dot3, by={C}}];
+        \path[name intersections={of= dot3 and solid3, by={D}}];
+        \path[name intersections={of= solid2 and solid3, by={E}}];
+        \path[name intersections={of= solid1 and solid2, by={F}}];
+        
+        \fill[olive!5] (0,0) circle[radius=\radius];
+        
+        \fill[color=cyan!20!blue, opacity=0.6] (A) to (260:\radius) arc (260:280:\radius) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.6] (B) to (190:\radius) arc (190:225:\radius) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.6] (C) to (135:\radius) arc (135:170:\radius) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.6] (D) to (60:\radius) arc (60:100:\radius) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.6] (E) to (0:\radius) arc (0:30:\radius) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.6] (F) to (315:\radius) arc (315:340:\radius) -- cycle;
+        
+        \fill[color=cyan!20!blue, opacity=0.3] (A) to[bend left=5] (B) to[bend right=5] (C) to[bend left=5] (D) -- (E) to[bend right=5] (F) to[bend right=5] cycle;
+        
+        \draw[semithick, densely dotted, ->] (280:\radius) to[bend left=10] (190:\radius);
+        \draw[semithick, densely dotted, ->] (225:\radius) to[bend right=10] (135:\radius);
+        \draw[semithick, densely dotted, ->] (170:\radius) to[bend left=10] (60:\radius);
+        \draw[semithick, ->] (260:\radius) to[bend left=10] (340:\radius);
+        \draw[semithick, ->] (315:\radius) to[bend left=10] (30:\radius);
+        \draw[semithick, ->] (0:\radius) -- (100:\radius);
+        
+        \begin{scope}[scale=0.8]
+        \node[fnode, xshift=2.4*\radius] (a) at (350:\radius) {};\node[fnode, xshift=2.4*\radius] (b) at (45:\radius) {};
+        \node[fnode, xshift=2.4*\radius] (c) at (235/2:\radius) {};\node[fnode, xshift=2.4*\radius] (d) at (180:\radius) {};
+        \node[fnode, xshift=2.4*\radius] (e) at (485/2:\radius) {};\node[fnode, xshift=2.4*\radius] (f) at (595/2:\radius) {};
+        \draw[semithick, arrows=-latex] (a) -- (b);\draw[semithick, arrows=-latex] (b) -- (c);\draw[semithick, arrows=-latex] (c) -- (d);
+        \draw[semithick, arrows=-latex] (d) -- (e);\draw[semithick, arrows=-latex] (e) -- (f);\draw[semithick, arrows=-latex] (f) -- (a);
+        \end{scope}
+        
+    \end{tikzpicture}
+    }
+  %
+  \qquad\qquad
+  %
+  \subfloat[\label{}]{
+    \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \def\radius{1.2cm}
+        
+        \path[name path=dot1, draw=none] (280:\radius) to[bend left=10] (190:\radius);
+        \path[name path=dot2, draw=none] (225:\radius) to[bend right=10] (135:\radius);
+        \path[name path=dot3, draw=none] (170:\radius) to[bend left=10] (60:\radius);
+        \path[name path=solid1, draw=none] (260:\radius) to[bend left=10] (340:\radius);
+        \path[name path=solid2, draw=none] (315:\radius) to[bend left=10] (30:\radius);
+        \path[name path=solid3, draw=none] (0:\radius) -- (100:\radius);
+        
+        \path[name intersections={of= dot1 and solid1, by={A}}];
+        \path[name intersections={of= dot1 and dot2, by={B}}];
+        \path[name intersections={of= dot2 and dot3, by={C}}];
+        \path[name intersections={of= dot3 and solid3, by={D}}];
+        \path[name intersections={of= solid2 and solid3, by={E}}];
+        \path[name intersections={of= solid1 and solid2, by={F}}];
+        
+        \fill[olive!5] (0,0) circle[radius=\radius];
+        
+        \fill[color=cyan!20!blue, opacity=0.6] (A) to[bend left=5] (B) to (225:\radius) arc (225:260:\radius) --(A) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.3] (B) to[bend right=5] (C) to (170:\radius) arc (170:190:\radius) -- (B) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.6] (C) to[bend left=5] (D) to (100:\radius) arc (100:135:\radius) -- (C) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.3] (D) to (E) to (30:\radius) arc (30:60:\radius) -- (D) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.6] (E) to[bend right=5] (F) to (340:\radius) arc (340:360:\radius) -- (E) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.3] (F) to[bend right=5] (A) to (280:\radius) arc (280:315:\radius) (F) -- cycle;
+        
+        %\fill[color=cyan!20!blue, opacity=0.3] (A) to[bend left=5] (B) to[bend right=5] (C) to[bend left=5] (D) -- (E) to[bend right=5] (F) to[bend right=5] cycle;
+        
+        \draw[semithick, densely dotted, ->] (280:\radius) to[bend left=10] (190:\radius);
+        \draw[semithick, ->] (225:\radius) to[bend right=10] (135:\radius);
+        \draw[semithick, densely dotted, ->] (170:\radius) to[bend left=10] (60:\radius);
+        \draw[semithick, densely dotted, ->] (260:\radius) to[bend left=10] (340:\radius);
+        \draw[semithick, ->] (315:\radius) to[bend left=10] (30:\radius);
+        \draw[semithick, densely dotted, ->] (0:\radius) -- (100:\radius);
+        
+        \begin{scope}[scale=0.8]
+        \node[fnode, xshift=2.4*\radius] (a) at (15:\radius) {};\node[fnode, xshift=2.4*\radius] (b) at (80:\radius) {};
+        \node[fnode, xshift=2.4*\radius] (c) at (305/2:\radius) {};\node[fnode, xshift=2.4*\radius] (d) at (415/2:\radius) {};
+        \node[fnode, xshift=2.4*\radius] (e) at (270:\radius) {};\node[fnode, xshift=2.4*\radius] (f) at (655/2:\radius) {};
+        \node[node,  xshift=2.4*\radius] (g) at (0,0) {};
+        \draw[semithick, arrows=-latex] (g) -- (a);\draw[semithick, arrows=-latex] (b) -- (g);\draw[semithick, arrows=-latex] (g) -- (c);
+        \draw[semithick, arrows=-latex] (d) -- (g);\draw[semithick, arrows=-latex] (g) -- (e);\draw[semithick, arrows=-latex] (f) -- (g);
+        \end{scope}
+        
+    \end{tikzpicture}
+    }
+  \caption{Zig-zag paths bounding (a) a shaded region and (b) an unshaded region. 
+  In either case, the R-charges of two of the arrows are different from those of the rest.}
+  \label{fig:twoexamples}
+\end{figure}
+
 
 Summarizing the rules for assignment of the charges, we can read off
-the quiver diagram from zig-zag paths as in figure. 
+the quiver diagram from zig-zag paths as in figure \ref{fig:rule_for_quiver}. 
+
+%FIGURE
+\begin{figure}
+\centering
+\newcommand{\shift}{1.3cm}
+  \subfloat[\label{}]{
+        \begin{tikzpicture}[scale=1.2, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \newcommand{\linelength}{1.2}
+        \path[name path=line1, draw=none] (225:{\linelength*sqrt(2)/2}) -- ++(45:{\linelength*sqrt(2)});
+        \path[name path=line2, draw=none] (-45:{\linelength*sqrt(2)/2}) -- ++(135:{\linelength*sqrt(2)});
+        \path[name path=rect, draw=none] (-0.5,-0.5) rectangle (0.5,0.5);
+        
+        \path[name intersections={of= line1 and rect, by={A, B}}]; % node at (A) {A} node at (B) {B};
+        \path[name intersections={of= line2 and rect, by={C, D}}]; % node at (C) {C} node at (D) {D};
+        \path[name intersections={of= line1 and line2, by={E}}];
+        
+        \fill[color=olive!5] (-0.5,-0.5) rectangle (0.5,0.5);
+        \fill[color=cyan!20!blue, opacity=0.6] (D) -- (B) -- (E) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.3] (C) -- (A) -- (E) -- cycle;
+        
+        \renewcommand{\linelength}{1}
+        \draw[semithick, ->] (225:{\linelength*sqrt(2)/2}) node[below] {$i$} -- ++(45:{\linelength*sqrt(2)});
+        \draw[semithick, ->] (-45:{\linelength*sqrt(2)/2}) node[below] {$j$} -- ++(135:{\linelength*sqrt(2)});
+        
+        \begin{scope}[scale=5/6]
+        \node[fnode, xshift=\shift] (a) at (0,-0.5) {};
+        \node[fnode, xshift=\shift] (b) at (0,0.5) {};
+        \draw[semithick, arrows=-latex, xshift=\shift] (a) to (b);
+        \end{scope}
+    \end{tikzpicture}
+    }
+  \qquad
+  \subfloat[\label{}]{
+        \begin{tikzpicture}[scale=1.2, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \newcommand{\linelength}{1.2}
+        \path[name path=line1, draw=none] (225:{\linelength*sqrt(2)/2}) -- ++(45:{\linelength*sqrt(2)});
+        \path[name path=line2, draw=none] (-45:{\linelength*sqrt(2)/2}) -- ++(135:{\linelength*sqrt(2)});
+        \path[name path=rect, draw=none] (-0.5,-0.5) rectangle (0.5,0.5);
+        
+        \path[name intersections={of= line1 and rect, by={A, B}}]; % node at (A) {A} node at (B) {B};
+        \path[name intersections={of= line2 and rect, by={C, D}}]; % node at (C) {C} node at (D) {D};
+        \path[name intersections={of= line1 and line2, by={E}}];
+        
+        \fill[color=olive!5] (-0.5,-0.5) rectangle (0.5,0.5);
+        \fill[color=cyan!20!blue, opacity=0.3] (D) -- (B) -- (E) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.6] (C) -- (A) -- (E) -- cycle;
+        
+        \renewcommand{\linelength}{1}
+        \draw[semithick, densely dotted, ->] (225:{\linelength*sqrt(2)/2}) node[below] {$i$} -- ++(45:{\linelength*sqrt(2)});
+        \draw[semithick, densely dotted, ->] (-45:{\linelength*sqrt(2)/2}) node[below] {$j$} -- ++(135:{\linelength*sqrt(2)});
+        
+        \begin{scope}[scale=5/6]
+        \node[fnode, xshift=\shift] (a) at (0,-0.5) {};
+        \node[fnode, xshift=\shift] (b) at (0,0.5) {};
+        \draw[semithick, arrows=-latex, xshift=\shift] (b) to (a);
+        \end{scope}
+    \end{tikzpicture}
+    }
+  \qquad
+  \subfloat[\label{}]{
+        \begin{tikzpicture}[scale=1.2, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \newcommand{\linelength}{1.2}
+        \path[name path=line1, draw=none] (225:{\linelength*sqrt(2)/2}) -- ++(45:{\linelength*sqrt(2)});
+        \path[name path=line2, draw=none] (-45:{\linelength*sqrt(2)/2}) -- ++(135:{\linelength*sqrt(2)});
+        \path[name path=rect, draw=none] (-0.5,-0.5) rectangle (0.5,0.5);
+        
+        \path[name intersections={of= line1 and rect, by={A, B}}]; % node at (A) {A} node at (B) {B};
+        \path[name intersections={of= line2 and rect, by={C, D}}]; % node at (C) {C} node at (D) {D};
+        \path[name intersections={of= line1 and line2, by={E}}];
+        
+        \fill[color=olive!5] (-0.5,-0.5) rectangle (0.5,0.5);
+        \fill[color=cyan!20!blue, opacity=0.3] (B) -- (C) -- (E) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.6] (A) -- (D) -- (E) -- cycle;
+        
+        \renewcommand{\linelength}{1}
+        \draw[semithick, ->] (225:{\linelength*sqrt(2)/2}) node[below] {$i$} -- ++(45:{\linelength*sqrt(2)});
+        \draw[semithick, densely dotted, ->] (-45:{\linelength*sqrt(2)/2}) node[below] {$j$} -- ++(135:{\linelength*sqrt(2)});
+        
+        \begin{scope}[scale=5/6]
+        \node[fnode, xshift=\shift] (a) at (0,0) {};
+        \node[fnode, xshift=\shift] (b) at (1,0) {};
+        \draw[semithick, arrows=-latex, xshift=\shift] (a) to (b);
+        \end{scope}
+    \end{tikzpicture}
+    }
+  \qquad
+  \subfloat[\label{}]{
+        \begin{tikzpicture}[scale=1.2, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \newcommand{\linelength}{1.2}
+        \path[name path=line1, draw=none] (225:{\linelength*sqrt(2)/2}) -- ++(45:{\linelength*sqrt(2)});
+        \path[name path=line2, draw=none] (-45:{\linelength*sqrt(2)/2}) -- ++(135:{\linelength*sqrt(2)});
+        \path[name path=rect, draw=none] (-0.5,-0.5) rectangle (0.5,0.5);
+        
+        \path[name intersections={of= line1 and rect, by={A, B}}]; % node at (A) {A} node at (B) {B};
+        \path[name intersections={of= line2 and rect, by={C, D}}]; % node at (C) {C} node at (D) {D};
+        \path[name intersections={of= line1 and line2, by={E}}];
+        
+        \fill[color=olive!5] (-0.5,-0.5) rectangle (0.5,0.5);
+        \fill[color=cyan!20!blue, opacity=0.6] (B) -- (C) -- (E) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.3] (A) -- (D) -- (E) -- cycle;
+        
+        \renewcommand{\linelength}{1}
+        \draw[semithick, densely dotted, ->] (225:{\linelength*sqrt(2)/2}) node[below] {$i$} -- ++(45:{\linelength*sqrt(2)});
+        \draw[semithick, ->] (-45:{\linelength*sqrt(2)/2}) node[below] {$j$} -- ++(135:{\linelength*sqrt(2)});
+        
+        \begin{scope}[scale=5/6]
+        \node[fnode, xshift=\shift] (a) at (0,0) {};
+        \node[fnode, xshift=\shift] (b) at (1,0) {};
+        \draw[semithick, arrows=-latex, xshift=\shift] (b) to (a);
+        \end{scope}
+    \end{tikzpicture}
+    }
+  \caption{The rule for assigning a quiver to a brane tiling diagram. 
+  The arrows in (a) and (b) have $(R, F_i, F_j)=(0, -1, 1)$. Those in 
+  (c) and (d) have $(R, F_i, F_j)=(1, 1, -1)$.}
+  \label{fig:rule_for_quiver}
+\end{figure}
 
 
 
@@ -168,7 +487,53 @@ The unitarity relations are satisfied if the contributions to the
 index from arrows with $R=0$ are properly normalized. For example,
 consider the relation
 \begin{equation}
-unitarityrelation  \label{eq:unitarity_delta}
+    \begin{tikzpicture}[yscale=0.6, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \path[name path=line1, draw=none] (0,0.4) to[out=0, in=180] (1,-0.4) to[out=0, in=180] (2,0.4);
+        \path[name path=line2, draw=none] (0,-0.4) to[out=0, in=180] (1,0.4) to[out=0, in=180] (2,-0.4);
+        \path[name intersections={of= line1 and line2, by={A, B}}]; % node at (A) {A} node at (B) {B};
+        
+        \fill[olive!5] (0,-0.8) rectangle (2,0.8);
+        
+        \fill[color=cyan!20!blue, opacity=0.3] (0,0.4) to[out=0, in=130] (A) to[out=50, in=180] (1,0.4) to[out=0, in=130] (B) to[out=50, in=180] (2,0.4) -- ++(0,0.4) -- ++(-2,0) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.6] (0,-0.4) to[out=0, in=230] (A) to[out=310, in=180] (1,-0.4) to[out=0, in=230] (B) to[out=310, in=180] (2,-0.4) -- ++(0,-0.4) -- ++(-2,0) -- cycle;
+        
+        \draw[semithick, ->] (0,0.4) to[out=0, in=180] (1,-0.4) to[out=0, in=180] (2,0.4);
+        \draw[semithick, ->] (0,-0.4) to[out=0, in=180] (1,0.4) to[out=0, in=180] (2,-0.4);
+        
+        
+    \end{tikzpicture}
+  \ =
+    \begin{tikzpicture}[yscale=0.6, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \fill[olive!5] (0,-0.8) rectangle (2,0.8);
+        
+        \fill[color=cyan!20!blue, opacity=0.3] (0,0.4) -- ++(2,0) -- ++(0,0.4) -- ++(-2,0) -- cycle;
+        \fill[color=cyan!20!blue, opacity=0.6] (0,-0.4) -- ++(2,0) -- ++(0,-0.4) -- ++(-2,0) -- cycle;
+        
+        \draw[semithick, ->] (0,0.4) -- (2,0.4);
+        \draw[semithick, ->] (0,-0.4) -- (2,-0.4);
+        
+    \end{tikzpicture}
+  %
+  \quad  \Longleftrightarrow  \quad
+  %
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-1,0) {};\node[node] (b) at (0,0) {};\node[fnode] (c) at (1,0) {};
+        \draw[semithick, arrows=-latex] (a) to (b);\draw[semithick, arrows=-latex] (b) to (c);
+        
+    \end{tikzpicture}
+  %
+  \ = \
+  %
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (0,0) {};\node[fnode] (b) at (1.2,0) {};
+        \draw[eq-] (a) to (b);
+        
+    \end{tikzpicture}  
+\label{eq:unitarity_delta}
 \end{equation}
  where the right-hand side is a ``delta function'' that equates
 two flavor nodes when one of them is gauged. The precise meaning will

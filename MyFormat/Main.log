@@ -1290,159 +1290,133 @@ Package xcolor Warning: Incompatible color definition on input line 1213.
 Package xcolor Warning: Incompatible color definition on input line 1216.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1218.
+Package xcolor Warning: Incompatible color definitllowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1097.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1219.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1097.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1227.
+Package xcolor Warning: Incompatible color definition on input line 1115.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1119.
+
+
+LaTeX Warning: Citation `Alday:2013kda' on page 38 undefined on input line 1119.
+
+
+
+LaTeX Warning: Citation `Bullimore:2014nla' on page 38 undefined on input line 1
+119.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1121.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1122.
+
+[38]
+
+Package xcolor Warning: Incompatible color definition on input line 1137.
+
+[39] [40]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1293.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1293.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1293.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1293.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1293.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1295.
+
+[41]
+
+Package xcolor Warning: Incompatible color definition on input line 1345.
+
+[42] [43]
+
+Package xcolor Warning: Incompatible color definition on input line 1455.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1473.
+
+[44]
+
+Package xcolor Warning: Incompatible color definition on input line 1555.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1559.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1562.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1564.
+
+
+LaTeX Warning: Citation `MR851627' on page 45 undefined on input line 1564.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1565.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1573.
 
 [45]
 
-Package xcolor Warning: Incompatible color definition on input line 1239.
-
-) (./Sections/Sec3.tex [46]
-
-Package xcolor Warning: Incompatible color definition on input line 158.
-
-[47]
-
-Package xcolor Warning: Incompatible color definition on input line 263.
-
-
-Package xcolor Warning: Incompatible color definition on input line 267.
-
-
-Package xcolor Warning: Incompatible color definition on input line 272.
-
-[48] [49]
-
-Package xcolor Warning: Incompatible color definition on input line 391.
-
-
-Package xcolor Warning: Incompatible color definition on input line 408.
-
-
-Package xcolor Warning: Incompatible color definition on input line 453.
-
-[50]
-
-Package xcolor Warning: Incompatible color definition on input line 475.
-
-
-Package xcolor Warning: Incompatible color definition on input line 489.
-
-
-Package xcolor Warning: Incompatible color definition on input line 500.
-
-
-Package xcolor Warning: Incompatible color definition on input line 501.
-
-
-Package xcolor Warning: Incompatible color definition on input line 506.
-
-
-Package xcolor Warning: Incompatible color definition on input line 508.
-
-[51]
-
-Package xcolor Warning: Incompatible color definition on input line 606.
-
-[52] [53]
-
-Package xcolor Warning: Incompatible color definition on input line 759.
-
-
-Package xcolor Warning: Incompatible color definition on input line 760.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 767.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 767.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 767.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 767.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 767.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 767.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 767.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 767.
-
-[54]
-
-Package xcolor Warning: Incompatible color definition on input line 834.
-
-
-Package xcolor Warning: Incompatible color definition on input line 838.
-
-
-Package xcolor Warning: Incompatible color definition on input line 848.
-
-
-Package xcolor Warning: Incompatible color definition on input line 851.
-
-
-Package xcolor Warning: Incompatible color definition on input line 862.
-
-[55]
-
-Package xcolor Warning: Incompatible color definition on input line 873.
-
-[56]
-
-Package xcolor Warning: Incompatible color definition on input line 931.
-
-
-Package xcolor Warning: Incompatible color definition on input line 934.
-
-
-Package xcolor Warning: Incompatible color definition on input line 943.
-
-
-Package xcolor Warning: Incompatible color definition on input line 944.
-
-
-Package xcolor Warning: Incompatible color definition on input line 960.
-
-[57]
-
-Package xcolor Warning: Incompatible color definition on input line 1205.
-
-
-Package xcolor Warning: Incompatible color definition on input line 1207.
-
-[58]
-
-Package xcolor Warning: Incompatible color definition on input line 1231.
-
-
-Package xcolor Warning: Incompatible color definition on input line 1235.
-
-
-Package xcolor Warning: Incompatible color definition on input line 1239.
-
-
-Package xcolor Warning: Incompatible color definition on input line 1286.
+Package xcolor Warning: Incompatible color definition on input line 1585.
+
+) (./Sections/Sec3.tex
+
+./Sections/Sec3.tex:10: LaTeX Error: Command \gf already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \newcommand{\gf}{\mathfrak{g}}
+                                 
+? 
+./Sections/Sec3.tex:10: Emergency stop.
+ ...                                              
+                                                  
+l.10 \newcommand{\gf}{\mathfrak{g}}
+                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 22877 strings out of 494698
+ 100000,552014 words of node,token memory allocated 10433 words of node memory still in use:
+   30 hlist, 5 vlist, 7 rule, 86 disc, 10 math, 191 glue, 193 kern, 5 penalty, 9
+65 glyph, 77 glue_spec, 2 action, 1 local_par, 1 dir, 2 pdf_start_link, 2 pdf_en
+d_link, 12 pdf_colorstack nodes
+   avail lists: 2:28,3:2729,4:936,5:198,6:2443,7:186,8:34,9:548,10:230
+ 25285 multiletter control sequences out of 65536+600000
+ 106 fonts using 4175783 bytes
+ 57i,18n,69p,3371b,940s stack positions out of 5000i,500n,10000p,200000b,100000s
+./Sections/Sec3.tex:10:  ==> Fatal error occurred, no output PDF file produced!
+e color definition on input line 1286.
 
 [59]
 
