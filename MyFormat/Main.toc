@@ -13,29 +13,29 @@
 \contentsline {subsubsection}{\numberline {2.3.3}Defects as transfer matrices}{24}{subsubsection.2.3.3}
 \contentsline {section}{\numberline {3}Surface defects as transfer matrices}{26}{section.3}
 \contentsline {subsection}{\numberline {3.1}Brane tilings and integrable lattice models}{26}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Integrable lattice models from quiver gauge theories}{28}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Supersymmetric index on $S^{1} \times S^{3}$ and an integrable lattice model}{30}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Surface defects as transfer matrices}{34}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Surface defects and L-operators}{34}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}$\mathcal {N}=2$ quiver theories and brane tilings}{38}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}Surface defects in $A_{1}$ theories of class $\mathcal {S}$}{41}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}Comparison with the transfer matrix}{45}{subsubsection.3.2.4}
-\contentsline {section}{\numberline {4}Line defects as transfer matrices}{46}{section.4}
-\contentsline {subsection}{\numberline {4.1}Integrable lattice models of elliptic and trigonometric type}{46}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}L-operator and quantum integrable system}{46}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Elliptic L-operators}{50}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}Trigonometric L-operators}{51}{subsubsection.4.1.3}
-\contentsline {subsection}{\numberline {4.2}Wilson-'t Hooft lines as transfer matrices}{54}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Wilson--'t Hooft lines in $S^1 \times _\epsilon \mathbb {R}^2 \times \mathbb {R}$}{54}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Transfer matrices from circular quiver theories}{57}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Monodromy matrices from linear quiver theories}{59}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Other representations}{60}{subsubsection.4.2.4}
-\contentsline {subsection}{\numberline {4.3}Transfer matrices from Verlinde operators}{62}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Review of AGT correspondence}{63}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Verlinde operators and Wilson--'t Hooft lines}{64}{subsubsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3}Verlinde operators on a punctured torus}{65}{subsubsection.4.3.3}
-\contentsline {subsection}{\numberline {4.4}Brane realization and string dualities}{69}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}M-theory setup and brane realization}{69}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}String duality and 4d Chern-Simons theory}{71}{subsubsection.4.4.2}
-\contentsline {section}{\numberline {5}Outlook}{73}{section.5}
-\contentsline {section}{\numberline {A}some info.}{73}{appendix.A}
+\contentsline {subsubsection}{\numberline {3.1.1}Integrable lattice models from quiver gauge theories}{29}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Supersymmetric index on $S^{1} \times S^{3}$ and an integrable lattice model}{31}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Surface defects as transfer matrices}{35}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Surface defects and L-operators}{35}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}$\mathcal {N}=2$ quiver theories and brane tilings}{39}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Surface defects in $A_{1}$ theories of class $\mathcal {S}$}{44}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Comparison with the transfer matrix}{47}{subsubsection.3.2.4}
+\contentsline {section}{\numberline {4}Line defects as transfer matrices}{49}{section.4}
+\contentsline {subsection}{\numberline {4.1}Integrable lattice models of elliptic and trigonometric type}{49}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}L-operator and quantum integrable system}{49}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Elliptic L-operators}{53}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Trigonometric L-operators}{54}{subsubsection.4.1.3}
+\contentsline {subsection}{\numberline {4.2}Wilson-'t Hooft lines as transfer matrices}{57}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Wilson--'t Hooft lines in $S^1 \times _\epsilon \mathbb {R}^2 \times \mathbb {R}$}{57}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Transfer matrices from circular quiver theories}{60}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Monodromy matrices from linear quiver theories}{62}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Other representations}{63}{subsubsection.4.2.4}
+\contentsline {subsection}{\numberline {4.3}Transfer matrices from Verlinde operators}{64}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Review of AGT correspondence}{65}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Verlinde operators and Wilson--'t Hooft lines}{67}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Verlinde operators on a punctured torus}{68}{subsubsection.4.3.3}
+\contentsline {subsection}{\numberline {4.4}Brane realization and string dualities}{72}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}M-theory setup and brane realization}{72}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}String duality and 4d Chern-Simons theory}{74}{subsubsection.4.4.2}
+\contentsline {section}{\numberline {5}Outlook}{76}{section.5}
+\contentsline {section}{\numberline {A}some info.}{76}{appendix.A}

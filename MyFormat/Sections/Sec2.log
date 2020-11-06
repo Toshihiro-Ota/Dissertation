@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.76.0-2013061817 (rev 4627)  (format=lualatex 2015.12.17)  2 NOV 2020 10:21
+This is LuaTeX, Version beta-0.76.0-2013061817 (rev 4627)  (format=lualatex 2015.12.17)  4 NOV 2020 16:07
  restricted \write18 enabled.
  file:line:error style messages enabled.
 **Sec2.tex
@@ -888,6 +888,26 @@ File: pgflibrarycurvilinear.code.tex 2013/10/07 v3.0.0 (rcs-revision 1.3)
 \pgf@curvilinear@length@d=\dimen225
 )
 \pgf@arrows@the@rigidity=\dimen226
+))
+(/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/generic/pgf/frontend
+layer/tikz/libraries/tikzlibraryintersections.code.tex
+(/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/generic/pgf/librarie
+s/pgflibraryintersections.code.tex
+\pgf@intersect@solutions=\count149
+))
+(/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/generic/pgf/frontend
+layer/tikz/libraries/tikzlibrarymath.code.tex
+\tikz@math@for@depth=\count150
+\tikz@math@dimen=\dimen227
+\tikz@math@toks=\toks49
+)
+(/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/generic/pgf/frontend
+layer/tikz/libraries/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.0 (rcs-revision 1.2)
+
+(/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/generic/pgf/librarie
+s/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.0 (rcs-revision 1.13)
 )))
 \@input{Common/begin2.aux}
 (./Common/begin2.tex (./Sec2.aux (./Common/endbib.aux))
@@ -909,17 +929,17 @@ LaTeX Font Info:    ... okay on input line 1.
 (/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/context/base/supp-pd
 f.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count149
-\scratchdimen=\dimen227
+\scratchcounter=\count151
+\scratchdimen=\dimen228
 \scratchbox=\box53
-\nofMPsegments=\count150
-\nofMParguments=\count151
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count152
-\MPscratchDim=\dimen228
-\MPnumerator=\count153
-\makeMPintoPDFobject=\count154
-\everyMPtoPDFconversion=\toks50
+\nofMPsegments=\count152
+\nofMParguments=\count153
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count154
+\MPscratchDim=\dimen229
+\MPnumerator=\count155
+\makeMPintoPDFobject=\count156
+\everyMPtoPDFconversion=\toks51
 )
 (/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/oberdiek/epsto
 pdf-base.sty
@@ -963,7 +983,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 titlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count155
+\c@section@level=\count157
 )
 LaTeX Info: Redefining \ref on input line 1.
 LaTeX Info: Redefining \pageref on input line 1.
@@ -1166,13 +1186,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7.
 (\end occurred when \if on line 1925 was incomplete)
 
 Here is how much of LuaTeX's memory you used:
- 22623 strings out of 494698
+ 23028 strings out of 494698
  100000,552014 words of node,token memory allocated
  1492 words of node memory still in use:
    7 hlist, 2 vlist, 3 rule, 2 glue, 72 kern, 45 glue_spec, 10 action, 1 write n
 odes
    avail lists: 2:28,3:1985,4:1074,5:205,6:3435,7:178,8:40,9:463,10:320
- 25141 multiletter control sequences out of 65536+600000
+ 25511 multiletter control sequences out of 65536+600000
  105 fonts using 4136551 bytes
  59i,18n,69p,3364b,940s stack positions out of 5000i,500n,10000p,200000b,100000s
 </Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfon
@@ -1206,7 +1226,7 @@ ic/amsfonts/cm/cmtt10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist
 Live/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on Sec2.pdf (26 pages, 413768 bytes).
+Output written on Sec2.pdf (26 pages, 413924 bytes).
 
 PDF statistics: 526 PDF objects out of 1000 (max. 8388607)
  468 compressed objects within 5 object streams

@@ -1377,9 +1377,9 @@ matrix:
     \begin{tikzpicture}[scale=0.8, baseline=(x.base)]
         \node (x) at (0,0) {\vphantom{x}};
         
-        \draw[thick] (0,0.2) to[out=180, in=180] (0,0);
-        \draw[thick, ->-=0.24] (0,0) node[left] {$i\,$} -- (3,0);
-        \draw[thick] (3,0) to[out=0, in=0] (3,0.2); 
+        \draw[thick] (0,0) arc (270:90:0.1);
+        \draw[thick, ->-=0.24] (0,0) node[left] {$i~$} -- (3,0);
+        \draw[thick] (3,0) arc (-90:90:0.1);
         
         \draw[preaction={draw=white, ultra thick}, thick, loosely dotted] (1.2,0) -- (2.4,0);
         
@@ -1442,14 +1442,14 @@ commute with each other:
         \draw[thick, ->] (2.7,-0.4) -- (2.7, 1.6);
         %arrows do not work somehow by preaction below
         
-        \draw[thick] (0,0.2) to[out=180, in=180] (0,0);
-        \draw[thick, ->-=0.24] (0,0) node[left] {$i\,$} -- (3,0);
-        \draw[thick] (3,0) to[out=0, in=0] (3,0.2); 
+        \draw[thick] (0,0) arc (270:90:0.1);
+        \draw[thick, ->-=0.24] (0,0) node[left] {$i~$} -- (3,0);
+        \draw[thick] (3,0) arc (-90:90:0.1);
         \draw[preaction={draw=white, ultra thick}, thick, loosely dotted] (1.2,0) -- (2.4,0);
         
-        \draw[thick, yshift=1cm] (0,0.2) to[out=180, in=180] (0,0);
-        \draw[thick, ->-=0.24, yshift=1cm] (0,0) node[left] {$j\,$} -- (3,0);
-        \draw[thick, yshift=1cm] (3,0) to[out=0, in=0] (3,0.2); 
+        \draw[thick, yshift=1cm] (0,0) arc (270:90:0.1);
+        \draw[thick, ->-=0.24, yshift=1cm] (0,0) node[left] {$j~$} -- (3,0);
+        \draw[thick, yshift=1cm] (3,0) arc (-90:90:0.1);
         \draw[preaction={draw=white, ultra thick}, thick, loosely dotted, yshift=1cm] (1.2,0) -- (2.4,0);
         
     \end{tikzpicture}
@@ -1462,14 +1462,14 @@ commute with each other:
         \draw[thick, ->] (2.7,-0.4) -- (2.7, 1.6);
         %arrows do not work somehow by preaction below
         
-        \draw[thick] (0,0.2) to[out=180, in=180] (0,0);
-        \draw[thick, ->-=0.24] (0,0) node[left] {$j\,$} -- (3,0);
-        \draw[thick] (3,0) to[out=0, in=0] (3,0.2); 
+        \draw[thick] (0,0) arc (270:90:0.1);
+        \draw[thick, ->-=0.24] (0,0) node[left] {$j~$} -- (3,0);
+        \draw[thick] (3,0) arc (-90:90:0.1);
         \draw[preaction={draw=white, ultra thick}, thick, loosely dotted] (1.2,0) -- (2.4,0);
         
-        \draw[thick, yshift=1cm] (0,0.2) to[out=180, in=180] (0,0);
-        \draw[thick, ->-=0.24, yshift=1cm] (0,0) node[left] {$i\,$} -- (3,0);
-        \draw[thick, yshift=1cm] (3,0) to[out=0, in=0] (3,0.2); 
+        \draw[thick, yshift=1cm] (0,0) arc (270:90:0.1);
+        \draw[thick, ->-=0.24, yshift=1cm] (0,0) node[left] {$i~$} -- (3,0);
+        \draw[thick, yshift=1cm] (3,0) arc (-90:90:0.1);
         \draw[preaction={draw=white, ultra thick}, thick, loosely dotted, yshift=1cm] (1.2,0) -- (2.4,0);
         
     \end{tikzpicture}
@@ -1850,9 +1850,9 @@ L-operator. The neighborhood of the dashed line looks like
         \draw[thick, ->] (0.9,-0.4) -- (0.9, 0.6);
         \draw[thick, ->] (2.7,-0.4) -- (2.7, 0.6);
         
-        \draw[thick] (0,0.2) to[out=180, in=180] (0,0);
+        \draw[thick] (0,0) arc (270:90:0.1);
         \draw[thick, ->-=0.24, densely dashed] (0,0) -- (3,0);
-        \draw[thick] (3,0) to[out=0, in=0] (3,0.2); 
+        \draw[thick] (3,0) arc (-90:90:0.1);
         
         \draw[preaction={draw=white, ultra thick}, thick, loosely dotted] (1.4,0) -- (2.1,0);
     

@@ -64,46 +64,46 @@ You're missing a field name---line 2008 of file Common/Ref.bib
  : %      pages          = "1200",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 38 entries,
+You've used 39 entries,
             2328 wiz_defined-function locations,
-            870 strings with 10207 characters,
-and the built_in function-call counts, 11790 in all, are:
-= -- 1194
-> -- 265
+            877 strings with 10336 characters,
+and the built_in function-call counts, 12046 in all, are:
+= -- 1218
+> -- 269
 < -- 0
-+ -- 107
-- -- 69
-* -- 1193
-:= -- 1353
-add.period$ -- 40
-call.type$ -- 38
-change.case$ -- 40
++ -- 109
+- -- 70
+* -- 1223
+:= -- 1381
+add.period$ -- 41
+call.type$ -- 39
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 626
-empty$ -- 1226
-format.name$ -- 69
-if$ -- 3033
+cite$ -- 39
+duplicate$ -- 642
+empty$ -- 1255
+format.name$ -- 70
+if$ -- 3101
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 145
-newline$ -- 119
-num.names$ -- 38
-pop$ -- 181
+int.to.str$ -- 39
+missing$ -- 149
+newline$ -- 122
+num.names$ -- 39
+pop$ -- 186
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 449
+skip$ -- 459
 stack$ -- 0
-substring$ -- 763
-swap$ -- 315
+substring$ -- 769
+swap$ -- 323
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 114
-width$ -- 40
-write$ -- 296
+while$ -- 116
+width$ -- 41
+write$ -- 304
 is.kanji.str$ -- 0
 (There were 12 error messages)

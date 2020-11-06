@@ -5,6 +5,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\newcommand{\fundbox}{\tikz{\node[fnode, semithick, minimum size=8pt] {}}}
+
 
 %%%%%%%%%%%%%%%%%% section 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Surface defects as transfer matrices}
@@ -111,25 +113,218 @@ where shaded faces adjoin unshaded ones and two shaded faces sharing
 a vertex are of different types, see figure. 
 
 
-%FIGURE
+%FIGURE    to be fixed
 \begin{figure}
 \centering
-  \subfloat[\label{}]{  }
-  \subfloat[\label{}]{
+\def\width{3cm}
+\def\height{2cm}
+  \subfloat[\label{}]{  
     \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \def\width{3cm}
-        \def\height{2cm}
+        \def\step{0.15cm}
+        \def\shift{0.25cm}
         \def\sep{1cm}
+        
+        \fill[fill=olive!5] (0,0) rectangle (\width,\height);
+        
+        \fill[lightshade] (0,0) rectangle (\step,\step);
+        \fill[lightshade] (\step+\shift,0) rectangle (\step+\sep,\step);    % ????
+        \fill[lightshade] (\step+\shift+\sep,0) rectangle (\step+2*\sep,\step);    % ????
+        \fill[lightshade] (\step+\shift+2*\sep,0) rectangle (\width,\step);    % ????
+        
+        \fill[lightshade] (0,\step+\shift) rectangle (\step,\step+\sep);
+        \fill[lightshade] (\step+\shift,\step+\shift) rectangle (\step+\sep,\step+\sep);
+        \fill[lightshade] (\step+\shift+\sep,\step+\shift) rectangle (\step+2*\sep,\step+\sep);
+        \fill[lightshade] (\step+\shift+2*\sep,\step+\shift) rectangle (\width,\step+\sep);
+        
+        \fill[lightshade] (0,\step+\shift+\sep) rectangle (\step,\height);
+        \fill[lightshade] (\step+\shift,\step+\shift+\sep) rectangle (\step+\sep,\height);
+        \fill[lightshade] (\step+\shift+\sep,\step+\shift+\sep) rectangle (\step+2*\sep,\height);
+        \fill[lightshade] (\step+\shift+2*\sep,\step+\shift+\sep) rectangle (\width,\height);
+        
+        \fill[darkshade] (\step,\step) rectangle (\step+\shift,\step+\shift);
+        \fill[darkshade, xshift=\sep] (\step,\step) rectangle (\step+\shift,\step+\shift);
+        \fill[darkshade, xshift=2*\sep] (\step,\step) rectangle (\step+\shift,\step+\shift);
+        
+        \begin{scope}[yshift=\sep]
+        \fill[darkshade] (\step,\step) rectangle (\step+\shift,\step+\shift);
+        \fill[darkshade, xshift=\sep] (\step,\step) rectangle (\step+\shift,\step+\shift);
+        \fill[darkshade, xshift=2*\sep] (\step,\step) rectangle (\step+\shift,\step+\shift);
+        \end{scope}
+        
+        \draw[semithick] (\step,0) -- ++(0,\height);
+        \draw[semithick, xshift=\shift] (\step,0) -- ++(0,\height);
+        \draw[semithick, xshift=\sep] (\step,0) -- ++(0,\height);
+        \draw[semithick, xshift=\sep+\shift] (\step,0) -- ++(0,\height);
+        \draw[semithick, xshift=2*\sep] (\step,0) -- ++(0,\height);
+        \draw[semithick, xshift=2*\sep+\shift] (\step,0) -- ++(0,\height);
+        
+        \draw[semithick] (0,\step) -- ++(\width,0);
+        \draw[semithick, yshift=\shift] (0,\step) -- ++(\width,0);
+        \draw[semithick, yshift=\sep] (0,\step) -- ++(\width,0);
+        \draw[semithick, yshift=\sep+\shift] (0,\step) -- ++(\width,0);
         
         \draw[color=olive!80] (0,0) rectangle (\width,\height);
         
-        \node[node, minimum size=7pt] at (0.3cm,0.7cm-\sep) {};
-        \node[node, minimum size=7pt] at (0.3cm,0.7cm) {};    %, shift={(30:2)}
-        \node[node, minimum size=7pt] at (0.3cm,0.7cm+\sep) {};
+        
+    \end{tikzpicture}
+    }
+  \quad
+  \subfloat[\label{}]{
+    \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \useasboundingbox (0,0) rectangle (\width,\height);
+        
+        \def\step{0.15cm}
+        \def\shift{0.25cm}
+        \def\sep{1cm}
+        \def\site{\shift+\sep/2}
+        
+        \node[node, minimum size=7pt] (a1) at (\site,\step+\shift/2) {};  %%%%
+        \node[node, minimum size=7pt, xshift=\sep] (a2) at (\site,\step+\shift/2) {};
+        \node[node, minimum size=7pt, xshift=2*\sep] (a3) at (\site,\step+\shift/2) {};
+        \node[node, minimum size=7pt] (b1) at (\step+\shift/2,\site) {};  %%%%
+        \node[node, minimum size=7pt, xshift=\sep] (b2) at (\step+\shift/2,\site) {};
+        \node[node, minimum size=7pt, xshift=2*\sep] (b3) at (\step+\shift/2,\site) {};
+        \begin{scope}[yshift=\sep]
+        \node[node, minimum size=7pt] (c1) at (\site,\step+\shift/2) {};  %%%%
+        \node[node, minimum size=7pt, xshift=\sep] (c2) at (\site,\step+\shift/2) {};
+        \node[node, minimum size=7pt, xshift=2*\sep] (c3) at (\site,\step+\shift/2) {};
+        \node[node, minimum size=7pt] (d1) at (\step+\shift/2,\site) {};  %%%%
+        \node[node, minimum size=7pt, xshift=\sep] (d2) at (\step+\shift/2,\site) {};
+        \node[node, minimum size=7pt, xshift=2*\sep] (d3) at (\step+\shift/2,\site) {};
+        \end{scope}
+        
+        \draw[semithick, arrows=-latex] (b1) to (a1); \draw[semithick, arrows=-latex] (a1) to (b2); \draw[semithick, arrows=-latex] (b2) to (a2); \draw[semithick, arrows=-latex] (a2) to (b3); \draw[semithick, arrows=-latex] (b3) to (a3); 
+        \draw[semithick, arrows=-latex] (c1) to (b1); \draw[semithick, arrows=-latex] (b2) to (c1); \draw[semithick, arrows=-latex] (c2) to (b2); \draw[semithick, arrows=-latex] (b3) to (c2); \draw[semithick, arrows=-latex] (c3) to (b3); 
+        \draw[semithick, arrows=-latex] (d1) to (c1); \draw[semithick, arrows=-latex] (c1) to (d2); \draw[semithick, arrows=-latex] (d2) to (c2); \draw[semithick, arrows=-latex] (c2) to (d3); \draw[semithick, arrows=-latex] (d3) to (c3); 
+        
+        \path[name path=rec, draw=none] (0,0) rectangle (\width,\height);
+        \path[name path=quiv1, draw=none] (a1) to (\step+\shift/2,\site-\sep);
+        \path[name path=quiv2, draw=none] (a1) to (\step+\shift/2+\sep,\site-\sep);
+        \path[name intersections={of= rec and quiv1, by={A}}];\tikzmath{coordinate \a;  \a = (A);}    % actually \ay=0!!
+        \path[name intersections={of= rec and quiv2, by={B}}];\tikzmath{coordinate \b;  \b = (B);}    % actually \by=0!!
+        
+        \draw[semithick] (\ax,0) to (a1); \draw[semithick, arrows=-latex] (\bx,0) to (a1);
+        \draw[semithick] (\ax+\sep,0) to (a2); \draw[semithick, arrows=-latex] (\bx+\sep,0) to (a2);
+        \draw[semithick] (\ax+2*\sep,0) to (a3); \draw[semithick, arrows=-latex] (\width,0) to (a3);  %\bx+2*\sep
+        
+        \draw[semithick, arrows=-latex] (0,\ax) to (b1); \draw[semithick] (0,\bx) to (b1);
+        \draw[semithick, arrows=-latex] (0,\ax+\sep) to (d1); 
+        
+        \draw[semithick] (\width-\bx,\height) to (d3); \draw[semithick, arrows=-latex] (\width-\ax,\height) to (d3);
+        \draw[semithick] (\width-\bx-\sep,\height) to (d2); \draw[semithick, arrows=-latex] (\width-\ax-\sep,\height) to (d2);
+        \draw[semithick] (0,\height) to (d1); \draw[semithick, arrows=-latex] (\width-\ax-2*\sep,\height) to (d1);
+        
+        \draw[semithick] (\width,\height-\ax) to (c3); \draw[semithick, arrows=-latex] (\width,\height-\bx) to (c3);
+        \draw[semithick] (\width,\height-\ax-\sep) to (a3); 
+        
+        \draw[color=olive!80] (0,0) rectangle (\width,\height);
         
     \end{tikzpicture}    
     }
-  \caption{}
+  \quad
+  \subfloat[\label{}]{
+      \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \def\step{0.15cm}
+        \def\shift{0.25cm}
+        \def\sep{1cm}
+        
+        \path[name path=v1, draw=none] (\step+\sep/2,0) -- ++(0,\height);
+        \path[name path=l1, draw=none] (\step+\sep/2-\shift,0) -- ++(\height,\height);    % canonical line
+        \path[name intersections={of= v1 and l1, by={A}}];\tikzmath{coordinate \ca;  \ca = (A);}
+        
+        \fill[fill=olive!5] (0,0) rectangle (\width,\height);
+        
+        \fill[darkshade] (\step+\sep/2-\shift,0) -- (\step+\sep/2,0) -- (\cax,\cay) -- cycle;
+        \fill[lightshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (\step+\sep/2-\shift+\cax,\step+\sep/2) -- cycle;
+        \fill[darkshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay+\sep) -- (0,\step+\sep/2) -- cycle;
+        \fill[lightshade, yshift=\sep] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (\step+\sep/2-\shift+\cax,\step+\sep/2) -- cycle;
+        \fill[darkshade] (0,\step+\sep/2+\sep) -- (\step+\sep/2,\step+\sep/2+\sep) -- (\step+\sep/2,\height) -- (\step+\sep/2-\shift,\height) -- cycle;
+        
+        \begin{scope}[xshift=\sep]
+        \fill[darkshade] (\step+\sep/2-\shift,0) -- (\step+\sep/2,0) -- (\cax,\cay) -- cycle;
+        \fill[lightshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (\step+\sep/2-\shift+\cax,\step+\sep/2) -- cycle;
+        \fill[darkshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay+\sep) -- (0,\step+\sep/2) -- cycle;
+        \fill[lightshade, yshift=\sep] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (\step+\sep/2-\shift+\cax,\step+\sep/2) -- cycle;
+        \fill[darkshade] (0,\step+\sep/2+\sep) -- (\step+\sep/2,\step+\sep/2+\sep) -- (\step+\sep/2,\height) -- (\step+\sep/2-\shift,\height) -- cycle;
+        \end{scope}
+        
+        \begin{scope}[xshift=2*\sep]
+        \fill[darkshade] (\step+\sep/2-\shift,0) -- (\step+\sep/2,0) -- (\cax,\cay) -- cycle;
+        \fill[lightshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (\step+\sep/2-\shift+\cax,\step+\sep/2) -- cycle;
+        \fill[darkshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay+\sep) -- (0,\step+\sep/2) -- cycle;
+        \fill[lightshade, yshift=\sep] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (\step+\sep/2-\shift+\cax,\step+\sep/2) -- cycle;
+        \fill[darkshade] (0,\step+\sep/2+\sep) -- (\step+\sep/2,\step+\sep/2+\sep) -- (\step+\sep/2,\height) -- (\step+\sep/2-\shift,\height) -- cycle;
+        \end{scope}
+        
+        % vertical lines
+        \draw[semithick] (\step+\sep/2,0) -- ++(0,\height);
+        \draw[semithick, xshift=\sep] (\step+\sep/2,0) -- ++(0,\height);
+        \draw[semithick, xshift=2*\sep] (\step+\sep/2,0) -- ++(0,\height);
+        
+        % horizontal lines
+        \draw[semithick] (0,\step+\sep/2) -- ++(\width,0);
+        \draw[semithick, yshift=\sep] (0,\step+\sep/2) -- ++(\width,0);
+        
+        \draw[semithick] (0,\step+\sep/2+\sep) -- (\step+\sep/2-\shift,\height);
+        \draw[semithick] (0,\step+\sep/2) -- (\step+\sep/2+\sep-\shift,\height);
+        \draw[semithick] (\step+\sep/2-\shift,0) -- ++(\height,\height);    % canonical line
+        \draw[semithick] (\step+\sep/2-\shift+\sep,0) -- (\width,\step+\sep/2+\sep);
+        \draw[semithick] (\step+\sep/2-\shift+2*\sep,0) -- (\width,\step+\sep/2);
+        
+        \draw[color=olive!80] (0,0) rectangle (\width,\height);
+        
+    \end{tikzpicture}
+  }
+  \quad
+  \subfloat[\label{}]{
+    \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \useasboundingbox (0,0) rectangle (\width,\height);
+        
+        \def\step{0.15cm}
+        \def\shift{0.25cm}
+        \def\sep{1cm}
+        \def\site{2*\step}
+        
+        \node[fnode, minimum size=7pt] (a1) at (1.2*\site,\site) {};
+        \node[fnode, minimum size=7pt, xshift=\sep] (a2) at (1.2*\site,\site) {};
+        \node[fnode, minimum size=7pt, xshift=2*\sep] (a3) at (1.2*\site,\site) {};
+        
+        \begin{scope}[yshift=0.7*\sep]
+        \node[node, minimum size=7pt] (b1) at (1.2*\site,\site) {};
+        \node[node, minimum size=7pt, xshift=\sep] (b2) at (1.2*\site,\site) {};
+        \node[node, minimum size=7pt, xshift=2*\sep] (b3) at (1.2*\site,\site) {};
+        \end{scope}
+        
+        \begin{scope}[yshift=1.4*\sep]
+        \node[fnode, minimum size=7pt] (c1) at (1.2*\site,\site) {};
+        \node[fnode, minimum size=7pt, xshift=\sep] (c2) at (1.2*\site,\site) {};
+        \node[fnode, minimum size=7pt, xshift=2*\sep] (c3) at (1.2*\site,\site) {};
+        \end{scope}
+        
+        \draw[semithick, -latex] (a1) to (a2); \draw[semithick, -latex] (a2) to (a3);
+        \draw[semithick, -latex] (a1) to (b1); \draw[semithick, -latex] (a2) to (b2); \draw[semithick, -latex] (a3) to (b3); 
+        \draw[semithick, -latex] (b1) to (b2); \draw[semithick, -latex] (b2) to (b3);
+        \draw[semithick, -latex] (b1) to (c1); \draw[semithick, -latex] (b2) to (c2); \draw[semithick, -latex] (b3) to (c3); 
+        \draw[semithick, -latex] (b2) to (a1); \draw[semithick, -latex] (b3) to (a2);
+        \draw[semithick, -latex] (c2) to (b1); \draw[semithick, -latex] (c3) to (b2);
+        
+        
+        \path[name path=rec, draw=none] (0,0) rectangle (\width,\height);
+        \path[name path=quiv, draw=none] (b1) to (\site-\sep,\site);
+        \path[name intersections={of= rec and quiv, by={A}}];\tikzmath{coordinate \ca;  \ca = (A);}    % actually \cax=0!!
+        
+        \draw[semithick] (b1) to (\cax,\cay); \draw[semithick] (c1) to (\cax,\cay+0.7*\sep);
+        \draw[semithick, -latex] (0,\site) to (a1); \draw[semithick, -latex] (0,\site+0.7*\sep) to (b1);
+        
+        \draw[semithick, -latex] (\width,\cay) to (a3); \draw[semithick, -latex] (\width,\cay+0.7*\sep) to (b3);
+        \draw[semithick] (a3) to (\width,\site); \draw[semithick] (b3) to (\width,\site+0.7*\sep);
+        
+        \draw[color=olive!80] (0,0) rectangle (\width,\height);
+        
+    \end{tikzpicture}    
+    }
+  \caption{(a) A brane tiling on a torus. (b) The periodic quiver associated with (a). 
+  (c) A brane tiling on a finite-length cylinder. (d) the quiver for (c).}
   \label{fig:tilings_quiverdiagram}
 \end{figure}
 
@@ -147,24 +342,13 @@ or flavor groups and in the anti-fundamental representation under
 the other. We write it by an arrow between the two nodes: 
 \begin{equation}
     \begin{tikzpicture}[scale=1.2, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \newcommand{\linelength}{1.2}
-        \path[name path=line1, draw=none] (225:{\linelength*sqrt(2)/2}) -- ++(45:{\linelength*sqrt(2)});
-        \path[name path=line2, draw=none] (-45:{\linelength*sqrt(2)/2}) -- ++(135:{\linelength*sqrt(2)});
-        \path[name path=rect, draw=none] (-0.5,-0.5) rectangle (0.5,0.5);
-        
-        \path[name intersections={of= line1 and rect, by={A, B}}]; % node at (A) {A} node at (B) {B};
-        \path[name intersections={of= line2 and rect, by={C, D}}]; % node at (C) {C} node at (D) {D};
-        \path[name intersections={of= line1 and line2, by={E}}];
         
         \fill[color=olive!5] (-0.5,-0.5) rectangle (0.5,0.5);
-        %\fill[color=olive!5] (A) -- (D) -- (E) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.6] (D) -- (B) -- (E) -- cycle;
-        %\fill[color=olive!5] (B) -- (C) -- (E) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.3] (C) -- (A) -- (E) -- cycle;
+        \fill[darkshade] (0.5,-0.5) -- (0.5,0.5) -- (0,0) -- cycle;
+        \fill[lightshade] (-0.5,0.5) -- (-0.5,-0.5) -- (0,0) -- cycle;
         
-        \renewcommand{\linelength}{1}
-        \draw[semithick] (225:{\linelength*sqrt(2)/2}) node[below] {$i$} -- ++(45:{\linelength*sqrt(2)});
-        \draw[semithick] (-45:{\linelength*sqrt(2)/2}) node[below] {$j$} -- ++(135:{\linelength*sqrt(2)});
+        \draw (-0.5,-0.5) node[below] {$i$} -- ++(45:{sqrt(2)});
+        \draw (0.5,-0.5) node[below] {$j$} -- ++(135:{sqrt(2)});
         
     \end{tikzpicture}
   %
@@ -248,14 +432,14 @@ two conditions describe above are satisfied (see figure \ref{fig:twoexamples}).
         
         \fill[olive!5] (0,0) circle[radius=\radius];
         
-        \fill[color=cyan!20!blue, opacity=0.6] (A) to (260:\radius) arc (260:280:\radius) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.6] (B) to (190:\radius) arc (190:225:\radius) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.6] (C) to (135:\radius) arc (135:170:\radius) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.6] (D) to (60:\radius) arc (60:100:\radius) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.6] (E) to (0:\radius) arc (0:30:\radius) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.6] (F) to (315:\radius) arc (315:340:\radius) -- cycle;
+        \fill[darkshade] (A) to (260:\radius) arc (260:280:\radius) -- cycle;
+        \fill[darkshade] (B) to (190:\radius) arc (190:225:\radius) -- cycle;
+        \fill[darkshade] (C) to (135:\radius) arc (135:170:\radius) -- cycle;
+        \fill[darkshade] (D) to (60:\radius) arc (60:100:\radius) -- cycle;
+        \fill[darkshade] (E) to (0:\radius) arc (0:30:\radius) -- cycle;
+        \fill[darkshade] (F) to (315:\radius) arc (315:340:\radius) -- cycle;
         
-        \fill[color=cyan!20!blue, opacity=0.3] (A) to[bend left=5] (B) to[bend right=5] (C) to[bend left=5] (D) -- (E) to[bend right=5] (F) to[bend right=5] cycle;
+        \fill[lightshade] (A) to[bend left=5] (B) to[bend right=5] (C) to[bend left=5] (D) -- (E) to[bend right=5] (F) to[bend right=5] cycle;
         
         \draw[semithick, densely dotted, ->] (280:\radius) to[bend left=10] (190:\radius);
         \draw[semithick, densely dotted, ->] (225:\radius) to[bend right=10] (135:\radius);
@@ -297,14 +481,14 @@ two conditions describe above are satisfied (see figure \ref{fig:twoexamples}).
         
         \fill[olive!5] (0,0) circle[radius=\radius];
         
-        \fill[color=cyan!20!blue, opacity=0.6] (A) to[bend left=5] (B) to (225:\radius) arc (225:260:\radius) --(A) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.3] (B) to[bend right=5] (C) to (170:\radius) arc (170:190:\radius) -- (B) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.6] (C) to[bend left=5] (D) to (100:\radius) arc (100:135:\radius) -- (C) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.3] (D) to (E) to (30:\radius) arc (30:60:\radius) -- (D) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.6] (E) to[bend right=5] (F) to (340:\radius) arc (340:360:\radius) -- (E) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.3] (F) to[bend right=5] (A) to (280:\radius) arc (280:315:\radius) (F) -- cycle;
+        \fill[darkshade] (A) to[bend left=5] (B) to (225:\radius) arc (225:260:\radius) --(A) -- cycle;
+        \fill[lightshade] (B) to[bend right=5] (C) to (170:\radius) arc (170:190:\radius) -- (B) -- cycle;
+        \fill[darkshade] (C) to[bend left=5] (D) to (100:\radius) arc (100:135:\radius) -- (C) -- cycle;
+        \fill[lightshade] (D) to (E) to (30:\radius) arc (30:60:\radius) -- (D) -- cycle;
+        \fill[darkshade] (E) to[bend right=5] (F) to (340:\radius) arc (340:360:\radius) -- (E) -- cycle;
+        \fill[lightshade] (F) to[bend right=5] (A) to (280:\radius) arc (280:315:\radius) (F) -- cycle;
         
-        %\fill[color=cyan!20!blue, opacity=0.3] (A) to[bend left=5] (B) to[bend right=5] (C) to[bend left=5] (D) -- (E) to[bend right=5] (F) to[bend right=5] cycle;
+        %\fill[lightshade] (A) to[bend left=5] (B) to[bend right=5] (C) to[bend left=5] (D) -- (E) to[bend right=5] (F) to[bend right=5] cycle;
         
         \draw[semithick, densely dotted, ->] (280:\radius) to[bend left=10] (190:\radius);
         \draw[semithick, ->] (225:\radius) to[bend right=10] (135:\radius);
@@ -339,22 +523,12 @@ the quiver diagram from zig-zag paths as in figure \ref{fig:rule_for_quiver}.
 \newcommand{\shift}{1.3cm}
   \subfloat[\label{}]{
         \begin{tikzpicture}[scale=1.2, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \newcommand{\linelength}{1.2}
-        \path[name path=line1, draw=none] (225:{\linelength*sqrt(2)/2}) -- ++(45:{\linelength*sqrt(2)});
-        \path[name path=line2, draw=none] (-45:{\linelength*sqrt(2)/2}) -- ++(135:{\linelength*sqrt(2)});
-        \path[name path=rect, draw=none] (-0.5,-0.5) rectangle (0.5,0.5);
-        
-        \path[name intersections={of= line1 and rect, by={A, B}}]; % node at (A) {A} node at (B) {B};
-        \path[name intersections={of= line2 and rect, by={C, D}}]; % node at (C) {C} node at (D) {D};
-        \path[name intersections={of= line1 and line2, by={E}}];
-        
         \fill[color=olive!5] (-0.5,-0.5) rectangle (0.5,0.5);
-        \fill[color=cyan!20!blue, opacity=0.6] (D) -- (B) -- (E) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.3] (C) -- (A) -- (E) -- cycle;
+        \fill[darkshade] (0.5,-0.5) -- (0.5,0.5) -- (0,0) -- cycle;
+        \fill[lightshade] (-0.5,0.5) -- (-0.5,-0.5) -- (0,0) -- cycle;
         
-        \renewcommand{\linelength}{1}
-        \draw[semithick, ->] (225:{\linelength*sqrt(2)/2}) node[below] {$i$} -- ++(45:{\linelength*sqrt(2)});
-        \draw[semithick, ->] (-45:{\linelength*sqrt(2)/2}) node[below] {$j$} -- ++(135:{\linelength*sqrt(2)});
+        \draw[semithick, ->] (-0.5,-0.5) node[below] {$i$} -- ++(45:{sqrt(2)});
+        \draw[semithick, ->] (0.5,-0.5) node[below] {$j$} -- ++(135:{sqrt(2)});
         
         \begin{scope}[scale=5/6]
         \node[fnode, xshift=\shift] (a) at (0,-0.5) {};
@@ -366,22 +540,12 @@ the quiver diagram from zig-zag paths as in figure \ref{fig:rule_for_quiver}.
   \qquad
   \subfloat[\label{}]{
         \begin{tikzpicture}[scale=1.2, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \newcommand{\linelength}{1.2}
-        \path[name path=line1, draw=none] (225:{\linelength*sqrt(2)/2}) -- ++(45:{\linelength*sqrt(2)});
-        \path[name path=line2, draw=none] (-45:{\linelength*sqrt(2)/2}) -- ++(135:{\linelength*sqrt(2)});
-        \path[name path=rect, draw=none] (-0.5,-0.5) rectangle (0.5,0.5);
-        
-        \path[name intersections={of= line1 and rect, by={A, B}}]; % node at (A) {A} node at (B) {B};
-        \path[name intersections={of= line2 and rect, by={C, D}}]; % node at (C) {C} node at (D) {D};
-        \path[name intersections={of= line1 and line2, by={E}}];
-        
         \fill[color=olive!5] (-0.5,-0.5) rectangle (0.5,0.5);
-        \fill[color=cyan!20!blue, opacity=0.3] (D) -- (B) -- (E) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.6] (C) -- (A) -- (E) -- cycle;
+        \fill[lightshade] (0.5,-0.5) -- (0.5,0.5) -- (0,0) -- cycle;
+        \fill[darkshade] (-0.5,0.5) -- (-0.5,-0.5) -- (0,0) -- cycle;
         
-        \renewcommand{\linelength}{1}
-        \draw[semithick, densely dotted, ->] (225:{\linelength*sqrt(2)/2}) node[below] {$i$} -- ++(45:{\linelength*sqrt(2)});
-        \draw[semithick, densely dotted, ->] (-45:{\linelength*sqrt(2)/2}) node[below] {$j$} -- ++(135:{\linelength*sqrt(2)});
+        \draw[semithick, densely dotted, ->] (-0.5,-0.5) node[below] {$i$} -- ++(45:{sqrt(2)});
+        \draw[semithick, densely dotted, ->] (0.5,-0.5) node[below] {$j$} -- ++(135:{sqrt(2)});
         
         \begin{scope}[scale=5/6]
         \node[fnode, xshift=\shift] (a) at (0,-0.5) {};
@@ -393,22 +557,12 @@ the quiver diagram from zig-zag paths as in figure \ref{fig:rule_for_quiver}.
   \qquad
   \subfloat[\label{}]{
         \begin{tikzpicture}[scale=1.2, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \newcommand{\linelength}{1.2}
-        \path[name path=line1, draw=none] (225:{\linelength*sqrt(2)/2}) -- ++(45:{\linelength*sqrt(2)});
-        \path[name path=line2, draw=none] (-45:{\linelength*sqrt(2)/2}) -- ++(135:{\linelength*sqrt(2)});
-        \path[name path=rect, draw=none] (-0.5,-0.5) rectangle (0.5,0.5);
-        
-        \path[name intersections={of= line1 and rect, by={A, B}}]; % node at (A) {A} node at (B) {B};
-        \path[name intersections={of= line2 and rect, by={C, D}}]; % node at (C) {C} node at (D) {D};
-        \path[name intersections={of= line1 and line2, by={E}}];
-        
         \fill[color=olive!5] (-0.5,-0.5) rectangle (0.5,0.5);
-        \fill[color=cyan!20!blue, opacity=0.3] (B) -- (C) -- (E) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.6] (A) -- (D) -- (E) -- cycle;
+        \fill[darkshade] (-0.5,-0.5) -- (0.5,-0.5) -- (0,0) -- cycle;
+        \fill[lightshade] (0.5,0.5) -- (-0.5,0.5) -- (0,0) -- cycle;
         
-        \renewcommand{\linelength}{1}
-        \draw[semithick, ->] (225:{\linelength*sqrt(2)/2}) node[below] {$i$} -- ++(45:{\linelength*sqrt(2)});
-        \draw[semithick, densely dotted, ->] (-45:{\linelength*sqrt(2)/2}) node[below] {$j$} -- ++(135:{\linelength*sqrt(2)});
+        \draw[semithick, ->] (-0.5,-0.5) node[below] {$i$} -- ++(45:{sqrt(2)});
+        \draw[semithick, densely dotted, ->] (0.5,-0.5) node[below] {$j$} -- ++(135:{sqrt(2)});
         
         \begin{scope}[scale=5/6]
         \node[fnode, xshift=\shift] (a) at (0,0) {};
@@ -420,22 +574,12 @@ the quiver diagram from zig-zag paths as in figure \ref{fig:rule_for_quiver}.
   \qquad
   \subfloat[\label{}]{
         \begin{tikzpicture}[scale=1.2, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \newcommand{\linelength}{1.2}
-        \path[name path=line1, draw=none] (225:{\linelength*sqrt(2)/2}) -- ++(45:{\linelength*sqrt(2)});
-        \path[name path=line2, draw=none] (-45:{\linelength*sqrt(2)/2}) -- ++(135:{\linelength*sqrt(2)});
-        \path[name path=rect, draw=none] (-0.5,-0.5) rectangle (0.5,0.5);
-        
-        \path[name intersections={of= line1 and rect, by={A, B}}]; % node at (A) {A} node at (B) {B};
-        \path[name intersections={of= line2 and rect, by={C, D}}]; % node at (C) {C} node at (D) {D};
-        \path[name intersections={of= line1 and line2, by={E}}];
-        
         \fill[color=olive!5] (-0.5,-0.5) rectangle (0.5,0.5);
-        \fill[color=cyan!20!blue, opacity=0.6] (B) -- (C) -- (E) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.3] (A) -- (D) -- (E) -- cycle;
+        \fill[darkshade] (0.5,0.5) -- (-0.5,0.5) -- (0,0) -- cycle;
+        \fill[lightshade] (-0.5,-0.5) -- (0.5,-0.5) -- (0,0) -- cycle;
         
-        \renewcommand{\linelength}{1}
-        \draw[semithick, densely dotted, ->] (225:{\linelength*sqrt(2)/2}) node[below] {$i$} -- ++(45:{\linelength*sqrt(2)});
-        \draw[semithick, ->] (-45:{\linelength*sqrt(2)/2}) node[below] {$j$} -- ++(135:{\linelength*sqrt(2)});
+        \draw[semithick, densely dotted, ->] (-0.5,-0.5) node[below] {$i$} -- ++(45:{sqrt(2)});
+        \draw[semithick, ->] (0.5,-0.5) node[below] {$j$} -- ++(135:{sqrt(2)});
         
         \begin{scope}[scale=5/6]
         \node[fnode, xshift=\shift] (a) at (0,0) {};
@@ -468,7 +612,7 @@ M-theory circle. Either way, $u_{i}$ is determined by the holonomy
 of the $\U(1)$ gauge field on NS5$_{i}$ along $S^{1}$. 
 
 If the theory is described by a quiver, translation between the gauge
-theory and the lattice model goes as follows {[}Yamazaki\textasciicircum 2{]}.
+theory and the lattice model goes as follows \cite{Yamazaki:2012cp,Yamazaki:2013nra}.
 Nodes are interpreted as spin sites. For each flavor node, we can
 turn on a holonomy of the associated gauge field. The index depends
 on the conjugacy class of the holonomy, which is uniquely represented
@@ -495,8 +639,8 @@ consider the relation
         
         \fill[olive!5] (0,-0.8) rectangle (2,0.8);
         
-        \fill[color=cyan!20!blue, opacity=0.3] (0,0.4) to[out=0, in=130] (A) to[out=50, in=180] (1,0.4) to[out=0, in=130] (B) to[out=50, in=180] (2,0.4) -- ++(0,0.4) -- ++(-2,0) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.6] (0,-0.4) to[out=0, in=230] (A) to[out=310, in=180] (1,-0.4) to[out=0, in=230] (B) to[out=310, in=180] (2,-0.4) -- ++(0,-0.4) -- ++(-2,0) -- cycle;
+        \fill[lightshade] (0,0.4) to[out=0, in=130] (A) to[out=50, in=180] (1,0.4) to[out=0, in=130] (B) to[out=50, in=180] (2,0.4) -- ++(0,0.4) -- ++(-2,0) -- cycle;
+        \fill[darkshade] (0,-0.4) to[out=0, in=230] (A) to[out=310, in=180] (1,-0.4) to[out=0, in=230] (B) to[out=310, in=180] (2,-0.4) -- ++(0,-0.4) -- ++(-2,0) -- cycle;
         
         \draw[semithick, ->] (0,0.4) to[out=0, in=180] (1,-0.4) to[out=0, in=180] (2,0.4);
         \draw[semithick, ->] (0,-0.4) to[out=0, in=180] (1,0.4) to[out=0, in=180] (2,-0.4);
@@ -508,8 +652,8 @@ consider the relation
         
         \fill[olive!5] (0,-0.8) rectangle (2,0.8);
         
-        \fill[color=cyan!20!blue, opacity=0.3] (0,0.4) -- ++(2,0) -- ++(0,0.4) -- ++(-2,0) -- cycle;
-        \fill[color=cyan!20!blue, opacity=0.6] (0,-0.4) -- ++(2,0) -- ++(0,-0.4) -- ++(-2,0) -- cycle;
+        \fill[lightshade] (0,0.4) -- ++(2,0) -- ++(0,0.4) -- ++(-2,0) -- cycle;
+        \fill[darkshade] (0,-0.4) -- ++(2,0) -- ++(0,-0.4) -- ++(-2,0) -- cycle;
         
         \draw[semithick, ->] (0,0.4) -- (2,0.4);
         \draw[semithick, ->] (0,-0.4) -- (2,-0.4);
@@ -545,7 +689,51 @@ diagonal subgroup \cite{Seiberg:1994bz}. The index computed in this vacuum
 is given by the right-hand side, provided that we cancel the contributions
 from the surviving baryon and anti-baryon. Another unitarity relation
 \begin{equation}
-anotherunitarity
+    \begin{tikzpicture}[yscale=0.6, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \path[name path=line1, draw=none] (0,0.4) to[out=0, in=180] (1,-0.4) to[out=0, in=180] (2,0.4);
+        \path[name path=line2, draw=none] (0,-0.4) to[out=0, in=180] (1,0.4) to[out=0, in=180] (2,-0.4);
+        \path[name intersections={of= line1 and line2, by={A, B}}]; % node at (A) {A} node at (B) {B};
+        
+        \fill[olive!5] (0,-0.8) rectangle (2,0.8);
+        
+        \fill[lightshade] (A) to[out=50, in=180] (1,0.4) to[out=0, in=130] (B) to[out=230, in=0] (1,-0.4) to[out=180, in=310]  (A) -- cycle;
+        \fill[darkshade] (0,-0.4) to[out=0, in=230] (A) to[out=130, in=0] (0,0.4) -- cycle;
+        \fill[darkshade] (2,-0.4) to[out=180, in=310] (B) to[out=50, in=180] (2,0.4) -- cycle;
+        
+        \draw[semithick, ->] (0,0.4) to[out=0, in=180] (1,-0.4) to[out=0, in=180] (2,0.4);
+        \draw[semithick, densely dotted, ->] (0,-0.4) to[out=0, in=180] (1,0.4) to[out=0, in=180] (2,-0.4);
+        
+        
+    \end{tikzpicture}
+  \ =
+    \begin{tikzpicture}[yscale=0.6, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \fill[olive!5] (0,-0.8) rectangle (2,0.8);
+        
+        \fill[darkshade] (0,-0.4) -- ++(2,0) -- ++(0,0.8) -- ++(-2,0) -- cycle;
+        
+        \draw[semithick, ->] (0,0.4) -- (2,0.4);
+        \draw[semithick, densely dotted, ->] (0,-0.4) -- (2,-0.4);
+        
+    \end{tikzpicture}
+  %
+  \quad  \Longleftrightarrow  \quad
+  %
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (0,-0.5) {};\node[fnode] (b) at (0,0.5) {};
+        \draw[semithick, arrows=-latex] (a) to[bend right=30] (b);\draw[semithick, arrows=-latex] (b) to[bend right=30] (a);
+        
+    \end{tikzpicture}
+  %
+  \ = \
+  %
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (0,-0.5) {};\node[fnode] (b) at (0,0.5) {};
+        
+    \end{tikzpicture}  
 \end{equation}
  holds since the two arrows on the left-hand side form a loop and
 generates a mass term in the superpotential. We can send the mass
@@ -559,13 +747,58 @@ the fact that our effects are domain walls across which $q$ changes.
 To circumvent the difficulty, we take a pair of zig-zag paths of different
 types and think of it as a single line:
 \begin{equation}
-doubleandsinglelines
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \draw[very thick, ->] (0,0) -- (1.6,0);
+        
+    \end{tikzpicture}
+  \ = \ 
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \draw[semithick, ->, yshift=0.2cm] (0,0) -- (1.6,0);
+        \draw[semithick, densely dotted, ->, yshift=-0.2cm] (0,0) -- (1.6,0);
+        
+    \end{tikzpicture}
 \end{equation}
  This line does not alter the value of $q$. Taking two copies of
 this line and placing them in an $\left( N,-1 \right)$ background,
 we can make the R-matrix
 \begin{equation}
-R-matrix  \label{eq:R_N-1}
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \fill[olive!5] (-1,-1) rectangle (1,1);
+        \fill[lightshade] (-1,-1) rectangle (1,1);
+        
+        \draw[very thick, ->] (0,-1) -- (0,1);\draw[very thick, ->] (-1,0) -- (1,0);
+        
+    \end{tikzpicture}
+  %
+  \ = \ 
+  %
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+    \def\shift{0.15cm}
+        
+        \fill[olive!5] (-1,-1) rectangle (1,1);
+        \fill[lightshade] (\shift,\shift) rectangle (1,1);\fill[lightshade] (-\shift,\shift) rectangle (-1,1);
+        \fill[lightshade] (-\shift,-\shift) rectangle (-1,-1);\fill[lightshade] (\shift,-\shift) rectangle (1,-1);
+        \fill[darkshade] (-\shift,-\shift) rectangle (\shift,\shift);
+        
+        \draw[semithick, ->, xshift=-\shift] (0,-1) -- (0,1);\draw[semithick, ->, yshift=\shift] (-1,0) -- (1,0);
+        \draw[semithick, densely dotted, ->, xshift=\shift] (0,-1) -- (0,1);\draw[semithick, densely dotted, ->, yshift=-\shift] (-1,0) -- (1,0);
+        
+    \end{tikzpicture}
+  %
+  \ = \ 
+  %
+    \begin{tikzpicture}[scale=0.8, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (1,0) {};\node[fnode] (b) at (0,-1) {};\node[fnode] (c) at (-1,0) {};\node[fnode] (d) at (0,1) {};
+        \draw[semithick, arrows=-latex] (a) to (b); \draw[semithick, arrows=-latex] (b) to (c); 
+        \draw[semithick, arrows=-latex] (c) to (d); \draw[semithick, arrows=-latex] (d) to (a); 
+        
+    \end{tikzpicture}
+  \quad .
+\label{eq:R_N-1}
 \end{equation}
  A lattice model constructed from this R-matrix is a vertex model
 whose quiver consists diamonds of arrows (see figure). The vector
@@ -576,14 +809,70 @@ Alternatively, we can place these lines in an $\left(N,0\right)$
 background and force them to exchange their constituent zig-zag paths
 as they cross:
 \begin{equation}
-anotherR-matrix  \label{eq:R_N0}
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \fill[olive!5] (-1,-1) rectangle (1,1);
+        
+        \draw[very thick, ->] (0,-1) -- (0,1);\draw[very thick, ->] (-1,0) -- (1,0);
+        
+    \end{tikzpicture}
+  %
+  \ = \ 
+  %
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+    \def\shift{0.15}
+        
+        \fill[olive!5] (-1,-1) rectangle (1,1);
+        \fill[lightshade] (0,0) rectangle (2*\shift,-2*\shift);
+        \fill[darkshade] (-1,0) -- (0,0) -- (0,1) -- ++(-2*\shift,0) -- ++(0,2*\shift-1) -- ++(2*\shift-1,0) --cycle;
+        \fill[darkshade] (0,-1) -- ++(0,1-2*\shift) -- ++(-2*\shift,0) -- ++(0,2*\shift-1) -- cycle;
+        \fill[darkshade] (1,0) -- ++(0,2*\shift) -- ++(2*\shift-1,0) -- ++(0,-2*\shift) -- cycle;
+        
+        \draw[semithick, ->] (-2*\shift,-1) -- ++(0,1-2*\shift) -- ++(4*\shift,0) -- ++(0,4*\shift) -- ++(1-2*\shift,0);
+        \draw[semithick, ->] (-1,2*\shift) -- ++(1-2*\shift,0) -- ++(0,1-2*\shift);
+        \draw[semithick, densely dotted, ->] (0,-1) -- (0,1);
+        \draw[semithick, densely dotted, ->] (-1,0) -- (1,0);
+        
+    \end{tikzpicture}
+  %
+  \ = \ 
+  %
+    \begin{tikzpicture}[scale=0.6, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (1,-1) {};\node[fnode] (b) at (1,1) {};\node[fnode] (c) at (-1,-1) {};
+        \draw[semithick, arrows=-latex] (a) to (b);
+        \draw[semithick, arrows=-latex] (b) to (c); 
+        \draw[semithick, arrows=-latex] (c) to (a);
+        
+    \end{tikzpicture}
+  \quad .
+\label{eq:R_N0}
 \end{equation}
  This R-matrix leads to an IRF model described by a quiver with triangles
 of arrows, as shown in figure. The corresponding Yang-Baxter equation,
 after cancellation of some factors with the help of the unitarity
 relation (\ref{eq:unitarity_delta}), reads
 \begin{equation}
-Seibergduality
+    \begin{tikzpicture}[scale=1.2, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[node] (a) at (0,0) {};
+        \node[fnode] (b) at (1,0) {};\node[fnode] (c) at (60:1) {};\node[fnode] (d) at (-1,0) {};\node[fnode] (e) at (240:1) {};
+        
+        \draw[semithick, ->] (a) to (b);\draw[semithick, ->] (c) to (a);\draw[semithick, ->] (a) to (d);\draw[semithick, ->] (e) to (a);
+        
+    \end{tikzpicture}
+  %
+  \ = \
+  %
+    \begin{tikzpicture}[scale=1.2, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[node] (a) at (0,0) {};
+        \node[fnode] (b) at (1,0) {};\node[fnode] (c) at (60:1) {};\node[fnode] (d) at (-1,0) {};\node[fnode] (e) at (240:1) {};
+        
+        \draw[semithick, ->] (b) to (a);\draw[semithick, ->] (a) to (c);\draw[semithick, ->] (d) to (a);\draw[semithick, ->] (a) to (e);
+        \draw[semithick, ->] (c) to (b);\draw[semithick, ->] (c) to (d);\draw[semithick, ->] (e) to (d);\draw[semithick, ->] (e) to (b);
+        
+    \end{tikzpicture}
 \end{equation}
  The two sides are related by Seiberg duality \cite{Seiberg:1994pq} for SQCD
 with $N$ colors and $2N$ flavors, so their indices are indeed equal.
@@ -667,7 +956,31 @@ related by an interchange of $p$ and $q$. If a dashed line is in
 an $n$-dimensional representation, the L-operator in an $\left( N,-1 \right)$
 background 
 \begin{equation}
-L=
+L
+  =\ 
+     \begin{tikzpicture}[scale=0.6, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \fill[olive!5] (-1,-1) rectangle (1,1);
+        \fill[lightshade] (-1,-1) rectangle (1,1);
+        
+        \draw[very thick, ->] (0,-1) -- (0,1);
+        \draw[very thick, densely dashed, ->] (-1,0) -- (1,0);
+        
+    \end{tikzpicture}
+  %
+  \ = \ 
+    \begin{tikzpicture}[scale=0.6, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \def\shift{0.3cm}
+        
+        \fill[olive!5] (-1,-1) rectangle (1,1);
+        \fill[lightshade] (-1,-1) rectangle (1-\shift,1);
+        \fill[lightshade] (1,1) rectangle (\shift,-1);
+        
+        \draw[semithick, ->, xshift=-\shift] (0,-1) -- (0,1);
+        \draw[semithick, densely dotted, ->, xshift=\shift] (0,-1) -- (0,1);
+        \draw[very thick, densely dashed, ->] (-1,0) -- (1,0);
+        
+    \end{tikzpicture}
 \end{equation}
 may be represented as an $n \times n$ matrix, whose entries are difference
 operators acting on the fugacities for the flavor node associated
@@ -734,8 +1047,14 @@ vector multiplet and integration over its fugacities. In particular
 for each variable $z_{I}$. The index $\mathcal{I}_{\mathcal{T}}(z)$
 of the vector multiplet is given by elliptic gamma functions: 
 \begin{equation}
-    z  
-      =  \mathcal{I}_{\mathcal{T}}(z;p,q)  
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[gnode] at (0,0) {$z$};
+        
+    \end{tikzpicture}
+%
+  \ =  
+        \mathcal{I}_V(z;p,q)  
         =  \frac{\left(p;p\right)_{\infty}^{N-1}\left(q;q\right)_{\infty}^{N-1}}{N!}  
               \prod_{I,J=1(I\neq J)}^{N}\frac{1}{\Gamma(z_{I}/z_{J};p,q)}.
 \end{equation}
@@ -746,8 +1065,14 @@ omit them from the notation unless needed.
 The index of a bifundamental chiral multiplet with fugacity $a$ is
 given by 
 \begin{equation}
-    a  
-      =  \mathcal{I}_{B}(z,w;a)  
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.6,0) {$z$};\node[fnode] (b) at (0.6,0) {$w$};
+        \draw[semithick, arrows=-latex] (a) -- node[above] {$a$} (b);
+        
+    \end{tikzpicture}
+      \ =  
+      \mathcal{I}_{B}(z,w;a)  
         =\prod_{I,J=1}^{N}\Gamma\left(a\frac{w_{I}}{z_{J}}\right).
 \end{equation}
 This function satisfies 
@@ -759,7 +1084,22 @@ This identity says that as far as the index is concerned, we can
 cancel a pair of arrows making a loop if their R-charges add up to
 $2$ and flavor charges add up to $0$: 
 \begin{equation}
-    a=.
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.6,0) {$z$};\node[fnode] (b) at (0.6,0) {$w$};
+        \draw[semithick, arrows=-latex] (a) to[bend left=30] node[above] {$a$} (b);
+        \draw[semithick, arrows=-latex] (b) to[bend left=30] node[below] {$pq/a$} (a);
+        
+    \end{tikzpicture}
+  %
+  \ = \ 
+  %
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.6,0) {$z$};\node[fnode] (b) at (0.6,0) {$w$};
+        
+    \end{tikzpicture}
+    \quad .
 \end{equation}
  Physically, the reason is that we can turn on mass term for such
 a pair. The index is invariant under this deformation, and the bifundamental
@@ -769,20 +1109,49 @@ use of this identity frequently.
 
 Another useful fact is that if we define the ``delta function''
 \begin{equation}
-deltafunction
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.7,0) {$z$};\node[fnode] (b) at (0.7,0) {$w$};
+        \draw[eq-] (a) -- (b);
+        
+    \end{tikzpicture}
 \end{equation}
 by the relation
 \begin{equation}
     \mathcal{I}_{\mathcal{T}}(w)  
       =  \int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}  
-            \mathcal{I}_{V}(z)\mathcal{I}_{\mathcal{T}}(z)delta,
+            \mathcal{I}_{V}(z)\mathcal{I}_{\mathcal{T}}(z)
+  %
+  \,
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.6,0) {$z$};\node[fnode] (b) at (0.6,0) {$w$};
+        \draw[eq-] (a) -- (b);
+        
+    \end{tikzpicture}
+  %
+  \  ,
 \end{equation}
  then we have 
 \begin{align}
-    a-a^{-1}  
-      &  =  \int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dx_{I}}{2\pi ix_{I}}  
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \node[fnode] (a) at (-1,0) {$z$};
+        \node[node] (b) at (0,0) {$x$};
+        \node[fnode] (c) at (1,0) {$w$};
+        \draw[semithick, arrows=-latex] (a) -- node[above] {$a$} (b);
+        \draw[semithick, arrows=-latex] (b) -- node[above] {$a^{-1}$} (c);
+    \end{tikzpicture}
+      &  \ =  \int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dx_{I}}{2\pi ix_{I}}  
                 \mathcal{I}_{V}(x)\mathcal{I}_{B}(z,x;a)\mathcal{I}_{B}\left(x,w;a^{-1}\right)  \nonumber  \\
-      &  =  \Gamma\left(a^{\pm N}\right)delta.
+      &  \ =  \Gamma\left(a^{\pm N}\right)
+    %
+      \,
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \node[fnode] (a) at (-0.6,0) {$z$};
+        \node[fnode] (b) at (0.6,0) {$w$};
+        \draw[eq-] (a) -- (b);
+    \end{tikzpicture}
+    \quad  .
 \end{align}
 This is a consequence of confinement and chiral symmetry breaking
 \cite{Seiberg:1994bz, Spiridonov:2014cxa}. At low energies the theory on
@@ -798,8 +1167,21 @@ gauge theory. For simplicity, suppose that the theory is described
 by a quiver that contains no flavor node. Then, the index is computed
 by 
 \begin{equation}
-    \prod_{z}\int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}(z)
-      \prod_{x \to y}\mathcal{I}_{B}(x,y),  \label{eq:fullindex}
+    \prod_{%
+      \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \node[node, minimum size=8pt] at (0,0.2) {$z$};
+      \end{tikzpicture}
+        }%
+    \int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}(z)
+      \prod_{%
+      \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \node[node, minimum size=8pt] (a) at (-0.3,0.2) {$x$};
+        \node[node, minimum size=8pt] (b) at (0.3,0.2) {$y$};
+        \draw[arrows=-latex] (a) to (b);
+      \end{tikzpicture}
+        }%
+      \mathcal{I}_{B}(x,y),
+  \label{eq:fullindex}
 \end{equation}
  where the two products are taken over all nodes and all arrows, respectively.
 the index is a function of the parameters $p,\,q$ and the flavor
@@ -862,7 +1244,12 @@ in a 2d TQFT on $\Sigma$. The correlator now contains a new line
 operator created by the D3-brane ending on the D5-branes, which was
 denoted by dashed line: 
 \begin{equation}
-dashedline.
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \draw[thick, densely dashed, ->] (0,0) -- (1.6,0);
+        
+    \end{tikzpicture}
+  \quad .
 \end{equation}
  This line operator is specified by a representation of $\SU(N)$ 
  \cite{Gukov:2006jk,Gukov:2008sn,Gadde:2013dda}. 
@@ -881,7 +1268,21 @@ the dashed line does not spoil the integrability of the lattice model.
 Moreover, by deforming the zig-zag paths near the dashed line, we
 can always make the neighborhood of the dashed line look like 
 \begin{equation}
-dashedandsolids  \label{eq:transferL}
+    \begin{tikzpicture}[scale=0.9, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \draw[thick, ->] (0.3,-0.4) node[below] {$1$} -- (0.3, 0.6);
+        \draw[thick, ->] (0.9,-0.4) node[below] {$2$} -- (0.9, 0.6);
+        \draw[thick, ->] (2.7,-0.4) node[below] {$n$} -- (2.7, 0.6);
+        
+        \draw[thick] (0,0) arc (270:90:0.1);
+        \draw[thick, ->-=0.24, densely dashed] (0,0) -- (3,0);
+        \draw[thick] (3,0) arc (-90:90:0.1);
+        
+        \draw[preaction={draw=white, ultra thick}, thick, loosely dotted] (1.4,0) -- (2.1,0);
+        
+        
+    \end{tikzpicture}
+  \label{eq:transferL}
 \end{equation}
 in some $\left(N,q\right)$ 5-brane background. Each crossing of a
 solid line and the dashed one gives us an R-operator, which we call
@@ -1006,7 +1407,17 @@ and the parameters matched as
 Based on these observations, we propose that the L-operator for the
 diamond quiver 
 \begin{equation}
-    L^{\diamondsuit}\left(c,\left(a,b\right)\right)=
+    L^{\diamondsuit}\left(c,\left(a,b\right)\right)
+    =\ 
+     \begin{tikzpicture}[scale=0.8, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \fill[olive!5] (-1,-1) rectangle (1,1);
+        \fill[lightshade] (-1,-1) rectangle (1,1);
+        
+        \draw[thick, ->] (0,-1) node[below] {$(a,b)$} -- (0,1);
+        \draw[thick, densely dashed, ->] (-1,0) node[left] {$c$} -- (1,0);
+        
+    \end{tikzpicture}
 \end{equation}
  is the L-operator of Derkachov and Spiridonov:
 \begin{equation}
@@ -1025,7 +1436,22 @@ For the computation of the transfer matrix, we exploit the fact that
 $L^{\diamondsuit}$ really consists of three parts separated by zig-zag
 paths:
 \begin{equation}
-    L_{i}^{\diamondsuit}\left(c,\left(a_{i},b_{i}\right)\right)  =  .  \label{eq:pieceL}
+    L_{i}^{\diamondsuit}\left(c,\left(a_{i},b_{i}\right)\right)
+      = \ 
+    \begin{tikzpicture}[scale=0.8, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \def\shift{0.3cm}
+        
+        \fill[olive!5] (-1,-1) rectangle (1,1);
+        \fill[lightshade] (-1,-1) rectangle (1-\shift,1);
+        \fill[lightshade] (1,1) rectangle (\shift,-1);
+        
+        \draw[thick, ->, xshift=-\shift] (0,-1) node[below] {$a_i$} -- (0,1);
+        \draw[thick, densely dotted, ->, xshift=\shift] (0,-1) -- (0,1) node[above] {$b_i$};
+        \draw[thick, densely dashed, ->] (-1,0) node[left] {$c$} -- node[above] {$z_i$} (1,0);
+        
+    \end{tikzpicture}
+    \quad .
+  \label{eq:pieceL}
 \end{equation}
  Reflecting this structure, $L^{\diamondsuit}$ can be expressed in
 the following factorized form:
@@ -1071,7 +1497,35 @@ diagram.
 The transfer matrix (\ref{eq:transferL}) is obtained by concatenating
 $n$ copies of the pieces (\ref{eq:pieceL}) along a loop: 
 \begin{equation}
-concatenate.
+\def\hshift{1cm}
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \fill[olive!5] (-0.6,-0.6) rectangle (6.6,0.6);
+        \fill[lightshade] (-0.6,-0.6) rectangle (0,0.6);
+        \fill[lightshade] (1,-0.6) rectangle (2,0.6);
+        \fill[lightshade] (3,-0.6) rectangle (3.5,0.6);
+        \fill[color=white] (3.5,-0.6) rectangle (4.5,0.6);
+        \fill[lightshade] (4.5,-0.6) rectangle (5,0.6);
+        \fill[lightshade] (6,-0.6) rectangle (6.6,0.6);
+        
+        \draw[thick, ->] (0,-0.6) node[below] {$a_1$} -- (0,0.6);
+        \draw[thick, ->, xshift=2*\hshift] (0,-0.6) node[below] {$a_2$} -- (0,0.6);
+        \draw[thick, ->, xshift=5*\hshift] (0,-0.6) node[below] {$a_n$} -- (0,0.6);
+        
+        \draw[thick, ->, densely dotted, xshift=\hshift] (0,-0.6) -- (0,0.6) node[above] {$b_1$};
+        \draw[thick, ->, densely dotted, xshift=3*\hshift] (0,-0.6) -- (0,0.6) node[above] {$b_2$};
+        \draw[thick, ->, densely dotted, xshift=6*\hshift] (0,-0.6) -- (0,0.6) node[above] {$b_n$};
+        
+        \node at (0.5,0.2) {$z_1$};\node at (2.5,0.2) {$z_2$};\node at (5.5,0.2) {$z_n$};
+        
+        \draw[thick] (-0.5,0) arc (270:90:0.1);
+        \draw[thick, ->-=0.3, densely dashed] (-0.5,0) node[left] {$c~$} -- (6.5,0);
+        \draw[thick] (6.5,0) arc (-90:90:0.1); 
+        
+        \draw[preaction={draw=white, ultra thick}, thick, loosely dotted] (3.6,0) -- (4.4,0);
+        
+    \end{tikzpicture}
+  \quad .
 \end{equation}
  Thus, multiplying $n$ copies of the L-operators (\ref{eq:diamondL})
 and using formulas in the appendix, we obtain the following formula
@@ -1105,8 +1559,8 @@ one still solves the RLL relations. In the next subsection we will
 check the proposal by comparing it with independent computations from
 gauge theory. 
 
-So far we have considered the surface defect labeled $\left( R_{1},R_{2} \right)=\left( \emptyset,fund \right)$.
-Of course, we may also consider the case with $\left( R_{1},R_{2} \right)=\left( fund,\emptyset \right)$
+So far we have considered the surface defect labeled $\left( R_{1},R_{2} \right)=\left( \emptyset, \fundbox \right)$.
+Of course, we may also consider the case with $\left( R_{1},R_{2} \right)=\left( \fundbox,\emptyset \right)$
 in the same manner, by letting surface defects wrap around the other
 $S^{1}$ inside $S^{3}$. Hence, there are two sets of L-operators
 related by the symmetry exchanging $p$ and $q$. The underlying algebraic
@@ -1163,9 +1617,9 @@ along the 012345 directions (see table \ref{tab:D4NS5}).
 \hline 
   & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\tabularnewline
 \hline 
-D4       & $\times$ & $\times$ & $\times$ & $\times$ &    &    &   $\times$ &    &    &  \tabularnewline
+D4       & $\times$ & $\times$ & $\times$ & $\times$ &    &    &    $\times$ & \phantom{X} & \phantom{X} &  \tabularnewline
 \hline 
-NS5    & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ &    &    &    &  \tabularnewline
+NS5    & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ &    &    &    &  \phantom{X}  \tabularnewline
 \hline 
     \end{tabular}
 \end{table}
@@ -1204,6 +1658,46 @@ the couplings go to zero. Each of the spheres represents a bifundamental
 hypermultiplet, which is a linear quiver with $m=1$, so it has one
 minimal and two maximal punctures. The quiver thus breaks into a collection
 of three-punctured spheres, or trinions. 
+
+
+%FIGURE
+\begin{figure}
+\centering
+    \begin{tikzpicture}[scale=0.9] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \draw (-4,0) circle [radius=0.9] node[above=0.5cm, node, minimum size=4pt] {}; \draw[double] (-4.6,0) circle [radius=0.1];
+        \draw (-2,0) circle [radius=0.9] node[above=0.5cm, node, minimum size=4pt] {};
+        \draw (100:0.9) arc (100:260:0.9); 
+        \draw[xshift=1cm] (-80:0.9) arc (-80:80:0.9);
+        \draw (3,0) circle [radius=0.9] node[above=0.5cm, node, minimum size=4pt] {}; \draw[double] (3.6,0) circle [radius=0.1];
+        \draw[thick, loosely dotted] (0.2,0) -- (0.8,0);
+        
+        \begin{scope}[xshift=-3cm]
+        \fill[white] (-0.3,-0.15) rectangle (0.3,0.15);
+        \draw (-0.3,0.15) to[bend right=20] (0.3,0.15); \draw (-0.3,-0.15) to[bend left=20] (0.3,-0.15);
+        \end{scope}
+        \begin{scope}[xshift=-1cm]
+        \fill[white] (-0.3,-0.15) rectangle (0.3,0.15);
+        \draw (-0.3,0.15) to[bend right=20] (0.3,0.15); \draw (-0.3,-0.15) to[bend left=20] (0.3,-0.15);
+        \end{scope}
+        \begin{scope}[xshift=2cm]
+        \fill[white] (-0.3,-0.15) rectangle (0.3,0.15);
+        \draw (-0.3,0.15) to[bend right=20] (0.3,0.15); \draw (-0.3,-0.15) to[bend left=20] (0.3,-0.15);
+        \end{scope}
+        
+        \begin{scope}[yshift=1.8cm]
+        \node[fnode] (a) at (-5,0) {};
+        \node[node] (b) at (-3,0) {}; \node[node] (c) at (-1,0) {}; \node[node] (d) at (2,0) {};
+        \node[fnode] (e) at (4,0) {};
+        \draw[semithick] (a) to (b); \draw[semithick] (b) to (c); \draw[semithick] (d) to (e); 
+        \draw[semithick] (c) to (0,0); \draw[thick, loosely dotted] (0.2,0) -- (0.8,0); \draw[semithick] (1,0) to (d); 
+        \end{scope}
+        
+    \end{tikzpicture}
+  \caption{An $\mathcal N =2$ linear quiver theory associated to a punctured sphere.}
+  \label{fig:linear_quiver}
+\end{figure}
+
 
 Conversely, a sphere with two maximal and $m$ minimal punctures is
 obtained by gluing $m$ trinions together, namely by replacing pairs
@@ -1245,7 +1739,7 @@ $\sqrt{t}/\alpha_{i}$, $\sqrt{t}\alpha_{i}$ and $pq/t$, respectively.
 It is helpful for us to prepare two copies for each node of the quiver
 and impose identification between them. We draw the arrows in such
 a way that $\Phi_{i}$ connects the two copies of the $i$th node
-and makes a triangle with $Q_{i}$ and $\tilde{Q}_{i}$, as in figure.
+and makes a triangle with $Q_{i}$ and $\tilde{Q}_{i}$, as in figure \ref{fig:triangle_tiling}.
 Drawn in this form, it is clear that the $\mathcal{N}=2$ linear quiver
 is a special case of the triangle quiver described in section ??,
 except that the vertical arrow is missing between the flavor nodes
@@ -1254,10 +1748,118 @@ essentially the same, as shown in figure. Note that the cubic superpotentials,
 generated around the triangles by world-sheet instantons, are precisely
 what we need for the theory to have $\mathcal{N}=2$ supersymmetry.
 
+
+%FIGURE
+\begin{figure}
+\centering
+  %\subfloat[\label{}]{  }
+  %\subfloat[\label{}]{  }
+      \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \def\shift{0.2}
+        
+        \fill[olive!5] (-5-2*\shift,-1) rectangle (4+2*\shift,1);
+        \fill[lightshade] (-2,0) rectangle (-2+2*\shift,-2*\shift);
+        \fill[lightshade] (-4,0) rectangle (-4+2*\shift,-2*\shift);
+        
+        \fill[darkshade] (-4-2*\shift, -2*\shift) rectangle (-4,-1);
+        \fill[darkshade] (-2-2*\shift, -2*\shift) rectangle (-2,-1);
+        
+        \fill[darkshade] (3-2*\shift, -2*\shift) rectangle (3,-1);
+        
+        \fill[darkshade] (-5-2*\shift,2*\shift) -- (-4-2*\shift,2*\shift) -- (-4-2*\shift,1) -- (-4,1) -- (-4,0) -- (-5-2*\shift,0) --cycle;
+        \fill[darkshade] (-4+2*\shift,2*\shift) -- (-2-2*\shift,2*\shift) -- (-2-2*\shift,1) -- (-2,1) -- (-2,0) -- (-4+2*\shift,0) --cycle;
+        \fill[darkshade] (-2+2*\shift, 2*\shift) rectangle (-2*\shift,0);
+        
+        \draw[semithick, ->] (-4-2*\shift,-1) node[below] {$c$} -- (-4-2*\shift,-2*\shift) -- ++(4*\shift,0) -- ++(0,4*\shift) -- (-2-2*\shift,2*\shift) -- (-2-2*\shift,1);
+        \draw[semithick, ->] (-2-2*\shift,-1) node[below] {$c$} -- (-2-2*\shift,-2*\shift) -- ++(4*\shift,0) -- ++(0,4*\shift) -- (-2*\shift,2*\shift);
+        \draw[semithick, ->] (-5-2*\shift,2*\shift) -- (-4-2*\shift,2*\shift) -- (-4-2*\shift,1);
+        \draw[semithick, densely dotted, ->] (-4,-1) -- (-4,1) node[above] {$a_1$};
+        \draw[semithick, densely dotted, ->] (-2,-1) -- (-2,1) node[above] {$a_2$};
+        \draw[semithick, densely dotted] (-5-2*\shift,0) node[left] {$b$} -- (-2*\shift,0);
+        
+        \draw[semithick, ->] (1+2*\shift,2*\shift) -- (3-2*\shift,2*\shift) -- (3-2*\shift,1);
+        \draw[semithick, ->] (3-2*\shift,-1) node[below] {$c$} -- (3-2*\shift,-2*\shift) -- (4+2*\shift,-2*\shift);
+        \draw[semithick, densely dotted, ->] (1+2*\shift,0) -- (4+2*\shift,0);
+        \draw[semithick, densely dotted, ->] (3,-1) -- (3,1) node[above] {$a_m$};
+        
+        \fill[darkshade] (1+2*\shift,2*\shift) -- (3-2*\shift,2*\shift) -- (3-2*\shift,1)-- (3,1) -- (3,0) -- (1+2*\shift,0) --cycle;
+        \fill[lightshade] (3,0) rectangle (4+2*\shift,-2*\shift);
+        
+        \fill[white] (-2*\shift,-1) rectangle (1+2*\shift,1);
+        \draw[thick, loosely dotted] (0,0) -- (1,0);
+        
+        %quiver diagram
+        \begin{scope}[yshift=2.2cm]
+        \node[fnode] (a) at (-5,0) {};
+        \node[node] (b) at (-3,0) {}; \node[node] (c) at (-1,0) {}; \node[node] (d) at (2,0) {};
+        \node[fnode] (e) at (4,0) {};
+        \draw[semithick, arrows=-latex] (a) to node[below] {$\sqrt{t}\alpha_1$} (b); \draw[semithick, arrows=-latex] (b) to node[below] {$\sqrt{t}\alpha_2$} (c); \draw[semithick, arrows=-latex] (d) to node[below] {$\sqrt{t}\alpha_m$} (e); 
+        \draw[semithick] (c) to (0,0); \draw[thick, loosely dotted] (0.2,0) -- (0.8,0); \draw[semithick, arrows=-latex] (1,0) to (d); 
+        
+        \begin{scope}[yshift=1.6cm]
+        \node[fnode] (f) at (-5,0) {};
+        \node[node] (g) at (-3,0) {}; \node[node] (h) at (-1,0) {}; \node[node] (i) at (2,0) {};
+        \node[fnode] (j) at (4,0) {};
+        \end{scope}
+        
+        \draw[semithick, arrows=-latex] (b) to node[below left] {$pq/t$} (g); \draw[semithick, arrows=-latex] (c) to node[below left] {$pq/t$} (h); \draw[semithick, arrows=-latex] (d) to node[below left] {$pq/t$} (i); 
+        \draw[semithick, arrows=-latex] (g) to node[above=0.25cm] {$\sqrt{t}/\alpha_1$} (a); \draw[semithick, arrows=-latex] (h) to node[above=0.25cm] {$\sqrt{t}/\alpha_2$} (b); \draw[semithick, arrows=-latex] (j) to node[above=0.25cm] {$\sqrt{t}/\alpha_m$} (d); 
+        \draw[semithick, arrows=-latex] (0,0.8) to (c);\draw[thick, loosely dotted] (0.2,0.8) -- (0.8,0.8);  \draw[semithick] (i) to (1,0.8);
+        \end{scope}
+        
+    \end{tikzpicture}
+  \caption{An $\mathcal N =2$ linear quiver as a brane tiling model. 
+  In the quiver, the two nodes in the same column are identified. 
+  In the brane tiling diagram, the vertical direction is periodic.}
+  \label{fig:triangle_tiling}
+\end{figure}
+
 As we can split the $(m+1)$-punctured sphere into a collection of
 $m$ trinioins, we can also break the brane tiling diagram into basic
 pieces. Each piece represents a single trinioin and is made of three
-zig-zag paths, see figure??. Gluing two trinions corresponds to concatenating
+zig-zag paths:
+\begin{equation}
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \draw (0,0) circle [radius=1.1];
+        \draw (0,0.7) circle [radius=0.08] node[below=0.1] {$\alpha$};
+        \draw[double] (-0.7,0) circle [radius=0.08] node[below=0.1] {$w$};
+        \draw[double] (0.7,0) circle [radius=0.08] node[below=0.1] {$z$};
+        
+    \end{tikzpicture}
+  %
+  \quad \rightsquigarrow \quad
+  %
+    \begin{tikzpicture}[scale=0.8, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-1,-1) {$w$};\node[fnode] (b) at (1,-1) {$z$};\node[fnode] (c) at (1,1) {$z$};\node[fnode] (d) at (-1,1) {$w$};
+        \draw[semithick, ->] (a) to node[below] {$\sqrt{t}\alpha$} (b); \draw[semithick, ->] (c) to node[above left=-0.1] {$\sqrt{t}/\alpha$} (a);
+        
+    \end{tikzpicture}
+  %
+  \ = \
+  %
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \def\shift{0.15}
+        
+        \fill[olive!5] (-1,-1) rectangle (1,1);
+        
+        \fill[darkshade] (-1,2*\shift) -- (-2*\shift,2*\shift) -- (-2*\shift,1)-- (0,1) -- (0,0) -- (-1,0) --cycle;
+        \fill[lightshade] (0,0) rectangle (1,-2*\shift);
+        \fill[darkshade] (-2*\shift, -2*\shift) rectangle (0,-1);
+        
+        \draw[semithick, ->] (-1,2*\shift) node[left] {$c$} -- (-2*\shift,2*\shift) -- (-2*\shift,1);
+        \draw[semithick, ->] (-2*\shift,-1) node[below] {$c$} -- (-2*\shift,-2*\shift) -- (1,-2*\shift);
+        \draw[semithick, densely dotted, ->] (-1,0) -- (1,0) node[right] {$b$};
+        \draw[semithick, densely dotted, ->] (0,-1) -- (0,1) node[above] {$a$};
+        
+        \node at (4*\shift,4*\shift) {$z$};\node at (4*\shift,-4*\shift) {$z$};
+        \node at (-4*\shift,4*\shift) {$w$};\node at (-4*\shift,-4*\shift) {$w$};
+        
+    \end{tikzpicture}
+  \quad .
+\end{equation}
+Gluing two trinions corresponds to concatenating
 two such diagrams side by side. In the course of this operation, we
 must interchange the positions of the zig-zag paths labeled $b$ and
 $c$ near the glued side of one of the diagrams. This results in an
@@ -1456,7 +2058,34 @@ that a constant vev is given to the baryonic operator built from the
 bifundamental chiral multiplet represented by that arrow, and the
 notation, what we just found is the identity
 \begin{equation}
-=4\kappa\mathrm{Res}_{\rho=1}=,  \label{eq:deltaidentity}
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.7,0) {$z$};
+        \node[node] (b) at (0.7,0) {$w$};
+        \draw[semithick, arrows=-latex] (a) to node {\tiny $/$} node[above] {$\rho$} (b);
+        
+    \end{tikzpicture}
+  \ =
+    4\kappa\mathrm{Res}_{\rho=1}
+    \left[%
+      \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.6,0) {$z$};
+        \node[node] (b) at (0.6,0) {$w$};
+        \draw[semithick, arrows=-latex] (a) to node[above] {$\rho$} (b);
+        
+      \end{tikzpicture}
+    \right]%
+    = \
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.6,0) {$z$};
+        \node[node] (b) at (0.6,0) {$w$};
+        \draw[semithick, eq-] (a) to (b);
+        
+    \end{tikzpicture}
+    \quad ,
+\label{eq:delta_identity}
 \end{equation}
  where the right-hand side is the delta function defined by the relation
 (??). This identity holds when the index of any theory with $\SU(2)$
@@ -1469,7 +2098,40 @@ reduces to that of $\mathcal{T}_{\mathrm{IR}}$. All we have to do
 is to look at the part of $\mathcal{T}_{\mathrm{UV}}$ describing
 the coupling to the trinion, and compute the relevant residue:
 \begin{equation}
-=t=.
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[node] (a) at (-0.7,0.7) {$w$};
+        \node[fnode] (b) at (0.7,0.7) {$z$};
+        \node[node] (c) at (-0.7,-0.7) {$w$};
+        \draw[semithick, arrows=-latex] (a) to node[above] {$\sqrt{t}\alpha$} (b);
+        \draw[semithick, arrows=-latex] (b) to node {\tiny \textbackslash} node[below right=-0.1] {$\sqrt{t}/\alpha$} (c);
+        \draw[semithick, arrows=-latex] (c) to node[left] {$pq/t$} (a);
+        
+    \end{tikzpicture}
+  %
+  \ = \
+  %
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[node] (a) at (-0.7,0.7) {$w$};
+        \node[fnode] (b) at (0.7,0.7) {$z$};
+        \node[node] (c) at (-0.7,-0.7) {$w$};
+        \draw[semithick, arrows=-latex] (a) to node[above] {$t$} (b);
+        \draw[semithick, eq-] (b) to (c);
+        \draw[semithick, arrows=-latex] (c) to node[left] {$pq/t$} (a);
+        
+    \end{tikzpicture}
+  %
+  \ = \
+  %
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (0.6,0) {$z$};
+        \node[node] (b) at (-0.6,0) {$w$};
+        \draw[semithick, eq-] (a) to (b);
+        
+    \end{tikzpicture}
+  \quad .
 \end{equation}
  In the first equality we use the identity (\ref{eq:deltaidentity})
 and set $\rho=1$, and in the second we canceled the pair of arrows
@@ -1481,15 +2143,46 @@ of a surface defect in a similar manner. To indicate that the position-dependent
 vev $\left\langle B\right\rangle =\zeta_{1}^{r}\zeta_{2}^{s}$ is
 turned on, we put the label $(r,s)$ on the struck-out arrow:
 \begin{equation}
-=4\kappa\mathrm{Res}_{\rho=p^{-r/2}q^{-s/2}}\label{eq:surfacedefect_residue}
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.7,0) {$z$};
+        \node[node] (b) at (0.7,0) {$w$};
+        \draw[semithick, arrows=-latex] (a) to node {\tiny $/$} node[above] {$\rho$} node[below] {$(r,s)$} (b);
+        
+    \end{tikzpicture}
+  %
+  \ =
+  4\kappa\mathrm{Res}_{\rho=p^{-r/2}q^{-s/2}}
+  \left[%
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.6,0) {$z$};
+        \node[node] (b) at (0.6,0) {$w$};
+        \draw[semithick, arrows=-latex] (a) to node[above] {$\rho$} (b);
+        
+    \end{tikzpicture}
+  \right]
+  \quad .
+\label{eq:surfacedefect_residue}
 \end{equation}
  Then the action of the surface defect of type $(r,s)$ on the index
 is encoded in the diagram
 \begin{equation}
-(r,s).
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[node] (a) at (-0.7,0.7) {$w$};
+        \node[fnode] (b) at (0.7,0.7) {$z$};
+        \node[node] (c) at (-0.7,-0.7) {$w$};
+        \draw[semithick, arrows=-latex] (a) to (b);
+        \draw[semithick, arrows=-latex] (b) to node {\tiny \textbackslash} node[below right=-0.1] {$(r,s)$} (c);
+        \draw[semithick, arrows=-latex] (c) to (a);
+        
+    \end{tikzpicture}
+  \quad .
+\label{eq:surface_residue}
 \end{equation}
 
-Let us calculate the residue (\ref{eq:deltaidentity}) for $(r,s)=(0,1)$.
+Let us calculate the residue (\ref{eq:surface_residue}) for $(r,s)=(0,1)$.
 At $\rho=q^{-1/2}$, the index $\mathcal{I}_{B}(z,w;\rho)=\Gamma(\rho z^{\pm1}w^{\pm1})$
 of $Q$ has four sets of colliding poles in the $w$-plane. Two of
 them are 
@@ -1511,7 +2204,24 @@ in total. Similarly, the contributions from the last two set $w=q^{-1/2}z$
 and give a factor of $1/\theta(q^{-1})\theta(z^{-2})$. Altogether,
 we find that the result can be expressed as 
 \begin{equation}
-=\frac{1}{\theta(q^{-1})}\sum_{s=\pm1}\frac{1}{\theta(z^{2s})}\Delta^{s/2}
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.7,0) {$z$};
+        \node[node] (b) at (0.7,0) {$w$};
+        \draw[semithick, arrows=-latex] (a) to node {\tiny $/$} node[above] {$\rho$} node[below] {$(0,1)$} (b);
+        
+    \end{tikzpicture}
+  %
+  \ =
+  %
+  \frac{1}{\theta(q^{-1})}\sum_{s=\pm1}\frac{1}{\theta(z^{2s})}\Delta^{s/2} \,
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.6,0) {$z$};
+        \node[node] (b) at (0.6,0) {$w$};
+        \draw[semithick, eq-] (a) to (b);
+        
+    \end{tikzpicture}
 \end{equation}
  We remind the reader that $\theta(z)=\theta(z;p)$ and $\Delta^{\pm1/2}$
 act on functions of $z$ as $\left(\Delta^{\pm1/2}f\right)(z)=f(q^{\pm1/2}z)$.
@@ -1520,7 +2230,20 @@ Unlike the case of the constant vev, this identity does not cause
 a complete cancelation of the indices of $\tilde{Q}$ and $\Phi$.
 Rather, for $\rho=q^{-1/2}$ and $w=q^{\pm1/2}z$, we have 
 \begin{equation}
-=\theta\left(\frac{t}{q}z^{\mp2}\right)\theta(t).
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        
+        \node[fnode] (a) at (-0.7,0.7) {$w$};
+        \node[fnode] (b) at (0.7,0.7) {$z$};
+        \node[fnode] (c) at (-0.7,-0.7) {$w$};
+        \draw[semithick, arrows=-latex] (a) to node[above] {$\sqrt{t}\alpha$} (b);
+        %\draw[semithick, arrows=-latex] (b) to node {\tiny \textbackslash} node[below right=-0.1] {$(r,s)$} (c);
+        \draw[semithick, arrows=-latex] (c) to node[left] {$pq/t$} (a);
+        
+    \end{tikzpicture}
+  %
+  \ =
+  %
+  \theta\left(\frac{t}{q}z^{\mp2}\right)\theta(t).
 \end{equation}
 Therefore, the effect of introducing the surface defect of type $(0,1)$
 on the index is realized by the difference operator
@@ -1558,7 +2281,36 @@ presentation, take a minimal puncture in $\mathcal{T}_{\mathrm{IR}}$
 and move it close to the maximal puncture on which the surface defect
 acts. Then the neighborhood of these punctures looks like a trinion
 glued to another maximal puncture, and is represented by zig-zag paths
-as in figure??.
+as in figure \ref{fig:Lop_as_surface}.
+
+
+%FIGURE
+\begin{figure}
+\centering
+    \begin{tikzpicture}[scale=1.2] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \def\shift{0.15}
+        
+        \fill[olive!5] (-1,-1) rectangle (2,1);
+        
+        \fill[darkshade] (-1,2*\shift) -- (-2*\shift,2*\shift) -- (-2*\shift,1)-- (0,1) -- (0,0) -- (-1,0) --cycle;
+        \fill[lightshade] (0,0) rectangle (2,-2*\shift);
+        \fill[darkshade] (-2*\shift, -2*\shift) rectangle (0,-1);
+        
+        \draw[semithick, ->] (-1,2*\shift) node[left] {$c$} -- (-2*\shift,2*\shift) -- (-2*\shift,1);
+        \draw[semithick, ->] (-2*\shift,-1) node[below] {$c$} -- (-2*\shift,-2*\shift) -- (2,-2*\shift);
+        \draw[semithick, densely dotted, ->] (-1,0) -- (2,0) node[right] {$b$};
+        \draw[semithick, densely dotted, ->] (0,-1) -- (0,1) node[above] {$a$};
+        
+        \node at (1.5,4*\shift) {$z$};\node at (1.5,-4*\shift) {$z$};
+        %\node at (-4*\shift,4*\shift) {$w$};\node at (-4*\shift,-4*\shift) {$w$};
+        
+        \draw[thick, densely dashed, ->] (4*\shift,1) node[above] {$d$} -- ++(0,-2);
+        
+    \end{tikzpicture}
+  \caption{The brane tiling representation of a surface defect acting on a maximal puncture.}
+  \label{fig:Lop_as_surface}
+\end{figure}
+
 
 According to the proposal, the surface defect creates a dashed line
 with some spectral parameter $d$, also drawn in the picture. It acts
