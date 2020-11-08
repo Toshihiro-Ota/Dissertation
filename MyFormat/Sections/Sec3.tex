@@ -1,6 +1,8 @@
-%\include{Common/begin}
-\include{Common/begin_special}
-\include{Common/begin2}
+\begin{comment}
+\documentclass[11pt]{article}  % , titlepage
+\usepackage{Common/toshi}
+\begin{document}
+\end{comment}
 
 
 
@@ -160,11 +162,11 @@ two configurations involving two solid and one double lines:
 \begin{equation}
     \begin{tikzpicture}[yscale=0.6, baseline=(x.base)]
       \node (x) at (30:2) {};
-      
+
       \draw[thick, ->] (0,0) node[left] {$z'$} -- ++(30:3);
       \draw[thick, ->] (0,2) node[left] {$z$} -- ++(-30:3);
       \draw[thick, double, ->] (-30:1) -- ++(0,3);
-      
+
       \node (O) at ({sqrt(3)*4/6},1) {};
       \node[yshift=2pt] at ($(O) + (120:{sqrt(3)*4/6})$) {$a^1$};
       \node at ($(O) + (60:{sqrt(3)*3/6})$) {$a^2$};
@@ -172,11 +174,11 @@ two configurations involving two solid and one double lines:
     \ =
     \begin{tikzpicture}[yscale=0.6, baseline=(x.base)]
       \node (x) at (30:1) {};
-      
+
       \draw[thick, ->] (0,0) node[left] {$z'$} -- ++(30:3);
       \draw[thick, ->] (0,1) node[left] {$z$} -- ++(-30:3);
       \draw[thick, double, ->] (-30:2) -- ++(0,3);
-      
+
       \node (O) at ({sqrt(3)*5/6},0.5) {};
       \node at ($(O) + (120:{sqrt(3)*3/6})$) {$a^1$};
       \node[yshift=2pt, xshift=2pt]  at ($(O) + (60:{sqrt(3)*4/6})$) {$a^2$};
@@ -224,7 +226,7 @@ lines:
     \draw[thick, ->] (0,0) node[left] {$z$} -- (5,0);
     \draw[thick, double, ->] (1,-1) -- +(90:2);
     \draw[thick, double, ->] (2,-1) -- +(90:2);
-    
+
     \draw[ultra thick, dotted, -] (2.55,-0.5) -- (3.45,-0.5);
 
     \draw[thick, double, ->] (4,-1) -- +(90:2);
@@ -277,12 +279,12 @@ figure~\ref{fig:spin-chain-T}.
     \begin{tikzpicture}[yscale=0.25, xscale=0.8]
       \fill[brown!30] (-2,0) arc (-180:0:2) -- +(0,5) arc (0:-180:2) --
       +(0,-5) -- cycle;
-      \fill[brown!15]  (0,5) circle [radius=2];      
+      \fill[brown!15]  (0,5) circle [radius=2];
 
       \draw[dashed] (2,0) arc (0:180:2);
       \draw (-2,0) arc (180:360:2);
       \draw (0,5) circle [radius=2];
-      
+
       \draw[thick, double, ->] (10:2) -- ++(90:5);
       \draw[thick, double, ->] (55:2) -- ++(90:5);
       \draw[thick, double, ->] (100:2) -- ++(90:5);
@@ -313,15 +315,15 @@ figure~\ref{fig:spin-chain-T}.
     \begin{tikzpicture}[yscale=0.25, xscale=0.8]
       \fill[brown!30] (-2,0) arc (-180:0:2) -- +(0,5) arc (0:-180:2) --
       +(0,-5) -- cycle;
-      \fill[brown!15]  (0,5) circle [radius=2];      
+      \fill[brown!15]  (0,5) circle [radius=2];
 
       \draw[dashed] (2,0) arc (0:180:2);
       \draw (-2,0) arc (180:360:2);
       \draw (0,5) circle [radius=2];
-      
+
       \draw[thick, ->] (-2,2.5) arc (-180:-90:2);
       \draw[thick] (-2,2.5) arc (180:-90:2);
-      
+
       \draw[thick, double, ->] (10:2) -- ++(90:5);
       \draw[thick, double, ->] (55:2) -- ++(90:5);
       \draw[thick, double, ->] (100:2) -- ++(90:5);
@@ -589,7 +591,7 @@ maps
   \fh(\qh,\ph)
   =
   \int_{\R^4}
-  \rmd x \, \rmd y \, \rmd p \, \rmd q \, 
+  \rmd x \, \rmd y \, \rmd p \, \rmd q \,
   f(q,p)
   e^{\iu(x(\qh - q) + y(\ph - p))} \,.
 \end{equation}
@@ -814,7 +816,7 @@ representation, so $\mcharge$ belongs to the coweight lattice:%
   cocharacter lattice coincides with $\coweightl(\gf)$.}
 %
 \begin{equation}
-  \mcharge \in \coweightl(\gf)/W(G) \,. 
+  \mcharge \in \coweightl(\gf)/W(G) \,.
 \end{equation}
 Equivalently, $\mcharge$ is specified by an irreducible representation
 of the Langlands dual ${}^L\gf$ of $\gf$.  In general, $\mcharge$ lies
@@ -843,7 +845,7 @@ $\echarge$ modulo the Weyl group action:
 \begin{equation}
   (\mcharge, \echarge)
   \in
-  \bigl(\coweightl(\gf) \times \weightl(\gf)\bigr)\big/W(G) \,. 
+  \bigl(\coweightl(\gf) \times \weightl(\gf)\bigr)\big/W(G) \,.
 \end{equation}
 As emphasized in~\cite{Kapustin:2005py}, this data has more information than
 a pair of irreducible representations of $\gf$ and ${}^L\gf$.
@@ -918,7 +920,7 @@ The two functions are given by
   &=\prod_{\alpha \in \Phi(\gf)} \prod_{k=0}^{|\langle v, \alpha\rangle| - 1}
     \sin^{-\frac12}
     \biggl(\pi\langle a, \alpha\rangle + \pi\Big(\frac12 |\langle v, \alpha\rangle| - k\Bigr)\eps\biggr) \,,
-  \\  
+  \\
   Z_{\text{1-loop}}^{\mathrm{hm}, R}(a,m,\eps; v)
   &=\prod_{w \in P(R)}\prod_{k=0}^{|\langle v, w\rangle| - 1}
     \sin^{\frac12}\biggl(\pi \langle a, w\rangle - \pi m
@@ -962,7 +964,7 @@ theory that is described by a circular quiver with $n$ nodes:
 \begin{equation}
   \begin{tikzpicture}[scale=0.8, baseline=(x.base)]
     \node (x) at (0,0) {\vphantom{x}};
-    
+
     \draw[dotted] (163:1) arc (163:197:1);
     \draw (-155:1) arc (-155:155:1);
 
@@ -1129,12 +1131,12 @@ the replacement $b_i \to -b_i$.
 % might stems from the monopole screening contribution, but again we
 % do not discuss this point. }
 % \begin{equation}
-% \left\langle T_{B=(1,0^{N-1})}\right\rangle *\left\langle T_{B=(1,0^{N-1})}\right\rangle 
+% \left\langle T_{B=(1,0^{N-1})}\right\rangle *\left\langle T_{B=(1,0^{N-1})}\right\rangle
 %   =\left\langle T_{B=(2,0^{N-1})}\right\rangle ,
 % \end{equation}
-%  and 
+%  and
 % \begin{equation}
-% \left\langle T_{B=(-1,0^{N-1})}\right\rangle *\left\langle T_{B=(1,0^{N-1})}\right\rangle 
+% \left\langle T_{B=(-1,0^{N-1})}\right\rangle *\left\langle T_{B=(1,0^{N-1})}\right\rangle
 %   =\left\langle T_{B=(1,-1,0^{N-2})}\right\rangle ,
 % \end{equation}
 % i.e. the OPE of the 't Hooft loops in the path integral defines the
@@ -1144,7 +1146,7 @@ the replacement $b_i \to -b_i$.
 % \begin{equation}
 % da\wedge db:=\sum_{i}da_{i}\wedge db_{i},
 % \end{equation}
-%  and defined by 
+%  and defined by
 % \begin{equation}
 % (f*g)(a,b)
 %   :=e^{i\frac{\eps}{4\pi}(\partiah^\vee_{b}\cdot\partiah^\vee_{a^{\prime}}-\partiah^\vee_{a}\cdot\partiah^\vee_{b^{\prime}})}
@@ -1289,7 +1291,7 @@ lines of the theory of a bifundamental hypermultiplet:
   \label{eq:two-node-q}
   \begin{tikzpicture}[baseline=(x.base)]
     \node (x) at (0,0) {\vphantom{x}};
-    
+
     \node[fnode] (1) at (0,0) {$N$};
     \node[fnode] (2) at (1,0) {$N$};
     \draw (1) -- (2);
@@ -1459,66 +1461,66 @@ contributions to the vev of the 't Hooft line.
 
 
 %%%%%  AGT  %%%%%
-Here we briefly review  the role of line and surface operators 
-in the AGT correspondence. Let us first give the general statements 
-of the correspondence and the notion of class $\CS$ theories, 
-which already appeared in section \ref{sec:surface_defects}. 
-For more details, see excellent reviews \cite{LeFloch:2020uop,Okuda:2014fja,Gukov:2014gja} 
-and the references therein. 
+Here we briefly review  the role of line and surface operators
+in the AGT correspondence. Let us first give the general statements
+of the correspondence and the notion of class $\CS$ theories,
+which already appeared in section \ref{sec:surface_defects}.
+For more details, see excellent reviews \cite{LeFloch:2020uop,Okuda:2014fja,Gukov:2014gja}
+and the references therein.
 
-The AGT correspondence was found heuristically by Alday, 
-Gaiotto and Tachikawa \cite{Alday:2009aq}, based on the observations 
-made in \cite{Gaiotto:2009we}. It was derived basically by comparing 
+The AGT correspondence was found heuristically by Alday,
+Gaiotto and Tachikawa \cite{Alday:2009aq}, based on the observations
+made in \cite{Gaiotto:2009we}. It was derived basically by comparing
 the instanton partition function \cite{Nekrasov:2002qd} of the $\CN =2$ SU$(2)$
-gauge theory with the Liouville conformal block. 
-Soon after their work, many checks and generalizations have been made, and 
+gauge theory with the Liouville conformal block.
+Soon after their work, many checks and generalizations have been made, and
 it has been known that the statement applies to the correspondence between a large class
- of four-dimensional $\CN = 2$ supersymmetric gauge theories on four-manifold $M^4$, 
- which is now called the theories of class $\CS$, labeled by punctured Riemann 
-surfaces $C_{g,n}$ and two-dimensional non-supersymmetric QFTs defined on the Riemann surfaces. 
+ of four-dimensional $\CN = 2$ supersymmetric gauge theories on four-manifold $M^4$,
+ which is now called the theories of class $\CS$, labeled by punctured Riemann
+surfaces $C_{g,n}$ and two-dimensional non-supersymmetric QFTs defined on the Riemann surfaces.
 
-The origin of the AGT correspondence is the six-dimensional $(2,0)$ SCFT. Let the four-manifold $M^4$ be 
-$\R^4_{\eps_1,\eps_2}$ (or $S^4_{\eps_1,\eps_2}$). Then this higher dimensional 
-theory explains the correspondence such that the two theories are originally a single theory in six dimensions: 
+The origin of the AGT correspondence is the six-dimensional $(2,0)$ SCFT. Let the four-manifold $M^4$ be
+$\R^4_{\eps_1,\eps_2}$ (or $S^4_{\eps_1,\eps_2}$). Then this higher dimensional
+theory explains the correspondence such that the two theories are originally a single theory in six dimensions:
 \begin{equation}
     \def\height{1.2cm}
         \begin{tikzpicture}[scale=1.0, baseline=(x.base)]    \node (x) at (0,\height/2) {\vphantom{x}};
-        
+
         \node (dummy) at (0,0) {};
         \node[above=\height of dummy, align=center] (6d) {6d theory \\ on $M^4\times C_{g,n}$};
         \node[left=1cm of dummy, align=center] (4d) {4d $\CN =2$ gauge theory \\ on $M^4$};
         \node[right=1cm of dummy, align=center] (2d) {2d Liouville/Toda CFT \\ on $C_{g,n}$};
-        
+
         \draw[semithick, arrows=-to] (6d) -- (4d);
         \draw[semithick, arrows=-to] (6d) -- (2d);
-        
+
     \end{tikzpicture}
 \end{equation}
-where 
-%the four-dimensional theory is defined on a four-manifold $M^4=\R^4_{\eps_1,\eps_2}$ 
-%(or $S^4_{\eps_1,\eps_2}$). 
-$\eps_1$ and $\eps_2$ are 
-called \Omega-deformation parameters in the literature, which turn out 
-to realize the deformation quantization of the moduli spaces. 
-For $M^4=\R^4_{\eps_1,\eps_2}$, the \Omega-deformation causes 
-two-dimensional rotations on the planes $\R^2_{\eps_1}$ and $\R^2_{\eps_2}$: 
+where
+%the four-dimensional theory is defined on a four-manifold $M^4=\R^4_{\eps_1,\eps_2}$
+%(or $S^4_{\eps_1,\eps_2}$).
+$\eps_1$ and $\eps_2$ are
+called $\Omega$-deformation parameters in the literature, which turn out
+to realize the deformation quantization of the moduli spaces.
+For $M^4=\R^4_{\eps_1,\eps_2}$, the $\Omega$-deformation causes
+two-dimensional rotations on the planes $mathbb R^2_{\eps_1}$ and $\mathbb R^2_{\eps_2}$:
 \begin{equation}
-    \R^4_{\eps_1,\eps_2} := \R^2_{\eps_1} \times \R^2_{\eps_2}. 
+    \R^4_{\eps_1,\eps_2} := \R^2_{\eps_1} \times \R^2_{\eps_2}.
 \end{equation}
-Hence, the \Omega-deformation breaks the whole rotation symmetry $\SO(4)$ of $\R^4$ to 
-its subgroup $\SO(2)_{\eps_1}\times\SO(2)_{\eps_2}$. 
-\Omega deformation leads to the Gaussian regularization of $\R^4$ and $\R^2$, 
-and their infinite volumes are regularized such that 
+Hence, the $\Omega$-deformation breaks the whole rotation symmetry $\mathrm{SO}(4)$ of $\mathbb R^4$ to
+its subgroup $\SO(2)_{\eps_1}\times\SO(2)_{\eps_2}$.
+$\Omega$ deformation leads to the Gaussian regularization of $\mathbb R^4$ and $\mathbb R^2$,
+and their infinite volumes are regularized such that
 \begin{equation}
-    \rm{Vol}\left(  \R^4_{\eps_1,\eps_2}  \right) = \int_{\R^4_{\eps_1,\eps_2}}1 = \frac{1}{\eps_1 \eps_2} , 
-    \qquad  \rm{Vol}\left(  \R^2_{\eps}  \right) = \int_{\R^2_{\eps}}1 = \frac{1}{\eps} 
+    \rm{Vol}\left(  \R^4_{\eps_1,\eps_2}  \right) = \int_{\R^4_{\eps_1,\eps_2}}1 = \frac{1}{\eps_1 \eps_2} ,
+    \qquad  \rm{Vol}\left(  \R^2_{\eps}  \right) = \int_{\R^2_{\eps}}1 = \frac{1}{\eps}
 \end{equation}
-Such a twist allows us to calculate quantities that are invariant under the $\U(1) \simeq \SO(2)$ 
-action on each plane, using the Duistermaat-Heckman fixed point formula 
-\cite{Duistermaat:1982vw} (or more generally Atiyah-Bott localization formula \cite{Atiyah:1984px}). 
-Nekrasov applied these techniques to compute instanton partition function, which is an integral over 
-the instanton moduli space, and obtained the exact results \cite{Nekrasov:2002qd,Nekrasov:2003rj} 
-which plays a crucial role in the AGT correspondence. 
+Such a twist allows us to calculate quantities that are invariant under the $\U(1) \simeq \SO(2)$
+action on each plane, using the Duistermaat-Heckman fixed point formula
+\cite{Duistermaat:1982vw} (or more generally Atiyah-Bott localization formula \cite{Atiyah:1984px}).
+Nekrasov applied these techniques to compute instanton partition function, which is an integral over
+the instanton moduli space, and obtained the exact results \cite{Nekrasov:2002qd,Nekrasov:2003rj}
+which plays a crucial role in the AGT correspondence.
 
 
 %%%%%  AGT  %%%%%
@@ -1725,7 +1727,7 @@ charge~\eqref{eq:E-circular}.
 
     % Taubmans Cinnamon Doughnut color
     \draw[fill={rgb,255:red,208; green,181; blue,155},even odd rule]
-    (0,0) ellipse (3 and 1.5) 
+    (0,0) ellipse (3 and 1.5)
     (-1,0.1) arc (120:60:2 and 1.8) arc (-60:-120:2 and 1.8);
 
     \draw (-1,0.1) arc(-120:-126:2 and 1.8) (1,0.1) arc(-60:-54:2 and 1.8);
@@ -1795,7 +1797,7 @@ it is convenient to represent the conformal block graphically as
 \begin{equation}
 \begin{tikzpicture}[scale=0.5, baseline=(x.base)]
   \node (x) at (0,0) {\vphantom{x}};
-  
+
   \draw [ultra thick, ->-=0.5] (0,0) circle [radius=1.5];
 
   \draw [ultra thick, -<-=0.6] (60:1.5) -- +(60:1)
@@ -2003,7 +2005,7 @@ the line passes another external edge we get a braiding factor:
   \node[shift={(30:8pt)}, xshift=8pt] at (30:1.5) {$\Delta_{i^2} \alpha^2$};
   \node[shift={(-150:10pt)}, xshift=-16pt] at (-150:1.5)
   {$\Delta_{i^{n+1}} \alpha^{n+1}$};
-  
+
   \node[shift={(150:-14pt)}, yshift=6pt] at (150:1.5) {$\alpha^{n+1}$};
 \end{tikzpicture} \,.
 \end{aligned}
@@ -2018,7 +2020,7 @@ which specifies the direction of the braiding moves:
   \frac{\Gamma(\bs(q + \iu \as^r_{j^r i^r}))}
        {\Gamma(\bs(\frac12 q + \iu \as^r_{j^r} - \iu \as^{r+1}_{i^{r+1}} - \iu \ms^r))}
   \\
-  \times     
+  \times
   \prod_{j^{r+1} (\neq i^{r+1})}
   \frac{\Gamma(\iu\bs \as^{r+1}_{j^{r+1} i^{r+1}})}
        {\Gamma(\bs(\frac12 q + \iu \as^{r+1}_{j^{r+1}} - \iu \as^r_{i^r} + \iu \ms^r))}
@@ -2056,14 +2058,14 @@ operator:
   \node[shift={(30:8pt)}, xshift=8pt] at (30:1.5) {$\Delta_{i^2} \alpha^2$};
   \node[shift={(-150:10pt)}, xshift=-16pt] at (-150:1.5)
   {$\Delta_{i^{n+1}} \alpha^{n+1}$};
-  
+
   \node[shift={(150:-14pt)}, yshift=6pt] at (150:1.5) {$\alpha^{n+1}$};
 \end{tikzpicture}
 \longrightarrow
 \frac{\sin(\pi \bs q)}{\sin(\pi N\bs q)} F_{i^1}^{-1}
 \begin{tikzpicture}[scale=0.5, baseline=(x.base)]
   \node (x) at (0,0) {\vphantom{x}};
-  
+
   \draw [ultra thick, ->-=0.85] (0,0) circle [radius=1.5];
 
   \draw [ultra thick, -<-=0.6] (60:1.5) -- +(60:1)
@@ -2392,14 +2394,14 @@ the $\theta$-angle for the $r$th gauge group.%
 A Wilson--'t Hooft line in this four-dimensional theory is realized by
 an M2-brane on
 \begin{equation}
-  M_{\mathrm{M2}} = 
+  M_{\mathrm{M2}} =
   \{t_0\} \times \{0\} \times S^1_3 \times \{0\}
   \times S^1_6 \times \{0\} \times \R^{\geq0}_8
   \times \{x_0\} \times \{\theta_0\} \,,
 \end{equation}
-where $\R^{\geq0}_8$ is the nonnegative part of $\R_8$.  Upon reduction on $S^1_{10}$, this M2-brane becomes a D2-brane on 
+where $\R^{\geq0}_8$ is the nonnegative part of $\R_8$.  Upon reduction on $S^1_{10}$, this M2-brane becomes a D2-brane on
 \begin{equation}
-  M_{\mathrm{D2}} = 
+  M_{\mathrm{D2}} =
   \{t_0\} \times \{0\} \times S^1_3 \times \{0\}
   \times S^1_6 \times \{0\} \times \R^{\geq0}_8
   \times \{x_0\}
@@ -2432,7 +2434,7 @@ worldvolumes
   \\
   \label{ea:M-D3}
   M_{\check{\mathrm{D3}}}
-  &= 
+  &=
   \{t_0\} \times \{0\} \times S^1_3 \times \{0\}
   \times S^1_6 \times \{0\} \times \R^{\geq0}_8
   \times \check S^1_9 \,.
@@ -2579,18 +2581,18 @@ $r$th double line, as illustrated in figure~\ref{fig:path-4dCS}.
   \subfloat[]{
     \begin{tikzpicture}[scale=0.4, baseline=(x.base)]
       \node (x) at (0,0) {\vphantom{x}};
-      
+
       \draw[fill=brown!30] (0,0) rectangle (10,6);
       % \draw[step=0.5,gray,very thin] (0,0) grid (10,6);
-      
+
       \draw[thick, ->] (0,3) -- (2.5,3) -- (3.5,5) -- (4.5,3) --
       (6.5,3) -- (7.5,1) -- (8.5,3) -- (10,3);
-      
+
       \draw[thick, double, ->] (3,0) -- +(90:6);
       \draw[thick, double, ->] (7,0) -- +(90:6);
-      
+
       \node[right] at (0,5.3) {$\Sigma$};
-      
+
       \draw[->] (-1,-1) -- +(90:1.5) node[above] {$x^0$};
       \draw[->] (-1,-1) -- +(0:1.5) node[right] {$x^6$};
 
@@ -2603,15 +2605,15 @@ $r$th double line, as illustrated in figure~\ref{fig:path-4dCS}.
   \subfloat[]{
     \begin{tikzpicture}[scale=0.4, baseline=(x.base)]
       \node (x) at (0,0) {\vphantom{x}};
-      
+
       \draw[fill={rgb,255:red,208; green,181; blue,155}] (0,0) rectangle (10,6);
       % \draw[step=0.5,gray,very thin] (0,0) grid (10,6);
-      
+
       \node[black!70] (p1) at (3,3) {$\bullet$};
       \node[black!70] (p2) at (7,3) {$\bullet$};
-        
+
       \draw[thick, ->] (0,3) -- (2.5,3) -- (2.5,1) -- (3.5,1) -- (3.5,5) -- (4.5,5) -- (4.5,3) -- (6.5,3) -- (6.5,5) -- (7.5,5) -- (7.5,1) -- (8.5,1) -- (8.5,3) -- (10,3);
-      
+
       \node[right] at (0,5.3) {$C_{1,n}$};
 
       \draw[->] (-1,-1) -- +(90:1.5) node[above] {$x^{10}$};

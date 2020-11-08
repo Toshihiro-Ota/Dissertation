@@ -1,10 +1,14 @@
-\input{Sections/Common/begin_special}
+\documentclass[11pt, titlepage]{article}  % , titlepage
+\usepackage{Sections/Common/toshi}
+\usepackage{comment}
+
+
 \begin{document}
 
-\definecolor{labelkey}{rgb}{1,1,1}
-\renewcommand{\include}[1]{}
-\renewcommand\documentclass[2][]{}
 
+\definecolor{labelkey}{rgb}{1,1,1}    % hide label keys
+\renewcommand{\include}[1]{}
+%\renewcommand\documentclass[2][]{}
 
 
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
@@ -13,36 +17,36 @@
 \thispagestyle{empty}
 
 
-%preprint number
-\begin{flushright} 
+% paper/preprint number
+\begin{flushright}
 Dissertation
 %RIKEN-iTHEMS-Report-?? \\
-%OU-HET-??? 
+%OU-HET-???
 \end{flushright}
 
 
 
-%title
+% title
 \vskip5cm%\vskip3cm
 \begin{center}
 {\LARGE {\bf Defects in Supersymmetric Gauge Theory  \\  and Integrable Lattice Models}}
 
 
 
-%name
+% name
 \vskip3cm%\vskip1.5cm
-{\large 
+{\large
 \bf {Toshihiro Ota} %$^{a, b}$\footnote{\href{mailto:toshihiro.ota@riken.jp}{toshihiro.ota@riken.jp}}
-} 
+}
 
 
 
-%affiliation
+% affiliation
 \vskip3cm%\vskip1cm
 %\it ${}^{a}$RIKEN Interdisciplinary Theoretical \& Mathematical Sciences Program (iTHEMS), \\
 %Wako, Saitama 351-0198, Japan \\
 %\it ${}^{b}$
-\it Department of Physics, Osaka University,  Toyonaka, Osaka 560-0043, Japan 
+\it Department of Physics, Osaka University,  Toyonaka, Osaka 560-0043, Japan
 \end{center}
 
 
@@ -60,10 +64,9 @@ Dissertation
 
 
 
-\vfill\eject
+\vfill\eject    % newpage
 
 \tableofcontents
-
 
 
 
@@ -77,13 +80,12 @@ Dissertation
 
 
 
-
 \clearpage
 %%%%%%%%%%%%%%%%%% References %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\input{Sections/Common/endbib}
-\bibliographystyle{Sections/Common/utphys}
+\bibliographystyle{Sections/Common/JHEP}  %utphys
 %\nocite{*}
-\bibliography{Sections/Common/Ref}
+\bibliography{Sections/Common/toshi}
 
 
 \end{document}

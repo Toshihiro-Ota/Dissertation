@@ -1,105 +1,45 @@
-This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2013)
+This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Main.aux
-The style file: Sections/Common/utphys.bst
-Database file #1: Sections/Common/Ref.bib
-You're missing a field name---line 42 of file Sections/Common/Ref.bib
- : 
- : %       URL = {https://doi.org/10.1016/0003-4916(86)90097-7},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 72 of file Sections/Common/Ref.bib
- : 
- : %       URL = {https://doi.org/10.1090/S1061-0022-09-01073-5},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 171 of file Sections/Common/Ref.bib
- : 
- : %       URL = {https://doi.org/10.1007/BF02764216},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 188 of file Sections/Common/Ref.bib
- : 
- : %       URL = {https://doi.org/10.4007/annals.2010.171.169},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 206 of file Sections/Common/Ref.bib
- : 
- : %       URL = {https://doi.org/10.1090/S1061-0022-04-00839-8},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 963 of file Sections/Common/Ref.bib
- : 
- : %       URL = {https://doi.org/10.1007/s002200050437},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 1011 of file Sections/Common/Ref.bib
- : 
- : %       URL = {https://doi.org/10.1007/s002200050137},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 1041 of file Sections/Common/Ref.bib
- : 
- : %       URL = {https://doi.org/10.1007/BF00420302},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 1344 of file Sections/Common/Ref.bib
- : 
- : %volume = "",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 1883 of file Sections/Common/Ref.bib
- : 
- : %      doi            = "10.1088/1126-6708/2008/07/089",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 1897 of file Sections/Common/Ref.bib
- : 
- : %      pages          = "1200",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 2008 of file Sections/Common/Ref.bib
- : 
- : %      pages          = "1200",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
+The style file: Sections/Common/JHEP.bst
+Database file #1: Sections/Common/toshi.bib
 Warning--can't use both author and editor fields in Okuda:2014fja
 Warning--empty publisher in Okuda:2014fja
 Warning--can't use both author and editor fields in Gukov:2014gja
 Warning--empty publisher in Gukov:2014gja
 You've used 86 entries,
-            2328 wiz_defined-function locations,
-            1225 strings with 17767 characters,
-and the built_in function-call counts, 26487 in all, are:
-= -- 2694
-> -- 613
+            2217 wiz_defined-function locations,
+            1193 strings with 17579 characters,
+and the built_in function-call counts, 26586 in all, are:
+= -- 2888
+> -- 770
 < -- 0
-+ -- 247
-- -- 161
-* -- 2608
-:= -- 3044
-add.period$ -- 98
++ -- 246
+- -- 160
+* -- 2268
+:= -- 3642
+add.period$ -- 93
 call.type$ -- 86
-change.case$ -- 89
+change.case$ -- 83
 chr.to.int$ -- 0
 cite$ -- 90
-duplicate$ -- 1426
-empty$ -- 2766
-format.name$ -- 161
-if$ -- 6832
+duplicate$ -- 1308
+empty$ -- 2462
+format.name$ -- 160
+if$ -- 6880
 int.to.chr$ -- 0
 int.to.str$ -- 86
 missing$ -- 320
-newline$ -- 271
+newline$ -- 269
 num.names$ -- 86
-pop$ -- 433
+pop$ -- 179
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 996
+skip$ -- 990
 stack$ -- 0
 substring$ -- 1653
-swap$ -- 702
+swap$ -- 632
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
@@ -107,6 +47,5 @@ type$ -- 0
 warning$ -- 4
 while$ -- 256
 width$ -- 88
-write$ -- 676
-is.kanji.str$ -- 0
-(There were 12 error messages)
+write$ -- 886
+(There were 4 warnings)
