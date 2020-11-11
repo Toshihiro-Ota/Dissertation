@@ -7,14 +7,16 @@
 
 %%%%%%%%%%%%%%%%%% section 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Integrability from extra dimensions}
+\label{sec:integrability}
 
 
 Throughout this paper, we discuss correspondences between
 a certain class of supersymmetric gauge theories and integrable lattice
 models:
 \begin{equation}
- \mathcal{I}_{\mathsf{T}_{4d}\left[\mathsf{L}_{2d}\right]}
-	=  Z_{\mathsf{L}_{2d}\left[\mathsf{T}_{4d}\right]},
+  \mathcal{I}_{\mathsf{T}_{4d}\left[\mathsf{L}_{2d}\right]}
+    =  Z_{\mathsf{L}_{2d}\left[\mathsf{T}_{4d}\right]},
+  \label{eq:correspondence}
 \end{equation}
 where the left-hand side is the supersymmetric index of a four-dimensional
 gauge theory $\mathsf{T}_{4d}$ and the right-hand side denotes the
@@ -24,7 +26,7 @@ $\mathsf{T}_{4d}$. As it turns out, the correspondence emerges from
 TQFT with extra dimensions \cite{Yagi:2015lha}. The aim of this section is
 to give the step-by-step explanation of the above correspondence from
 an elementary level. Besides, to explain these, we will start by clarifying
-in order what the terms TQFT, lattice model, and integrability mean.
+the precise meaning of the terms TQFT, lattice model, and integrability.
 
 
 
@@ -32,11 +34,11 @@ in order what the terms TQFT, lattice model, and integrability mean.
 
 \subsection{Preliminaries}
 
-In the next subsection, we would like to introduce lattice model as
+In section \ref{sec:lattice_model}, we will introduce lattice model as
 discrete quantum field theory (QFT). So let us start from the general
 settings of QFT. We first briefly review one-dimensional QFT, which
 is nothing but quantum mechanics, and then extend the discussion to
-general quantum field theory in ($d+1$)-dimensions. Though we do
+general quantum field theory in $(d+1)$-dimensions. Though we do
 not have a complete definition of general QFT, a special class of
 QFT which is called \emph{topological} QFT is axiomatized by Atiyah
 \cite{Atiyah:1989vu}.
@@ -46,8 +48,9 @@ QFT which is called \emph{topological} QFT is axiomatized by Atiyah
 
 
 \subsubsection{What is quantum field theory?}
+\label{sec:what_is_qft}
 
-Let us now begin with one-dimensional QFT, as known as quantum mechanics
+Let us begin with one-dimensional QFT, as known as quantum mechanics
 (QM). Suppose we have a one-dimensional manifold%
 %
 \footnote{Throughout the paper, we assume all the manifold is smooth and oriented,
@@ -56,27 +59,26 @@ unless otherwise stated. }%
 , which may be thought of as ``time'' $M^{1}=$ interval or $S^{1}$
 (or $\mathbb{R}$), and data to specify a QM:
 \begin{itemize}
- \item $\mathcal{H}$ : a vector space (Hilbert space/state space),
- \item $\mathcal{O}$ : a set of self-adjoint operators (observables, acting
-on $\mathcal{H}$),
- \item $H$ : an operator called \emph{Hamiltonian},
+  \item $\mathcal{H}$ : a vector space (Hilbert space/state space),
+  \item $\mathcal{O}$ : a set of self-adjoint operators (observables, acting on $\mathcal{H}$),
+  \item $H$ : an operator called \emph{Hamiltonian},
 \end{itemize}
-where $H\in\mathcal{O}$ and the state space $\mathcal{H}$ is a finite
-or infinite dimensional $\mathbb{C}$-vector space. We sometimes need
-to consider a set of operators $\mathcal{O}$ including not self-adjoint
+where $H\in\mathcal{O}$, and the state space $\mathcal{H}$ is a finite
+or an infinite dimensional $\mathbb{C}$-vector space. We sometimes need
+to allow a set of operators $\mathcal{O}$ include not self-adjoint
 operators, but for simplicity we do not care about that at this moment.
-In undergraduate, we have learnt that one should consider the Schr\"{o}dinger
-equation and find a good basis in $\mathcal{H}$ diagonalizing the
+In undergraduate, we have learned that one should consider the Schr\"{o}dinger
+equation and find a good basis in $\mathcal{H}$ which diagonalizes the
 Hamiltonian.
 
-Formally, the procedure of solving the Schr\"{o}dinger equation leads
+As is well known, the procedure of solving the Schr\"{o}dinger equation, at least formally, leads
 to an expression of time evolution of states by a linear map%
 %
 \footnote{We here do not get into the argument of Euclideanization.}
 %
 $e^{-tH}$ in quantum mechanics, and the partition function in many-body
 statistical mechanics. In turn, we have two most crucial properties
-of QM: Given an interval $M^{1}=\left[t_{0},t_{1}\right]$, we have
+of QM. Given an interval $M^{1}=\left[t_{0},t_{1}\right]$, we have
 state vectors at the endpoints of the interval and a time evolution
 between the states:
 \begin{equation}
@@ -86,9 +88,11 @@ between the states:
 
     \end{tikzpicture}
   \quad \rightsquigarrow \quad
-  e^{-\left(t_{1}-t_{0}\right)H} : \mathcal{H}  \longrightarrow  \mathcal{H} \, ,
+  e^{-(t_{1}-t_{0})H} : \mathcal{H}  \longrightarrow  \mathcal{H}
+~ ,
+\label{eq:qm_linearmap}
 \end{equation}
- and given a circle $M^{1}=S_{\beta}^{1}$, we get a number called
+and given a circle $M^{1}=S_{\beta}^{1}$, we get a number called
 \emph{partition function}:
 \begin{equation}
     \begin{tikzpicture}[scale=0.8, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
@@ -99,14 +103,16 @@ between the states:
 
     \end{tikzpicture}
   \quad \rightsquigarrow \quad
-  \mathrm{Tr}_{\mathcal{H}}  e^{-\beta H} \, .
+  \mathrm{Tr}_{\mathcal{H}}  e^{-\beta H}
+~ .
+\label{eq:qm_number}
 \end{equation}
 
 
 %FIGURE
 \begin{figure}
 \centering
-  \subfloat[\label{fig:qm_interval}]{
+  \subfloat[\label{}]{  % fig:qm_interval
     \begin{tikzpicture}[scale=1.0] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
 
         \draw[arrows=-latex] (0,0) -- (4,0) node[right] {time};
@@ -116,7 +122,7 @@ between the states:
     \end{tikzpicture}
   }
   \qquad\qquad
-  \subfloat[\label{fig:qm_circle}]{
+  \subfloat[\label{}]{  % fig:qm_circle
     \begin{tikzpicture}[scale=1.0] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
 
         \draw[thick, arrows=|-] (1,0) node[right=0.1] {$t=0,\, \beta$} arc (0:360:1);
@@ -133,27 +139,27 @@ between the states:
 \end{figure}
 
 
-In addition, from the physical facts it is quite reasonable to assume
+In addition, from physical facts it is quite reasonable to assume
 that the time evolution and the partition function are compatible
 with cutting and gluing intervals and $S^{1}$s. This simply means
-that the time evolution from time $t_{0}$ to $t_{1}$ followed by
-another time evolution from $t_{1}$ to $t_{2}$ is equal to the single
+that a time evolution from time $t_{0}$ to $t_{1}$ followed by
+another time evolution from $t_{1}$ to $t_{2}$ is equal to a single
 time evolution from $t_{0}$ to $t_{2}$, etc. Summarizing, the properties
-that quantum mechanics or one-dimensional QFT has are rephrased by
+of quantum mechanics, or one-dimensional QFT, are rephrased by
 the language of given one-dimensional manifold $M^{1}$ (see figure \ref{fig:qm_two_properties}):
 \begin{itemize}
-  \item Given an interval, produces state vectors at the endpoints and a linear
+  \item Given an interval, QM produces state vectors at the endpoints and a linear
 map between them.
-  \item Given an $S^{1}$, produces a number.
-  \item Compatible with cutting and gluing intervals and $S^{1}$s.
+  \item Given an $S^{1}$, QM produces a number.
+  \item These two properties are compatible with cutting and gluing intervals and $S^{1}$s.
 \end{itemize}
-Thus, in the abstract we conclude that one-dimensional QFT, or quantum
-mechanics, is a gadget satisfying the above properties for each given
+Thus, in the abstract we conclude that quantum
+mechanics is a gadget satisfying the above properties for each given
 one-dimensional manifold $M^{1}$.
 
 From these observations of quantum mechanics, we wish to extend the
-discussion to general ($d+1$)-dimensional QFT. The starting point
-of defining a ($d+1$)-dimensional QFT is the choice of a ($d+1$)-dimensional
+discussion to general $(d+1)$-dimensional QFT. The starting point
+of defining a $(d+1)$-dimensional QFT is the choice of a $(d+1)$-dimensional
 manifold $M^{d+1}$, which has $d$ spatial directions and one ``time''
 direction. For most QFTs the manifold $M^{d+1}$ is viewed as a Riemannian
 manifold with a smooth metric on it. As already noticed, we will mostly
@@ -168,45 +174,48 @@ $M^{d+1}$, e.g. smooth structure, conformal structure, spin structure,
 etc.
 
 To obtain the data to specify a QFT, we now would like to extend the
-observations seen in QM. Suppose we have a ($d+1$)-dimensional manifold
+observations seen in QM. Suppose we have a $(d+1)$-dimensional manifold
 $M^{d+1}$, then we wish to ``define'' a QFT by a gadget $Z$, which
 should produce a vector when $M^{d+1}$ has a boundary
 \begin{equation}
-Z\left(M^{d+1}\right)  \in  \mathcal{H}_{bdy},
+Z\big(M^{d+1}\big)  \in  \mathcal{H}_{bdy},
 \end{equation}
- and should produce a number when $M^{d+1}$ has no boundary
+and should produce a number when $M^{d+1}$ has no boundary
 \begin{equation}
-Z\left(M^{d+1}\right)  \in  \mathbb{C}.
+Z\big(M^{d+1}\big)  \in  \mathbb{C}.
 \end{equation}
- %
-In the case of $M^{d+1}$ with a boundary, the vector space defined
+In the case of $M^{d+1}$ with a boundary, the vector space associated
 on the boundary is called the space of states or just Hilbert space
 in the physics literature. On the one hand, if $M^{d+1}$ does not
-have boundary, the number $Z\left(M^{d+1}\right)$ is called the partition
-function. If the boundary of $M^{d+1}$ has several disconnected components,
-namely the boundaries are given by the disjoint union of simply connected
-$d$-dimensional closed manifolds $\left\{ N_{i}^{d}\right\} $: $\partial M^{d+1}=\sqcup_{i}N_{i}^{d}$,
+have boundary, the number $Z\big(M^{d+1}\big)$ is called the partition
+function. When the boundary of $M^{d+1}$ consists of several disconnected components,
+namely the boundary is given by a disjoint union of simply connected
+$d$-dimensional closed manifolds $\big\{ N_{i}^{d}\big\}$: $\partial M^{d+1}=\sqcup_{i}N_{i}^{d}$,
 $Z$ should define a linear map among the vector spaces defined on
 the boundaries. In particular, in the case $M^{d+1}=N^{d}\times I$,
 where $I$ is an interval of length $T$, $M^{d+1}$ has two boundaries
-$N^{d}$ and $Z$ now gives rise to a linear map $Z\left(N^{d}\times I\right)=:U\left(T\right)$,
+$N^{d}$ and $Z$ now gives rise to a linear map $Z\big(N^{d}\times I\big)=:U(T)$,
 \begin{equation}
-  U\left(T\right)  :  \mathcal{H}_{N}  \longrightarrow  \mathcal{H}_{N}.
+  U(T) : \mathcal{H}_{N} \longrightarrow \mathcal{H}_{N}.
 \end{equation}
-From the physical facts, $Z$ also should be compatible with cutting and
-gluing of ($d+1$)-dimensional manifolds, and thus we learn that the
-linear map given above satisfies $U\left(T_{1}\right)U\left(T_{2}\right) = U\left(T_{1}+T_{2}\right)$.
-This in turn defines an operator $H$ as the generator of $U$,
+From  physical facts, $Z$ also should be compatible with cutting and
+gluing of $(d+1)$-dimensional manifolds, and thus we learn that the
+linear map given above satisfies $U(T_{1})U(T_{2})$ $=$ $U(T_{1}+T_{2})$.
+This really defines an operator $H$ as the generator of $U$,
 \begin{equation}
-  U\left(T\right)  =  \exp\left(-TH\right).
+  U(T)  =  \exp (-TH).
 \end{equation}
- $H$ is called the Hamiltonian of the system, acting on the space
+$H$ is called the Hamiltonian of the system, acting on the space
 of states $\mathcal{H}_{N}$. If one considers a manifold
-with Lorentzian metric, $U\left(T\right)$ is represented as
+with Lorentzian metric, $U(T)$ is represented as
 \begin{equation}
-  U\left(T\right)  =  \exp\left(-iTH\right),
+  U(T)  =  \exp (-iTH),
 \end{equation}
 and then the interval $I$ is regarded as ``physical time.''
+
+
+
+
 
 \subsubsection{Construction of $Z$}
 
@@ -215,7 +224,7 @@ theory is, or in other words what the gadget $Z$ should satisfy.
 Let us now see how we specify $Z$ to define a QFT. Broadly speaking,
 there are three kinds of constructions of $Z$. They are not totally
 independent and have many aspects of applicabilities. In the rest
-of this section, $M$ denotes a ($d+1$)-dimensional manifold with
+of this section, $M$ denotes a $(d+1)$-dimensional manifold with
 or without boundary, and $N$ denotes a $d$-dimensional closed manifold
 without boundary.
 
@@ -223,11 +232,11 @@ without boundary.
 
 The first construction is in a sense the simplest one; we write down
 appropriate properties that a QFT must satisfy, and axiomatize them.
-Construction of $Z$ is to give a mathematical formulation which satisfy
+Construction of $Z$ is to give a mathematical formulation which satisfies
 the axioms as the data to specify the theory. This is actually the
 only way that one can define a QFT by mathematically rigorous procedures.
 Normally, such a theory is first studied by physicists as an ideal
-or a toy model from the physical motivation, and then refined as rigorous
+or a toy model from physical motivations, and then refined as rigorous
 mathematics by mathematicians.%
 %
 \footnote{The fact that a QFT can be treated in a mathematically rigorous way
@@ -236,7 +245,7 @@ the difficulties of the QFT are completely controlled by them. Even
 better, these theories can often be exactly solved in an appropriate
 sense.}
 %
- There are several kinds of such theories. We now introduce typical
+There are several kinds of such theories. We now introduce typical
 three examples.
 
 The first one is \emph{free theories} in any dimensions, which are
@@ -244,35 +253,36 @@ toy models of field theories and play important roles as a probe of
 more complicated QFTs. In any spacetime dimensions, for the Riemannian
 manifolds with or without spin structure, we can rigorously define
 the free field theories. One of them is the free scalar field theory.
-Besides a ($d+1$)-dimensional closed manifold $M$, pick a $G$-bundle
-$P\rightarrow M$ with connection $A$ and a $G$-vector space $V$.
+Besides a $(d+1)$-dimensional closed manifold $M$, pick a $G$-bundle
+$P\to M$ with a connection $A$ and a $G$-vector space $V$.
 Then we construct the associated vector bundle $P\times_{G}V$, whose
 covariant derivative is denoted by $D_{A}$. We now have the Laplacian
 $\Delta_{A}$ given by the covariant derivative $D_{A}$, and then
 the free scalar field theory is defined by the partition function
 \begin{equation}
-  Z_{\mathrm{scalar}}\left(M;A\right)  :=  1/\det\Delta_{A}.
+  Z_{\mathrm{scalar}}(M;A)  :=  1/\det\Delta_{A}.
 \end{equation}
- If the determinant of the Laplacian involves a divergence, it must
-be properly removed.
+If the determinant of the Laplacian involves a divergence, it must
+be properly regularized.
 
 Another free theory is the free fermion theory. In this case $M$
 also needs a spin structure and the spin representations $S$, $S'$.
 Then we construct the Dirac operator $\mathcal{D}_{A}$ on the spin
-bundles and the partition function of the free fermion theory is given
+bundles, and the partition function of the free fermion theory is given
 by
 \begin{equation}
-Z_{\mathrm{fermion}}\left(M;A\right):=\det\mathcal{D}_{A},
+Z_{\mathrm{fermion}}(M;A):=\det\mathcal{D}_{A},
 \end{equation}
- again the determinant is taken appropriately.%
+again the determinant is taken appropriately.%
 %
 \footnote{Fermion theories may have anomalies. If it is the case, the axiom
 needs to be somehow modified. In particular the partition function
-for a closed manifold is given by the eta invariant \cite{Dai:1994kq}. }
+for a closed manifold is given by the eta invariant \cite{Dai:1994kq}.}
 
 Next, in two dimensions, we have another axiomatic quantum field theory,
-that is \emph{conformal field theory} (CFT). Conformal field theory
-in two dimensions was originally formulated by Belavin, Polyakov,
+that is \emph{conformal field theory} (CFT).
+To discuss two-dimensional CFT, we need a conformal (complex) structure
+on $M$, i.e. $M$ becomes a Riemann surface. CFT in two dimensions was formulated by Belavin, Polyakov,
 and Zamolodchikov \cite{Belavin:1984vu} as a model of physical systems at critical
 points. They established the renowned Virasoro algebra as an infinite
 dimensional symmetry of the system and fully investigated the minimal
@@ -283,29 +293,33 @@ surfaces are governed by the conformal blocks, and its geometric meaning
 has been studied in \cite{Friedan:1986ua}. In turn, the study of irrational
 CFTs has led to the AGT correspondence \cite{Alday:2009aq}, which has brought
 to us large amount of developments in both physics and mathematics.
+We will give a general statement of AGT correspondence and apply it to our work
+in section \ref{sec:line_defects}.
 
 The final example is \emph{topological quantum field theories} (TQFTs).
-TQFT is one of the main focuses in this paper. These theories are
-originating from Witten's proposals of topological field theories
+TQFT is one of the main focuses in this paper. These theories
+originate from Witten's proposals of topological field theories
 \cite{Witten:1988xj, Witten:1988ze, Witten:1988hf}. Inspired by Witten's
-proposals, Atiyah and Segal axiomatized the topological QFT,%
+works, Atiyah and Segal axiomatized the topological QFT,%
 %
 \footnote{Precisely speaking, what Segal axiomatized is the definition of conformal
-field theories \cite{Segal:2002ei}. However, at any rate the definition of CFT by Segal
-is quite similar to the definition of Atiyah's TQFT, namely it is a
-categorical one. For the geometric definition of CFT, see \cite{Friedan:1986ua}. }
+field theories \cite{Segal:2002ei}. Segal's definition of CFT is categorical
+and quite similar to the definition of Atiyah's TQFT.
+For the geometric definition of CFT, see \cite{Friedan:1986ua}. }
 %
- and happily this also has brought to us a numerous amount of applications
+and happily this also has brought to us a numerous amount of applications
 both to physics and to pure mathematics. For example, ($1+1$)-dimensional
-topological QFTs are known to be categorically equivalent to commutative
-Frobenius algebras. ($2+1$)-dimensional Chern-Simons theory for a
-compact Lie group $G$ is rigorously constructed by the Turaev-Viro
-and Reshetikhin-Turaev construction using quantum groups \cite{Turaev:1992hq, Reshetikhin:1991tc}, and has
+topological QFTs are known to be functorially equivalent to the category of commutative
+Frobenius algebras. $(2+1)$-dimensional Chern-Simons theory for a
+compact Lie group $G$ is rigorously constructed by Kohno \cite{MR1167165} using
+the monodromy representation of Knizhnik-Zamolodchikov equation \cite{Knizhnik:1984nr},
+and Turaev-Viro, Reshetikhin-Turaev using quantum groups \cite{Turaev:1992hq, Reshetikhin:1991tc}.
+$(2+1)$-dimensional Chern-Simons theory has many
 applications to knot or link invariants and $3$-manifold invariants.
 Moreover, both 2d and 3d TQFTs have applications to the mirror symmetry,
 or topological string theory (see e.g. \cite{Hori:2003ic}), those have led to fruitful interactions
 between physics and mathematics. We will take more time for TQFT and
-introduce the Atiyah's axioms in some detail in the next subsection.
+introduce the Atiyah's axioms in some detail in section \ref{sec:Atiyah_TQFT}.
 
 \subsubsection*{Path integrate the Boltzmann weight}
 
@@ -325,17 +339,17 @@ bundle $P\times_{G}V$ over $M$, where $V$ is a representation of
 a compact Lie group $G$. Then define an action functional
 
 \begin{equation}
-  S  :  \Gamma\left(P\times_{G}V\right)  \longrightarrow  \mathbb{R},
+  S  :  \Gamma(P\times_{G}V)  \longrightarrow  \mathbb{R},
 \end{equation}
- such that
+such that
 \begin{equation}
-  S\left(\phi\right)  =  \int_{M}\frac{1}{2}D_{A}\phi\wedge\ast D_{A}\phi,
+  S(\phi)  =  \int_{M}\frac{1}{2}D_{A}\phi\wedge\ast D_{A}\phi,
 \end{equation}
- where $*$ is the Hodge star on $M$. $D_{A}$ is again the covariant
+where $*$ is the Hodge star on $M$. $D_{A}$ is again the covariant
 derivative given by the connection $A$. Using this action functional,
 physicists ``define'' its partition function by
 \begin{equation}
-Z_{\mathrm{scalar}}\left(M;A\right):=\int_{\Gamma\left(P\times_{G}V\right)}\mathcal{D}\phi\,e^{-S\left(\phi\right)}.
+Z_{\mathrm{scalar}}(M;A):=\int_{\Gamma(P\times_{G}V)}\mathcal{D}\phi\,e^{-S(\phi)}.
 \end{equation}
 The integrand $e^{-S}$ of path integral is generically called the
 \emph{Boltzmann weight}. For the free field theories, the path integral
@@ -343,23 +357,23 @@ can be expressed as an infinite product of the Gaussian integral.
 Introducing an appropriate regularization, one can compute the exact
 partition function and it leads to the same result as mentioned above.
 
-As another example, let us consider Yang-Mills theory. We now introduce
+As another example, let us consider pure Yang-Mills theory. We introduce
 the kinetic term of the connection $A$, and define the action functional
 \begin{equation}
-  S\left(A\right)  =  \int_{M}\frac{1}{4g^{2}}F_{A}\wedge*F_{A},
+  S(A)  =  \int_{M}\frac{1}{4g^{2}}F_{A}\wedge*F_{A},
 \end{equation}
 where $F_{A}$ is the curvature of the $G$-connection $A$. Define
 the partition function of Yang-Mills theory by
 \begin{equation}
-  Z_{\mathrm{YM}}\left(M\right)  =  \int_{\mathcal{A}_{M}/\mathcal{G}}\mathcal{D}A\,e^{-S\left(A\right)},
+  Z_{\mathrm{YM}}(M)  =  \int_{\mathcal{A}_{M}/\mathcal{G}}\mathcal{D}A\,e^{-S(A)},
 \end{equation}
 where the integral is taken over the space of connections on $M$
 modulo gauge transformations. Unlike the free scalar theory, making
-this path integral mathematically precise is an extremely difficult
-problem. Although it is still ill-defined, physicists have been working
+this path integral mathematically precise is extremely difficult.
+Although it is still ill-defined, physicists have been working
 on this expression to understand many properties of quantum gauge
-theories. Experimentally, physicists discretize the manifold $M$
-to a ($d+1$)-dimensional lattice and put it on a supercomputer. At
+theories. Experimentally, we discretize the manifold $M$
+to a $(d+1)$-dimensional lattice and put it on a supercomputer. At
 least, numerical calculations show the above construction may be a
 mathematically meaningful and reproduce many experimental results
 to reasonable accuracy.
@@ -368,31 +382,31 @@ to reasonable accuracy.
 
 The final construction of $Z$ is to use string or M-theory. This
 is also our main tool to construct a QFT to realize the correspondence
-(the first equation of this section). Nonetheless, string or M-theory
+\eqref{eq:correspondence}. Nonetheless, string or M-theory
 is less rigorous than path-integral expression of the construction
-of $Z$, and thus it is more hopeless to give a mathematical precise
+of $Z$, and thus it is more hopeless to give a mathematically precise
 meaning to the construction. We here would like to show just two examples
 which ``define'' a class of quantum field theories through string/M-theory.
 
 The first example is the AdS/CFT correspondence.
 
-The second example is the so-called six-dimensional $\mathcal{N}=\left(2,0\right)$
-theories \cite{Witten:1995zh}. We start from a 10-dimensional string theory called the
+The second example is the so-called six-dimensional $\mathcal{N}=(2,0)$
+superconformal field theories (SCFT) \cite{Witten:1995zh}. We start from a 10-dimensional string theory called the
 type IIB string theory, which roughly speaking assigns the partition
 function $Z_{\mathrm{IIB}}(\tilde{M})$ to a 10-dimensional
-manifold $\tilde{M}$. Pick a finite subgroup $\Gamma_{G}$ of SU($2$)
+manifold $\tilde{M}$. Pick a finite subgroup $\Gamma_{G}$ of $\SU(2)$
 of type $G=A_{n},\,D_{n}$ or $E_{6,7,8}$. We define a six-dimensional
 QFT $Q_{G}$ by its partition function for a six-dimensional manifold
 $M$,
 \begin{equation}
-Z_{Q_{G}}\left(M\right)  =  Z_{\mathrm{IIB}}\left(M\times\mathbb{C}^{2}/\Gamma_{G}\right).
+Z_{Q_{G}}(M)  =  Z_{\mathrm{IIB}}\big(M\times\mathbb{C}^{2}/\Gamma_{G}\big).
 \end{equation}
- They are examples of six-dimensional $\mathcal{N}=\left(2,0\right)$
+ They are examples of six-dimensional $\mathcal{N}=(2,0)$
 superconformal QFTs. These theories are known not to have a Lagrangian
-description, namely their partition function cannot be obtained from
-the path integral formalism. They have another description via M-theory,
+description, and hence their partition function cannot be obtained from
+the path integral formulation. They have another description via M-theory,
 as the low-energy dynamics of M5-branes. The construction from M5-branes
-leads to the AGT correspondence and the notion of class $\mathcal{S}$
+leads to the AGT correspondence and the notion of class-$\mathcal{S}$
 theories, which we will explain in later sections.
 
 
@@ -401,9 +415,10 @@ theories, which we will explain in later sections.
 
 
 \subsubsection{Atiyah's topological QFT}
+\label{sec:Atiyah_TQFT}
 
-As mentioned some times, in this paper TQFT in extra dimensions will
-play a crucial role to realize the correspondence between supersymmetric
+As mentioned some times, in this paper TQFT in extra dimensions
+plays a crucial role to realize the correspondence between supersymmetric
 gauge theories and integrable lattice models. So now let us pause
 here and introduce the Atiyah's axioms of TQFT \cite{Atiyah:1989vu}. We first list the
 axioms, and right then give their physical meanings. Readers will
@@ -411,18 +426,19 @@ notice that most of these axioms are physically quite natural and
 actually mathematical rephrasing of the properties that $Z$ should
 satisfy, which we have already seen. In addition, we would like to
 define lattice model as a discrete version of QFT in the next subsection.
-Reviewing the definitions of TQFT here will be really a good help
+Reviewing the definition of TQFT here will be a good help
 of the argument of lattice model.
+
 
 \subsubsection*{Axiom (Atiyah's ($d+1$)-dimensional TQFT)}
 
 ($d+1$)-dimensional TQFT is defined by $Z$ consisting of the following
 two data and five assignments:
 \begin{itemize}
-  \item For each oriented $d$-dimensional closed manifold $N$, assigns a
+  \item For each oriented $d$-dimensional closed manifold $N$, $Z$ assigns a
 finite dimensional $\mathbb{C}$-vector space $\mathcal{H}_{N}$:
 \begin{equation}
-  Z\left(N\right)  =  \mathcal{H}_{N}.
+  Z(N)  =  \mathcal{H}_{N}.
 \end{equation}
 \end{itemize}
 This corresponds to (a half of) canonical quantization, or geometric
@@ -431,8 +447,8 @@ of'' will be explained in a moment. In physics, especially for a
 field theory which has a Lagrangian description, we consider the phase
 space of fields, take a constant-time surface, and then perform canonical
 quantization by imposing canonical commutation relations on fields
-and their conjugates. The constant-time surface is a codimension-1
-hypersurface in ($d+1$)-dimensional manifold $M$, which in this
+and their conjugate momenta. The constant-time surface is a codimension-1
+hypersurface in $(d+1)$-dimensional manifold $M$, which in this
 case is nothing but the $d$-dimensional closed manifold $N$. So,
 the manifold $N$ is viewed as a collection of $d$ spatial directions.
 One can think of the assigned vector space $\mathcal{H}_{N}$ as ``the
@@ -441,16 +457,16 @@ the space of states or just Hilbert space of the system. The only
 major difference here is that for topological theory the Hilbert space
 is of finite dimension.%
 %
-\footnote{One can remove the finiteness condition from the axiom. In fact, in
-TQFT we can define a non-degenerate bilinear form from the other axioms,
+\footnote{One can remove the finiteness condition from the axiom. In
+TQFT we can in fact define a non-degenerate bilinear form from the other axioms,
 and from that as a corollary we can deduce the space of states is
 finite-dimensional. }
 %
 \begin{itemize}
-  \item For each oriented ($d+1$)-dimensional manifold $M$ with a boundary
-$\partial M=N$, assigns a vector
+  \item For each oriented $(d+1)$-dimensional manifold $M$ with a boundary
+$\partial M=N$, $Z$ assigns a vector
 \begin{equation}
-  Z\left(M\right)
+  Z(M)
   =
   Z\left(
     \begin{tikzpicture}[scale=0.6, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
@@ -468,10 +484,10 @@ This expresses the path integral quantization on $M$ with boundary.
 Recall that if one has a spacetime manifold with boundary, one needs
 to impose a boundary condition on fields on the boundary, and it leads
 to the state vector associated to the boundary condition by path integral
-expression, namely let $\varphi$ be a fixed field configuration on
+expression; let $\varphi$ be a fixed field configuration on
 $N$,
 \begin{equation}
-  Z\left(M;\varphi\right)  =  \int_{X\mid_{N}=\varphi}\mathcal{D}X \, e^{-S\left(X\right)} \,  \in  \mathcal{H}_{N}.
+  Z(M;\varphi)  =  \int_{X\mid_{N}=\varphi}\mathcal{D}X \, e^{-S(X)} \,  \in  \mathcal{H}_{N}.
 \end{equation}
  In other words, the quantum state at a generic time $t$ is given
 by the path integral of the Boltzmann weight over all the classical
@@ -481,7 +497,7 @@ fields with time $<t$.
 %FIGURE
 \begin{figure}
 \centering
-  \subfloat[\label{fig:one_bdy}]{
+  \subfloat[\label{}]{  % fig:one_bdy
     \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphanton{x}};
         \def\bdyradius{0.8cm}
 
@@ -491,7 +507,7 @@ fields with time $<t$.
     \end{tikzpicture}
   }
 \qquad\qquad
-  \subfloat[\label{fig:two_bdy}]{
+  \subfloat[\label{}]{  % fig:two_bdy
     \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphanton{x}};
         \def\bdyradius{1cm}
 
@@ -505,7 +521,9 @@ fields with time $<t$.
 
     \end{tikzpicture}
   }
-  \caption{one-boundary and two-boundary cases.}
+  \caption{$(d+1)$-dimensional manifolds $M$ and $\tilde{M}$.
+  They have a single boundary and two disconnected boundaries.
+  For each case, $Z$ gives a vector and a linear map, respectively.}
   \label{fig:mfd_w_bdys}
 \end{figure}
 
@@ -517,25 +535,25 @@ then
 \begin{equation}
   \mathcal{H}_{-N}  =  \mathcal{H}_{N}^{*},
 \end{equation}
- where $\mathcal{H}_{N}^{*}$ is the dual to $\mathcal{H}_{N}$.
+where $\mathcal{H}_{N}^{*}$ is the dual to $\mathcal{H}_{N}$.
   \item (multiplicative) If $N$ is a disjoint union of two $d$-dimensional
 closed manifolds $N_{1}$ and $N_{2}$, then the vector space associated
 on it is factorized to a tensor product:
 \begin{equation}
   \mathcal{H}_{N_{1}\sqcup N_{2}}  =  \mathcal{H}_{N_{1}}  \otimes  \mathcal{H}_{N_{2}}.
 \end{equation}
- This is really natural in the physical point of view. This condition
+This is really natural in the physical point of view. This condition
 means that if we have two physical systems defined on spatially disjoint
 union $N_{1}\sqcup N_{2}$, then the space of states is represented
 as the tensor product of each state space. Also, from the conditions
-so far one finds that if ($d+1$)-dimensional manifold $M'$ has two
+so far one finds that if a ($d+1$)-dimensional manifold $M'$ has two
 boundaries such that
 \begin{equation}
   \partial M'  =  -N_{1}\sqcup N_{2},
 \end{equation}
 then $Z$ defines a linear map
 \begin{equation}
-  Z\left(M'\right)
+  Z\big(M'\big)
   =
   Z\left(
     \begin{tikzpicture}[scale=0.6, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
@@ -553,45 +571,42 @@ then $Z$ defines a linear map
   \right)
   \in  \mathrm{Hom}_{\mathbb{C}}\left(\mathcal{H}_{N_{1}},\mathcal{H}_{N_{2}}\right),
 \end{equation}
- namely, for a cobordism between $N_{1}$ and $N_{2}$, we have a
+namely, for a cobordism between $N_{1}$ and $N_{2}$, we have a
 linear map between $\mathcal{H}_{N_{1}}$ and $\mathcal{H}_{N_{2}}$.
 This defines a time evolution, or transition amplitude, between the
 states in $\mathcal{H}_{N_{1}}$ and $\mathcal{H}_{N_{2}}$. When
-the field theory has a Hamiltonian, $Z\left(M'\right)$ may correspond
+the field theory has a Hamiltonian, $Z\big(M'\big)$ may correspond
 to the time evolution operator
 \begin{equation}
-  Z\left(M'\right):=e^{-tH}:\mathcal{H}_{N_{1}}\longrightarrow\mathcal{H}_{N_{2}}.
+  Z\big(M'\big) := e^{-tH} : \mathcal{H}_{N_{1}} \longrightarrow \mathcal{H}_{N_{2}}.
 \end{equation}
 Since canonical quantization is a procedure to make an assignment
 of Hilbert spaces and the time evolution on them, as we saw in QM,
 this association of linear maps gives the other half of canonical
-quantization. %
-%\begin{comment}
-%Perhaps no need this part
-%\end{comment}
-One can also explicitly express $Z\left(M'\right)$ in the path integral
+quantization.
+One can also explicitly express $Z\big(M'\big)$ in the path integral
 expression by the Feynman kernel (also as known as propagator or Green's
 function). Suppose we have an initial state $\Psi_{0}\in\mathcal{H}_{N_{1}}$,
 then the state $\Psi_{t}\in\mathcal{H}_{N_{2}}$ at time $t$ is expressed
 by
 \begin{align}
-  \Psi_{t}\left(\varphi_{t}\right)
-  & =\left(e^{-tH}\Psi_{0}\right)  \left(\varphi_{t}\right)  \nonumber \\
-  & =\int K\left(\varphi_{t},\varphi_{0}\right)\Psi_{0}\left(\varphi_{0}\right)\mathcal{D}\varphi_{0},
+  \Psi_{t}(\varphi_{t})
+  & =\left(e^{-tH}\Psi_{0}\right)  (\varphi_{t})  \nonumber \\
+  & =\int K(\varphi_{t},\varphi_{0})\Psi_{0}(\varphi_{0})\mathcal{D}\varphi_{0},
 \end{align}
- where
+where
 \begin{equation}
-  K\left(\varphi_{t},\varphi_{0}\right)
-  =\int_{X\mid_{N_{1}}=\varphi_{0}}^{X\mid_{N_{2}}
-  =\varphi_{t}}\mathcal{D}X\,e^{-S\left(X\right)}.
+  K(\varphi_{t},\varphi_{0})
+    =\int_{X\mid_{N_{1}}=\varphi_{0}}^{X\mid_{N_{2}}
+    =\varphi_{t}}\mathcal{D}X\,e^{-S(X)}.
 \end{equation}
-  \item For two cobordisms such that
+  \item For two cobordisms
 \begin{equation}
   \partial M_1 =  -N_{1}\sqcup N_{2},  \quad  \partial M_2  =  -N_{2}\sqcup N_{3},
 \end{equation}
- it follows that
+it follows that
 \begin{equation}
-  Z\left(M_1  \cup_{N_{2}} M_2  \right)  =  Z\left(M_2\right)Z\left(M_1\right),
+  Z\big(M_1  \cup_{N_{2}} M_2 \big)  =  Z(M_2)Z (M_1),
 \end{equation}
 where the cobordisms $M_1$ and $M_2$ are glued along $N_{2}$ by a
 certain diffeomorphism on $N_{2}$. This asserts that the linear maps
@@ -601,28 +616,28 @@ cutting and gluing the manifolds.
   \item Given $N=\emptyset$ as an empty $d$-dimensional manifold, then the
 associated vector space is one-dimensional:
 \begin{equation}
-  Z\left(\emptyset\right)  =  \mathbb{C}.
+  Z(\emptyset)  =  \mathbb{C}.
 \end{equation}
-This is a non-triviality condition. Therefore, for each ($d+1$)-dimensional
+This is a non-triviality condition. From this condition, for each $(d+1)$-dimensional
 manifold $M$ without boundary, $\partial M=\emptyset$, $Z$ assigns
 a number:
 \begin{equation}
-  Z\left(M\right)  \in  \mathbb{C}.
+  Z(M)  \in  \mathbb{C}.
 \end{equation}
- This number associated to a closed ($d+1$)-dimensional manifold
-is called the partition function. Not only is it an important quantity
+This number associated to a closed $(d+1)$-dimensional manifold
+is known as partition function. Not only is it an important quantity
 physically, but it also has mathematical applications, such as giving
 a topological invariant of the closed manifold $M$.
 \item Let $I$ be an interval, then for each cylinder $M=N\times I$, the
 linear map on $\mathcal{H}_{N}$ is trivial:
 \begin{equation}
-  Z\left(N\times I\right)  =  \mathrm{id}_{\mathcal{H}_{N}}.
+  Z(N\times I)  =  \mathrm{id}_{\mathcal{H}_{N}}.
 \end{equation}
- Since in a topological theory manifolds diffeomorphic to each other
+Since in a topological theory manifolds diffeomorphic to each other
 should be considered as the identical, each cobordism class defines
 a linear map. This means that the addition of a cylinder is a trivial
-operation, the associated linear map is the identity. This condition
-is another major difference from ordinary QFTs. For example, for ($2+1$)-dimensional
+operation; the associated linear map is the identity. This condition
+is another major difference from ordinary QFTs. For example, for $(2+1)$-dimensional
 Chern-Simons theory one can explicitly see its Hamiltonian is identically
 $0$ and hence the time evolution of Chern-Simons theory is trivial.
 \end{enumerate}
@@ -632,29 +647,29 @@ path integral expressions at the explanation of the physical meanings
 for some conditions, the axioms themselves are really the basis for
 the rigorous mathematical definition of $Z$. One can actually take
 an equivalent definition of TQFT in slightly different axioms. For
-more details, see the original paper by Atiyah.
+more details, see the original paper by Atiyah \cite{Atiyah:1989vu}.
 
 At first sight, this might look a little bit complicated and too abstract.
 This definition, however, is really natural and works quite well in
 a sense that it gives a kind of ``homomorphism'' between geometry
 and algebra:
-\[
-Z:\text{`geometry'}\longrightarrow\text{`algebra'}.
-\]
- In fact, all in all the axioms of Atiyah's TQFT define a functor
+\begin{equation*}
+  Z : \text{`geometry'} \longrightarrow \text{`algebra'}.
+\end{equation*}
+In fact, all in all the axioms of Atiyah's TQFT define a functor
 from the category of ($d+1$)-dimensional cobordisms to the category
 of finite-dimensional $\mathbb{C}$-vector spaces:%
 %
 \footnote{What is more, the category of cobordisms and the category of vector
 spaces are endowed with the product structures, that is, taking disjoint
 union and taking tensor product, which are really symmetric operations.
-As such, the functor between them is keeping such structures and then
+As such, TQFTs are keeping such structures and then
 called symmetric monoidal functor. }
 %
 \begin{equation}
   Z:\mathrm{Bord}_{d+1}  \longrightarrow  \mathrm{Vect}_{\mathbb{C}}.
 \end{equation}
- TQFT luckily has a mathematical precise definition. For a general
+TQFT luckily has a mathematical precise definition. For a general
 QFT, i.e.~not TQFT, in many cases there is no precise definition as
 we saw the examples of the construction of $Z$. However, a QFT is
 generically expected to be characterized by some functor from the
@@ -666,26 +681,28 @@ of physical states and observables.
 
 
 \subsection{Lattice model as discrete QFT}
+\label{sec:lattice_model}
 
 Now let us move on to the discussion on lattice model. First of all,
 let us begin with the question of ``what is lattice model?'' Probably
-there is no unique definition of lattice model. We here would like
+there is no unique definition of lattice model, though. We here would like
 to characterize lattice model by a discrete version of QFT. What we
-have learnt in the previous subsection is that a ($d+1$)-dimensional
+have learned in the previous subsection is that a $(d+1)$-dimensional
 QFT may be defined by an appropriate functor $Z_{\mathrm{Q}}^{d+1}$,
-which produces a number for each ($d+1$)-dimensional closed manifold
+which produces a number for each $(d+1)$-dimensional closed manifold
 $M$:
 \begin{equation}
-  Z_{\mathrm{Q}}^{d+1}\left(M\right)  \in  \mathbb{C},
+  Z_{\mathrm{Q}}^{d+1}(M)  \in  \mathbb{C},
 \end{equation}
- which is called the partition function of the model, and $Z_{\mathrm{Q}}^{d+1}$
+which is called the partition function of the model, and $Z_{\mathrm{Q}}^{d+1}$
 satisfies additional some reasonable conditions for each QFT of interest.
 
-We introduce lattice model in the same way. For a ($d+1$)-dimensional
-closed lattice $L$, a ($d+1$)-dimensional lattice model is defined
+We introduce lattice model in a same manner. For a $(d+1)$-dimensional
+closed lattice $L$, a $(d+1)$-dimensional lattice model is defined
 by $Z_{\mathrm{L}}^{d+1}$, which produces a number
 \begin{equation}
-  Z_{\mathrm{L}}^{d+1}\left(L\right)  \in  \mathbb{C},
+  Z_{\mathrm{L}}^{d+1}(L)  \in  \mathbb{C},
+\label{eq:lattice_Z}
 \end{equation}
 which is again called the partition function, and $Z_{\mathrm{L}}^{d+1}$
 satisfies additional some reasonable conditions. The most typical
@@ -697,17 +714,18 @@ on a computer, one needs to discretize the theory and put it on a
 lattice. In this sense, numerical analysis of field theory is always
 regarded as a lattice model. }
 %
- For such theories, it is really clear that the model is defined by
+For such theories, it is very clear that the model is defined by
 a discrete version of QFTs; One compactifies the spacetime manifold
 $\mathbb{R}^{4}$ to four-torus $T^{4}$, and then discretize the
 theory and put it on a lattice on the torus.
 
+In either case, therefore, ``to define a model'' means to specify $Z$.
 Throughout the paper, we will consider only $d=0$ or $1$ case of
-lattice model, and we call each case as 1d or 2d lattice model. To
+lattice model, and we refer each case as 1d or 2d lattice model. To
 prepare for the discussion of integrability, we take the prominent
 example of statistical lattice model called the Ising model. We first
 briefly review the generality of the Ising model and compare with
-field theory, and then introduce the transfer matrix which is essentially
+field theory, and then introduce transfer matrix which is essentially
 a time evolution operator in a discrete quantum system.
 
 
@@ -718,46 +736,47 @@ a time evolution operator in a discrete quantum system.
 
 The Ising model is a very good introduction to integrable lattice
 model. The 1d and 2d Ising model is known to be exactly solvable,
-whose meaning we will clarify in a moment, and it is called integrable.
+whose meaning we will clarify in a moment, and it is said to be integrable.
 To see the generality of the Ising model, we first define 2d lattice
 and spin configurations on it.
 
 Define a 2d periodic lattice on two-torus $T^{2}$ by
 \begin{align}
 L
-  & :=  \mathbb{Z}_{M}\times\mathbb{Z}_{N}  \nonumber \\
-  & =   \left\{ 1,\ldots,M\right\} \times\left\{ 1,\ldots,N\right\} .
+  & :=  \mathbb{Z}_{m}\times\mathbb{Z}_{n}  \nonumber \\
+  & =   \left\{ 1,\ldots,m\right\} \times\left\{ 1,\ldots,n\right\} .
 \end{align}
- A spin configuration on the lattice $L$ is defined by a map
+A spin configuration on the lattice $L$ is given by a map
 \begin{equation}
   \mathbf{s}  :  L  \longrightarrow  \left\{ +1,-1\right\} ,
 \end{equation}
-where usually $+1$ is called up spin and $-1$ down spin. The
-map defines up or down spin at each site of the lattice $L$. So it
+where usually $+1$ is called ``up spin'' and $-1$ ``down spin.'' The
+map defines a configuration of up and down spins at each site of the lattice $L$. So it
 can also be thought of as an assignment of $+1$ or $-1$ on all the
 sites of the lattice $L$. We often denote the spin at each site by
-its image $s_{I} := \mathbf{s}\left(I\right),\,I\in L$. Let $S\left(L\right)$
+its image $s_{I} := \mathbf{s}(I),\,I\in L$. Let $S(L)$
 be the set of all the spin configurations. Since spin configurations
-are defined on the $M\times N$ periodic lattice, the number of elements
-in $S\left(L\right)$ is $2^{MN}$. In other words, the number of
-all the allowed configurations of spins on the lattice $L$ is $2^{MN}$.
+are defined on the $m\times n$ periodic lattice, the number of elements
+in $S(L)$ is $2^{mn}$. In other words, the number of
+all the allowed configurations of spins on the lattice $L$ is $2^{mn}$.
 
-For each spin configuration $\mathbf{s}\in S\left(L\right)$, define
+For each spin configuration $\mathbf{s}\in S(L)$, define
 the energy functional of the Ising model by
 \begin{align}
-  E_{\mathrm{Ising}}\left(\mathbf{s}\right)
+  E_{\mathrm{Ising}}(\mathbf{s})
   & =   -J  \sum_{\left\langle I,I'\right\rangle } s_{I}s_{I'}  \nonumber \\
-  & :=  -J  \left( \sum_{i,j=1}^{M,N}s_{ij}s_{i,j+1}+\sum_{i,j}s_{ij}s_{i+1,j} \right),
+  & :=  -J  \left( \sum_{i,j=1}^{m,n}s_{ij}s_{i,j+1}+\sum_{i,j}s_{ij}s_{i+1,j} \right),
 \end{align}
- where the $s_{ij}=s_{i+M,j}=s_{i,j+N}$, and $J\in\mathbb{R}_{>0}$
+where the $s_{ij}=s_{i+m,j}=s_{i,j+n}$, and $J\in\mathbb{R}_{>0}$
 is a constant parameter. This is one of the simplest spin systems,
 in which only the nearest neighbor spins have interactions. From this
 energy functional, the partition function of the Ising model is defined
 by
 \begin{equation}
-  Z\left(L,E_{\mathrm{Ising}};\beta\right)  :=  \sum_{\mathbf{s}\in S\left(L\right)}  e^{-\beta E_{\mathrm{Ising}}\left(\mathbf{s}\right)},
+  Z\big(L,E_{\mathrm{Ising}};\beta\big)
+    :=  \sum_{\mathbf{s}\in S(L)}  e^{-\beta E_{\mathrm{Ising}}(\mathbf{s})},
 \end{equation}
- where $\beta\in\mathbb{R}_{\geq0}$ is an inverse temperature. The
+where $\beta\in\mathbb{R}_{\geq0}$ is an inverse temperature. The
 summand is generically called the Boltzmann weight as well as in field
 theory. In this expression, one recognizes that the right-hand side
 is a discrete version of path integral expression in field theory.
@@ -770,16 +789,16 @@ function of QFT which returns a number as well if a closed manifold
 $M$ is given. For later use, define another quantity called the free
 energy,
 \begin{equation}
-  f\left(\beta\right)  :=  -\frac{1}{\beta}\frac{1}{MN}\log Z\left(\beta\right),
+  f(\beta)  :=  -\frac{1}{\beta}\frac{1}{mn}\log Z(\beta),
 \end{equation}
- where $Z\left(\beta\right)$ is the partition function defined above.
+where $Z(\beta)$ is the partition function defined above.
 
 %\begin{comment}
-%Perhaps no need this part
+%Perhaps no need this part?
 %\end{comment}
-According to the general theory of statistical mechanics, the probability
-that a configuration $\mathbf{s}$ with energy $E\left(\mathbf{s}\right)$
-will be realized is given by the canonical ensemble%
+According to the general story of statistical mechanics, the probability
+that a configuration $\mathbf{s}$ with energy $E(\mathbf{s})$
+is realized is given by the canonical ensemble%
 %
 \footnote{To the end of this subsection, we argue for a general energy functional,
 but the reader may assume the Ising model. }
@@ -787,38 +806,39 @@ but the reader may assume the Ising model. }
 \begin{equation}
 p\left(\mathbf{s}\right)  =  \frac{1}{Z}e^{-\beta E\left(\mathbf{s}\right)},
 \end{equation}
- where $Z$ is the partition function introduced above. In lattice
-model, a physical observable is in general given by a functional on
+where $Z$ is the partition function of a statistical system. In a spin
+system, a physical observable is in general given by a functional on
 the space of spin configurations:
 \begin{equation}
-  \mathcal{O}  :  S\left(L\right)  \longrightarrow  \mathbb{R},
+  \mathcal{O}  :  S(L)  \longrightarrow  \mathbb{R},
 \end{equation}
 and its expectation value is given by the canonical ensemble as
 \begin{equation}
 \left\langle \mathcal{O}\right\rangle _{p}
-  :=\sum_{\mathbf{s}\in S\left(L\right)}\mathcal{O}\left(\mathbf{s}\right)p\left(\mathbf{s}\right)
-    =\frac{1}{Z}\sum_{\mathbf{s}\in S\left(L\right)}\mathcal{O}\left(\mathbf{s}\right)e^{-\beta E\left(\mathbf{s}\right)}.
+  :=\sum_{\mathbf{s}\in S(L)}\mathcal{O}(\mathbf{s})p(\mathbf{s})
+    =\frac{1}{Z}\sum_{\mathbf{s}\in S(L)}\mathcal{O}(\mathbf{s})e^{-\beta E(\mathbf{s})}.
 \end{equation}
- In particular, an energy functional is an example of physical observable,
+In particular, an energy functional is an example of physical observable,
 \begin{equation}
-\frac{1}{MN}\left\langle E\right\rangle _{p}
-  =\frac{1}{MN}\frac{1}{Z}\sum_{\mathbf{s}\in S\left(L\right)}E\left(\mathbf{s}\right)e^{-\beta E\left(\mathbf{s}\right)},
+\frac{1}{mn}\left\langle E\right\rangle _{p}
+  =\frac{1}{mn}\frac{1}{Z}\sum_{\mathbf{s}\in S(L)}E(\mathbf{s})e^{-\beta E(\mathbf{s})},
 \end{equation}
- which is obtained from the derivative of the free energy,
+which is obtained from the derivative of the free energy,
 \begin{equation}
-\frac{1}{MN}\left\langle E\right\rangle _{p}=\frac{\partial}{\partial\beta}\left(\beta f\left(\beta\right)\right).
+  \frac{1}{mn}\left\langle E\right\rangle _{p}
+    = \frac{\partial}{\partial\beta}\big(\beta f(\beta)\big).
 \end{equation}
 
 Generally speaking, the free energy provides us all the information
-of the system. For example, the state most likely to happen is given
-by the critical point of the free energy, and we can in principle
+of the system. For example, the state most likely to happen is governed
+by variational principle of the free energy, and we can in principle
 compute physical quantities such as expectation value of energy, fluctuation,
 specific heat, and so on. To make a lattice model as a physically
 meaningful system, however, one needs to take the thermodynamic limit;
-$M,N\rightarrow\infty$. Therefore, in this sense, integrability of
+$m,n\to\infty$. Therefore, in this sense, integrability of
 lattice model is characterized by the calculability of an exact free
-energy at the thermodynamic limit. This may be rephrased by the calculability
-of the partition function as well. Based on these argument, we shall
+energy at the thermodynamic limit. This may be rephrased as well by the calculability
+of the partition function. Based on these argument, we shall
 see the integrability of the Ising model in the next subsection.
 
 
@@ -836,7 +856,7 @@ transfer matrix. To see this, for simplicity in this section we consider
 The setup is almost the same as in the 2d case. A 1d lattice on torus
 and a spin configuration is defined by
 \begin{equation}
-L_{1d}  =  \mathbb{Z}_{N}  =  \left\{ 1,\ldots,N\right\} ,
+L_{1d}  =  \mathbb{Z}_{n}  =  \left\{ 1,\ldots,n\right\} ,
 \end{equation}
 %
 \begin{equation}
@@ -844,13 +864,13 @@ L_{1d}  =  \mathbb{Z}_{N}  =  \left\{ 1,\ldots,N\right\} ,
 \end{equation}
 Define the energy functional of 1d Ising model by
 \begin{equation}
-  E_{1d\,\mathrm{Ising}}\left(\mathbf{s}\right)  =  -J\sum_{i=1}^{N}s_{i}s_{i+1},\quad\,s_{N+1}=s_{1}.
+  E_{1d\,\mathrm{Ising}}(\mathbf{s})  =  -J\sum_{i=1}^{n}s_{i}s_{i+1},\quad\,s_{n+1}=s_{1}.
 \end{equation}
- Then the partition function of 1d Ising model is given as
+Then the partition function of 1d Ising model is given as
 \begin{align}
-  Z\left(L_{1d},E_{\mathrm{1d}};\beta\right)
-  & :=  \sum_{\mathbf{s}}  e^{-\beta E_{1d}\left(\mathbf{s}\right)}\nonumber \\
-  & =   \sum_{s_{1},\ldots,s_{N}=\pm1}  e^{Ks_{1}s_{N}}  \cdots  e^{Ks_{3}s_{2}}e^{Ks_{2}s_{1}},
+  Z\big(L_{1d},E_{\mathrm{1d}};\beta\big)
+  & :=  \sum_{\mathbf{s}}  e^{-\beta E_{1d}(\mathbf{s})}\nonumber \\
+  & =   \sum_{s_{1},\ldots,s_{n}=\pm1}  e^{Ks_{1}s_{n}}  \cdots  e^{Ks_{3}s_{2}}e^{Ks_{2}s_{1}},
 \end{align}
  where $K:=\beta J$.
 
@@ -895,12 +915,14 @@ Define the energy functional of 1d Ising model by
 
     \end{tikzpicture}
   }
-  \caption{(a) Classical Ising spin chain. (b) Quantum states at each site.}
-  \label{fig:1dIsing}
+  \caption{(a) Classical Ising spin chain. Spin variables $s_i$ take values in $\{ \pm1 \}$.
+  They are just $c$ numbers. (b) Quantum spins are vectors in $\C^2$ associated at each site.
+  The discrete time evolution of quantum spins is given by the transfer matrix.}
+  \label{fig:1d_Ising}
 \end{figure}
 
 
- Let us now introduce the \emph{transfer matrix},
+Now introduce the \emph{transfer matrix},
 \begin{equation}
   T  :=  \left(e^{Kss'}\right)_{s,s'=\pm1}
     =
@@ -909,26 +931,26 @@ Define the energy functional of 1d Ising model by
   e^{-K}  &  e^{K}
 \end{array}\right),
 \end{equation}
- where the indices of row and column are specified by $+1$ and $-1$,
+where the indices of row and column are labeled by $+1$ and $-1$,
 respectively. Using this matrix $T$, the partition function is rewritten
 as
 \begin{equation}
   Z\left(\beta\right)
-    =\sum_{s_{1},\ldots,s_{N}=\pm1}  T_{s_{1}s_{N}}  \cdots  T_{s_{3}s_{2}}T_{s_{2}s_{1}}.
+    =\sum_{s_{1},\ldots,s_{n}=\pm1}  T_{s_{1}s_{n}}  \cdots  T_{s_{3}s_{2}}T_{s_{2}s_{1}}.
 \end{equation}
- By definition of matrix multiplication, the partition function is
+By definition of matrix multiplication, the partition function is
 eventually given by a trace:
 \begin{align}
-  Z\left(\beta\right)
-  & =  \sum_{s_{1}=\pm1}\left(T^{N}\right)_{s_{1}s_{1}}  \nonumber \\
-  & =  \mathrm{Tr}_{\mathbb{C}^{2}}\left(T^{N}\right).
+  Z(\beta)
+  & =  \sum_{s_{1}=\pm1}\left(T^{n}\right)_{s_{1}s_{1}}  \nonumber \\
+  & =  \mathrm{Tr}_{\mathbb{C}^{2}}\left(T^{n}\right).
 \end{align}
- This expression tells us that we have the quantum Hilbert space $\mathbb{C}^{2}$
+This expression tells us that we have the quantum Hilbert space $\mathbb{C}^{2}$
 at the boundary of each 1d segment, and the transfer matrix $T$ sends
 a state to the adjacent site, which is the discrete ``time evolution''
 of this system; $\log T\propto$ Hamiltonian as we saw in 1d QFT in
-section (what is QFT?). This corresponds to the analogue of Hamiltonian
-or operator formalism in field theory. In operator formalism, spins
+section \ref{sec:what_is_qft}. This corresponds to the analogue of Hamiltonian/operator
+formalism in field theory. In operator formalism, spins
 are replaced by the Pauli matrices, and original classical up spin
 and down spin are replaced by the eigenvalues and eigenvectors of
 the Pauli matrix $\sigma^{z}$. Further, the non-commutativity is
@@ -936,22 +958,22 @@ now manifest in a way that the spins and their time evolution is given
 by matrices, this is the consequence of quantization.
 
 In the expression above of the partition function, let us consider
-the thermodynamic limit $N\rightarrow\infty$. The eigenvalues of
+the thermodynamic limit $n\to\infty$. The eigenvalues of
 $T$ are easily obtained and let them be $\lambda_{0}>\lambda_{1}$,
 then we have the free energy
 \begin{align}
--\beta f\left(\beta\right)
-  & =  \lim_{N\rightarrow\infty}\frac{1}{N}\log Z\left(\beta\right)\nonumber \\
-  & =  \lim_{N\rightarrow\infty}\frac{1}{N}\log\lambda_{0}\left(1+\left(\frac{\lambda_{1}}{\lambda_{0}}\right)^{N}\right)\nonumber \\
+-\beta f(\beta)
+  & =  \lim_{n\to\infty}\frac{1}{n}\log Z(\beta)\nonumber \\
+  & =  \lim_{n\to\infty}\frac{1}{n}\log\lambda_{0}\left(1+\left(\frac{\lambda_{1}}{\lambda_{0}}\right)^{n}\right)\nonumber \\
   & =  \log\lambda_{0}.
 \end{align}
- We conclude that the free energy in the thermodynamic limit is just
-given by the largest eigenvalue of the transfer matrix. Again, integrability
+We conclude that the free energy in the thermodynamic limit is just
+given by the largest eigenvalue of the transfer matrix. Finally, integrability
 of lattice model is rephrased as
 \begin{align*}
- &  \textrm{One can exatly find the eigenvalues of transfer matrix}\\
- &  \Rightarrow  \,  \textrm{Can exactly compute the free enrgy}\\
- &  \Rightarrow  \,  \textrm{The system is integrable. }
+  &  \textrm{One can exatly find the eigenvalues of transfer matrix.} \\
+  &  \Rightarrow  ~  \textrm{Can exactly compute the free enrgy.} \\
+  &  \Rightarrow  ~  \textrm{The system is exactly solvable.}
 \end{align*}
 
 The transfer matrices of 1d and 2d Ising model are diagonalizable
@@ -963,7 +985,7 @@ lattice model? This actually leads to the most fundamental answer
 to the question of ``what is integrable model.'' A canonical answer
 is \emph{Yang-Baxter equation}. When the Boltzmann weight with spectral
 parameters, which take values in a Riemann surface, satisfies the
-Yang-Baxter equation, the lattice model is integrable. We will give
+Yang-Baxter equation, the lattice model is integrable. We are going to give
 an explanation of this definition of integrability in next subsection
 in some detail, with its origin from TQFT with extra dimensions.
 
@@ -979,12 +1001,20 @@ in some detail, with its origin from TQFT with extra dimensions.
 
 
 
+
 \subsection{Integrability from TQFT in extra dimensions}
 
-In this section we provide a general discussion to relate four-dimensional
-supersymmetric gauge theories and integrable lattice models. We clarify
-that such a correspondence between gauge theories and lattice models
-emerges from a TQFT in extra dimensions. We first give a step-by-step
+So far, we have seen that a QFT is ideally given by some functor $Z$, and
+lattice model is also given by $Z$ as a discrete version of QFT.
+Now, we would like to relate these two. The key concept is that
+``line operators in 2d TQFT form a lattice model.''
+In particular, if the 2d TQFT has extra dimensions, a corresponding
+lattice model naturally turns out to be integrable.
+
+
+The purpose of this section is to provide a general discussion to relate four-dimensional
+supersymmetric gauge theories and integrable lattice models.
+We first give a step-by-step
 explanation from two-dimensional TQFT to integrable lattice model,
 and then put the argument in the setup of brane tilings. Branes in
 string theory are powerful enough to yield the systematic method to
@@ -993,6 +1023,10 @@ models, as we will see. To begin with, we present a general prescription
 of brane constructions at a formal level. Concrete setups and more
 details will be given in later sections.
 The discussion in this subsection is mainly based on \cite{Yagi:2016oum}.
+
+
+
+
 
 \subsubsection{Lattice models from TQFTs with line operators}
 
@@ -1005,9 +1039,10 @@ strategy is to break up the torus into pieces and perform in turn
 the path integral piecewise. Then the original correlation function
 is reconstructed by combining these pieces.%
 %
-\footnote{In the following, we will compute the correlation function by embedding
+\footnote{The original Atiyah's TQFT is actually called ``closed TQFT.''
+In the following, we will compute the correlation function by embedding
 the closed TQFT with line operators into an open/closed TQFT with
-line operators, or defect TQFT; see e.g.~\cite{Moore:2006dw,Carqueville:2016nqk}. }
+line operators, or so-called defect TQFT; see e.g.~\cite{Moore:2006dw,Carqueville:2016nqk}. }
 %
 
 Let us consider the following piece of surface which contains an intersection
@@ -1034,7 +1069,7 @@ of two line operators $\mathcal{L}_{i}$ and $\mathcal{L}_{j}$:
     \end{tikzpicture}
   \quad .
 \end{equation}
- If one thinks of the above picture as the world-sheet of two scattering
+If one thinks of the above picture as the world-sheet of two scattering
 open strings, one can regard the above picture as follows: The endpoints
 of the open strings sweep out the double-lined arcs, on which D-branes
 are there and the boundary conditions (Chan-Paton factors) are specified
@@ -1046,23 +1081,13 @@ of particles associated with the open strings.
 \begin{figure}
   \centering
   \subfloat[\label{fig:line_on_torus}]{
-    \begin{tikzpicture}[scale=1.2, bdy/.style={draw, color=red, double, fill=white, shape=circle}] %, baseline=(x.base)]
-%        \node (x) at (0,0) {\vphantom{x}};
+    \begin{tikzpicture}[scale=1.2, bdy/.style={draw, color=red, double, fill=white, shape=circle}] %, baseline=(x.base)]  \node (x) at (0,0) {\vphantom{x}};
         \def\width{3.1cm}
         \def\height{2.1cm}
 
         \filldraw[color=brown!40, semithick, fill=brown!10] (0,0) rectangle (\width,\height);
         \draw[thick, ->, black] (0.8,0) -- ++(0,\height);\draw[thick, ->, black] (1.8,0) -- ++(0,\height);\draw[thick, ->, black] (2.8,0) -- ++(0,\height);
         \draw[thick, ->, black] (0,0.8) -- ++(\width,0);\draw[thick, ->, black] (0,1.8) -- ++(\width,0);
-
-%        \node[bdy] (b1) at (0.3,0.3) {};
-%        \node[bdy] (b2) at (1.3,0.3) {};
-%        \node[bdy] (b3) at (2.3,0.3) {};
-%        \begin{scope}[yshift=1cm]
-%        \node[bdy] at (0.3,0.3) {};
-%        \node[bdy] at (1.3,0.3) {};
-%        \node[bdy] at (2.3,0.3) {};
-%        \end{scope}
 
     \end{tikzpicture}
   }
@@ -1125,14 +1150,15 @@ of particles associated with the open strings.
   }
   \caption{Construction of a lattice model from line operators.
     (a) A lattice of line operators on a torus.
-    (b) The torus with holes obtained by gluing of pieces.
+    (b) The torus with holes obtained by gluing the pieces.
     (c) The corresponding spin model. }
-  \label{fig:TQFTandSpin}
-
+  \label{fig:TQFT_and_Spin}
 \end{figure}
 
 
 The path integral for the piece \eqref{eq:piece_of_lines} produces a linear map
+(recall an important property of quantum mechanics \eqref{eq:qm_linearmap} and
+an assignment of TQFT)
 \begin{equation}
     \begin{tikzpicture}[scale=0.6, baseline=(x.base)]
         \node (x) at (0,0) {\vphantom{x}};
@@ -1165,12 +1191,11 @@ where $V_{ab,i}$ is the space of states of the open string propagating
 along $\mathcal{L}_{i}$ with the boundary conditions on the left
 and the right ends specified by $a,\,b$, respectively. We call this
 map the R-matrix (or R-operator) associated with this decorated surface.
-To reconstruct the original configuration of line operators, we glue
+To reconstruct the original configuration of line operators, we glue these
 pieces together. Gluing them amounts to the composition of R-matrices.
 For example, gluing two pieces horizontally gives
 \begin{equation}
-    \begin{tikzpicture}[scale=0.6, baseline=(x.base)]
-        \node (x) at (0,0) {\vphantom{x}};
+    \begin{tikzpicture}[scale=0.6, baseline=(x.base)]  \node (x) at (0,0) {\vphantom{x}};
 
         \draw[color=red!50, fill=brown!10] (-1,-1) rectangle (3,1);
         \draw[color=red!50, dotted] (1,-1) -- (1,1);
@@ -1183,9 +1208,9 @@ For example, gluing two pieces horizontally gives
         \draw[draw=red!50, double]  (1.5,-1) arc (0:180:0.5);
         \fill[color=white] (1,1) circle (0.5);  \node (d) at (1,1) {$d$};
         \draw[draw=red!50, double]  (1.5,1) arc (0:-180:0.5);
-        \fill[color=white] (3,-1) circle (0.5);  \node (e) at (3,-1) {$e$};
+        \fill[color=white] (3,-1) circle (0.5);  \node (f) at (3,-1) {$f$};
         \draw[draw=red!50, double]  (3,-0.5) arc (90:180:0.5);
-        \fill[color=white] (3,1) circle (0.5);  \node (f) at (3,1) {$f$};
+        \fill[color=white] (3,1) circle (0.5);  \node (e) at (3,1) {$e$};
         \draw[draw=red!50, double]  (3,0.5) arc (-90:-180:0.5);
 
         \draw[thick, ->] (-1,0) node[left] {$i$} -- (3,0);
@@ -1194,7 +1219,7 @@ For example, gluing two pieces horizontally gives
 
     \end{tikzpicture}
 %  \ =
-  \quad \rightsquigarrow \quad
+\quad \rightsquigarrow \quad
 R_{ik}\left(%
   \begin{array}{cc}
         d & e\\
@@ -1226,7 +1251,7 @@ a superposition of boundary states:
 \begin{equation}
   \left|1\right\rangle  =  \sum_{a\in B}c_{a}\left|a\right\rangle .
 \end{equation}
- Then, the sum over the boundary conditions gives the state $\left|1\right\rangle $
+Then, the sum over the boundary conditions gives the state $\left|1\right\rangle $
 on the boundary of each hole, which is replaced with a disk:
 \begin{equation}
   \sum_{a\in B}  c_a  \left(  ~  a  ~
@@ -1246,7 +1271,8 @@ on the boundary of each hole, which is replaced with a disk:
 
     \end{tikzpicture}
   \right)
-  =  \sum_{a\in B}  c_a  \left(  ~  \left|a\right\rangle  ~
+  =
+  \sum_{a\in B}  c_a  \left(  ~  \left|a\right\rangle  ~
     \begin{tikzpicture}[xscale=0.25, yscale=0.4, baseline=(x.base)]
         \node (x) at (0,0) {\vphantom{x}};
         \def\cylinderlength{2cm}
@@ -1263,7 +1289,8 @@ on the boundary of each hole, which is replaced with a disk:
 
     \end{tikzpicture}
   \right)
-    =  ~  \left|1\right\rangle  ~
+    =  ~
+    \left|1\right\rangle  ~
       \begin{tikzpicture}[xscale=0.25, yscale=0.4, baseline=(x.base)]
         \node (x) at (0,0) {\vphantom{x}};
         \def\cylinderlength{2cm}
@@ -1290,7 +1317,7 @@ on the boundary of each hole, which is replaced with a disk:
     \end{tikzpicture}
   \quad  .
 \end{equation}
- Thus the holes are filled and the original configuration on the torus
+Thus the holes are filled and the original configuration on the torus
 is reconstructed.
 
 Now that we have understood how to reconstruct the correlation function
@@ -1300,34 +1327,39 @@ the procedures so far, it is clear that the above configuration defines
 a partition function of a statistical spin model. The model has spins
 located at two kinds of sites, \tikz{\draw[thick, fill=white] (0,0) circle[radius=0.15cm]}
 and \tikz{\draw[semithick, double, fill=white] (0,0) circle[radius=0.14cm]}. They
-correspond to the open string states and the boundary states. A spin
+correspond to the open string states and the boundary states, see figure \ref{fig:spin_boundary}.
+A spin
 at \tikz{\draw[thick, fill=white] (0,0) circle[radius=0.15cm]} takes values in the chosen basis for the relevant open
 string states $V_{ab,i}$, while that at \tikz{\draw[semithick, double, fill=white] (0,0) circle[radius=0.14cm]} is valued
 in $B$. The Boltzmann weights for each spin configuration are given
 by the matrix elements of R-matrix and the coefficients of boundary
 states $c_{a}$. Thus, we conclude that the correlation function of
-line operators $\left\{ \mathcal{L}_{i}\right\} $ on the torus coincides
+line operators $\{ \mathcal{L}_{i}\} $ on the torus coincides
 with the partition function of a statistical spin model defined on
 the periodic lattice formed by the line operators:
 \begin{equation}
-  \left\langle \prod_{i=1}^{l}\mathcal{L}_{i}\left(C_{i}\right)\right\rangle_{\mathsf{T},T^{2}}
-    =Z_{\mathsf{L}\left(\mathsf{T}\right),\left\{ \mathcal{L}_{i}\left(C_{i}\right)\right\} }.
+  \left\langle  \prod_{i=1}^{l}\mathcal{L}_{i}[C_i]  \right\rangle_{\mathsf{T},T^{2}}
+    =
+      Z_{\mathsf{L}(\mathsf{T})} \big( \{ \mathcal{L}_{i}[C_i]\} \big).
 \end{equation}
-$\mathsf{L}\left(\mathsf{T}\right)$ denotes the lattice model arising
-from the TQFT $\mathsf{T}$ with the line operators and $\left\{ \mathcal{L}_{i}\left(C_{i}\right)\right\} $
+$\mathsf{L}(\mathsf{T})$ denotes the lattice model arising
+from the TQFT $\mathsf{T}$ with the line operators and $\{ \mathcal{L}_{i}[C_i]\} $
 is the lattice formed by line operators $\mathcal{L}_{i}$ wrapping
-around $C_{i}$. By this construction, we can view typical examples
+around $C_{i}$.
+In other words, the partition function of lattice model \eqref{eq:lattice_Z}
+is in this case defined by the lattice $\{ \mathcal{L}_{i}[C_i]\} $, and specified by the left-hand side.
+By this construction, we can view typical examples
 of lattice models.
 
 \subsubsection*{IRF model}
 
 If $\dim V_{ab,i}=1$ for any $a,\,b,\,i$, in this case we can ignore
 the spins at \tikz{\draw[thick, fill=white] (0,0) circle[radius=0.15cm]}. We just sum over the boundary conditions
-and such a spin system $\mathsf{L}\left(\mathsf{T}\right)$ is called
+and such a spin system $\mathsf{L}(\mathsf{T})$ is called
 \emph{interaction-round-a-face model}, or \emph{IRF model} for short.
 The spins are placed on the faces of the lattice, and interaction
 takes place among four spins surrounding a vertex. The 2d Ising model
-actually can be formulated as an IRF model by taking vertex-face correspondence.
+actually can be formulated as an IRF model by taking vertex-face transformation.
 
 
 \subsubsection*{Vertex model}
@@ -1348,7 +1380,8 @@ the R-matrix is represented only by a crossing of two lines:
   \quad ,
 \end{equation}
 \begin{equation}
-  R_{ij}  :  V_{i}\otimes V_{j}  \longrightarrow  V_{j}\otimes V_{i} \, .
+  R_{ij}  :  V_{i}\otimes V_{j}  \longrightarrow  V_{j}\otimes V_{i}
+  ~ .
 \end{equation}
 The space of states $V_{i}$ can also be thought of as the Hilbert
 space of a particle propagating on the line operator $\mathcal{L}_{i}$.
@@ -1390,50 +1423,36 @@ matrix:
         \draw[thick, ->] (2.7,-0.4) node[below] {$n$} -- (2.7, 0.6);
 
     \end{tikzpicture}
-%    \begin{tikzpicture}[yscale=0.8, baseline=(x.base)]
-%    \node (x) at (0,0) {\vphantom{x}};
-%
-%    \draw[thick] (0,0.2) to [out=180, in=180] (0,0);
-%    \draw[thick, ->-=0.35] (0,0) node[left] {$i\,$} -- (1.2,0)  (2.0,0) -- (2.6,0);
-%    \draw[thick, loosely dotted] (1.2,0) -- (2.0,0);
-%    \draw[thick] (2.6,0) to [out=0, in=0] (2.6,0.2);
-%
-%    \draw[thick, ->] (0.2,-0.4) node[below] {$1$} -- (0.2, 0.6);
-%    \draw[thick, ->] (0.8,-0.4) node[below] {$2$} -- (0.8, 0.6);
-%    \draw[thick, ->] (2.4,-0.4) node[below] {$n$} -- (2.4, 0.6);
-%
-%    \end{tikzpicture}
   \ =
   \mathrm{Tr}_{V_{i}}\left(R_{i,n}\circ_{V_{i}}\cdots\circ_{V_{i}}R_{i,1}\right).
 \end{equation}
- The hooks on the horizontal line are to remind us that the periodic
+The hooks on the horizontal line are to remind us that the periodic
 boundary condition is imposed. This gives an endomorphism of $\bigotimes_{j=1}^{n}V_{j}$
 which maps a state just below $\mathcal{L}_{j}$ to another state
-above it, namely the transfer matrix defines the time evolution of
-this spin system and $\bigotimes_{j=1}^{n}V_{j}$ is the quantum Hilbert
+above it, namely the transfer matrix defines the discrete time evolution of
+this spin system and $\mathcal{H}:=\bigotimes_{j=1}^{n}V_{j}$ is the total quantum Hilbert
 space. In terms of transfer matrices, the partition function is written
 as a trace,
 \begin{equation}
-  Z_{\mathsf{L}\left(\mathsf{T}\right),\left\{ \mathcal{L}_{i}\left(C_{i}\right)\right\} }
-  =\mathrm{Tr}_{\mathcal{H}}\left(T_{n+m}\cdots T_{n+1}\right),
+  Z_{\mathsf{L}(\mathsf{T})} \big( \{ \mathcal{L}_{i}[C_i]\}  \big)
+  =\mathrm{Tr}_{\mathcal{H}}\left(T_{n+m}\cdots T_{n+1}\right).
 \end{equation}
- where the trace is taken over the total Hilbert space $\mathcal{H}:=\bigotimes_{j=1}^{n}V_{j}$.
 An important point is that the underlying field theory is a TQFT,
 and hence a state evolves trivially on a cylinder unless it hits something,
 line operators in the present case.
 
 Now suppose that each line operator depends on a continuous parameter
 which is an element of some smooth manifold $S$. This parameter is
-called \emph{spectral parameter} of the lattice model. We denote the
-spectral parameter of $\mathcal{L}_{i}$ by $u_{i}$, then the R-matrix
+called \emph{spectral parameter} of the lattice model. Let $u_{i}$ be the
+spectral parameter of $\mathcal{L}_{i}$, then the R-matrix
 and the transfer matrix are rewritten by
 \begin{align}
-  R_{ij}    &    \longrightarrow R_{ij}\left(u_{i},u_{j}\right),  \\
-  T_{i}     &    \longrightarrow T_{i}\left(u_{i};u_{1},\ldots,u_{n}\right).
+  R_{ij}  &  \longrightarrow R_{ij}(u_{i},u_{j}),  \\
+  T_{i}   &  \longrightarrow T_{i}(u_{i};u_{1},\ldots,u_{n}).
 \end{align}
- To avoid clutter, we fix $u_{1},\ldots,u_{n}$ and suppress them
+To avoid clutter, we fix $u_{1},\ldots,u_{n}$ and suppress them
 below. A vertex model is said to be integrable if the transfer matrices
-$T_{i}\left(u_{i}\right)$ are meromorphic functions of $u_{i}$ and
+$T_{i}(u_{i})$ are meromorphic functions of $u_{i}$ and
 commute with each other:
 \begin{equation}
     \begin{tikzpicture}[xscale=0.8, yscale=0.6, baseline=(x.base)]
@@ -1478,37 +1497,38 @@ commute with each other:
 %\end{equation}
 %\begin{equation}
 ~ \Longleftrightarrow ~
-\left[T_{i}\left(u_{i}\right) , T_{j}\left(u_{j}\right)\right]
+\left[T_{i}(u_{i}) , T_{j}(u_{j})\right]
   =  0,\quad u_{i}\neq u_{j}.
+\label{eq:commutingT}
 \end{equation}
- When the transfer matrices with different spectral parameters commute,
+When the transfer matrices with different spectral parameters commute,
 we can find a series of mutually commuting operators on the total
 Hilbert space $\bigotimes_{j=1}^{n}V_{j}$ by Laurent expansion of
 the transfer matrix. In particular, they commute with the transfer
-matrix, which means they produce an infinite number of conserved quantities.
+matrix itself, which means they produce an infinite number of conserved quantities.
 In fact, the commutativity of transfer matrix implies that one can
 find the exact eigenvalues and eigenvectors of the transfer matrix,
-as we saw in the Ising model in the previous section.
+which was the underlying reason of integrability of the Ising model.
 
 The situation considered here, namely the addition of spectral parameters
 and commuting transfer matrix, is naturally realized if the TQFT has
 ``extra dimensions.'' In this scenario, we really start with a higher-dimensional
 theory $\tilde{\mathsf{T}}$ formulated on the product space $S\times T^{2}$,
 which is topological on the torus $T^{2}$ but not on $S$. We wrap
-line operators $\mathcal{L}_{i}$ around $\left\{ u_{i}\right\} \times C_{i}$,
+line operators $\mathcal{L}_{i}$ around $\{ u_{i}\} \times C_{i}$,
 where $u_{i}$ are points on $S$. If one can see only the torus $T^{2}$
 and is unaware of the extra dimensions $S$, the theory seems to be
-the previous two-dimensional TQFT $\mathsf{T}\cong\tilde{\mathsf{T}}\left[S\right]$
+the previous two-dimensional TQFT $\mathsf{T}\cong\tilde{\mathsf{T}}[S]$
 that has parameters taking values in $S$. One finds that line operators
-$\mathcal{L}_{i}\left[u_{i}\right]$ wrapping around $C_{i}$ carry
+$\mathcal{L}_{i}(u_{i})$ wrapping around $C_{i}$ carry
 continuous parameters $u_{i}$ in the seemingly two-dimensional theory,
 and the correlation function for this configuration of line operators
-is given by the partition function of a lattice model $\mathsf{L}\left(\tilde{\mathsf{T}}\left[S\right]\right)$
-defined on the lattice $\left\{ \mathcal{L}_{i}\left[u_{i}\right]\left(C_{i}\right)\right\} $.
+is given by the partition function of a lattice model $\mathsf{L}\big(\tilde{\mathsf{T}}[S]\big)$
+defined on the lattice $\left\{ \mathcal{L}_{i}(u_{i})[C_i]\right\} $.
 
-For a generic choice of $\left\{ u_{i}\right\} $, the transfer matrices
-of the lattice model $\mathsf{L}\left(\tilde{\mathsf{T}}\left[S\right]\right)$
-commute since the two horizontal line operators in the above equation
+For a generic choice of $\{ u_{i}\} $, the transfer matrices
+of the lattice model $\mathsf{L}\big(\tilde{\mathsf{T}}[S]\big)$
+commute since the two horizontal line operators such as equation \eqref{eq:commutingT}
 can move freely and interchange their positions owing to the topological
 nature along $T^{2}$; no phase transition occurs when they pass each
 other as they do not meet in the full spacetime $S\times T^{2}$.
@@ -1535,9 +1555,9 @@ the same logic, we have the unitarity relation
     \end{tikzpicture}
 \end{equation}
 \begin{equation}
-   \Longleftrightarrow ~ R_{ji}\left(u_{j},u_{i}\right)R_{ij}\left(u_{i},u_{j}\right)  =  \mathrm{id}_{V_{i}\otimes V_{j}},
+    \Longleftrightarrow ~ R_{ji}(u_{j},u_{i})R_{ij}(u_{i},u_{j})  =  \mathrm{id}_{V_{i}\otimes V_{j}},
 \end{equation}
- and the Yang-Baxter equation
+and the Yang-Baxter equation
 \begin{equation}
     \begin{tikzpicture}[scale=0.5, baseline=(x.base)]
         \node (x) at (30:2) {};
@@ -1558,55 +1578,71 @@ the same logic, we have the unitarity relation
     \end{tikzpicture}
 \end{equation}
 \begin{equation}
-   \Longleftrightarrow ~ R_{ij}\left(u_{i},u_{j}\right)R_{ik}\left(u_{i},u_{k}\right)R_{jk}\left(u_{j},u_{k}\right)
-    =  R_{jk}\left(u_{j},u_{k}\right)R_{ik}\left(u_{i},u_{k}\right)R_{ij}\left(u_{i},u_{j}\right) \, ,
+  \Longleftrightarrow ~ R_{ij}(u_{i},u_{j})R_{ik}(u_{i},u_{k})R_{jk}(u_{j},u_{k})
+    =  R_{jk}(u_{j},u_{k})R_{ik}(u_{i},u_{k})R_{ij}(u_{i},u_{j})
+    ~ ,
 \end{equation}
- where the R-matrix $R_{ij}$ acts on $V_{i}\otimes V_{j}$ as an
+where the R-matrix $R_{ij}$ acts on $V_{i}\otimes V_{j}$ as an
 intertwiner and trivial on $V_{k}$, etc. From these two relations
 we can reproduce the commutativity of the transfer matrix. We should
 emphasize that the Yang-Baxter equation is a local condition. When
 the Boltzmann weight locally satisfies the Yang-Baxter equation, it
-extends to the commutativity of the transfer matrix and hence the
+extends to the commutativity of the transfer matrix and hence to the
 integrability of the model. In this sense, the Yang-Baxter equation
 is the fundamental condition of integrability of a lattice model.
 
 
 %No need to introduce Sigma?
-Before going into the discussion of brane construction, we would like
-to generalize the above arguments further higher-dimensional situations.
+Before getting into the discussion of brane construction, we would like
+to generalize the above arguments to further higher-dimensional situations.
 First of all, replace the two-torus $T^{2}$ with a general two-dimensional
 surface $\Sigma$, along which line operators are wrapped. We now
 have $S\times\Sigma$, and similarly to the above a lattice model
 is defined on $\Sigma$ by line operators with spectral parameters.
 Let us consider the case that we really have more extra dimensions
-and a higher-dimensional theory is formulated on $S\times M\times\Sigma$
-, where $M$ is some smooth manifold. The line operators we had may
+and a higher-dimensional theory is formulated on $S\times M\times\Sigma$,%
+\footnote{Manifolds $M,\, N$ in this subsection are not necessarily the same as ones appeared in
+previous subsections.}
+%
+where $M$ is some smooth manifold. In such a case, the line operators we had may
 descend from extended operators of dimension greater than one. Let
 $\mathsf{T}$ again be the new higher-dimensional theory, and suppose
 that it is topological on $\Sigma$ and has extended operators $\mathcal{E}_{i}$
 whose codimension is greater than $\dim S$. Place $\mathcal{E}_{i}$
-on submanifolds of the form $\left\{ u_{i}\right\} \times N_{i}\times C_{i}$.
-Since $\mathsf{T}\left[S\times M\right]$ is again regarded as a two-dimensional
+on submanifolds of the form $\{ u_{i}\} \times N_{i}\times C_{i}$.
+Since $\mathsf{T}[S\times M]$ is again regarded as a two-dimensional
 TQFT defined on $\Sigma$, the correlation function of the operators
-$\mathcal{E}_{i}$ still should coincides with the partition function
-of an integrable lattice model $\mathsf{L}\left(\mathsf{T}\left[S\times M\right]\right)$.
-The model is defined on the lattice formed by the line operators $\mathcal{E}_{i}\left[\left\{ u_{i}\right\} \times N_{i}\right]$,
+$\mathcal{E}_{i}$ in the full theory $\mathsf{T}$ still should coincide with the partition function
+of an integrable lattice model $\mathsf{L}\big(\mathsf{T}[S\times M]\big)$.
+The model is now defined on the lattice formed by the line operators
+$\mathcal{E}_{i}\big(u_{i}; N_{i}\big)[C_i]$ winding along one-cycles $C_i$ on $\Sigma$,
 which are the image of $\mathcal{E}_{i}$ in the two-dimensional theory
-$\mathsf{T}\left[S\times M\right]$.
+$\mathsf{T}[S\times M]$.
 
 As well as we can view the higher-dimensional theory as a two-dimensional
-TQFT, we may also view it as a theory $\mathsf{T}\left[\Sigma\right]$,
+TQFT, we may also view it as a theory $\mathsf{T}[\Sigma]$,
 which is a QFT on $S\times M$ specified by the surface $\Sigma$.
 In this theory, the operators $\mathcal{E}_{i}$ are seen as extended
-operators $\mathcal{E}_{i}\left[C_{i}\right]$ supported on $\left\{ u_{i}\right\} \times N_{i}$.
+operators $\mathcal{E}_{i}\big(C_{i}\big)$ supported on $\left\{ u_{i}\right\} \times N_{i}$.
 Then, we have another relation
 \begin{equation}
-  \left\langle \prod_{i=1}^{l}\mathcal{E}_{i}\left[C_{i}\right]\left(\left\{ u_{i}\right\} \times N_{i}\right)\right\rangle_{\mathsf{T}\left[\Sigma\right],S\times M}
-    =Z_{\mathsf{L}\left(\mathsf{T}\left[S\times M\right]\right),\left\{ \mathcal{E}_{i}\left[\left\{ u_{i}\right\} \times N_{i}\right]\left(C_{i}\right)\right\} }.
+  \left\langle
+    \prod_{i=1}^{l} \mathcal{E}_{i}\big(C_{i}\big)
+    \big[\left\{ u_{i}\right\} \times N_{i}\big]
+      \right\rangle_{\mathsf{T}\left[\Sigma\right],S\times M}
+    =
+      Z_{\mathsf{L}(\mathsf{T}[S\times M])}
+        \big(\left\{ \mathcal{E}_{i}\big(u_{i}; N_{i}\big)[C_i]\right\})
+    .
+  \label{eq:correspondence_0}
 \end{equation}
- Thus, we finally arrive at a correspondence between a QFT on $S\times M$
+Thus, we finally arrive at a correspondence between a QFT on $S\times M$
 equipped with extended operators and an integrable lattice model on
 $\Sigma$.
+
+
+
+
 
 \subsubsection{Brane construction and correspondence}
 
@@ -1614,23 +1650,23 @@ We have seen above that a lattice model is realized by a lattice of
 line operators in a two-dimensional TQFT, and it is integrable if
 the TQFT is embedded in higher dimensions and the line operators come
 from extended operators localized in some directions of the extra
-dimensions. Now we explain how to get such structures of correspondence
-of (previous equation) using branes in string theory. The brane construction
+dimensions. Now we are ready to explain how to get such structures of correspondence
+\eqref{eq:correspondence_0} using branes in string theory. The brane construction
 here is still rather abstract. A little bit more concrete setups will
-be given in next section. The readers may skip this subsection for
+be given in next section. The reader may skip this subsection for
 the first reading and jump to the next section.
 
 Consider a type II string theory in a ten-dimensional spacetime
 \begin{equation}
   \mathbb{R}^{4}  \times  T^{*}\Sigma  \times  \mathbb{R}^{2},
 \end{equation}
- where $\Sigma$ is a two-dimensional surface embedded in $T^{*}\Sigma$
+where $\Sigma$ is a two-dimensional surface embedded in $T^{*}\Sigma$
 as a zero section. Introduce a stack of $N$ NS5-branes supported
-on $\mathbb{R}^{4}\times\Sigma\times\left\{ 0\right\} $ in this spacetime,
-and D$p$-branes D$p_{i}$ on $\mathbb{R}^{p-1}\times\Sigma_{i}\times\left\{ 0\right\} $
+on $\mathbb{R}^{4}\times\Sigma\times \{ 0\} $ in this spacetime,
+and D$p$-branes D$p_{i}$ on $\mathbb{R}^{p-1}\times\Sigma_{i}\times \{ 0\} $
 ending on the NS5-branes, where $\mathbb{R}^{p-1}$ is a subspace
 of $\mathbb{R}^{4}$ (assuming $p\leq5$) and $\Sigma_{i}$ are surfaces
-in $T^{*}\Sigma$ such that $\Sigma_{i}\cap\Sigma=C_{i}$. See figure \ref{fig:Dp_on_NS5}.
+in $T^{*}\Sigma$ such that $\Sigma_{i}\cap\Sigma=C_{i}$; see figure \ref{fig:Dp_on_NS5}.
 Provided that $\Sigma_{i}$ are suitably chosen, this brane system
 preserves four supercharges.
 
@@ -1643,12 +1679,12 @@ preserves four supercharges.
 
         \filldraw[fill=olive!5, xshift=0.2cm, yshift=0.2cm] (0,0) rectangle (-3,2);
         \filldraw[fill=olive!5, xshift=0.1cm, yshift=0.1cm] (0,0) rectangle (-3,2);
-        \filldraw[fill=olive!5] (0,0) rectangle (-3,2) node[below left] {\normalsize NS5};
+        \filldraw[fill=olive!5] (0,0) rectangle (-3,2) node[below left] {\small NS5};
 
-        \filldraw[semithick, fill=yellow!40,] (-1.5,0) -- ++(0,2) -- ++(225:1.5) -- ++(0,-2) node[above left] {\normalsize D$p_{i}$} -- cycle;
+        \filldraw[semithick, fill=yellow!40] (-1.5,0) -- ++(0,2) -- ++(225:1.5) -- ++(0,-2) node[above left] {\small D$p_{i}$} -- cycle;
 
-        \filldraw[color=olive!80, fill=olive!5] (2,0) rectangle (5,2) node[color=black, below left] {\normalsize $\Sigma$};
-        \draw[semithick] (3.5,0) node[below] {\normalsize $C_i$} -- ++(0,2);
+        \filldraw[color=olive!80, fill=olive!5] (2,2) node[color=black, below right] {\small $\Sigma$} rectangle (5,0);
+        \draw[semithick] (3.5,0) node[below] {\small $C_i$} -- ++(0,2);
 
     \end{tikzpicture}
 
@@ -1662,22 +1698,22 @@ theory $\mathsf{T}_{\mathrm{NS5}}$ on $\mathbb{R}^{4}\times\Sigma$.
 The theory $\mathsf{T}_{\mathrm{NS5}}$ is depending on whether IIA
 or IIB theory we are considering:
 \begin{align*}
-  \textrm{IIA : }    &  \textrm{\ensuremath{\mathcal{N}  =  \left(2,0\right)} superconformal QFT of type \ensuremath{A_{N-1}}},  \\
-  \textrm{IIB : }    &  \textrm{\ensuremath{\mathcal{N}  =  \left(1,1\right)}   super Yang-Mills theory with gauge group SU\ensuremath{\left(N\right)}}.
+  \textrm{IIA : }  &  \mathcal{N} = (2,0)  \text{ superconformal QFT of type } A_{N-1},  \\
+  \textrm{IIB : }  &  \mathcal{N} = (1,1)  \text{ super Yang-Mills theory with gauge group } \SU(N).
 \end{align*}
- The theory $\mathsf{T}_{\mathrm{NS5}}$ is formulated on $\mathbb{R}^{4}\times\Sigma$,
+The theory $\mathsf{T}_{\mathrm{NS5}}$ is formulated on $\mathbb{R}^{4}\times\Sigma$,
 with topological twist along $\Sigma$ which breaks half of sixteen
 supercharges. In this twisted theory, D$p_{i}$ create $p$-dimensional
 defects $\mathcal{E}_{\mathrm{D}p_{i}}$ on $\mathbb{R}^{p-1}\times C_{i}$,
 reducing the number of unbroken supercharges to four. From the point
 of view of a four-dimensional observer, this brane configuration gives
-half-BPS defects $\mathcal{E}_{\mathrm{D}p_{i}}\left[C_{i}\right]$
-in an $\mathcal{N}=2$ theory $\mathsf{T}_{\mathrm{NS5}}\left[\Sigma\right]$.
-The total system is invariant under a U($1$) R-symmetry originating
+half-BPS defects $\mathcal{E}_{\mathrm{D}p_{i}}(C_{i})$
+in an $\mathcal{N}=2$ theory $\mathsf{T}_{\mathrm{NS5}}[\Sigma]$.
+The total system is invariant under a $\U(1)$ R-symmetry originating
 from the rotational symmetry on the $\mathbb{R}^{2}$ factor of the
 ten-dimensional spacetime.
 
-Let us take a three-manifold $M$ and ($p-2$)-submanifolds $N_{i}$
+Let us take a three-manifold $M$ and $(p-2)$-submanifolds $N_{i}$
 of $M$, and modify the above construction so that the world-volumes
 of the NS5-branes and the D$p$-branes become $S^{1}\times M\times\Sigma$
 and $S^{1}\times N_{i}\times\Sigma_{i}$, respectively. At low energies,
@@ -1687,39 +1723,45 @@ located on $S^{1}\times N_{i}\times C_{i}$. In general, this modification
 completely breaks supersymmetry. For certain choices of $M$ and $N_{i}$,
 however, there is a string background in which a fraction of supersymmetry
 is still preserved. In such a background, the path integral computes
-the \emph{supersymmetric index} of $\mathsf{T}_{\mathrm{NS5}}$, defined
-with respect to the Hilbert space on $M\times\Sigma$ in the presence
-of defects $\mathcal{E}_{\mathrm{D}p_{i}}$ inserted on $N_{i}\times C_{i}$.
+the twisted partition function, or \emph{supersymmetric index} of $\mathsf{T}_{\mathrm{NS5}}$,
+defined by a trace with respect to the Hilbert space on $M\times\Sigma$ in the presence
+of defects $\mathcal{E}_{\mathrm{D}p_{i}}$ inserted on $N_{i}\times C_{i}$
+(recall that for a closed manifold with thermal circle, QFT produces a number represented as a trace,
+such as \eqref{eq:qm_number}).
 
 A salient feature of supersymmetric indices is that they are protected
 against continuous changes of various parameters of the theory. This
 means that the index of our theory is invariant under deformations
-of the geometric data of $\Sigma$ and $C_{i}$, namely the metric
+of the geometric data of $\Sigma$ and $C_{i}$, such as the metric
 on $\Sigma$ and the shapes of $C_{i}$. In other words, the theory
 $\mathsf{T}_{\mathrm{NS5}}$ on $S^{1}\times M\times\Sigma$ is topological
 on $\Sigma$, as far as the computation of the index is concerned.
 
-To relate the present setup to the one considered in the previous
-subsection, we apply T-duality along $S^{1}$. It turns D$p_{i}$
-into D$\left(p-1\right)$-branes D$\left(p-1\right)_{i}$, localized
+To relate the present setup to the the previous situation \eqref{eq:correspondence_0},
+we apply T-duality along the circle $S^{1}$. It turns D$p_{i}$
+into D$(p-1)$-branes D$(p-1)_{i}$, localized
 at points $u_{i}$ along the dual circle $\tilde{S}^{1}$, while sending
 the NS5-branes to those in the other type II string theory. The new
 NS5-branes produce the dual six-dimensional theory $\tilde{\mathsf{T}}_{\mathrm{NS5}}$
-on $\tilde{S}^{1}\times M\times\Sigma$, and in this theory D$\left(p-1\right)_{i}$
-create ($p-1$)-dimensional defects $\mathcal{E}_{\mathrm{D}\left(p-1\right)_{i}}$
-on $\left\{ u_{i}\right\} \times N_{i}\times C_{i}$. Thus we are
-in the situation studied in the last subsection, and the correlation
-function for this configuration coincides with the partition function
+on $\tilde{S}^{1}\times M\times\Sigma$, and in this theory D$(p-1)_{i}$
+create $(p-1)$-dimensional defects $\mathcal{E}_{\mathrm{D}(p-1)_{i}}$
+on $\{ u_{i}\} \times N_{i}\times C_{i}$. Thus we are
+in the situation studied before, and the correlation function of $\mathcal{E}_{\mathrm{D}(p-1)_{i}}$
+for this configuration coincides with the partition function
 of an integrable lattice model:
 \begin{equation}
-  \left\langle \prod_{i=1}^{l}\mathcal{E}_{\mathrm{D}p_{i}}\left[C_{i}\right]\left(S^{1}\times N_{i}\right)\right\rangle_{\mathsf{T}_{\mathrm{NS5}}\left[\Sigma\right],S^{1}\times M}
-  =Z_{\mathsf{L}\left(\tilde{\mathsf{T}}_{\mathrm{NS5}}\left[\tilde{S}^{1}\times M\right]\right),\left\{ \mathcal{E}_{\mathrm{D}\left(p-1\right)_{i}}\left[\left\{ u_{i}\right\} \times N_{i}\right]\left(C_{i}\right)\right\} }.
+  \left\langle
+    \prod_{i=1}^l \mathcal{E}_{\mathrm{D}p_i}(C_i) \big[S^1 \times N_i\big]
+      \right\rangle_{\mathsf{T}_{\mathrm{NS5}}[\Sigma],S^{1}\times M}
+    =
+      Z_{\mathsf{L}\big(\tilde{\mathsf{T}}_{\mathrm{NS5}}\big[\tilde{S}^{1}\times M\big]\big)}
+      \big( \left\{ \mathcal{E}_{\mathrm{D}(p-1)_i} \big(u_i; N_i\big) [C_i]\right\} \big).
 \end{equation}
- Here the left-hand side is expressed in the original frame; it implicitly
-depends on each spectral parameter $u_{i}$ through the holonomy $\exp\left(2\pi\mathrm{i}u_{i}\right)$
+Here the left-hand side is expressed in the original frame; it implicitly
+depends on each spectral parameter $u_{i}$ through the holonomy $\exp(2\pi\mathrm{i}u_{i})$
 around $S^{1}$ of the gauge field for the flavor symmetry U$(1)_{i}$
 supported on D$p_{i}$. The holonomy appears in the index as a refinement
-parameter, or \emph{fugacity}, associated with U$(1)_{i}$.
+parameter, or called \emph{fugacity}, associated with $\U(1)_i$.
 
 
 
@@ -1727,10 +1769,10 @@ parameter, or \emph{fugacity}, associated with U$(1)_{i}$.
 
 \subsubsection{Defects as transfer matrices}
 
-Finally, we apply the construction developed in the precious subsections
-to the main theme of this paper; integrable lattice models and defects
-as transfer matrices. Let us consider $p=5$ case of the brane construction
-in the last subsection. To conform with the standard convention, take
+Finally, we apply the construction developed so far
+to the main theme of this paper: integrable lattice models and defects
+as transfer matrices. Let us consider the brane construction for $p=5$ case.
+To conform with the standard convention, take
 S-duality first and we still have D5- and NS5-branes
 \begin{align*}
   N  \,  \mathrm{D5}   &  \quad S^{1}  \times  M  \times  \Sigma,  \\
@@ -1742,32 +1784,35 @@ on $S^{1}\times N_{i}\times C_{i}$.
 One should notice that in this setup we necessarily have $N_{i}=M$
 and thus the defects $\mathcal{E}_{\mathrm{NS}5_{i}}$ fill the whole
 $S^{1}\times M$, which produces a four-dimensional theory
-\[
-\mathsf{T}_{\mathrm{D5NS5}}\left[\Sigma\right]
-\]
+\begin{equation*}
+  \mathsf{T}_{\mathrm{D5NS5}}[\Sigma]
+\end{equation*}
 with $\mathcal{N}=1$ supersymmetry. Then we now have
 \begin{equation}
-  \left\langle  1  \right\rangle_{\mathsf{T}_{\mathrm{D5NS5}}\left[\Sigma\right], S^{1}\times M}
-    =Z_{\mathsf{L}\left(\mathsf{T}_{\mathrm{D5NS5}}\left[S^{1}\times M\right]\right),\left\{ \mathcal{E}_{i}\left[S^{1}\times M\right]\left(C_{i}\right)\right\} }.
+  \left\langle  1  \right\rangle_{\mathsf{T}_{\mathrm{D5NS5}}[\Sigma], S^{1}\times M}
+    =Z_{\mathsf{L}\big(\mathsf{T}_{\mathrm{D5NS5}}[S^{1}\times M]\big)}
+      \big( \left\{ \mathcal{E}_{i}(S^{1}\times M) [C_i]\right\} \big).
 \end{equation}
 For example, when $M=S^{3}$, the left-hand side is given by the supersymmetric
 index for $\mathcal{N}=1$ theory and the right-hand side corresponds
 to the partition function of Bazhanov-Sergeev integrable lattice model
-\cite{Bazhanov:2010kz,Bazhanov:2011mz,Spiridonov:2010em,Yamazaki:2012cp}. When $M=L\left(p,1\right)$,
+\cite{Bazhanov:2010kz,Bazhanov:2011mz,Spiridonov:2010em,Yamazaki:2012cp}. When $M=L(p,1)$,
 lens space, the left-hand side is computed in \cite{Yamazaki:2013nra}, which
 defines a new integrable lattice model through this correspondence.
 
 The brane tiling construction of integrable lattice models can be
-enriched by introduction of additional defects. Besides the previously
-defined D5NS5-brane system, introduce a D3-brane such as
+enriched by introducing additional defects. Besides the previously
+defined D5NS5-brane system, let us consider a D3-brane such as
 \begin{align}
-  \mathrm{D3}    &  \quad S^{1}  \times  N  \times  C  \times  \mathbb{R}_{+},\\
-  \mathrm{D3'}   &  \quad S^{1}  \times\left\{ 0\right\}  \times  C'  \times  \mathbb{R}^{2},
+  \mathrm{D3}    &  \quad S^{1}  \times  N  \times  C  \times  \mathbb{R}_{+}, \label{eq:D3}\\
+  \mathrm{D3'}   &  \quad S^{1}  \times \{ 0\}  \times  C'  \times  \mathbb{R}^{2}, \label{eq:D3'}
 \end{align}
- where $N$ is a curve in $M$ and $C,\,C'$ are 1-cycles on $\Sigma$.
-A single D3-brane insertion corresponds to a new oriented line in
+where $N$ is a curve in $M$ and $C,\,C'$ are one-cycles on $\Sigma$.
+These D3-branes create new extended defect operators elongated in $S^1\times N$ and $S^1$, respectively.
+A single D3-brane insertion corresponds to a new oriented line $C,\,C'$ in
 the integrable lattice model, which we represent by a dashed line.
-Now that we have two kinds of lines, we can define three R-matrices:
+Now that we have two kinds of lines originating from five-branes and a D3-brane,
+we can define three kinds of R-matrices:
 \begin{equation}
   R=
     \begin{tikzpicture}[scale=0.5, baseline=(x.base)]
@@ -1777,7 +1822,7 @@ Now that we have two kinds of lines, we can define three R-matrices:
         \draw[thick, ->] (1,-1) -- (1,1);
 
     \end{tikzpicture}
-  \, ,
+  ~ ,
   \quad
   L=
     \begin{tikzpicture}[scale=0.5, baseline=(x.base)]
@@ -1787,7 +1832,7 @@ Now that we have two kinds of lines, we can define three R-matrices:
         \draw[thick, ->] (1,-1) -- (1,1);
 
     \end{tikzpicture}
-  \, ,
+  ~ ,
   \quad
   \mathcal{R}=
     \begin{tikzpicture}[scale=0.5, baseline=(x.base)]
@@ -1797,9 +1842,9 @@ Now that we have two kinds of lines, we can define three R-matrices:
         \draw[thick, densely dashed, ->] (1,-1) -- (1,1);
 
     \end{tikzpicture}
-  \, .
+  ~ .
 \end{equation}
- The middle one is usually called \emph{L-operator}. Correspondingly,
+The middle one is usually called \emph{L-operator}. Correspondingly,
 we have four Yang-Baxter equations, involving zero to three dashed
 lines. Those that involving one or two dashed line,
 \begin{equation}
@@ -1811,7 +1856,7 @@ lines. Those that involving one or two dashed line,
         \draw[thick, ->] (-30:1) -- ++(0,3);
 
     \end{tikzpicture}
-  \ =
+  \ = \
     \begin{tikzpicture}[scale=0.5, baseline=(x.base)]
         \node (x) at (30:1) {};
 
@@ -1831,7 +1876,7 @@ lines. Those that involving one or two dashed line,
         \draw[thick, ->] (-30:1) -- ++(0,3);
 
     \end{tikzpicture}
-  \ =
+  \ = \
     \begin{tikzpicture}[scale=0.5, , baseline=(x.base)]
         \node (x) at (30:1) {};
 
@@ -1841,7 +1886,7 @@ lines. Those that involving one or two dashed line,
 
     \end{tikzpicture}
 \end{equation}
- are called \emph{RLL relations}. The effect of the insertion of such
+are called \emph{RLL relations}. The effect of the insertion of such
 an additional defect on the lattice model is seen in terms of the
 L-operator. The neighborhood of the dashed line looks like
 \begin{equation}
@@ -1863,37 +1908,43 @@ L-operator. The neighborhood of the dashed line looks like
 \end{equation}
 This diagram shows that the defect acts on the lattice model by a
 transfer matrix constructed from L-operators. Thus, the insertion
-of a defect operator in four-dimensional theory is mapped into lattice
+of a defect operator in four-dimensional theory represented by
+\eqref{eq:D3} or \eqref{eq:D3'} is mapped into lattice
 model side as the action of a transfer matrix constructed from L-operators.
 
-What we would like to discuss in detail in the subsequent sections
-are the introduction of a single D3-brane (equation of D3D3') to the
-D5NS5-brane system, and clarify that the correspondence with the additional
-defects. In the next two sections, we are considering the followings:
+What we will discuss in detail in the subsequent sections
+are the introduction of a single D3-brane \eqref{eq:D3} and \eqref{eq:D3'} to the
+D5NS5-brane system, and investigate the correspondence between supersymmetric gauge theories
+and integrable lattice models with the additional
+defects. In the next two sections, we are exploring the followings:
 \begin{enumerate}
-	\item For the case of single D3, let $M=S^{3}$, $\Sigma=T^{2}$, and $N=S^{1}$.
-Then the D3 creates a surface defect on $S^{1}\times S^{1}$ and it
-acts on supersymmetric index as a transfer matrix in the corresponding
+	\item For the case of single D3 \eqref{eq:D3}, let $M=S^{3}$, $\Sigma=T^{2}$, and $N=S^{1}$.
+Then the D3 creates a surface defect on $S^{1}\times S^{1} \subset S^1\times S^3$ and it
+acts on the supersymmetric index as a transfer matrix in the corresponding
 lattice model:
 \begin{align}
-  \left\langle  1  \right\rangle_{\mathsf{T}_{\mathrm{D5NS5}}\left[\Sigma\right],S^{1}\times S^{3}}
-    &  =  \mathcal{I}_{S^{1}\times S^{3}}\left(p,q,t\right),\\
-  Z_{\mathsf{L}\left(\mathsf{T}_{\mathrm{D5NS5}}\left[S^{1}\times S^{3}\right]\right),\left\{ \mathcal{E}_{i}\left[S^{1}\times S^{3}\right]\left(C_{i}\right)\right\} }
+  \left\langle  1  \right\rangle_{\mathsf{T}_{\mathrm{D5NS5}}[\Sigma],S^{1}\times S^{3}}
+    &  =  \mathcal{I}_{S^{1}\times S^{3}}(p,q,t),\\
+  Z_{\mathsf{L}\big(\mathsf{T}_{\mathrm{D5NS5}}[S^{1}\times S^{3}]\big)}
+    \big( \left\{ \mathcal{E}_{i}(S^{1}\times S^{3})[C_i]\right\} \big)
     &  =  Z_{\mathrm{Bazhanov-Sergeev}},
 \end{align}
- the surface defect index is represented as a difference operator
+the surface defect index is represented as a difference operator
 acting on the original supersymmetric index \cite{Gaiotto:2012xa,Gadde:2013dda},
 \begin{equation}
-  \left\langle S_{\left(r,s\right)}\right\rangle_{\mathsf{T}_{\mathrm{D5NS5}}\left[\Sigma\right]}
-  =  \mathfrak{S}_{\left(r,s\right)}\mathcal{I}_{S^{1}\times S^{3}}\left(p,q,t\right).
+  \left\langle S_{(r,s)}\right\rangle_{\mathsf{T}_{\mathrm{D5NS5}}[\Sigma]}
+    =
+      \mathfrak{S}_{(r,s)} \, \mathcal{I}_{S^{1}\times S^{3}}(p,q,t).
 \end{equation}
-\item For the case of single D3', let $M=\mathbb{R}^{3}$ and $\Sigma=T^{2}$.
-D3' creates a line defect wrapping $S^{1}$ and it acts on quantum
+\item For the case of single D3$'$ \eqref{eq:D3'}, let $M=\mathbb{R}^{3}$ and $\Sigma=T^{2}$.
+D3$'$ creates a line defect wrapping the thermal circle $S^{1}$ and it acts on the quantum
 Hilbert space of a spin chain as a transfer matrix, since now we have
-non-compact three-manifold $\mathbb{R}^{3}$. The line defect in the
+non-compact three-manifold $\mathbb{R}^{3}$.
+This spin chain has a equivalent lattice model description, and it is really an integrable model of
+trigonometric type. The line defect in the
 four-dimensional theory is realized as a Wilson-'t Hooft line operator
-$T$, and its magnetic and electric charge $\left(\mathbf{m},\mathbf{e}\right)$
-is specified by the one-cycle C' wrapping the torus $T^{2}$. As it
+$T$, and its magnetic charge and electric charge $(\mathbf{m},\mathbf{e})$
+is specified by the one-cycle $C'$ winding around the torus $T^{2}$. As it
 turns out, the vacuum expectation values (vevs) of Wilson-'t Hooft
 lines realize the deformation quantization of the Hitchin moduli space,
 and are naturally quantized by the Weyl quantization:
