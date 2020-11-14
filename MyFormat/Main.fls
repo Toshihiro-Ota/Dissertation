@@ -151,13 +151,10 @@ INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/caption/ca
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/comment/comment.sty
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/comment/comment.sty
-<<<<<<< HEAD
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/ytableau/ytableau.sty
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/ytableau/ytableau.sty
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/pgfopts/pgfopts.sty
-=======
->>>>>>> dissertation
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/cite/cite.sty
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/cite/cite.sty
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/float/float.sty
@@ -326,15 +323,15 @@ INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT Main.toc
 INPUT Main.toc
+INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 OUTPUT Main.toc
 INPUT Sections/Sec1.tex
 INPUT Sections/Sec1.tex
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT Sections/Sec2.tex
 INPUT Sections/Sec2.tex
-INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
-INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
-INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
@@ -389,6 +386,7 @@ INPUT Sections/Sec5.tex
 INPUT Sections/Sec5.tex
 INPUT Sections/SecA.tex
 INPUT Sections/SecA.tex
+INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT Main.bbl
 INPUT Main.bbl
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
@@ -408,6 +406,7 @@ INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/a
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb

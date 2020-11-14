@@ -1,25 +1,13 @@
 # Fdb version 3
-<<<<<<< HEAD
-["bibtex Main"] 1605331649 "Main.aux" "Main.bbl" "Main" 1605331655
+["bibtex Main"] 1605342821 "Main.aux" "Main.bbl" "Main" 1605342827
   "./Sections/Common/JHEP.bst" 1497594835 19542 1887dd205d76c0757b67cfe12ab5c34e ""
-  "Main.aux" 1605331654 32149 e64063760f1c2b3fe8c74bb3d573286d ""
+  "Main.aux" 1605342826 32649 789651a3cb9664221f7b1706d4d82fd3 ""
   "Main.bcf" 0 -1 0 ""
-  "Sections/Common/toshi.bib" 1605241563 36021 b2c4cfd1fe2a089a337e388aa79c4873 ""
-=======
-["bibtex Main"] 1605083363 "Main.aux" "Main.bbl" "Main" 1605083370
-  "./Sections/Common/JHEP.bst" 1497594835 19542 1887dd205d76c0757b67cfe12ab5c34e ""
-  "Main.aux" 1605083369 29720 e0b2bdf31da17edb7f67c6a5d7406525 ""
-  "Main.bcf" 0 -1 0 ""
-  "Sections/Common/toshi.bib" 1604910540 35554 38df358bb5d79f38672e2e03ab7c8e06 ""
->>>>>>> dissertation
+  "Sections/Common/toshi.bib" 1605339467 36542 2b81c4b77b6172df200aa7353be491f4 ""
   (generated)
-  "Main.bbl"
-<<<<<<< HEAD
   "Main.blg"
-["pdflatex"] 1605331649 "/Users/ootatoshihiro/Documents/Git/MyGit/Dissertation/MyFormat/Main.tex" "Main.pdf" "Main" 1605331655
-=======
-["pdflatex"] 1605083364 "/Users/ootatoshihiro/Documents/Git/MyGit/Dissertation/MyFormat/Main.tex" "Main.pdf" "Main" 1605083370
->>>>>>> dissertation
+  "Main.bbl"
+["pdflatex"] 1605342821 "/Users/ootatoshihiro/Documents/Git/MyGit/Dissertation/MyFormat/Main.tex" "Main.pdf" "Main" 1605342827
   "/Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/ptex/ascgrp/ascgrp.tfm" 1274206740 448 9a1f3a95c3a7e2681aa6eefcf410b7ac ""
   "/Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -87,6 +75,7 @@
   "/Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1248133631 36094 798f80770b3b148ceedd006d487db67c ""
   "/Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
@@ -266,42 +255,22 @@
   "/Applications/TeXLive/Library/texlive/2013/texmf.cnf" 1450348431 853 f8863806e4a29725ea53c4ec6ba4e820 ""
   "/Users/Shared/TeXLive/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523510974 1423439 51bb2d15525d091aa19b764f06b57a73 ""
   "/Users/Shared/TeXLive/texmf-var/web2c/pdftex/pdflatex.fmt" 1450348341 3837920 ba2f96a3b5af865849871304b4d2e9da ""
-<<<<<<< HEAD
-  "/Users/ootatoshihiro/Documents/Git/MyGit/Dissertation/MyFormat/Main.tex" 1605239767 1690 035396f1248f6a8ec945ac1ad15dd7c6 ""
-  "Main.aux" 1605331654 32149 e64063760f1c2b3fe8c74bb3d573286d ""
-  "Main.bbl" 1605331649 22854 f3e624c1502ea677b7958101cd93dcee "bibtex Main"
-  "Main.out" 1605331654 4031 d2c1ad5a03d47024395f822d7ef0aed5 ""
-  "Main.tex" 1605239767 1690 035396f1248f6a8ec945ac1ad15dd7c6 ""
-  "Main.toc" 1605331654 4631 c1e3abda31a0de26d255b9ee1401bf1b ""
-  "Sections/Common/toshi.sty" 1605258634 17988 dc7e7eccd604dfbd4db38240dcc6d111 ""
+  "/Users/ootatoshihiro/Documents/Git/MyGit/Dissertation/MyFormat/Main.tex" 1605332490 1690 035396f1248f6a8ec945ac1ad15dd7c6 ""
+  "Main.aux" 1605342826 32649 789651a3cb9664221f7b1706d4d82fd3 ""
+  "Main.bbl" 1605342821 23048 a10a295a98b98703de37b9d17bd83bff "bibtex Main"
+  "Main.out" 1605342826 4211 f8497071fecc28467e2da222e19f3b1b ""
+  "Main.tex" 1605332490 1690 035396f1248f6a8ec945ac1ad15dd7c6 ""
+  "Main.toc" 1605342826 4855 5e9653e91a2652e0b1bded6bbc81be3d ""
+  "Sections/Common/toshi.sty" 1605332490 17988 dc7e7eccd604dfbd4db38240dcc6d111 ""
   "Sections/Sec1.tex" 1604825023 329 2a2bbb6e6f13b346b1047507e75638bf ""
-  "Sections/Sec2.tex" 1605252861 91317 95515689c875809c9e58f7e03643d840 ""
-  "Sections/Sec3.tex" 1604909282 102012 f645f4f5218b5beeefdcd864d79af431 ""
-  "Sections/Sec4.tex" 1605331572 121283 59f619dd9004989e77745e672c44ad0d ""
-=======
-  "/Users/ootatoshihiro/Documents/Git/MyGit/Dissertation/MyFormat/Main.tex" 1604904863 1690 035396f1248f6a8ec945ac1ad15dd7c6 ""
-  "Main.aux" 1605083369 29720 e0b2bdf31da17edb7f67c6a5d7406525 ""
-  "Main.bbl" 1605083364 22635 d38d344d9d009f2237b147df7eb4e5ae "bibtex Main"
-  "Main.out" 1605083369 3928 6bea0568f5493391bbe070545467b959 ""
-  "Main.tex" 1604904863 1690 035396f1248f6a8ec945ac1ad15dd7c6 ""
-  "Main.toc" 1605083369 4508 fd5b07513622a7a807890a3947c6ef95 ""
-  "Sections/Common/toshi.sty" 1604894819 17909 ba3f504a06bc905f26d5904d1b96edca ""
-  "Sections/Sec1.tex" 1604825023 329 2a2bbb6e6f13b346b1047507e75638bf ""
-  "Sections/Sec2.tex" 1605083306 91140 dc829f70ada8ba7862efff8c4d190d84 ""
-  "Sections/Sec3.tex" 1604909282 102012 f645f4f5218b5beeefdcd864d79af431 ""
-  "Sections/Sec4.tex" 1604824839 115808 e3352bbdfd36dab1e083c1201a57903a ""
->>>>>>> dissertation
+  "Sections/Sec2.tex" 1605332519 91425 816fcbfba2d19eda5d313b12a88fdbb9 ""
+  "Sections/Sec3.tex" 1605332490 102012 f645f4f5218b5beeefdcd864d79af431 ""
+  "Sections/Sec4.tex" 1605332490 121283 59f619dd9004989e77745e672c44ad0d ""
   "Sections/Sec5.tex" 1604815501 288 960db632122fa0310cad3d0b7c2a46ab ""
-  "Sections/SecA.tex" 1604822915 348 d4d9e002dbf965eec9b089c1889634ff ""
+  "Sections/SecA.tex" 1605342772 6522 c4a6bfc8a34e068811e9c45953ca6b60 ""
   (generated)
+  "Main.out"
+  "Main.aux"
+  "Main.toc"
   "Main.log"
-<<<<<<< HEAD
-=======
-  "Main.out"
-  "Main.aux"
-  "Main.toc"
->>>>>>> dissertation
   "Main.pdf"
-  "Main.toc"
-  "Main.aux"
-  "Main.out"

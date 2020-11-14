@@ -57,14 +57,11 @@ G.~Segal, \emph{{The definition of conformal field theory}},  in
   \emph{{Symposium on Topology, Geometry and Quantum Field Theory}},
   pp.~421--575, 6, 2002.
 
-<<<<<<< HEAD
 \bibitem{MR2037238}
 J.~Kock, \emph{Frobenius algebras and 2{D} topological quantum field theories},
   vol.~59 of \emph{London Mathematical Society Student Texts}.
 \newblock Cambridge University Press, Cambridge, 2004.
 
-=======
->>>>>>> dissertation
 \bibitem{MR1167165}
 T.~Kohno, \emph{Topological invariants for {$3$}-manifolds using
   representations of mapping class groups. {I}},
@@ -517,5 +514,10 @@ K.~Costello, \emph{{Supersymmetric gauge theory and the Yangian}},
 \bibitem{Costello:2017dso}
 K.~Costello, E.~Witten and M.~Yamazaki, \emph{{Gauge Theory and Integrability,
   I}},  \href{https://arxiv.org/abs/1709.09993}{{\ttfamily 1709.09993}}.
+
+\bibitem{MR1846786}
+V.~P. Spiridonov, \emph{On the elliptic beta function},
+  \href{https://doi.org/10.1070/rm2001v056n01ABEH000374}{\emph{Uspekhi Mat.
+  Nauk} {\bfseries 56} (2001) 181--182}.
 
 \end{thebibliography}\endgroup

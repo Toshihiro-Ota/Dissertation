@@ -8,11 +8,185 @@
 
 
 %%%%%%%%%%%%%%%%%% section A %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Some useful formulaes}
+\section{Special functions and some formulas}
 
-\subsection{Special functions}
 
-TestTestTest
+
+
+
+\subsection{Theta functions}
+
+The theta function with characteristics is defined by
+\begin{equation}
+    \theta\bigg[％
+        \begin{array}{c}
+            a \\
+            b
+        \end{array}
+        \bigg](\zeta|\tau)
+        =\sum_{n\in\Z} e^{\pi\iu(n+a)^2\tau + 2\pi\iu(n+a)(\zeta+b)}
+    ,
+\end{equation}
+where $\zeta$ is a complex variable and $\tau$ is a complex parameter in the upper half-plane: $\Im\tau>0$.
+The Jacobi's theta functions are defined by
+\begin{align}
+    \theta_1(\zeta|\tau) &= -\theta\bigg[％
+        \begin{array}{c}
+            1/2 \\
+            1/2
+        \end{array}
+    \bigg](\zeta|\tau), \\
+    \theta_2(\zeta|\tau) &= \theta_1(\zeta+1/2|\tau), \\
+    \theta_3(\zeta|\tau) &= e^{\pi\iu(\zeta+\tau/4)} \theta_2(\zeta+\tau/2|\tau), \\
+    \theta_4(\zeta|\tau) &= \theta_3(\zeta+1/2|\tau).
+\end{align}
+The first of these, $\theta_1$, is an odd function of $\zeta$ and satisfies
+\begin{align}
+    \theta_1(\zeta+1|\tau) &= -\theta_1(\zeta|\tau), \\
+    \theta_1(\zeta+\tau|\tau) &= -e^{\pi\iu(2\zeta-\tau)} \theta_1(\zeta|\tau).
+\end{align}
+The other three are even functions. We have
+\begin{align}
+    2\theta_1(\zeta+\zeta')\theta_1(\zeta-\zeta')
+        &= \bar{\theta}_4(\zeta)\bar{\theta}_3(\zeta') - \bar{\theta}_4(\zeta')\bar{\theta}_3(\zeta), \\
+    2\theta_2(\zeta+\zeta')\theta_2(\zeta-\zeta')
+        &= \bar{\theta}_3(\zeta)\bar{\theta}_3(\zeta') - \bar{\theta}_4(\zeta')\bar{\theta}_4(\zeta), \\
+    2\theta_3(\zeta+\zeta')\theta_3(\zeta-\zeta')
+        &= \bar{\theta}_3(\zeta)\bar{\theta}_3(\zeta') + \bar{\theta}_4(\zeta')\bar{\theta}_4(\zeta), \\
+    2\theta_4(\zeta+\zeta')\theta_4(\zeta-\zeta')
+        &= \bar{\theta}_4(\zeta)\bar{\theta}_3(\zeta') + \bar{\theta}_4(\zeta')\bar{\theta}_3(\zeta).
+\end{align}
+with $\theta_a(\zeta):=\theta_a(\zeta|\tau)$ and $\bar{\theta}_a(\zeta):=\theta_a(\zeta|\tau/2)$.
+
+It is useful to define another kind of theta function which we call the modified theta function:
+\begin{align}
+    \theta(z;p) &= (z;p)_{\infty} (p/z;p)_{\infty}, \\
+    (z;p)_{\infty} &:= \prod_{k=0}^{\infty} (1-p^k z), \quad |p|<1.
+\end{align}
+It satisfies\begin{equation}
+    \theta(z;p) = \theta(p/z;p).
+\end{equation}
+Set $z=e^{2\pi\iu\zeta}$, $p=e^{2\pi\iu\tau}$ and introduce multiplicative notation
+\begin{equation}
+    \theta_a(z;p) := \theta_a(\zeta|\tau).
+\end{equation}
+Then the Jacobi's theta functions are rewritten in terms of the modified theta function as
+\begin{align}
+    \theta_1(z;p) &= \iu p^{1/8} (p;p)_{\infty} z^{-1/2} \theta(z;p), \\
+    \theta_2(z;p) &= p^{1/8} (p;p)_{\infty} z^{-1/2} \theta(-z;p), \\
+    \theta_3(z;p) &= (p;p)_{\infty} \theta(-\sqrt{p}z;p), \\
+    \theta_4(z;p) &= (p;p)_{\infty} \theta(\sqrt{p}z;p).
+\end{align}
+
+
+
+
+
+\subsection{Elliptic gamma function}
+
+The elliptic gamma function is closely related to the triple gamma function
+and depends on two complex parameters $p$ and $q$:
+\begin{equation}
+    \Gamma(z;p,q) =
+        \prod_{j,k=0}^{\infty} \frac{1-p^{j+1}q^{k+1}z^{-1}}{1-p^j q^k z};
+    \quad
+        |p|,\,|q| < 1.
+\end{equation}
+It satisfies the identities
+\begin{equation}
+    \Gamma(z;p,q) \Gamma(pq/z;p,q) = 1
+\end{equation}
+and
+\begin{align}
+    \Gamma(pz;p.q) &= \theta(z;q) \Gamma(z;p,q), \\
+    \Gamma(qz;p.q) &= \theta(z;p) \Gamma(z;p,q).
+\end{align}
+
+The function $\Gamma(z;p,q)$ has a pole at $z=p^{-j}q^{-k}$, where $j,\,k$ are non-negative integers.
+The residue at this pole is given by
+\begin{equation}
+    \mathrm{Res}_{z=p^{-j}q^{-k}} \left[ \Gamma(z;p,q) \right]
+    = \frac{(-1)^{jk+j+k}p^{(k+1)j(j+1)/2}q^{(j+1)k(k+1)/2}}
+    {(p;p)_{\infty} (q;q)_{\infty} \theta(p,\ldots,p^j;q)\theta(q,\ldots,q^k;p)},
+\label{eq:gamma_residue}
+\end{equation}
+where we have introduced the notation $\theta(z_1,\ldots,z_n;q):=\theta(z_1;q)\cdots\theta(z_n;q)$.
+
+Let $t_j$, $j=1,\ldots,6$ be six complex parameters such that $|t_j|<1$ and $\prod_{j=1}^6 t_j=pq$.
+Then, we have the following identity proved in \cite{MR1846786}.
+\begin{equation}
+    \frac{(p;p)_{\infty} (q;q)_{\infty}}{2}
+        \int_{\mathbb T}\frac{dz}{2\pi\iu z} \frac{\prod_{j=1}^6\Gamma(t_j z^{\pm 1};p,q)}{\Gamma(z^{\pm 2};p,q)}
+            =\prod_{1\leq j<k \leq 6} \Gamma(t_j t_k;p,q).
+\end{equation}
+Here ${\mathbb T}$ is the unit circle with counterclockwise orientation and
+\begin{equation}
+    \Gamma(z^{\pm n};p,q) := \Gamma(z^{n};p,q) \Gamma(z^{-n};p,q).
+\end{equation}
+The left-hand side of the above formula is known as the elliptic beta integral.
+
+
+
+
+
+\subsection{The function $\Gamma_{\bs}$ and upsilon function}
+
+The function $\Gamma_{\bs}$ is related to the double gamma function,
+which is another relative of the ordinary gamma function.
+It can be defined by an integral representation
+\begin{equation}
+    \log \Gamma_{\bs}(x) =\int_0^{\infty}
+        \frac{dt}{t}\left( \frac{e^{-xt}-e^{-Qt/2}}{(1-e^{-\bs t})(1-e^{-t/\bs})}
+            -\frac{(Q-2x)^2}{8e^t} -\frac{Q-2x}{t} \right),
+\end{equation}
+where $x$ is a complex variable and $\bs$ is a complex parameter such that $\Re x,\,\Re \bs >0$,
+and $Q=\bs + \bs^{-1}$.
+
+It is self-dual:
+\begin{equation}
+    \Gamma_{\bs}(x) = \Gamma_{1/\bs}(x),
+\end{equation}
+and satisfies the identity
+\begin{equation}
+    \frac{\Gamma_{\bs}(x+\bs)}{\Gamma_{\bs}(x)}
+        = \sqrt{2\pi} \frac{\bs^{\bs x-1/2}}{\Gamma(\bs x)},
+\end{equation}
+where the denominator in the right-hand side is the ordinary gamma function.
+
+Through the function $\Gamma_{\bs}$, we define upsilon function as
+\begin{equation}
+    \Upsilon_{\bs}(x) = \frac{1}{\Gamma_{\bs}(x) \Gamma_{\bs}(Q-x)}.
+\end{equation}
+The upsilon function also has an integral representation, which is convergent in the
+strip $0<\Re x<Q$:
+\begin{equation}
+    \log \Upsilon_{\bs}(x) =\int_0^{\infty}
+    \frac{dt}{t}\left[ \left( \frac{Q}{2} -x \right)^2 e^{-t}
+        - \frac{\sinh^2\big((Q/2-x)t/2\big)}{\sinh(\bs t/2)\sinh(t/2\bs)} \right].
+\end{equation}
+
+The upsilon function is again self-dual:
+\begin{equation}
+    \Upsilon_{\bs}(x) = \Upsilon_{1/\bs}(x),
+\end{equation}
+and satisfies the identity
+\begin{equation}
+    \frac{\Upsilon_{\bs}(x+\bs)}{\Upsilon_{\bs}(x)}
+        = \frac{\Gamma(\bs x)}{\Gamma(1-\bs x)} \bs^{1-2\bs x}.
+\label{eq:upsilon_identity}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -7,87 +7,45 @@ Warning--can't use both author and editor fields in Okuda:2014fja
 Warning--empty publisher in Okuda:2014fja
 Warning--can't use both author and editor fields in Gukov:2014gja
 Warning--empty publisher in Gukov:2014gja
-<<<<<<< HEAD
-You've used 89 entries,
+You've used 90 entries,
             2217 wiz_defined-function locations,
-            1216 strings with 18133 characters,
-and the built_in function-call counts, 27426 in all, are:
-= -- 2981
-> -- 790
+            1225 strings with 18293 characters,
+and the built_in function-call counts, 27770 in all, are:
+= -- 3022
+> -- 795
 < -- 0
-+ -- 253
-- -- 164
-* -- 2329
-:= -- 3756
-add.period$ -- 97
-call.type$ -- 89
-change.case$ -- 85
++ -- 255
+- -- 165
+* -- 2354
+:= -- 3802
+add.period$ -- 98
+call.type$ -- 90
+change.case$ -- 86
 chr.to.int$ -- 0
-cite$ -- 93
-duplicate$ -- 1350
-empty$ -- 2546
-format.name$ -- 164
-if$ -- 7096
+cite$ -- 94
+duplicate$ -- 1367
+empty$ -- 2578
+format.name$ -- 165
+if$ -- 7185
 int.to.chr$ -- 0
-int.to.str$ -- 89
-missing$ -- 330
-newline$ -- 279
-num.names$ -- 89
-pop$ -- 189
+int.to.str$ -- 90
+missing$ -- 334
+newline$ -- 282
+num.names$ -- 90
+pop$ -- 191
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1018
+skip$ -- 1032
 stack$ -- 0
-substring$ -- 1712
-swap$ -- 650
-=======
-You've used 88 entries,
-            2217 wiz_defined-function locations,
-            1207 strings with 17949 characters,
-and the built_in function-call counts, 27265 in all, are:
-= -- 2967
-> -- 785
-< -- 0
-+ -- 251
-- -- 163
-* -- 2319
-:= -- 3735
-add.period$ -- 95
-call.type$ -- 88
-change.case$ -- 85
-chr.to.int$ -- 0
-cite$ -- 92
-duplicate$ -- 1340
-empty$ -- 2524
-format.name$ -- 163
-if$ -- 7055
-int.to.chr$ -- 0
-int.to.str$ -- 88
-missing$ -- 328
-newline$ -- 275
-num.names$ -- 88
-pop$ -- 183
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 0
-skip$ -- 1016
-stack$ -- 0
-substring$ -- 1712
-swap$ -- 648
->>>>>>> dissertation
+substring$ -- 1744
+swap$ -- 659
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-<<<<<<< HEAD
-while$ -- 265
-width$ -- 91
-write$ -- 916
-=======
-while$ -- 264
-width$ -- 90
-write$ -- 906
->>>>>>> dissertation
+while$ -- 269
+width$ -- 92
+write$ -- 926
 (There were 4 warnings)
