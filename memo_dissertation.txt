@@ -17,6 +17,7 @@ begin_special.tex で font=\footnotesize になっているが，図中では必
 
 14/Oct/2020
 3d TQFT (Chern-Simons) の厳密な構成のところで河野さんの論文を引く
+[11/Nov/2020 Done]
 
 
 8/Oct/2020

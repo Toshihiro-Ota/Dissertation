@@ -57,6 +57,11 @@ G.~Segal, \emph{{The definition of conformal field theory}},  in
   \emph{{Symposium on Topology, Geometry and Quantum Field Theory}},
   pp.~421--575, 6, 2002.
 
+\bibitem{MR2037238}
+J.~Kock, \emph{Frobenius algebras and 2{D} topological quantum field theories},
+  vol.~59 of \emph{London Mathematical Society Student Texts}.
+\newblock Cambridge University Press, Cambridge, 2004.
+
 \bibitem{MR1167165}
 T.~Kohno, \emph{Topological invariants for {$3$}-manifolds using
   representations of mapping class groups. {I}},
@@ -240,34 +245,6 @@ F.~Dolan and H.~Osborn, \emph{{Applications of the Superconformal Index for
   {\bfseries 818} (2009) 137--178},
   [\href{https://arxiv.org/abs/0801.4947}{{\ttfamily 0801.4947}}].
 
-\bibitem{Belavin:1981ix}
-A.~Belavin, \emph{{Dynamical Symmetry of Integrable Quantum Systems}},
-  \href{https://doi.org/10.1016/0550-3213(81)90414-4}{\emph{Nucl. Phys. B}
-  {\bfseries 180} (1981) 189--200}.
-
-\bibitem{Felder:1994pb}
-G.~Felder, \emph{{Conformal field theory and integrable systems associated to
-  elliptic curves}},  \href{https://arxiv.org/abs/hep-th/9407154}{{\ttfamily
-  hep-th/9407154}}.
-
-\bibitem{Felder:1994be}
-G.~Felder, \emph{{Elliptic quantum groups}},  in \emph{{11th International
-  Conference on Mathematical Physics (ICMP-11) (Satellite colloquia: New
-  Problems in the General Theory of Fields and Particles, Paris, France, 25-28
-  Jul 1994)}}, pp.~211--218, 7, 1994,
-  \href{https://arxiv.org/abs/hep-th/9412207}{{\ttfamily hep-th/9412207}}.
-
-\bibitem{MR1606760}
-G.~Felder and A.~Varchenko, \emph{Elliptic quantum groups and {R}uijsenaars
-  models}, \href{https://doi.org/10.1007/BF02764216}{\emph{J. Statist. Phys.}
-  {\bfseries 89} (1997) 963--980}.
-
-\bibitem{Yagi:2017hmj}
-J.~Yagi, \emph{{Surface defects and elliptic quantum groups}},
-  \href{https://doi.org/10.1007/JHEP06(2017)013}{\emph{JHEP} {\bfseries 06}
-  (2017) 013}, [\href{https://arxiv.org/abs/1701.05562}{{\ttfamily
-  1701.05562}}].
-
 \bibitem{Spiridonov:2014cxa}
 V.~Spiridonov and G.~Vartanov, \emph{{Vanishing superconformal indices and the
   chiral symmetry breaking}},
@@ -289,6 +266,16 @@ S.~Gukov and E.~Witten, \emph{{Rigid Surface Operators}},
 E.~K. Sklyanin, \emph{Some algebraic structures connected with the
   {Y}ang-{B}axter equation}, {\emph{Funktsional. Anal. i Prilozhen.} {\bfseries
   16} (1982) 27--34, 96}.
+
+\bibitem{Baxter:1971cr}
+R.~Baxter, \emph{{Eight-Vertex Model in Lattice Statistics}},
+  \href{https://doi.org/10.1103/PhysRevLett.26.832}{\emph{Phys. Rev. Lett.}
+  {\bfseries 26} (1971) 832--833}.
+
+\bibitem{Baxter:1972hz}
+R.~J. Baxter, \emph{{Partition function of the eight vertex lattice model}},
+  \href{https://doi.org/10.1016/0003-4916(72)90335-1}{\emph{Annals Phys.}
+  {\bfseries 70} (1972) 193--228}.
 
 \bibitem{MR725414}
 E.~K. Sklyanin, \emph{Some algebraic structures connected with the
@@ -347,6 +334,34 @@ K.~Hasegawa, \emph{Ruijsenaars' commuting difference operators as commuting
   transfer matrices}, \href{https://doi.org/10.1007/s002200050137}{\emph{Comm.
   Math. Phys.} {\bfseries 187} (1997) 289--325}.
 
+\bibitem{Belavin:1981ix}
+A.~Belavin, \emph{{Dynamical Symmetry of Integrable Quantum Systems}},
+  \href{https://doi.org/10.1016/0550-3213(81)90414-4}{\emph{Nucl. Phys. B}
+  {\bfseries 180} (1981) 189--200}.
+
+\bibitem{Felder:1994pb}
+G.~Felder, \emph{{Conformal field theory and integrable systems associated to
+  elliptic curves}},  \href{https://arxiv.org/abs/hep-th/9407154}{{\ttfamily
+  hep-th/9407154}}.
+
+\bibitem{Felder:1994be}
+G.~Felder, \emph{{Elliptic quantum groups}},  in \emph{{11th International
+  Conference on Mathematical Physics (ICMP-11) (Satellite colloquia: New
+  Problems in the General Theory of Fields and Particles, Paris, France, 25-28
+  Jul 1994)}}, pp.~211--218, 7, 1994,
+  \href{https://arxiv.org/abs/hep-th/9412207}{{\ttfamily hep-th/9412207}}.
+
+\bibitem{MR1606760}
+G.~Felder and A.~Varchenko, \emph{Elliptic quantum groups and {R}uijsenaars
+  models}, \href{https://doi.org/10.1007/BF02764216}{\emph{J. Statist. Phys.}
+  {\bfseries 89} (1997) 963--980}.
+
+\bibitem{Yagi:2017hmj}
+J.~Yagi, \emph{{Surface defects and elliptic quantum groups}},
+  \href{https://doi.org/10.1007/JHEP06(2017)013}{\emph{JHEP} {\bfseries 06}
+  (2017) 013}, [\href{https://arxiv.org/abs/1701.05562}{{\ttfamily
+  1701.05562}}].
+
 \bibitem{MR1645196}
 P.~Etingof and A.~Varchenko, \emph{Solutions of the quantum dynamical
   {Y}ang-{B}axter equation and dynamical quantum groups},
@@ -371,16 +386,6 @@ M.~Jimbo, T.~Miwa and M.~Okado, \emph{{Local state probabilities of solvable
   lattice models: an {$A^{(1)}_{n-1}$} family}},
   \href{https://doi.org/10.1016/0550-3213(88)90587-1}{\emph{Nucl. Phys. B}
   {\bfseries 300} (1988) 74--108}.
-
-\bibitem{Baxter:1971cr}
-R.~Baxter, \emph{{Eight-Vertex Model in Lattice Statistics}},
-  \href{https://doi.org/10.1103/PhysRevLett.26.832}{\emph{Phys. Rev. Lett.}
-  {\bfseries 26} (1971) 832--833}.
-
-\bibitem{Baxter:1972hz}
-R.~J. Baxter, \emph{{Partition function of the eight vertex lattice model}},
-  \href{https://doi.org/10.1016/0003-4916(72)90335-1}{\emph{Annals Phys.}
-  {\bfseries 70} (1972) 193--228}.
 
 \bibitem{Kapustin:2005py}
 A.~Kapustin, \emph{{Wilson-'t Hooft operators in four-dimensional gauge
