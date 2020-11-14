@@ -7,6 +7,7 @@ Warning--can't use both author and editor fields in Okuda:2014fja
 Warning--empty publisher in Okuda:2014fja
 Warning--can't use both author and editor fields in Gukov:2014gja
 Warning--empty publisher in Gukov:2014gja
+<<<<<<< HEAD
 You've used 89 entries,
             2217 wiz_defined-function locations,
             1216 strings with 18133 characters,
@@ -40,12 +41,53 @@ skip$ -- 1018
 stack$ -- 0
 substring$ -- 1712
 swap$ -- 650
+=======
+You've used 88 entries,
+            2217 wiz_defined-function locations,
+            1207 strings with 17949 characters,
+and the built_in function-call counts, 27265 in all, are:
+= -- 2967
+> -- 785
+< -- 0
++ -- 251
+- -- 163
+* -- 2319
+:= -- 3735
+add.period$ -- 95
+call.type$ -- 88
+change.case$ -- 85
+chr.to.int$ -- 0
+cite$ -- 92
+duplicate$ -- 1340
+empty$ -- 2524
+format.name$ -- 163
+if$ -- 7055
+int.to.chr$ -- 0
+int.to.str$ -- 88
+missing$ -- 328
+newline$ -- 275
+num.names$ -- 88
+pop$ -- 183
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1016
+stack$ -- 0
+substring$ -- 1712
+swap$ -- 648
+>>>>>>> dissertation
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
+<<<<<<< HEAD
 while$ -- 265
 width$ -- 91
 write$ -- 916
+=======
+while$ -- 264
+width$ -- 90
+write$ -- 906
+>>>>>>> dissertation
 (There were 4 warnings)

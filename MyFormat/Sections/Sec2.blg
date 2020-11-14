@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Sec2.aux
+A level-1 auxiliary file: Common/endbib.aux
+The style file: Common/JHEP.bst
+Database file #1: Common/toshi.bib
+You've used 27 entries,
+            2217 wiz_defined-function locations,
+            757 strings with 7971 characters,
+and the built_in function-call counts, 8664 in all, are:
+= -- 943
+> -- 232
+< -- 0
++ -- 75
+- -- 48
+* -- 721
+:= -- 1179
+add.period$ -- 28
+call.type$ -- 27
+change.case$ -- 26
+chr.to.int$ -- 0
+cite$ -- 27
+duplicate$ -- 435
+empty$ -- 817
+format.name$ -- 48
+if$ -- 2241
+int.to.chr$ -- 0
+int.to.str$ -- 27
+missing$ -- 99
+newline$ -- 86
+num.names$ -- 27
+pop$ -- 64
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 331
+stack$ -- 0
+substring$ -- 574
+swap$ -- 211
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 86
+width$ -- 29
+write$ -- 282

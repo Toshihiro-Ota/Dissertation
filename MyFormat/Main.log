@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.12.17)  14 NOV 2020 14:27
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.12.17)  11 NOV 2020 17:29
+>>>>>>> dissertation
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -359,6 +363,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \sf@bottom=\skip53
 ) (/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write4
+<<<<<<< HEAD
  Excluding comment 'comment') (/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/ytableau/ytableau.sty
 Package: ytableau 2012/08/14 v1.3 Many-featured Young tableaux and Young diagrams
 \tableaux@YT=\box46
@@ -375,6 +380,9 @@ Package: pgfopts 2011/06/02 v2.1 LaTeX package options with pgfkeys
 \pgfopts@list@add@a@toks=\toks42
 \pgfopts@list@add@b@toks=\toks43
 )) (/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/cite/cite.sty
+=======
+ Excluding comment 'comment') (/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/cite/cite.sty
+>>>>>>> dissertation
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
@@ -429,8 +437,13 @@ Loading kernel: messages; fonts; allocations: state,
 \K@dYdX=\dimen202
 \xyread@=\read2
 \xywrite@=\write5
+<<<<<<< HEAD
 \csp@=\count132
 \quotPTK@=\dimen203
+=======
+\csp@=\count131
+\quotPTK@=\dimen201
+>>>>>>> dissertation
  utility macros; pictures: \xy, positions,
 \swaptoks@@=\toks48
 \connectobjectbox@@=\box53
@@ -467,8 +480,13 @@ Package: showkeys 2007/08/07 v3.15 Show cite and label keys (DPC, MH)
 Package: seqsplit 2006/08/07 v0.1 Splitting long sequences (DNA, RNA, proteins, etc.) 
 ) (/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/generic/xstring/xstring.sty (/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write6
+<<<<<<< HEAD
 \integerpart=\count139
 \decimalpart=\count140
+=======
+\integerpart=\count138
+\decimalpart=\count139
+>>>>>>> dissertation
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 ) (/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -639,6 +657,15 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `sub@' multiply defined.
 
+<<<<<<< HEAD
+=======
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+>>>>>>> dissertation
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -767,7 +794,11 @@ LaTeX Info: Redefining \nameref on input line 6.
 {/Users/Shared/TeXLive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] (./Main.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD
 l.38 ... and string dualities}{69}{subsection.4.4}
+=======
+l.38 ...rane realization}{69}{subsubsection.4.4.1}
+>>>>>>> dissertation
                                                    [1])
 \tf@toc=\write8
 \openout8 = `Main.toc'.
@@ -865,7 +896,6 @@ Overfull \hbox (2.115pt too wide) in paragraph at lines 200--205
 \OT1/cmr/m/n/10.95 dimensional man-i-folds, and thus we learn that the lin-ear map given above sat-is-fies $\OML/cmm/m/it/10.95 U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 T[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 T[]\OT1/cmr/m/n/10.95 )$
  []
 
-[4]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 220.
@@ -874,7 +904,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 220.
 
-[5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19]
+[4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19]
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -960,10 +990,17 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
  [20] [21] [22] [23] [24]
+<<<<<<< HEAD
 LaTeX Font Info:    Try loading font information for U+euf on input line 1938.
  (/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )) (./Sections/Sec4.tex Excluding 'comment' comment. [25] [26] [27]
+=======
+LaTeX Font Info:    Try loading font information for U+euf on input line 1937.
+ (/Applications/TeXLive/Library/texlive/2013/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)) (./Sections/Sec4.tex Excluding 'comment' comment. [25] [26]
+>>>>>>> dissertation
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -1384,7 +1421,11 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
+<<<<<<< HEAD
  [28]
+=======
+ [27] [28]
+>>>>>>> dissertation
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -1743,7 +1784,11 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
+<<<<<<< HEAD
  [32] [33] [34]
+=======
+ [32] [33] [34] [35] [36] [37]
+>>>>>>> dissertation
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1404.
@@ -1752,7 +1797,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1404.
 
+<<<<<<< HEAD
 [35] [36] [37]
+=======
+[38] [39] [40]
+>>>>>>> dissertation
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1690.
@@ -1774,6 +1823,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 2036.
 
+<<<<<<< HEAD
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 2036.
@@ -1786,6 +1836,16 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2235.
  [44] [45] [46]) (./Sections/Sec3.tex Excluding 'comment' comment. [47] [48] [49]
+=======
+[41] [42] [43]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2111.
+
+
+LaTeX Warning: Reference `eq:deltaidentity' on page 44 undefined on input line 2140.
+
+[44] [45]) (./Sections/Sec3.tex Excluding 'comment' comment. [46] [47] [48]
+>>>>>>> dissertation
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -1828,7 +1888,11 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
+<<<<<<< HEAD
  [50] [51] [52] [53] [54]
+=======
+ [49] [50] [51] [52] [53]
+>>>>>>> dissertation
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 769.
@@ -1861,11 +1925,19 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 769.
 
+<<<<<<< HEAD
 [55] [56] [57] [58] [59] [60] [61]
+=======
+[54] [55] [56] [57] [58] [59] [60]
+>>>>>>> dissertation
 
 LaTeX Warning: Reference `sec:surface_defects' on page 62 undefined on input line 1467.
 
+<<<<<<< HEAD
 [62] [63] [64]
+=======
+[61] [62] [63] [64]
+>>>>>>> dissertation
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -2076,7 +2148,11 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
+<<<<<<< HEAD
  [65] [66] [67] [68] [69] [70] [71]) (./Sections/Sec5.tex Excluding 'comment' comment. [72]) (./Sections/SecA.tex Excluding 'comment' comment.) [73] (./Main.bbl [74
+=======
+ [65] [66] [67] [68] [69] [70] [71]) (./Sections/Sec5.tex Excluding 'comment' comment.) (./Sections/SecA.tex Excluding 'comment' comment.) [72] (./Main.bbl [73
+>>>>>>> dissertation
 
 ] [75] [76] [77] [78]) [79]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
@@ -2096,18 +2172,34 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  24135 strings out of 493308
  444690 string characters out of 6129385
  561279 words of memory out of 5000000
  26527 multiletter control sequences out of 15000+600000
+=======
+ 23917 strings out of 493308
+ 439243 string characters out of 6129385
+ 554857 words of memory out of 5000000
+ 26323 multiletter control sequences out of 15000+600000
+>>>>>>> dissertation
  25325 words of font info for 100 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  64i,18n,358p,3324b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
 </Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+<<<<<<< HEAD
 Output written on Main.pdf (81 pages, 744160 bytes).
 PDF statistics:
  1673 PDF objects out of 1728 (max. 8388607)
  1543 compressed objects within 16 object streams
  567 named destinations out of 1000 (max. 500000)
  357 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+Output written on Main.pdf (80 pages, 736884 bytes).
+PDF statistics:
+ 1641 PDF objects out of 1728 (max. 8388607)
+ 1512 compressed objects within 16 object streams
+ 561 named destinations out of 1000 (max. 500000)
+ 349 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> dissertation
 
