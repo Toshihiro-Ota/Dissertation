@@ -13,6 +13,7 @@
 
 %%%%%%%%%%%%%%%%%% section 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Surface defects as transfer matrices}
+\label{sec:surface_defects}
 
 
 In this section, we mainly review the results in \cite{Maruyoshi:2016caf},
@@ -34,6 +35,34 @@ model. Then we proceed to the additional surface defects in the gauge
 theory side. The surface defects act on the supersymmetric index by
 difference operators, and they are identified with the transfer matrices
 of the corresponding integrable lattice model.
+
+
+%FIGURE
+\begin{figure}
+  \centering
+    %\subfloat[\label{}]{  }
+    %\subfloat[\label{}]{  }
+    \begin{tikzpicture}[scale=1, font=\small, baseline=(x.base)]  \node (x) at (0,0) {\vphantom{x}};
+      \def\pos{1cm}
+
+        \node (Q) at (0,0) {Quiver gauge theory};
+        \node[above=\pos of Q] (B) {Brane tiling};
+        \node[right=1.5*\pos of Q] (S) {class-$\CS$}; \node[right=0.6*\pos of Q] {$\simeq$};
+        \node[left=1.5*\pos of Q, align=center] (I) {Integrable \\ lattice model};
+        \node[below=1.6*\pos of Q, align=center] (T) {(4) Transfer matrix/surface defect \\ acting on partition function/supersymmetric index};
+        \node[below=1.6*\pos of Q, text opacity=0] (Tp) {(4) Transfer matrix/surface defect acting};
+
+        \draw[semithick, arrows=-to] (B) to node[left,pos=0.5] {(1)} (Q);
+        \draw[semithick, dashed, arrows=-to] (B.west) to[bend right=15] node[above left,pos=0.5,align=center,font=\footnotesize] {general \\ prescription} (I);
+        \draw[semithick, dashed, arrows=-to] (B.east) to[bend left=15] node[above right,pos=0.5] {(3)} (S);
+        \draw[semithick, color=red!50!black, arrows=to-to] (Q.south west) to[bend left=30] node[below=0.1cm,pos=0.5,align=center,font=\footnotesize] {(2) Gauge/YBE} (I.south east);
+        \draw[thick, color=blue!50!black, arrows=-to] (Tp.west) to[bend left=20] (I.south);
+        \draw[thick, color=blue!50!black, arrows=-to] (Tp.east) to[bend right=15] (S.south);
+
+    \end{tikzpicture}
+    \caption{Structure of section \ref{sec:surface_defects}. (1)}
+    \label{fig:structure_surface}
+  \end{figure}
 
 
 

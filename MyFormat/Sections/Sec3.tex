@@ -1,8 +1,8 @@
-\begin{comment}
+%\begin{comment}
 \documentclass[11pt]{article}  % , titlepage
 \usepackage{Common/toshi}
 \begin{document}
-\end{comment}
+%\end{comment}
 
 
 
@@ -12,6 +12,41 @@
 \label{sec:line_defects}
 
 
+
+
+%FIGURE
+\begin{figure}
+  \centering
+    %\subfloat[\label{}]{  }
+    %\subfloat[\label{}]{  }
+    \begin{tikzpicture}[scale=1, font=\small, baseline=(x.base)]  \node (x) at (0,0) {\vphantom{x}};
+      \def\pos{1cm}
+
+        \node[align=center] (Q) at (0,0) {Quiver gauge theory \\ (class-$\CS$)};
+        \node[above=1.6\pos of Q] (B) {Brane tiling};
+        \node[right=2*\pos of Q] (Toda) {Toda CFT}; \node[right=0.8*\pos of Q] {$\simeq$};
+        \node[above=1.6*\pos of Toda] (M) {M-theory setup};
+        \node[left=2*\pos of Q, align=center] (I) {Integrable \\ lattice model};
+        \node[above=1.6*\pos of I] (CS) {4d Chern-Simons};
+        \node[below=1.2*\pos of Q, align=center] (T) {Transfer matrix/Wilson-'t Hooft line/Verlinde operator \\ acting on a quantum Hilbert space};
+        %\node[below=1.6*\pos of Q, text opacity=0] (Tp) {(4) Transfer matrix/surface defect acting};
+
+        \draw[semithick, arrows=-to] (B) to (Q);
+        \draw[semithick, dashed, arrows=-to] (B.south west) to (I.north east);% node[above left,pos=0.5,align=center,font=\scriptsize] {general \\ prescription} (I.north east);
+        \draw[semithick, color=red!50!black, arrows=-to] (B.east) to (M.west);
+        \draw[semithick, color=red!50!black, arrows=-to] (B.west) to node[above,pos=0.5] {(4)} (CS.east);
+        \draw[semithick, arrows=-to] (CS) to (I);
+        \draw[semithick, arrows=-to] (M) to (Toda);
+        \draw[semithick, arrows=-to] (M.south west) to node[below right=0.2cm,pos=0.5] {AGT} (Q.north east);
+
+        \draw[thick, color=blue!50!black, arrows=-to] (T.north west) to[bend left=15] node[pos=0.5,left] {(1)} (I.south);
+        \draw[thick, color=blue!50!black, arrows=-to] (T) to node[pos=0.5,right] {(2)} (Q);
+        \draw[thick, color=blue!50!black, arrows=-to] (T.north east) to[bend right=12] node[pos=0.5,right] {(3)} (Toda.south);
+
+    \end{tikzpicture}
+    \caption{Structure of section \ref{sec:line_defects}. (1)}
+    \label{fig:structure_line}
+  \end{figure}
 
 
 
@@ -106,12 +141,12 @@ segments:
   \begin{tikzpicture}[xscale=0.8, yscale=0.5, baseline=(x.base)]
     \node (x) at (0,0) {\vphantom{x}};
 
-    \draw[thick, ->] (0,0) node[left] {$z$} -- (2,0);
-    \draw[thick, double, ->] (1,-1) -- (1,1);
+    \draw[thick, densely dashed, ->] (0,0) node[left] {$z$} -- (2,0);
+    \draw[thick, ->] (1,-1) -- (1,1);
   \end{tikzpicture}
   \quad .
 \end{equation}
-The solid line extending in the horizontal direction has a spectral
+The dashed line extending in the horizontal direction has a spectral
 parameter.  The graphical representation of a matrix element of the
 L-operator is
 \begin{equation}
@@ -120,8 +155,8 @@ L-operator is
   \begin{tikzpicture}[xscale=1.5, baseline=(x.base)]
     \node (x) at (0,0) {\vphantom{x}};
 
-    \draw[thick, ->] (0,0) node[left] {$z$} -- (2,0);
-    \draw[thick, double, ->] (1,-1) -- (1,1);
+    \draw[thick, densely dashed, ->] (0,0) node[left] {$z$} -- (2,0);
+    \draw[thick, ->] (1,-1) -- (1,1);
 
     \node at (0.5, 0.5) {$a^1$};
     \node at (1.5, 0.5) {$a^2$};
@@ -132,21 +167,21 @@ L-operator is
   \end{tikzpicture}
   \quad .
 \end{equation}
-Each edge of a solid line carries a state in $V$, and the state may
+Each edge of a dashed line carries a state in $V$, and the state may
 change when the line crosses another line.  To each region separated
 by lines, a dynamical parameter is assigned.  The values of dynamical
-parameters on the two sides of a solid line carrying state $v_i$
+parameters on the two sides of a dashed line carrying state $v_i$
 differ by $\eps h_i$.
 
-We also represent the operator $R$ as two crossing solid lines:
+We also represent the operator $R$ as two crossing dashed lines:
 \begin{equation}
   R(z - z', a)_{ij}^{kl}
   =
   \begin{tikzpicture}[scale=1, baseline=(x.base)]
     \node (x) at (0,0) {\vphantom{x}};
 
-    \draw[thick, ->] (0,0) node[left] {$z$} -- (2,0);
-    \draw[thick, ->] (1,-1) node[below] {$z'$} -- (1,1);
+    \draw[thick, densely dashed, ->] (0,0) node[left] {$z$} -- (2,0);
+    \draw[thick, densely dashed, ->] (1,-1) node[below] {$z'$} -- (1,1);
 
     \node at (0.5, 0.5) {$a$};
 
@@ -158,14 +193,14 @@ We also represent the operator $R$ as two crossing solid lines:
   \quad .
 \end{equation}
 Then, the RLL relation~\eqref{eq:RLL} simply means an equality between
-two configurations involving two solid and one double lines:
+two configurations involving two dashed and one solid lines:
 \begin{equation}
     \begin{tikzpicture}[yscale=0.6, baseline=(x.base)]
       \node (x) at (30:2) {};
 
-      \draw[thick, ->] (0,0) node[left] {$z'$} -- ++(30:3);
-      \draw[thick, ->] (0,2) node[left] {$z$} -- ++(-30:3);
-      \draw[thick, double, ->] (-30:1) -- ++(0,3);
+      \draw[thick, densely dashed, ->] (0,0) node[left] {$z'$} -- ++(30:3);
+      \draw[thick, densely dashed, ->] (0,2) node[left] {$z$} -- ++(-30:3);
+      \draw[thick, ->] (-30:1) -- ++(0,3);
 
       \node (O) at ({sqrt(3)*4/6},1) {};
       \node[yshift=2pt] at ($(O) + (120:{sqrt(3)*4/6})$) {$a^1$};
@@ -175,9 +210,9 @@ two configurations involving two solid and one double lines:
     \begin{tikzpicture}[yscale=0.6, baseline=(x.base)]
       \node (x) at (30:1) {};
 
-      \draw[thick, ->] (0,0) node[left] {$z'$} -- ++(30:3);
-      \draw[thick, ->] (0,1) node[left] {$z$} -- ++(-30:3);
-      \draw[thick, double, ->] (-30:2) -- ++(0,3);
+      \draw[thick, densely dashed, ->] (0,0) node[left] {$z'$} -- ++(30:3);
+      \draw[thick, densely dashed, ->] (0,1) node[left] {$z$} -- ++(-30:3);
+      \draw[thick, ->] (-30:2) -- ++(0,3);
 
       \node (O) at ({sqrt(3)*5/6},0.5) {};
       \node at ($(O) + (120:{sqrt(3)*3/6})$) {$a^1$};
@@ -185,14 +220,14 @@ two configurations involving two solid and one double lines:
     \end{tikzpicture}
     \quad .
 \end{equation}
-The states carried by the internal solid edges are summed over.
+The states carried by the internal dashed edges are summed over.
 
 By comparing the values of the dynamical parameter assigned to the
 lower right regions of the two sides, we see that for $R$ to satisfy
 the RLL relation, it must commute with $h \otimes 1 + 1 \otimes h$ for
 all $h \in \hf$; in other words, $R(z,a)_{ij}^{kl} = 0$ unless
 $h_i + h_j = h_k + h_l$.  This is a consistency condition for the rule
-that determines how dynamical parameters change across solid lines.
+that determines how dynamical parameters change across dashed lines.
 
 Associated with an L-operator, there is an integrable quantum
 mechanical system consisting of particles moving in the space $\hf^*$.
@@ -215,7 +250,7 @@ by
 \end{equation}
 acting on any meromorphic function $f(a^1, \dotsc, a^{n+1})$.  (The
 superscript on $\Delta_i$ specifies the variable on which the
-difference operator acts.)  This is a solid line crossing $n$ double
+difference operator acts.)  This is a dashed line crossing $n$ double
 lines:
 \begin{equation}
   M(z)
@@ -223,13 +258,13 @@ lines:
   \begin{tikzpicture}[xscale=0.8, yscale=0.5, baseline=(x.base)]
     \node (x) at (0,0) {\vphantom{x}};
 
-    \draw[thick, ->] (0,0) node[left] {$z$} -- (5,0);
-    \draw[thick, double, ->] (1,-1) -- +(90:2);
-    \draw[thick, double, ->] (2,-1) -- +(90:2);
+    \draw[thick, densely dashed, ->] (0,0) node[left] {$z$} -- (5,0);
+    \draw[thick, ->] (1,-1) -- +(90:2);
+    \draw[thick, ->] (2,-1) -- +(90:2);
 
     \draw[ultra thick, dotted, -] (2.55,-0.5) -- (3.45,-0.5);
 
-    \draw[thick, double, ->] (4,-1) -- +(90:2);
+    \draw[thick, ->] (4,-1) -- +(90:2);
   \end{tikzpicture}
   \quad .
 \end{equation}
@@ -261,15 +296,15 @@ of relativistic systems.
 
 Alternatively, one may think of this system as a one-dimensional
 periodic quantum spin chain.  This spin chain is constructed from $n$
-double lines extending in the longitudinal direction of a cylinder, as
+solid lines extending in the longitudinal direction of a cylinder, as
 shown in figure~\ref{fig:spin-chain-no-T}.  The dynamical parameter
 $a^r$ resides in the region sandwiched by the $r$th and the
-$(r+1)$th double lines.  One regards the $n$ dynamical parameters
+$(r+1)$th solid lines.  One regards the $n$ dynamical parameters
 $a^1$, $\dotsc$, $a^n$ as continuous spin variables; see
 figure~\ref{fig:spin-chain-chain}.  Thinking of the longitudinal
 direction as the time direction, the Hilbert space of the spin chain
 is again $\CM_{\hf^*}^{\otimes n}$.  An action of $T(z)$ on the
-Hilbert space is induced by an insertion of a solid line with spectral
+Hilbert space is induced by an insertion of a dashed line with spectral
 parameter $z$ in the circumferential direction of the cylinder, as in
 figure~\ref{fig:spin-chain-T}.
 
@@ -285,14 +320,14 @@ figure~\ref{fig:spin-chain-T}.
       \draw (-2,0) arc (180:360:2);
       \draw (0,5) circle [radius=2];
 
-      \draw[thick, double, ->] (10:2) -- ++(90:5);
-      \draw[thick, double, ->] (55:2) -- ++(90:5);
-      \draw[thick, double, ->] (100:2) -- ++(90:5);
-      \draw[thick, double, ->] (145:2) -- ++(90:5);
-      \draw[thick, double, ->] (190:2) -- ++(90:5);
-      \draw[thick, double, ->] (235:2) -- ++(90:5);
-      \draw[thick, double, ->] (280:2) -- ++(90:5);
-      \draw[thick, double, ->] (325:2) -- ++(90:5);
+      \draw[thick, ->] (10:2) -- ++(90:5);
+      \draw[thick, ->] (55:2) -- ++(90:5);
+      \draw[thick, ->] (100:2) -- ++(90:5);
+      \draw[thick, ->] (145:2) -- ++(90:5);
+      \draw[thick, ->] (190:2) -- ++(90:5);
+      \draw[thick, ->] (235:2) -- ++(90:5);
+      \draw[thick, ->] (280:2) -- ++(90:5);
+      \draw[thick, ->] (325:2) -- ++(90:5);
     \end{tikzpicture}
   }
   \qquad
@@ -321,22 +356,22 @@ figure~\ref{fig:spin-chain-T}.
       \draw (-2,0) arc (180:360:2);
       \draw (0,5) circle [radius=2];
 
-      \draw[thick, ->] (-2,2.5) arc (-180:-90:2);
+      \draw[thick, densely dashed, ->] (-2,2.5) arc (-180:-90:2);
       \draw[thick] (-2,2.5) arc (180:-90:2);
 
-      \draw[thick, double, ->] (10:2) -- ++(90:5);
-      \draw[thick, double, ->] (55:2) -- ++(90:5);
-      \draw[thick, double, ->] (100:2) -- ++(90:5);
-      \draw[thick, double, ->] (145:2) -- ++(90:5);
-      \draw[thick, double, ->] (190:2) -- ++(90:5);
-      \draw[thick, double, ->] (235:2) -- ++(90:5);
-      \draw[thick, double, ->] (280:2) -- ++(90:5);
-      \draw[thick, double, ->] (325:2) -- ++(90:5);
+      \draw[thick, ->] (10:2) -- ++(90:5);
+      \draw[thick, ->] (55:2) -- ++(90:5);
+      \draw[thick, ->] (100:2) -- ++(90:5);
+      \draw[thick, ->] (145:2) -- ++(90:5);
+      \draw[thick, ->] (190:2) -- ++(90:5);
+      \draw[thick, ->] (235:2) -- ++(90:5);
+      \draw[thick, ->] (280:2) -- ++(90:5);
+      \draw[thick, ->] (325:2) -- ++(90:5);
     \end{tikzpicture}
   }
   \caption{(a) Double lines in the longitudinal direction of a
     cylinder.  (b) The corresponding quantum spin chain with
-    continuous spin variables.  (c) A solid line winding around the
+    continuous spin variables.  (c) A dashed line winding around the
     cylinder acts on the spin chain by the transfer matrix.}
   \label{fig:spin-chain}
 \end{figure}
@@ -485,7 +520,7 @@ by~\cite{MR1463830}
   \,.
 \end{equation}
 The complex numbers $w$, $y$ may be thought of as spectral parameters
-for the corresponding double line.  The presence of the two parameters
+for the corresponding solid line.  The presence of the two parameters
 is a consequence of the fact that $R^{\text{ell}}(z,a)$ is invariant
 under shift of $a$ by a multiple of the identity matrix $I$ and in the
 RLL relation~\eqref{eq:RLL} the spectral parameters $z$, $z'$ enter
@@ -1371,9 +1406,9 @@ Hooft lines is the highest weight of the representation
 $(\C^N)^{\oplus n}$ of the Langlands dual
 ${}^L\gf_\C \iso \slf_N^{\oplus n}$ of $\gf_\C$.  The corresponding
 transfer matrix~\eqref{eq:T-trig} is represented graphically as $n$
-double lines intersected by a single solid loop carrying the
+solid lines intersected by a single dashed loop carrying the
 representation $V = \C^N$, as shown in figure~\ref{fig:spin-chain-T}.
-The $n$ regions sandwiched between double lines correspond to the $n$
+The $n$ regions sandwiched between solid lines correspond to the $n$
 copies of $\slf_N$.
 
 Both sides of the correspondence have a generalization in which the
@@ -1382,9 +1417,9 @@ of $\slf_N$.  On the gauge theory side, we can change the magnetic
 charge of the Wilson--'t Hooft lines to the highest weight $\lambda_R$
 of $R^{\oplus n}$ while keeping the electric charges intact.  On the
 integrable system side, the counterpart of this operation is the
-fusion procedure, which allows one to construct a solid line in an
+fusion procedure, which allows one to construct a dashed line in an
 arbitrary finite-dimensional representation of $\slf_N$ from a
-collection of solid lines in the vector representation, with the
+collection of dashed lines in the vector representation, with the
 spectral parameters suitably adjusted.
 
 We naturally expect that the vev of the Wilson--'t Hooft line with
@@ -1503,7 +1538,7 @@ $\eps_1$ and $\eps_2$ are
 called $\Omega$-deformation parameters in the literature, which turn out
 to realize the deformation quantization of the moduli spaces.
 For $M^4=\R^4_{\eps_1,\eps_2}$, the $\Omega$-deformation causes
-two-dimensional rotations on the planes $mathbb R^2_{\eps_1}$ and $\mathbb R^2_{\eps_2}$:
+two-dimensional rotations on the planes $\mathbb R^2_{\eps_1}$ and $\mathbb R^2_{\eps_2}$:
 \begin{equation}
     \R^4_{\eps_1,\eps_2} := \R^2_{\eps_1} \times \R^2_{\eps_2}.
 \end{equation}
@@ -2420,19 +2455,19 @@ on $S^1_9$ we get D5-branes $\check{\mathrm{D5}}_i$, NS5-branes
 $\check{\mathrm{NS5}}^r$ and a D3-brane $\check{\mathrm{D3}}$ with
 worldvolumes
 \begin{align}
-  \label{ea:M-D5}
+  \label{eq:M-D5}
   M_{\check{\mathrm{D5}}_i}
   &=
   \R_0 \times \R^2_{12} \times_\eps S^1_3 \times \{0\}
   \times S^1_6 \times \{0\} \times \{0\} \times \check S^1_9 \,,
   \\
-  \label{ea:M-NS5}
+  \label{eq:M-NS5}
   M_{\check{\mathrm{NS5}}^r}
   &=
   \R_0 \times \R^2_{12} \times_\eps S^1_3 \times \{0\}
   \times \{l^r\} \times \{0\} \times \R_8 \times \check S^1_9 \,,
   \\
-  \label{ea:M-D3}
+  \label{eq:M-D3}
   M_{\check{\mathrm{D3}}}
   &=
   \{t_0\} \times \{0\} \times S^1_3 \times \{0\}
@@ -2574,7 +2609,7 @@ $S^1_{10}$ must be shifted by $-\eps N\varphi/2\pi$.  We can make use
 of this property to get a Wilson line supported on the cycle
 $\gamma_\sigma$: fix a small value $\varphi_0$ and let the Wilson line
 bends by the angle $\sigma^r\varphi_0$ right before it crosses the
-$r$th double line, as illustrated in figure~\ref{fig:path-4dCS}.
+$r$th solid line, as illustrated in figure~\ref{fig:path-4dCS}.
 
 \begin{figure}
   \centering
@@ -2624,20 +2659,20 @@ $r$th double line, as illustrated in figure~\ref{fig:path-4dCS}.
       \node at (7,-1) {$l^{r+1}$};
     \end{tikzpicture}
   }
-  \caption{(a) A path in $\Sigma$ bending near double lines.  (b) The
+  \caption{(a) A path in $\Sigma$ bending near solid lines.  (b) The
     corresponding path in $C_{1,n}$ detours around the punctures.}
   \label{fig:path-4dCS}
 \end{figure}
 
 The trigonometric limit $\check{R}_9 \to 0$ is equivalent to the limit
 $R_{10} \to \infty$.  In this limit, $C_{1,n}$ is elongated by an
-infinite factor in the $x^{10}$-direction and the solid line is
+infinite factor in the $x^{10}$-direction and the dashed line is
 located at $z = l^r - \sigma^r \iu\infty$ when it crosses the $r$th
-double line.  This is precisely the limit that appears in the
+solid line.  This is precisely the limit that appears in the
 definitions of the fundamental L-operators~\eqref{eq:fund-L}, from
 which $\CT_{\sigma,m}$ is constructed.
 
-The D5--NS5--D3 brane system~\eqref{ea:M-D5}--\eqref{ea:M-D3} is
+The D5--NS5--D3 brane system~\eqref{eq:M-D5}--\eqref{eq:M-D3} is
 another interesting duality frame.  It is actually possible to
 introduce an additional set of NS5-branes so that the 5-brane system
 realizes a four-dimensional $\CN = 1$ supersymmetric gauge theory on
