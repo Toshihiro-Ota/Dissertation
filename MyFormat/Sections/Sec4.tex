@@ -17,31 +17,35 @@
 
 
 In this section, we mainly review the results in \cite{Maruyoshi:2016caf},
-in which the correspondence we introduce in the previous section was established.
-Moreover, the surface defect is going to be identified with Sklyanin's L-operator.
+in which the correspondence we introduced in section \ref{sec:defects} was established.
+It turns out that a surface defect is identified with the transfer matrix
+constructed from Sklyanin's L-operator.
 
-
-%To be inserted the main claim here
-
-
-In this section, we apply the general construction of integrable lattice
-models from branes in string theory to the simplest case of the so-called
-class $\mathcal{S}$ theories. Taking the four-manifold to be $S^{1} \times S^{3}$,
+The structure of this section is as follows (see figure \ref{fig:structure_surface}).
+We first apply to the brane tilings the general prescription to construct
+the correspondence between supersymmetric gauge theory
+and integrable lattice model developed in section \ref{sec:integrability_from_TQFT}.
+Brane tiling technique allows us to study quiver gauge theories in a systematic way,
+and taking the four-manifold to be $S^{1}\times S^{3}$,
 on which quiver gauge theories are defined, the path integral of the
-twisted partition function of the theory computes the supersymmetric
-index. We first explain the correspondence between the supersymmetric
-index and the partition function of two-dimensional integrable lattice
-model. Then we proceed to the additional surface defects in the gauge
-theory side. The surface defects act on the supersymmetric index by
-difference operators, and they are identified with the transfer matrices
-of the corresponding integrable lattice model.
+twisted partition function of the theory computes the supersymmetric index.
+For such a case, we will obtain a dictionary between supersymmetric gauge theory and
+integrable lattice model, which is called \emph{Gauge/YBE correspondence}.
+The brane tiling construction can be mapped into the setups of the so-called class-$\CS$ theories.
+We proceed to additional surface defects in the simplest case of the theories of class-$\CS$.
+Then we find that the surface defects act on the supersymmetric index by
+difference operators \eqref{eq:surface_defect_action} and they are identified with the transfer matrices
+of the corresponding integrable lattice model \eqref{eq:transfer_fromL}, which is the most important
+relation of this section:
+\begin{equation}
+  \mathfrak{S}_{(0,1)} = \mathrm{Tr}\left( L^{\diamondsuit}(d, (c,b)) \right),
+\end{equation}
+with an appropriate parameter identification.
 
 
 %FIGURE
 \begin{figure}
   \centering
-    %\subfloat[\label{}]{  }
-    %\subfloat[\label{}]{  }
     \begin{tikzpicture}[scale=1, font=\small, baseline=(x.base)]  \node (x) at (0,0) {\vphantom{x}};
       \def\pos{1cm}
 
@@ -52,17 +56,21 @@ of the corresponding integrable lattice model.
         \node[below=1.6*\pos of Q, align=center] (T) {(4) Transfer matrix/surface defect \\ acting on partition function/supersymmetric index};
         \node[below=1.6*\pos of Q, text opacity=0] (Tp) {(4) Transfer matrix/surface defect acting};
 
-        \draw[semithick, arrows=-to] (B) to node[left,pos=0.5] {(1)} (Q);
-        \draw[semithick, dashed, arrows=-to] (B.west) to[bend right=15] node[above left,pos=0.5,align=center,font=\footnotesize] {general \\ prescription} (I);
+        \draw[semithick, arrows=-to] (B) to (Q);
+        \draw[semithick, dashed, arrows=-to] (B.west) node[below=0.25cm] {(1)} to[bend right=15] node[above left,pos=0.5,align=center,font=\footnotesize] {general \\ prescription} (I);
         \draw[semithick, dashed, arrows=-to] (B.east) to[bend left=15] node[above right,pos=0.5] {(3)} (S);
         \draw[semithick, color=red!50!black, arrows=to-to] (Q.south west) to[bend left=30] node[below=0.1cm,pos=0.5,align=center,font=\footnotesize] {(2) Gauge/YBE} (I.south east);
         \draw[thick, color=blue!50!black, arrows=-to] (Tp.west) to[bend left=20] (I.south);
         \draw[thick, color=blue!50!black, arrows=-to] (Tp.east) to[bend right=15] (S.south);
 
     \end{tikzpicture}
-    \caption{Structure of section \ref{sec:surface_defects}. (1)}
-    \label{fig:structure_surface}
-  \end{figure}
+    \caption{Structure of section \ref{sec:surface_defects}. (1) \& (2) Along the line of the general prescription
+    developed in section \ref{sec:integrability_from_TQFT}, brane tiling technique realizes the Gauge/YBE correspondence.
+    (3) Brane tiling construction of quiver gauge theories can be rephrased by the language of class-$\CS$.
+    (4) A surface defect acting on the index is identified with a transfer matrix acting on the partition function
+    of a corresponding integrable lattice model.}
+  \label{fig:structure_surface}
+\end{figure}
 
 
 
@@ -71,9 +79,9 @@ of the corresponding integrable lattice model.
 \subsection{Brane tilings and integrable lattice models}
 \label{sec:tiling_latticemodel}
 
+Let us begin with some generalities, before restricting ourselves to the case of $S^1\times S^3$.
 In order to give the general argument of the correspondence,
-before restricting ourselves to the case of $M=S^3$,
-let us briefly review the systematic brane construction of quiver gauge theories
+we make a brief review of the systematic brane construction of quiver gauge theories
 called \emph{brane tilings}. For more details, the reader should be
 referred to the original papers and the excellent reviews
 \cite{Hanany:2005ve,Franco:2005rj,Kennaway:2007tq,Yamazaki:2008bt}.
@@ -142,243 +150,23 @@ and let them meet along $C_{i}$ and form bound states over regions
 with $q \neq 0$. Such a 5-brane system is called a brane tiling on
 $\Sigma$ \cite{Hanany:2005ve,Franco:2005rj}.
 
-As we just explained, a brane tiling gives rise to a four-dimensional
+As we have explained in the last section, a brane tiling gives rise to a four-dimensional
 $\mathcal{N}=1$ theory. A concrete description of this theory is
 known for the subset of brane tilings that involve only $( N,0 )$
-5-branes (i.e. $N$ coincident D5-branes) and $( N,\pm1 )$
+5-branes (i.e.~$N$ coincident D5-branes) and $( N,\pm1 )$
 5-branes. Given a brane tiling in this subset, we indicate $( N,1 )$
 and $( N,-1 )$ 5-brane regions by dark and light shading,
-respectively, while leaving $( N,0 )$ regions unshaded.
+respectively, while leaving $( N,0 )$ regions unshaded (see figure \ref{fig:D5NS5config}).
 After the shading, we get a checkerboard-like pattern on $\Sigma$
 where shaded faces adjoin unshaded ones and two shaded faces sharing
-a vertex are of different types, see figure \ref{fig:tiling_checkerboard}.
-
-
-%FIGURE    to be fixed
-\begin{figure}
-\centering
-\def\width{3cm}
-\def\height{2cm}
-  \subfloat[\label{fig:tiling_checkerboard}]{
-    \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \def\step{0.15cm}
-        \def\shift{0.25cm}
-        \def\sep{1cm}
-
-        \fill[fill=olive!5] (0,0) rectangle (\width,\height);
-
-        \fill[lightshade] (0,0) rectangle (\step,\step);
-        \fill[lightshade] (\step+\shift,0) rectangle (\step+\sep,\step);    % ????
-        \fill[lightshade] (\step+\shift+\sep,0) rectangle (\step+2*\sep,\step);    % ????
-        \fill[lightshade] (\step+\shift+2*\sep,0) rectangle (\width,\step);    % ????
-
-        \fill[lightshade] (0,\step+\shift) rectangle (\step,\step+\sep);
-        \fill[lightshade] (\step+\shift,\step+\shift) rectangle (\step+\sep,\step+\sep);
-        \fill[lightshade] (\step+\shift+\sep,\step+\shift) rectangle (\step+2*\sep,\step+\sep);
-        \fill[lightshade] (\step+\shift+2*\sep,\step+\shift) rectangle (\width,\step+\sep);
-
-        \fill[lightshade] (0,\step+\shift+\sep) rectangle (\step,\height);
-        \fill[lightshade] (\step+\shift,\step+\shift+\sep) rectangle (\step+\sep,\height);
-        \fill[lightshade] (\step+\shift+\sep,\step+\shift+\sep) rectangle (\step+2*\sep,\height);
-        \fill[lightshade] (\step+\shift+2*\sep,\step+\shift+\sep) rectangle (\width,\height);
-
-        \fill[darkshade] (\step,\step) rectangle (\step+\shift,\step+\shift);
-        \fill[darkshade, xshift=\sep] (\step,\step) rectangle (\step+\shift,\step+\shift);
-        \fill[darkshade, xshift=2*\sep] (\step,\step) rectangle (\step+\shift,\step+\shift);
-
-        \begin{scope}[yshift=\sep]
-        \fill[darkshade] (\step,\step) rectangle (\step+\shift,\step+\shift);
-        \fill[darkshade, xshift=\sep] (\step,\step) rectangle (\step+\shift,\step+\shift);
-        \fill[darkshade, xshift=2*\sep] (\step,\step) rectangle (\step+\shift,\step+\shift);
-        \end{scope}
-
-        \draw[semithick] (\step,0) -- ++(0,\height);
-        \draw[semithick, xshift=\shift] (\step,0) -- ++(0,\height);
-        \draw[semithick, xshift=\sep] (\step,0) -- ++(0,\height);
-        \draw[semithick, xshift=\sep+\shift] (\step,0) -- ++(0,\height);
-        \draw[semithick, xshift=2*\sep] (\step,0) -- ++(0,\height);
-        \draw[semithick, xshift=2*\sep+\shift] (\step,0) -- ++(0,\height);
-
-        \draw[semithick] (0,\step) -- ++(\width,0);
-        \draw[semithick, yshift=\shift] (0,\step) -- ++(\width,0);
-        \draw[semithick, yshift=\sep] (0,\step) -- ++(\width,0);
-        \draw[semithick, yshift=\sep+\shift] (0,\step) -- ++(\width,0);
-
-        \draw[color=olive!80] (0,0) rectangle (\width,\height);
-
-
-    \end{tikzpicture}
-    }
-  \quad
-  \subfloat[\label{fig:quiver_diamond}]{
-    \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \useasboundingbox (0,0) rectangle (\width,\height);
-
-        \def\step{0.15cm}
-        \def\shift{0.25cm}
-        \def\sep{1cm}
-        \def\site{\shift+\sep/2}
-
-        \node[node, minimum size=7pt] (a1) at (\site,\step+\shift/2) {};  %%%%
-        \node[node, minimum size=7pt, xshift=\sep] (a2) at (\site,\step+\shift/2) {};
-        \node[node, minimum size=7pt, xshift=2*\sep] (a3) at (\site,\step+\shift/2) {};
-        \node[node, minimum size=7pt] (b1) at (\step+\shift/2,\site) {};  %%%%
-        \node[node, minimum size=7pt, xshift=\sep] (b2) at (\step+\shift/2,\site) {};
-        \node[node, minimum size=7pt, xshift=2*\sep] (b3) at (\step+\shift/2,\site) {};
-        \begin{scope}[yshift=\sep]
-        \node[node, minimum size=7pt] (c1) at (\site,\step+\shift/2) {};  %%%%
-        \node[node, minimum size=7pt, xshift=\sep] (c2) at (\site,\step+\shift/2) {};
-        \node[node, minimum size=7pt, xshift=2*\sep] (c3) at (\site,\step+\shift/2) {};
-        \node[node, minimum size=7pt] (d1) at (\step+\shift/2,\site) {};  %%%%
-        \node[node, minimum size=7pt, xshift=\sep] (d2) at (\step+\shift/2,\site) {};
-        \node[node, minimum size=7pt, xshift=2*\sep] (d3) at (\step+\shift/2,\site) {};
-        \end{scope}
-
-        \draw[semithick, arrows=-latex] (b1) to (a1); \draw[semithick, arrows=-latex] (a1) to (b2); \draw[semithick, arrows=-latex] (b2) to (a2); \draw[semithick, arrows=-latex] (a2) to (b3); \draw[semithick, arrows=-latex] (b3) to (a3);
-        \draw[semithick, arrows=-latex] (c1) to (b1); \draw[semithick, arrows=-latex] (b2) to (c1); \draw[semithick, arrows=-latex] (c2) to (b2); \draw[semithick, arrows=-latex] (b3) to (c2); \draw[semithick, arrows=-latex] (c3) to (b3);
-        \draw[semithick, arrows=-latex] (d1) to (c1); \draw[semithick, arrows=-latex] (c1) to (d2); \draw[semithick, arrows=-latex] (d2) to (c2); \draw[semithick, arrows=-latex] (c2) to (d3); \draw[semithick, arrows=-latex] (d3) to (c3);
-
-        \path[name path=rec, draw=none] (0,0) rectangle (\width,\height);
-        \path[name path=quiv1, draw=none] (a1) to (\step+\shift/2,\site-\sep);
-        \path[name path=quiv2, draw=none] (a1) to (\step+\shift/2+\sep,\site-\sep);
-        \path[name intersections={of= rec and quiv1, by={A}}];\tikzmath{coordinate \a;  \a = (A);}    % actually \ay=0!!
-        \path[name intersections={of= rec and quiv2, by={B}}];\tikzmath{coordinate \b;  \b = (B);}    % actually \by=0!!
-
-        \draw[semithick] (\ax,0) to (a1); \draw[semithick, arrows=-latex] (\bx,0) to (a1);
-        \draw[semithick] (\ax+\sep,0) to (a2); \draw[semithick, arrows=-latex] (\bx+\sep,0) to (a2);
-        \draw[semithick] (\ax+2*\sep,0) to (a3); \draw[semithick, arrows=-latex] (\width,0) to (a3);  %\bx+2*\sep
-
-        \draw[semithick, arrows=-latex] (0,\ax) to (b1); \draw[semithick] (0,\bx) to (b1);
-        \draw[semithick, arrows=-latex] (0,\ax+\sep) to (d1);
-
-        \draw[semithick] (\width-\bx,\height) to (d3); \draw[semithick, arrows=-latex] (\width-\ax,\height) to (d3);
-        \draw[semithick] (\width-\bx-\sep,\height) to (d2); \draw[semithick, arrows=-latex] (\width-\ax-\sep,\height) to (d2);
-        \draw[semithick] (0,\height) to (d1); \draw[semithick, arrows=-latex] (\width-\ax-2*\sep,\height) to (d1);
-
-        \draw[semithick] (\width,\height-\ax) to (c3); \draw[semithick, arrows=-latex] (\width,\height-\bx) to (c3);
-        \draw[semithick] (\width,\height-\ax-\sep) to (a3);
-
-        \draw[color=olive!80] (0,0) rectangle (\width,\height);
-
-    \end{tikzpicture}
-    }
-  \quad
-  \subfloat[\label{}]{
-      \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \def\step{0.15cm}
-        \def\shift{0.2cm}
-        \def\sep{1cm}
-
-        \path[name path=v1, draw=none] (\step+\sep/2,0) -- ++(0,\height);
-        \path[name path=l1, draw=none] (\step+\sep/2-\shift,0) -- ++(\height,\height);    % canonical line
-        \path[name intersections={of= v1 and l1, by={A}}];\tikzmath{coordinate \ca;  \ca = (A);}
-
-        \fill[fill=olive!5] (0,0) rectangle (\width,\height);
-
-        \fill[darkshade] (\step+\sep/2,0) -- (\cax,\cay) -- (\step+\sep/2-\shift,0) -- cycle;
-        \fill[darkshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay+\sep) -- (2*\step-\cay,\step+\sep/2) -- cycle;
-        \fill[darkshade] (\step+\sep/2,\step+\sep/2+\sep) -- (\step+\sep/2,\height) -- (\step+\sep/2-\shift+\height-2*\sep,\height) -- (2*\step-\cay,\step+\sep/2+\sep) -- cycle;
-        \fill[lightshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (2*\step+\sep-\cay,\step+\sep/2) -- cycle;
-        \fill[lightshade, yshift=\sep] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (2*\step+\sep-\cay,\step+\sep/2) -- cycle;
-        \fill[lightshade] (0,\step+\sep/2) -- (0,-\step-\sep/2+\shift+\sep) -- (2*\step-\cay,\step+\sep/2) -- cycle;
-        \fill[lightshade, yshift=\sep] (0,\step+\sep/2) -- (0,-\step-\sep/2+\shift+\sep) -- (2*\step-\cay,\step+\sep/2) -- cycle;
-
-
-        \begin{scope}[xshift=\sep]
-          \fill[darkshade] (\step+\sep/2,0) -- (\cax,\cay) -- (\step+\sep/2-\shift,0) -- cycle;
-          \fill[darkshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay+\sep) -- (2*\step-\cay,\step+\sep/2) -- cycle;
-          \fill[darkshade] (\step+\sep/2,\step+\sep/2+\sep) -- (\step+\sep/2,\height) -- (\step+\sep/2-\shift+\height-2*\sep,\height) -- (2*\step-\cay,\step+\sep/2+\sep) -- cycle;
-          \fill[lightshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (2*\step+\sep-\cay,\step+\sep/2) -- cycle;
-          \fill[lightshade, yshift=\sep] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (2*\step+\sep-\cay,\step+\sep/2) -- cycle;
-        \end{scope}
-
-        \begin{scope}[xshift=2*\sep]
-          \fill[darkshade] (\step+\sep/2,0) -- (\cax,\cay) -- (\step+\sep/2-\shift,0) -- cycle;
-          \fill[darkshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay+\sep) -- (2*\step-\cay,\step+\sep/2) -- cycle;
-          \fill[darkshade] (\step+\sep/2,\step+\sep/2+\sep) -- (\step+\sep/2,\height) -- (\step+\sep/2-\shift+\height-2*\sep,\height) -- (2*\step-\cay,\step+\sep/2+\sep) -- cycle;
-        \end{scope}
-        \fill[lightshade] (\step+\sep/2+2*\sep,\step+\sep/2) -- (\cax+2*\sep,\cay) -- (\width,\width-\step-\sep/2+\shift-2*\sep) -- (\width,\step+\sep/2) -- cycle;
-        \fill[lightshade, yshift=\sep] (\step+\sep/2+2*\sep,\step+\sep/2) -- (\cax+2*\sep,\cay) -- (\width,\width-\step-\sep/2+\shift-2*\sep) -- (\width,\step+\sep/2) -- cycle;
-
-        % vertical lines
-        \draw[semithick] (\step+\sep/2,0) -- ++(0,\height);
-        \draw[semithick, xshift=\sep] (\step+\sep/2,0) -- ++(0,\height);
-        \draw[semithick, xshift=2*\sep] (\step+\sep/2,0) -- ++(0,\height);
-
-        % horizontal lines
-        \draw[semithick] (0,\step+\sep/2) -- ++(\width,0);
-        \draw[semithick, yshift=\sep] (0,\step+\sep/2) -- ++(\width,0);
-
-        \draw[semithick] (0,-\step-\sep/2+\shift+2*\sep) -- (\step+\sep/2-\shift+\height-2*\sep,\height);
-        \draw[semithick] (0,-\step-\sep/2+\shift+\sep) -- (\step+\sep/2-\shift+\height-\sep,\height);
-        \draw[semithick] (\step+\sep/2-\shift,0) -- ++(\height,\height);    % canonical line
-        \draw[semithick] (\step+\sep/2-\shift+\sep,0) -- (\width,\width-\step-\sep/2+\shift-\sep);
-        \draw[semithick] (\step+\sep/2-\shift+2*\sep,0) -- (\width,\width-\step-\sep/2+\shift-2*\sep);
-
-        \draw[color=olive!80] (0,0) rectangle (\width,\height);
-
-    \end{tikzpicture}
-  }
-  \quad
-  \subfloat[\label{fig:quiver_triangle}]{
-    \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \useasboundingbox (0,0) rectangle (\width,\height);
-
-        \def\step{0.15cm}
-        \def\shift{0.25cm}
-        \def\sep{1cm}
-        \def\site{2*\step}
-
-        \node[fnode, minimum size=7pt] (a1) at (1.2*\site,\site) {};
-        \node[fnode, minimum size=7pt, xshift=\sep] (a2) at (1.2*\site,\site) {};
-        \node[fnode, minimum size=7pt, xshift=2*\sep] (a3) at (1.2*\site,\site) {};
-
-        \begin{scope}[yshift=0.7*\sep]
-        \node[node, minimum size=7pt] (b1) at (1.2*\site,\site) {};
-        \node[node, minimum size=7pt, xshift=\sep] (b2) at (1.2*\site,\site) {};
-        \node[node, minimum size=7pt, xshift=2*\sep] (b3) at (1.2*\site,\site) {};
-        \end{scope}
-
-        \begin{scope}[yshift=1.4*\sep]
-        \node[fnode, minimum size=7pt] (c1) at (1.2*\site,\site) {};
-        \node[fnode, minimum size=7pt, xshift=\sep] (c2) at (1.2*\site,\site) {};
-        \node[fnode, minimum size=7pt, xshift=2*\sep] (c3) at (1.2*\site,\site) {};
-        \end{scope}
-
-        \draw[semithick, -latex] (a1) to (a2); \draw[semithick, -latex] (a2) to (a3);
-        \draw[semithick, -latex] (a1) to (b1); \draw[semithick, -latex] (a2) to (b2); \draw[semithick, -latex] (a3) to (b3);
-        \draw[semithick, -latex] (b1) to (b2); \draw[semithick, -latex] (b2) to (b3);
-        \draw[semithick, -latex] (b1) to (c1); \draw[semithick, -latex] (b2) to (c2); \draw[semithick, -latex] (b3) to (c3);
-        \draw[semithick, -latex] (b2) to (a1); \draw[semithick, -latex] (b3) to (a2);
-        \draw[semithick, -latex] (c2) to (b1); \draw[semithick, -latex] (c3) to (b2);
-
-
-        \path[name path=rec, draw=none] (0,0) rectangle (\width,\height);
-        \path[name path=quiv, draw=none] (b1) to (\site-\sep,\site);
-        \path[name intersections={of= rec and quiv, by={A}}];\tikzmath{coordinate \ca;  \ca = (A);}    % actually \cax=0!!
-
-        \draw[semithick] (b1) to (\cax,\cay); \draw[semithick] (c1) to (\cax,\cay+0.7*\sep);
-        \draw[semithick, -latex] (0,\site) to (a1); \draw[semithick, -latex] (0,\site+0.7*\sep) to (b1);
-
-        \draw[semithick, -latex] (\width,\cay) to (a3); \draw[semithick, -latex] (\width,\cay+0.7*\sep) to (b3);
-        \draw[semithick] (a3) to (\width,\site); \draw[semithick] (b3) to (\width,\site+0.7*\sep);
-
-        \draw[color=olive!80] (0,0) rectangle (\width,\height);
-
-    \end{tikzpicture}
-    }
-  \caption{(a) A brane tiling on a torus. (b) The periodic quiver associated with (a).
-  (c) A brane tiling on a finite-length cylinder. (d) the quiver for (c).}
-  \label{fig:tilings_quiverdiagram}
-\end{figure}
-
+a vertex are of different types, see figure \ref{fig:tiling_checkerboard} and \ref{fig:tiling_triangle}.
 
 Each unshaded region supports $N$ D5-branes, hence an $\SU(N)$ vector
-multiplet lives there. If the region contains part of the boundary,
+multiplet lives there. If the region contains some part of the boundary,
 the multiplet is frozen by boundary conditions and the associated
 symmetry is an $\SU(N)$ flavor symmetry; in quiver notation, we represent
-a dynamical vector multiplet by a gauge node \tikz{\node[gnode, minimum size=9pt] {}} and a non-dynamical
-one by a flavor node \tikz{\node[fnode, minimum size=9pt] {}}. From open strings stretched between
+a dynamical vector multiplet by a gauge node \tikz{\node[gnode, minimum size=8pt]{}} and a non-dynamical
+one by a flavor node \tikz{\node[fnode, minimum size=8pt]{}}. From open strings stretched between
 two unshaded regions (namely ending on $N$ D5-branes partitioned
 by NS5-brane) sharing a vertex, we get a chiral multiplet that transforms
 in the fundamental representation under one of the associated gauge
@@ -410,6 +198,226 @@ the other. We write it by an arrow between the two nodes:
 \end{equation}
 The arrow points from the anti-fundamental side to the fundamental
 side. See figure \ref{fig:tilings_quiverdiagram} for examples of quivers obtained from brane tilings.
+
+
+%FIGURE
+\begin{figure}
+  \centering
+  \def\width{3cm}
+  \def\height{2cm}
+    \subfloat[\label{fig:tiling_checkerboard}]{
+      \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+          \def\step{0.15cm}
+          \def\shift{0.25cm}
+          \def\sep{1cm}
+
+          \fill[fill=olive!5] (0,0) rectangle (\width,\height);
+
+          \fill[lightshade] (0,0) rectangle (\step,\step);
+          \fill[lightshade] (\step+\shift,0) rectangle (\step+\sep,\step);    % ????
+          \fill[lightshade] (\step+\shift+\sep,0) rectangle (\step+2*\sep,\step);    % ????
+          \fill[lightshade] (\step+\shift+2*\sep,0) rectangle (\width,\step);    % ????
+
+          \fill[lightshade] (0,\step+\shift) rectangle (\step,\step+\sep);
+          \fill[lightshade] (\step+\shift,\step+\shift) rectangle (\step+\sep,\step+\sep);
+          \fill[lightshade] (\step+\shift+\sep,\step+\shift) rectangle (\step+2*\sep,\step+\sep);
+          \fill[lightshade] (\step+\shift+2*\sep,\step+\shift) rectangle (\width,\step+\sep);
+
+          \fill[lightshade] (0,\step+\shift+\sep) rectangle (\step,\height);
+          \fill[lightshade] (\step+\shift,\step+\shift+\sep) rectangle (\step+\sep,\height);
+          \fill[lightshade] (\step+\shift+\sep,\step+\shift+\sep) rectangle (\step+2*\sep,\height);
+          \fill[lightshade] (\step+\shift+2*\sep,\step+\shift+\sep) rectangle (\width,\height);
+
+          \fill[darkshade] (\step,\step) rectangle (\step+\shift,\step+\shift);
+          \fill[darkshade, xshift=\sep] (\step,\step) rectangle (\step+\shift,\step+\shift);
+          \fill[darkshade, xshift=2*\sep] (\step,\step) rectangle (\step+\shift,\step+\shift);
+
+          \begin{scope}[yshift=\sep]
+          \fill[darkshade] (\step,\step) rectangle (\step+\shift,\step+\shift);
+          \fill[darkshade, xshift=\sep] (\step,\step) rectangle (\step+\shift,\step+\shift);
+          \fill[darkshade, xshift=2*\sep] (\step,\step) rectangle (\step+\shift,\step+\shift);
+          \end{scope}
+
+          \draw[semithick] (\step,0) -- ++(0,\height);
+          \draw[semithick, xshift=\shift] (\step,0) -- ++(0,\height);
+          \draw[semithick, xshift=\sep] (\step,0) -- ++(0,\height);
+          \draw[semithick, xshift=\sep+\shift] (\step,0) -- ++(0,\height);
+          \draw[semithick, xshift=2*\sep] (\step,0) -- ++(0,\height);
+          \draw[semithick, xshift=2*\sep+\shift] (\step,0) -- ++(0,\height);
+
+          \draw[semithick] (0,\step) -- ++(\width,0);
+          \draw[semithick, yshift=\shift] (0,\step) -- ++(\width,0);
+          \draw[semithick, yshift=\sep] (0,\step) -- ++(\width,0);
+          \draw[semithick, yshift=\sep+\shift] (0,\step) -- ++(\width,0);
+
+          \draw[color=olive!80] (0,0) rectangle (\width,\height);
+
+
+      \end{tikzpicture}
+      }
+    \quad
+    \subfloat[\label{fig:quiver_diamond}]{
+      \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+          \useasboundingbox (0,0) rectangle (\width,\height);
+
+          \def\step{0.15cm}
+          \def\shift{0.25cm}
+          \def\sep{1cm}
+          \def\site{\shift+\sep/2}
+
+          \node[node, minimum size=7pt] (a1) at (\site,\step+\shift/2) {};  %%%%
+          \node[node, minimum size=7pt, xshift=\sep] (a2) at (\site,\step+\shift/2) {};
+          \node[node, minimum size=7pt, xshift=2*\sep] (a3) at (\site,\step+\shift/2) {};
+          \node[node, minimum size=7pt] (b1) at (\step+\shift/2,\site) {};  %%%%
+          \node[node, minimum size=7pt, xshift=\sep] (b2) at (\step+\shift/2,\site) {};
+          \node[node, minimum size=7pt, xshift=2*\sep] (b3) at (\step+\shift/2,\site) {};
+          \begin{scope}[yshift=\sep]
+          \node[node, minimum size=7pt] (c1) at (\site,\step+\shift/2) {};  %%%%
+          \node[node, minimum size=7pt, xshift=\sep] (c2) at (\site,\step+\shift/2) {};
+          \node[node, minimum size=7pt, xshift=2*\sep] (c3) at (\site,\step+\shift/2) {};
+          \node[node, minimum size=7pt] (d1) at (\step+\shift/2,\site) {};  %%%%
+          \node[node, minimum size=7pt, xshift=\sep] (d2) at (\step+\shift/2,\site) {};
+          \node[node, minimum size=7pt, xshift=2*\sep] (d3) at (\step+\shift/2,\site) {};
+          \end{scope}
+
+          \draw[semithick, arrows=-latex] (b1) to (a1); \draw[semithick, arrows=-latex] (a1) to (b2); \draw[semithick, arrows=-latex] (b2) to (a2); \draw[semithick, arrows=-latex] (a2) to (b3); \draw[semithick, arrows=-latex] (b3) to (a3);
+          \draw[semithick, arrows=-latex] (c1) to (b1); \draw[semithick, arrows=-latex] (b2) to (c1); \draw[semithick, arrows=-latex] (c2) to (b2); \draw[semithick, arrows=-latex] (b3) to (c2); \draw[semithick, arrows=-latex] (c3) to (b3);
+          \draw[semithick, arrows=-latex] (d1) to (c1); \draw[semithick, arrows=-latex] (c1) to (d2); \draw[semithick, arrows=-latex] (d2) to (c2); \draw[semithick, arrows=-latex] (c2) to (d3); \draw[semithick, arrows=-latex] (d3) to (c3);
+
+          \path[name path=rec, draw=none] (0,0) rectangle (\width,\height);
+          \path[name path=quiv1, draw=none] (a1) to (\step+\shift/2,\site-\sep);
+          \path[name path=quiv2, draw=none] (a1) to (\step+\shift/2+\sep,\site-\sep);
+          \path[name intersections={of= rec and quiv1, by={A}}];\tikzmath{coordinate \a;  \a = (A);}    % actually \ay=0!!
+          \path[name intersections={of= rec and quiv2, by={B}}];\tikzmath{coordinate \b;  \b = (B);}    % actually \by=0!!
+
+          \draw[semithick] (\ax,0) to (a1); \draw[semithick, arrows=-latex] (\bx,0) to (a1);
+          \draw[semithick] (\ax+\sep,0) to (a2); \draw[semithick, arrows=-latex] (\bx+\sep,0) to (a2);
+          \draw[semithick] (\ax+2*\sep,0) to (a3); \draw[semithick, arrows=-latex] (\width,0) to (a3);  %\bx+2*\sep
+
+          \draw[semithick, arrows=-latex] (0,\ax) to (b1); \draw[semithick] (0,\bx) to (b1);
+          \draw[semithick, arrows=-latex] (0,\ax+\sep) to (d1);
+
+          \draw[semithick] (\width-\bx,\height) to (d3); \draw[semithick, arrows=-latex] (\width-\ax,\height) to (d3);
+          \draw[semithick] (\width-\bx-\sep,\height) to (d2); \draw[semithick, arrows=-latex] (\width-\ax-\sep,\height) to (d2);
+          \draw[semithick] (0,\height) to (d1); \draw[semithick, arrows=-latex] (\width-\ax-2*\sep,\height) to (d1);
+
+          \draw[semithick] (\width,\height-\ax) to (c3); \draw[semithick, arrows=-latex] (\width,\height-\bx) to (c3);
+          \draw[semithick] (\width,\height-\ax-\sep) to (a3);
+
+          \draw[color=olive!80] (0,0) rectangle (\width,\height);
+
+      \end{tikzpicture}
+      }
+    \quad
+    \subfloat[\label{fig:tiling_triangle}]{
+        \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+          \def\step{0.15cm}
+          \def\shift{0.2cm}
+          \def\sep{1cm}
+
+          \path[name path=v1, draw=none] (\step+\sep/2,0) -- ++(0,\height);
+          \path[name path=l1, draw=none] (\step+\sep/2-\shift,0) -- ++(\height,\height);    % canonical line
+          \path[name intersections={of= v1 and l1, by={A}}];\tikzmath{coordinate \ca;  \ca = (A);}
+
+          \fill[fill=olive!5] (0,0) rectangle (\width,\height);
+
+          \fill[darkshade] (\step+\sep/2,0) -- (\cax,\cay) -- (\step+\sep/2-\shift,0) -- cycle;
+          \fill[darkshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay+\sep) -- (2*\step-\cay,\step+\sep/2) -- cycle;
+          \fill[darkshade] (\step+\sep/2,\step+\sep/2+\sep) -- (\step+\sep/2,\height) -- (\step+\sep/2-\shift+\height-2*\sep,\height) -- (2*\step-\cay,\step+\sep/2+\sep) -- cycle;
+          \fill[lightshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (2*\step+\sep-\cay,\step+\sep/2) -- cycle;
+          \fill[lightshade, yshift=\sep] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (2*\step+\sep-\cay,\step+\sep/2) -- cycle;
+          \fill[lightshade] (0,\step+\sep/2) -- (0,-\step-\sep/2+\shift+\sep) -- (2*\step-\cay,\step+\sep/2) -- cycle;
+          \fill[lightshade, yshift=\sep] (0,\step+\sep/2) -- (0,-\step-\sep/2+\shift+\sep) -- (2*\step-\cay,\step+\sep/2) -- cycle;
+
+
+          \begin{scope}[xshift=\sep]
+            \fill[darkshade] (\step+\sep/2,0) -- (\cax,\cay) -- (\step+\sep/2-\shift,0) -- cycle;
+            \fill[darkshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay+\sep) -- (2*\step-\cay,\step+\sep/2) -- cycle;
+            \fill[darkshade] (\step+\sep/2,\step+\sep/2+\sep) -- (\step+\sep/2,\height) -- (\step+\sep/2-\shift+\height-2*\sep,\height) -- (2*\step-\cay,\step+\sep/2+\sep) -- cycle;
+            \fill[lightshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (2*\step+\sep-\cay,\step+\sep/2) -- cycle;
+            \fill[lightshade, yshift=\sep] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay) -- (2*\step+\sep-\cay,\step+\sep/2) -- cycle;
+          \end{scope}
+
+          \begin{scope}[xshift=2*\sep]
+            \fill[darkshade] (\step+\sep/2,0) -- (\cax,\cay) -- (\step+\sep/2-\shift,0) -- cycle;
+            \fill[darkshade] (\step+\sep/2,\step+\sep/2) -- (\cax,\cay+\sep) -- (2*\step-\cay,\step+\sep/2) -- cycle;
+            \fill[darkshade] (\step+\sep/2,\step+\sep/2+\sep) -- (\step+\sep/2,\height) -- (\step+\sep/2-\shift+\height-2*\sep,\height) -- (2*\step-\cay,\step+\sep/2+\sep) -- cycle;
+          \end{scope}
+          \fill[lightshade] (\step+\sep/2+2*\sep,\step+\sep/2) -- (\cax+2*\sep,\cay) -- (\width,\width-\step-\sep/2+\shift-2*\sep) -- (\width,\step+\sep/2) -- cycle;
+          \fill[lightshade, yshift=\sep] (\step+\sep/2+2*\sep,\step+\sep/2) -- (\cax+2*\sep,\cay) -- (\width,\width-\step-\sep/2+\shift-2*\sep) -- (\width,\step+\sep/2) -- cycle;
+
+          % vertical lines
+          \draw[semithick] (\step+\sep/2,0) -- ++(0,\height);
+          \draw[semithick, xshift=\sep] (\step+\sep/2,0) -- ++(0,\height);
+          \draw[semithick, xshift=2*\sep] (\step+\sep/2,0) -- ++(0,\height);
+
+          % horizontal lines
+          \draw[semithick] (0,\step+\sep/2) -- ++(\width,0);
+          \draw[semithick, yshift=\sep] (0,\step+\sep/2) -- ++(\width,0);
+
+          \draw[semithick] (0,-\step-\sep/2+\shift+2*\sep) -- (\step+\sep/2-\shift+\height-2*\sep,\height);
+          \draw[semithick] (0,-\step-\sep/2+\shift+\sep) -- (\step+\sep/2-\shift+\height-\sep,\height);
+          \draw[semithick] (\step+\sep/2-\shift,0) -- ++(\height,\height);    % canonical line
+          \draw[semithick] (\step+\sep/2-\shift+\sep,0) -- (\width,\width-\step-\sep/2+\shift-\sep);
+          \draw[semithick] (\step+\sep/2-\shift+2*\sep,0) -- (\width,\width-\step-\sep/2+\shift-2*\sep);
+
+          \draw[color=olive!80] (0,0) rectangle (\width,\height);
+
+      \end{tikzpicture}
+    }
+    \quad
+    \subfloat[\label{fig:quiver_triangle}]{
+      \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+          \useasboundingbox (0,0) rectangle (\width,\height);
+
+          \def\step{0.15cm}
+          \def\shift{0.25cm}
+          \def\sep{1cm}
+          \def\site{2*\step}
+
+          \node[fnode, minimum size=7pt] (a1) at (1.2*\site,\site) {};
+          \node[fnode, minimum size=7pt, xshift=\sep] (a2) at (1.2*\site,\site) {};
+          \node[fnode, minimum size=7pt, xshift=2*\sep] (a3) at (1.2*\site,\site) {};
+
+          \begin{scope}[yshift=0.7*\sep]
+          \node[node, minimum size=7pt] (b1) at (1.2*\site,\site) {};
+          \node[node, minimum size=7pt, xshift=\sep] (b2) at (1.2*\site,\site) {};
+          \node[node, minimum size=7pt, xshift=2*\sep] (b3) at (1.2*\site,\site) {};
+          \end{scope}
+
+          \begin{scope}[yshift=1.4*\sep]
+          \node[fnode, minimum size=7pt] (c1) at (1.2*\site,\site) {};
+          \node[fnode, minimum size=7pt, xshift=\sep] (c2) at (1.2*\site,\site) {};
+          \node[fnode, minimum size=7pt, xshift=2*\sep] (c3) at (1.2*\site,\site) {};
+          \end{scope}
+
+          \draw[semithick, -latex] (a1) to (a2); \draw[semithick, -latex] (a2) to (a3);
+          \draw[semithick, -latex] (a1) to (b1); \draw[semithick, -latex] (a2) to (b2); \draw[semithick, -latex] (a3) to (b3);
+          \draw[semithick, -latex] (b1) to (b2); \draw[semithick, -latex] (b2) to (b3);
+          \draw[semithick, -latex] (b1) to (c1); \draw[semithick, -latex] (b2) to (c2); \draw[semithick, -latex] (b3) to (c3);
+          \draw[semithick, -latex] (b2) to (a1); \draw[semithick, -latex] (b3) to (a2);
+          \draw[semithick, -latex] (c2) to (b1); \draw[semithick, -latex] (c3) to (b2);
+
+
+          \path[name path=rec, draw=none] (0,0) rectangle (\width,\height);
+          \path[name path=quiv, draw=none] (b1) to (\site-\sep,\site);
+          \path[name intersections={of= rec and quiv, by={A}}];\tikzmath{coordinate \ca;  \ca = (A);}    % actually \cax=0!!
+
+          \draw[semithick] (b1) to (\cax,\cay); \draw[semithick] (c1) to (\cax,\cay+0.7*\sep);
+          \draw[semithick, -latex] (0,\site) to (a1); \draw[semithick, -latex] (0,\site+0.7*\sep) to (b1);
+
+          \draw[semithick, -latex] (\width,\cay) to (a3); \draw[semithick, -latex] (\width,\cay+0.7*\sep) to (b3);
+          \draw[semithick] (a3) to (\width,\site); \draw[semithick] (b3) to (\width,\site+0.7*\sep);
+
+          \draw[color=olive!80] (0,0) rectangle (\width,\height);
+
+      \end{tikzpicture}
+      }
+    \caption{(a) A brane tiling on a torus. (b) The periodic quiver associated with (a).
+    (c) A brane tiling on a finite-length cylinder. (d) the quiver for (c).}
+    \label{fig:tilings_quiverdiagram}
+  \end{figure}
+
 
 Moreover, for every set of zig-zag paths bounding a shaded region,
 we have a loop of arrows and world-sheet instantons generate a superpotential
@@ -444,13 +452,14 @@ To fix the R-charge assignment, let us assume that we can orient the
 zig-zag paths and bound every shaded or unshaded region with zig-zag
 paths all heading upward, for some choice of the ``vertical'' direction
 in the neighborhood of that region. This is the case for the examples
-in figure \ref{fig:tilings_quiverdiagram}. The zig-zag paths thus oriented fall into two groups; when
+in figure \ref{fig:tilings_quiverdiagram}. The zig-zag paths are thus oriented
+and fall into two groups; when
 a zig-zag path goes upward and we cross it from the left to the right,
 $q$ increases by one. We distinguish the latter case from the former
 by drawing the zig-zag path with a dotted line. Then, we give an arrow
 $R=0$ if it originates from a crossing of two zig-zag paths of the
 same type, and $R=1$ otherwise. With this R-charge assignment the
-two conditions describe above are satisfied (see figure \ref{fig:twoexamples}).
+two conditions described above are satisfied; see figure \ref{fig:twoexamples}.
 
 
 %FIGURE
@@ -557,9 +566,9 @@ two conditions describe above are satisfied (see figure \ref{fig:twoexamples}).
   \label{fig:twoexamples}
 \end{figure}
 
-
 Summarizing the rules for assignment of the charges, we can read off
 the quiver diagram from zig-zag paths as in figure \ref{fig:rule_for_quiver}.
+
 
 %FIGURE
 \begin{figure}
@@ -644,7 +653,6 @@ the quiver diagram from zig-zag paths as in figure \ref{fig:rule_for_quiver}.
 
 \subsubsection{Integrable lattice models from quiver gauge theories}
 
-{\bf some generalities}
 
 From the supersymmetric index of the four-dimensional $\mathcal{N}=1$
 theory realized by a brane tiling, we obtain an integrable lattice
@@ -657,9 +665,9 @@ NS5$_{i}$ to an M5-brane, then $u_{i}$ becomes the coordinate on the
 M-theory circle. Either way, $u_{i}$ is determined by the holonomy
 of the $\U(1)$ gauge field on NS5$_{i}$ along $S^{1}$.
 
-If the theory is described by a quiver, translation between the gauge
+If the theory is described by a quiver diagram, translation between the gauge
 theory and the lattice model goes as follows \cite{Yamazaki:2012cp,Yamazaki:2013nra}.
-Nodes are interpreted as spin sites. For each flavor node, we can
+Nodes in the quiver diagram are interpreted as spin sites. For each flavor node, we can
 turn on a holonomy of the associated gauge field. The index depends
 on the conjugacy class of the holonomy, which is uniquely represented
 by a diagonal matrix $\mathrm{diag}(z_{1},\ldots,z_{N})$ up to permutations
@@ -670,12 +678,17 @@ flavor symmetry and parametrize the value of the spin at this node,
 and thus the spins take values in the maximal torus $\U(1)^{N-1}$
 of $\SU(N)$. For a gauge node, integration is performed over the fugacities
 since its gauge field is a path integral variable. This is the summation
-over the values of a spin placed on an internal face. Finally, arrows
+over the values of a spin placed on an internal face. Finally, arrows in the quiver diagram
 represent interactions between spins.
 
 The unitarity relations are satisfied if the contributions to the
 index from arrows with $R=0$ are properly normalized. For example,
-consider the relation
+consider the relation%
+%
+\footnote{By an equality of two quiver diagrams, we mean that the supersymmetric
+indices of the theories described those quivers are equal.
+The precise meaning will be given for the $S^{1}\times S^{3}$ case below.}
+%
 \begin{equation}
     \begin{tikzpicture}[yscale=0.6, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
 
@@ -726,8 +739,7 @@ consider the relation
 \label{eq:unitarity_delta}
 \end{equation}
 where the right-hand side is a ``delta function'' that equates
-two flavor nodes when one of them is gauged. The precise meaning will
-be given for the $S^{1}\times S^{3}$ case below. The theory on the
+two flavor nodes when one of them is gauged. The theory on the
 left-hand side is SQCD with $N$ colors and $N$ flavors. It exhibits
 confinement and has a vacuum in which the mesons take nonzero expectation
 values and the flavor symmetry $\SU(N)\times \SU(N)$ is broken to the
@@ -780,6 +792,7 @@ from the surviving baryon and anti-baryon. Another unitarity relation
         \node[fnode] (a) at (0,-0.5) {};\node[fnode] (b) at (0,0.5) {};
 
     \end{tikzpicture}
+  \label{eq:another_unitarity}
 \end{equation}
 holds since the two arrows on the left-hand side form a loop and
 generates a mass term in the superpotential. We can send the mass
@@ -924,29 +937,33 @@ relation (\ref{eq:unitarity_delta}), reads
 The two sides are related by Seiberg duality \cite{Seiberg:1994pq} for SQCD
 with $N$ colors and $2N$ flavors, so their indices are indeed equal.
 The Yang-Baxter equation in the lattice model in this case is hence
-also identified with the Seiberg duality in gauge theory side. The
-Yang-Baxter equation for the R-matrix \eqref{eq:R_diamond}, though more
-complicated, also follows from this equality. The relation between
+also identified with the Seiberg duality in gauge theory side.
+The relation between
 the Yang-Baxter move and Seiberg duality was first pointed out in
 \cite{Hanany:2005ss} and established in \cite{Yamazaki:2012cp}.
+The Yang-Baxter equation for the R-matrix \eqref{eq:R_diamond},
+which is our main focus in the next subsection though more
+complicated, also follows from this equality.
 
-Based on these observations, in the next subsection we demonstrate that
+
+
+
+
+\subsubsection{Supersymmetric index on $S^{1} \times S^{3}$ and Gauge/YBE correspondence}
+
+Let us be more specific.
+Based on the observations so far, here we demonstrate that
+for the case of $M=S^3$, namely
 given the four-manifold $S^{1} \times S^{3}$, the supersymmtric index
-indeed matches the partition function of the integrable lattice model
-called Bazhanov-Sergeev model.
-Furthermore, the correspondence between supersymmetric gauge theory and
-integrable lattice model has clear one-by-one mapping, as we will see
-as in table \ref{tab:gauge_ybe}.
+indeed matches the partition function of an integrable lattice model.
+%called Bazhanov-Sergeev model.
+Furthermore, in this case the correspondence between supersymmetric gauge theory and
+integrable lattice model has a clear one-by-one dictionary, as we will see.
+%as in table \ref{tab:gauge_ybe}.
 
 
-
-
-
-\subsubsection{Supersymmetric index on $S^{1} \times S^{3}$ and an integrable lattice
-model}
-
-Now we focus on the case $M=S^{3}$, in which geometry the supersymmetric
-index is well-studied from the work by \cite{Romelsberger:2005eg,Kinney:2005ej,Festuccia:2011ws}.
+We now focus on the case $M=S^{3}$, in which geometry the supersymmetric
+index is well-studied from the works by \cite{Romelsberger:2005eg,Kinney:2005ej,Festuccia:2011ws}.
 Parametrize $S^{3}$ by two complex variables
 $(\zeta_{p},\zeta_{q})$ satisfying $|\zeta_{p}|^{2}+|\zeta_{q}|^{2}=1$,
 and denote the isometry groups acting on $\zeta_{p}$ and $\zeta_{q}$
@@ -961,32 +978,46 @@ by the isometries and the flavor symmetries.
 The index is defined as a trace of refined Boltzmann weight over the
 space of states on $S^{3}$, which is computed exactly using state-operator
 correspondence in conformal case or by localization of the path integral.
-For $\mathcal{N}=1$ quiver gauge theories on $S^{1}\times S^{3}$, the
-index is defined by the trace
+For $\mathcal{N}=1$ quiver gauge theories on $S^{1}\times S^{3}$, it is
 \begin{equation}
     \mathcal{I}(p,q,\{ a_{i}\} )
       =  \mathrm{Tr}_{\mathcal{H}_{S^{3}}}
       \left(    (-1)^{F}  p^{j_{1}+j_{2}+R/2}  q^{j_{1}-j_{2}+R/2}  \prod_{i}a_{i}^{F_{i}}    \right),
 \end{equation}
-taken over the space $\mathcal{H}_{S^{3}}$ of states on $S^{3}$.
+where the trace is taken over the space $\mathcal{H}_{S^{3}}$ of states on $S^{3}$.
 Here $\left(-1\right)^{F}$ is the fermion parity, and $j_{1},\,j_{2}$
 are generators of the maximal torus $\U(1)_{1}\times \U(1)_{2}$ of
-the isometry group $Spin(4)\simeq \SU(2)_{1}\times \SU(2)_{2}$ of $S^{3}$,
+the isometry group $\mathrm{Spin}(4)\simeq \SU(2)_{1}\times \SU(2)_{2}$ of $S^{3}$,
 %\begin{comment}
 %$R$ is the R-charge, $F_{i}$ is the charge of U(1)i
 %\end{comment}
 $\{ a_i \}$ and $p,\,q$ are complex parameters.
-The result is generically given by a combination of vector and chiral
+
+
+Building blocks of 4d $\mathcal{N}=1$ supersymmetric quiver gauge
+theories are vector multiplets and bifundamental chiral multiplets.
+A vector multiplet is present at a gauge node. A bifundamental chiral
+multiplet has two flavor groups, say $\SU(N)_{z}$ and $\SU(N)_{w}$%
+%
+\footnote{We label gauge and flavor groups by their associated fugacities, say $z$.
+The same applies to the nodes appearing below, since the rank of them is fixed.}
+%
+.
+The full index is generically given by a combination of vector and chiral
 multiplets involved in the theory. These multiplets are expressed
 in terms of the elliptic gamma function
 \begin{equation}
-    \Gamma(z;p,q)  =  \prod_{j,k=0}^{\infty}  \frac{1-z^{-1}p^{j+1}q^{k+1}}{1-zp^{j}q^{k}}
+    \Gamma(z;p,q)  =  \prod_{j,k=0}^{\infty}  \frac{1-p^{j+1}q^{k+1}z^{-1}}{1-p^{j}q^{k}z}
 \end{equation}
 with $p=e^{-\beta+\iu\theta_{p}}$ and $q=e^{-\beta+\iu\theta_{q}}$.
 To write down the formula, let $a_{i}=e^{2\pi \iu u_{i}}$ be the fugacity
 for the flavor group $\U(1)_i$ associated with the $i$th zig-zag path.
 Also, we introduce the Pochhammar symble $(z;q)_{\infty}=\prod_{k=0}^{\infty}\left(1-q^{k}z\right)$.
 
+
+
+
+\begin{comment}
 A bifundamental chiral multiplet with R-charge $R$ and $\U(1)_i$ charge
 $F_{i}$ contributes to the index by the factor
 \begin{equation}
@@ -1006,24 +1037,13 @@ measure
       \prod_{\substack{I,J=1 \\ I\neq J}}^{N}\frac{1}{\Gamma(z_{I}/z_{J};p,q)}.
 \end{equation}
 The integration contour is the unit circle for each fugacity.
-
-The unitarity relation \eqref{eq:unitarity_delta} is satisfied if
-we normalize the contribution from each arrow with $R=0$ by dividing
-it by the factor $\Gamma\big(\prod_{i}a_{i}^{NF_{i}};p,q\big)$, which cancels
-the contribution from the corresponding baryon. The Yang-Baxter equation
-\eqref{eq:yangbaxter_seiberg} is an integral identity obeyed by the elliptic gamma
-function \cite{MR2044635,MR2630038,Dolan:2008qi}.
+\end{comment}
 
 
 
 
+%\subsubsection*{Index on $S^{1}\times S^{3}$}
 
-\subsubsection*{Index on $S^{1}\times S^{3}$}
-
-Building blocks of 4d $\mathcal{N}=1$ supersymmetric quiver gauge
-theories are vector multiplets and bifundamental chiral multiplets.
-A vector multiplet is present at a gauge node. A bifundamental chiral
-multiplet has two flavor groups, say $\SU(N)_{z}$ and $\SU(N)_{w}$.
 
 Given a theory $\mathcal{T}$ with flavor group $\SU(N)_{w}$ and another
 theory $\mathcal{T}'$ with flavor group $\SU(N)_{w'}$, we can couple
@@ -1033,28 +1053,16 @@ To construct a quiver gauge theory, we take a number of bifundamental
 chiral multiplets and couple them by gauging all or part of the flavor
 nodes.
 
-For $\mathcal{N}=1$ quiver gauge theories on $S^{1}\times S^{3}$, the
-index is defined by the trace
-\begin{equation}
-    \mathcal{I}(p,q,\{ a_{i}\} )
-      =  \mathrm{Tr}_{\mathcal{H}_{S^{3}}}
-      \left(    (-1)^{F}  p^{j_{1}+j_{2}+R/2}  q^{j_{1}-j_{2}+R/2}  \prod_{i}a_{i}^{F_{i}}    \right),
-\end{equation}
-taken over the space $\mathcal{H}_{S^{3}}$ of states on $S^{3}$.
-Here $\left(-1\right)^{F}$ is the fermion parity, and $j_{1},\,j_{2}$
-are generators of the maximal torus $\U(1)_{1}\times \U(1)_{2}$ of
-the isometry group $Spin(4)\simeq \SU(2)_{1}\times \SU(2)_{2}$ of $S^{3}$,
-%\begin{comment}
-%$R$ is the R-charge, $F_{i}$ is the charge of U(1)i
-%\end{comment}
-$\{ a_i \}$ and $p,\,q$ are complex parameters.
+
+
+
 
 The index $\mathcal{I}_{\mathcal{T}}$ of a 4d $\mathcal{N}=1$ theory
 $\mathcal{T}$ with flavor group $\SU(N)_{z}$ is a symmetric meromorphic
 function of the fugacities $z_{1},\ldots,z_{N}$. This symmetric property
 reflects the gauge invariance of the index. At the level of the index,
 gauging of a flavor group is realized by introduction of the corresponding
-vector multiplet and integration over its fugacities. In particular
+vector multiplet and integration over its fugacities. For example,
 \begin{equation}
     \mathcal{I}_{\left(\mathcal{T}\times\mathcal{T}'\right)/\SU(N)_{z}}
       =  \int_{\mathbb{T}^{N-1}}  \prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}
@@ -1072,8 +1080,11 @@ of the vector multiplet is given by elliptic gamma functions:
         =  \frac{(p;p)_{\infty}^{N-1}(q;q)_{\infty}^{N-1}}{N!}
               \prod_{\substack{I,J=1 \\ I\neq J}}^{N}\frac{1}{\Gamma(z_{I}/z_{J};p,q)}.
 \end{equation}
-See appendix ?? for the definition of the elliptic gamma function
-and various identities it satisfies. From now on we fix $p,\,q$ and
+%See appendix ?? for the definition of the elliptic gamma function
+%and various identities it satisfies.
+Here and in the following, we are often using a quiver to mean the index of the
+corresponding theory.
+From now on we fix $p,\,q$ and
 omit them from the notation unless needed.
 
 The index of a bifundamental chiral multiplet with fugacity $a$ is
@@ -1094,7 +1105,8 @@ This function satisfies
     \mathcal{I}_{B}(z,w;a)  \mathcal{I}_{B}  \left(w,z;\frac{pq}{a}\right)
     =  1.
 \end{equation}
-This identity says that as far as the index is concerned, we can
+This identity corresponds the unitarity relation \eqref{eq:another_unitarity}
+and says that as far as the index is concerned, we can
 cancel a pair of arrows making a loop if their R-charges add up to
 $2$ and flavor charges add up to $0$:
 \begin{equation}
@@ -1168,7 +1180,8 @@ then we have
     \end{tikzpicture}
     \quad  .
 \end{align}
-This is a consequence of confinement and chiral symmetry breaking
+This corresponds to the other unitarity relation \eqref{eq:unitarity_delta}
+and implies a consequence of confinement and chiral symmetry breaking
 \cite{Seiberg:1994bz, Spiridonov:2014cxa}. At low energies the theory on
 the left-hand side is described by the mesons and the baryons. It
 has a vacuum in which the mesons take nonzero expectation values and
@@ -1176,6 +1189,41 @@ the flavor symmetry $\SU(N)_{w}\times \SU(N)_{z}$ is broken to the
 diagonal subgroup. In this vacuum the fugacities $w$ and $z$ are
 identified, so we get the quiver on the second line. The $\Gamma(a^{\pm N}):=\Gamma(a^{N})\Gamma(a^{-N})$
 is the contribution from the baryons.
+
+So, the unitarity relation \eqref{eq:unitarity_delta} is satisfied if
+we normalize the contribution from each arrow with $R=0$ by dividing
+it by the factor $\Gamma\big(\prod_{i}a_{i}^{NF_{i}};p,q\big)$, which cancels
+the contribution from the corresponding baryon. The Yang-Baxter equation
+\eqref{eq:yangbaxter_seiberg} is an integral identity obeyed by the elliptic gamma
+function \cite{MR2044635,MR2630038,Dolan:2008qi}.
+
+
+We can readily write down the formula for the index of a general quiver
+gauge theory. For simplicity, suppose that the theory is described
+by a quiver that contains no flavor node. Then, the index is computed
+by
+\begin{equation}
+    \prod_{%
+      \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \node[node, minimum size=8pt] at (0,0.2) {$z$};
+      \end{tikzpicture}
+        }%
+    \int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}(z)
+      \prod_{%
+      \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \node[node, minimum size=8pt] (a) at (-0.3,0.2) {$x$};
+        \node[node, minimum size=8pt] (b) at (0.3,0.2) {$y$};
+        \draw[arrows=-latex] (a) to (b);
+      \end{tikzpicture}
+        }%
+      \mathcal{I}_{B}(x,y),
+  \label{eq:fullindex}
+\end{equation}
+where the two products are taken over all nodes and all arrows, respectively.
+the index is a function of the parameters $p,\,q$ and the flavor
+fugacities $a_{i}$, which are suppressed in the above expression.
+If the quiver contains flavor nodes, the index is also a function
+of their fugacities.
 
 
 %FIGURE
@@ -1249,45 +1297,17 @@ is the contribution from the baryons.
   \end{figure}
 
 
-We can readily write down the formula for the index of a general quiver
-gauge theory. For simplicity, suppose that the theory is described
-by a quiver that contains no flavor node. Then, the index is computed
-by
-\begin{equation}
-    \prod_{%
-      \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \node[node, minimum size=8pt] at (0,0.2) {$z$};
-      \end{tikzpicture}
-        }%
-    \int_{\mathbb{T}^{N-1}}\prod_{I=1}^{N-1}\frac{dz_{I}}{2\pi iz_{I}}\mathcal{I}_{V}(z)
-      \prod_{%
-      \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \node[node, minimum size=8pt] (a) at (-0.3,0.2) {$x$};
-        \node[node, minimum size=8pt] (b) at (0.3,0.2) {$y$};
-        \draw[arrows=-latex] (a) to (b);
-      \end{tikzpicture}
-        }%
-      \mathcal{I}_{B}(x,y),
-  \label{eq:fullindex}
-\end{equation}
-where the two products are taken over all nodes and all arrows, respectively.
-the index is a function of the parameters $p,\,q$ and the flavor
-fugacities $a_{i}$, which are suppressed in the above expression.
-If the quiver contains flavor nodes, the index is also a function
-of their fugacities.
-
 In the expression of the supersymmetric index \eqref{eq:fullindex},
 it is manifest that the index of a quiver gauge theory may be interpreted
 as the partition function of a statistical mechanical model with continuous
 spins. Indeed, this formula precisely computes the partition function
-of a spin model in which spins are placed at the gauge nodes. The
-spin variables at $z$ are the fugacities $z_{1},\ldots,z_{N}$, and
+of a spin model in which spins are placed at gauge nodes \cite{Yamazaki:2012cp,Yagi:2015lha}.
+The spin variables at the gauge nodes are the fugacities $z_{1},\ldots,z_{N}$, and
 they interact among themselves as well as with spins at nearest-neighbor
 nodes, namely those connected by arrows. The Boltzmann weights for
 the self-interaction and the nearest-neighbor interaction are $\mathcal{I}_{V}$
 and $\mathcal{I}_{B}$, respectively; see figure \ref{fig:gauge_ybe}.
-
-Surprisingly, the quantities in 4d gauge theories have one-to-one
+What is more, the quantities in four-dimensional gauge theories really have one-to-one
 correspondence in the lattice model side. The dictionary is given
 by table \ref{tab:gauge_ybe} and such a correspondence is called \emph{Gauge/YBE correspondence}.
 
@@ -1316,6 +1336,359 @@ Yang-Baxter equation &                \tabularnewline
     \end{tabular}
 \label{tab:gauge_ybe}
 \end{table}
+
+
+
+
+
+\subsection{Class-$\CS$ theories in brane tilings}
+
+\subsubsection{$\CN=2$ quiver theories to the theories of class-$\CS$}
+
+%\subsubsection{$\mathcal{N}=2$ quiver theories and brane tilings}
+
+Building blocks of 4d $\mathcal{N}=1$ supersymmetric quiver gauge
+theories are vector multiplets and bifundamental chiral multiplets.
+A vector multiplet is present at a gauge node. A bifundamental chiral
+multiplet has two flavor groups, say $\SU(N)_{z}$ and $\SU(N)_{w}$.
+
+Given a theory $\mathcal{T}$ with flavor group $\SU(N)_{w}$ and another
+theory $\mathcal{T}'$ with flavor group $\SU(N)_{w'}$, we can couple
+them to obtain a new theory $\left( \mathcal{T} \times \mathcal{T}' \right)/\SU(N)_{z}$
+by gauging the diagonal subgroup $\SU(N)_{z}$ of $\SU(N)_{w} \times \SU(N)_{w'}$.
+To construct a quiver gauge theory, we take a number of bifundamental
+chiral multiplets and couple them by gauging all or part of the flavor
+nodes.
+
+Now we aim to check the proposal on surface defects and transfer matrices
+by comparing them with independent calculations. In this section we
+perform the simplest such check for surface defects in $A_{1}$ theories
+of class $\mathcal{S}$ \cite{Gaiotto:2009we,Gaiotto:2009hg}, which arise from compactification
+of the 6d $\mathcal{N}=(2,0)$ theory of type $A_{1}$
+on punctured Riemann surfaces. The action of surface defects on the
+supersymmetric indices of class-$\mathcal{S}$ theories have been
+studied in \cite{Gaiotto:2012xa, Gadde:2013dda, Alday:2013kda,Bullimore:2014nla}. Here we first review the computation for the surface
+defect labeled with the fundamental representation of $\SU(2)$ based
+on the method developed in \cite{Gaiotto:2012xa}, and show that the result agrees
+with the prediction from the transfer matrix \eqref{eq:proposal}.
+
+Typical examples of class-$\mathcal{S}$ theories are $\mathcal{N}=2$
+gauge theories characterized by linear and circular quivers with $\SU(N)$
+nodes. They are actually also examples of brane tiling models discussed
+in the previous sections. As such, they allow us to translate key
+notions in class-$\mathcal{S}$ theories to the language of brane
+tilings, and vice versa. So let us first describe these theories as
+class-$\mathcal{S}$ theories as well as brane tiling models, and
+understand the relation between the two descriptions. Although we
+will mainly work with $N=2$, for now we keep $N$ general.
+
+Let us consider the standard type IIA brane configuration for an $\mathcal{N}=2$
+linear quiver theory with $m+1$ nodes. It consists of $N$ D4-branes
+spanning the 01236 directions, intersected by $m$ -branes extending
+along the 012345 directions (see table \ref{tab:D4NS5}).
+\begin{table}
+\caption{D4-NS5 brane configuration}
+\label{tab:D4NS5}
+\vspace{0.2cm}
+  \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+  & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\tabularnewline
+\hline
+D4       & $\times$ & $\times$ & $\times$ & $\times$ &    &    &    $\times$ & \phantom{X} & \phantom{X} &  \tabularnewline
+\hline
+NS5    & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ &    &    &    &  \phantom{X}  \tabularnewline
+\hline
+    \end{tabular}
+\end{table}
+This brane configuration is lifted in M-theory to M5-branes, wrapped
+on a cylinder with $m$ punctures created by intersecting M5-branes.
+Therefore, the $\mathcal{N}=2$ linear quiver theory is obtained by
+compactification of the 6d $\mathcal{N}=( 2,0 )$ theory
+of type $A_{N-1}$ on a cylinder with $m$ punctures, or a sphere
+with $m+2$ punctures. We distinguish the two punctures coming from
+the ends of the cylinder from the $m$ punctures in between. They
+are referred to as maximal and minimal punctures, respectively. In
+the class-$\mathcal{S}$ language, the $\mathcal{N}=2$ linear quiver
+theory is a theory associated to a sphere with $2$ maximal and $m$
+minimal punctures, see figure.
+
+R-symmetry of the theory is $\SU(2)_{I} \times \U(1)_{r}$, where $\SU(2)_{I}$
+represents the rotation symmetry of the 789-space, and $\U(1)_{r}$
+the rotation symmetry of the 45-plane. The $\SU(N)$ flavor node from
+each end of the quiver is associated to the maximal puncture on the
+corresponding side of the sphere. The $i$th gauge node is associated
+to the tube between the $i$th and $(i+1)$th minimal punctures. To
+the $i$th minimal puncture is associated a flavor symmetry $\U(1)_{i}$
+which acts on the hypermultiplet charged under the $(i-1)$th and
+$i$th gauge nodes.
+
+Following the philosophy of class-$\mathcal{S}$ theories, we decompose
+this theory into basic building blocks by decoupling gauge fields.
+Roughly, the gauge coupling of the $i$th gauge node is inversely
+proportional to the length between the $i$th and $(i+1)$th minimal
+punctures. To make the gauge couplings small, we take the minimal
+punctures far apart from one another. Then the surface looks like
+a string of $m$ spheres, each containing a single minimal puncture,
+connected by long tubes. The smaller the gauge couplings get, the
+longer the tubes become, and eventually these spheres split up as
+the couplings go to zero. Each of the spheres represents a bifundamental
+hypermultiplet, which is a linear quiver with $m=1$, so it has one
+minimal and two maximal punctures. The quiver thus breaks into a collection
+of three-punctured spheres, or trinions.
+
+
+%FIGURE
+\begin{figure}
+\centering
+    \begin{tikzpicture}[scale=0.9] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+
+        \draw (-4,0) circle [radius=0.9] node[above=0.5cm, node, minimum size=4pt] {}; \draw[double] (-4.6,0) circle [radius=0.1];
+        \draw (-2,0) circle [radius=0.9] node[above=0.5cm, node, minimum size=4pt] {};
+        \draw (100:0.9) arc (100:260:0.9);
+        \draw[xshift=1cm] (-80:0.9) arc (-80:80:0.9);
+        \draw (3,0) circle [radius=0.9] node[above=0.5cm, node, minimum size=4pt] {}; \draw[double] (3.6,0) circle [radius=0.1];
+        \draw[thick, loosely dotted] (0.2,0) -- (0.8,0);
+
+        \begin{scope}[xshift=-3cm]
+        \fill[white] (-0.3,-0.15) rectangle (0.3,0.15);
+        \draw (-0.3,0.15) to[bend right=20] (0.3,0.15); \draw (-0.3,-0.15) to[bend left=20] (0.3,-0.15);
+        \end{scope}
+        \begin{scope}[xshift=-1cm]
+        \fill[white] (-0.3,-0.15) rectangle (0.3,0.15);
+        \draw (-0.3,0.15) to[bend right=20] (0.3,0.15); \draw (-0.3,-0.15) to[bend left=20] (0.3,-0.15);
+        \end{scope}
+        \begin{scope}[xshift=2cm]
+        \fill[white] (-0.3,-0.15) rectangle (0.3,0.15);
+        \draw (-0.3,0.15) to[bend right=20] (0.3,0.15); \draw (-0.3,-0.15) to[bend left=20] (0.3,-0.15);
+        \end{scope}
+
+        \begin{scope}[yshift=1.8cm]
+        \node[fnode] (a) at (-5,0) {};
+        \node[node] (b) at (-3,0) {}; \node[node] (c) at (-1,0) {}; \node[node] (d) at (2,0) {};
+        \node[fnode] (e) at (4,0) {};
+        \draw[semithick] (a) to (b); \draw[semithick] (b) to (c); \draw[semithick] (d) to (e);
+        \draw[semithick] (c) to (0,0); \draw[thick, loosely dotted] (0.2,0) -- (0.8,0); \draw[semithick] (1,0) to (d);
+        \end{scope}
+
+    \end{tikzpicture}
+  \caption{An $\mathcal N =2$ linear quiver theory associated to a punctured sphere.}
+  \label{fig:linear_quiver}
+\end{figure}
+
+
+Conversely, a sphere with two maximal and $m$ minimal punctures is
+obtained by gluing $m$ trinions together, namely by replacing pairs
+of maximal punctures with tubes. In general, we can connect two Riemann
+surfaces with a tube at maximal punctures. From the point of view
+of gauge theory, gluing corresponds to gauging the diagonal combination
+of the $\SU(N)$ flavor symmetries associated to the maximal punctures
+involved. Using trinions with one minimal and two maximal punctures,
+we can obtain any linear quiver in this way, and for that manner also
+a circular quiver by further gluing the two ends of a linear quiver
+together. In this sense, these trinions are building blocks for linear
+and circular quivers. As these two kinds of quivers can be treated
+essentially in the same manner, we will focus on linear quivers in
+the followings.
+
+To make contact with brane tilings, what we need to do is to find
+the counterpart of trinion, building block of quiver gauge theories,
+in brane tiling systems. To do this, we describe the $\mathcal{N}=2$
+linear quiver theory as an $\mathcal{N}=1$ quiver gauge theory. In
+terms of $\mathcal{N}=1$ supermultiplets, the $\mathcal{N}=2$ vector
+multiplet for the $i$th gauge node decomposes into a vector multiplet
+and a chiral multiplet $\Phi_{i}$ in the adjoint representation with
+$(r,I_{3})=(-1,0)$, while the $i$th hypermultiplet
+consists of two bifundamental chiral multiplets $Q_{i},\,\tilde{Q}_{i}$
+with $(r,I_{3})=(0,1/2)$. Here $I_{3}$ is
+a Cartan generator of $\SU(2)_{I}$. The pair $(Q_{i},\tilde{Q}_{i}^{\dagger})$
+transforms in the doublet of $\SU(2)_{I}$ and have $\U(1)_{i}$ charge
+$F_{i}=-1$. From the point of view of $\mathcal{N}=1$ supersymmetry,
+the $\U(1)$ symmetry generated by the combination
+\begin{equation}
+    \mathcal{F} = r + I_{3}
+\end{equation}
+is a flavor symmetry. We denote the fugacity for $\mathcal{F}$ by
+$t$. For the standard definition of the $\mathcal{N}=2$ index, $r$
+and $\mathcal{F}$ enter the trace through the combination $(pq)^{-r}t^{\mathcal{F}}$.
+Then, the fugacities of $Q_{i},\,\tilde{Q}_{i}$ and $\Phi_{i}$ are
+$\sqrt{t}/\alpha_{i}$, $\sqrt{t}\alpha_{i}$ and $pq/t$, respectively.
+
+It is helpful for us to prepare two copies for each node of the quiver
+and impose identification between them. We draw the arrows in such
+a way that $\Phi_{i}$ connects the two copies of the $i$th node
+and makes a triangle with $Q_{i}$ and $\tilde{Q}_{i}$, as in figure \ref{fig:triangle_tiling}.
+Drawn in this form, it is clear that the $\mathcal{N}=2$ linear quiver
+is a special case of the triangle quiver described in section \ref{sec:tiling_latticemodel},
+except that the vertical arrow is missing between the flavor nodes
+at the right end. The corresponding brane tiling diagram is therefore
+essentially the same, as shown in figure. Note that the cubic superpotentials,
+generated around the triangles by world-sheet instantons, are precisely
+what we need for the theory to have $\mathcal{N}=2$ supersymmetry.
+
+
+%FIGURE
+\begin{figure}
+\centering
+  %\subfloat[\label{}]{  }
+  %\subfloat[\label{}]{  }
+      \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \def\shift{0.2}
+
+        \fill[olive!5] (-5-2*\shift,-1) rectangle (4+2*\shift,1);
+        \fill[lightshade] (-2,0) rectangle (-2+2*\shift,-2*\shift);
+        \fill[lightshade] (-4,0) rectangle (-4+2*\shift,-2*\shift);
+
+        \fill[darkshade] (-4-2*\shift, -2*\shift) rectangle (-4,-1);
+        \fill[darkshade] (-2-2*\shift, -2*\shift) rectangle (-2,-1);
+
+        \fill[darkshade] (3-2*\shift, -2*\shift) rectangle (3,-1);
+
+        \fill[darkshade] (-5-2*\shift,2*\shift) -- (-4-2*\shift,2*\shift) -- (-4-2*\shift,1) -- (-4,1) -- (-4,0) -- (-5-2*\shift,0) --cycle;
+        \fill[darkshade] (-4+2*\shift,2*\shift) -- (-2-2*\shift,2*\shift) -- (-2-2*\shift,1) -- (-2,1) -- (-2,0) -- (-4+2*\shift,0) --cycle;
+        \fill[darkshade] (-2+2*\shift, 2*\shift) rectangle (-2*\shift,0);
+
+        \draw[semithick, ->] (-4-2*\shift,-1) node[below] {$c$} -- (-4-2*\shift,-2*\shift) -- ++(4*\shift,0) -- ++(0,4*\shift) -- (-2-2*\shift,2*\shift) -- (-2-2*\shift,1);
+        \draw[semithick, ->] (-2-2*\shift,-1) node[below] {$c$} -- (-2-2*\shift,-2*\shift) -- ++(4*\shift,0) -- ++(0,4*\shift) -- (-2*\shift,2*\shift);
+        \draw[semithick, ->] (-5-2*\shift,2*\shift) -- (-4-2*\shift,2*\shift) -- (-4-2*\shift,1);
+        \draw[semithick, densely dotted, ->] (-4,-1) -- (-4,1) node[above] {$a_1$};
+        \draw[semithick, densely dotted, ->] (-2,-1) -- (-2,1) node[above] {$a_2$};
+        \draw[semithick, densely dotted] (-5-2*\shift,0) node[left] {$b$} -- (-2*\shift,0);
+
+        \draw[semithick, ->] (1+2*\shift,2*\shift) -- (3-2*\shift,2*\shift) -- (3-2*\shift,1);
+        \draw[semithick, ->] (3-2*\shift,-1) node[below] {$c$} -- (3-2*\shift,-2*\shift) -- (4+2*\shift,-2*\shift);
+        \draw[semithick, densely dotted, ->] (1+2*\shift,0) -- (4+2*\shift,0);
+        \draw[semithick, densely dotted, ->] (3,-1) -- (3,1) node[above] {$a_m$};
+
+        \fill[darkshade] (1+2*\shift,2*\shift) -- (3-2*\shift,2*\shift) -- (3-2*\shift,1)-- (3,1) -- (3,0) -- (1+2*\shift,0) --cycle;
+        \fill[lightshade] (3,0) rectangle (4+2*\shift,-2*\shift);
+
+        \fill[white] (-2*\shift,-1) rectangle (1+2*\shift,1);
+        \draw[thick, loosely dotted] (0,0) -- (1,0);
+
+        %quiver diagram
+        \begin{scope}[yshift=2.2cm]
+        \node[fnode] (a) at (-5,0) {};
+        \node[node] (b) at (-3,0) {}; \node[node] (c) at (-1,0) {}; \node[node] (d) at (2,0) {};
+        \node[fnode] (e) at (4,0) {};
+        \draw[semithick, arrows=-latex] (a) to node[below] {$\sqrt{t}\alpha_1$} (b); \draw[semithick, arrows=-latex] (b) to node[below] {$\sqrt{t}\alpha_2$} (c); \draw[semithick, arrows=-latex] (d) to node[below] {$\sqrt{t}\alpha_m$} (e);
+        \draw[semithick] (c) to (0,0); \draw[thick, loosely dotted] (0.2,0) -- (0.8,0); \draw[semithick, arrows=-latex] (1,0) to (d);
+
+        \begin{scope}[yshift=1.6cm]
+        \node[fnode] (f) at (-5,0) {};
+        \node[node] (g) at (-3,0) {}; \node[node] (h) at (-1,0) {}; \node[node] (i) at (2,0) {};
+        \node[fnode] (j) at (4,0) {};
+        \end{scope}
+
+        \draw[semithick, arrows=-latex] (b) to node[below left] {$pq/t$} (g); \draw[semithick, arrows=-latex] (c) to node[below left] {$pq/t$} (h); \draw[semithick, arrows=-latex] (d) to node[below left] {$pq/t$} (i);
+        \draw[semithick, arrows=-latex] (g) to node[above=0.25cm] {$\sqrt{t}/\alpha_1$} (a); \draw[semithick, arrows=-latex] (h) to node[above=0.25cm] {$\sqrt{t}/\alpha_2$} (b); \draw[semithick, arrows=-latex] (j) to node[above=0.25cm] {$\sqrt{t}/\alpha_m$} (d);
+        \draw[semithick, arrows=-latex] (0,0.8) to (c);\draw[thick, loosely dotted] (0.2,0.8) -- (0.8,0.8);  \draw[semithick] (i) to (1,0.8);
+        \end{scope}
+
+    \end{tikzpicture}
+  \caption{An $\mathcal N =2$ linear quiver as a brane tiling model.
+  In the quiver, the two nodes in the same column are identified.
+  In the brane tiling diagram, the vertical direction is periodic.}
+  \label{fig:triangle_tiling}
+\end{figure}
+
+
+As we can split the $(m+1)$-punctured sphere into a collection of
+$m$ trinioins, we can also break the brane tiling diagram into basic
+pieces. Each piece represents a single trinioin and is made of three
+zig-zag paths:
+\begin{equation}
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+
+        \draw (0,0) circle [radius=1.1];
+        \draw (0,0.7) circle [radius=0.08] node[below=0.1] {$\alpha$};
+        \draw[double] (-0.7,0) circle [radius=0.08] node[below=0.1] {$w$};
+        \draw[double] (0.7,0) circle [radius=0.08] node[below=0.1] {$z$};
+
+    \end{tikzpicture}
+  %
+  \quad \rightsquigarrow \quad
+  %
+    \begin{tikzpicture}[scale=0.8, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+
+        \node[fnode] (a) at (-1,-1) {$w$};\node[fnode] (b) at (1,-1) {$z$};\node[fnode] (c) at (1,1) {$z$};\node[fnode] (d) at (-1,1) {$w$};
+        \draw[semithick, ->] (a) to node[below] {$\sqrt{t}\alpha$} (b); \draw[semithick, ->] (c) to node[above left=-0.1] {$\sqrt{t}/\alpha$} (a);
+
+    \end{tikzpicture}
+  %
+  \ = \
+  %
+    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
+        \def\shift{0.15}
+
+        \fill[olive!5] (-1,-1) rectangle (1,1);
+
+        \fill[darkshade] (-1,2*\shift) -- (-2*\shift,2*\shift) -- (-2*\shift,1)-- (0,1) -- (0,0) -- (-1,0) --cycle;
+        \fill[lightshade] (0,0) rectangle (1,-2*\shift);
+        \fill[darkshade] (-2*\shift, -2*\shift) rectangle (0,-1);
+
+        \draw[semithick, ->] (-1,2*\shift) node[left] {$c$} -- (-2*\shift,2*\shift) -- (-2*\shift,1);
+        \draw[semithick, ->] (-2*\shift,-1) node[below] {$c$} -- (-2*\shift,-2*\shift) -- (1,-2*\shift);
+        \draw[semithick, densely dotted, ->] (-1,0) -- (1,0) node[right] {$b$};
+        \draw[semithick, densely dotted, ->] (0,-1) -- (0,1) node[above] {$a$};
+
+        \node at (4*\shift,4*\shift) {$z$};\node at (4*\shift,-4*\shift) {$z$};
+        \node at (-4*\shift,4*\shift) {$w$};\node at (-4*\shift,-4*\shift) {$w$};
+
+    \end{tikzpicture}
+  \quad .
+\end{equation}
+Gluing two trinions corresponds to concatenating
+two such diagrams side by side. In the course of this operation, we
+must interchange the positions of the zig-zag paths labeled $b$ and
+$c$ near the glued side of one of the diagrams. This results in an
+additional vertical arrow in the combined quiver, which is the adjoint
+chiral multiplet in the $\mathcal{N}=2$ vector multiplet used in
+the gauging.
+
+Let us find the relationship between the convention we use for brane
+tilings and that used above. The R-charge $R$ in the brane tiling
+model is given in terms of the charges of the $\mathcal{N}=2$ theory
+by
+\begin{equation}
+    R  =  R_{0}  +  \frac{1}{2}\sum_{i}F_{i},
+      \quad  R_{0}  =  -r+I_{3}.
+\end{equation}
+The flavor charges associated to the zig-zag paths can be written
+as
+\begin{equation}
+    F_{a_{i}}  =  -F_{i},
+      \quad  F_{b}  =  -\mathcal{F}+\frac{1}{2}\sum_{i}F_{i},
+      \quad  F_{c}  =  \mathcal{F}+\frac{1}{2}\sum_{i}F_{i}.
+\end{equation}
+Without loss of generality, we can set
+\begin{equation}
+    a_{i}  =  \frac{1}{\alpha_{i}}.
+\end{equation}
+Plugging these relations into the combination $(pq)^{R/2}\prod_{i}a_{i}^{F_{a_{i}}}b^{F_{b}}c^{F_{c}}$
+that enters the indices of the bifundamental chiral multiplets, we
+deduce
+\begin{equation}
+    b  =  \frac{1}{\sqrt{t}},
+      \quad  c  =  \sqrt{\frac{t}{pq}}.
+  \label{eq:relation_bc}
+\end{equation}
+Before proceeding, we should mention a peculiarity in the $A_{1}$
+case. When $N=2$, the $\U(1)$ flavor symmetry of a bifundamental hypermultiplet
+is enhanced to $\SU(2)$ due to the fact that the fundamental representation
+of $\SU(2)$ is pseudoreal. For this reason there is no distinction
+between minimal and maxmal punctures, and each trinion can be regarded
+as a half-hypermultiplet in the trifundamental representation of $\SU(2)^{3}$.
+This is reflected in the index of a trinion,
+\begin{equation}
+    \mathcal{I}_{B}(w,z;\sqrt{t}a)\mathcal{I}_{B}(z,w;\sqrt{t}/a)
+      =
+        \Gamma(\sqrt{t}\alpha^{\pm1}z^{\pm1}w^{\pm1}),
+\end{equation}
+which is manifestly symmetric under permutation of $a,\,z$ and $w$.
+
+
+
 
 
 
@@ -1716,347 +2089,6 @@ as the \emph{elliptic modular double} \cite{MR2492363}.
 
 
 
-\subsubsection{$\mathcal{N}=2$ quiver theories and brane tilings}
-
-Building blocks of 4d $\mathcal{N}=1$ supersymmetric quiver gauge
-theories are vector multiplets and bifundamental chiral multiplets.
-A vector multiplet is present at a gauge node. A bifundamental chiral
-multiplet has two flavor groups, say $\SU(N)_{z}$ and $\SU(N)_{w}$.
-
-Given a theory $\mathcal{T}$ with flavor group $\SU(N)_{w}$ and another
-theory $\mathcal{T}'$ with flavor group $\SU(N)_{w'}$, we can couple
-them to obtain a new theory $\left( \mathcal{T} \times \mathcal{T}' \right)/\SU(N)_{z}$
-by gauging the diagonal subgroup $\SU(N)_{z}$ of $\SU(N)_{w} \times \SU(N)_{w'}$.
-To construct a quiver gauge theory, we take a number of bifundamental
-chiral multiplets and couple them by gauging all or part of the flavor
-nodes.
-
-Now we aim to check the proposal on surface defects and transfer matrices
-by comparing them with independent calculations. In this section we
-perform the simplest such check for surface defects in $A_{1}$ theories
-of class $\mathcal{S}$ \cite{Gaiotto:2009we,Gaiotto:2009hg}, which arise from compactification
-of the 6d $\mathcal{N}=(2,0)$ theory of type $A_{1}$
-on punctured Riemann surfaces. The action of surface defects on the
-supersymmetric indices of class-$\mathcal{S}$ theories have been
-studied in \cite{Gaiotto:2012xa, Gadde:2013dda, Alday:2013kda,Bullimore:2014nla}. Here we first review the computation for the surface
-defect labeled with the fundamental representation of $\SU(2)$ based
-on the method developed in \cite{Gaiotto:2012xa}, and show that the result agrees
-with the prediction from the transfer matrix \eqref{eq:proposal}.
-
-Typical examples of class-$\mathcal{S}$ theories are $\mathcal{N}=2$
-gauge theories characterized by linear and circular quivers with $\SU(N)$
-nodes. They are actually also examples of brane tiling models discussed
-in the previous sections. As such, they allow us to translate key
-notions in class-$\mathcal{S}$ theories to the language of brane
-tilings, and vice versa. So let us first describe these theories as
-class-$\mathcal{S}$ theories as well as brane tiling models, and
-understand the relation between the two descriptions. Although we
-will mainly work with $N=2$, for now we keep $N$ general.
-
-Let us consider the standard type IIA brane configuration for an $\mathcal{N}=2$
-linear quiver theory with $m+1$ nodes. It consists of $N$ D4-branes
-spanning the 01236 directions, intersected by $m$ -branes extending
-along the 012345 directions (see table \ref{tab:D4NS5}).
-\begin{table}
-\caption{D4-NS5 brane configuration}
-\label{tab:D4NS5}
-\vspace{0.2cm}
-  \centering
-    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
-\hline
-  & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\tabularnewline
-\hline
-D4       & $\times$ & $\times$ & $\times$ & $\times$ &    &    &    $\times$ & \phantom{X} & \phantom{X} &  \tabularnewline
-\hline
-NS5    & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ &    &    &    &  \phantom{X}  \tabularnewline
-\hline
-    \end{tabular}
-\end{table}
-This brane configuration is lifted in M-theory to M5-branes, wrapped
-on a cylinder with $m$ punctures created by intersecting M5-branes.
-Therefore, the $\mathcal{N}=2$ linear quiver theory is obtained by
-compactification of the 6d $\mathcal{N}=( 2,0 )$ theory
-of type $A_{N-1}$ on a cylinder with $m$ punctures, or a sphere
-with $m+2$ punctures. We distinguish the two punctures coming from
-the ends of the cylinder from the $m$ punctures in between. They
-are referred to as maximal and minimal punctures, respectively. In
-the class-$\mathcal{S}$ language, the $\mathcal{N}=2$ linear quiver
-theory is a theory associated to a sphere with $2$ maximal and $m$
-minimal punctures, see figure.
-
-R-symmetry of the theory is $\SU(2)_{I} \times \U(1)_{r}$, where $\SU(2)_{I}$
-represents the rotation symmetry of the 789-space, and $\U(1)_{r}$
-the rotation symmetry of the 45-plane. The $\SU(N)$ flavor node from
-each end of the quiver is associated to the maximal puncture on the
-corresponding side of the sphere. The $i$th gauge node is associated
-to the tube between the $i$th and $(i+1)$th minimal punctures. To
-the $i$th minimal puncture is associated a flavor symmetry $\U(1)_{i}$
-which acts on the hypermultiplet charged under the $(i-1)$th and
-$i$th gauge nodes.
-
-Following the philosophy of class-$\mathcal{S}$ theories, we decompose
-this theory into basic building blocks by decoupling gauge fields.
-Roughly, the gauge coupling of the $i$th gauge node is inversely
-proportional to the length between the $i$th and $(i+1)$th minimal
-punctures. To make the gauge couplings small, we take the minimal
-punctures far apart from one another. Then the surface looks like
-a string of $m$ spheres, each containing a single minimal puncture,
-connected by long tubes. The smaller the gauge couplings get, the
-longer the tubes become, and eventually these spheres split up as
-the couplings go to zero. Each of the spheres represents a bifundamental
-hypermultiplet, which is a linear quiver with $m=1$, so it has one
-minimal and two maximal punctures. The quiver thus breaks into a collection
-of three-punctured spheres, or trinions.
-
-
-%FIGURE
-\begin{figure}
-\centering
-    \begin{tikzpicture}[scale=0.9] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-
-        \draw (-4,0) circle [radius=0.9] node[above=0.5cm, node, minimum size=4pt] {}; \draw[double] (-4.6,0) circle [radius=0.1];
-        \draw (-2,0) circle [radius=0.9] node[above=0.5cm, node, minimum size=4pt] {};
-        \draw (100:0.9) arc (100:260:0.9);
-        \draw[xshift=1cm] (-80:0.9) arc (-80:80:0.9);
-        \draw (3,0) circle [radius=0.9] node[above=0.5cm, node, minimum size=4pt] {}; \draw[double] (3.6,0) circle [radius=0.1];
-        \draw[thick, loosely dotted] (0.2,0) -- (0.8,0);
-
-        \begin{scope}[xshift=-3cm]
-        \fill[white] (-0.3,-0.15) rectangle (0.3,0.15);
-        \draw (-0.3,0.15) to[bend right=20] (0.3,0.15); \draw (-0.3,-0.15) to[bend left=20] (0.3,-0.15);
-        \end{scope}
-        \begin{scope}[xshift=-1cm]
-        \fill[white] (-0.3,-0.15) rectangle (0.3,0.15);
-        \draw (-0.3,0.15) to[bend right=20] (0.3,0.15); \draw (-0.3,-0.15) to[bend left=20] (0.3,-0.15);
-        \end{scope}
-        \begin{scope}[xshift=2cm]
-        \fill[white] (-0.3,-0.15) rectangle (0.3,0.15);
-        \draw (-0.3,0.15) to[bend right=20] (0.3,0.15); \draw (-0.3,-0.15) to[bend left=20] (0.3,-0.15);
-        \end{scope}
-
-        \begin{scope}[yshift=1.8cm]
-        \node[fnode] (a) at (-5,0) {};
-        \node[node] (b) at (-3,0) {}; \node[node] (c) at (-1,0) {}; \node[node] (d) at (2,0) {};
-        \node[fnode] (e) at (4,0) {};
-        \draw[semithick] (a) to (b); \draw[semithick] (b) to (c); \draw[semithick] (d) to (e);
-        \draw[semithick] (c) to (0,0); \draw[thick, loosely dotted] (0.2,0) -- (0.8,0); \draw[semithick] (1,0) to (d);
-        \end{scope}
-
-    \end{tikzpicture}
-  \caption{An $\mathcal N =2$ linear quiver theory associated to a punctured sphere.}
-  \label{fig:linear_quiver}
-\end{figure}
-
-
-Conversely, a sphere with two maximal and $m$ minimal punctures is
-obtained by gluing $m$ trinions together, namely by replacing pairs
-of maximal punctures with tubes. In general, we can connect two Riemann
-surfaces with a tube at maximal punctures. From the point of view
-of gauge theory, gluing corresponds to gauging the diagonal combination
-of the $\SU(N)$ flavor symmetries associated to the maximal punctures
-involved. Using trinions with one minimal and two maximal punctures,
-we can obtain any linear quiver in this way, and for that manner also
-a circular quiver by further gluing the two ends of a linear quiver
-together. In this sense, these trinions are building blocks for linear
-and circular quivers. As these two kinds of quivers can be treated
-essentially in the same manner, we will focus on linear quivers in
-the followings.
-
-To make contact with brane tilings, what we need to do is to find
-the counterpart of trinion, building block of quiver gauge theories,
-in brane tiling systems. To do this, we describe the $\mathcal{N}=2$
-linear quiver theory as an $\mathcal{N}=1$ quiver gauge theory. In
-terms of $\mathcal{N}=1$ supermultiplets, the $\mathcal{N}=2$ vector
-multiplet for the $i$th gauge node decomposes into a vector multiplet
-and a chiral multiplet $\Phi_{i}$ in the adjoint representation with
-$(r,I_{3})=(-1,0)$, while the $i$th hypermultiplet
-consists of two bifundamental chiral multiplets $Q_{i},\,\tilde{Q}_{i}$
-with $(r,I_{3})=(0,1/2)$. Here $I_{3}$ is
-a Cartan generator of $\SU(2)_{I}$. The pair $(Q_{i},\tilde{Q}_{i}^{\dagger})$
-transforms in the doublet of $\SU(2)_{I}$ and have $\U(1)_{i}$ charge
-$F_{i}=-1$. From the point of view of $\mathcal{N}=1$ supersymmetry,
-the $\U(1)$ symmetry generated by the combination
-\begin{equation}
-    \mathcal{F} = r + I_{3}
-\end{equation}
-is a flavor symmetry. We denote the fugacity for $\mathcal{F}$ by
-$t$. For the standard definition of the $\mathcal{N}=2$ index, $r$
-and $\mathcal{F}$ enter the trace through the combination $(pq)^{-r}t^{\mathcal{F}}$.
-Then, the fugacities of $Q_{i},\,\tilde{Q}_{i}$ and $\Phi_{i}$ are
-$\sqrt{t}/\alpha_{i}$, $\sqrt{t}\alpha_{i}$ and $pq/t$, respectively.
-
-It is helpful for us to prepare two copies for each node of the quiver
-and impose identification between them. We draw the arrows in such
-a way that $\Phi_{i}$ connects the two copies of the $i$th node
-and makes a triangle with $Q_{i}$ and $\tilde{Q}_{i}$, as in figure \ref{fig:triangle_tiling}.
-Drawn in this form, it is clear that the $\mathcal{N}=2$ linear quiver
-is a special case of the triangle quiver described in section \ref{sec:tiling_latticemodel},
-except that the vertical arrow is missing between the flavor nodes
-at the right end. The corresponding brane tiling diagram is therefore
-essentially the same, as shown in figure. Note that the cubic superpotentials,
-generated around the triangles by world-sheet instantons, are precisely
-what we need for the theory to have $\mathcal{N}=2$ supersymmetry.
-
-
-%FIGURE
-\begin{figure}
-\centering
-  %\subfloat[\label{}]{  }
-  %\subfloat[\label{}]{  }
-      \begin{tikzpicture}[scale=1] %, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \def\shift{0.2}
-
-        \fill[olive!5] (-5-2*\shift,-1) rectangle (4+2*\shift,1);
-        \fill[lightshade] (-2,0) rectangle (-2+2*\shift,-2*\shift);
-        \fill[lightshade] (-4,0) rectangle (-4+2*\shift,-2*\shift);
-
-        \fill[darkshade] (-4-2*\shift, -2*\shift) rectangle (-4,-1);
-        \fill[darkshade] (-2-2*\shift, -2*\shift) rectangle (-2,-1);
-
-        \fill[darkshade] (3-2*\shift, -2*\shift) rectangle (3,-1);
-
-        \fill[darkshade] (-5-2*\shift,2*\shift) -- (-4-2*\shift,2*\shift) -- (-4-2*\shift,1) -- (-4,1) -- (-4,0) -- (-5-2*\shift,0) --cycle;
-        \fill[darkshade] (-4+2*\shift,2*\shift) -- (-2-2*\shift,2*\shift) -- (-2-2*\shift,1) -- (-2,1) -- (-2,0) -- (-4+2*\shift,0) --cycle;
-        \fill[darkshade] (-2+2*\shift, 2*\shift) rectangle (-2*\shift,0);
-
-        \draw[semithick, ->] (-4-2*\shift,-1) node[below] {$c$} -- (-4-2*\shift,-2*\shift) -- ++(4*\shift,0) -- ++(0,4*\shift) -- (-2-2*\shift,2*\shift) -- (-2-2*\shift,1);
-        \draw[semithick, ->] (-2-2*\shift,-1) node[below] {$c$} -- (-2-2*\shift,-2*\shift) -- ++(4*\shift,0) -- ++(0,4*\shift) -- (-2*\shift,2*\shift);
-        \draw[semithick, ->] (-5-2*\shift,2*\shift) -- (-4-2*\shift,2*\shift) -- (-4-2*\shift,1);
-        \draw[semithick, densely dotted, ->] (-4,-1) -- (-4,1) node[above] {$a_1$};
-        \draw[semithick, densely dotted, ->] (-2,-1) -- (-2,1) node[above] {$a_2$};
-        \draw[semithick, densely dotted] (-5-2*\shift,0) node[left] {$b$} -- (-2*\shift,0);
-
-        \draw[semithick, ->] (1+2*\shift,2*\shift) -- (3-2*\shift,2*\shift) -- (3-2*\shift,1);
-        \draw[semithick, ->] (3-2*\shift,-1) node[below] {$c$} -- (3-2*\shift,-2*\shift) -- (4+2*\shift,-2*\shift);
-        \draw[semithick, densely dotted, ->] (1+2*\shift,0) -- (4+2*\shift,0);
-        \draw[semithick, densely dotted, ->] (3,-1) -- (3,1) node[above] {$a_m$};
-
-        \fill[darkshade] (1+2*\shift,2*\shift) -- (3-2*\shift,2*\shift) -- (3-2*\shift,1)-- (3,1) -- (3,0) -- (1+2*\shift,0) --cycle;
-        \fill[lightshade] (3,0) rectangle (4+2*\shift,-2*\shift);
-
-        \fill[white] (-2*\shift,-1) rectangle (1+2*\shift,1);
-        \draw[thick, loosely dotted] (0,0) -- (1,0);
-
-        %quiver diagram
-        \begin{scope}[yshift=2.2cm]
-        \node[fnode] (a) at (-5,0) {};
-        \node[node] (b) at (-3,0) {}; \node[node] (c) at (-1,0) {}; \node[node] (d) at (2,0) {};
-        \node[fnode] (e) at (4,0) {};
-        \draw[semithick, arrows=-latex] (a) to node[below] {$\sqrt{t}\alpha_1$} (b); \draw[semithick, arrows=-latex] (b) to node[below] {$\sqrt{t}\alpha_2$} (c); \draw[semithick, arrows=-latex] (d) to node[below] {$\sqrt{t}\alpha_m$} (e);
-        \draw[semithick] (c) to (0,0); \draw[thick, loosely dotted] (0.2,0) -- (0.8,0); \draw[semithick, arrows=-latex] (1,0) to (d);
-
-        \begin{scope}[yshift=1.6cm]
-        \node[fnode] (f) at (-5,0) {};
-        \node[node] (g) at (-3,0) {}; \node[node] (h) at (-1,0) {}; \node[node] (i) at (2,0) {};
-        \node[fnode] (j) at (4,0) {};
-        \end{scope}
-
-        \draw[semithick, arrows=-latex] (b) to node[below left] {$pq/t$} (g); \draw[semithick, arrows=-latex] (c) to node[below left] {$pq/t$} (h); \draw[semithick, arrows=-latex] (d) to node[below left] {$pq/t$} (i);
-        \draw[semithick, arrows=-latex] (g) to node[above=0.25cm] {$\sqrt{t}/\alpha_1$} (a); \draw[semithick, arrows=-latex] (h) to node[above=0.25cm] {$\sqrt{t}/\alpha_2$} (b); \draw[semithick, arrows=-latex] (j) to node[above=0.25cm] {$\sqrt{t}/\alpha_m$} (d);
-        \draw[semithick, arrows=-latex] (0,0.8) to (c);\draw[thick, loosely dotted] (0.2,0.8) -- (0.8,0.8);  \draw[semithick] (i) to (1,0.8);
-        \end{scope}
-
-    \end{tikzpicture}
-  \caption{An $\mathcal N =2$ linear quiver as a brane tiling model.
-  In the quiver, the two nodes in the same column are identified.
-  In the brane tiling diagram, the vertical direction is periodic.}
-  \label{fig:triangle_tiling}
-\end{figure}
-
-
-As we can split the $(m+1)$-punctured sphere into a collection of
-$m$ trinioins, we can also break the brane tiling diagram into basic
-pieces. Each piece represents a single trinioin and is made of three
-zig-zag paths:
-\begin{equation}
-    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-
-        \draw (0,0) circle [radius=1.1];
-        \draw (0,0.7) circle [radius=0.08] node[below=0.1] {$\alpha$};
-        \draw[double] (-0.7,0) circle [radius=0.08] node[below=0.1] {$w$};
-        \draw[double] (0.7,0) circle [radius=0.08] node[below=0.1] {$z$};
-
-    \end{tikzpicture}
-  %
-  \quad \rightsquigarrow \quad
-  %
-    \begin{tikzpicture}[scale=0.8, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-
-        \node[fnode] (a) at (-1,-1) {$w$};\node[fnode] (b) at (1,-1) {$z$};\node[fnode] (c) at (1,1) {$z$};\node[fnode] (d) at (-1,1) {$w$};
-        \draw[semithick, ->] (a) to node[below] {$\sqrt{t}\alpha$} (b); \draw[semithick, ->] (c) to node[above left=-0.1] {$\sqrt{t}/\alpha$} (a);
-
-    \end{tikzpicture}
-  %
-  \ = \
-  %
-    \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
-        \def\shift{0.15}
-
-        \fill[olive!5] (-1,-1) rectangle (1,1);
-
-        \fill[darkshade] (-1,2*\shift) -- (-2*\shift,2*\shift) -- (-2*\shift,1)-- (0,1) -- (0,0) -- (-1,0) --cycle;
-        \fill[lightshade] (0,0) rectangle (1,-2*\shift);
-        \fill[darkshade] (-2*\shift, -2*\shift) rectangle (0,-1);
-
-        \draw[semithick, ->] (-1,2*\shift) node[left] {$c$} -- (-2*\shift,2*\shift) -- (-2*\shift,1);
-        \draw[semithick, ->] (-2*\shift,-1) node[below] {$c$} -- (-2*\shift,-2*\shift) -- (1,-2*\shift);
-        \draw[semithick, densely dotted, ->] (-1,0) -- (1,0) node[right] {$b$};
-        \draw[semithick, densely dotted, ->] (0,-1) -- (0,1) node[above] {$a$};
-
-        \node at (4*\shift,4*\shift) {$z$};\node at (4*\shift,-4*\shift) {$z$};
-        \node at (-4*\shift,4*\shift) {$w$};\node at (-4*\shift,-4*\shift) {$w$};
-
-    \end{tikzpicture}
-  \quad .
-\end{equation}
-Gluing two trinions corresponds to concatenating
-two such diagrams side by side. In the course of this operation, we
-must interchange the positions of the zig-zag paths labeled $b$ and
-$c$ near the glued side of one of the diagrams. This results in an
-additional vertical arrow in the combined quiver, which is the adjoint
-chiral multiplet in the $\mathcal{N}=2$ vector multiplet used in
-the gauging.
-
-Let us find the relationship between the convention we use for brane
-tilings and that used above. The R-charge $R$ in the brane tiling
-model is given in terms of the charges of the $\mathcal{N}=2$ theory
-by
-\begin{equation}
-    R  =  R_{0}  +  \frac{1}{2}\sum_{i}F_{i},
-      \quad  R_{0}  =  -r+I_{3}.
-\end{equation}
-The flavor charges associated to the zig-zag paths can be written
-as
-\begin{equation}
-    F_{a_{i}}  =  -F_{i},
-      \quad  F_{b}  =  -\mathcal{F}+\frac{1}{2}\sum_{i}F_{i},
-      \quad  F_{c}  =  \mathcal{F}+\frac{1}{2}\sum_{i}F_{i}.
-\end{equation}
-Without loss of generality, we can set
-\begin{equation}
-    a_{i}  =  \frac{1}{\alpha_{i}}.
-\end{equation}
-Plugging these relations into the combination $(pq)^{R/2}\prod_{i}a_{i}^{F_{a_{i}}}b^{F_{b}}c^{F_{c}}$
-that enters the indices of the bifundamental chiral multiplets, we
-deduce
-\begin{equation}
-    b  =  \frac{1}{\sqrt{t}},
-      \quad  c  =  \sqrt{\frac{t}{pq}}.
-  \label{eq:relation_bc}
-\end{equation}
-Before proceeding, we should mention a peculiarity in the $A_{1}$
-case. When $N=2$, the $\U(1)$ flavor symmetry of a bifundamental hypermultiplet
-is enhanced to $\SU(2)$ due to the fact that the fundamental representation
-of $\SU(2)$ is pseudoreal. For this reason there is no distinction
-between minimal and maxmal punctures, and each trinion can be regarded
-as a half-hypermultiplet in the trifundamental representation of $\SU(2)^{3}$.
-This is reflected in the index of a trinion,
-\begin{equation}
-    \mathcal{I}_{B}(w,z;\sqrt{t}a)\mathcal{I}_{B}(z,w;\sqrt{t}/a)
-      =
-        \Gamma(\sqrt{t}\alpha^{\pm1}z^{\pm1}w^{\pm1}),
-\end{equation}
-which is manifestly symmetric under permutation of $a,\,z$ and $w$.
 
 
 
@@ -2481,6 +2513,7 @@ on the lattice model as the transfer matrix
         \theta\left(\sqrt{\frac{p}{q}}\frac{bc}{d^{2}}\right)
         \theta\left(\sqrt{\frac{p}{q}}\frac{c}{b}z^{-2s}\right)
         \Delta^{s/2}.
+  \label{eq:transfer_fromL}
 \end{equation}
 From the relation \eqref{eq:relation_bc}, we see that if we set
 \begin{equation}

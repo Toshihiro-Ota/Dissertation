@@ -1,8 +1,8 @@
-%\begin{comment}
+\begin{comment}
 \documentclass[11pt]{article}  % , titlepage
 \usepackage{Common/toshi}
 \begin{document}
-%\end{comment}
+\end{comment}
 
 
 
@@ -24,8 +24,8 @@
 
         \node[align=center] (Q) at (0,0) {Quiver gauge theory \\ (class-$\CS$)};
         \node[above=1.6\pos of Q] (B) {Brane tiling};
-        \node[right=2*\pos of Q] (Toda) {Toda CFT}; \node[right=0.8*\pos of Q] {$\simeq$};
-        \node[above=1.6*\pos of Toda] (M) {M-theory setup};
+        \node[right=2*\pos of Q] (CFT) {2d CFT}; \node[right=0.8*\pos of Q] {$\simeq$};
+        \node[above=1.6*\pos of CFT] (M) {M-theory setup};
         \node[left=2*\pos of Q, align=center] (I) {Integrable \\ lattice model};
         \node[above=1.6*\pos of I] (CS) {4d Chern-Simons};
         \node[below=1.2*\pos of Q, align=center] (T) {Transfer matrix/Wilson-'t Hooft line/Verlinde operator \\ acting on a quantum Hilbert space};
@@ -36,12 +36,12 @@
         \draw[semithick, color=red!50!black, arrows=-to] (B.east) to (M.west);
         \draw[semithick, color=red!50!black, arrows=-to] (B.west) to node[above,pos=0.5] {(4)} (CS.east);
         \draw[semithick, arrows=-to] (CS) to (I);
-        \draw[semithick, arrows=-to] (M) to (Toda);
+        \draw[semithick, arrows=-to] (M) to (CFT);
         \draw[semithick, arrows=-to] (M.south west) to node[below right=0.2cm,pos=0.5] {AGT} (Q.north east);
 
         \draw[thick, color=blue!50!black, arrows=-to] (T.north west) to[bend left=15] node[pos=0.5,left] {(1)} (I.south);
         \draw[thick, color=blue!50!black, arrows=-to] (T) to node[pos=0.5,right] {(2)} (Q);
-        \draw[thick, color=blue!50!black, arrows=-to] (T.north east) to[bend right=12] node[pos=0.5,right] {(3)} (Toda.south);
+        \draw[thick, color=blue!50!black, arrows=-to] (T.north east) to[bend right=5] node[pos=0.5,right] {(3)} (CFT.south);
 
     \end{tikzpicture}
     \caption{Structure of section \ref{sec:line_defects}. (1)}

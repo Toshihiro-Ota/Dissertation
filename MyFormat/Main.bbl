@@ -228,6 +228,12 @@ G.~Festuccia and N.~Seiberg, \emph{{Rigid Supersymmetric Theories in Curved
   {\bfseries 06} (2011) 114},
   [\href{https://arxiv.org/abs/1105.0689}{{\ttfamily 1105.0689}}].
 
+\bibitem{Spiridonov:2014cxa}
+V.~Spiridonov and G.~Vartanov, \emph{{Vanishing superconformal indices and the
+  chiral symmetry breaking}},
+  \href{https://doi.org/10.1007/JHEP06(2014)062}{\emph{JHEP} {\bfseries 06}
+  (2014) 062}, [\href{https://arxiv.org/abs/1402.2312}{{\ttfamily 1402.2312}}].
+
 \bibitem{MR2044635}
 V.~P. Spiridonov, \emph{Theta hypergeometric integrals},
   \href{https://doi.org/10.1090/S1061-0022-04-00839-8}{\emph{Algebra i Analiz}
@@ -245,11 +251,27 @@ F.~Dolan and H.~Osborn, \emph{{Applications of the Superconformal Index for
   {\bfseries 818} (2009) 137--178},
   [\href{https://arxiv.org/abs/0801.4947}{{\ttfamily 0801.4947}}].
 
-\bibitem{Spiridonov:2014cxa}
-V.~Spiridonov and G.~Vartanov, \emph{{Vanishing superconformal indices and the
-  chiral symmetry breaking}},
-  \href{https://doi.org/10.1007/JHEP06(2014)062}{\emph{JHEP} {\bfseries 06}
-  (2014) 062}, [\href{https://arxiv.org/abs/1402.2312}{{\ttfamily 1402.2312}}].
+\bibitem{Gaiotto:2009we}
+D.~Gaiotto, \emph{{$N=2$ dualities}},
+  \href{https://doi.org/10.1007/JHEP08(2012)034}{\emph{JHEP} {\bfseries 08}
+  (2012) 034}, [\href{https://arxiv.org/abs/0904.2715}{{\ttfamily 0904.2715}}].
+
+\bibitem{Gaiotto:2009hg}
+D.~Gaiotto, G.~W. Moore and A.~Neitzke, \emph{{Wall-crossing, Hitchin Systems,
+  and the WKB Approximation}},
+  \href{https://arxiv.org/abs/0907.3987}{{\ttfamily 0907.3987}}.
+
+\bibitem{Alday:2013kda}
+L.~F. Alday, M.~Bullimore, M.~Fluder and L.~Hollands, \emph{{Surface defects,
+  the superconformal index and q-deformed Yang-Mills}},
+  \href{https://doi.org/10.1007/JHEP10(2013)018}{\emph{JHEP} {\bfseries 10}
+  (2013) 018}, [\href{https://arxiv.org/abs/1303.4460}{{\ttfamily 1303.4460}}].
+
+\bibitem{Bullimore:2014nla}
+M.~Bullimore, M.~Fluder, L.~Hollands and P.~Richmond, \emph{{The superconformal
+  index and an elliptic algebra of surface defects}},
+  \href{https://doi.org/10.1007/JHEP10(2014)062}{\emph{JHEP} {\bfseries 10}
+  (2014) 062}, [\href{https://arxiv.org/abs/1401.3379}{{\ttfamily 1401.3379}}].
 
 \bibitem{Gukov:2006jk}
 S.~Gukov and E.~Witten, \emph{{Gauge Theory, Ramification, And The Geometric
@@ -294,28 +316,6 @@ V.~P. Spiridonov, \emph{The continuous biorthogonality of an elliptic
   hypergeometric function},
   \href{https://doi.org/10.1090/S1061-0022-09-01073-5}{\emph{Algebra i Analiz}
   {\bfseries 20} (2008) 155--185}.
-
-\bibitem{Gaiotto:2009we}
-D.~Gaiotto, \emph{{$N=2$ dualities}},
-  \href{https://doi.org/10.1007/JHEP08(2012)034}{\emph{JHEP} {\bfseries 08}
-  (2012) 034}, [\href{https://arxiv.org/abs/0904.2715}{{\ttfamily 0904.2715}}].
-
-\bibitem{Gaiotto:2009hg}
-D.~Gaiotto, G.~W. Moore and A.~Neitzke, \emph{{Wall-crossing, Hitchin Systems,
-  and the WKB Approximation}},
-  \href{https://arxiv.org/abs/0907.3987}{{\ttfamily 0907.3987}}.
-
-\bibitem{Alday:2013kda}
-L.~F. Alday, M.~Bullimore, M.~Fluder and L.~Hollands, \emph{{Surface defects,
-  the superconformal index and q-deformed Yang-Mills}},
-  \href{https://doi.org/10.1007/JHEP10(2013)018}{\emph{JHEP} {\bfseries 10}
-  (2013) 018}, [\href{https://arxiv.org/abs/1303.4460}{{\ttfamily 1303.4460}}].
-
-\bibitem{Bullimore:2014nla}
-M.~Bullimore, M.~Fluder, L.~Hollands and P.~Richmond, \emph{{The superconformal
-  index and an elliptic algebra of surface defects}},
-  \href{https://doi.org/10.1007/JHEP10(2014)062}{\emph{JHEP} {\bfseries 10}
-  (2014) 062}, [\href{https://arxiv.org/abs/1401.3379}{{\ttfamily 1401.3379}}].
 
 \bibitem{MR851627}
 S.~N.~M. Ruijsenaars and H.~Schneider, \emph{A new class of integrable systems
