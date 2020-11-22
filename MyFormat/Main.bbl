@@ -261,17 +261,63 @@ D.~Gaiotto, G.~W. Moore and A.~Neitzke, \emph{{Wall-crossing, Hitchin Systems,
   and the WKB Approximation}},
   \href{https://arxiv.org/abs/0907.3987}{{\ttfamily 0907.3987}}.
 
-\bibitem{Alday:2013kda}
-L.~F. Alday, M.~Bullimore, M.~Fluder and L.~Hollands, \emph{{Surface defects,
-  the superconformal index and q-deformed Yang-Mills}},
-  \href{https://doi.org/10.1007/JHEP10(2013)018}{\emph{JHEP} {\bfseries 10}
-  (2013) 018}, [\href{https://arxiv.org/abs/1303.4460}{{\ttfamily 1303.4460}}].
+\bibitem{Wyllard:2009hg}
+N.~Wyllard, \emph{{A(N-1) conformal Toda field theory correlation functions
+  from conformal {$\mathcal{N} = 2$} SU(N) quiver gauge theories}},
+  \href{https://doi.org/10.1088/1126-6708/2009/11/002}{\emph{JHEP} {\bfseries
+  11} (2009) 002}, [\href{https://arxiv.org/abs/0907.2189}{{\ttfamily
+  0907.2189}}].
 
-\bibitem{Bullimore:2014nla}
-M.~Bullimore, M.~Fluder, L.~Hollands and P.~Richmond, \emph{{The superconformal
-  index and an elliptic algebra of surface defects}},
-  \href{https://doi.org/10.1007/JHEP10(2014)062}{\emph{JHEP} {\bfseries 10}
-  (2014) 062}, [\href{https://arxiv.org/abs/1401.3379}{{\ttfamily 1401.3379}}].
+\bibitem{Gadde:2009kb}
+A.~Gadde, E.~Pomoni, L.~Rastelli and S.~S. Razamat, \emph{{S-duality and 2d
+  Topological QFT}}, \href{https://doi.org/10.1007/JHEP03(2010)032}{\emph{JHEP}
+  {\bfseries 03} (2010) 032},
+  [\href{https://arxiv.org/abs/0910.2225}{{\ttfamily 0910.2225}}].
+
+\bibitem{Gadde:2011ik}
+A.~Gadde, L.~Rastelli, S.~S. Razamat and W.~Yan, \emph{{The 4d Superconformal
+  Index from q-deformed 2d Yang-Mills}},
+  \href{https://doi.org/10.1103/PhysRevLett.106.241602}{\emph{Phys. Rev. Lett.}
+  {\bfseries 106} (2011) 241602},
+  [\href{https://arxiv.org/abs/1104.3850}{{\ttfamily 1104.3850}}].
+
+\bibitem{Dimofte:2011ju}
+T.~Dimofte, D.~Gaiotto and S.~Gukov, \emph{{Gauge Theories Labelled by
+  Three-Manifolds}},
+  \href{https://doi.org/10.1007/s00220-013-1863-2}{\emph{Commun. Math. Phys.}
+  {\bfseries 325} (2014) 367--419},
+  [\href{https://arxiv.org/abs/1108.4389}{{\ttfamily 1108.4389}}].
+
+\bibitem{Dimofte:2011py}
+T.~Dimofte, D.~Gaiotto and S.~Gukov, \emph{{3-Manifolds and 3d Indices}},
+  \href{https://doi.org/10.4310/ATMP.2013.v17.n5.a3}{\emph{Adv. Theor. Math.
+  Phys.} {\bfseries 17} (2013) 975--1076},
+  [\href{https://arxiv.org/abs/1112.5179}{{\ttfamily 1112.5179}}].
+
+\bibitem{Terashima:2011qi}
+Y.~Terashima and M.~Yamazaki, \emph{{SL(2,R) Chern-Simons, Liouville, and Gauge
+  Theory on Duality Walls}},
+  \href{https://doi.org/10.1007/JHEP08(2011)135}{\emph{JHEP} {\bfseries 08}
+  (2011) 135}, [\href{https://arxiv.org/abs/1103.5748}{{\ttfamily 1103.5748}}].
+
+\bibitem{Terashima:2012cx}
+Y.~Terashima and M.~Yamazaki, \emph{{Emergent 3-manifolds from 4d
+  Superconformal Indices}},
+  \href{https://doi.org/10.1103/PhysRevLett.109.091602}{\emph{Phys. Rev. Lett.}
+  {\bfseries 109} (2012) 091602},
+  [\href{https://arxiv.org/abs/1203.5792}{{\ttfamily 1203.5792}}].
+
+\bibitem{Yagi:2013fda}
+J.~Yagi, \emph{{3d TQFT from 6d SCFT}},
+  \href{https://doi.org/10.1007/JHEP08(2013)017}{\emph{JHEP} {\bfseries 08}
+  (2013) 017}, [\href{https://arxiv.org/abs/1305.0291}{{\ttfamily 1305.0291}}].
+
+\bibitem{Derkachov:2012iv}
+S.~Derkachov and V.~Spiridonov, \emph{{Yang-Baxter equation, parameter
+  permutations, and the elliptic beta integral}},
+  \href{https://doi.org/10.1070/RM2013v068n06ABEH004869}{\emph{Russ. Math.
+  Surveys} {\bfseries 68} (2013) 1027--1072},
+  [\href{https://arxiv.org/abs/1205.3520}{{\ttfamily 1205.3520}}].
 
 \bibitem{Gukov:2006jk}
 S.~Gukov and E.~Witten, \emph{{Gauge Theory, Ramification, And The Geometric
@@ -304,18 +350,23 @@ E.~K. Sklyanin, \emph{Some algebraic structures connected with the
   {Y}ang-{B}axter equation. {R}epresentations of a quantum algebra},
   {\emph{Funktsional. Anal. i Prilozhen.} {\bfseries 17} (1983) 34--48}.
 
-\bibitem{Derkachov:2012iv}
-S.~Derkachov and V.~Spiridonov, \emph{{Yang-Baxter equation, parameter
-  permutations, and the elliptic beta integral}},
-  \href{https://doi.org/10.1070/RM2013v068n06ABEH004869}{\emph{Russ. Math.
-  Surveys} {\bfseries 68} (2013) 1027--1072},
-  [\href{https://arxiv.org/abs/1205.3520}{{\ttfamily 1205.3520}}].
-
 \bibitem{MR2492363}
 V.~P. Spiridonov, \emph{The continuous biorthogonality of an elliptic
   hypergeometric function},
   \href{https://doi.org/10.1090/S1061-0022-09-01073-5}{\emph{Algebra i Analiz}
   {\bfseries 20} (2008) 155--185}.
+
+\bibitem{Alday:2013kda}
+L.~F. Alday, M.~Bullimore, M.~Fluder and L.~Hollands, \emph{{Surface defects,
+  the superconformal index and q-deformed Yang-Mills}},
+  \href{https://doi.org/10.1007/JHEP10(2013)018}{\emph{JHEP} {\bfseries 10}
+  (2013) 018}, [\href{https://arxiv.org/abs/1303.4460}{{\ttfamily 1303.4460}}].
+
+\bibitem{Bullimore:2014nla}
+M.~Bullimore, M.~Fluder, L.~Hollands and P.~Richmond, \emph{{The superconformal
+  index and an elliptic algebra of surface defects}},
+  \href{https://doi.org/10.1007/JHEP10(2014)062}{\emph{JHEP} {\bfseries 10}
+  (2014) 062}, [\href{https://arxiv.org/abs/1401.3379}{{\ttfamily 1401.3379}}].
 
 \bibitem{MR851627}
 S.~N.~M. Ruijsenaars and H.~Schneider, \emph{A new class of integrable systems

@@ -9,7 +9,7 @@
 
 %%%%%%%%%%%%%%%%%% section A %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Special functions and some formulas}
-
+\label{sec:special_functions}
 
 
 
@@ -27,7 +27,7 @@ The theta function with characteristics is defined by
         =\sum_{n\in\Z} e^{\pi\iu(n+a)^2\tau + 2\pi\iu(n+a)(\zeta+b)}
     ,
 \end{equation}
-where $\zeta$ is a complex variable and $\tau$ is a complex parameter in the upper half-plane: $\Im\tau>0$.
+where $\zeta$ is a complex variable and $\tau$ is a complex parameter in the upper half-plane; $\Im\tau>0$.
 The Jacobi's theta functions are defined by
 \begin{align}
     \theta_1(\zeta|\tau) &= -\theta\bigg[％
@@ -105,7 +105,7 @@ and
 The function $\Gamma(z;p,q)$ has a pole at $z=p^{-j}q^{-k}$, where $j,\,k$ are non-negative integers.
 The residue at this pole is given by
 \begin{equation}
-    \mathrm{Res}_{z=p^{-j}q^{-k}} \left[ \Gamma(z;p,q) \right]
+    \mathrm{Res}_{z=p^{-j}q^{-k}} \big[ \Gamma(z;p,q) \big]
     = \frac{(-1)^{jk+j+k}p^{(k+1)j(j+1)/2}q^{(j+1)k(k+1)/2}}
     {(p;p)_{\infty} (q;q)_{\infty} \theta(p,\ldots,p^j;q)\theta(q,\ldots,q^k;p)},
 \label{eq:gamma_residue}
@@ -113,7 +113,7 @@ The residue at this pole is given by
 where we have introduced the notation $\theta(z_1,\ldots,z_n;q):=\theta(z_1;q)\cdots\theta(z_n;q)$.
 
 Let $t_j$, $j=1,\ldots,6$ be six complex parameters such that $|t_j|<1$ and $\prod_{j=1}^6 t_j=pq$.
-Then, we have the following identity proved in \cite{MR1846786}.
+Then, we have the following identity proved in \cite{MR1846786}:
 \begin{equation}
     \frac{(p;p)_{\infty} (q;q)_{\infty}}{2}
         \int_{\mathbb T}\frac{dz}{2\pi\iu z} \frac{\prod_{j=1}^6\Gamma(t_j z^{\pm 1};p,q)}{\Gamma(z^{\pm 2};p,q)}
@@ -157,7 +157,7 @@ Through the function $\Gamma_{\bs}$, we define upsilon function as
 \begin{equation}
     \Upsilon_{\bs}(x) = \frac{1}{\Gamma_{\bs}(x) \Gamma_{\bs}(Q-x)}.
 \end{equation}
-The upsilon function also has an integral representation, which is convergent in the
+The upsilon function has an integral representation as well, which is convergent in the
 strip $0<\Re x<Q$:
 \begin{equation}
     \log \Upsilon_{\bs}(x) =\int_0^{\infty}
@@ -165,7 +165,7 @@ strip $0<\Re x<Q$:
         - \frac{\sinh^2\big((Q/2-x)t/2\big)}{\sinh(\bs t/2)\sinh(t/2\bs)} \right].
 \end{equation}
 
-The upsilon function is again self-dual:
+The upsilon function is also self-dual:
 \begin{equation}
     \Upsilon_{\bs}(x) = \Upsilon_{1/\bs}(x),
 \end{equation}
