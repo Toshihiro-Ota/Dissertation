@@ -1,5 +1,5 @@
 
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{100}
 
 \bibitem{Yagi:2015lha}
 J.~Yagi, \emph{{Quiver gauge theories and integrable lattice models}},
@@ -101,6 +101,13 @@ J.~Yagi, \emph{{Branes and integrable lattice models}},
   \href{https://doi.org/10.1142/S0217732317300038}{\emph{Mod. Phys. Lett. A}
   {\bfseries 32} (2016) 1730003},
   [\href{https://arxiv.org/abs/1610.05584}{{\ttfamily 1610.05584}}].
+
+\bibitem{Lazaroiu:2000rk}
+C.~Lazaroiu, \emph{{On the structure of open - closed topological field theory
+  in two-dimensions}},
+  \href{https://doi.org/10.1016/S0550-3213(01)00135-3}{\emph{Nucl. Phys. B}
+  {\bfseries 603} (2001) 497--530},
+  [\href{https://arxiv.org/abs/hep-th/0010269}{{\ttfamily hep-th/0010269}}].
 
 \bibitem{Moore:2006dw}
 G.~W. Moore and G.~Segal, \emph{{D-branes and K-theory in 2D topological field
@@ -413,6 +420,10 @@ J.~Yagi, \emph{{Surface defects and elliptic quantum groups}},
   (2017) 013}, [\href{https://arxiv.org/abs/1701.05562}{{\ttfamily
   1701.05562}}].
 
+\bibitem{Maruyoshi:2020cwy}
+K.~Maruyoshi, T.~Ota and J.~Yagi, \emph{{Wilson-'t Hooft lines as transfer
+  matrices}},  \href{https://arxiv.org/abs/2009.12391}{{\ttfamily 2009.12391}}.
+
 \bibitem{MR1645196}
 P.~Etingof and A.~Varchenko, \emph{Solutions of the quantum dynamical
   {Y}ang-{B}axter equation and dynamical quantum groups},
@@ -445,11 +456,44 @@ A.~Kapustin, \emph{{Wilson-'t Hooft operators in four-dimensional gauge
   {\bfseries 74} (2006) 025005},
   [\href{https://arxiv.org/abs/hep-th/0501015}{{\ttfamily hep-th/0501015}}].
 
+\bibitem{Pestun:2007rz}
+V.~Pestun, \emph{{Localization of gauge theory on a four-sphere and
+  supersymmetric Wilson loops}},
+  \href{https://doi.org/10.1007/s00220-012-1485-0}{\emph{Commun.Math.Phys.}
+  {\bfseries 313} (2012) 71--129},
+  [\href{https://arxiv.org/abs/0712.2824}{{\ttfamily 0712.2824}}].
+
+\bibitem{Gomis:2011pf}
+J.~Gomis, T.~Okuda and V.~Pestun, \emph{{Exact Results for 't Hooft Loops in
+  Gauge Theories on $S^4$}},
+  \href{https://doi.org/10.1007/JHEP05(2012)141}{\emph{JHEP} {\bfseries 05}
+  (2012) 141}, [\href{https://arxiv.org/abs/1105.2568}{{\ttfamily 1105.2568}}].
+
 \bibitem{Ito:2011ea}
 Y.~Ito, T.~Okuda and M.~Taki, \emph{{Line operators on {$S^{1} \times
   \mathbb{R}^{3}$} and quantization of the Hitchin moduli space}},
   \href{https://doi.org/10.1007/JHEP03(2016)085}{\emph{JHEP} {\bfseries 04}
   (2012) 010}, [\href{https://arxiv.org/abs/1111.4221}{{\ttfamily 1111.4221}}].
+
+\bibitem{Gaiotto:2008cd}
+D.~Gaiotto, G.~W. Moore and A.~Neitzke, \emph{{Four-dimensional wall-crossing
+  via three-dimensional field theory}},
+  \href{https://doi.org/10.1007/s00220-010-1071-2}{\emph{Commun. Math. Phys.}
+  {\bfseries 299} (2010) 163--224},
+  [\href{https://arxiv.org/abs/0807.4723}{{\ttfamily 0807.4723}}].
+
+\bibitem{Brennan:2019hzm}
+T.~D. Brennan and G.~W. Moore, \emph{{Index-Like Theorems from Line Defect
+  Vevs}}, \href{https://doi.org/10.1007/JHEP09(2019)073}{\emph{JHEP} {\bfseries
+  09} (2019) 073}, [\href{https://arxiv.org/abs/1903.08172}{{\ttfamily
+  1903.08172}}].
+
+\bibitem{Kapustin:2006pk}
+A.~Kapustin and E.~Witten, \emph{{Electric-Magnetic Duality And The Geometric
+  Langlands Program}},
+  \href{https://doi.org/10.4310/CNTP.2007.v1.n1.a1}{\emph{Commun. Num. Theor.
+  Phys.} {\bfseries 1} (2007) 1--236},
+  [\href{https://arxiv.org/abs/hep-th/0604151}{{\ttfamily hep-th/0604151}}].
 
 \bibitem{Brennan:2018yuj}
 T.~D. Brennan, A.~Dey and G.~W. Moore, \emph{{On 't Hooft defects, monopole
@@ -475,13 +519,6 @@ B.~Assel and A.~Sciarappa, \emph{{On monopole bubbling contributions to 't
   Hooft loops}}, \href{https://doi.org/10.1007/JHEP05(2019)180}{\emph{JHEP}
   {\bfseries 05} (2019) 180},
   [\href{https://arxiv.org/abs/1903.00376}{{\ttfamily 1903.00376}}].
-
-\bibitem{Hayashi:2019rpw}
-H.~Hayashi, T.~Okuda and Y.~Yoshida, \emph{{Wall-crossing and operator ordering
-  for 't Hooft operators in $ \mathcal{N} = 2$ gauge theories}},
-  \href{https://doi.org/10.1007/JHEP11(2019)116}{\emph{JHEP} {\bfseries 11}
-  (2019) 116}, [\href{https://arxiv.org/abs/1905.11305}{{\ttfamily
-  1905.11305}}].
 
 \bibitem{LeFloch:2020uop}
 B.~Le~Floch, \emph{{A slow review of the AGT correspondence}},
@@ -522,6 +559,23 @@ N.~Nekrasov and A.~Okounkov, \emph{{Seiberg-Witten theory and random
   partitions}}, \href{https://doi.org/10.1007/0-8176-4467-9_15}{\emph{Prog.
   Math.} {\bfseries 244} (2006) 525--596},
   [\href{https://arxiv.org/abs/hep-th/0306238}{{\ttfamily hep-th/0306238}}].
+
+\bibitem{Hama:2011ea}
+N.~Hama, K.~Hosomichi and S.~Lee, \emph{{SUSY Gauge Theories on Squashed
+  Three-Spheres}}, \href{https://doi.org/10.1007/JHEP05(2011)014}{\emph{JHEP}
+  {\bfseries 05} (2011) 014},
+  [\href{https://arxiv.org/abs/1102.4716}{{\ttfamily 1102.4716}}].
+
+\bibitem{Hama:2012bg}
+N.~Hama and K.~Hosomichi, \emph{{Seiberg-Witten Theories on Ellipsoids}},
+  \href{https://doi.org/10.1007/JHEP09(2012)033}{\emph{JHEP} {\bfseries 09}
+  (2012) 033}, [\href{https://arxiv.org/abs/1206.6359}{{\ttfamily 1206.6359}}].
+
+\bibitem{Verlinde:1988sn}
+E.~P. Verlinde, \emph{{Fusion Rules and Modular Transformations in 2D Conformal
+  Field Theory}},
+  \href{https://doi.org/10.1016/0550-3213(88)90603-7}{\emph{Nucl. Phys. B}
+  {\bfseries 300} (1988) 360--376}.
 
 \bibitem{Alday:2009fs}
 L.~F. Alday, D.~Gaiotto, S.~Gukov, Y.~Tachikawa and H.~Verlinde, \emph{{Loop

@@ -304,17 +304,13 @@ works, Atiyah and Segal axiomatized the topological QFT,%
 %
 \footnote{Precisely speaking, what Segal axiomatized is the definition of conformal
 field theories \cite{Segal:2002ei}. Segal's definition of CFT is categorical
-and quite similar to the definition of Atiyah's TQFT.
-For the geometric definition of CFT, see \cite{Friedan:1986ua}. }
+and quite similar to Atiyah's TQFT.
+For the geometric definition of CFT, see e.g. \cite{Friedan:1986ua}. }
 %
 and happily this also has brought to us a numerous amount of applications
 both to physics and to pure mathematics. For example, ($1+1$)-dimensional
 topological QFTs are known to be functorially equivalent to the category of commutative
-<<<<<<< HEAD
 Frobenius algebras \cite{MR2037238}. $(2+1)$-dimensional Chern-Simons theory for a
-=======
-Frobenius algebras. $(2+1)$-dimensional Chern-Simons theory for a
->>>>>>> dissertation
 compact Lie group $G$ is rigorously constructed by Kohno \cite{MR1167165} using
 the monodromy representation of Knizhnik-Zamolodchikov equation \cite{Knizhnik:1984nr},
 and Turaev-Viro, Reshetikhin-Turaev using quantum groups \cite{Turaev:1992hq, Reshetikhin:1991tc}.
@@ -1027,7 +1023,7 @@ relate a class of supersymmetric gauge theories with integrable lattice
 models, as we will see. To begin with, we present a general prescription
 of brane constructions at a formal level. Concrete setups and more
 details will be given in later sections.
-The discussion in this subsection is mainly based on \cite{Yagi:2016oum}.
+The discussion in this subsection is mainly based on \cite{Yagi:2015lha,Yagi:2016oum}.
 
 
 
@@ -1044,10 +1040,10 @@ strategy is to break up the torus into pieces and perform in turn
 the path integral piecewise. Then the original correlation function
 is reconstructed by combining these pieces.%
 %
-\footnote{The original Atiyah's TQFT is actually called ``closed TQFT.''
+\footnote{The original Atiyah's TQFT is referred to as ``closed TQFT'' nowadays.
 In the following, we will compute the correlation function by embedding
 the closed TQFT with line operators into an open/closed TQFT with
-line operators, or so-called defect TQFT; see e.g.~\cite{Moore:2006dw,Carqueville:2016nqk}. }
+line operators, or so-called defect TQFT; see e.g.~\cite{Lazaroiu:2000rk,Moore:2006dw,Carqueville:2016nqk}. }
 %
 
 Let us consider the following piece of surface which contains an intersection
@@ -1057,16 +1053,16 @@ of two line operators $\mathcal{L}_{i}$ and $\mathcal{L}_{j}$:
     \begin{tikzpicture}[scale=0.6, baseline=(x.base)]
         \node (x) at (0,0) {\vphantom{x}};
 
-        \draw[color=red!50, fill=brown!10] (-1,-1) rectangle (1,1);
+        \draw[color=red!50, fill=olive!5] (-1,-1) rectangle (1,1);
 
         \fill[color=white] (-1,1) circle (0.5);  \node (a) at (-1,1) {$a$};
-        \draw[draw=red!50, double]  (-1,0.5) arc (-90:0:0.5);
+        \draw[draw=red, double]  (-1,0.5) arc (-90:0:0.5);
         \fill[color=white] (-1,-1) circle (0.5);  \node (b) at (-1,-1) {$b$};
-        \draw[draw=red!50, double]  (-1,-0.5) arc (90:0:0.5);
+        \draw[draw=red, double]  (-1,-0.5) arc (90:0:0.5);
         \fill[color=white] (1,-1) circle (0.5);  \node (c) at (1,-1) {$c$};
-        \draw[draw=red!50, double]  (1,-0.5) arc (90:180:0.5);
+        \draw[draw=red, double]  (1,-0.5) arc (90:180:0.5);
         \fill[color=white] (1,1) circle (0.5);  \node (d) at (1,1) {$d$};
-        \draw[draw=red!50, double]  (1,0.5) arc (-90:-180:0.5);
+        \draw[draw=red, double]  (1,0.5) arc (-90:-180:0.5);
 
         \draw[thick, ->] (-1,0) node[left] {$i$} -- (1,0);
         \draw[thick, ->] (0,-1) node[below] {$j$} -- (0,1);
@@ -1090,7 +1086,7 @@ of particles associated with the open strings.
         \def\width{3.1cm}
         \def\height{2.1cm}
 
-        \filldraw[color=brown!40, semithick, fill=brown!10] (0,0) rectangle (\width,\height);
+        \filldraw[color=olive!80, semithick, fill=olive!5] (0,0) rectangle (\width,\height);
         \draw[thick, ->, black] (0.8,0) -- ++(0,\height);\draw[thick, ->, black] (1.8,0) -- ++(0,\height);\draw[thick, ->, black] (2.8,0) -- ++(0,\height);
         \draw[thick, ->, black] (0,0.8) -- ++(\width,0);\draw[thick, ->, black] (0,1.8) -- ++(\width,0);
 
@@ -1103,12 +1099,12 @@ of particles associated with the open strings.
         \def\width{3.1cm}
         \def\height{2.1cm}
 
-        \filldraw[color=brown!40, semithick, fill=brown!10] (0,0) rectangle (\width,\height);
+        \filldraw[color=olive!80, semithick, fill=olive!5] (0,0) rectangle (\width,\height);
         \draw[thick, ->, black] (0.8,0) -- ++(0,\height);\draw[thick, ->, black] (1.8,0) -- ++(0,\height);\draw[thick, ->, black] (2.8,0) -- ++(0,\height);
         \draw[thick, ->, black] (0,0.8) -- ++(\width,0);\draw[thick, ->, black] (0,1.8) -- ++(\width,0);
 
-        \draw[thick, color=red!40, dashed] (0.3,0) -- ++(0,\height);\draw[thick, color=red!40, dashed] (1.3,0) -- ++(0,\height);\draw[thick, color=red!40, dashed] (2.3,0) -- ++(0,\height);
-        \draw[thick, color=red!40, dashed] (0,0.3) -- ++(\width,0);\draw[thick, color=red!40, dashed] (0,1.3) -- ++(\width,0);
+        \draw[thick, color=red!50, dashed] (0.3,0) -- ++(0,\height);\draw[thick, color=red!40, dashed] (1.3,0) -- ++(0,\height);\draw[thick, color=red!40, dashed] (2.3,0) -- ++(0,\height);
+        \draw[thick, color=red!50, dashed] (0,0.3) -- ++(\width,0);\draw[thick, color=red!40, dashed] (0,1.3) -- ++(\width,0);
 
         \node[bdy] (b1) at (0.3,0.3) {};
         \node[bdy] (b2) at (1.3,0.3) {};
@@ -1128,7 +1124,7 @@ of particles associated with the open strings.
         \def\width{3.1cm}
         \def\height{2.1cm}
 
-        \filldraw[color=brown!40, semithick, fill=brown!10] (0,0) rectangle (\width,\height);
+        \filldraw[color=olive!80, semithick, fill=olive!5] (0,0) rectangle (\width,\height);
         \draw[thick, ->, black] (0.8,0) -- ++(0,\height);\draw[thick, ->, black] (1.8,0) -- ++(0,\height);\draw[thick, ->, black] (2.8,0) -- ++(0,\height);
         \draw[thick, ->, black] (0,0.8) -- ++(\width,0);\draw[thick, ->, black] (0,1.8) -- ++(\width,0);
 
@@ -1162,22 +1158,22 @@ of particles associated with the open strings.
 
 
 The path integral for the piece \eqref{eq:piece_of_lines} produces a linear map
-(recall an important property of quantum mechanics \eqref{eq:qm_linearmap} and
-an assignment of TQFT)
+(recall the property of quantum mechanics \eqref{eq:qm_linearmap} and
+an assignment of TQFT), usually called S-matrix,
 \begin{equation}
     \begin{tikzpicture}[scale=0.6, baseline=(x.base)]
         \node (x) at (0,0) {\vphantom{x}};
 
-        \draw[color=red!50, fill=brown!10] (-1,-1) rectangle (1,1);
+        \draw[color=red!50, fill=olive!5] (-1,-1) rectangle (1,1);
 
         \fill[color=white] (-1,1) circle (0.5);  \node (a) at (-1,1) {$a$};
-        \draw[draw=red!50, double]  (-1,0.5) arc (-90:0:0.5);
+        \draw[draw=red, double]  (-1,0.5) arc (-90:0:0.5);
         \fill[color=white] (-1,-1) circle (0.5);  \node (b) at (-1,-1) {$b$};
-        \draw[draw=red!50, double]  (-1,-0.5) arc (90:0:0.5);
+        \draw[draw=red, double]  (-1,-0.5) arc (90:0:0.5);
         \fill[color=white] (1,-1) circle (0.5);  \node (c) at (1,-1) {$c$};
-        \draw[draw=red!50, double]  (1,-0.5) arc (90:180:0.5);
+        \draw[draw=red, double]  (1,-0.5) arc (90:180:0.5);
         \fill[color=white] (1,1) circle (0.5);  \node (d) at (1,1) {$d$};
-        \draw[draw=red!50, double]  (1,0.5) arc (-90:-180:0.5);
+        \draw[draw=red, double]  (1,0.5) arc (-90:-180:0.5);
 
         \draw[thick, ->] (-1,0) node[left] {$i$} -- (1,0);
         \draw[thick, ->] (0,-1) node[below] {$j$} -- (0,1);
@@ -1202,21 +1198,21 @@ For example, gluing two pieces horizontally gives
 \begin{equation}
     \begin{tikzpicture}[scale=0.6, baseline=(x.base)]  \node (x) at (0,0) {\vphantom{x}};
 
-        \draw[color=red!50, fill=brown!10] (-1,-1) rectangle (3,1);
+        \draw[color=red!50, fill=olive!5] (-1,-1) rectangle (3,1);
         \draw[color=red!50, dotted] (1,-1) -- (1,1);
 
         \fill[color=white] (-1,1) circle (0.5);  \node (a) at (-1,1) {$a$};
-        \draw[draw=red!50, double]  (-1,0.5) arc (-90:0:0.5);
+        \draw[draw=red, double]  (-1,0.5) arc (-90:0:0.5);
         \fill[color=white] (-1,-1) circle (0.5);  \node (b) at (-1,-1) {$b$};
-        \draw[draw=red!50, double]  (-1,-0.5) arc (90:0:0.5);
+        \draw[draw=red, double]  (-1,-0.5) arc (90:0:0.5);
         \fill[color=white] (1,-1) circle (0.5);  \node (c) at (1,-1) {$c$};
-        \draw[draw=red!50, double]  (1.5,-1) arc (0:180:0.5);
+        \draw[draw=red, double]  (1.5,-1) arc (0:180:0.5);
         \fill[color=white] (1,1) circle (0.5);  \node (d) at (1,1) {$d$};
-        \draw[draw=red!50, double]  (1.5,1) arc (0:-180:0.5);
+        \draw[draw=red, double]  (1.5,1) arc (0:-180:0.5);
         \fill[color=white] (3,-1) circle (0.5);  \node (f) at (3,-1) {$f$};
-        \draw[draw=red!50, double]  (3,-0.5) arc (90:180:0.5);
+        \draw[draw=red, double]  (3,-0.5) arc (90:180:0.5);
         \fill[color=white] (3,1) circle (0.5);  \node (e) at (3,1) {$e$};
-        \draw[draw=red!50, double]  (3,0.5) arc (-90:-180:0.5);
+        \draw[draw=red, double]  (3,0.5) arc (-90:-180:0.5);
 
         \draw[thick, ->] (-1,0) node[left] {$i$} -- (3,0);
         \draw[thick, ->] (0,-1) node[below] {$j$} -- (0,1);
@@ -1264,7 +1260,7 @@ on the boundary of each hole, which is replaced with a disk:
         \node (x) at (0,0) {\vphantom{x}};
         \def\cylinderlength{4cm}
 
-        \fill[color=brown!5] (0,-1) arc (-90:90:1) -- ++(\cylinderlength,0) arc (90:-90:1) -- ++(-\cylinderlength,0) -- cycle;
+        \fill[color=olive!5] (0,-1) arc (-90:90:1) -- ++(\cylinderlength,0) arc (90:-90:1) -- ++(-\cylinderlength,0) -- cycle;
 
         \draw[color=red!50, densely dashed, thick] (\cylinderlength/2,-1) arc (-90:90:1);
         \draw[color=red!50, densely dotted] (\cylinderlength/2,1) arc (90:270:1);
@@ -1272,7 +1268,7 @@ on the boundary of each hole, which is replaced with a disk:
         \draw (0,1) -- (\cylinderlength,1);
         \draw (0,-1) -- (\cylinderlength,-1);
 
-        \filldraw[color=red!50, double, fill=brown!15] (0,0) circle[radius=1];
+        \filldraw[color=red, double, fill=olive!10] (0,0) circle[radius=1];
 
     \end{tikzpicture}
   \right)
@@ -1282,7 +1278,7 @@ on the boundary of each hole, which is replaced with a disk:
         \node (x) at (0,0) {\vphantom{x}};
         \def\cylinderlength{2cm}
 
-        \fill[color=brown!5] (0,-1) arc (-90:90:1) -- ++(\cylinderlength,0) arc (90:-90:1) -- ++(-\cylinderlength,0) -- cycle;
+        \fill[color=olive!5] (0,-1) arc (-90:90:1) -- ++(\cylinderlength,0) arc (90:-90:1) -- ++(-\cylinderlength,0) -- cycle;
 
         \draw (0,1) -- (\cylinderlength,1);
         \draw (0,-1) -- (\cylinderlength,-1);
@@ -1290,7 +1286,7 @@ on the boundary of each hole, which is replaced with a disk:
 %        \draw[color=red!50, densely dashed, thick] (\cylinderlength/2,-1) arc (-90:90:1);
 %        \draw[color=red!50, densely dotted] (\cylinderlength/2,1) arc (90:270:1);
 
-        \filldraw[color=red!50, thick, fill=brown!15] (0,0) circle[radius=1];
+        \filldraw[color=red!50, thick, fill=olive!10] (0,0) circle[radius=1];
 
     \end{tikzpicture}
   \right)
@@ -1300,11 +1296,11 @@ on the boundary of each hole, which is replaced with a disk:
         \node (x) at (0,0) {\vphantom{x}};
         \def\cylinderlength{2cm}
 
-        \fill[color=brown!5] (0,-1) arc (-90:90:1) -- ++(\cylinderlength,0) arc (90:-90:1) -- ++(-\cylinderlength,0) -- cycle;
+        \fill[color=olive!5] (0,-1) arc (-90:90:1) -- ++(\cylinderlength,0) arc (90:-90:1) -- ++(-\cylinderlength,0) -- cycle;
 
         \draw (0,1) -- (\cylinderlength,1);
         \draw (0,-1) -- (\cylinderlength,-1);
-        \filldraw[color=red!50, thick, fill=brown!15] (0,0) circle[radius=1];
+        \filldraw[color=red!50, thick, fill=olive!10] (0,0) circle[radius=1];
 
     \end{tikzpicture}
   \ = \
@@ -1312,7 +1308,7 @@ on the boundary of each hole, which is replaced with a disk:
         \node (x) at (0,0) {\vphantom{x}};
         \def\cylinderlength{2cm}
 
-        \fill[color=brown!5] (0,-1)  arc[start angle=270,end angle=90,x radius=2.4,y radius=1] -- ++(\cylinderlength,0) arc (90:-90:1) -- ++(-\cylinderlength,0) -- cycle;
+        \fill[color=olive!5] (0,-1)  arc[start angle=270,end angle=90,x radius=2.4,y radius=1] -- ++(\cylinderlength,0) arc (90:-90:1) -- ++(-\cylinderlength,0) -- cycle;
 
         \draw[color=red!50, densely dashed, thick] (0,-1) arc (-90:90:1);
         \draw[color=red!50, densely dotted] (0,1) arc (90:270:1);

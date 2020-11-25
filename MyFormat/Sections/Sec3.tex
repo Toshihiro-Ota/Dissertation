@@ -9,9 +9,34 @@
 
 %%%%%%%%%%%%%%%%%% section 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Line defects as transfer matrices}
-\label{sec:line_defects}
+\label{sec:line}
 
 
+In this section we discuss our work given in \cite{Maruyoshi:2020cwy}.
+The main claim is that a brane realization of the correspondence connects
+three objects in different areas:
+transfer matrices in trigonometric quantum integrable systems,
+Wilson-'t Hooft lines in four-dimensional quiver gauge theories, and
+Verlinde line operators in a two-dimensional conformal field theory.
+
+The structure of this section is the following (see figure \ref{fig:structure_line}).
+We first revisit a general argument of integrable lattice model.
+We give a little more systematic treatment for L-operators for $\gf=\slf_N$,
+and introduce monodromy matrices as well as transfer matrices of trigonometric type.
+Then we move on to an independent calculation in gauge theory side.
+We see that Wilson-'t Hooft lines in circular and linear quiver theories on $S^1\times\R^3$
+may be identified with the transfer matrices and the monodromy matrices
+of the corresponding integrable lattice model.
+The main result is written as
+\begin{equation}
+  \text{Weyl quantization of } \bigvev{T_{(\mcharge,\echarge)}}
+    = \CT_{\sigma,m}
+    ~ .
+\end{equation}
+We also demonstrate that the same transfer matrices can be reproduced from Verlinde line operators
+in two-dimensional Toda conformal field theory via AGT correspondence.
+Finally, we will give another perspective of our correspondence from the view point of
+four-dimensional Chern-Simons theory.
 
 
 %FIGURE
@@ -44,7 +69,12 @@
         \draw[thick, color=blue!50!black, arrows=-to] (T.north east) to[bend right=5] node[pos=0.5,right] {(3)} (CFT.south);
 
     \end{tikzpicture}
-    \caption{Structure of section \ref{sec:line_defects}. (1)}
+    \caption{Structure of section \ref{sec:line}.
+    (1) A transfer matrix consisting of trigonometric L-operators is constructed in a particular form.
+    (2) An independent calculation in gauge theory side shows that a certain class of
+    Wilson-'t Hooft lines is identified with the transfer matrices constructed in (1).
+    (3) Verlinde operators in Toda CFT reproduce the same result via AGT correspondence.
+    (4) 4d Chern-Simons theory yields another view point of the correspondence.}
     \label{fig:structure_line}
   \end{figure}
 
@@ -58,15 +88,21 @@
 
 In this section we discuss the integrable system side of the
 correspondence.  After reviewing L-operators, transfer matrices and
-their relation to quantum integrable systems, we introduce an
-L-operator for the elliptic dynamical R-matrix.  Then we define
+monodromy matrices of quantum integrable systems, we introduce an
+L-operator for the elliptic dynamical R-matrix for $\gf=\slf_N$.
+Then we define
 fundamental trigonometric L-operators as certain limits of the
 elliptic L-operator.  These fundamental L-operators are building
-blocks of transfer matrices that correspond to Wilson--'t Hooft lines
+blocks of transfer matrices that correspond to Wilson-'t Hooft lines
 in $\CN = 2$ supersymmetric circular quiver theories.
 
 
-\subsubsection{L-operator and quantum integrable system}
+\subsubsection{Transfer and monodromy matrices from L-operators}
+
+To reformulate L-operators and transfer matrices in a more systematic
+way, let us begin with some linear algebra and representation theory
+argument. A possible physical interpretation will follow.
+
 
 Let $\hf$ be a finite-dimensional commutative complex Lie algebra and
 $V$ a finite-dimensional diagonalizable $\hf$-module.  Choosing a
@@ -75,20 +111,26 @@ decomposition, we denote the weight of $v_i$ by $h_i$ and the
 $(i,j)$th entry of a matrix $M \in \End(V)$ by $M^i_j$.  We write
 $\CM_{\hf^*}$ for the field of meromorphic functions on the dual
 space $\hf^*$ of $\hf$.
-
 Let $R\colon \C \times \hf^* \to \End(V \otimes V)$ be an
 $\End(V \otimes V)$-valued meromorphic function on
 $\C \times \hf^*$ that is invertible at a generic point
-$(z,a) \in \C \times \hf^*$.  The coordinate $z$ is called
-the \emph{spectral parameter} and $a$ is called the
-\emph{dynamical parameter}.
+$(z,a) \in \C \times \hf^*$.  The coordinate $z$ is
+the spectral parameter and $a$ is called the
+\emph{dynamical parameter} in the integrable model literature.
 
 In the discussions that follow, fundamental roles will be played by
-L-operators.  By an \emph{L-operator} for $R$, we mean a map
+L-operators.  By an L-operator for $R$, we mean a map
 $L\colon \C \to \End(V \otimes \CM_{\hf^*} \otimes
 \CM_{\hf^*})$, which we think of as a matrix whose entries are
 linear operators on meromorphic functions on
-$\hf^* \times \hf^*$.  It must satisfy two conditions.
+$\hf^* \times \hf^*$.%
+%
+\footnote{Our definition of L-operators is more general than
+the one given in \cite{MR1645196} in that L-operators may depend on two independent dynamical parameters.
+This generalization is necessary in order to treat the elliptic L-operator appearing in
+\cite{MR1463830} in the formalism of dynamical R-matrix.}
+%
+It must satisfy two conditions.
 
 First, its matrix elements act on
 $f \in \CM_{\hf^*} \otimes \CM_{\hf^*}$ as
@@ -169,7 +211,7 @@ L-operator is
 \end{equation}
 Each edge of a dashed line carries a state in $V$, and the state may
 change when the line crosses another line.  To each region separated
-by lines, a dynamical parameter is assigned.  The values of dynamical
+by solid lines, a dynamical parameter is assigned.  The values of dynamical
 parameters on the two sides of a dashed line carrying state $v_i$
 differ by $\eps h_i$.
 
@@ -221,7 +263,6 @@ two configurations involving two dashed and one solid lines:
     \quad .
 \end{equation}
 The states carried by the internal dashed edges are summed over.
-
 By comparing the values of the dynamical parameter assigned to the
 lower right regions of the two sides, we see that for $R$ to satisfy
 the RLL relation, it must commute with $h \otimes 1 + 1 \otimes h$ for
@@ -233,7 +274,7 @@ Associated with an L-operator, there is an integrable quantum
 mechanical system consisting of particles moving in the space $\hf^*$.
 The Hilbert space of each particle is $\CM_{\hf^*}$.  (This is quantum
 mechanics in which real variables are analytically continued to
-complex ones.) The Hilbert space of the system is
+complex ones.) The total Hilbert space of the system is
 $\CM_{\hf^*}^{\otimes n}$ if $n$ is the number of particles.
 
 To construct this system, define the \emph{monodromy matrix}
@@ -250,7 +291,7 @@ by
 \end{equation}
 acting on any meromorphic function $f(a^1, \dotsc, a^{n+1})$.  (The
 superscript on $\Delta_i$ specifies the variable on which the
-difference operator acts.)  This is a dashed line crossing $n$ double
+difference operator acts.)  This is a dashed line crossing $n$ solid
 lines:
 \begin{equation}
   M(z)
@@ -269,7 +310,7 @@ lines:
   \quad .
 \end{equation}
 Identifying $a^{n+1} = a^1$ and taking the trace, one
-obtains the \emph{transfer matrix}
+obtains the transfer matrix
 $T\colon \C \to \End(\CM_{\hf^*}^{\otimes n})$:
 \begin{equation}
   T(z)
@@ -312,9 +353,9 @@ figure~\ref{fig:spin-chain-T}.
   \centering
   \subfloat[\label{fig:spin-chain-no-T}]{
     \begin{tikzpicture}[yscale=0.25, xscale=0.8]
-      \fill[brown!30] (-2,0) arc (-180:0:2) -- +(0,5) arc (0:-180:2) --
+      \fill[olive!15] (-2,0) arc (-180:0:2) -- +(0,5) arc (0:-180:2) --
       +(0,-5) -- cycle;
-      \fill[brown!15]  (0,5) circle [radius=2];
+      \fill[olive!5]  (0,5) circle [radius=2];
 
       \draw[dashed] (2,0) arc (0:180:2);
       \draw (-2,0) arc (180:360:2);
@@ -348,16 +389,16 @@ figure~\ref{fig:spin-chain-T}.
   \qquad
   \subfloat[\label{fig:spin-chain-T}]{
     \begin{tikzpicture}[yscale=0.25, xscale=0.8]
-      \fill[brown!30] (-2,0) arc (-180:0:2) -- +(0,5) arc (0:-180:2) --
+      \fill[olive!15] (-2,0) arc (-180:0:2) -- +(0,5) arc (0:-180:2) --
       +(0,-5) -- cycle;
-      \fill[brown!15]  (0,5) circle [radius=2];
+      \fill[olive!5]  (0,5) circle [radius=2];
 
       \draw[dashed] (2,0) arc (0:180:2);
       \draw (-2,0) arc (180:360:2);
       \draw (0,5) circle [radius=2];
 
-      \draw[thick, densely dashed, ->] (-2,2.5) arc (-180:-90:2);
-      \draw[thick] (-2,2.5) arc (180:-90:2);
+      \draw[thick, densely dashed, ->, yshift=2.5cm] (-90:2) arc (-90:270:2); %(-2,2.5) arc (-180:-90:2);
+      %\draw[thick] (-2,2.5) arc (180:-90:2);
 
       \draw[thick, ->] (10:2) -- ++(90:5);
       \draw[thick, ->] (55:2) -- ++(90:5);
@@ -369,7 +410,7 @@ figure~\ref{fig:spin-chain-T}.
       \draw[thick, ->] (325:2) -- ++(90:5);
     \end{tikzpicture}
   }
-  \caption{(a) Double lines in the longitudinal direction of a
+  \caption{(a) Solid lines in the longitudinal direction of a
     cylinder.  (b) The corresponding quantum spin chain with
     continuous spin variables.  (c) A dashed line winding around the
     cylinder acts on the spin chain by the transfer matrix.}
@@ -425,7 +466,7 @@ of a complex Lie algebra $\gf_\C$, $V$ is a direct sum of irreducible
 representations of $\gf_\C$, and $g$ is an element of $\gf_\C$.
 
 Algebraically, L-operators give representations of \emph{dynamical
-  quantum groups}~\cite{Felder:1994be, Felder:1994pb, MR1645196}.  As
+quantum groups}~\cite{Felder:1994be, Felder:1994pb, MR1645196}.  As
 an algebra, the dynamical quantum group corresponding to $R$ is
 generated by the meromorphic functions on
 $\C \times \hf^* \times \hf^*$, together with additional generators
@@ -480,14 +521,15 @@ $a = \sum_{i=1}^N a_i E_{ii}^* = \sum_{i=1}^N a_i h_i$.
 
 
 Fix a point $\tau$ in the upper half plane, $\Im\tau > 0$, and let
- \begin{equation}
-  \theta_1(z)
-  =
-  - \sum_{j \in \Z + \frac12} e^{\pi\iu j^2\tau + 2\pi\iu j(z + \frac12)}
-\end{equation}
-be Jacobi's first theta function.  The \emph{elliptic dynamical
-  R-matrix} $R^{\text{ell}}$ is defined by~\cite{Felder:1994be,
-  Felder:1994pb, MR1645196}
+%\begin{equation}
+%  \theta_1(z)
+%  =
+%  - \sum_{j \in \Z + \frac12} e^{\pi\iu j^2\tau + 2\pi\iu j(z + \frac12)}
+%\end{equation}
+$\theta_1(z)$ be Jacobi's first theta function; see appendix \ref{sec:special_functions}.
+%Here we suppressed $\tau$.
+The \emph{elliptic dynamical R-matrix} $R^{\text{ell}}$ is defined
+by~\cite{Felder:1994be,Felder:1994pb, MR1645196}
 \begin{equation}
   R^{\text{ell}}(z,a)
   =
@@ -500,13 +542,12 @@ where $a_{ij} = a_i - a_j$ and
 \begin{equation}
   \alpha(z,a)
   = \frac{\theta_1(a+\eps) \theta_1(-z)}
-         {\theta_1(a) \theta_1(\eps - z)} \,,
+          {\theta_1(a) \theta_1(\eps - z)} \,,
   \qquad
   \beta(z,a)
   = \frac{\theta_1(a - z) \theta_1(\eps)}
           {\theta_1(a) \theta_1(\eps - z)} \,.
 \end{equation}
-
 The \emph{elliptic L-operator} $L^{\text{ell}}$, which satisfies the
 RLL relation with $R^{\text{ell}}$, has the matrix elements given
 by~\cite{MR1463830}
@@ -530,7 +571,7 @@ parameter.
 
 The elliptic dynamical R-matrix and the elliptic L-operator have many
 more properties than just that they satisfy the RLL relation.  Most
-importantly, the R-matrix is a solution of the dynamical Yang--Baxter
+importantly, the R-matrix is a solution of the dynamical Yang-Baxter
 equation and encodes the Boltzmann weights for a two-dimensional
 integrable lattice model.  This model is equivalent to the
 eight-vertex model (or more precisely, the Belavin
@@ -539,10 +580,10 @@ eight-vertex model~\cite{Baxter:1971cr, Baxter:1972hz}) in the sense
 that the transfer matrices of the two models are related by a
 similarity transformation.  The elliptic L-operator, on the other
 hand, satisfies the RLL relation with another R-matrix which describes
-an integrable lattice model called the Bazhanov--Sergeev
+an integrable lattice model called the Bazhanov-Sergeev
 model~\cite{Bazhanov:2010kz, Bazhanov:2011mz}, whose spins variables
-take values in $\hf^*$.  We will not discuss these aspects in this
-paper.  The interested reader is referred to \cite{Yagi:2017hmj} for
+take values in $\hf^*$.  We will not discuss these aspects here.
+The interested reader is referred to \cite{Yagi:2017hmj} for
 more details.
 
 
@@ -552,7 +593,7 @@ more details.
 \subsubsection{Trigonometric L-operators}
 
 
-The L-operators that appear in the correspondence with Wilson--'t
+The L-operators that appear in the correspondence with Wilson-'t
 Hooft lines are obtained from the elliptic L-operator $L^{\text{ell}}$
 via the trigonometric limit $\tau \to \iu\infty$.  For comparison with
 gauge theory results, we actually need to express these L-operators in
@@ -571,7 +612,7 @@ and the fundamental weights
   \omega_i = (\alpha^\vee_i)^* = \sum_{j=1}^i h_j \,.
 \end{equation}
 
-Consider quantum mechanics of a particle living in
+Consider quantum mechanics of a particle moving in
 $\hf^* \times \hf^*$, with Planck constant
 \begin{equation}
   \hbar = -\frac{\eps}{2\pi} \,.
@@ -589,7 +630,6 @@ satisfy the canonical commutation relations:
 \end{equation}
 (As before, we are treating $q^r_i$, $p^r_i$ as analytically continued
 variables.)
-
 To rewrite the commutation relations in a form that is invariant under
 the action of the Weyl group, we make a change of basis
 \begin{equation}
@@ -659,17 +699,17 @@ then we have
 Next, we apply a similarity transformation to the elliptic L-operator.
 Assume $\Im\eps > 0$ and let
 \begin{equation}
-  \Gamma(z,\tau,\eps)
+  \Gamma(z;\tau,\eps)
   =
   \prod_{m,n=0}^\infty
   \frac{1 - e^{2\pi\iu((m+1)\tau + (n+1)\eps - z)}}
-       {1 - e^{2\pi\iu(m\tau + n\eps + z)}}
+        {1 - e^{2\pi\iu(m\tau + n\eps + z)}}
 \end{equation}
 be the elliptic gamma function.  Then,
-$\Gammab(z) = e^{\pi\iu z^2/2\eps} \Gamma(z,\tau,\eps)$ has the
+$\Gammab(z) = e^{\pi\iu z^2/2\eps} \Gamma(z;\tau,\eps)$ has the
 property that
-$\Gammab(z + \eps, \tau,\eps) = g(\tau,\eps) \theta_1(z) \Gammab(z,
-\tau,\eps)$ for some function $g(\tau,\eps)$.  We define the
+$\Gammab(z + \eps; \tau,\eps) = g(\tau,\eps) \theta_1(z) \Gammab(z;\tau,\eps)$
+for some function $g(\tau,\eps)$.  We define the
 conjugated L-operator $\CL^{\text{ell}}_{w,m}(z)$ by
 \begin{equation}
   \CL^{\text{ell}}_{w,m}(z)_i^j
@@ -696,7 +736,7 @@ It has the Wigner transform
   \Biggl(
   \frac{\prod_{k (\neq i)} \theta_1(a^1_k - a^2_j - m)
         \prod_{l (\neq j)} \theta_1(a^1_i - a^2_l - m)}
-       {\prod_{k (\neq i)}\theta_1(a^1_{ki} - \frac12\eps)
+        {\prod_{k (\neq i)}\theta_1(a^1_{ki} - \frac12\eps)
         \theta_1(a^1_{ik} - \frac12\eps)}
   \Biggr)^{\frac12}
   \,.
@@ -709,7 +749,7 @@ to define the trigonometric L-operator:
   = \lim_{\tau \to \iu\infty} \CL^{\text{ell}}_{w,m} \,.
 \end{equation}
 The trigonometric L-operator satisfies the RLL relation with the
-trigonometric limit $R^{\text{trig}}$. of the elliptic R-matrix
+trigonometric limit $R^{\text{trig}}$ of the elliptic R-matrix
 $R^{\text{ell}}$.  Concretely, $\CL_{w,m}$ and $R^{\text{trig}}$ are
 obtained from $\CL^{\text{ell}}_{w,m}$ and $R^{\text{ell}}$ by the
 replacement $\theta_1(z) \to \sin(\pi z)$.
@@ -782,7 +822,7 @@ The corresponding transfer matrix $\CT_{\sigma,m}$ has the Wigner transform
   \,,
 \end{equation}
 with $a^{n+1} = a^1$, $i^{n+1} = i^1$.  Our claim is that these
-quantities equal the vevs of Wilson--'t Hooft lines in $\CN = 2$
+quantities equal the vevs of Wilson-'t Hooft lines in $\CN = 2$
 supersymmetric gauge theories.
 
 
@@ -792,16 +832,16 @@ supersymmetric gauge theories.
 \subsection{Wilson-'t Hooft lines as transfer matrices}
 \label{sec:gauge}
 
-In the previous section we defined the fundamental trigonometric
+In the previous subsection we defined the fundamental trigonometric
 L-operators~\eqref{eq:fund-L} and calculated transfer matrices
-constructed from them.  As explained in section~\ref{sec:intro}, these
-transfer matrices are expected to have interpretations as Wilson--'t
-Hooft lines in $\CN = 2$ supersymmetric gauge theories described by a
+constructed from them.  As explained in section~\ref{sec:defects}, these
+transfer matrices are expected to have interpretations as Wilson-'t Hooft
+lines in $\CN = 2$ supersymmetric gauge theories described by a
 circular quiver.  In this section we verify this expectation by
-computing the vevs of the corresponding Wilson--'t Hooft lines.
+computing the vevs of the corresponding Wilson-'t Hooft lines.
 
 
-\subsubsection{Wilson--'t Hooft lines in $S^1 \times_\epsilon \R^2 \times \R$}
+\subsubsection{Wilson-'t Hooft lines in $S^1 \times_\epsilon \R^2 \times \R$}
 
 Consider a four-dimensional gauge theory whose gauge group is a
 compact Lie group $G$ with Lie algebra $\gf$.  Choosing a maximal
@@ -812,7 +852,7 @@ duals are the coweight lattice
 $\coweightl(\gf) = \rootl(\gf)^\vee \subset \tf$ and the weight
 lattice $\weightl(\gf) = \corootl(\gf)^\vee \subset \tf^*$.
 
-An 't Hooft line is the worldline of a very heavy monopole, that is, a
+An 't Hooft line is the world-line of a very heavy monopole, that is, a
 nondynamical magnetically charged particle.  In the presence of an 't
 Hooft line, the gauge field of the theory has a singularity at the
 location of the monopole: in terms of the polar angle $\theta$ and the
@@ -835,7 +875,10 @@ The above expression of $A$ is valid in a trivialization over a
 coordinate patch that contains the point $\theta = 0$ of a two-sphere
 surrounding the monopole.  At $\theta = \pi$, there is a ``Dirac
 string'' which supports an unphysical magnetic flux.  For the Dirac
-string to be invisible, we must have
+string to be invisible
+(or more precisely, for the gauge transformation by $\exp(\iu \mcharge \phi)$
+which allows us to go to the coordinate patch containing $\theta=\pi$
+to be well defined), we must have
 \begin{equation}
   \langle\mcharge, w\rangle \in \Z
 \end{equation}
@@ -859,8 +902,8 @@ in a sublattice of $\coweightl(\gf)/W(G)$ determined by the matter
 content.
 
 We can also consider heavy particles that carry both magnetic and
-electric charges.  The worldline of such a dyon is called a Wilson--'t
-Hooft line.  In the path integral formalism, a Wilson--'t Hooft line
+electric charges.  The world-line of such a dyon is called a Wilson-'t
+Hooft line.  In the path integral formalism, a Wilson-'t Hooft line
 is realized by an insertion of a Wilson line
 \begin{equation}
   \label{eq:Wilson}
@@ -873,7 +916,6 @@ stabilizer $G_\mcharge$ of $\mcharge$, so $R$ is an irreducible
 representation of $G_\mcharge$.  (More precisely, $R$ is an
 irreducible representation of the stabilizer of $\mcharge$ in the
 universal cover $\Gt$ of $G$~\cite{Kapustin:2005py}.)
-
 The data specifying such a pair $(\mcharge,R)$ is actually the same as
 a pair $(\mcharge, \echarge)$ of coweight $\mcharge$ and weight
 $\echarge$ modulo the Weyl group action:
@@ -885,13 +927,19 @@ $\echarge$ modulo the Weyl group action:
 As emphasized in~\cite{Kapustin:2005py}, this data has more information than
 a pair of irreducible representations of $\gf$ and ${}^L\gf$.
 
-In~\cite{Ito:2011ea}, the vevs of Wilson--'t Hooft lines in $\CN=2$
-supersymmetric gauge theories on $S^1 \times_\eps \R^2 \times \R$ in
-the Coulomb phase were computed via localization of the path integral.
+
+The vevs of such line operators in $\CN=2$
+supersymmetric gauge theories have been exactly computed via
+localization of the path integral \cite{Pestun:2007rz,Gomis:2011pf},
+which also provided nontrivial checks for the AGT correspondence
+as well as AdS/CFT correspondence.
+In~\cite{Ito:2011ea}, the localization calculation for the vevs of
+half-BPS Wilson-'t Hooft lines on $S^1 \times_\eps \R^2 \times \R$ in
+the Coulomb phase was performed.
 The geometry $S^1 \times_\eps \R^2$ is a twisted product of $S^1$ and
 $\R^2$, constructed from $[0,2\pi r] \times \R^2$ by the
 identification $(2\pi r,z) \sim (0, e^{2\pi\iu\eps} z)$, where $z$ is
-the complex coordinate of $\R^2 \iso \C$.  These Wilson--'t Hooft
+the complex coordinate of $\R^2 \iso \C$.  These Wilson-'t Hooft
 lines wind around $S^1$, and are located at the origin of $\R^2$ and a
 point in $\R$.  In order to preserve half of the eight supercharges,
 they require the complex scalar field $\phi$ in the vector multiplet
@@ -906,8 +954,25 @@ holomorphically on parameters
 which are set by the values of the gauge field and the vector
 multiplet scalar at spatial infinity.  Essentially, $a$ is given by
 the holonomy around $S^1$ at infinity of the gauge field, while $b$ is
-that of the dual gauge field.  We refer the reader to
-\cite{Ito:2011ea} for the precise definitions.
+that of the dual gauge field.%
+%
+\footnote{Let $\theta_e$ and $\theta_m$ be the electric and magnetic theta-angles
+whose exponentials $e^{\iu\theta_e}$ and $e^{\iu\theta_m}$ are the electric and magnetic holonomies.
+(The magnetic holonomy can be defined as the chemical potential for the magnetic charge in the path integral.)
+Then, the parameters $a,\,b$ have semiclassical expansion
+\begin{equation}
+  a = \frac{\theta_e}{2\pi} + \iu\beta\Re\phi + \cdots,
+  \quad
+  b = \frac{\theta_m}{2\pi} - \frac{4\pi\iu\beta}{g^2}\Im\phi + \iu\frac{\vartheta}{2\pi}\beta\Re\phi + \cdots,
+\end{equation}
+where $g$ is the gauge coupling and $\vartheta$ is the gauge theory theta-angle.
+These parameters are complexified Fenchel–Nielsen coordinates on the Seiberg–Witten moduli space
+and receive non-perturbative corrections (indicated above by the ellipses)
+which are known \cite{Gaiotto:2008cd}. See \cite{Brennan:2019hzm} for a recent discussion on the non-perturbative corrections
+in the present context.}
+%
+%We refer the reader to \cite{Ito:2011ea} for the precise definitions.
+
 
 The vev of a Wilson line $W_R$ in representation $R$ is simply given
 by the classical value of the holonomy:
@@ -915,7 +980,6 @@ by the classical value of the holonomy:
   \label{eq:vev-W}
     \vev{W_R} = \Tr_R e^{2\pi \iu a} \,.
 \end{equation}
-
 The vevs of 't Hooft lines are much more involved.  For an 't Hooft
 line $T_\mcharge$ with magnetic charge $\mcharge$, the vev takes the form
 \begin{equation}
@@ -930,11 +994,11 @@ where $m$ collectively denotes complex mass parameters.  The summation
 over the coweights $v$ in the shifted coroot lattice
 $\corootl + \mcharge$ accounts for the so-called ``monopole
 bubbling,'' a phenomenon in which smooth monopoles are absorbed by the
-'t Hooft line and screen the magnetic charge.  The norm $\|v\|$ with
+'t Hooft line and screen the magnetic charge \cite{Kapustin:2006pk}.  The norm $\|v\|$ with
 respect to a Killing form is bounded by $\|\mcharge\|$, so this is a
 finite sum.  The first two factors in the summand are the classical
 action and the one-loop determinant in the screened monopole
-background, respectively.  The last factor is the nonperturbative
+background, respectively.  The last factor is the non-perturbative
 contributions coming from degrees of freedom trapped on the 't Hooft
 line due to monopole bubbling.
 
@@ -969,21 +1033,20 @@ in~\cite{Ito:2011ea} did not give an answer that completely matches
 predictions from the AGT correspondence.  The subtleties have been
 addressed in subsequent works~\cite{Brennan:2018yuj, Brennan:2018moe,
   Brennan:2018rcn, Assel:2019iae} but not resolved in full generality.
-
-Fortunately, for Wilson--'t Hooft lines that are of interest to us,
+Fortunately, for Wilson-'t Hooft lines that are of interest to us,
 the screened magnetic charges are in the same $W(G)$-orbit as
 $\mcharge$.  The corresponding contributions are therefore obtained by
 the $W(G)$-action from the perturbative term, for which $v = \mcharge$
 and $Z_{\text{mono}} = 1$.
 
-To our knowledge, a formula for the vevs of dyonic Wilson--'t Hooft
+To our knowledge, a formula for the vevs of dyonic Wilson-'t Hooft
 lines generalizing the expressions~\eqref{eq:vev-W}
 and~\eqref{eq:vev-T} has not been derived.  Nevertheless, for the same
-reason as mentioned, we can calculate the vev of a relevant Wilson--'t
+reason as mentioned, we can calculate the vev of a relevant Wilson-'t
 Hooft line by first writing down its perturbative contribution, which
 is simply the product of the perturbative vevs of the corresponding
 purely electric and purely magnetic lines, and then summing over the
-contributions from the nonperturbative sectors related by the
+contributions from the non-perturbative sectors related by the
 $W(G)$-action.
 
 
@@ -993,7 +1056,7 @@ $W(G)$-action.
 \subsubsection{Transfer matrices from circular quiver theories}
 \label{sec:circular-quiver-theory}
 
-The Wilson--'t Hooft line that corresponds to the transfer
+The Wilson-'t Hooft line that corresponds to the transfer
 matrix~\eqref{eq:T-trig} is one in an $\CN = 2$ supersymmetric gauge
 theory that is described by a circular quiver with $n$ nodes:
 \begin{equation}
@@ -1089,7 +1152,7 @@ $\omega_i = (\alpha^\vee_i)^*$ are the fundamental weights.
 % We take the gauge group $G = \U(1) \times \SU(N)^n$, where the $\U(1)$
 % factor is the diagonal subgroup of $\U(N)^n$ in which $\SU(N)^n$ is
 % naturally embedded.  The $\U(1)$ factor is important for us to
-% construct relevant Wilson--'t Hooft lines, but does not really show up
+% construct relevant Wilson-'t Hooft lines, but does not really show up
 % in the computation.
 
 
@@ -1154,7 +1217,7 @@ $(h^\vee_1, \dotsc, h^\vee_N)$, so we find
   \prod_{j (\neq i)}
   \biggl(
   \frac{\sin\pi(a_{ij} - m) \sin\pi(a_{ji} - m)}
-       {\sin\pi(a_{ij} - \frac12\eps) \sin\pi(a_{ji} - \frac12\eps)}
+        {\sin\pi(a_{ij} - \frac12\eps) \sin\pi(a_{ji} - \frac12\eps)}
   \biggr)^{\frac12} \,.
 \end{equation}
 The vev of $T_{-h^\vee_N}$ is obtained from $\vev{T_{h^\vee_1}}$ by
@@ -1240,7 +1303,6 @@ coweights, we get
   \ell_{m^r}(a^r, a^{r+1})_{i^r}^{i^{r+1}} \,,
 \end{equation}
 where we have used the functions~\eqref{eq:ell}.
-
 Comparing this expression with the Wigner transform~\eqref{eq:T-trig}
 of the trigonometric transfer matrix $\CT_{\sigma,m}$, we see
 \begin{equation}
@@ -1261,7 +1323,7 @@ the signs $\sigma$, we add to the 't Hooft line the electric charge
   = \sum_{r=1}^n (\sigma^r 1 - \sigma^{r+1} 1)  \frac12 h^{r+1}_1 \,.
 \end{equation}
 This electric charge is in a sense a minimal one that is compatible
-with the Dirac--Schwinger--Zwanziger quantization condition for
+with the Dirac-Schwinger-Zwanziger quantization condition for
 locality: the charges $(\mcharge,\echarge)$ and
 $(\mcharge',\echarge')$ of two dyons must satisfy
 $\langle \mcharge, \echarge'\rangle - \langle \mcharge',
@@ -1283,20 +1345,53 @@ factor
 Hence, the term with $v = h^\vee_{i^1} \oplus \dotsb \oplus h^\vee_{i^n}$ gets
 the phase factor
 $e^{\sigma^r \pi\iu (a^{r+1}_{i^{r+1}} - a^r_{i^r})}$, and the vev of
-this Wilson--'t Hooft line matches the Wigner transform of
+this Wilson-'t Hooft line matches the Wigner transform of
 $\CT_{\sigma,m}$.
+
+
+On the other hand,
+an important fact shown in \cite{Ito:2011ea} is that the vevs of Wilson-'t Hooft
+lines satisfy the \emph{Moyal product}.
+This Moyal product is
+associated with the Poisson structure determined by the holomorphic
+symplectic form
+\begin{equation}
+  da\wedge db:=\sum_{i}da_{i}\wedge db_{i}.
+\end{equation}
+The fact that the vev of Wilson-'t Hooft lines satisfies the Moyal product
+implies that they realize the deformation quantization of the Coulomb
+branch and it is natural for the vev to be Weyl
+transformed into a difference operator acting on some Hilbert space;
+the Moyal product turns out to be an operator product.
+Thus, the difference
+operators obtained from the Wilson-'t Hooft lines in the circular quiver theories are
+identified with the trigonometric transfer matrices $\CT_{\sigma,m}$ acting on the total
+Hilbert space:
+\begin{equation}
+  \text{Weyl quantization of } \bigvev{T_{(\mcharge,\echarge)}}
+    = \CT_{\sigma,m}.
+\label{eq:WT_CT}
+\end{equation}
+Moreover, through
+AGT correspondence the above difference operators can also be identified
+with the Verlinde operators acting on the space of conformal blocks
+in two-dimensional Toda conformal field theory, as we will see.
+
+
 
 
 
 \subsubsection{Monodromy matrices from linear quiver theories}
 
-We have considered the Wilson--'t Hooft lines in the circular quiver
-theory and showed that their vevs match the Wigner transforms of the
+We have considered the Wilson-'t Hooft lines in the circular quiver
+theory and showed that
+%their vevs match the Wigner transforms of
+they match the
 trigonometric transfer matrices.  What correspond to the monodromy
 matrices then?  In view of the fact that summing over the weights of
 the representation $V = \C^N$ in the integrable model amounts to
 summing over the different screened magnetic charges, natural
-candidates are Wilson--'t Hooft lines in a theory described by a
+candidates are Wilson-'t Hooft lines in a theory described by a
 linear quiver with $n + 1$ nodes:
 \begin{equation}
   \label{eq:linear-q}
@@ -1318,9 +1413,8 @@ linear quiver with $n + 1$ nodes:
 \end{equation}
 The leftmost and the rightmost nodes represent $\SU(N)$ flavor groups,
 which are not gauged.
-
 In particular, we expect that the fundamental trigonometric
-L-operators~\eqref{eq:fund-L} arise from the vevs of Wilson--'t Hooft
+L-operators~\eqref{eq:fund-L} arise from the vevs of Wilson-'t Hooft
 lines of the theory of a bifundamental hypermultiplet:
 \begin{equation}
   \label{eq:two-node-q}
@@ -1336,7 +1430,7 @@ lines of the theory of a bifundamental hypermultiplet:
 Let us see if this is the case.
 
 We introduce nondynamical vector multiplets for the $\SU(N)$ flavor
-groups, and consider the Wilson--'t Hooft lines with magnetic charge
+groups, and consider the Wilson-'t Hooft lines with magnetic charge
 \begin{equation}
   \mcharge = h^\vee_i \oplus h^\vee_j
 \end{equation}
@@ -1345,7 +1439,7 @@ and electric charges
   \echarge =  \mp\frac12 h_i \oplus \pm\frac12 h_j\,.
 \end{equation}
 Note that the electric charges are fractional.  The vevs of these
-Wilson--'t Hooft lines are
+Wilson-'t Hooft lines are
 \begin{equation}
   e^{2\pi\iu (b^1_i + b^2_j)}
   e^{\pm\pi\iu (a^2_j - a^1_i)}
@@ -1373,9 +1467,9 @@ To get the monodromy matrix~\eqref{eq:M-trig}, we take $n$ L-operators
 and multiply them inside $V$.  The gauge theory counterpart of this
 operation is to connect $n$ copies of the two-node
 quiver~\eqref{eq:two-node-q}, in the presence of appropriate
-Wilson--'t Hooft lines of the type considered above, by identifying
+Wilson-'t Hooft lines of the type considered above, by identifying
 and gauging flavor nodes.  This produces the $n+1$ node linear
-quiver~\eqref{eq:linear-q} and the Wilson--'t Hooft lines with
+quiver~\eqref{eq:linear-q} and the Wilson-'t Hooft lines with
 magnetic charge
 \begin{equation}
   \label{eq:B-linear}
@@ -1392,16 +1486,18 @@ and electric charge
   + \sum_{r=2}^{n-1} \sigma^r \frac12 (h^{r+1}_1 - h^r_1)
   + \sigma^n \frac12 (h_{i^{n+1}}^{n+1} - h_1^n) \,.
 \end{equation}
-The vev of this Wilson--'t Hooft line reproduces the Wigner
+The vev of this Wilson-'t Hooft line reproduces the Wigner
 transform~\eqref{eq:M-trig}, except that a factor corresponding to the
 one-loop determinant for the vector multiplet for the first node is
 missing.
 
 
 
+
+
 \subsubsection{Other representations}
 
-The magnetic charge~\eqref{eq:B-circular} of the above Wilson--'t
+The magnetic charge~\eqref{eq:B-circular} of the above Wilson-'t
 Hooft lines is the highest weight of the representation
 $(\C^N)^{\oplus n}$ of the Langlands dual
 ${}^L\gf_\C \iso \slf_N^{\oplus n}$ of $\gf_\C$.  The corresponding
@@ -1414,7 +1510,7 @@ copies of $\slf_N$.
 Both sides of the correspondence have a generalization in which the
 vector representation $\C^N$ is replaced by another representation $R$
 of $\slf_N$.  On the gauge theory side, we can change the magnetic
-charge of the Wilson--'t Hooft lines to the highest weight $\lambda_R$
+charge of the Wilson-'t Hooft lines to the highest weight $\lambda_R$
 of $R^{\oplus n}$ while keeping the electric charges intact.  On the
 integrable system side, the counterpart of this operation is the
 fusion procedure, which allows one to construct a dashed line in an
@@ -1422,12 +1518,11 @@ arbitrary finite-dimensional representation of $\slf_N$ from a
 collection of dashed lines in the vector representation, with the
 spectral parameters suitably adjusted.
 
-We naturally expect that the vev of the Wilson--'t Hooft line with
+We naturally expect that the vev of the Wilson-'t Hooft line with
 magnetic charge $\mcharge = \lambda_R^{\oplus n}$ is equal to the
 Wigner transform of a transfer matrix constructed from L-operators in
 representation $R$, obtained by fusion from the
 L-operators~\eqref{eq:fund-L} in the vector representation.
-
 For $n = 1$ and $R = \wedge^k \C^N$, this equality can be verified
 from known results.  In this case, the transfer matrix is the
 trigonometric limit of Ruijsenaars' difference
@@ -1438,7 +1533,7 @@ operator~\cite{Ruijsenaars:1986pp}
   \prod_{\substack{i \in I \\ j \notin I}}
   \sqrt{
     \frac{\theta_1(a_{ji} - m) \theta_1(a_{ij} - m)}
-         {\theta_1(a_{ji} - \frac12 \eps) \theta_1(a_{ij} - \frac12 \eps)}
+          {\theta_1(a_{ji} - \frac12 \eps) \theta_1(a_{ij} - \frac12 \eps)}
   }
   \Delta_I^{\frac12} \,,
   \qquad
@@ -1459,13 +1554,14 @@ $\CN = 2^*$ theory can be computed from the perturbative term:
   e^{2\pi\iu b_i}
   \biggl(
   \frac{\sin\pi(a_{ij} - m) \sin\pi(a_{ji} - m)}
-       {\sin\pi(a_{ij} - \frac12\eps) \sin\pi(a_{ji} - \frac12\eps)}
+        {\sin\pi(a_{ij} - \frac12\eps) \sin\pi(a_{ji} - \frac12\eps)}
   \biggr)^{\frac12} \,.
 \end{equation}
 (For $\CN = 2^*$ theory the choice of the signs $\sigma = \pm$ is
 irrelevant.)  The vev matches the Wigner transform of the
 trigonometric Ruijsenaars operator.
 
+\begin{comment}
 In the case of symmetric powers, we find a discrepancy between this
 proposal and the formula~\eqref{eq:vev-T}.  The vev of the 't Hooft
 line with $\mcharge = kh^\vee_1$ in $\CN = 2^*$ theory, as computed by
@@ -1486,20 +1582,41 @@ However, $\CT_m^k$ is the transfer matrix in the tensor product
 representation $(\C^N)^{\otimes k}$, not the $k$th symmetric power of
 $\C^N$.  The discrepancy might be ascribed to subtle monopole
 contributions to the vev of the 't Hooft line.
+\end{comment}
 
 
 
 
 
-\subsection{Transfer matrices from Verlinde operators}
+
+\subsection{Verlinde operators as transfer matrices}
 \label{sec:Toda}
+
+
+We have computed the vevs of a class of Wilson-'t Hooft lines in
+$\CN = 2$ supersymmetric gauge theories described by a circular
+quiver, and found that they match the Wigner transforms of transfer
+matrices constructed from the fundamental trigonometric L-operators.
+In this section, we show that these transfer matrices can also be
+identified with Verlinde operators in Toda theory on a punctured
+torus.  The result is in keeping with the relation proposed
+in~\cite{Ito:2011ea} based on the AGT
+correspondence~\cite{Alday:2009aq,Wyllard:2009hg} between Toda theory and $\CN = 2$
+supersymmetric field theories.
+
+
+
+
+
+
+\subsubsection{Review of AGT correspondence}
 
 
 %%%%%  AGT  %%%%%
 Here we briefly review  the role of line and surface operators
 in the AGT correspondence. Let us first give the general statements
-of the correspondence and the notion of class $\CS$ theories,
-which already appeared in section \ref{sec:surface_defects}.
+of the correspondence and the notion of class-$\CS$ theories,
+which already appeared in section \ref{sec:surface}.
 For more details, see excellent reviews \cite{LeFloch:2020uop,Okuda:2014fja,Gukov:2014gja}
 and the references therein.
 
@@ -1510,14 +1627,29 @@ the instanton partition function \cite{Nekrasov:2002qd} of the $\CN =2$ SU$(2)$
 gauge theory with the Liouville conformal block.
 Soon after their work, many checks and generalizations have been made, and
 it has been known that the statement applies to the correspondence between a large class
- of four-dimensional $\CN = 2$ supersymmetric gauge theories on four-manifold $M^4$,
- which is now called the theories of class $\CS$, labeled by punctured Riemann
+of four-dimensional $\CN = 2$ supersymmetric gauge theories on four-manifold $M^4$,
+which is now called the theories of class-$\CS$, labeled by punctured Riemann
 surfaces $C_{g,n}$ and two-dimensional non-supersymmetric QFTs defined on the Riemann surfaces.
 
-The origin of the AGT correspondence is the six-dimensional $(2,0)$ SCFT. Let the four-manifold $M^4$ be
-$\R^4_{\eps_1,\eps_2}$ (or $S^4_{\eps_1,\eps_2}$). Then this higher dimensional
-theory explains the correspondence such that the two theories are originally a single theory in six dimensions:
-\begin{equation}
+The origin of the AGT correspondence is six-dimensional $\CN = (2,0)$ supersymmetric field theory,
+of type $A_{N-1}$ in our case.
+Put this six-dimensional theory on a product manifold $M^4\times C_{g,n}$,
+where $C_{g,n}$ is a Riemann surface of genus $g$ with $n$ punctures
+and let the four-manifold $M^4$ be
+$\R^4_{\eps_1,\eps_2}$
+%(or $S^4_{\eps_1,\eps_2}$)
+at this moment.
+With partial topological twisting along $C_{g,n}$, this system
+preserves eight of the sixteen supercharges of $\CN = (2,0)$
+supersymmetry in six dimensions.
+Then this higher dimensional
+theory explains the correspondence such that the two theories are
+originally a single theory in six dimensions; see figure \ref{fig:AGT}.
+
+
+%FIGURE
+\begin{figure}
+  \centering
     \def\height{1.2cm}
         \begin{tikzpicture}[scale=1.0, baseline=(x.base)]    \node (x) at (0,\height/2) {\vphantom{x}};
 
@@ -1530,21 +1662,34 @@ theory explains the correspondence such that the two theories are originally a s
         \draw[semithick, arrows=-to] (6d) -- (2d);
 
     \end{tikzpicture}
-\end{equation}
-where
+  \caption{The six-dimensional origin of the AGT correspondence.}
+  \label{fig:AGT}
+\end{figure}
+
+
+%where
 %the four-dimensional theory is defined on a four-manifold $M^4=\R^4_{\eps_1,\eps_2}$
 %(or $S^4_{\eps_1,\eps_2}$).
+In the limit in which $C_{g,n}$ shrinks to a point, the
+six-dimensional theory reduces to a four-dimensional $\CN = 2$
+supersymmetric field theory on $S^4_\bs$, whose gauge and matter
+contents are determined by the choice of a pants decomposition of
+$C_{g,n}$ and boundary conditions at the
+punctures~\cite{Gaiotto:2009we, Gaiotto:2009hg}.  The theories
+discussed in section~\ref{sec:gauge} can all be obtained in this way.
+
+
 $\eps_1$ and $\eps_2$ are
 called $\Omega$-deformation parameters in the literature, which turn out
 to realize the deformation quantization of the moduli spaces.
-For $M^4=\R^4_{\eps_1,\eps_2}$, the $\Omega$-deformation causes
+The $\Omega$-deformation on $\R^4$ causes
 two-dimensional rotations on the planes $\mathbb R^2_{\eps_1}$ and $\mathbb R^2_{\eps_2}$:
 \begin{equation}
     \R^4_{\eps_1,\eps_2} := \R^2_{\eps_1} \times \R^2_{\eps_2}.
 \end{equation}
 Hence, the $\Omega$-deformation breaks the whole rotation symmetry $\mathrm{SO}(4)$ of $\mathbb R^4$ to
 its subgroup $\SO(2)_{\eps_1}\times\SO(2)_{\eps_2}$.
-$\Omega$ deformation leads to the Gaussian regularization of $\mathbb R^4$ and $\mathbb R^2$,
+Also, the $\Omega$ deformation leads to the Gaussian regularization of $\mathbb R^4$ and $\mathbb R^2$,
 and their infinite volumes are regularized such that
 \begin{equation}
     \rm{Vol}\left(  \R^4_{\eps_1,\eps_2}  \right) = \int_{\R^4_{\eps_1,\eps_2}}1 = \frac{1}{\eps_1 \eps_2} ,
@@ -1557,29 +1702,10 @@ Nekrasov applied these techniques to compute instanton partition function, which
 the instanton moduli space, and obtained the exact results \cite{Nekrasov:2002qd,Nekrasov:2003rj}
 which plays a crucial role in the AGT correspondence.
 
-
 %%%%%  AGT  %%%%%
 
 
-
-
-
-\subsubsection{Review of AGT correspondence}
-
-We have computed the vevs of a class of Wilson--'t Hooft lines in
-$\CN = 2$ supersymmetric gauge theories described by a circular
-quiver, and found that they match the Wigner transforms of transfer
-matrices constructed from the fundamental trigonometric L-operators.
-In this section, we show that these transfer matrices can also be
-identified with Verlinde operators in Toda theory on a punctured
-torus.  The result is in keeping with the relation proposed
-in~\cite{Ito:2011ea} based on the AGT
-correspondence~\cite{Alday:2009aq} between Toda theory and $\CN = 2$
-supersymmetric field theories.
-
-
-
-
+\begin{comment}
 The AGT correspondence originates from six-dimensional $\CN = (2,0)$
 supersymmetric field theory, of type $A_{N-1}$ in our case, placed on
 $S^4_\bs \times C_{g,n}$.  Here, $S^4_\bs$ is an ellipsoid, defined as
@@ -1594,15 +1720,27 @@ and $C_{g,n}$ is a Riemann surface of genus $g$ with $n$ punctures.
 With partial topological twisting along $C_{g,n}$, this system
 preserves eight of the sixteen supercharges of $\CN = (2,0)$
 supersymmetry in six dimensions.
+\end{comment}
 
-In the limit in which $C_{g,n}$ shrinks to a point, the
-six-dimensional theory reduces to a four-dimensional $\CN = 2$
-supersymmetric field theory on $S^4_\bs$, whose gauge and matter
-contents are determined by the choice of a pants decomposition of
-$C_{g,n}$ and boundary conditions at the
-punctures~\cite{Gaiotto:2009we, Gaiotto:2009hg}.  The theories
-discussed in section~\ref{sec:gauge} can all be obtained in this way.
-If one instead integrates out the modes along $S^4_\bs$, one is left
+
+%In the limit in which $C_{g,n}$ shrinks to a point, the
+%six-dimensional theory reduces to a four-dimensional $\CN = 2$
+%supersymmetric field theory on $S^4_\bs$, whose gauge and matter
+%contents are determined by the choice of a pants decomposition of
+%$C_{g,n}$ and boundary conditions at the
+%punctures~\cite{Gaiotto:2009we, Gaiotto:2009hg}.  The theories
+%discussed in section~\ref{sec:gauge} can all be obtained in this way.
+
+On one hand, let us compactify $\R^4_{\eps_1,\eps_2}$ to an ellipsoid $S^4_{\bs}$,
+defined as a submanifold of $\R^5$ by the equation
+\begin{equation}
+  (x^1)^2
+  + \bs^{-2} \bigl((x^2)^2 + (x^3)^2\bigr)
+  + \bs^2 \bigl((x^4)^2 + (x^5)^2\bigr)
+  = r^2 \,,
+\end{equation}
+such that $\bs^2 :=\eps_1\eps_2$.
+Then, if one instead integrates out the modes along $S^4_\bs$, one is left
 with $A_{N-1}$ Toda theory on $C_{g,n}$ with central charge
 \begin{equation}
   c = 1 + 6q^2 \,,
@@ -1612,7 +1750,7 @@ with $A_{N-1}$ Toda theory on $C_{g,n}$ with central charge
 with vertex operators $V_{\beta^r}$, $r = 1$, $\dotsc$, $n$, inserted
 at the punctures.  According to the AGT correspondence, the partition
 function of the theory on $S^4_\bs$ equals the correlation function of
-Toda theory on $C_{g,n}$:
+Toda theory on $C_{g,n}$ \cite{Hama:2011ea,Hama:2012bg}:
 \begin{equation}
   \vev{1}_{S^4_\bs} = \biggvev{\prod_r V_{\beta^r}}_{C_{g,n}} \,.
 \end{equation}
@@ -1641,7 +1779,7 @@ $\beta$.
 On the gauge theory side, $\CC(\alpha; \beta)$ is interpreted as the
 product of the classical and the one-loop contributions to the
 partition function on $S^4_\bs$, whereas $\CF(\alpha; \beta)$ and
-$\overline{\CF(\alpha; \beta)}$ represent the nonperturbative
+$\overline{\CF(\alpha; \beta)}$ represent the non-perturbative
 contributions from instantons localized at the two poles at
 $x^2 = x^3 = x^4 = x^5 = 0$.  The internal momenta $\alpha$ are
 related to the zero modes $\as$ of scalar fields in the vector
@@ -1657,10 +1795,10 @@ for matter multiplets.
 
 
 
-\subsubsection{Verlinde operators and Wilson--'t Hooft lines}
+\subsubsection{Verlinde operators and Wilson-'t Hooft lines}
 
-To incorporate Wilson--'t Hooft lines in the gauge theory, one
-introduces Verlinde loop operators in the Toda theory.  We will
+To incorporate Wilson-'t Hooft lines in the gauge theory, one
+introduces Verlinde loop operators \cite{Verlinde:1988sn} in the Toda theory.  We will
 explain the construction of relevant Verlinde operators in concrete
 examples.  For the moment, it suffices to say that they are specified
 by a momentum of the form $\mu = -\bs\lambda$ and a one-cycle $\gamma$
@@ -1670,7 +1808,7 @@ representation of $\slf_N$.%
 \footnote{More generally, the momentum takes the form
   $\mu = -\bs\lambda_1 - \bs^{-1} \lambda_2$, where $\lambda_1$,
   $\lambda_2$ are the highest weights of a pair of representations of
-  $\slf_N$.  The corresponding Wilson--'t Hooft line is a
+  $\slf_N$.  The corresponding Wilson-'t Hooft line is a
   superposition of lines wrapping $S^1_\bs$ and another circle
   $S^1_{\bs^{-1}}$ where $x^2 = x^3 = 0$.}
 %
@@ -1683,10 +1821,15 @@ correlation function is modified to
   \CC(\alpha; \beta) \overline{\CF(\alpha; \beta)}
   \bigl(\Phi_\mu(\gamma) \cdot \CF(\alpha; \beta)\bigr) \,.
 \end{equation}
-The AGT correspondence asserts \cite{Alday:2009fs, Drukker:2009id}
-that this is equal to the vev of a Wilson--'t Hooft line
+The AGT correspondence asserts \cite{Alday:2009fs, Drukker:2009id,Gomis:2010kv}
+that this is equal to the vev of a Wilson-'t Hooft line
 $T_{\mu,\gamma}$ winding around a circle $S^1_\bs$ where
-$x^4 = x^5 = 0$ (at $x^1 = 0$, say):
+$x^4 = x^5 = 0$ (at $x^1 = 0$, say):%
+%
+\footnote{On the construction of Verlinde operator in the context of
+AGT correspondence, again surface operators in four-dimensional gauge theories
+play a significant role; see \cite{Alday:2009fs,Gukov:2014gja}.}
+%
 \begin{equation}
   \vev{T_{\mu,\gamma}}_{S^4_\bs}
   =
@@ -1695,7 +1838,7 @@ $x^4 = x^5 = 0$ (at $x^1 = 0$, say):
 
 It turns out that $\Phi_\mu(\gamma)$ acts on conformal blocks as a
 difference operator shifting the internal momenta $\alpha$, just as
-Wilson--'t Hooft lines in $\CN = 2$ supersymmetric gauge theories on
+Wilson-'t Hooft lines in $\CN = 2$ supersymmetric gauge theories on
 $S^1 \times_\eps \R^2 \times \R$ shift Coulomb branch parameters.  Indeed, it
 was argued in~\cite{Ito:2011ea} that if one defines the modified Verlinde
 operator
@@ -1706,7 +1849,7 @@ operator
   \CC(\alpha; \beta)^{\frac12}
   \Phi_\mu(\gamma) \CC(\alpha; \beta)^{-\frac12} \,,
 \end{equation}
-then its Wigner transform is equal to the vev of the Wilson--'t Hooft
+then its Wigner transform is equal to the vev of the Wilson-'t Hooft
 line in the theory on $S^1 \times_\eps \R^2 \times \R$, up to an appropriate
 identification of parameters:
 \begin{equation}
@@ -1722,7 +1865,7 @@ L-operator.
 
 
 
-\subsubsection{Verlinde operators on a punctured torus}
+%\subsubsection{Verlinde operators on a punctured torus}
 
 To reproduce the transfer matrix~\eqref{eq:T-trig}, we consider Toda
 theory on an $n$-punctured torus $C_{1,n}$ and insert vertex operators
@@ -1752,7 +1895,7 @@ shown in figure~\ref{fig:cycles-on-torus}, then
 \end{equation}
 In other words, the curve $\gamma_\sigma$ passes ``above'' or
 ``below'' the $r$th puncture depending on whether $\sigma^r = +$ or
-$-$.  In the gauge theory, this operator corresponds to the Wilson--'t
+$-$.  In the gauge theory, this operator corresponds to the Wilson-'t
 Hooft line with magnetic charge~\eqref{eq:B-circular} and electric
 charge~\eqref{eq:E-circular}.
 
@@ -2160,11 +2303,11 @@ the product of three-point function factors is
   =
   \prod_r
   \frac{\prod_{i<j} \Upsilon(\iu \as^r_{ij}) \Upsilon(-\iu \as^{r+1}_{ij})}
-       {\prod_{i,j} \Upsilon(\frac12 q + \iu \ms^r - \iu \as^r_i + \iu \as^{r+1}_j)}
+        {\prod_{i,j} \Upsilon(\frac12 q + \iu \ms^r - \iu \as^r_i + \iu \as^{r+1}_j)}
   \,.
 \end{equation}
-The precise definition of the function $\Upsilon$ is not important for
-us; we just need to know that it satisfies the identity
+The precise definition of the function $\Upsilon$ is given in the appendix,
+but not so important here; we just need to know that it satisfies the identity
 \begin{equation}
   \frac{\Upsilon(x + \bs)}{\Upsilon(x)}
   = \frac{\Gamma(\bs x)}{\Gamma(1 - \bs x)} \bs^{1 - 2\bs x} \,,
@@ -2190,19 +2333,19 @@ $\as^r_{ij}$ is equal to $i^r$:
     \times
     \prod_{(i^{r+1}<)j}
     \frac{\Upsilon(-\iu \as^{r+1}_{i^{r+1} j})}
-         {\Upsilon(-\iu \as^{r+1}_{i^{r+1} j} + \bs)}
+          {\Upsilon(-\iu \as^{r+1}_{i^{r+1} j} + \bs)}
     \prod_{i(<i^{r+1})}
     \frac{\Upsilon(-\iu \as^{r+1}_{ii^{r+1}})}
-         {\Upsilon(-\iu \as^{r+1}_{ii^{r+1}} - \bs)}
+          {\Upsilon(-\iu \as^{r+1}_{ii^{r+1}} - \bs)}
     \\ & \quad
     \times
     \prod_{i(\neq i^r)}
     \frac{\Upsilon(\frac12 q + \iu \ms^r - \iu \as^r_{i} + \iu \as^{r+1}_{i^{r+1}} - \bs)}
-         {\Upsilon(\frac12 q + \iu \ms^r - \iu \as^r_{i} + \iu \as^{r+1}_{i^{r+1}})}
+          {\Upsilon(\frac12 q + \iu \ms^r - \iu \as^r_{i} + \iu \as^{r+1}_{i^{r+1}})}
     \prod_{j(\neq i^{r+1})}
     \frac{\Upsilon(\frac12 q + \iu \ms^r - \iu \as^r_{i^r} + \iu \as^{r+1}_{j} + \bs)}
-         {\Upsilon(\frac12 q + \iu \ms^r - \iu \as^r_{i^r} + \iu \as^{r+1}_{j})}
- \,.
+          {\Upsilon(\frac12 q + \iu \ms^r - \iu \as^r_{i^r} + \iu \as^{r+1}_{j})}
+  \,.
   \end{split}
 \end{equation}
 Combining the first two lines and using the aforementioned identity,
@@ -2217,7 +2360,7 @@ we can rewrite this quantity as
     \frac{\Gamma(1 - \bs(q + \iu \as^r_{j^r i^r}))
         \Gamma(\bs(\frac12 q + \iu \as^r_{j^r} - \iu \as^{r+1}_{i^{r+1}} - \iu \ms^r))}
       {\Gamma(\bs(q + \iu \as^r_{j^r i^r}))
-       \Gamma(1 - \bs(\frac12 q + \iu \as^r_{j^r} - \iu \as^{r+1}_{i^{r+1}} - \iu \ms^r))}
+        \Gamma(1 - \bs(\frac12 q + \iu \as^r_{j^r} - \iu \as^{r+1}_{i^{r+1}} - \iu \ms^r))}
     \\
     & \quad
     \times
@@ -2225,11 +2368,10 @@ we can rewrite this quantity as
     \frac{\Gamma(1 - \iu\bs \as^{r+1}_{j^{r+1} i^{r+1}})
       \Gamma(\bs(\frac12 q + \iu \as^{r+1}_{j^{r+1}} - \iu \as^r_{i^r} + \iu \ms^r))}
     {\Gamma(\iu\bs\as^{r+1}_{j^{r+1} i^{r+1}})
-     \Gamma(1 - \bs(\frac12 q + \iu \as^{r+1}_{j^{r+1}} - \iu \as^r_{i^r} + \iu \ms^r))}
+      \Gamma(1 - \bs(\frac12 q + \iu \as^{r+1}_{j^{r+1}} - \iu \as^r_{i^r} + \iu \ms^r))}
     \,.
   \end{split}
 \end{equation}
-
 Plugging this expression into the formula for the modified Verlinde
 operator, we see that the various factors of gamma functions combine
 nicely into sine functions via Euler's reflection formula
@@ -2312,11 +2454,11 @@ under the identification
 
 It has been proposed in~\cite{Ito:2011ea} that precisely under this
 identification of parameters, a modified Verlinde operator in Toda
-theory corresponding to a Wilson--'t Hooft line in the AGT-dual theory
-on $S^4_\bs$ reproduces the Weyl quantization of the same Wilson--'t
+theory corresponding to a Wilson-'t Hooft line in the AGT-dual theory
+on $S^4_\bs$ reproduces the Weyl quantization of the same Wilson-'t
 Hooft line in the same theory, but placed in the spacetime
 $S^1 \times_\eps \R^2 \times \R$.  Therefore, we again reach the
-conclusion that the vev of the Wilson--'t Hooft line with
+conclusion that the vev of the Wilson-'t Hooft line with
 charge~\eqref{eq:B-circular} and~\eqref{eq:E-circular} are equal to
 the Wigner transform of the trigonometric transfer
 matrix~\eqref{eq:T-trig}.
@@ -2332,29 +2474,29 @@ matrix~\eqref{eq:T-trig}.
 \subsection{Brane realization and string dualities}
 \label{sec:branes}
 
-The AGT correspondence between Wilson--'t Hooft lines and Verlinde
+The AGT correspondence between Wilson-'t Hooft lines and Verlinde
 operators, which we exploited in section~\ref{sec:Toda}, can be
 realized in terms of branes in string theory.  String dualities relate
 the brane configuration for the AGT correspondence to another
-configuration that realizes four-dimensional Chern--Simons theory, and
+configuration that realizes four-dimensional Chern-Simons theory, and
 in the latter setup the emergence of quantum integrability can be seen
 more transparently.  Another chain of dualities relate these setups to
 the one studied in~\cite{Maruyoshi:2016caf, Yagi:2017hmj}, which
-provided the initial motivation for the present work.  In this last
+we have discussed in section \ref{sec:surface}.  In this last
 section we discuss these brane constructions.
 
 
 
 
 
-\subsubsection{M-theory setup and brane realization}
+\subsubsection{M-theory setup} % and brane realization}
 
 As explained in section~\ref{sec:Toda}, the field theoretic origin of
 the AGT correspondence is six-dimensional $\CN = (2,0)$ superconformal
 field theory, which in our context is of type $A_{N-1}$ and
 compactified on an $n$-punctured torus $C_{1,n}$.  This theory
 describes the low-energy dynamics of a stack of $N$ M5-branes (modulo
-the center-of-mass degrees of freedom), intersected by $n$ M5-branes.
+the center-of-mass degrees of freedom), intersected by additional $n$ M5-branes.
 
 Consider M-theory in the eleven-dimensional spacetime
 \begin{equation}
@@ -2376,15 +2518,34 @@ $\R_0 \times \R^2_{12} \times_\eps S^1_3 \times C_1$, with
   C_1 = S^1_6 \times S^1_{10} \,.
 \end{equation}
 Further, we introduce $n$ M5-branes $\mathrm{M5}^r$, $r = 1$,
-$\dotsc$, $n$, with worldvolumes
+$\dotsc$, $n$, with world-volumes
 \begin{equation}
   M_{\mathrm{M5}^r} =
   \R_0 \times \R^2_{12} \times_\eps S^1_3 \times \{0\}
   \times \{l^r\} \times \{0\} \times \R_8 \times \R_9 \times \{\theta^r\} \,.
 \end{equation}
-These M5-branes create codimension-two defects in the six-dimensional
+These additional M5-branes create codimension-two defects in the six-dimensional
 theory, located at $n$ points $(l^r,\theta^r)$ on $C_1$, making $C_1$
-an $n$-punctured torus $C_{1,n}$.
+an $n$-punctured torus $C_{1,n}$ (see table \ref{tab:M-branes}).
+
+
+%TABLE
+\begin{table}
+  \caption{M-theory setup.}
+  \vspace{-0.5cm}
+    \centering
+    \begin{equation*}
+      \begin{array}{rccccccccc}
+        \text{11d Spacetime} & \R_0 & \R_{12}^2 & S_3^1 & \R_{45}^2 & S_6^1 & \R_{7} & \R_{8} & \R_{9} & S_{10}^1 \\
+        N \text{ M5}         & \R_0 & \R_{12}^2 & S_3^1 & - & S_6^1 & - & - & - & S_{10}^1 \\
+        n \text{ M5}'        & \R_0 & \R_{12}^2 & S_3^1 & - & - & - & \R_8 & \R_9 & - \\
+        \text{M2}            & - & - & S_3^1 & - & S_6^1 & - & \R_8^{\geq 0} & - & -
+      \end{array}
+    \end{equation*}
+  %\vspace{-0.5cm}
+\label{tab:M-branes}
+\end{table}
+
 
 The two sets of M5-branes share a four-dimensional part of the
 spacetime, $\R_0 \times \R^2_{12} \times_\eps S^1_3$, and on this
@@ -2426,7 +2587,7 @@ the $\theta$-angle for the $r$th gauge group.%
   charge at infinity which does not have a simple interpretation in
   this brane system.}
 
-A Wilson--'t Hooft line in this four-dimensional theory is realized by
+A Wilson-'t Hooft line in this four-dimensional theory is realized by
 an M2-brane on
 \begin{equation}
   M_{\mathrm{M2}} =
@@ -2441,7 +2602,7 @@ where $\R^{\geq0}_8$ is the nonnegative part of $\R_8$.  Upon reduction on $S^1_
   \times S^1_6 \times \{0\} \times \R^{\geq0}_8
   \times \{x_0\}
 \end{equation}
-and creates a Wilson--'t Hooft line of the type considered in
+and creates a Wilson-'t Hooft line of the type considered in
 section~\ref{sec:gauge}.  It corresponds to a Verlinde operator in
 Toda theory on $C_{1,n}$, constructed from a vertex operator
 transported along the path $S^1_6 \times \{\theta_0\}$.  We will
@@ -2453,7 +2614,7 @@ we are uplifting the four-dimensional gauge theory to a
 five-dimensional one, compactified on a circle.  Indeed, by T-duality
 on $S^1_9$ we get D5-branes $\check{\mathrm{D5}}_i$, NS5-branes
 $\check{\mathrm{NS5}}^r$ and a D3-brane $\check{\mathrm{D3}}$ with
-worldvolumes
+world-volumes
 \begin{align}
   \label{eq:M-D5}
   M_{\check{\mathrm{D5}}_i}
@@ -2479,9 +2640,35 @@ $\R_0 \times \R^2_{12} \times_\eps S^1_3 \times \check S^1_9$, where a
 five-dimensional circular quiver theory arises.  Recall that the
 radius $\check{R}_9$ of the dual circle $\check{S}^1_9$ is inversely
 proportional to the original radius, $\check{R}_9 = \alpha'/R_9$.
+This brane configuration is nothing but the one shown in section \ref{sec:defects}.
+From the same argument for the case of the brane tilings discussed in \ref{sec:surface},
+we obtain the correspondence between supersymmetric gauge theory
+and integrable lattice model.
+%Lastly, we remark that the D5--NS5--D3 brane system~\eqref{eq:M-D5}--\eqref{eq:M-D3}
+%is another interesting duality frame.
+It is actually possible to
+introduce an additional set of NS5-branes so that the 5-brane system
+realizes a four-dimensional $\CN = 1$ supersymmetric gauge theory on
+$\R^2_{12} \times_\eps S^1_3 \times \check S^1_9$.  The D3-brane
+creates a surface defect in this theory.  As expected, it acts on the
+partition function of the theory as an elliptic transfer
+matrix~\cite{Maruyoshi:2016caf,Yagi:2017hmj}.
 
+
+
+
+
+
+
+
+\subsubsection{String duality and 4d Chern-Simons theory}
+
+
+We can say more about the correspondence.
 Going back to the M-theory setup, we reduce it on $S^1_3$ and apply
-T-duality on $S^1_9$.  Then, $\mathrm{M5}_i$ become D5-branes
+T-duality on $S^1_9$.  Then, we now have type IIB string theory setup;
+see table \ref{tab:IIB-branes}.
+In such a duality frame, $\mathrm{M5}_i$ become D5-branes
 $\widetilde{\mathrm{D5}}_i$ on
 \begin{equation}
   M_{\widetilde{\mathrm{D5}_i}}
@@ -2506,24 +2693,76 @@ and $\mathrm{M2}$ becomes a fundamental string $\widetilde{\mathrm{F1}}$ on
 \end{equation}
 
 
+%TABLE
+\begin{table}
+  \caption{Type IIB string theory setup.}
+  \vspace{-0.5cm}
+    \centering
+    \begin{equation*}
+      \begin{array}{rcccccccc}
+        \text{10d Spacetime} & \R_0 & \R_{12}^2  & \R_{45}^2 & S_6^1 & \R_{7} & \R_{8} & \check{S}^1_9 & S_{10}^1 \\
+        N \text{ D5}         & \R_0 & \R_{12}^2  & - & S_6^1 & - & - & \check{S}^1_9 & S_{10}^1 \\
+        n \text{ D3}         & \R_0 & \R_{12}^2  & - & - & - & \R_8 & - & - \\
+        \text{F1}            & - & -  & - & S_6^1 & - & \R_8^{\geq 0} & - & -
+      \end{array}
+    \end{equation*}
+  %\vspace{-0.5cm}
+\label{tab:IIB-branes}
+\end{table}
+
+%Compactify $\R_9 \to S^1_9$, reduce on $S^1_3$, and apply T-duality $S^1_9\to \check{S}^1_9$,
+%then we now have type IIB string theory setup
 
 
-
-\subsubsection{String duality and 4d Chern-Simons theory}
 
 The $N$ D5-branes $\widetilde{\mathrm{D5}}_i$ support $\CN = (1,1)$
-super Yang--Mills theory with gauge group $\SU(N)$ on
+super Yang-Mills theory with gauge group $\SU(N)$ on
 $\R_0 \times \R^2_{12} \times S^1_6 \times \check{S}^1_9 \times
-S^1_{10}$.  Crucially, this theory is deformed in the present case due
-to the fact that the product of $S^1_3$ and $\R^2_{12}$ was twisted.
-This is a deformation of the type studied in~\cite{Yagi:2014toa}, and
-in the sector in which the relevant supersymmetry is preserved, the
-deformed theory is actually equivalent to a four-dimensional variant
-of Chern--Simons theory, with Planck constant
-$\hbar \propto \eps$~\cite{Costello:2018txb}.  Four-dimensional
-Chern--Simons theory, here placed on
-$\R_0 \times S^1_6 \times \check{S}^1_9 \times S^1_{10}$, depends
-topologically on the cylinder
+S^1_{10}$.  This theory is, however, deformed because the product
+between $S^1_3$ and $\R^2_{12} \times \R^2_{45}$ was twisted, which
+induces nontrivial background fields after reduction on $S^1_3$.  This
+deformation is of the type studied in~\cite{Yagi:2014toa} and the same
+as the one applied to the D5-brane theory in~\cite{Costello:2018txb}.%
+%
+\footnote{The equivalence to the construction
+  of~\cite{Costello:2018txb} can be seen as follows.  Let us reduce
+  the M-theory setup instead on $S^1_{10}$ and perform T-duality on
+  $S^1_9$.  Then, we obtain a type IIB setup whose geometry contains a
+  twisted product between $\R^2_{12} \times \R^2_{45}$ and the torus
+  $S^1_3 \times \check S^1_9$.  This is the starting point of the
+  construction of~\cite{Costello:2018txb}.  The string background
+  proposed in~\cite{Costello:2018txb} is achieved by a sequence of
+  dualities applied to this setup: T-duality on
+  $S^1_3 \times \check S^1_9$, then S-duality, and finally T-duality
+  on the dual torus $\check S^1_3 \times S^1_9$.  The first T-duality
+  realizes the $\Omega$-deformation~\cite{Hellerman:2011mv}, hence we
+  are considering the S-dual $\Omega$-deformation here.  The point is
+  that S-duality is geometrized via M-theory as a ``9-11 flip.''  In
+  the above construction, the S-duality can be replaced by T-duality
+  on $\check S^1_3$, a lift to M-theory and reduction on $S^1_3$, and
+  T-duality on the M-theory circle $S^1_{10}$.  The configuration
+  right after the lift to M-theory is nothing but our original
+  M-theory setup.  The subsequent steps in the 9-11 flip differ from
+  what we did to that setup only in the choice of the circle on which
+  we perform T-duality, $S^1_{10}$ now whereas $S^1_9$ before.
+  However, we are still supposed to perform T-duality on
+  $S^1_9 \times \check S^1_{10}$ as the last step in the construction
+  of~\cite{Costello:2018txb}.  (Note that the 9-11 flip has exchanged
+  $S^1_3$ and $S^1_{10}$.)  This fixes the discrepancy.}
+%
+If we consider the reduction to four-dimensional $\CN = 4$ super
+Yang-Mills theory, this deformation descends to the S-dual of the
+$\Omega$-deformation~\cite{Nekrasov:2002qd}.
+
+In the sector in which the relevant supersymmetry is preserved, the
+deformation leads to localization of the path integral.  As a result,
+this sector of the deformed theory is equivalent to a bosonic theory
+which, roughly speaking, may be understood as living at the origin of
+$\R^2_{12}$.  This theory turns out to be a four-dimensional variant
+of Chern-Simons theory~\cite{Costello:2018txb}, with Planck constant
+$\hbar \propto \eps$.  Four-dimensional Chern-Simons theory, here
+placed on $\R_0 \times S^1_6 \times \check{S}^1_9 \times S^1_{10}$,
+depends topologically on the cylinder
 \begin{equation}
   \Sigma = \R_0 \times S^1_6
 \end{equation}
@@ -2531,6 +2770,7 @@ and holomorphically on the torus
 \begin{equation}
   E = \check{S}^1_9 \times S^1_{10} \,.
 \end{equation}
+
 
 The D3-branes $\widetilde{\mathrm{D3}}^r$ create line defects
 extending in the longitudinal direction of $\Sigma$ and located at the
@@ -2546,14 +2786,66 @@ winds around the circumferential direction and is located at
 \end{equation}
 on $E$.  Thus, on the cylinder $\Sigma$, we have the same situation as
 in figure~\ref{fig:spin-chain-T}, in which a quantum spin chain was
-described in terms of lines on a cylinder.
+described in terms of lines on a cylinder; see figure \ref{fig:top_hol}.
+Note that though $E$ is a punctured torus, this is not $C_{1,n}$ for
+the AGT correspondence.
+
+
+%FIGURE
+\begin{figure}
+  \centering
+    \begin{tikzpicture}[baseline=(x.base)]  \node (x) at (0,0) {\vphantom{x}};
+      \begin{scope}[yscale=0.25, xscale=0.8, xshift=-3cm, yshift=-2.5cm]
+        \fill[olive!15] (-2,0) arc (-180:0:2) -- ++(0,5) arc (0:-180:2) -- ++(0,-5) -- cycle;
+        \fill[olive!5]  (0,5) circle [radius=2];
+        \draw[dashed] (2,0) arc (0:180:2);
+        \draw (-2,0) arc (180:360:2);
+        \draw (0,5) circle [radius=2];
+        \draw[thick, color=red!70, densely dashed, ->, yshift=2.5cm] (-90:2) arc (-90:270:2);
+        \draw[thick, ->] (10:2) -- ++(90:5);
+        \draw[thick, ->] (55:2) -- ++(90:5);
+        \draw[thick, ->] (100:2) -- ++(90:5);
+        \draw[thick, ->] (145:2) -- ++(90:5);
+        \draw[thick, ->] (190:2) -- ++(90:5);
+        \draw[thick, ->] (235:2) -- ++(90:5);
+        \draw[thick, ->] (280:2) -- ++(90:5);
+        \draw[thick, ->] (325:2) -- ++(90:5);
+      \end{scope}
+
+      \node at (0,0) {$\times$};
+
+      \begin{scope}[scale=0.7, font=\small, xshift=4cm]
+        % Taubmans Cinnamon Doughnut color
+        \draw[fill={cyan!15!lightgray},even odd rule]
+          (0,0) ellipse (3 and 1.5)
+          (-1,0.1) arc (120:60:2 and 1.8) arc (-60:-120:2 and 1.8);
+        \draw (-1,0.1) arc(-120:-126:2 and 1.8) (1,0.1) arc(-60:-54:2 and 1.8);
+        \node[black!70] (p3) at (1,-1) {$\bullet$};
+        \node[black!70] (p2) at (-0.7,-1.05) {$\bullet$};
+        \node[black!70] (p1) at (-2,-0.6) {$\bullet$};
+        \draw[ultra thick, dotted] (1.8,-0.7) arc (-65:-42:1.8);
+        \node[red!70] at (0.4,-0.6) {\scriptsize $\times$};  %$\bullet$
+      \end{scope}
+
+      \node at (-2.4,-1.8) {$\Sigma=\R_0\times S^1_6$};
+      \node at (2.8,-1.8) {$E=\check{S}^1_9 \times S^1_{10}$};
+    \end{tikzpicture}
+  \caption{Line operators in 4d Chern-Simons theory placed on the topological plane $\Sigma$
+  generate integrable lattice models. The spectral parameters are
+  given by the coordinate of the lines on the Riemann surface.}
+\label{fig:top_hol}
+\end{figure}
+
 
 Indeed, a quantum integrable system emerges from such a configuration
-of line operators in four-dimensional Chern--Simons
+of line operators in four-dimensional Chern-Simons
 theory~\cite{Costello:2013zra}.  The Hilbert space of the integrable
 system is the space of states of the field theory on a time slice
 (where the $x^0$-coordinate is constant) intersected by line operators
-extending in the time direction.  The integrability is a consequence
+extending in the time direction.
+On this Hilbert space act transfer
+matrices, which are Wilson lines in the $x^6$-direction.
+The integrability is a consequence
 of the topological--holomorphic nature of the theory: by the
 topological invariance on $\Sigma$, one can slide line operators
 winding around the cylinder continuously along the longitudinal
@@ -2582,23 +2874,23 @@ $E$:
 \begin{equation}
   \tau = \iu \frac{R_{10}}{\check{R}_9} \,.
 \end{equation}
-
-Now, take the limit $\check{R}_9 \to 0$, in which $\check{S}^1_9$
+If one takes the limit $\check{R}_9 \to 0$, in which $\check{S}^1_9$
 shrinks to a point, $S^1_9$ decompactifies, and the five-dimensional
 circular quiver theory reduces to the four-dimensional one.  This is
-the trigonometric limit $\tau \to \iu\infty$, so we conclude that the
+the trigonometric limit $\tau \to \iu\infty$ we considered before.
+Thus, we conclude that the
 transfer matrix constructed from the trigonometric L-operator arises
-from a Wilson--'t Hooft line in the four-dimensional circular quiver
+from a Wilson-'t Hooft line in the four-dimensional circular quiver
 theory.
 
 In the previous sections we studied the transfer matrix
 $\CT_{\sigma,m}$ associated with the cycle $\gamma_\sigma$ in
 $C_{1,n}$ specified by an $n$-tuples of signs $\sigma$.  The
-Wilson--'t Hooft line considered above corresponds to a specific
+Wilson-'t Hooft line considered above corresponds to a specific
 choice of $\sigma$.  Those corresponding to the other choices can also
 be constructed in a similar manner, but the construction is a little
 more subtle.  Let us explain how this construction works from the
-point of view of four-dimensional Chern--Simons theory.
+point of view of four-dimensional Chern-Simons theory.
 
 For simplicity, let us set all $\theta^r = \theta_0$.  (Since
 $\CT_{\sigma,m}$ is independent of the spectral parameters $z_0$ and
@@ -2617,14 +2909,14 @@ $r$th solid line, as illustrated in figure~\ref{fig:path-4dCS}.
     \begin{tikzpicture}[scale=0.4, baseline=(x.base)]
       \node (x) at (0,0) {\vphantom{x}};
 
-      \draw[fill=brown!30] (0,0) rectangle (10,6);
+      \draw[fill=olive!10] (0,0) rectangle (10,6);
       % \draw[step=0.5,gray,very thin] (0,0) grid (10,6);
 
-      \draw[thick, ->] (0,3) -- (2.5,3) -- (3.5,5) -- (4.5,3) --
+      \draw[thick, densely dashed, ->] (0,3) -- (2.5,3) -- (3.5,5) -- (4.5,3) --
       (6.5,3) -- (7.5,1) -- (8.5,3) -- (10,3);
 
-      \draw[thick, double, ->] (3,0) -- +(90:6);
-      \draw[thick, double, ->] (7,0) -- +(90:6);
+      \draw[thick, ->] (3,0) -- +(90:6);
+      \draw[thick, ->] (7,0) -- +(90:6);
 
       \node[right] at (0,5.3) {$\Sigma$};
 
@@ -2636,7 +2928,7 @@ $r$th solid line, as illustrated in figure~\ref{fig:path-4dCS}.
       \node at (7,-1) {$l^{r+1}$};
     \end{tikzpicture}
   }
-  \qquad
+  \qquad\qquad
   \subfloat[]{
     \begin{tikzpicture}[scale=0.4, baseline=(x.base)]
       \node (x) at (0,0) {\vphantom{x}};
@@ -2647,7 +2939,9 @@ $r$th solid line, as illustrated in figure~\ref{fig:path-4dCS}.
       \node[black!70] (p1) at (3,3) {$\bullet$};
       \node[black!70] (p2) at (7,3) {$\bullet$};
 
-      \draw[thick, ->] (0,3) -- (2.5,3) -- (2.5,1) -- (3.5,1) -- (3.5,5) -- (4.5,5) -- (4.5,3) -- (6.5,3) -- (6.5,5) -- (7.5,5) -- (7.5,1) -- (8.5,1) -- (8.5,3) -- (10,3);
+      \draw[thick, ->] (0,3) -- (2.5,3) -- (2.5,1) -- (3.5,1) -- (3.5,5)
+      -- (4.5,5) -- (4.5,3) -- (6.5,3) -- (6.5,5) -- (7.5,5)
+      -- (7.5,1) -- (8.5,1) -- (8.5,3) -- (10,3);
 
       \node[right] at (0,5.3) {$C_{1,n}$};
 
@@ -2672,14 +2966,32 @@ solid line.  This is precisely the limit that appears in the
 definitions of the fundamental L-operators~\eqref{eq:fund-L}, from
 which $\CT_{\sigma,m}$ is constructed.
 
-The D5--NS5--D3 brane system~\eqref{eq:M-D5}--\eqref{eq:M-D3} is
-another interesting duality frame.  It is actually possible to
-introduce an additional set of NS5-branes so that the 5-brane system
-realizes a four-dimensional $\CN = 1$ supersymmetric gauge theory on
-$\R^2_{12} \times_\eps S^1_3 \times \check S^1_9$.  The D3-brane
-creates a surface defect in this theory.  As expected, it acts on the
-partition function of the theory as an elliptic transfer
-matrix~\cite{Maruyoshi:2016caf,Yagi:2017hmj}.
+Let us summarize the relation between the circular quiver theory and
+four-dimensional Chern-Simons theory.  The circular quiver theory
+with gauge group $\SU(N)^n$ arises from six-dimensional $\CN = (2,0)$
+superconformal field theory of type $A_{N-1}$ compactified on an
+$n$-punctured torus, which is realized by a stack of $N$ M5-branes
+intersected by $n$ M5-branes.  If we place this brane system in a
+twisted geometry, then by string dualities it is mapped to $N$
+D5-branes and $n$ D3-branes in a particular string background.  The
+D5-branes support six-dimensional $\CN = (1,1)$ super Yang-Mills
+theory with gauge group $\SU(N)$, and this background deforms it.  It
+is a topological--holomorphic sector of this deformed theory that is
+described by four-dimensional Chern-Simons theory.  The D3-branes
+become line operators in four-dimensional Chern-Simons theory and
+prepare the Hilbert space of the integrable system.  Finally, we can
+include M2-branes that create Wilson-'t Hooft lines in the circular
+quiver theory.  They are mapped to fundamental strings in the dual
+frame and appear as Wilson lines in four-dimensional Chern-Simons
+theory.  These Wilson lines act on the Hilbert space of the integrable
+system by transfer matrices.
+Thus our main claim such as \eqref{eq:WT_CT} is rephrased by a correspondence
+\begin{equation*}
+  \text{Line operator in a class-$\CS$ theory }
+  =
+  \text{ Line operator in 4d Chern-Simons theory},
+\end{equation*}
+and the equivalence is achieved by string dualities.
 
 
 
