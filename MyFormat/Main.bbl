@@ -1,11 +1,180 @@
 
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{100}
 
+\bibitem{Seiberg:1994rs}
+N.~Seiberg and E.~Witten, \emph{{Electric-magnetic duality, monopole
+  condensation, and confinement in {$\mathcal{N}=2$} supersymmetric Yang-Mills
+  theory}}, \href{https://doi.org/10.1016/0550-3213(94)90124-4}{\emph{Nucl.
+  Phys. B} {\bfseries 426} (1994) 19--52},
+  [\href{https://arxiv.org/abs/hep-th/9407087}{{\ttfamily hep-th/9407087}}].
+
+\bibitem{Seiberg:1994aj}
+N.~Seiberg and E.~Witten, \emph{{Monopoles, duality and chiral symmetry
+  breaking in {$\mathcal{N}=2$} supersymmetric QCD}},
+  \href{https://doi.org/10.1016/0550-3213(94)90214-3}{\emph{Nucl. Phys. B}
+  {\bfseries 431} (1994) 484--550},
+  [\href{https://arxiv.org/abs/hep-th/9408099}{{\ttfamily hep-th/9408099}}].
+
+\bibitem{Gorsky:1995zq}
+A.~Gorsky, I.~Krichever, A.~Marshakov, A.~Mironov and A.~Morozov,
+  \emph{{Integrability and Seiberg-Witten exact solution}},
+  \href{https://doi.org/10.1016/0370-2693(95)00723-X}{\emph{Phys. Lett. B}
+  {\bfseries 355} (1995) 466--474},
+  [\href{https://arxiv.org/abs/hep-th/9505035}{{\ttfamily hep-th/9505035}}].
+
+\bibitem{Martinec:1995by}
+E.~J. Martinec and N.~P. Warner, \emph{{Integrable systems and supersymmetric
+  gauge theory}},
+  \href{https://doi.org/10.1016/0550-3213(95)00588-9}{\emph{Nucl. Phys. B}
+  {\bfseries 459} (1996) 97--112},
+  [\href{https://arxiv.org/abs/hep-th/9509161}{{\ttfamily hep-th/9509161}}].
+
+\bibitem{Donagi:1995cf}
+R.~Donagi and E.~Witten, \emph{{Supersymmetric Yang-Mills theory and integrable
+  systems}}, \href{https://doi.org/10.1016/0550-3213(95)00609-5}{\emph{Nucl.
+  Phys. B} {\bfseries 460} (1996) 299--334},
+  [\href{https://arxiv.org/abs/hep-th/9510101}{{\ttfamily hep-th/9510101}}].
+
+\bibitem{Nekrasov:2002qd}
+N.~A. Nekrasov, \emph{{Seiberg-Witten prepotential from instanton counting}},
+  \href{https://doi.org/10.4310/ATMP.2003.v7.n5.a4}{\emph{Adv. Theor. Math.
+  Phys.} {\bfseries 7} (2003) 831--864},
+  [\href{https://arxiv.org/abs/hep-th/0206161}{{\ttfamily hep-th/0206161}}].
+
+\bibitem{Nekrasov:2003rj}
+N.~Nekrasov and A.~Okounkov, \emph{{Seiberg-Witten theory and random
+  partitions}}, \href{https://doi.org/10.1007/0-8176-4467-9_15}{\emph{Prog.
+  Math.} {\bfseries 244} (2006) 525--596},
+  [\href{https://arxiv.org/abs/hep-th/0306238}{{\ttfamily hep-th/0306238}}].
+
+\bibitem{Nakajima:2003pg}
+H.~Nakajima and K.~Yoshioka, \emph{{Instanton counting on blowup. 1.}},
+  \href{https://doi.org/10.1007/s00222-005-0444-1}{\emph{Invent. Math.}
+  {\bfseries 162} (2005) 313--355},
+  [\href{https://arxiv.org/abs/math/0306198}{{\ttfamily math/0306198}}].
+
+\bibitem{Pestun:2007rz}
+V.~Pestun, \emph{{Localization of gauge theory on a four-sphere and
+  supersymmetric Wilson loops}},
+  \href{https://doi.org/10.1007/s00220-012-1485-0}{\emph{Commun.Math.Phys.}
+  {\bfseries 313} (2012) 71--129},
+  [\href{https://arxiv.org/abs/0712.2824}{{\ttfamily 0712.2824}}].
+
+\bibitem{Alday:2009aq}
+L.~F. Alday, D.~Gaiotto and Y.~Tachikawa, \emph{{Liouville Correlation
+  Functions from Four-dimensional Gauge Theories}},
+  \href{https://doi.org/10.1007/s11005-010-0369-5}{\emph{Lett. Math. Phys.}
+  {\bfseries 91} (2010) 167--197},
+  [\href{https://arxiv.org/abs/0906.3219}{{\ttfamily 0906.3219}}].
+
+\bibitem{Witten:1997sc}
+E.~Witten, \emph{{Solutions of four-dimensional field theories via $M$
+  theory}}, \href{https://doi.org/10.1016/S0550-3213(97)00416-1}{\emph{Nucl.
+  Phys. B} {\bfseries 500} (1997) 3--42},
+  [\href{https://arxiv.org/abs/hep-th/9703166}{{\ttfamily hep-th/9703166}}].
+
+\bibitem{Gaiotto:2009we}
+D.~Gaiotto, \emph{{$N=2$ dualities}},
+  \href{https://doi.org/10.1007/JHEP08(2012)034}{\emph{JHEP} {\bfseries 08}
+  (2012) 034}, [\href{https://arxiv.org/abs/0904.2715}{{\ttfamily 0904.2715}}].
+
+\bibitem{Gaiotto:2009hg}
+D.~Gaiotto, G.~W. Moore and A.~Neitzke, \emph{{Wall-crossing, Hitchin Systems,
+  and the WKB Approximation}},
+  \href{https://arxiv.org/abs/0907.3987}{{\ttfamily 0907.3987}}.
+
+\bibitem{Teschner:2010je}
+J.~Teschner, \emph{{Quantization of the Hitchin moduli spaces, Liouville
+  theory, and the geometric Langlands correspondence I}},
+  \href{https://doi.org/10.4310/ATMP.2011.v15.n2.a6}{\emph{Adv. Theor. Math.
+  Phys.} {\bfseries 15} (2011) 471--564},
+  [\href{https://arxiv.org/abs/1005.2846}{{\ttfamily 1005.2846}}].
+
+\bibitem{Nekrasov:2009uh}
+N.~A. Nekrasov and S.~L. Shatashvili, \emph{{Supersymmetric vacua and Bethe
+  ansatz}},
+  \href{https://doi.org/10.1016/j.nuclphysbps.2009.07.047}{\emph{Nucl. Phys. B
+  Proc. Suppl.} {\bfseries 192-193} (2009) 91--112},
+  [\href{https://arxiv.org/abs/0901.4744}{{\ttfamily 0901.4744}}].
+
+\bibitem{Nekrasov:2009ui}
+N.~A. Nekrasov and S.~L. Shatashvili, \emph{{Quantum integrability and
+  supersymmetric vacua}},
+  \href{https://doi.org/10.1143/PTPS.177.105}{\emph{Prog. Theor. Phys. Suppl.}
+  {\bfseries 177} (2009) 105--119},
+  [\href{https://arxiv.org/abs/0901.4748}{{\ttfamily 0901.4748}}].
+
+\bibitem{Nekrasov:2009rc}
+N.~A. Nekrasov and S.~L. Shatashvili, \emph{{Quantization of Integrable Systems
+  and Four Dimensional Gauge Theories}},  in \emph{{16th International Congress
+  on Mathematical Physics}}, pp.~265--289, 8, 2009,
+  \href{https://arxiv.org/abs/0908.4052}{{\ttfamily 0908.4052}},
+  \href{https://doi.org/10.1142/9789814304634_0015}{DOI}.
+
+\bibitem{Yamazaki:2012cp}
+M.~Yamazaki, \emph{{Quivers, YBE and 3-manifolds}},
+  \href{https://doi.org/10.1007/JHEP05(2012)147}{\emph{JHEP} {\bfseries 05}
+  (2012) 147}, [\href{https://arxiv.org/abs/1203.5784}{{\ttfamily 1203.5784}}].
+
+\bibitem{Terashima:2012cx}
+Y.~Terashima and M.~Yamazaki, \emph{{Emergent 3-manifolds from 4d
+  Superconformal Indices}},
+  \href{https://doi.org/10.1103/PhysRevLett.109.091602}{\emph{Phys. Rev. Lett.}
+  {\bfseries 109} (2012) 091602},
+  [\href{https://arxiv.org/abs/1203.5792}{{\ttfamily 1203.5792}}].
+
+\bibitem{Yamazaki:2013nra}
+M.~Yamazaki, \emph{{New Integrable Models from the Gauge/YBE Correspondence}},
+  \href{https://doi.org/10.1007/s10955-013-0884-8}{\emph{J. Statist. Phys.}
+  {\bfseries 154} (2014) 895},
+  [\href{https://arxiv.org/abs/1307.1128}{{\ttfamily 1307.1128}}].
+
+\bibitem{Costello:2013zra}
+K.~Costello, \emph{{Supersymmetric gauge theory and the Yangian}},
+  \href{https://arxiv.org/abs/1303.2632}{{\ttfamily 1303.2632}}.
+
+\bibitem{Costello:2013sla}
+K.~Costello, \emph{{Integrable lattice models from four-dimensional field
+  theories}}, \href{https://doi.org/10.1090/pspum/088/01483}{\emph{Proc. Symp.
+  Pure Math.} {\bfseries 88} (2014) 3--24},
+  [\href{https://arxiv.org/abs/1308.0370}{{\ttfamily 1308.0370}}].
+
+\bibitem{Costello:2017dso}
+K.~Costello, E.~Witten and M.~Yamazaki, \emph{{Gauge Theory and Integrability,
+  I}},  \href{https://arxiv.org/abs/1709.09993}{{\ttfamily 1709.09993}}.
+
+\bibitem{Costello:2018gyb}
+K.~Costello, E.~Witten and M.~Yamazaki, \emph{{Gauge Theory and Integrability,
+  II}},  \href{https://arxiv.org/abs/1802.01579}{{\ttfamily 1802.01579}}.
+
+\bibitem{Costello:2019tri}
+K.~Costello and M.~Yamazaki, \emph{{Gauge Theory And Integrability, III}},
+  \href{https://arxiv.org/abs/1908.02289}{{\ttfamily 1908.02289}}.
+
+\bibitem{Witten:1988hf}
+E.~Witten, \emph{{Quantum Field Theory and the Jones Polynomial}},
+  \href{https://doi.org/10.1007/BF01217730}{\emph{Commun. Math. Phys.}
+  {\bfseries 121} (1989) 351--399}.
+
+\bibitem{Wadati:1989ud}
+M.~Wadati, T.~Deguchi and Y.~Akutsu, \emph{{Exactly Solvable Models and Knot
+  Theory}}, \href{https://doi.org/10.1016/0370-1573(89)90123-3}{\emph{Phys.
+  Rept.} {\bfseries 180} (1989) 247}.
+
 \bibitem{Yagi:2015lha}
 J.~Yagi, \emph{{Quiver gauge theories and integrable lattice models}},
   \href{https://doi.org/10.1007/JHEP10(2015)065}{\emph{JHEP} {\bfseries 10}
   (2015) 065}, [\href{https://arxiv.org/abs/1504.04055}{{\ttfamily
   1504.04055}}].
+
+\bibitem{Costello:2018txb}
+K.~Costello and J.~Yagi, \emph{{Unification of integrability in supersymmetric
+  gauge theories}},  \href{https://arxiv.org/abs/1810.01970}{{\ttfamily
+  1810.01970}}.
+
+\bibitem{Maruyoshi:2020cwy}
+K.~Maruyoshi, T.~Ota and J.~Yagi, \emph{{Wilson-'t Hooft lines as transfer
+  matrices}},  \href{https://arxiv.org/abs/2009.12391}{{\ttfamily 2009.12391}}.
 
 \bibitem{Atiyah:1989vu}
 M.~Atiyah, \emph{{Topological quantum field theories}},
@@ -30,13 +199,6 @@ D.~Friedan and S.~H. Shenker, \emph{{The Analytic Geometry of Two-Dimensional
   \href{https://doi.org/10.1016/0550-3213(87)90418-4}{\emph{Nucl. Phys. B}
   {\bfseries 281} (1987) 509--545}.
 
-\bibitem{Alday:2009aq}
-L.~F. Alday, D.~Gaiotto and Y.~Tachikawa, \emph{{Liouville Correlation
-  Functions from Four-dimensional Gauge Theories}},
-  \href{https://doi.org/10.1007/s11005-010-0369-5}{\emph{Lett. Math. Phys.}
-  {\bfseries 91} (2010) 167--197},
-  [\href{https://arxiv.org/abs/0906.3219}{{\ttfamily 0906.3219}}].
-
 \bibitem{Witten:1988xj}
 E.~Witten, \emph{{Topological Sigma Models}},
   \href{https://doi.org/10.1007/BF01466725}{\emph{Commun. Math. Phys.}
@@ -47,11 +209,6 @@ E.~Witten, \emph{{Topological Quantum Field Theory}},
   \href{https://doi.org/10.1007/BF01223371}{\emph{Commun. Math. Phys.}
   {\bfseries 117} (1988) 353}.
 
-\bibitem{Witten:1988hf}
-E.~Witten, \emph{{Quantum Field Theory and the Jones Polynomial}},
-  \href{https://doi.org/10.1007/BF01217730}{\emph{Commun. Math. Phys.}
-  {\bfseries 121} (1989) 351--399}.
-
 \bibitem{Segal:2002ei}
 G.~Segal, \emph{{The definition of conformal field theory}},  in
   \emph{{Symposium on Topology, Geometry and Quantum Field Theory}},
@@ -61,18 +218,6 @@ G.~Segal, \emph{{The definition of conformal field theory}},  in
 J.~Kock, \emph{Frobenius algebras and 2{D} topological quantum field theories},
   vol.~59 of \emph{London Mathematical Society Student Texts}.
 \newblock Cambridge University Press, Cambridge, 2004.
-
-\bibitem{MR1167165}
-T.~Kohno, \emph{Topological invariants for {$3$}-manifolds using
-  representations of mapping class groups. {I}},
-  \href{https://doi.org/10.1016/0040-9383(92)90016-B}{\emph{Topology}
-  {\bfseries 31} (1992) 203--230}.
-
-\bibitem{Knizhnik:1984nr}
-V.~Knizhnik and A.~Zamolodchikov, \emph{{Current Algebra and Wess-Zumino Model
-  in Two-Dimensions}},
-  \href{https://doi.org/10.1016/0550-3213(84)90374-2}{\emph{Nucl. Phys. B}
-  {\bfseries 247} (1984) 83--103}.
 
 \bibitem{Turaev:1992hq}
 V.~Turaev and O.~Viro, \emph{{State sum invariants of 3 manifolds and quantum
@@ -86,6 +231,18 @@ N.~Reshetikhin and V.~Turaev, \emph{{Invariants of three manifolds via link
   \href{https://doi.org/10.1007/BF01239527}{\emph{Invent. Math.} {\bfseries
   103} (1991) 547--597}.
 
+\bibitem{MR1167165}
+T.~Kohno, \emph{Topological invariants for {$3$}-manifolds using
+  representations of mapping class groups. {I}},
+  \href{https://doi.org/10.1016/0040-9383(92)90016-B}{\emph{Topology}
+  {\bfseries 31} (1992) 203--230}.
+
+\bibitem{Knizhnik:1984nr}
+V.~Knizhnik and A.~Zamolodchikov, \emph{{Current Algebra and Wess-Zumino Model
+  in Two-Dimensions}},
+  \href{https://doi.org/10.1016/0550-3213(84)90374-2}{\emph{Nucl. Phys. B}
+  {\bfseries 247} (1984) 83--103}.
+
 \bibitem{Hori:2003ic}
 K.~Hori, S.~Katz, A.~Klemm, R.~Pandharipande, R.~Thomas, C.~Vafa et~al.,
   \emph{{Mirror symmetry}}, vol.~1 of \emph{Clay mathematics monographs}.
@@ -96,11 +253,31 @@ E.~Witten, \emph{{Some comments on string dynamics}},  in \emph{{STRINGS 95:
   Future Perspectives in String Theory}}, pp.~501--523, 7, 1995,
   \href{https://arxiv.org/abs/hep-th/9507121}{{\ttfamily hep-th/9507121}}.
 
-\bibitem{Yagi:2016oum}
-J.~Yagi, \emph{{Branes and integrable lattice models}},
-  \href{https://doi.org/10.1142/S0217732317300038}{\emph{Mod. Phys. Lett. A}
-  {\bfseries 32} (2016) 1730003},
-  [\href{https://arxiv.org/abs/1610.05584}{{\ttfamily 1610.05584}}].
+\bibitem{Maldacena:1997re}
+J.~M. Maldacena, \emph{{The Large N limit of superconformal field theories and
+  supergravity}}, \href{https://doi.org/10.1023/A:1026654312961}{\emph{Int. J.
+  Theor. Phys.} {\bfseries 38} (1999) 1113--1133},
+  [\href{https://arxiv.org/abs/hep-th/9711200}{{\ttfamily hep-th/9711200}}].
+
+\bibitem{Gubser:1998bc}
+S.~Gubser, I.~R. Klebanov and A.~M. Polyakov, \emph{{Gauge theory correlators
+  from noncritical string theory}},
+  \href{https://doi.org/10.1016/S0370-2693(98)00377-3}{\emph{Phys. Lett. B}
+  {\bfseries 428} (1998) 105--114},
+  [\href{https://arxiv.org/abs/hep-th/9802109}{{\ttfamily hep-th/9802109}}].
+
+\bibitem{Witten:1998qj}
+E.~Witten, \emph{{Anti-de Sitter space and holography}},
+  \href{https://doi.org/10.4310/ATMP.1998.v2.n2.a2}{\emph{Adv. Theor. Math.
+  Phys.} {\bfseries 2} (1998) 253--291},
+  [\href{https://arxiv.org/abs/hep-th/9802150}{{\ttfamily hep-th/9802150}}].
+
+\bibitem{Aharony:1999ti}
+O.~Aharony, S.~S. Gubser, J.~M. Maldacena, H.~Ooguri and Y.~Oz, \emph{{Large N
+  field theories, string theory and gravity}},
+  \href{https://doi.org/10.1016/S0370-1573(99)00083-6}{\emph{Phys. Rept.}
+  {\bfseries 323} (2000) 183--386},
+  [\href{https://arxiv.org/abs/hep-th/9905111}{{\ttfamily hep-th/9905111}}].
 
 \bibitem{Lazaroiu:2000rk}
 C.~Lazaroiu, \emph{{On the structure of open - closed topological field theory
@@ -119,12 +296,6 @@ N.~Carqueville, \emph{{Lecture notes on 2-dimensional defect TQFT}},
   \href{https://doi.org/10.4064/bc114-2}{\emph{Banach Center Publ.} {\bfseries
   114} (2018) 49--84}, [\href{https://arxiv.org/abs/1607.05747}{{\ttfamily
   1607.05747}}].
-
-\bibitem{Costello:2013sla}
-K.~Costello, \emph{{Integrable lattice models from four-dimensional field
-  theories}}, \href{https://doi.org/10.1090/pspum/088/01483}{\emph{Proc. Symp.
-  Pure Math.} {\bfseries 88} (2014) 3--24},
-  [\href{https://arxiv.org/abs/1308.0370}{{\ttfamily 1308.0370}}].
 
 \bibitem{Bazhanov:2010kz}
 V.~V. Bazhanov and S.~M. Sergeev, \emph{{A Master solution of the quantum
@@ -145,17 +316,6 @@ V.~Spiridonov, \emph{{Elliptic beta integrals and solvable models of
   statistical mechanics}}, {\emph{Contemp. Math.} {\bfseries 563} (2012)
   181--211}, [\href{https://arxiv.org/abs/1011.3798}{{\ttfamily 1011.3798}}].
 
-\bibitem{Yamazaki:2012cp}
-M.~Yamazaki, \emph{{Quivers, YBE and 3-manifolds}},
-  \href{https://doi.org/10.1007/JHEP05(2012)147}{\emph{JHEP} {\bfseries 05}
-  (2012) 147}, [\href{https://arxiv.org/abs/1203.5784}{{\ttfamily 1203.5784}}].
-
-\bibitem{Yamazaki:2013nra}
-M.~Yamazaki, \emph{{New Integrable Models from the Gauge/YBE Correspondence}},
-  \href{https://doi.org/10.1007/s10955-013-0884-8}{\emph{J. Statist. Phys.}
-  {\bfseries 154} (2014) 895},
-  [\href{https://arxiv.org/abs/1307.1128}{{\ttfamily 1307.1128}}].
-
 \bibitem{Gaiotto:2012xa}
 D.~Gaiotto, L.~Rastelli and S.~S. Razamat, \emph{{Bootstrapping the
   superconformal index with surface defects}},
@@ -166,6 +326,12 @@ D.~Gaiotto, L.~Rastelli and S.~S. Razamat, \emph{{Bootstrapping the
 A.~Gadde and S.~Gukov, \emph{{2d Index and Surface operators}},
   \href{https://doi.org/10.1007/JHEP03(2014)080}{\emph{JHEP} {\bfseries 03}
   (2014) 080}, [\href{https://arxiv.org/abs/1305.0266}{{\ttfamily 1305.0266}}].
+
+\bibitem{Ito:2011ea}
+Y.~Ito, T.~Okuda and M.~Taki, \emph{{Line operators on {$S^{1} \times
+  \mathbb{R}^{3}$} and quantization of the Hitchin moduli space}},
+  \href{https://doi.org/10.1007/JHEP03(2016)085}{\emph{JHEP} {\bfseries 04}
+  (2012) 010}, [\href{https://arxiv.org/abs/1111.4221}{{\ttfamily 1111.4221}}].
 
 \bibitem{Maruyoshi:2016caf}
 K.~Maruyoshi and J.~Yagi, \emph{{Surface defects as transfer matrices}},
@@ -258,16 +424,6 @@ F.~Dolan and H.~Osborn, \emph{{Applications of the Superconformal Index for
   {\bfseries 818} (2009) 137--178},
   [\href{https://arxiv.org/abs/0801.4947}{{\ttfamily 0801.4947}}].
 
-\bibitem{Gaiotto:2009we}
-D.~Gaiotto, \emph{{$N=2$ dualities}},
-  \href{https://doi.org/10.1007/JHEP08(2012)034}{\emph{JHEP} {\bfseries 08}
-  (2012) 034}, [\href{https://arxiv.org/abs/0904.2715}{{\ttfamily 0904.2715}}].
-
-\bibitem{Gaiotto:2009hg}
-D.~Gaiotto, G.~W. Moore and A.~Neitzke, \emph{{Wall-crossing, Hitchin Systems,
-  and the WKB Approximation}},
-  \href{https://arxiv.org/abs/0907.3987}{{\ttfamily 0907.3987}}.
-
 \bibitem{Wyllard:2009hg}
 N.~Wyllard, \emph{{A(N-1) conformal Toda field theory correlation functions
   from conformal {$\mathcal{N} = 2$} SU(N) quiver gauge theories}},
@@ -306,13 +462,6 @@ Y.~Terashima and M.~Yamazaki, \emph{{SL(2,R) Chern-Simons, Liouville, and Gauge
   Theory on Duality Walls}},
   \href{https://doi.org/10.1007/JHEP08(2011)135}{\emph{JHEP} {\bfseries 08}
   (2011) 135}, [\href{https://arxiv.org/abs/1103.5748}{{\ttfamily 1103.5748}}].
-
-\bibitem{Terashima:2012cx}
-Y.~Terashima and M.~Yamazaki, \emph{{Emergent 3-manifolds from 4d
-  Superconformal Indices}},
-  \href{https://doi.org/10.1103/PhysRevLett.109.091602}{\emph{Phys. Rev. Lett.}
-  {\bfseries 109} (2012) 091602},
-  [\href{https://arxiv.org/abs/1203.5792}{{\ttfamily 1203.5792}}].
 
 \bibitem{Yagi:2013fda}
 J.~Yagi, \emph{{3d TQFT from 6d SCFT}},
@@ -420,10 +569,6 @@ J.~Yagi, \emph{{Surface defects and elliptic quantum groups}},
   (2017) 013}, [\href{https://arxiv.org/abs/1701.05562}{{\ttfamily
   1701.05562}}].
 
-\bibitem{Maruyoshi:2020cwy}
-K.~Maruyoshi, T.~Ota and J.~Yagi, \emph{{Wilson-'t Hooft lines as transfer
-  matrices}},  \href{https://arxiv.org/abs/2009.12391}{{\ttfamily 2009.12391}}.
-
 \bibitem{MR1645196}
 P.~Etingof and A.~Varchenko, \emph{Solutions of the quantum dynamical
   {Y}ang-{B}axter equation and dynamical quantum groups},
@@ -456,24 +601,11 @@ A.~Kapustin, \emph{{Wilson-'t Hooft operators in four-dimensional gauge
   {\bfseries 74} (2006) 025005},
   [\href{https://arxiv.org/abs/hep-th/0501015}{{\ttfamily hep-th/0501015}}].
 
-\bibitem{Pestun:2007rz}
-V.~Pestun, \emph{{Localization of gauge theory on a four-sphere and
-  supersymmetric Wilson loops}},
-  \href{https://doi.org/10.1007/s00220-012-1485-0}{\emph{Commun.Math.Phys.}
-  {\bfseries 313} (2012) 71--129},
-  [\href{https://arxiv.org/abs/0712.2824}{{\ttfamily 0712.2824}}].
-
 \bibitem{Gomis:2011pf}
 J.~Gomis, T.~Okuda and V.~Pestun, \emph{{Exact Results for 't Hooft Loops in
   Gauge Theories on $S^4$}},
   \href{https://doi.org/10.1007/JHEP05(2012)141}{\emph{JHEP} {\bfseries 05}
   (2012) 141}, [\href{https://arxiv.org/abs/1105.2568}{{\ttfamily 1105.2568}}].
-
-\bibitem{Ito:2011ea}
-Y.~Ito, T.~Okuda and M.~Taki, \emph{{Line operators on {$S^{1} \times
-  \mathbb{R}^{3}$} and quantization of the Hitchin moduli space}},
-  \href{https://doi.org/10.1007/JHEP03(2016)085}{\emph{JHEP} {\bfseries 04}
-  (2012) 010}, [\href{https://arxiv.org/abs/1111.4221}{{\ttfamily 1111.4221}}].
 
 \bibitem{Gaiotto:2008cd}
 D.~Gaiotto, G.~W. Moore and A.~Neitzke, \emph{{Four-dimensional wall-crossing
@@ -537,12 +669,6 @@ S.~Gukov, \emph{{Surface Operators}}, pp.~223--259.
 \newblock \href{https://arxiv.org/abs/1412.7127}{{\ttfamily 1412.7127}}.
 \newblock \vphantom{10.1007/978-3-319-18769-3-8}.
 
-\bibitem{Nekrasov:2002qd}
-N.~A. Nekrasov, \emph{{Seiberg-Witten prepotential from instanton counting}},
-  \href{https://doi.org/10.4310/ATMP.2003.v7.n5.a4}{\emph{Adv. Theor. Math.
-  Phys.} {\bfseries 7} (2003) 831--864},
-  [\href{https://arxiv.org/abs/hep-th/0206161}{{\ttfamily hep-th/0206161}}].
-
 \bibitem{Duistermaat:1982vw}
 J.~Duistermaat and G.~Heckman, \emph{{On the Variation in the cohomology of the
   symplectic form of the reduced phase space}},
@@ -553,12 +679,6 @@ J.~Duistermaat and G.~Heckman, \emph{{On the Variation in the cohomology of the
 M.~Atiyah and R.~Bott, \emph{{The Moment map and equivariant cohomology}},
   \href{https://doi.org/10.1016/0040-9383(84)90021-1}{\emph{Topology}
   {\bfseries 23} (1984) 1--28}.
-
-\bibitem{Nekrasov:2003rj}
-N.~Nekrasov and A.~Okounkov, \emph{{Seiberg-Witten theory and random
-  partitions}}, \href{https://doi.org/10.1007/0-8176-4467-9_15}{\emph{Prog.
-  Math.} {\bfseries 244} (2006) 525--596},
-  [\href{https://arxiv.org/abs/hep-th/0306238}{{\ttfamily hep-th/0306238}}].
 
 \bibitem{Hama:2011ea}
 N.~Hama, K.~Hosomichi and S.~Lee, \emph{{SUSY Gauge Theories on Squashed
@@ -596,29 +716,37 @@ J.~Gomis and B.~Le~Floch, \emph{{'t Hooft Operators in Gauge Theory from Toda
   11} (2011) 114}, [\href{https://arxiv.org/abs/1008.4139}{{\ttfamily
   1008.4139}}].
 
-\bibitem{Witten:1997sc}
-E.~Witten, \emph{{Solutions of four-dimensional field theories via $M$
-  theory}}, \href{https://doi.org/10.1016/S0550-3213(97)00416-1}{\emph{Nucl.
-  Phys. B} {\bfseries 500} (1997) 3--42},
-  [\href{https://arxiv.org/abs/hep-th/9703166}{{\ttfamily hep-th/9703166}}].
-
 \bibitem{Yagi:2014toa}
 J.~Yagi, \emph{{$\Omega$-deformation and quantization}},
   \href{https://doi.org/10.1007/JHEP08(2014)112}{\emph{JHEP} {\bfseries 08}
   (2014) 112}, [\href{https://arxiv.org/abs/1405.6714}{{\ttfamily 1405.6714}}].
 
-\bibitem{Costello:2018txb}
-K.~Costello and J.~Yagi, \emph{{Unification of integrability in supersymmetric
-  gauge theories}},  \href{https://arxiv.org/abs/1810.01970}{{\ttfamily
-  1810.01970}}.
+\bibitem{Hellerman:2011mv}
+S.~Hellerman, D.~Orlando and S.~Reffert, \emph{{String theory of the Omega
+  deformation}}, \href{https://doi.org/10.1007/JHEP01(2012)148}{\emph{JHEP}
+  {\bfseries 01} (2012) 148},
+  [\href{https://arxiv.org/abs/1106.0279}{{\ttfamily 1106.0279}}].
 
-\bibitem{Costello:2013zra}
-K.~Costello, \emph{{Supersymmetric gauge theory and the Yangian}},
-  \href{https://arxiv.org/abs/1303.2632}{{\ttfamily 1303.2632}}.
+\bibitem{Kels:2015bda}
+A.~P. Kels, \emph{{New solutions of the star-triangle relation with discrete
+  and continuous spin variables}},
+  \href{https://doi.org/10.1088/1751-8113/48/43/435201}{\emph{J. Phys. A}
+  {\bfseries 48} (2015) 435201},
+  [\href{https://arxiv.org/abs/1504.07074}{{\ttfamily 1504.07074}}].
 
-\bibitem{Costello:2017dso}
-K.~Costello, E.~Witten and M.~Yamazaki, \emph{{Gauge Theory and Integrability,
-  I}},  \href{https://arxiv.org/abs/1709.09993}{{\ttfamily 1709.09993}}.
+\bibitem{Kels:2017toi}
+A.~P. Kels and M.~Yamazaki, \emph{{Elliptic hypergeometric sum/integral
+  transformations and supersymmetric lens index}},
+  \href{https://doi.org/10.3842/SIGMA.2018.013}{\emph{SIGMA} {\bfseries 14}
+  (2018) 013}, [\href{https://arxiv.org/abs/1704.03159}{{\ttfamily
+  1704.03159}}].
+
+\bibitem{Kels:2017vbc}
+A.~P. Kels and M.~Yamazaki, \emph{{Lens elliptic gamma function solution of the
+  Yang-Baxter equation at roots of unity}},
+  \href{https://doi.org/10.1088/1742-5468/aaa8fd}{\emph{J. Stat. Mech.}
+  {\bfseries 1802} (2018) 023108},
+  [\href{https://arxiv.org/abs/1709.07148}{{\ttfamily 1709.07148}}].
 
 \bibitem{MR1846786}
 V.~P. Spiridonov, \emph{On the elliptic beta function},

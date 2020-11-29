@@ -22,23 +22,23 @@ It turns out that a surface defect is identified with the transfer matrix
 constructed from the L-operator of Sklyanin or Derkachov-Spiridonov type.
 
 The structure of this section is as follows (see figure \ref{fig:structure_surface}).
-(1) We first apply to the brane tilings the general prescription to construct
+We first apply to the brane tilings the general prescription to construct
 the correspondence between supersymmetric gauge theory
 and integrable lattice model developed in section \ref{sec:integrability_from_TQFT}.
 Brane tiling technique allows us to study quiver gauge theories in a systematic way,
 and taking the four-manifold to be $S^{1}\times S^{3}$,
 on which quiver gauge theories are defined, the path integral of the
 twisted partition function of the theory computes the supersymmetric index.
-(2) For such a case, we will obtain a dictionary between supersymmetric gauge theory and
+For such a case, we will obtain a dictionary between supersymmetric gauge theory and
 integrable lattice model, which is called \emph{Gauge/YBE correspondence}.
-(3) The brane tiling construction can be mapped into the setups of the so-called class-$\CS$ theories.
+The brane tiling construction can be mapped into the setup of the so-called class-$\CS$ theories.
 We proceed to the introduction of surface defects in the simplest case of the theories of class-$\CS$.
-(4) Then we find that the surface defects act on the supersymmetric index by
+Then we find that the surface defects act on the supersymmetric index by
 difference operators \eqref{eq:surface_defect_action} and they are identified with the transfer matrices
 of the corresponding integrable lattice model \eqref{eq:transfer_fromL}, which is the most important
 relation of this section:
 \begin{equation}
-  \mathfrak{S}_{(0,1)} = \mathrm{Tr}\left( L^{\diamondsuit}(d, (c,b)) \right),
+  \mathfrak{S}_{(0,1)} = \mathrm{Tr}\left( L^{\diamond}(d, (c,b)) \right),
 \end{equation}
 with an appropriate parameter identification.
 
@@ -80,7 +80,7 @@ with an appropriate parameter identification.
 \label{sec:tiling_latticemodel}
 
 Let us begin with some generalities, before restricting ourselves to the case of $S^1\times S^3$.
-In order to give the general argument of the correspondence,
+In order to give the general statement of the correspondence,
 we make a brief review of the systematic brane construction of quiver gauge theories
 called \emph{brane tilings}. For more details, the reader should be
 referred to the original papers and the excellent reviews
@@ -1017,9 +1017,6 @@ in terms of the elliptic gamma function
   .
 \end{equation}
 %with $p=e^{-\beta+\iu\theta_{p}}$ and $q=e^{-\beta+\iu\theta_{q}}$.
-To write down the index, let $a_{i}=e^{2\pi \iu u_{i}}$ be the fugacity
-for the flavor group $\U(1)_i$ associated with the $i$th zig-zag path.
-Also, we use the Pochhammar symble $(z;q)_{\infty}=\prod_{k=0}^{\infty}\left(1-q^{k}z\right)$.
 For useful formulas for the elliptic gamma function and
 relations with theta functions, see appendix \ref{sec:special_functions}.
 
@@ -1054,6 +1051,11 @@ The integration contour is the unit circle for each fugacity.
 %\subsubsection*{Index on $S^{1}\times S^{3}$}
 
 
+
+The index $\mathcal{I}_{\mathcal{T}}$ of a four-dimensional $\mathcal{N}=1$ theory
+$\mathcal{T}$ with flavor group $\SU(N)_{z}$ is a symmetric meromorphic
+function of the fugacities $z_{1},\ldots,z_{N}$. This symmetric property
+reflects the gauge invariance of the index.
 Given a theory $\mathcal{T}$ with flavor group $\SU(N)_{w}$ and another
 theory $\mathcal{T}'$ with flavor group $\SU(N)_{w'}$, we can couple
 them to obtain a new theory $\left(\mathcal{T}\times\mathcal{T}'\right)/\SU(N)_{z}$
@@ -1061,13 +1063,7 @@ by gauging the diagonal subgroup $\SU(N)_{z}$ of $\SU(N)_{w}\times \SU(N)_{w'}$.
 To construct a quiver gauge theory, we take a number of bifundamental
 chiral multiplets and couple them by gauging all or part of the flavor
 nodes.
-
-
-
-The index $\mathcal{I}_{\mathcal{T}}$ of a four-dimensional $\mathcal{N}=1$ theory
-$\mathcal{T}$ with flavor group $\SU(N)_{z}$ is a symmetric meromorphic
-function of the fugacities $z_{1},\ldots,z_{N}$. This symmetric property
-reflects the gauge invariance of the index. At the level of the index,
+At the level of the index,
 gauging of a flavor group is realized by introducing the corresponding
 vector multiplet and integration over its fugacities. For example,
 \begin{equation}
@@ -1085,10 +1081,13 @@ of the vector multiplet is given by elliptic gamma functions:
   \ =
         \mathcal{I}_V(z;p,q)
         =  \frac{(p;p)_{\infty}^{N-1}(q;q)_{\infty}^{N-1}}{N!}
-              \prod_{\substack{I,J=1 \\ I\neq J}}^{N}\frac{1}{\Gamma(z_{I}/z_{J};p,q)}.
+              \prod_{\substack{I,J=1 \\ I\neq J}}^{N}\frac{1}{\Gamma(z_{I}/z_{J};p,q)},
 \end{equation}
 %See appendix ?? for the definition of the elliptic gamma function
 %and various identities it satisfies.
+where we use the Pochhammar symble $(z;q)_{\infty}=\prod_{k=0}^{\infty}\left(1-q^{k}z\right)$.
+Also, let $a_{i}=e^{2\pi \iu u_{i}}$ be the fugacity
+for the flavor group $\U(1)_i$ associated with the $i$th zig-zag path.
 Here and in the following, we are often using a quiver to mean the index of the
 corresponding theory.
 From now on we fix $p,\,q$ and
@@ -1112,7 +1111,7 @@ This function satisfies
     \mathcal{I}_{B}(z,w;a)  \mathcal{I}_{B}  \left(w,z;\frac{pq}{a}\right)
     =  1.
 \end{equation}
-This identity corresponds the unitarity relation \eqref{eq:another_unitarity}
+This identity corresponds to the unitarity relation \eqref{eq:another_unitarity}
 and says that as far as the index is concerned, we can
 cancel a pair of arrows making a loop if their R-charges add up to
 $2$ and flavor charges add up to $0$:
@@ -1351,14 +1350,18 @@ Composition of R-matrices     &  Gauging  \tabularnewline
 
 
 
+
+
 \subsection{Class-$\CS$ theories in brane tilings}
 
 In section \ref{sec:surface_defects}, we introduce surface defects in
 theories of class-$\CS$ and compare them with transfer matrices of
 an integrable lattice model.
-As a preparation, here we review some basic facts of class-$\CS$ theory
+As a preparation, we here review some basic facts of class-$\CS$ theory
 and make a map from the brane tiling setups considered above
 to the class-$\CS$ language.
+
+
 
 
 
@@ -1724,12 +1727,10 @@ Derkachov and Spiridonov \cite{Derkachov:2012iv}.
 
 
 \begin{comment}
-
 Here we first review the computation for the surface
 defect labeled with the fundamental representation of $\SU(2)$ based
 on the method developed in \cite{Gaiotto:2012xa}, and show that the result agrees
 with the prediction from the transfer matrix \eqref{eq:proposal}.
-
 \end{comment}
 
 
@@ -1738,14 +1739,14 @@ with the prediction from the transfer matrix \eqref{eq:proposal}.
 
 \subsubsection{Surface defects and L-operators}
 
-Now we introduce a half-BPS surface defect, and put it on $S^{1} \times S^{1} \subset S^1 \times S^3$.
+Now let us introduce a half-BPS surface defect, and put it on $S^{1} \times S^{1} \subset S^1 \times S^3$.
 The second $S^{1}$ factor may be taken to be either $\{\zeta_{1}=0\}$
 or $\{\zeta_{2}=0\}$ in the parametrization $|\zeta_{1}|^{2}+|\zeta_{2}|^{2}=1$
 of $S^{3}$. These are the circles in $S^{3}$ that are left invariant
 under the action of the isometry group $\U(1)_{p} \times \U(1)_{q}$.
 As explained in section \ref{sec:defects}, the index in the presence of the surface
 defect is again given by a correlation function of line operators
-in a 2d TQFT on $\Sigma$. The correlator now contains a new line
+in a two-dimensional TQFT on $\Sigma$. The correlator now contains a new line
 operator created by the D3-brane ending on the D5-branes, which was
 denoted by dashed line:
 \begin{equation}
@@ -1829,7 +1830,7 @@ may be represented as an $k \times k$ matrix, whose entries are difference
 operators acting on the fugacities for the flavor node associated
 with the $\left( N,0 \right)$ region below the dashed line. It satisfies
 the RLL relation with the R-matrix \eqref{eq:R_diamond};
-which we denote by $R^{\diamondsuit}$.
+which we denote by $R^{\diamond}$.
 This R-matrix
 defines the Bazhanov-Sergeev model of type $\SU(N)$ \cite{Bazhanov:2010kz,Bazhanov:2011mz,Yamazaki:2012cp}.
 
@@ -1860,26 +1861,26 @@ are on an equal footing, and in fact related in a simple way.
 So we focus on the transfer matrix in the $( N,-1 )$
 background.
 
-We denote the L-operator in this case by $L^{\diamondsuit}$ since
+We denote the L-operator in this case by $L^{\diamond}$ since
 it is the operator that arises when a dashed line is inserted in a
 brane tiling model described by the diamond quiver constructed from
 the R-operator \eqref{eq:R_diamond}. In the situation under consideration,
 the gauge group of a brane tiling model is a product of $\SU(2)$ groups,
 and the surface defect is labeled by $( R_{1},R_{2} )=( \emptyset, \ydiagram{1} )$;
 the D3-brane wraps the circle $\{\zeta_{2}=0\}$ in $S^{3}$. Let
-$V^{\diamondsuit}$ be the space of meromorphic functions $f(z)$
+$V^{\diamond}$ be the space of meromorphic functions $f(z)$
 such that $f(z)=f(1/z)$, and $W=\mathbb{C}^{2}$. Then we can represent
-$L^{\diamondsuit}:W\otimes V^{\diamondsuit}\rightarrow V^{\diamondsuit}\otimes W$
+$L^{\diamond}:W\otimes V^{\diamond}\rightarrow V^{\diamond}\otimes W$
 as a $2\times2$ matrix whose entries are operators acting on functions
-in $V^{\diamondsuit}$. The R-matrix $\mathcal{R}_{ij}^{\diamondsuit}:W_{i}\otimes W_{j}\rightarrow W_{j}\otimes W_{i}$
+in $V^{\diamond}$. The R-matrix $\mathcal{R}_{ij}^{\diamond}:W_{i}\otimes W_{j}\rightarrow W_{j}\otimes W_{i}$
 is just a $4\times4$ matrix.
 (Here all the $W_i$ are $\C^2$.)
 These operators, together with the R-operator
-$R^{\diamondsuit}$ of Bazhanov-Sergeev type,
+$R^{\diamond}$ of Bazhanov-Sergeev type,
 satisfy the Yang-Baxter equations and RLL relations.
 
 On the other hand, in the context of integrable lattice models Sklyanin
-constructed an L-operator $L^{\mathrm{S}}:W\otimes V^{\diamondsuit}\rightarrow V^{\diamondsuit}\otimes W$
+constructed an L-operator $L^{\mathrm{S}}:W\otimes V^{\diamond}\rightarrow V^{\diamond}\otimes W$
 that solves the RLL relation \cite{MR684124}
 \begin{equation}
     \mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2})
@@ -1893,7 +1894,7 @@ that solves the RLL relation \cite{MR684124}
 with Baxter's R-matrix $\mathcal{R}_{ij}^{\mathrm{B}}:W_{i}\otimes W_{j}\rightarrow W_{j}\otimes W_{i}$
 for the eight-vertex model \cite{Baxter:1971cr,Baxter:1972hz}. Here $u_{i}$
 is a complex spectral parameter for $W_{i}$, and $(\nu,l)$
-is a pair of complex spectral parameters for $V^{\diamondsuit}$.
+is a pair of complex spectral parameters for $V^{\diamond}$.
 Baxter's R-matrix solves the Yang-Baxter equation
 \begin{equation}
     \mathcal{R}_{12}^{\mathrm{B}}(u_{1},u_{2})
@@ -1916,7 +1917,7 @@ unit matrix, $\theta_{a+1}(u)=\theta_{a+1}(u|\tau)$ are the Jacobi
 theta functions, and $\tau,\,\eta$ are complex parameters of the
 eight-vertex model. Sklyanin's L-operator is defined by
 \begin{equation}
-    L^{\mathrm{S}}\left(u,\left(\nu,l\right)\right)
+    L^{\mathrm{S}}(u,(\nu,l))
       =  P\sum_{a=0}^{3}w_{a}(u+\eta)  \sigma_{a}  \otimes  \mathbf{S}_{a}^{(l)}.
 \end{equation}
 The operators $\mathbf{S}_{a}^{(l)}$ act on meromorphic functions
@@ -1929,7 +1930,7 @@ $f(\zeta)$ as difference operators:
 They generate the so-called Sklyanin algebra \cite{MR725414}.
 
 In \cite{Derkachov:2012iv}, Derkachov and Spiridonov constructed
-an R-operator $R_{ij}^{\mathrm{DS}}:V_{i}^{\diamondsuit}\otimes V_{j}^{\diamondsuit}\rightarrow V_{j}^{\diamondsuit}\otimes V_{i}^{\diamondsuit}$
+an R-operator $R_{ij}^{\mathrm{DS}}:V_{i}^{\diamond}\otimes V_{j}^{\diamond}\rightarrow V_{j}^{\diamond}\otimes V_{i}^{\diamond}$
 that satisfies the RLL relation
 \begin{multline}
     R_{12}^{\mathrm{DS}}((\nu_{1},l_{1}),(\nu_{2},l_{2}))
@@ -1940,7 +1941,7 @@ that satisfies the RLL relation
         L_{2}^{\mathrm{DS}}(u,(\nu_{2},l_{2}))
         R_{12}^{\mathrm{DS}}((\nu_{1},l_{1}),(\nu_{2},l_{2})),
 \end{multline}
-The L-operator $L^{\mathrm{DS}}:W\otimes V^{\diamondsuit}\to V^{\diamondsuit}\otimes W$
+The L-operator $L^{\mathrm{DS}}:W\otimes V^{\diamond}\to V^{\diamond}\otimes W$
 is essentially Sklyanin's L-operator, differing only by an automorphism
 of the Sklyanin algebra:
 \begin{equation}
@@ -1951,12 +1952,12 @@ of the Sklyanin algebra:
 This L-operator again satisfies the RLL relation with Baxter's R-matrix
 $\mathcal{R}^{\mathrm{B}}$. At this point, what is important is that
 Derkachov and Spiridonov show their R-operator $R^{\mathrm{DS}}$ is precisely the R-operator
-for the diamond quiver in the brane tiling model $R^{\diamondsuit}$,
+for the diamond quiver in the brane tiling model $R^{\diamond}$,
 that is,
 \begin{equation}
     R_{ij}^{\mathrm{DS}}((\nu_{i},l_{i}),(\nu_{j},l_{j}))
       =
-        R_{ij}^{\diamondsuit}((a_{i},b_{i}),(a_{j},b_{j})),
+        R_{ij}^{\diamond}((a_{i},b_{i}),(a_{j},b_{j})),
 \end{equation}
 with the variables $\zeta$ and $z$ are related by $z=\exp(2\pi \iu \zeta)$
 and the parameters identified as
@@ -1968,7 +1969,7 @@ and the parameters identified as
 Based on these observations, a natural counterpart of the L-operator for the
 diamond quiver
 \begin{equation}
-    L^{\diamondsuit}(c,(a,b))
+    L^{\diamond}(c,(a,b))
     =\
       \begin{tikzpicture}[scale=0.8, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
 
@@ -1984,9 +1985,9 @@ is the L-operator of Derkachov and Spiridonov:
 \begin{equation}
     L^{\mathrm{DS}}(u,(\nu,l))
       =
-        L^{\diamondsuit}(c,(a,b)).
+        L^{\diamond}(c,(a,b)).
 \end{equation}
-Requiring $L^{\diamondsuit}\left(c,\left(a,b\right)\right)=L^{\diamondsuit}\left(1,\left(a/c,b/c\right)\right)$
+Requiring $L^{\diamond}(c,(a,b))=L^{\diamond}(1,(a/c,b/c))$
 fixes the relation between the two spectral parameters for the dashed
 line to be
 \begin{equation}
@@ -1994,10 +1995,10 @@ line to be
 \end{equation}
 
 For the computation of the transfer matrix, we exploit the fact that
-$L^{\diamondsuit}$ really consists of three parts separated by zig-zag
+$L^{\diamond}$ really consists of three parts separated by zig-zag
 paths:
 \begin{equation}
-    L_{i}^{\diamondsuit}(c,(a_{i},b_{i}))
+    L_{i}^{\diamond}(c,(a_{i},b_{i}))
       = \
     \begin{tikzpicture}[scale=0.8, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
         \def\shift{0.3cm}
@@ -2014,10 +2015,10 @@ paths:
     \quad .
   \label{eq:pieceL}
 \end{equation}
-Reflecting this structure, $L^{\diamondsuit}$ can be expressed in
+Reflecting this structure, $L^{\diamond}$ can be expressed in
 the following factorized form:
 \begin{equation}
-    L_{i}^{\diamondsuit}(c,(a_{i},b_{i}))
+    L_{i}^{\diamond}(c,(a_{i},b_{i}))
       =
         B\left(z_{i};\frac{b_{i}}{c}\right)\cdot\varphi(z_{i})
           \frac{1}{\theta_{1}(z_{i}^{2})}
@@ -2094,9 +2095,9 @@ and using formulas in the appendix, we obtain the following formula
 for the transfer matrix:
 \begin{multline}
     \mathrm{Tr}_{W}\left(
-      L_{n}^{\diamondsuit}(c,(a_{n},b_{n}))
+      L_{n}^{\diamond}(c,(a_{n},b_{n}))
       \circ_{W}  \cdots  \circ_{W}
-      L_{1}^{\diamondsuit}(c,(a_{1},b_{1}))
+      L_{1}^{\diamond}(c,(a_{1},b_{1}))
     \right)  \\
     =
       \sum_{s_{1}=\pm1}\cdots\sum_{s_{n}=\pm1}
@@ -2115,7 +2116,7 @@ In this formula we have dropped off an overall constant independent
 of the spectral parameters. At any rate, the overall normalization
 of the L-operators is irrelevant and cannot be determined by the RLL relations. The
 RLL relations actually admit more degrees of freedom than just the
-overall normalization. For example, we can multiply $L^{\diamondsuit}(c,(a,b))$
+overall normalization. For example, we can multiply $L^{\diamond}(c,(a,b))$
 by a function $f(c,(a,b))$ of its spectral parameters, and the new
 one still solves the RLL relations. In section \ref{sec:comparison} we will
 check the correspondence by comparing \eqref{eq:proposal} with independent computations in
@@ -2260,7 +2261,7 @@ As $\rho\to 1$, the first pair of poles collide and pinch
 the integration contour, and the integral diverges. Likewise, the
 second pair also collide in this limit. The pole of the integral in
 the $\rho$-plane arises from the contributions from these poles in
-$w$. Using formula \eqref{eq:gamma_residue}, we find that the contribution from
+$w$. Using the formula \eqref{eq:gamma_residue}, we find that the contribution from
 the pole at $w=\rho z$ is
 \begin{equation}
     \frac{1}{2}
@@ -2560,7 +2561,7 @@ with some spectral parameter $d$, drawn in the picture as well. It acts
 on the lattice model as the transfer matrix \eqref{eq:proposal},
 constructed from a single L-operator
 \begin{equation}
-    \mathrm{Tr}\left(L^{\diamondsuit}(d,(c,b))\right)
+    \mathrm{Tr}\left(L^{\diamond}(d,(c,b))\right)
       =
         \sum_{s=\pm1}\frac{1}{\theta(z^{2s})}
         \theta\left(\sqrt{\frac{p}{q}}\frac{bc}{d^{2}}\right)
