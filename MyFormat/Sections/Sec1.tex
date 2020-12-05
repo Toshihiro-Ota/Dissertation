@@ -22,8 +22,8 @@ A breakthrough was initiated by the discovery of exact solutions to
 the low energy effective action of certain $\CN=2$ supersymmetric gauge
 theories in the pioneering works by Seiberg and Witten \cite{Seiberg:1994rs,Seiberg:1994aj}.
 In their work, a Riemann surface and a differential on it, today such a pair is referred to as
-``Seiberg-Witten curve,'' played a significant role, and it brought to us
-rich connections to two-dimensional integrable systems \cite{Gorsky:1995zq,Martinec:1995by,Donagi:1995cf}.
+``Seiberg-Witten curve'' and ``Seiberg-Witten differential,'' played a significant role, and it brought to us
+rich connections to two-dimensional integrable systems \cite{Gorsky:1995zq,Martinec:1995by,Donagi:1995cf,Itoyama:1995nv}.
 It was also the first time that the techniques in algebraic geometry were introduced
 to theoretical physics.
 
@@ -35,11 +35,11 @@ calculation of the quantum corrections to a certain two-parameter
 deformation of the prepotential to all orders in the instanton
 expansion \cite{Nekrasov:2002qd,Nekrasov:2003rj,Nakajima:2003pg}.
 
-Soon after these prominent works, there were two more important developments in the study of
+Soon after these prominent works, there were two more major developments in the study of
 supersymmetric gauge theories.
-The first is that Pestun formulated so-called the method of supersymmetric localization \cite{Pestun:2007rz},
-which is a systematic way to exactly compute partition functions and observables
-for a class of supersymmetric gauge theories.
+First, Pestun formulated so-called the method of supersymmetric localization \cite{Pestun:2007rz},
+which is a systematic way to exactly compute partition functions and a class of observables
+for supersymmetric gauge theories on $S^4$.
 Based on Pestun's result, another progress was achieved by
 Alday, Gaiotto and Tachikawa \cite{Alday:2009aq}, which
 is now well known as AGT correspondence.
@@ -63,8 +63,8 @@ In fact, it is suggested that the AGT correspondence and many related developmen
 be understood as consequences of the integrable structure in
 supersymmetric field theories \cite{Gaiotto:2009hg,Teschner:2010je}.
 In some cases concrete correspondences between
-supersymmetric gauge theory and integrable system were established,
-e.g.~\cite{Nekrasov:2009uh,Nekrasov:2009ui,Nekrasov:2009rc,Yamazaki:2012cp,Terashima:2012cx,Yamazaki:2013nra}.
+supersymmetric gauge theory and integrable system were established and investigated,
+e.g.~\cite{Nekrasov:2009uh,Nekrasov:2009ui,Nekrasov:2009rc,Nekrasov:2010ka,Nekrasov:2011bc,Yamazaki:2012cp,Terashima:2012cx,Yamazaki:2013nra,Nekrasov:2015wsu}.
 Then, we come up with two questions:
 \begin{itemize}
     \item Why is there an integrable system behind supersymmetric gauge theory?
@@ -150,8 +150,8 @@ has $O(N^4)$ components.
 On the other hand, the Yang-Baxter equation, associated with diagrams with six boundary lines,
 has $O(N^6)$ equations.
 Even if one considers the simplest nontrivial case, $N=2$, the R-matrix has $16$ components
-while it is constrained by $64$ equations.
-The larger $N$ becomes, this over-counting problem gets severer.
+while they are constrained by $64$ equations.
+The larger $N$ becomes, the severer this over-counting problem gets.
 Thus, at first sight it seems hopeless that we could have a solution to the Yang-Baxter equation
 \eqref{eq:intro_ybe},
 but we know there exist solutions as well.
@@ -198,7 +198,13 @@ of quiver gauge theories and the partition function of integrable lattice models
 In fact, in this correspondence there is one-by-one mapping
 between quiver gauge theories and integrable lattice models,
 such as an identification between the quiver diagram and the lattice of an integrable spin system;
-see figure \ref{fig:intro_gauge_ybe}.
+see figure \ref{fig:intro_gauge_ybe}.%
+%
+\footnote{More specifically, the index for vector and chiral multiplets
+in quiver gauge theories are identified with the Boltzmann weights for
+self- and nearest-neighbor interaction of spin systems, respectively.
+We will show an explicit dictionary in section \ref{sec:tiling_latticemodel} of the main text.}
+%
 %
 %FIGURE
 \begin{figure}
@@ -273,6 +279,9 @@ It is again a topological quantum field theory equipped with line operators
 localized in extra dimensions.
 
 
+Actually, four-dimensional Chern-Simons theory can eventually be
+embedded into string theory setup \cite{Costello:2018txb} and
+both approaches above are related to each other.
 Based on these observations, we may conclude that the answer to the question
 ``why is there an integrable system behind supersymmetric gauge theory'' is
 that we have a topological quantum field theory with line operators.
@@ -287,18 +296,20 @@ The aim of this thesis is to give a unified picture of the above two approaches
 using branes in string theory,
 and present a more elaborate description of the correspondence between
 supersymmetric gauge theories and integrable lattice models.
-By doing so, we can proceed to introducing further defect operators in
+In doing so, we proceed to introducing further defect operators in
 supersymmetric gauge theories. Then we study its counterpart in integrable
 lattice model side.
 The introduction of such additional defects enriches our correspondence,
 and hopefully provide an insight into a new integrable system.
 We will mostly work in the second approach, namely the correspondence between
 quiver gauge theory and integrable lattice model.
-Both of our approach and that of four-dimensional Chern-Simons theory can eventually be
-embedded into string theory setup \cite{Costello:2018txb}.
+%Both of our approach and that of four-dimensional Chern-Simons theory can eventually be
+%embedded into string theory setup \cite{Costello:2018txb}.
 %The both approaches are eventually embedded into string theory setup \cite{Costello:2018txb}.
-We will make comments on that aspect
-and clarify the relationship between the two from the perspective of string dualities.
+We finally make comments on how our formulation of the correspondence is related to the setup of
+four-dimensional Chern-Simons theory
+%and clarify the relationship between the two
+from the perspective of string dualities.
 %four-dimensional Chern-Simons theory
 %and our construction of the correspondences.
 
@@ -316,9 +327,9 @@ Section \ref{sec:integrability} is devoted to a collection of basic facts regard
 topological quantum field theory, integrable lattice model, and
 their realization by brane construction in string theory.
 In section \ref{sec:preliminaries}, we briefly review the natural requirements for quantum field theory
-and introduce Atiyah's axioms of topological quantum field theory. Then we introduce lattice model as
+and introduce Atiyah's axioms of topological quantum field theory (TQFT). Then we introduce lattice model as
 a discrete version of quantum field theory in section \ref{sec:lattice_model}.
-Under these preparations, in section \ref{sec:integrability_from_TQFT}
+With these preparations, in section \ref{sec:integrability_from_TQFT}
 we show that line operators in a topological quantum field theory and
 integrable lattice models turn out to be equivalent through branes in string theory.
 In section \ref{sec:surface}, we get into a concrete setup of the correspondence
@@ -331,8 +342,8 @@ theories on $S^1\times \R^3$, which is based on the author's work \cite{Maruyosh
 Such line defects are represented as half-BPS Wilson-'t Hooft lines in gauge theories and
 identified with transfer matrices of trigonometric type.
 A variant of the AGT correspondence implies an identification of the transfer matrices with
-Verlinde operators in Toda conformal field theory, which we also verify.
-We make comments in section \ref{sec:branes} how these field theory setups are
+Verlinde line operators in Toda conformal field theory, which we also verify.
+We clarify in section \ref{sec:branes} how these field theory setups are
 related to four-dimensional Chern-Simons theory via embedding into string theory and dualities.
 We conclude the thesis with some future directions in section \ref{sec:discussion}.
 

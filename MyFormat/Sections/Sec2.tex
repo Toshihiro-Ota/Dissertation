@@ -10,7 +10,7 @@
 \label{sec:integrability}
 
 
-Throughout this thesis, we discuss correspondences between
+Throughout the thesis, we discuss correspondences between
 a certain class of supersymmetric gauge theories and integrable lattice
 models, which are schematically written as
 \begin{equation}
@@ -214,7 +214,7 @@ $H$ is called the Hamiltonian of the system, acting on the space
 of states $\mathcal{H}_{N}$. If one considers a manifold
 with Lorentzian metric, $U(T)$ is represented as
 \begin{equation}
-  U(T)  =  \exp (-iTH),
+  U(T)  =  \exp (-\iu TH),
 \end{equation}
 and then the interval $I$ is regarded as ``physical time.''
 
@@ -316,19 +316,19 @@ originate from Witten's proposals of topological field theories
 works, Atiyah and Segal axiomatized the topological QFT,%
 %
 \footnote{Precisely speaking, what Segal axiomatized is the definition of conformal
-field theories \cite{Segal:2002ei}. Segal's definition of CFT is categorical
+field theories \cite{Segal:2002ei}. Segal's definition of CFT is functorial
 and quite similar to Atiyah's TQFT.
 For the geometric aspects of CFT, see e.g.~\cite{Friedan:1986ua}. }
 %
 and happily this also has brought to us a numerous amount of applications
-both to physics and to pure mathematics. For instance, ($1+1$)-dimensional
+both to physics and to pure mathematics. For instance, two-dimensional
 topological QFTs are known to be functorially equivalent to the category of commutative
-Frobenius algebras \cite{MR2037238}. $(2+1)$-dimensional Chern-Simons theory for a
+Frobenius algebras \cite{MR2037238}. three-dimensional Chern-Simons theory for a
 compact Lie group $G$ is rigorously constructed by
 Turaev-Viro and Reshetikhin-Turaev using quantum groups \cite{Turaev:1992hq, Reshetikhin:1991tc},
 and Kohno \cite{MR1167165} using
 the monodromy representation of Knizhnik-Zamolodchikov equation \cite{Knizhnik:1984nr}.
-$(2+1)$-dimensional Chern-Simons theory has many
+three-dimensional Chern-Simons theory has many
 applications to knot or link invariants and three-manifold invariants.
 Furthermore, both 2d and 3d TQFTs have applications to the mirror symmetry,
 or topological string theory (see e.g.~\cite{Hori:2003ic}), those have led to fruitful interactions
@@ -414,14 +414,14 @@ superconformal field theories (SCFTs) \cite{Witten:1995zh}.
 We start from a ten-dimensional string theory called the
 type IIB string theory, which roughly assigns the partition
 function $Z_{\mathrm{IIB}}(\tilde{M})$ to a ten-dimensional
-manifold $\tilde{M}$. Pick a finite subgroup $\Gamma_{G}$ of $\SU(2)$
+manifold $\tilde{M}$. Pick a finite subgroup $\Gamma_{G}$
 of type $G=A_{n},\,D_{n}$ or $E_{6,7,8}$. We define a six-dimensional
 QFT $Q_{G}$ by its partition function for a six-dimensional manifold
 $M$,
 \begin{equation}
 Z_{Q_{G}}(M)  =  Z_{\mathrm{IIB}}\big(M\times\mathbb{C}^{2}/\Gamma_{G}\big).
 \end{equation}
- They are examples of six-dimensional $\mathcal{N}=(2,0)$
+They are examples of six-dimensional $\mathcal{N}=(2,0)$
 superconformal QFTs. These theories are known not to have a Lagrangian
 description, and hence their partition function cannot be obtained from
 the path integral formulation. They have another description via M-theory,
@@ -458,10 +458,10 @@ see e.g.~\cite{Aharony:1999ti}.
 \label{sec:Atiyah_TQFT}
 
 As already mentioned some times, in this thesis TQFT in extra dimensions
-plays a crucial role to realize the correspondence between supersymmetric
+plays a central role to realize the correspondence between supersymmetric
 gauge theories and integrable lattice models. So now let us pause
 here and introduce the Atiyah's axioms of TQFT \cite{Atiyah:1989vu}. We first list the
-axioms, and right then give their physical meanings. Readers will
+axioms, and right then give their physical meanings. The reader will
 notice that most of these axioms are physically quite natural and
 actually mathematical rephrasing of the properties that $Z$ should
 satisfy, which we have already seen.
@@ -585,7 +585,7 @@ on it is factorized to a tensor product:
 \begin{equation}
   \mathcal{H}_{N_{1}\sqcup N_{2}}  =  \mathcal{H}_{N_{1}}  \otimes  \mathcal{H}_{N_{2}}.
 \end{equation}
-This is really natural in the physical point of view. This condition
+This is really natural in the physics point of view. This condition
 means that if we have two physical systems defined on spatially disjoint
 union $N_{1}\sqcup N_{2}$, then the space of states is represented
 as the tensor product of each state space. Also, from the conditions
@@ -624,7 +624,7 @@ to the time evolution operator
   Z\big(\tilde{M}\big) := e^{-tH} : \mathcal{H}_{N_{1}} \longrightarrow \mathcal{H}_{N_{2}}.
 \end{equation}
 Since canonical quantization is a procedure to make an assignment
-of Hilbert spaces and the time evolution on them, as we saw in QM,
+of Hilbert spaces and the time evolution among them, as we saw in QM,
 this association of linear maps gives the other half of canonical
 quantization.
 One can also explicitly express $Z\big(\tilde{M}\big)$ in the path integral
@@ -680,7 +680,7 @@ Since in a topological theory manifolds diffeomorphic to each other
 should be thought of as identical, each cobordism class defines
 a linear map. This means that the addition of a cylinder is a trivial
 operation; the associated linear map is the identity. This
-is another major difference from ordinary QFTs. For instance, for $(2+1)$-dimensional
+is another major difference from ordinary QFTs. For instance, for three-dimensional
 Chern-Simons theory one can explicitly see its Hamiltonian is identically
 zero and hence the time evolution of Chern-Simons theory is trivial.
 \end{enumerate}
@@ -714,7 +714,7 @@ called symmetric monoidal functor. }
 \end{equation}
 TQFT luckily has a mathematical precise definition. For a general
 QFT, i.e.~not TQFT, in many cases there is no precise definition as
-we saw the examples of the construction of $Z$. However, a QFT is
+we saw in the examples of the construction of $Z$. However, a QFT is
 generically expected to be characterized by some functor from the
 geometric structure of spacetime manifolds to the algebraic description
 of physical states and observables.
@@ -764,7 +764,7 @@ a discrete version of QFTs; one compactifies the spacetime manifold
 $\mathbb{R}^{4}$ to four-torus $T^{4}$, and then discretize the
 theory and put it on a lattice on the torus.
 
-In either case, therefore, ``to define a model'' means to specify $Z$.
+In either case, therefore, ``define a model'' means to specify $Z$.
 In what follows, we will consider only $d=0$ or $1$ case of
 lattice model, and we refer each case as 1d or 2d lattice model. To
 prepare for the discussion of integrability, we take the prominent
@@ -1011,7 +1011,7 @@ then we have the free energy
 \begin{align}
 -\beta f(\beta)
   & =  \lim_{n\to\infty}\frac{1}{n}\log Z(\beta)\nonumber \\
-  & =  \lim_{n\to\infty}\frac{1}{n}\log\lambda_{0}\left(1+\left(\frac{\lambda_{1}}{\lambda_{0}}\right)^{n}\right)\nonumber \\
+  & =  \lim_{n\to\infty}\frac{1}{n}\log\lambda_{0}^n\left(1+\left(\frac{\lambda_{1}}{\lambda_{0}}\right)^{n}\right)\nonumber \\
   & =  \log\lambda_{0}.
 \end{align}
 We conclude that the free energy in the thermodynamic limit is
@@ -1026,11 +1026,11 @@ of lattice model is rephrased as
 The transfer matrices of 1d and 2d Ising model are diagonalizable
 and one can exactly find their eigenvectors and eigenvalues using,
 for example, algebraic Bethe ansatz. In this sense, 1d and 2d Ising
-model are said to be integrable, or exactly solvable. Then, a natural
+model are said to be exactly solvable, or integrable. Then, a natural
 question arises; when can we diagonalize the transfer matrix of a
 lattice model? This actually leads to the most fundamental answer
 to the question of ``what is integrable model.'' A canonical answer
-is \emph{Yang-Baxter equation}. When the Boltzmann weight with spectral
+is the \emph{Yang-Baxter equation}. When the Boltzmann weight with spectral
 parameters, which take values in a Riemann surface, satisfies the
 Yang-Baxter equation, the lattice model is integrable. We are going to give
 an explanation of this definition of integrability in the following subsection
@@ -1064,7 +1064,7 @@ The purpose of this section is to provide a general prescription to relate four-
 supersymmetric gauge theories and integrable lattice models.
 We first give a step-by-step
 explanation from two-dimensional TQFT to integrable lattice model,
-and then put the argument in the setup of brane tilings. Branes in
+and then put the argument into the setup of brane tilings. Branes in
 string theory are powerful enough to yield the systematic method to
 relate a class of supersymmetric gauge theories with integrable lattice
 models, as we will see. To begin with, we present a general prescription
@@ -1378,7 +1378,7 @@ the procedures so far, it is clear that the above configuration defines
 a partition function of a statistical spin model. The model has spins
 located at two kinds of sites, \tikz{\draw[thick, fill=white] (0,0) circle[radius=0.15cm]}
 and \tikz{\draw[semithick, double, fill=white] (0,0) circle[radius=0.14cm]}. They
-correspond to the open string states and the boundary states, see figure \ref{fig:spin_boundary}.
+correspond to the open string states and the boundary states; see figure \ref{fig:spin_boundary}.
 A spin
 at \tikz{\draw[thick, fill=white] (0,0) circle[radius=0.15cm]} takes values in the chosen basis for the relevant open
 string states $V_{ab,i}$, while that at \tikz{\draw[semithick, double, fill=white] (0,0) circle[radius=0.14cm]} is valued
@@ -1438,7 +1438,7 @@ The space of states $V_{i}$ can also be thought of as the Hilbert
 space of a particle propagating on the line operator $\mathcal{L}_{i}$.
 In this case we can ignore the spins at \tikz{\draw[semithick, double, fill=white] (0,0) circle[radius=0.14cm]} since there
 is no summation over boundary conditions. This means that the lattice
-model $\mathsf{L}\left(\mathsf{T}\right)$ is called a \emph{vertex
+model $\mathsf{L}(\mathsf{T})$ is called a \emph{vertex
 model}: spins are living on the edges of the lattice and interact
 with each other at the vertices.
 
@@ -1651,11 +1651,12 @@ surface $\Sigma$, along which line operators are wrapped. We now
 have $S\times\Sigma$, and similarly to the above a lattice model
 is defined on $\Sigma$ by line operators with spectral parameters.
 Let us consider the case that we really have more extra dimensions
-and a higher-dimensional theory is formulated on $S\times M\times\Sigma$,%
+and a higher-dimensional theory is formulated on $S\times M\times\Sigma$,
+where $M$ is some smooth manifold.%
 \footnote{Note that manifolds $M,\, N$ in this subsection are not necessarily the same as ones appeared in
 previous subsections.}
 %
-where $M$ is some smooth manifold. In such a case, the line operators we had may
+In such a case, the line operators we had may
 descend from extended operators of dimension greater than one. Let
 $\mathsf{T}$ again be the new higher-dimensional theory, and suppose
 that it is topological on $\Sigma$ and has extended operators $\mathcal{E}_{i}$
@@ -1778,9 +1779,9 @@ however, there is a string background in which a fraction of supersymmetry
 is still preserved. In such a background, the path integral computes
 the twisted partition function, or \emph{supersymmetric index} of $\mathsf{T}_{\mathrm{NS5}}$,
 defined by a trace with respect to the Hilbert space on $M\times\Sigma$ in the presence
-of defects $\mathcal{E}_{\mathrm{D}p_{i}}$ inserted on $N_{i}\times C_{i}$
-(recall that for a closed manifold with thermal circle, QFT produces a number represented as a trace,
-such as \eqref{eq:qm_number}).
+of defects $\mathcal{E}_{\mathrm{D}p_{i}}$ inserted on $N_{i}\times C_{i}$.
+(Notice that for a closed manifold with thermal circle, QFT produces a number represented as a trace,
+such as \eqref{eq:qm_number}.)
 
 A salient feature of supersymmetric indices is that they are protected
 against continuous changes of various parameters of the theory. This
@@ -1856,14 +1857,14 @@ lens space, the left-hand side is computed in \cite{Yamazaki:2013nra}, which
 defines a new integrable lattice model through this correspondence.
 
 The brane tiling construction of integrable lattice models can be
-enriched by introducing additional defects. Besides the previously
+enriched by introducing additional defects. In addition to the previously
 defined D5NS5-brane system, let us consider a D3-brane such as
 \begin{align}
   \mathrm{D3}    &  \quad S^{1}  \times  N  \times  C  \times  \mathbb{R}_{+}, \label{eq:D3}\\
   \mathrm{D3'}   &  \quad S^{1}  \times \{ 0\}  \times  C'  \times  \mathbb{R}^{2}, \label{eq:D3'}
 \end{align}
 where $N$ is a curve in $M$ and $C,\,C'$ are one-cycles on $\Sigma$.
-These D3-branes create new extended defect operators elongated in $S^1\times N$ and $S^1$, respectively.
+In field theory side, these D3-branes create new extended defect operators elongated in $S^1\times N$ and $S^1$, respectively.
 A single D3-brane insertion corresponds to a new oriented line $C,\,C'$ in
 the integrable lattice model, which we represent by a dashed line.
 Now that we have two kinds of lines originating from 5-branes and a D3-brane,
@@ -1975,7 +1976,8 @@ defects. In the next two sections, we will be studying the followings:
 \begin{enumerate}
 	\item For the case of single D3 \eqref{eq:D3}, let $M=S^{3}$, $\Sigma=T^{2}$, and $N=S^{1}$.
 Then the correspondence \eqref{eq:correspondence1} is explicitly written by the equivalence between
-the supersymmetric index and the partition function of the Bazhanov-Sergeev integrable lattice model:
+the supersymmetric index and the partition function of the Bazhanov-Sergeev integrable lattice model
+\cite{Bazhanov:2010kz,Bazhanov:2011mz,Yamazaki:2012cp}:
 \begin{align}
   \left\langle  1  \right\rangle_{\mathsf{T}_{\mathrm{D5NS5}}[\Sigma],S^{1}\times S^{3}}
     &  =  \mathcal{I}_{S^{1}\times S^{3}}(p,q,t),\\
@@ -2004,7 +2006,8 @@ This spin chain has a equivalent lattice model description, and it is really an 
 trigonometric type. The line defect in the
 four-dimensional theory is realized as a Wilson-'t Hooft line operator
 $T$, whose magnetic charge and electric charge $(\mathbf{m},\mathbf{e})$
-is specified by the one-cycle $C'$ winding around the torus $T^{2}$.
+also have the counterpart in the lattice model side.
+%is specified by the one-cycle $C'$ winding around the torus $T^{2}$.
 The vacuum expectation values (vevs) of Wilson-'t Hooft
 lines realize the deformation quantization of the Hitchin moduli space \cite{Ito:2011ea},
 and are naturally quantized by the Weyl quantization:

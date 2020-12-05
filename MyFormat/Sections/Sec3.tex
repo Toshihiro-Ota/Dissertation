@@ -222,7 +222,11 @@ by solid lines, a dynamical parameter is assigned.  The values of dynamical
 parameters on the two sides of a dashed line carrying state $v_i$
 differ by $\eps h_i$.
 
-We also represent the operator $R$ as two crossing dashed lines:
+We also represent the operator $R$ as two crossing dashed lines:%
+%
+\footnote{Note that the R-matrix here is actually the one denoted
+by $\CR$ in section \ref{sec:defects}.}
+%
 \begin{equation}
   R(z - z', a)_{ij}^{kl}
   =
@@ -579,7 +583,7 @@ parameter.
 
 The elliptic dynamical R-matrix and the elliptic L-operator have many
 more properties than just that they satisfy the RLL relation.  Most
-importantly, the R-matrix is a solution of the dynamical Yang-Baxter
+importantly, the R-matrix is a solution to the dynamical Yang-Baxter
 equation and encodes the Boltzmann weights for a two-dimensional
 integrable lattice model.  This model is equivalent to the
 eight-vertex model (or more precisely, the Belavin
@@ -588,8 +592,8 @@ eight-vertex model~\cite{Baxter:1971cr, Baxter:1972hz}) in the sense
 that the transfer matrices of the two models are related by a
 similarity transformation.  The elliptic L-operator, on the other
 hand, satisfies the RLL relation with another R-matrix which describes
-an integrable lattice model called the Bazhanov-Sergeev
-model~\cite{Bazhanov:2010kz, Bazhanov:2011mz}, whose spins variables
+the integrable lattice model of Bazhanov-Sergeev
+type~\cite{Bazhanov:2010kz, Bazhanov:2011mz}, whose spin variables
 take values in $\hf^*$.  We will not discuss these aspects here.
 The interested reader is referred to \cite{Yagi:2017hmj} for
 more details.
@@ -861,7 +865,7 @@ $\coweightl(\gf) = \rootl(\gf)^\vee \subset \tf$ and the weight
 lattice $\weightl(\gf) = \corootl(\gf)^\vee \subset \tf^*$.
 
 An 't Hooft line is the world-line of a very heavy monopole, that is, a
-nondynamical magnetically charged particle.  In the presence of an 't
+non-dynamical magnetically charged particle.  In the presence of an 't
 Hooft line, the gauge field of the theory has a singularity at the
 location of the monopole: in terms of the polar angle $\theta$ and the
 azimuthal angle $\phi$ of the spherical coordinates centered at the
@@ -1439,7 +1443,7 @@ lines of the theory of a bifundamental hypermultiplet:
 \end{equation}
 Let us see if this is the case.
 
-We introduce nondynamical vector multiplets for the $\SU(N)$ flavor
+We introduce non-dynamical vector multiplets for the $\SU(N)$ flavor
 groups, and consider the Wilson-'t Hooft lines with magnetic charge
 \begin{equation}
   \mcharge = h^\vee_i \oplus h^\vee_j
@@ -1571,7 +1575,7 @@ $\CN = 2^*$ theory can be computed from the perturbative term:
 \end{equation}
 (For $\CN = 2^*$ theory the choice of the signs $\sigma = \pm$ is
 irrelevant.)  The vev matches the Wigner transform of the
-trigonometric Ruijsenaars operator.
+trigonometric Ruijsenaars' operator.
 
 \begin{comment}
 In the case of symmetric powers, we find a discrepancy between this
@@ -1627,11 +1631,13 @@ supersymmetric field theories.
 
 
 %%%%%  AGT  %%%%%
-Here we briefly review  the role of line and surface operators
-in the AGT correspondence.
+%Here we briefly review  the role of line and surface operators
+Let us briefly review some generalities of
+the AGT correspondence.
 We first give the general statement
 of the correspondence with the relation to class-$\CS$ theories,
 which already appeared in section \ref{sec:surface}.
+The role of line and surface operators in AGT will be considered in the next subsection.
 For more details, see excellent reviews \cite{LeFloch:2020uop,Okuda:2014fja,Gukov:2014gja}
 and the references therein.
 
@@ -1718,7 +1724,7 @@ action on each plane, using the Duistermaat-Heckman fixed point formula
 \cite{Duistermaat:1982vw} (or more generally Atiyah-Bott localization formula \cite{Atiyah:1984px}).
 Nekrasov applied these techniques to compute instanton partition function, which is an integral over
 the instanton moduli space, and obtained the exact results \cite{Nekrasov:2002qd,Nekrasov:2003rj}
-which plays a crucial role in the AGT correspondence.
+which plays a major role in the AGT correspondence.
 
 %%%%%  AGT  %%%%%
 
@@ -2321,9 +2327,10 @@ the product of three-point function factors is
   \prod_r
   \frac{\prod_{i<j} \Upsilon(\iu \as^r_{ij}) \Upsilon(-\iu \as^{r+1}_{ij})}
         {\prod_{i,j} \Upsilon(\frac12 q + \iu \ms^r - \iu \as^r_i + \iu \as^{r+1}_j)}
-  \,.
+  \, ,
 \end{equation}
-The precise definition of the function $\Upsilon$ is given in the appendix,
+where $\Upsilon:=\Upsilon_{\bs}$ is the upsilon function.
+The precise definition of $\Upsilon_{\bs}$ is given in the appendix,
 but not so important here; we just need to know that it satisfies the identity
 \begin{equation}
   \frac{\Upsilon(x + \bs)}{\Upsilon(x)}
@@ -2612,7 +2619,7 @@ an M2-brane on
   \times S^1_6 \times \{0\} \times \R^{\geq0}_8
   \times \{x_0\} \times \{\theta_0\} \,,
 \end{equation}
-where $\R^{\geq0}_8$ is the nonnegative part of $\R_8$.  Upon reduction on $S^1_{10}$, this M2-brane becomes a D2-brane on
+where $\R^{\geq0}_8$ is the non-negative part of $\R_8$.  Upon reduction on $S^1_{10}$, this M2-brane becomes a D2-brane on
 \begin{equation}
   M_{\mathrm{D2}} =
   \{t_0\} \times \{0\} \times S^1_3 \times \{0\}
@@ -2658,7 +2665,7 @@ five-dimensional circular quiver theory arises.  Recall that the
 radius $\check{R}_9$ of the dual circle $\check{S}^1_9$ is inversely
 proportional to the original radius, $\check{R}_9 = \alpha'/R_9$.
 This brane configuration is essentially the one shown in section \ref{sec:defects}.
-From the same argument for the case of the brane tilings discussed in \ref{sec:surface},
+From the same argument for the case of the brane tilings discussed in section \ref{sec:surface},
 we obtain the correspondence between supersymmetric gauge theory
 and integrable lattice model.
 %Lastly, we remark that the D5--NS5--D3 brane system~\eqref{eq:M-D5}--\eqref{eq:M-D3}
@@ -2837,7 +2844,7 @@ the AGT correspondence.
         \node[black!70] (p2) at (-0.7,-1.05) {$\bullet$};
         \node[black!70] (p1) at (-2,-0.6) {$\bullet$};
         \draw[ultra thick, dotted] (1.8,-0.7) arc (-65:-42:1.8);
-        \node[red!70] at (0.4,-0.6) {\scriptsize $\times$};  %$\bullet$
+        \node[red!70] at (0.4,-0.6) {\normalsize $\star$};  %$\bullet$
       \end{scope}
 
       \node at (-2.4,-1.8) {$\Sigma=\R_0\times S^1_6$};
@@ -2845,7 +2852,7 @@ the AGT correspondence.
     \end{tikzpicture}
   \caption{Line operators in 4d Chern-Simons theory placed on the topological plane $\Sigma$
   generate integrable lattice models. The spectral parameters are
-  given by the coordinate of the lines on the Riemann surface.}
+  given by the coordinate of the lines on the Riemann surface $E$.}
 \label{fig:top_hol}
 \end{figure}
 
