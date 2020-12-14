@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.12.17)  5 DEC 2020 17:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.12.17)  14 DEC 2020 13:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2539,18 +2539,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 24455 strings out of 493308
- 449693 string characters out of 6129385
- 562494 words of memory out of 5000000
- 26729 multiletter control sequences out of 15000+600000
+ 24469 strings out of 493308
+ 449944 string characters out of 6129385
+ 563763 words of memory out of 5000000
+ 26736 multiletter control sequences out of 15000+600000
  25906 words of font info for 102 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  64i,19n,358p,3324b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
 </Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Main.pdf (97 pages, 834161 bytes).
+Output written on Main.pdf (97 pages, 835624 bytes).
 PDF statistics:
- 2107 PDF objects out of 2487 (max. 8388607)
- 1951 compressed objects within 20 object streams
- 684 named destinations out of 1000 (max. 500000)
+ 2136 PDF objects out of 2487 (max. 8388607)
+ 1980 compressed objects within 20 object streams
+ 691 named destinations out of 1000 (max. 500000)
  381 words of extra memory for PDF output out of 10000 (max. 10000000)
 

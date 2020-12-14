@@ -166,6 +166,12 @@ K.~Costello, \emph{{Integrable lattice models from four-dimensional field
   Pure Math.} {\bfseries 88} (2014) 3--24},
   [\href{https://arxiv.org/abs/1308.0370}{{\ttfamily 1308.0370}}].
 
+\bibitem{Witten:2016spx}
+E.~Witten, \emph{{Integrable Lattice Models From Gauge Theory}},
+  \href{https://doi.org/10.4310/ATMP.2017.v21.n7.a10}{\emph{Adv. Theor. Math.
+  Phys.} {\bfseries 21} (2017) 1819--1843},
+  [\href{https://arxiv.org/abs/1611.00592}{{\ttfamily 1611.00592}}].
+
 \bibitem{Costello:2017dso}
 K.~Costello, E.~Witten and M.~Yamazaki, \emph{{Gauge Theory and Integrability,
   I}},  \href{https://arxiv.org/abs/1709.09993}{{\ttfamily 1709.09993}}.
@@ -280,6 +286,18 @@ E.~Witten, \emph{{Some comments on string dynamics}},  in \emph{{STRINGS 95:
   Future Perspectives in String Theory}}, pp.~501--523, 7, 1995,
   \href{https://arxiv.org/abs/hep-th/9507121}{{\ttfamily hep-th/9507121}}.
 
+\bibitem{Strominger:1995ac}
+A.~Strominger, \emph{{Open p-branes}},
+  \href{https://doi.org/10.1016/0370-2693(96)00712-5}{\emph{Phys. Lett. B}
+  {\bfseries 383} (1996) 44--47},
+  [\href{https://arxiv.org/abs/hep-th/9512059}{{\ttfamily hep-th/9512059}}].
+
+\bibitem{Witten:1995em}
+E.~Witten, \emph{{Five-branes and M theory on an orbifold}},
+  \href{https://doi.org/10.1016/0550-3213(96)00032-6}{\emph{Nucl. Phys. B}
+  {\bfseries 463} (1996) 383--397},
+  [\href{https://arxiv.org/abs/hep-th/9512219}{{\ttfamily hep-th/9512219}}].
+
 \bibitem{Maldacena:1997re}
 J.~M. Maldacena, \emph{{The Large N limit of superconformal field theories and
   supergravity}}, \href{https://doi.org/10.1023/A:1026654312961}{\emph{Int. J.
@@ -324,6 +342,12 @@ N.~Carqueville, \emph{{Lecture notes on 2-dimensional defect TQFT}},
   114} (2018) 49--84}, [\href{https://arxiv.org/abs/1607.05747}{{\ttfamily
   1607.05747}}].
 
+\bibitem{Callan:1991ky}
+J.~Callan, Curtis~G., J.~A. Harvey and A.~Strominger, \emph{{Worldbrane actions
+  for string solitons}},
+  \href{https://doi.org/10.1016/0550-3213(91)90041-U}{\emph{Nucl. Phys. B}
+  {\bfseries 367} (1991) 60--82}.
+
 \bibitem{Bazhanov:2010kz}
 V.~V. Bazhanov and S.~M. Sergeev, \emph{{A Master solution of the quantum
   Yang-Baxter equation and classical discrete integrable equations}},
@@ -353,6 +377,12 @@ D.~Gaiotto, L.~Rastelli and S.~S. Razamat, \emph{{Bootstrapping the
 A.~Gadde and S.~Gukov, \emph{{2d Index and Surface operators}},
   \href{https://doi.org/10.1007/JHEP03(2014)080}{\emph{JHEP} {\bfseries 03}
   (2014) 080}, [\href{https://arxiv.org/abs/1305.0266}{{\ttfamily 1305.0266}}].
+
+\bibitem{Gaiotto:2010be}
+D.~Gaiotto, G.~W. Moore and A.~Neitzke, \emph{{Framed BPS States}},
+  \href{https://doi.org/10.4310/ATMP.2013.v17.n2.a1}{\emph{Adv. Theor. Math.
+  Phys.} {\bfseries 17} (2013) 241--397},
+  [\href{https://arxiv.org/abs/1006.0146}{{\ttfamily 1006.0146}}].
 
 \bibitem{Ito:2011ea}
 Y.~Ito, T.~Okuda and M.~Taki, \emph{{Line operators on {$S^{1} \times
@@ -427,6 +457,12 @@ G.~Festuccia and N.~Seiberg, \emph{{Rigid Supersymmetric Theories in Curved
   Superspace}}, \href{https://doi.org/10.1007/JHEP06(2011)114}{\emph{JHEP}
   {\bfseries 06} (2011) 114},
   [\href{https://arxiv.org/abs/1105.0689}{{\ttfamily 1105.0689}}].
+
+\bibitem{Closset:2013vra}
+C.~Closset, T.~T. Dumitrescu, G.~Festuccia and Z.~Komargodski, \emph{{The
+  Geometry of Supersymmetric Partition Functions}},
+  \href{https://doi.org/10.1007/JHEP01(2014)124}{\emph{JHEP} {\bfseries 01}
+  (2014) 124}, [\href{https://arxiv.org/abs/1309.5876}{{\ttfamily 1309.5876}}].
 
 \bibitem{Spiridonov:2014cxa}
 V.~Spiridonov and G.~Vartanov, \emph{{Vanishing superconformal indices and the
@@ -678,6 +714,13 @@ B.~Assel and A.~Sciarappa, \emph{{On monopole bubbling contributions to 't
   Hooft loops}}, \href{https://doi.org/10.1007/JHEP05(2019)180}{\emph{JHEP}
   {\bfseries 05} (2019) 180},
   [\href{https://arxiv.org/abs/1903.00376}{{\ttfamily 1903.00376}}].
+
+\bibitem{Hayashi:2019rpw}
+H.~Hayashi, T.~Okuda and Y.~Yoshida, \emph{{Wall-crossing and operator ordering
+  for 't Hooft operators in $ \mathcal{N} = 2$ gauge theories}},
+  \href{https://doi.org/10.1007/JHEP11(2019)116}{\emph{JHEP} {\bfseries 11}
+  (2019) 116}, [\href{https://arxiv.org/abs/1905.11305}{{\ttfamily
+  1905.11305}}].
 
 \bibitem{LeFloch:2020uop}
 B.~Le~Floch, \emph{{A slow review of the AGT correspondence}},
