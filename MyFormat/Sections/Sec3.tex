@@ -271,8 +271,9 @@ two configurations involving two dashed and one solid lines:
       \node at ($(O) + (120:{sqrt(3)*3/6})$) {$a^1$};
       \node[yshift=2pt, xshift=2pt]  at ($(O) + (60:{sqrt(3)*4/6})$) {$a^2$};
     \end{tikzpicture}
-    \quad .
+    \quad ,
 \end{equation}
+where we now also have additional variables $a_1,\, a_2$ on each region.
 The states carried by the internal dashed edges are summed over.
 By comparing the values of the dynamical parameter assigned to the
 lower right regions of the two sides, we see that for $R$ to satisfy
@@ -669,8 +670,8 @@ mechanical system:
 \end{equation}
 
 In quantum mechanics, there is an invertible map from functions on the
-classical phase space to operators in the Hilbert space, known as the
-Weyl transform: if $q$ and $p$ are canonically conjugate variables, it
+classical phase space to operators on the Hilbert space, known as the
+Weyl transform:~if $q$ and $p$ are canonically conjugate variables, it
 maps
 \begin{equation}
   f(q,p)
@@ -792,7 +793,7 @@ with
   \Biggl(
   \frac{\prod_{k (\neq i)} \sin\pi(a^1_k - a^2_j - m)
         \prod_{l (\neq j)} \sin\pi(a^1_i - a^2_l - m)}
-       {\prod_{k (\neq i)}\sin\pi(a^1_{ki} - \frac12\eps)
+        {\prod_{k (\neq i)}\sin\pi(a^1_{ki} - \frac12\eps)
         \sin\pi(a^1_{ik} - \frac12\eps)}
   \Biggr)^{\frac12}
   \,.
@@ -941,9 +942,9 @@ a pair of irreducible representations of $\gf$ and ${}^L\gf$.
 
 
 The vevs of supersymmetric line operators in $\CN=2$
-gauge theories have been exactly computed via
+gauge theories can be exactly computed via
 localization of the path integral \cite{Pestun:2007rz,Gomis:2011pf},
-which also provided nontrivial checks for the AGT correspondence
+which provided nontrivial checks for the AGT correspondence
 as well as AdS/CFT correspondence.
 In~\cite{Ito:2011ea}, the localization calculation was performed
 for the vevs of
@@ -1072,7 +1073,7 @@ $W(G)$-action.
 
 The Wilson-'t Hooft line that corresponds to the transfer
 matrix~\eqref{eq:T-trig} is one in an $\CN = 2$ supersymmetric gauge
-theory that is described by a circular quiver with $n$ nodes:
+theory described by a circular quiver with $n$ nodes:
 \begin{equation}
   \begin{tikzpicture}[scale=0.8, baseline=(x.base)]
     \node (x) at (0,0) {\vphantom{x}};
@@ -1372,7 +1373,7 @@ symplectic form
 \begin{equation}
   da\wedge db:=\sum_{i}da_{i}\wedge db_{i}.
 \end{equation}
-The fact that the vev of Wilson-'t Hooft lines satisfies the Moyal product
+The fact that the vevs of Wilson-'t Hooft lines satisfy the Moyal product
 implies that they realize the deformation quantization of the Coulomb
 branch and it is natural for the vev to be Weyl
 transformed into a difference operator acting on a quantum Hilbert space;
@@ -1380,7 +1381,7 @@ the Moyal product turns out to be an operator product.
 Thus, the difference
 operators obtained from the Wilson-'t Hooft lines in the circular quiver theories are
 identified with the trigonometric transfer matrices $\CT_{\sigma,m}$ acting on the total
-Hilbert space:
+Hilbert space $\CM_{\hf^*}^{\otimes n}$:
 \begin{equation}
   \text{Weyl quantization of } \bigvev{T_{(\mcharge,\echarge)}}
     = \CT_{\sigma,m}.
@@ -1521,7 +1522,8 @@ transfer matrix~\eqref{eq:T-trig} is represented graphically as $n$
 solid lines intersected by a single dashed loop carrying the
 representation $V = \C^N$, as shown in figure~\ref{fig:spin-chain-T}.
 The $n$ regions sandwiched between solid lines correspond to the $n$
-copies of $\slf_N$.
+copies of $\slf_N$, this is another realization of the
+Gauge/YBE correspondence.
 
 Both sides of the correspondence have a generalization in which the
 fundamental representation $\C^N$ is replaced by another representation $R$
@@ -1632,7 +1634,7 @@ supersymmetric field theories.
 
 %%%%%  AGT  %%%%%
 %Here we briefly review  the role of line and surface operators
-Let us briefly review some generalities of
+Let us begin with a brief review on some generalities of
 the AGT correspondence.
 We first give the general statement
 of the correspondence with the relation to class-$\CS$ theories,
@@ -1644,7 +1646,7 @@ and the references therein.
 The AGT correspondence was found heuristically by Alday,
 Gaiotto and Tachikawa \cite{Alday:2009aq}, based on the observations
 made in \cite{Gaiotto:2009we}. It was derived basically by comparing
-the instanton partition function \cite{Nekrasov:2002qd} of the $\CN =2$ SU$(2)$
+the instanton partition function \cite{Nekrasov:2002qd} of an $\CN =2$ $\SU(2)$
 gauge theory with the Liouville conformal block.
 Soon after their work, many checks and generalizations have been made, and
 it has been known that the statement applies to the correspondence between a large class
@@ -1718,6 +1720,7 @@ and their infinite volumes are regularized such that
     \rm{Vol}\left(  \R^4_{\eps_1,\eps_2}  \right) = \int_{\R^4_{\eps_1,\eps_2}}1 = \frac{1}{\eps_1 \eps_2} ,
     \qquad
     \rm{Vol}\left(  \R^2_{\eps}  \right) = \int_{\R^2_{\eps}}1 = \frac{1}{\eps}
+    ~ .
 \end{equation}
 Such a twist allows us to calculate quantities that are invariant under the $\U(1) \simeq \SO(2)$
 action on each plane, using the Duistermaat-Heckman fixed point formula
@@ -1921,7 +1924,7 @@ In other words, the curve $\gamma_\sigma$ passes ``above'' or
 ``below'' the $r$th puncture depending on whether $\sigma^r = +$ or
 $-$.  In the gauge theory, this operator corresponds to the Wilson-'t
 Hooft line with magnetic charge~\eqref{eq:B-circular} and electric
-charge~\eqref{eq:E-circular}.
+charge~\eqref{eq:E-circular} \cite{Drukker:2009tz}.
 
 \begin{figure}
   \centering
@@ -2500,14 +2503,25 @@ matrix~\eqref{eq:T-trig}.
 
 The AGT correspondence between Wilson-'t Hooft lines and Verlinde
 operators, which we exploited in section~\ref{sec:Toda}, can be
-realized in terms of branes in string theory.  String dualities relate
-the brane configuration for the AGT correspondence to another
-configuration that realizes four-dimensional Chern-Simons theory, and
-in the latter setup the emergence of quantum integrability can be seen
-more transparently.  Another chain of dualities relate these setups to
-the one studied in~\cite{Maruyoshi:2016caf, Yagi:2017hmj}, which
-we have discussed in section \ref{sec:surface}.  In this last
+realized in terms of branes in string theory.
+String dualities relate the brane configuration of the AGT correspondence
+to the setup studied in~\cite{Maruyoshi:2016caf, Yagi:2017hmj}, which
+we have discussed in section \ref{sec:surface}.
+Further, another chain of dualities relate these setups to four-dimensional Chern-Simons theory,
+and in the latter setup the emergence of quantum integrability can be seen more transparently.
+In this last
 section we discuss these brane constructions.
+
+
+%String dualities relate
+%the brane configuration for the AGT correspondence to another
+%configuration that realizes four-dimensional Chern-Simons theory, and
+%in the latter setup the emergence of quantum integrability can be seen
+%more transparently.
+%Another chain of dualities relate these setups to
+%the one studied in~\cite{Maruyoshi:2016caf, Yagi:2017hmj}, which
+%we have discussed in section \ref{sec:surface}.  In this last
+%section we discuss these brane constructions.
 
 
 
@@ -2665,6 +2679,10 @@ five-dimensional circular quiver theory arises.  Recall that the
 radius $\check{R}_9$ of the dual circle $\check{S}^1_9$ is inversely
 proportional to the original radius, $\check{R}_9 = \alpha'/R_9$.
 This brane configuration is essentially the one shown in section \ref{sec:defects}.
+In terms of the notations there, $M=\R^2_{12}\times_{\epsilon}S^1_3$, $\Sigma=\R_0\times S^1_6$,
+$\Sigma_i =\R_0\times\R_8$,
+and $\check{\mathrm{D3}}$ is the defect \eqref{eq:D3}: $N=S^1_3$ and $C=S^1_6$.
+Thus the D3-brane creates a surface defect in this theory.
 From the same argument for the case of the brane tilings discussed in section \ref{sec:surface},
 we obtain the correspondence between supersymmetric gauge theory
 and integrable lattice model.
@@ -2673,8 +2691,8 @@ and integrable lattice model.
 It is actually possible to
 introduce an additional set of NS5-branes so that the 5-brane system
 realizes a four-dimensional $\CN = 1$ supersymmetric gauge theory on
-$\R^2_{12} \times_\eps S^1_3 \times \check S^1_9$.  The D3-brane
-creates a surface defect in this theory.  As expected, it acts on the
+$\R^2_{12} \times_\eps S^1_3 \times \check S^1_9$.
+As expected, the surface defect acts on the
 partition function of the theory as an elliptic transfer
 matrix~\cite{Maruyoshi:2016caf,Yagi:2017hmj}.
 
@@ -2735,7 +2753,7 @@ as the one applied to the D5-brane theory in~\cite{Costello:2018txb}.%
   dualities applied to this setup: T-duality on
   $S^1_3 \times \check S^1_9$, then S-duality, and finally T-duality
   on the dual torus $\check S^1_3 \times S^1_9$.  The first T-duality
-  realizes the $\Omega$-deformation~\cite{Hellerman:2011mv}, hence we
+  realizes the $\Omega$-deformation~\cite{Hellerman:2011mv,Hellerman:2012zf,Orlando:2013yea}, hence we
   are considering the S-dual $\Omega$-deformation here.  The point is
   that S-duality is geometrized via M-theory as a ``9-11 flip.''  In
   the above construction, the S-duality can be replaced by T-duality
@@ -2786,7 +2804,7 @@ depends topologically on the cylinder
 \begin{equation}
   \Sigma = \R_0 \times S^1_6
 \end{equation}
-and holomorphically on the torus
+and holomorphically on the elliptic curve
 \begin{equation}
   E = \check{S}^1_9 \times S^1_{10} \,.
 \end{equation}
@@ -2804,9 +2822,9 @@ winds around the circumferential direction and is located at
 \begin{equation}
   z_0 = \phi_0 + \iu\theta_0
 \end{equation}
-on $E$.  Thus, on the cylinder $\Sigma$, we have the same situation as
+on $E$; see figure \ref{fig:top_hol}.  Thus, on the cylinder $\Sigma$, we have the same situation as
 in figure~\ref{fig:spin-chain-T}, in which a quantum spin chain was
-described in terms of lines on a cylinder; see figure \ref{fig:top_hol}.
+described in terms of lines on a cylinder.
 Note that though $E$ is a torus, this is not $C_{1,n}$ for
 the AGT correspondence.
 

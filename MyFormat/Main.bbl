@@ -220,6 +220,11 @@ X.-z. Dai and D.~S. Freed, \emph{{eta invariants and determinant lines}},
   (1994) 5155--5194}, [\href{https://arxiv.org/abs/hep-th/9405012}{{\ttfamily
   hep-th/9405012}}].
 
+\bibitem{Segal:2002ei}
+G.~Segal, \emph{{The definition of conformal field theory}},  in
+  \emph{{Symposium on Topology, Geometry and Quantum Field Theory}},
+  pp.~421--575, 6, 2002.
+
 \bibitem{Belavin:1984vu}
 A.~Belavin, A.~M. Polyakov and A.~Zamolodchikov, \emph{{Infinite Conformal
   Symmetry in Two-Dimensional Quantum Field Theory}},
@@ -232,6 +237,18 @@ D.~Friedan and S.~H. Shenker, \emph{{The Analytic Geometry of Two-Dimensional
   \href{https://doi.org/10.1016/0550-3213(87)90418-4}{\emph{Nucl. Phys. B}
   {\bfseries 281} (1987) 509--545}.
 
+\bibitem{Teschner:2001rv}
+J.~Teschner, \emph{{Liouville theory revisited}},
+  \href{https://doi.org/10.1088/0264-9381/18/23/201}{\emph{Class. Quant. Grav.}
+  {\bfseries 18} (2001) R153--R222},
+  [\href{https://arxiv.org/abs/hep-th/0104158}{{\ttfamily hep-th/0104158}}].
+
+\bibitem{Nakayama:2004vk}
+Y.~Nakayama, \emph{{Liouville field theory: A Decade after the revolution}},
+  \href{https://doi.org/10.1142/S0217751X04019500}{\emph{Int. J. Mod. Phys. A}
+  {\bfseries 19} (2004) 2771--2930},
+  [\href{https://arxiv.org/abs/hep-th/0402009}{{\ttfamily hep-th/0402009}}].
+
 \bibitem{Witten:1988xj}
 E.~Witten, \emph{{Topological Sigma Models}},
   \href{https://doi.org/10.1007/BF01466725}{\emph{Commun. Math. Phys.}
@@ -241,11 +258,6 @@ E.~Witten, \emph{{Topological Sigma Models}},
 E.~Witten, \emph{{Topological Quantum Field Theory}},
   \href{https://doi.org/10.1007/BF01223371}{\emph{Commun. Math. Phys.}
   {\bfseries 117} (1988) 353}.
-
-\bibitem{Segal:2002ei}
-G.~Segal, \emph{{The definition of conformal field theory}},  in
-  \emph{{Symposium on Topology, Geometry and Quantum Field Theory}},
-  pp.~421--575, 6, 2002.
 
 \bibitem{MR2037238}
 J.~Kock, \emph{Frobenius algebras and 2{D} topological quantum field theories},
@@ -531,6 +543,12 @@ J.~Yagi, \emph{{3d TQFT from 6d SCFT}},
   \href{https://doi.org/10.1007/JHEP08(2013)017}{\emph{JHEP} {\bfseries 08}
   (2013) 017}, [\href{https://arxiv.org/abs/1305.0291}{{\ttfamily 1305.0291}}].
 
+\bibitem{Gadde:2013sca}
+A.~Gadde, S.~Gukov and P.~Putrov, \emph{{Fivebranes and 4-manifolds}},
+  \href{https://doi.org/10.1007/978-3-319-43648-7_7}{\emph{Prog. Math.}
+  {\bfseries 319} (2016) 155--245},
+  [\href{https://arxiv.org/abs/1306.4320}{{\ttfamily 1306.4320}}].
+
 \bibitem{Derkachov:2012iv}
 S.~Derkachov and V.~Spiridonov, \emph{{Yang-Baxter equation, parameter
   permutations, and the elliptic beta integral}},
@@ -786,6 +804,13 @@ J.~Gomis and B.~Le~Floch, \emph{{'t Hooft Operators in Gauge Theory from Toda
   11} (2011) 114}, [\href{https://arxiv.org/abs/1008.4139}{{\ttfamily
   1008.4139}}].
 
+\bibitem{Drukker:2009tz}
+N.~Drukker, D.~R. Morrison and T.~Okuda, \emph{{Loop operators and S-duality
+  from curves on Riemann surfaces}},
+  \href{https://doi.org/10.1088/1126-6708/2009/09/031}{\emph{JHEP} {\bfseries
+  09} (2009) 031}, [\href{https://arxiv.org/abs/0907.2593}{{\ttfamily
+  0907.2593}}].
+
 \bibitem{Yagi:2014toa}
 J.~Yagi, \emph{{$\Omega$-deformation and quantization}},
   \href{https://doi.org/10.1007/JHEP08(2014)112}{\emph{JHEP} {\bfseries 08}
@@ -796,6 +821,23 @@ S.~Hellerman, D.~Orlando and S.~Reffert, \emph{{String theory of the Omega
   deformation}}, \href{https://doi.org/10.1007/JHEP01(2012)148}{\emph{JHEP}
   {\bfseries 01} (2012) 148},
   [\href{https://arxiv.org/abs/1106.0279}{{\ttfamily 1106.0279}}].
+
+\bibitem{Hellerman:2012zf}
+S.~Hellerman, D.~Orlando and S.~Reffert, \emph{{The Omega Deformation From
+  String and M-Theory}},
+  \href{https://doi.org/10.1007/JHEP07(2012)061}{\emph{JHEP} {\bfseries 07}
+  (2012) 061}, [\href{https://arxiv.org/abs/1204.4192}{{\ttfamily 1204.4192}}].
+
+\bibitem{Orlando:2013yea}
+D.~Orlando and S.~Reffert, \emph{{Deformed supersymmetric gauge theories from
+  the fluxtrap background}},
+  \href{https://doi.org/10.1142/S0217751X13300445}{\emph{Int. J. Mod. Phys. A}
+  {\bfseries 28} (2013) 1330044},
+  [\href{https://arxiv.org/abs/1309.7350}{{\ttfamily 1309.7350}}].
+
+\bibitem{Hayashi:2020ofu}
+H.~Hayashi, T.~Okuda and Y.~Yoshida, \emph{{ABCD of 't Hooft operators}},
+  \href{https://arxiv.org/abs/2012.12275}{{\ttfamily 2012.12275}}.
 
 \bibitem{Kels:2015bda}
 A.~P. Kels, \emph{{New solutions of the star-triangle relation with discrete

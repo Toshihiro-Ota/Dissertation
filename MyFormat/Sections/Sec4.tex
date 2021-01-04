@@ -656,8 +656,8 @@ the quiver diagram from zig-zag paths as in figure \ref{fig:rule_for_quiver}.
 \subsubsection{Integrable lattice models from quiver gauge theories}
 
 
-From the supersymmetric index of the four-dimensional $\mathcal{N}=1$
-theory realized by a brane tiling, we obtain an integrable lattice
+From the supersymmetric index of four-dimensional $\mathcal{N}=1$
+theories realized by a brane tiling, we obtain an integrable lattice
 model defined on the lattice $\{ C_{i}\} $ consisting
 of the zig-zag paths. Each $C_{i}$ carries a spectral parameter $u_{i}$.
 S-duality followed by T-duality on $S^{1}$ turns NS5$_{i}$ into
@@ -675,7 +675,7 @@ on the conjugacy class of the holonomy, which is uniquely represented
 by a diagonal matrix $\mathrm{diag}(z_{1},\ldots,z_{N})$ up to permutations
 of the entries. The index is therefore a symmetric function of the
 $\U(1)$-valued variables $(z_{1},\ldots,z_{N})$ obeying the constraint
-$z_{1}\cdots z_{N}=1$. These variables are fugacities for the $\SU(N)$
+$\prod_i z_i=1$. These variables are fugacities for the $\SU(N)$
 flavor symmetry and parametrize the value of the spin at this node,
 and thus the spins take values in the maximal torus $\U(1)^{N-1}$
 of $\SU(N)$. For a gauge node, integration is performed over the fugacities
@@ -943,7 +943,7 @@ relation (\ref{eq:unitarity_delta}), reads
 The two sides are related by Seiberg duality \cite{Seiberg:1994pq} for SQCD
 with $N$ colors and $2N$ flavors, so their indices are indeed equal.
 The Yang-Baxter equation in the lattice model in this case is hence
-also identified with the Seiberg duality in gauge theory side.
+identified with the Seiberg duality in gauge theory side.
 The relation between
 the Yang-Baxter move and Seiberg duality was first pointed out in
 \cite{Hanany:2005ss} and established in \cite{Yamazaki:2012cp}.
@@ -977,7 +977,8 @@ and denote the isometry groups acting on $\zeta_{p}$ and $\zeta_{q}$
 by $\U(1)_{p}$ and $\U(1)_{q}$, respectively. We take $S^{1}\times S^{3}$
 to be a twisted product; we prepare a trivial $S^{3}$-fibration over
 an interval $[0,\beta]$ and identify the fibers at the ends of the
-base using an isometry $\left(e^{\iu\theta_{p}},e^{\iu\theta_{q}}\right)\in \U(1)_{p}\times \U(1)_{q}$.
+base using an isometry $\left(e^{\iu\theta_{p}},e^{\iu\theta_{q}}\right)\in \U(1)_{p}\times \U(1)_{q}$
+(that is, we are making a mapping torus).
 On this spacetime, the partition function of the quiver gauge theory
 realized by a brane tiling gives the supersymmetric index refined
 by the isometries and the flavor symmetries.
@@ -1072,7 +1073,7 @@ vector multiplet and integration over its fugacities. For example,
           \mathcal{I}_{V}(z)  \mathcal{I}_{\mathcal{T}}(z)  \mathcal{I}_{\mathcal{T}'}(z),
 \end{equation}
 with the integration performed over the unit circle $\mathbb{T}$
-for each variable $z_{I}$. The index $\mathcal{I}_{\mathcal{T}}(z)$
+for each variable $z_{I}$. The index $\mathcal{I}_{V}(z)$
 of the vector multiplet is given by elliptic gamma functions:
 \begin{equation}
     \begin{tikzpicture}[scale=1, baseline=(x.base)]    \node (x) at (0,0) {\vphantom{x}};
@@ -1085,7 +1086,7 @@ of the vector multiplet is given by elliptic gamma functions:
 \end{equation}
 %See appendix ?? for the definition of the elliptic gamma function
 %and various identities it satisfies.
-where we use the Pochhammar symble $(z;q)_{\infty}=\prod_{k=0}^{\infty}\left(1-q^{k}z\right)$.
+where we use the Pochhammar symbol $(z;q)_{\infty}=\prod_{k=0}^{\infty}\left(1-q^{k}z\right)$.
 Also, let $a_{i}=e^{2\pi \iu u_{i}}$ be the fugacity
 for the flavor group $\U(1)_i$ associated with the $i$th zig-zag path.
 Here and in the following, we are often using a quiver to mean the index of the
@@ -1226,7 +1227,7 @@ by
   \label{eq:fullindex}
 \end{equation}
 where the two products are taken over all nodes and all arrows, respectively.
-the index is a function of the parameters $p,\,q$ and the flavor
+The index is a function of the parameters $p,\,q$ and the flavor
 fugacities $a_{i}$, which are suppressed in the above expression.
 If the quiver contains flavor nodes, the index is also a function
 of their fugacities.
@@ -1317,7 +1318,7 @@ Integration over fugacities is a counterpart of the summation over all the
 allowed spin configurations in lattice model side.
 What is more, the quantities in four-dimensional gauge theories really have one-to-one
 correspondence in the lattice model side. The dictionary is shown as
-in table \ref{tab:gauge_ybe} and such a correspondence is called \emph{Gauge/YBE correspondence}.
+in table \ref{tab:gauge_ybe} and such a correspondence is called Gauge/YBE correspondence.
 
 
 %TABLE
@@ -1377,7 +1378,7 @@ Such theories arise from compactification of six-dimensional $\CN=(2,0)$ superco
 field theory, or M5-brane, on punctured Riemann surfaces.
 The idea of class-$\CS$ leads to various correspondences among QFTs in diverse dimensions,
 including the renowned AGT correspondence \cite{Alday:2009aq,Wyllard:2009hg}
-and the variants thereof \cite{Gadde:2009kb,Gadde:2011ik,Dimofte:2011ju,Dimofte:2011py,Terashima:2011qi,Terashima:2012cx,Yagi:2013fda}.
+and the variants thereof \cite{Gadde:2009kb,Gadde:2011ik,Dimofte:2011ju,Dimofte:2011py,Terashima:2011qi,Terashima:2012cx,Yagi:2013fda,Gadde:2013sca}.
 
 
 Typical examples of class-$\mathcal{S}$ theories are $\mathcal{N}=2$
@@ -1393,7 +1394,7 @@ will mainly work with $N=2$, for now we keep $N$ general.
 Let us consider the standard type IIA brane configuration for an $\mathcal{N}=2$
 linear quiver theory with $m+1$ nodes. It consists of $N$ D4-branes
 spanning the 01236 directions, intersected by $m$ NS5-branes extending
-along the 012345 directions; see table \ref{tab:D4NS5}.
+along the 012345 directions (table \ref{tab:D4NS5}).
 \begin{table}
 \caption{D4-NS5 brane configuration}
 \label{tab:D4NS5}
@@ -1667,14 +1668,14 @@ model is given in terms of the charges of the $\mathcal{N}=2$ theory
 by
 \begin{equation}
     R  =  R_{0}  +  \frac{1}{2}\sum_{i}F_{i},
-      \quad  R_{0}  =  -r+I_{3}.
+      \qquad  R_{0}  =  -r+I_{3}.
 \end{equation}
 The flavor charges associated to the zig-zag paths can be written
 as
 \begin{equation}
     F_{a_{i}}  =  -F_{i},
-      \quad  F_{b}  =  -\mathcal{F}+\frac{1}{2}\sum_{i}F_{i},
-      \quad  F_{c}  =  \mathcal{F}+\frac{1}{2}\sum_{i}F_{i}.
+      \qquad  F_{b}  =  -\mathcal{F}+\frac{1}{2}\sum_{i}F_{i},
+      \qquad  F_{c}  =  \mathcal{F}+\frac{1}{2}\sum_{i}F_{i}.
 \end{equation}
 Without loss of generality, we can set
 \begin{equation}
@@ -1685,7 +1686,7 @@ that enters the indices of the bifundamental chiral multiplets, we
 deduce
 \begin{equation}
     b  =  \frac{1}{\sqrt{t}},
-      \quad  c  =  \sqrt{\frac{t}{pq}}.
+      \qquad  c  =  \sqrt{\frac{t}{pq}}.
   \label{eq:relation_bc}
 \end{equation}
 Before proceeding, we should mention a peculiarity in the $A_{1}$
@@ -1715,7 +1716,7 @@ which is manifestly symmetric under permutation of $a,\,z$ and $w$.
 
 We are now ready to check the correspondence between surface defects and transfer matrices
 by comparing them with independent calculations. In this section we
-perform the simplest such check for surface defects in $A_{1}$ theories
+perform the simplest such a check for surface defects in $A_{1}$ theories
 of class-$\mathcal{S}$,
 %\cite{Gaiotto:2009we,Gaiotto:2009hg},
 which arise from compactification
@@ -1889,6 +1890,7 @@ $L^{\diamond}:W\otimes V^{\diamond}\rightarrow V^{\diamond}\otimes W$
 as a $2\times2$ matrix whose entries are operators acting on functions
 in $V^{\diamond}$.
 The R-matrix $\mathcal{R}_{ij}^{\diamond}$,
+constructed by two dashed lines
 \begin{equation}
   \CR_{ij}^{\diamond}
   :=\
@@ -1942,7 +1944,7 @@ and the solution is given by
 \begin{equation}
     \mathcal{R}_{ij}^{\mathrm{B}}(u_{i},u_{j})
       =  P\sum_{a=0}^{3}w_{a}(u_{i}-u_{j})  \sigma_{a}  \otimes  \sigma_{a},
-        \quad  w_{a}(u)  =  \frac{\theta_{a+1}(u+\eta)}{\theta_{a+1}(\eta)},
+        \qquad  w_{a}(u)  =  \frac{\theta_{a+1}(u+\eta)}{\theta_{a+1}(\eta)},
 \end{equation}
 where $P:W_{i}\otimes W_{j}\to W_{j}\otimes W_{i}$ is the
 permutation operator, $\sigma_{a}$ are the Pauli matrices and $2\times2$
@@ -1953,8 +1955,9 @@ eight-vertex model. Sklyanin's L-operator is defined by
     L^{\mathrm{S}}(u,(\nu,l))
       =  P\sum_{a=0}^{3}w_{a}(u+\eta)  \sigma_{a}  \otimes  \mathbf{S}_{a}^{(l)}.
 \end{equation}
-The operators $\mathbf{S}_{a}^{(l)}$ act on meromorphic functions
-$f(\zeta)$ as difference operators:
+The operators $\mathbf{S}_{a}^{(l)}$ act on $V^{\diamond}$ by difference operators;
+let $f(\zeta)$ be a meromorphic function,
+%meromorphic functions $f(\zeta)$ as difference operators:
 \begin{equation}
     \left(\mathbf{S}_{a}^{(l)}f\right)(\zeta)
       = \iu^{\delta_{a,0}}\frac{\theta_{a+1}(\eta)}{\theta_{a+1}(2\zeta)}
@@ -1980,22 +1983,23 @@ of the Sklyanin algebra:
 \begin{equation}
     L^{\mathrm{DS}}(u,(\nu,l))
       =  \varphi  \sigma_{3}  L^{\mathrm{S}}\varphi^{-1},
-        \quad  \left(\varphi f\right)(\zeta)  :=  \exp(\pi \iu \zeta^{2}/\eta)f(\zeta).
+        \qquad  \left(\varphi f\right)(\zeta)  :=  \exp(\pi \iu \zeta^{2}/\eta)f(\zeta).
 \end{equation}
 This L-operator again satisfies the RLL relation with Baxter's R-matrix
 $\mathcal{R}^{\mathrm{B}}$. At this point, what is important is that
 Derkachov and Spiridonov show their R-operator $R^{\mathrm{DS}}$ is precisely the R-operator
-for the diamond quiver in the brane tiling model $R^{\diamond}$,
-that is,
+of Bazhanov-Sergeev type, which is given by
+the diamond quiver in the brane tiling model $R^{\diamond}$:
+%that is,
 \begin{equation}
     R_{ij}^{\mathrm{DS}}((\nu_{i},l_{i}),(\nu_{j},l_{j}))
       =
         R_{ij}^{\diamond}((a_{i},b_{i}),(a_{j},b_{j})),
 \end{equation}
-with the variables $\zeta$ and $z$ are related by $z=\exp(2\pi \iu \zeta)$
+where the variables $\zeta$ and $z$ are related by $z=\exp(2\pi \iu \zeta)$
 and the parameters identified as
 \begin{align}
-  a_{i} b_{i} &  =  \exp(-2\pi \iu \nu_{i}),  \quad  \frac{a_{i}}{b_{i}}  =  \exp(2\pi \iu\eta(2l_{i}+1)),  \\
+  a_{i} b_{i} &  =  \exp(-2\pi \iu \nu_{i}),  \qquad  \frac{a_{i}}{b_{i}}  =  \exp(2\pi \iu\eta(2l_{i}+1)),  \\
   (p,q)       &  =  \left(\exp(2\pi \iu\tau),\exp(4\pi \iu\eta)\right).
 \end{align}
 
@@ -2028,7 +2032,7 @@ line to be
 \end{equation}
 
 For the computation of the transfer matrix, we exploit the fact that
-$L^{\diamond}$ really consists of three parts separated by zig-zag
+$L^{\diamond}$ above really consists of three parts separated by zig-zag
 paths:
 \begin{equation}
     L_{i}^{\diamond}(c,(a_{i},b_{i}))
@@ -2065,7 +2069,7 @@ the following factorized form:
   \label{eq:diamondL}
 \end{equation}
 In this expression, $\Delta_{i}^{\pm1/2}$ are difference operators
-acting on functions of $z_{i}$ as $\left(\Delta_{i}^{\pm1/2}f\right)(z_{i})=f(q^{\pm1/2}z_{i})$
+acting on $V^{\diamond}$ as $\left(\Delta_{i}^{\pm1/2}f\right)(z_{i})=f(q^{\pm1/2}z_{i})$
 and
 \begin{equation}
     A(z;a)
@@ -2075,7 +2079,7 @@ and
           \bar{\theta}_{4}(az)  & \bar{\theta}_{3}(az)
         \end{array}
       \right),
-        \quad
+        \qquad
     B(z;b)
     =\left(
         \begin{array}{cc}
@@ -2554,7 +2558,7 @@ and defines the action of the surface defect on the maximal puncture.
 \subsubsection{Comparison with the transfer matrix}
 \label{sec:comparison}
 
-Let us finally compare the result with the proposal. For clarity of
+Let us finally compare the results with the proposal. For clarity of
 presentation, take a minimal puncture in $\mathcal{T}_{\mathrm{IR}}$
 and move it close to the maximal puncture on which the surface defect
 acts. Then the neighborhood of these punctures looks like a trinion
@@ -2643,8 +2647,9 @@ representation of $\SU(N)$ with general $N$, we get the L-operator
 for Belavin's elliptic R-matrix \cite{Belavin:1981ix}. If instead placed in
 an $( N,0 )$ background, the L-operator gives a representation
 of Felder's elliptic quantum group for $\mathfrak{sl}_{N}$ \cite{Felder:1994pb,Felder:1994be,MR1606760}.
-Thus, the surface defects for general $N$ unify these integrable lattice models and
-generate the so-called \emph{elliptic quantum group}.
+Thus, the surface defects for general $N$ in general backgrounds
+unify these integrable lattice models and
+generate \emph{elliptic quantum groups}.
 For the details, see \cite{Yagi:2017hmj}.
 
 

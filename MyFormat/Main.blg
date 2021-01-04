@@ -7,45 +7,45 @@ Warning--can't use both author and editor fields in Okuda:2014fja
 Warning--empty publisher in Okuda:2014fja
 Warning--can't use both author and editor fields in Gukov:2014gja
 Warning--empty publisher in Gukov:2014gja
-You've used 138 entries,
+You've used 145 entries,
             2217 wiz_defined-function locations,
-            1582 strings with 26539 characters,
-and the built_in function-call counts, 43645 in all, are:
-= -- 4722
-> -- 1315
+            1633 strings with 27614 characters,
+and the built_in function-call counts, 45940 in all, are:
+= -- 4969
+> -- 1391
 < -- 0
-+ -- 412
-- -- 274
-* -- 3833
-:= -- 5970
-add.period$ -- 146
-call.type$ -- 138
-change.case$ -- 134
++ -- 435
+- -- 290
+* -- 4042
+:= -- 6278
+add.period$ -- 153
+call.type$ -- 145
+change.case$ -- 141
 chr.to.int$ -- 0
-cite$ -- 142
-duplicate$ -- 2118
-empty$ -- 4023
-format.name$ -- 274
-if$ -- 11289
+cite$ -- 149
+duplicate$ -- 2230
+empty$ -- 4226
+format.name$ -- 290
+if$ -- 11885
 int.to.chr$ -- 0
-int.to.str$ -- 138
-missing$ -- 520
-newline$ -- 426
-num.names$ -- 138
-pop$ -- 265
+int.to.str$ -- 145
+missing$ -- 547
+newline$ -- 447
+num.names$ -- 145
+pop$ -- 275
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1618
+skip$ -- 1710
 stack$ -- 0
-substring$ -- 2716
-swap$ -- 1032
+substring$ -- 2854
+swap$ -- 1092
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 417
-width$ -- 141
-write$ -- 1439
+while$ -- 436
+width$ -- 148
+write$ -- 1512
 (There were 4 warnings)

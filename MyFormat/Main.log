@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.12.17)  14 DEC 2020 13:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.12.17)  4 JAN 2021 16:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -773,7 +773,7 @@ LaTeX Info: Redefining \nameref on input line 6.
 {/Users/Shared/TeXLive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] Excluding 'comment' comment.pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.117 \end{abstract}
+l.120 \end{abstract}
                      [1] (./Main.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -789,7 +789,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
- [3] [4] [5]) (./Sections/Sec2.tex Excluding 'comment' comment. [6] [7]
+ [3] [4] [5] [6]) (./Sections/Sec2.tex Excluding 'comment' comment. [7]
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -2016,70 +2016,70 @@ Missing character: There is no t in font nullfont!
  [38] [39]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1355.
+(hyperref)                removing `math shift' on input line 1356.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1355.
+(hyperref)                removing `math shift' on input line 1356.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1369.
+(hyperref)                removing `math shift' on input line 1370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1369.
+(hyperref)                removing `math shift' on input line 1370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1369.
+(hyperref)                removing `math shift' on input line 1370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1369.
+(hyperref)                removing `math shift' on input line 1370.
 
 [40] [41]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1506.
+(hyperref)                removing `math shift' on input line 1507.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1506.
+(hyperref)                removing `math shift' on input line 1507.
 
 [42] [43] Excluding 'comment' comment. [44]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1848.
+(hyperref)                removing `math shift' on input line 1849.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1848.
+(hyperref)                removing `math shift' on input line 1849.
 
 [45] [46] [47]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2178.
+(hyperref)                removing `math shift' on input line 2182.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 2178.
+(hyperref)                removing `subscript' on input line 2182.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2178.
+(hyperref)                removing `math shift' on input line 2182.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2178.
+(hyperref)                removing `math shift' on input line 2182.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2178.
+(hyperref)                removing `math shift' on input line 2182.
 
 [48] [49]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2382.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2386.
  [50] [51] [52]) (./Sections/Sec3.tex Excluding 'comment' comment. [53]
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -2211,35 +2211,35 @@ Missing character: There is no t in font nullfont!
  [57] [58] [59] [60] [61]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 856.
+(hyperref)                removing `math shift' on input line 857.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 856.
+(hyperref)                removing `superscript' on input line 857.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 856.
+(hyperref)                removing `\times' on input line 857.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 856.
+(hyperref)                removing `subscript' on input line 857.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 856.
+(hyperref)                removing `\epsilon' on input line 857.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 856.
+(hyperref)                removing `superscript' on input line 857.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 856.
+(hyperref)                removing `\times' on input line 857.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 856.
+(hyperref)                removing `math shift' on input line 857.
 
 [62] [63] [64] [65] [66] [67] [68] Excluding 'comment' comment. [69] [70] Excluding 'comment' comment. [71] [72]
 Missing character: There is no p in font nullfont!
@@ -2522,35 +2522,35 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 132.
 
-) [85] (./Main.bbl [86
+) [85] [86] (./Main.bbl [87
 
-] [87] [88] [89] [90] [91] [92] [93]) [94]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+] [88] [89] [90] [91] [92] [93] [94] [95]) [96]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
  (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 155.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 155.
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: F86979151EBA1E68F908FA1575014A68;4247.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 155.
  ) 
 Here is how much of TeX's memory you used:
- 24469 strings out of 493308
- 449944 string characters out of 6129385
- 563763 words of memory out of 5000000
- 26736 multiletter control sequences out of 15000+600000
+ 24486 strings out of 493308
+ 450225 string characters out of 6129385
+ 564034 words of memory out of 5000000
+ 26743 multiletter control sequences out of 15000+600000
  25906 words of font info for 102 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  64i,19n,358p,3324b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
 </Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></Applications/TeXLive/Library/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Main.pdf (97 pages, 835624 bytes).
+Output written on Main.pdf (99 pages, 840568 bytes).
 PDF statistics:
- 2136 PDF objects out of 2487 (max. 8388607)
- 1980 compressed objects within 20 object streams
- 691 named destinations out of 1000 (max. 500000)
+ 2177 PDF objects out of 2487 (max. 8388607)
+ 2018 compressed objects within 21 object streams
+ 701 named destinations out of 1000 (max. 500000)
  381 words of extra memory for PDF output out of 10000 (max. 10000000)
 

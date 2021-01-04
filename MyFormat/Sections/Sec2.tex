@@ -279,7 +279,7 @@ If the determinant of the Laplacian involves a divergence, it must
 be properly regularized.
 
 Another free theory is the free fermion theory. In this case $M$
-also needs a spin structure and the spin representations $S$, $S'$.
+also needs a spin (or ${\rm spin}^c$) structure and the spin representations $S$, $S'$.
 Then we construct the Dirac operator $\mathcal{D}_{A}$ on the spin
 bundles, and the partition function of the free fermion theory is given
 by
@@ -293,9 +293,9 @@ needs to be somehow modified. In particular the partition function
 for a closed manifold is given by the eta invariant \cite{Dai:1994kq}.}
 
 Next, in two dimensions, we have another axiomatic quantum field theory,
-that is \emph{conformal field theory} (CFT).
+that is \emph{conformal field theory} (CFT) \cite{Segal:2002ei}.
 To discuss two-dimensional CFT, we need a conformal (complex) structure
-on $M$, i.e. $M$ becomes a Riemann surface. CFT in two dimensions was formulated by Belavin, Polyakov,
+on $M$, i.e.~$M$ becomes a Riemann surface. CFT in two dimensions was formulated by Belavin, Polyakov,
 and Zamolodchikov \cite{Belavin:1984vu} as a model of physical systems at critical
 points. They established the renowned Virasoro algebra as an infinite
 dimensional symmetry of the system and fully investigated the minimal
@@ -304,7 +304,7 @@ vertex operator algebras, and since then there are many mathematically
 rigorous discussions on them. Their kinematic behaviors on Riemann
 surfaces are governed by the conformal blocks, and its geometric meaning
 has been studied in \cite{Friedan:1986ua}. In turn, the study of irrational
-CFTs has led to the AGT correspondence \cite{Alday:2009aq}, which has brought
+CFTs \cite{Teschner:2001rv,Nakayama:2004vk} has led to the AGT correspondence \cite{Alday:2009aq}, which has brought
 to us large amount of developments in both physics and mathematics.
 We will give a general statement of AGT correspondence and apply it to our work
 in section \ref{sec:line}.
@@ -322,13 +322,13 @@ For the geometric aspects of CFT, see e.g.~\cite{Friedan:1986ua}. }
 %
 and happily this also has brought to us a numerous amount of applications
 both to physics and to pure mathematics. For instance, two-dimensional
-topological QFTs are known to be functorially equivalent to the category of commutative
-Frobenius algebras \cite{MR2037238}. three-dimensional Chern-Simons theory for a
+TQFTs are known to be functorially equivalent to the category of commutative
+Frobenius algebras \cite{MR2037238}. The three-dimensional Chern-Simons theory for a
 compact Lie group $G$ is rigorously constructed by
 Turaev-Viro and Reshetikhin-Turaev using quantum groups \cite{Turaev:1992hq, Reshetikhin:1991tc},
 and Kohno \cite{MR1167165} using
 the monodromy representation of Knizhnik-Zamolodchikov equation \cite{Knizhnik:1984nr}.
-three-dimensional Chern-Simons theory has many
+The three-dimensional Chern-Simons theory has many
 applications to knot or link invariants and three-manifold invariants.
 Furthermore, both 2d and 3d TQFTs have applications to the mirror symmetry,
 or topological string theory (see e.g.~\cite{Hori:2003ic}), those have led to fruitful interactions
@@ -571,7 +571,7 @@ fields with time $<t$.
 \end{figure}
 
 
-These two data are subjected to the following assignments:
+These two data are subjected to the following five assignments:
 \begin{enumerate}
   \item (involutory) Let $-N$ denote a manifold $N$ with the opposite orientation,
 then
@@ -624,7 +624,7 @@ to the time evolution operator
   Z\big(\tilde{M}\big) := e^{-tH} : \mathcal{H}_{N_{1}} \longrightarrow \mathcal{H}_{N_{2}}.
 \end{equation}
 Since canonical quantization is a procedure to make an assignment
-of Hilbert spaces and the time evolution among them, as we saw in QM,
+of Hilbert spaces and the time evolution among them as we saw in QM,
 this association of linear maps gives the other half of canonical
 quantization.
 One can also explicitly express $Z\big(\tilde{M}\big)$ in the path integral
@@ -680,7 +680,7 @@ Since in a topological theory manifolds diffeomorphic to each other
 should be thought of as identical, each cobordism class defines
 a linear map. This means that the addition of a cylinder is a trivial
 operation; the associated linear map is the identity. This
-is another major difference from ordinary QFTs. For instance, for three-dimensional
+is another major difference from ordinary QFTs. For instance, for the three-dimensional
 Chern-Simons theory one can explicitly see its Hamiltonian is identically
 zero and hence the time evolution of Chern-Simons theory is trivial.
 \end{enumerate}
@@ -797,7 +797,7 @@ A spin configuration on the lattice $L$ is given by a map
 \end{equation}
 where usually $+1$ is called ``up spin'' and $-1$ ``down spin.'' The
 map defines a configuration of up and down spins at each site of the lattice $L$. So it
-can also be thought of as an assignment of $+1$ or $-1$ on all the
+can also be thought of as an assignment of spins on all the
 sites of the lattice $L$. We often denote the spin at each site by
 its image $s_{I} := \mathbf{s}(I),\,I\in L$. Let $S(L)$
 be the set of all the spin configurations. Since spin configurations
@@ -814,14 +814,13 @@ the energy functional of the Ising model by
 \end{align}
 where $s_{ij}=s_{i+m,j}=s_{i,j+n}$, and $J\in\mathbb{R}_{>0}$
 is a constant parameter. This is one of the simplest spin systems,
-in which only the nearest neighbor spins have simple interactions. From this
-energy functional, the partition function of the Ising model is defined
-by
+in which only the nearest-neighbor spins have simple interactions.
+The partition function of the Ising model is defined through this energy functional,
 \begin{equation}
   Z\big(L,E_{\mathrm{Ising}};\beta\big)
     :=  \sum_{\mathbf{s}\in S(L)}  e^{-\beta E_{\mathrm{Ising}}(\mathbf{s})},
 \end{equation}
-where $\beta\in\mathbb{R}_{\geq0}$ is an inverse temperature. The
+where $\beta\in\mathbb{R}_{>0}$ is the inverse temperature. The
 summand is generically called the Boltzmann weight as well as in field
 theory. In this expression, one recognizes that the right-hand side
 is a discrete version of path integral expression in field theory.
@@ -831,8 +830,7 @@ over all the spin configurations is the path integral over all the
 field configurations. Given a periodic lattice $L$, the partition
 function returns a number, which is a discrete version of the partition
 function of QFT which returns a number as well if a closed manifold
-$M$ is given. For later use, define another quantity called the free
-energy,
+$M$ is given. For later use, define another quantity called the \emph{free energy},
 \begin{equation}
   f(\beta)  :=  -\frac{1}{\beta}\frac{1}{mn}\log Z(\beta),
 \end{equation}
@@ -901,23 +899,23 @@ transfer matrix. To see this, for simplicity in this section we consider
 The setup is almost the same as in the 2d case. A 1d lattice on torus
 and a spin configuration is defined by
 \begin{equation}
-L_{1d}  =  \mathbb{Z}_{n}  =  \left\{ 1,\ldots,n\right\} ,
+L_{\text{1d}}  =  \mathbb{Z}_{n}  =  \left\{ 1,\ldots,n\right\} ,
 \end{equation}
 %
 \begin{equation}
-\mathbf{s}  :  L_{1d}  \longrightarrow  \left\{ \pm1\right\} .
+\mathbf{s}  :  L_{\text{1d}}  \longrightarrow  \left\{ \pm1\right\} .
 \end{equation}
 Define the energy functional of 1d Ising model by
 \begin{equation}
-  E_{1d\,\mathrm{Ising}}(\mathbf{s})  =  -J\sum_{i=1}^{n}s_{i}s_{i+1},\quad\,s_{n+1}=s_{1}.
+  E_{\text{1d Ising}}(\mathbf{s})  =  -J\sum_{i=1}^{n}s_{i}s_{i+1}, \qquad s_{n+1}=s_{1}.
 \end{equation}
 Then the partition function of 1d Ising model is given as
 \begin{align}
-  Z\big(L_{1d},E_{\mathrm{1d}};\beta\big)
-  & :=  \sum_{\mathbf{s}}  e^{-\beta E_{1d}(\mathbf{s})}\nonumber \\
+  Z\big(L_{\text{1d}},E_{\text{1d}};\beta\big)
+  & :=  \sum_{\mathbf{s}}  e^{-\beta E_{\text{1d}}(\mathbf{s})}\nonumber \\
   & =   \sum_{s_{1},\ldots,s_{n}=\pm1}  e^{Ks_{1}s_{n}}  \cdots  e^{Ks_{3}s_{2}}e^{Ks_{2}s_{1}},
 \end{align}
- where $K:=\beta J$.
+where $K:=\beta J$.
 
 
 %FIGURE
@@ -1018,8 +1016,8 @@ We conclude that the free energy in the thermodynamic limit is
 given by the largest eigenvalue of the transfer matrix. Finally, integrability
 of lattice model is rephrased as
 \begin{align*}
-  &  \textrm{One can exatly find the eigenvalues of transfer matrix.} \\
-  &  \Rightarrow  ~  \textrm{Can exactly compute the free enrgy.} \\
+  &  \textrm{One can exactly find the eigenvalues of transfer matrix.} \\
+  &  \Rightarrow  ~  \textrm{Can exactly compute the free energy.} \\
   &  \Rightarrow  ~  \textrm{The system is exactly solvable.}
 \end{align*}
 
@@ -1053,7 +1051,7 @@ in some detail, with its origin from TQFT with extra dimensions.
 \label{sec:integrability_from_TQFT}
 
 We have seen that a QFT is ideally given by some functor $Z$, and
-lattice model is also given by $Z$ as a discrete version of QFT.
+lattice model is also given by some $Z$ as a discrete version of QFT.
 Now, we would like to relate these two. The key concept is that
 ``line operators in two-dimensional TQFT form a lattice model.''
 In particular, if the two-dimensional TQFT has extra dimensions, the corresponding
@@ -1121,7 +1119,7 @@ of two line operators $\mathcal{L}_{i}$ and $\mathcal{L}_{j}$:
   \quad .
 \end{equation}
 If one thinks of the above picture as the world-sheet of two scattering
-open strings, one can regard it as follows: The endpoints
+open strings, one may regard it as follows: The endpoints
 of the open strings sweep out the double-lined arcs, on which D-branes
 are there and the boundary conditions (Chan-Paton factors) are specified
 by labels $a,\,b,\,c,\,d$. The line operators are the world-lines
@@ -1416,8 +1414,11 @@ actually can be formulated as an IRF model by taking vertex-face transformation.
 \subsubsection*{Vertex model}
 
 If $B$ consists of a single boundary condition, say $a$, we can
-simply write the open string state space by $V_{i}:=V_{aa,i}$, and
-the R-matrix is represented only by a crossing of two lines:
+simply write the open string state space by $V_{i}:=V_{aa,i}$.%
+%
+\footnote{More precisely, for such a case there is actually no boundary condition at all.}
+%
+The R-matrix is represented only by a crossing of two lines:
 \begin{equation}
   R_{ij}
   =
@@ -1742,7 +1743,7 @@ preserves four supercharges.
 
     \end{tikzpicture}
 
-  \caption{The D$p$-brane D$p_i$ ending on the NS5-branes creates a defect $\mathcal{E}_{\rm{D}p_i}$ along $C_i$.}
+  \caption{The D$p$-brane D$p_i$ ending on the NS5-branes creates a defect $\mathcal{E}_{{\rm D}p_i}$ along $C_i$.}
   \label{fig:Dp_on_NS5}
 \end{figure}
 
@@ -1860,11 +1861,13 @@ The brane tiling construction of integrable lattice models can be
 enriched by introducing additional defects. In addition to the previously
 defined D5NS5-brane system, let us consider a D3-brane such as
 \begin{align}
-  \mathrm{D3}    &  \quad S^{1}  \times  N  \times  C  \times  \mathbb{R}_{+}, \label{eq:D3}\\
-  \mathrm{D3'}   &  \quad S^{1}  \times \{ 0\}  \times  C'  \times  \mathbb{R}^{2}, \label{eq:D3'}
+  \mathrm{D3}    &  \quad S^{1}  \times  N  \times  C  \times  \mathbb{R}^{\geq}, \label{eq:D3}\\
+  \mathrm{D3'}   &  \quad S^{1}  \times \{ 0\}  \times  C'  \times  D, \label{eq:D3'}
 \end{align}
-where $N$ is a curve in $M$ and $C,\,C'$ are one-cycles on $\Sigma$.
-In field theory side, these D3-branes create new extended defect operators elongated in $S^1\times N$ and $S^1$, respectively.
+where $N$ is a curve in $M$, $C$ and $C'$ are one-cycles on $\Sigma$,
+and $D$ is some two-manifold parpendicular to 5-branes.
+In field theory side, these D3-branes create new extended defect operators
+elongated in $S^1\times N$ and $S^1$, respectively.
 A single D3-brane insertion corresponds to a new oriented line $C,\,C'$ in
 the integrable lattice model, which we represent by a dashed line.
 Now that we have two kinds of lines originating from 5-branes and a D3-brane,
@@ -1977,7 +1980,7 @@ defects. In the next two sections, we will be studying the followings:
 	\item For the case of single D3 \eqref{eq:D3}, let $M=S^{3}$, $\Sigma=T^{2}$, and $N=S^{1}$.
 Then the correspondence \eqref{eq:correspondence1} is explicitly written by the equivalence between
 the supersymmetric index and the partition function of the Bazhanov-Sergeev integrable lattice model
-\cite{Bazhanov:2010kz,Bazhanov:2011mz,Yamazaki:2012cp}:
+\cite{Bazhanov:2010kz,Bazhanov:2011mz,Spiridonov:2010em,Yamazaki:2012cp}:
 \begin{align}
   \left\langle  1  \right\rangle_{\mathsf{T}_{\mathrm{D5NS5}}[\Sigma],S^{1}\times S^{3}}
     &  =  \mathcal{I}_{S^{1}\times S^{3}}(p,q,t),\\
@@ -2002,13 +2005,13 @@ the transfer matrix constructed from L-operators of elliptic type:
 D3$'$ creates a line defect wrapping the thermal circle $S^{1}$ and it acts on the quantum
 Hilbert space of a spin chain as a transfer matrix, since now we have
 non-compact three-manifold $\mathbb{R}^{3}$.
-This spin chain has a equivalent lattice model description, and it is really an integrable model of
+This spin chain has an equivalent lattice model description, and it is really an integrable model of
 trigonometric type. The line defect in the
 four-dimensional theory is realized as a Wilson-'t Hooft line operator
 $T$, whose magnetic charge and electric charge $(\mathbf{m},\mathbf{e})$
 also have the counterpart in the lattice model side.
 %is specified by the one-cycle $C'$ winding around the torus $T^{2}$.
-The vacuum expectation values (vevs) of Wilson-'t Hooft
+The vacuum expectation values (vevs) of the Wilson-'t Hooft
 lines realize the deformation quantization of the Hitchin moduli space \cite{Gaiotto:2010be,Ito:2011ea},
 and are naturally quantized by the Weyl quantization:
 \begin{equation}
