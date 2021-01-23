@@ -207,7 +207,9 @@ K.~Costello and J.~Yagi, \emph{{Unification of integrability in supersymmetric
 
 \bibitem{Maruyoshi:2020cwy}
 K.~Maruyoshi, T.~Ota and J.~Yagi, \emph{{Wilson-'t Hooft lines as transfer
-  matrices}},  \href{https://arxiv.org/abs/2009.12391}{{\ttfamily 2009.12391}}.
+  matrices}}, \href{https://doi.org/10.1007/JHEP01(2021)072}{\emph{JHEP}
+  {\bfseries 01} (2021) 072},
+  [\href{https://arxiv.org/abs/2009.12391}{{\ttfamily 2009.12391}}].
 
 \bibitem{Atiyah:1989vu}
 M.~Atiyah, \emph{{Topological quantum field theories}},
@@ -451,15 +453,15 @@ A.~Hanany and D.~Vegh, \emph{{Quivers, tilings, branes and rhombi}},
   hep-th/0511063}}].
 
 \bibitem{Romelsberger:2005eg}
-C.~Romelsberger, \emph{{Counting chiral primaries in N = 1, d=4 superconformal
-  field theories}},
+C.~Romelsberger, \emph{{Counting chiral primaries in {$\mathcal{N}=1$}, d=4
+  superconformal field theories}},
   \href{https://doi.org/10.1016/j.nuclphysb.2006.03.037}{\emph{Nucl. Phys. B}
   {\bfseries 747} (2006) 329--353},
   [\href{https://arxiv.org/abs/hep-th/0510060}{{\ttfamily hep-th/0510060}}].
 
 \bibitem{Kinney:2005ej}
 J.~Kinney, J.~M. Maldacena, S.~Minwalla and S.~Raju, \emph{{An Index for 4
-  dimensional super conformal theories}},
+  dimensional superconformal theories}},
   \href{https://doi.org/10.1007/s00220-007-0258-7}{\emph{Commun. Math. Phys.}
   {\bfseries 275} (2007) 209--254},
   [\href{https://arxiv.org/abs/hep-th/0510251}{{\ttfamily hep-th/0510251}}].
@@ -500,7 +502,7 @@ F.~Dolan and H.~Osborn, \emph{{Applications of the Superconformal Index for
   [\href{https://arxiv.org/abs/0801.4947}{{\ttfamily 0801.4947}}].
 
 \bibitem{Wyllard:2009hg}
-N.~Wyllard, \emph{{A(N-1) conformal Toda field theory correlation functions
+N.~Wyllard, \emph{{$A_{N-1}$ conformal Toda field theory correlation functions
   from conformal {$\mathcal{N} = 2$} SU(N) quiver gauge theories}},
   \href{https://doi.org/10.1088/1126-6708/2009/11/002}{\emph{JHEP} {\bfseries
   11} (2009) 002}, [\href{https://arxiv.org/abs/0907.2189}{{\ttfamily
@@ -519,6 +521,12 @@ A.~Gadde, L.~Rastelli, S.~S. Razamat and W.~Yan, \emph{{The 4d Superconformal
   {\bfseries 106} (2011) 241602},
   [\href{https://arxiv.org/abs/1104.3850}{{\ttfamily 1104.3850}}].
 
+\bibitem{Dimofte:2010tz}
+T.~Dimofte, S.~Gukov and L.~Hollands, \emph{{Vortex Counting and Lagrangian
+  3-manifolds}}, \href{https://doi.org/10.1007/s11005-011-0531-8}{\emph{Lett.
+  Math. Phys.} {\bfseries 98} (2011) 225--287},
+  [\href{https://arxiv.org/abs/1006.0977}{{\ttfamily 1006.0977}}].
+
 \bibitem{Dimofte:2011ju}
 T.~Dimofte, D.~Gaiotto and S.~Gukov, \emph{{Gauge Theories Labelled by
   Three-Manifolds}},
@@ -533,8 +541,8 @@ T.~Dimofte, D.~Gaiotto and S.~Gukov, \emph{{3-Manifolds and 3d Indices}},
   [\href{https://arxiv.org/abs/1112.5179}{{\ttfamily 1112.5179}}].
 
 \bibitem{Terashima:2011qi}
-Y.~Terashima and M.~Yamazaki, \emph{{SL(2,R) Chern-Simons, Liouville, and Gauge
-  Theory on Duality Walls}},
+Y.~Terashima and M.~Yamazaki, \emph{{{${\rm SL}(2,\mathbb{R})$} Chern-Simons,
+  Liouville, and Gauge Theory on Duality Walls}},
   \href{https://doi.org/10.1007/JHEP08(2011)135}{\emph{JHEP} {\bfseries 08}
   (2011) 135}, [\href{https://arxiv.org/abs/1103.5748}{{\ttfamily 1103.5748}}].
 

@@ -1665,8 +1665,8 @@ $\R^4_{\eps_1,\eps_2}$
 at this moment.
 With partial topological twisting along $C_{g,n}$, this system
 preserves eight of the sixteen supercharges of $\CN = (2,0)$
-supersymmetry in six dimensions.
-Then this higher dimensional
+supersymmetry in six dimensions and the whole theory gets independent of the metric
+of $C_{g,n}$. Then this higher dimensional
 theory explains the correspondence such that the two theories are
 originally a single theory in six dimensions; see figure \ref{fig:AGT}.
 %where
@@ -2706,6 +2706,25 @@ matrix~\cite{Maruyoshi:2016caf,Yagi:2017hmj}.
 \subsubsection{Relation to 4d Chern-Simons theory}
 
 
+%TABLE
+\begin{table}
+  \caption{Type IIB string theory setup.}
+  \vspace{-0.5cm}
+    \centering
+    \begin{equation*}
+      \begin{array}{rcccccccc}
+        \text{10d Spacetime} & \R_0 & \R_{12}^2  & \R_{45}^2 & S_6^1 & \R_{7} & \R_{8} & \check{S}^1_9 & S_{10}^1 \\
+        N \text{ D5}         & \R_0 & \R_{12}^2  & - & S_6^1 & - & - & \check{S}^1_9 & S_{10}^1 \\
+        n \text{ D3}         & \R_0 & \R_{12}^2  & - & - & - & \R_8 & - & - \\
+        \text{F1}            & - & -  & - & S_6^1 & - & \R_8^{\geq 0} & - & -
+      \end{array}
+    \end{equation*}
+  %\vspace{-0.5cm}
+\label{tab:IIB-branes}
+\end{table}
+
+
+
 We can say more about the correspondence.
 Going back to the M-theory setup, we reduce it on $S^1_3$ and apply
 T-duality on $S^1_9$.  Then, we now have type IIB string theory setup;
@@ -2773,23 +2792,6 @@ Yang-Mills theory, this deformation descends to the S-dual of the
 $\Omega$-deformation~\cite{Nekrasov:2002qd}.
 
 
-%TABLE
-\begin{table}
-  \caption{Type IIB string theory setup.}
-  \vspace{-0.5cm}
-    \centering
-    \begin{equation*}
-      \begin{array}{rcccccccc}
-        \text{10d Spacetime} & \R_0 & \R_{12}^2  & \R_{45}^2 & S_6^1 & \R_{7} & \R_{8} & \check{S}^1_9 & S_{10}^1 \\
-        N \text{ D5}         & \R_0 & \R_{12}^2  & - & S_6^1 & - & - & \check{S}^1_9 & S_{10}^1 \\
-        n \text{ D3}         & \R_0 & \R_{12}^2  & - & - & - & \R_8 & - & - \\
-        \text{F1}            & - & -  & - & S_6^1 & - & \R_8^{\geq 0} & - & -
-      \end{array}
-    \end{equation*}
-  %\vspace{-0.5cm}
-\label{tab:IIB-branes}
-\end{table}
-
 
 
 In the sector in which the relevant supersymmetry is preserved, the
@@ -2808,26 +2810,6 @@ and holomorphically on the elliptic curve
 \begin{equation}
   E = \check{S}^1_9 \times S^1_{10} \,.
 \end{equation}
-
-
-The D3-branes $\widetilde{\mathrm{D3}}^r$ create line defects
-extending in the longitudinal direction of $\Sigma$ and located at the
-points
-\begin{equation}
-  w^r = \phi^r + \iu\theta^r
-\end{equation}
-on $E$.  The fundamental string $\widetilde{\mathrm{F1}}$, on the
-other hand, creates a Wilson line in the fundamental representation that
-winds around the circumferential direction and is located at
-\begin{equation}
-  z_0 = \phi_0 + \iu\theta_0
-\end{equation}
-on $E$; see figure \ref{fig:top_hol}.  Thus, on the cylinder $\Sigma$, we have the same situation as
-in figure~\ref{fig:spin-chain-T}, in which a quantum spin chain was
-described in terms of lines on a cylinder.
-Note that though $E$ is a torus, this is not $C_{1,n}$ for
-the AGT correspondence.
-
 
 %FIGURE
 \begin{figure}
@@ -2873,6 +2855,28 @@ the AGT correspondence.
   given by the coordinate of the lines on the Riemann surface $E$.}
 \label{fig:top_hol}
 \end{figure}
+
+
+
+The D3-branes $\widetilde{\mathrm{D3}}^r$ create line defects
+extending in the longitudinal direction of $\Sigma$ and located at the
+points
+\begin{equation}
+  w^r = \phi^r + \iu\theta^r
+\end{equation}
+on $E$.  The fundamental string $\widetilde{\mathrm{F1}}$, on the
+other hand, creates a Wilson line in the fundamental representation that
+winds around the circumferential direction and is located at
+\begin{equation}
+  z_0 = \phi_0 + \iu\theta_0
+\end{equation}
+on $E$; see figure \ref{fig:top_hol}.  Thus, on the cylinder $\Sigma$, we have the same situation as
+in figure~\ref{fig:spin-chain-T}, in which a quantum spin chain was
+described in terms of lines on a cylinder.
+Note that though $E$ is a torus, this is not $C_{1,n}$ for
+the AGT correspondence.
+
+
 
 
 Indeed, a quantum integrable system emerges from such a configuration
@@ -2930,16 +2934,6 @@ be constructed in a similar manner, but the construction is a little
 more subtle.  Let us explain how this construction works from the
 point of view of four-dimensional Chern-Simons theory.
 
-For simplicity, let us set all $\theta^r = \theta_0$.  (Since
-$\CT_{\sigma,m}$ is independent of the spectral parameters $z_0$ and
-$w^r$, we do not lose anything by this specialization.)  According to
-the analysis of~\cite{Costello:2017dso}, framing anomaly requires that
-if a Wilson line curves by an angle $\varphi$, its coordinate on
-$S^1_{10}$ must be shifted by $-\eps N\varphi/2\pi$.  We can make use
-of this property to get a Wilson line supported on the cycle
-$\gamma_\sigma$: fix a small value $\varphi_0$ and let the Wilson line
-bends by the angle $\sigma^r\varphi_0$ right before it crosses the
-$r$th solid line, as illustrated in figure~\ref{fig:path-4dCS}.
 
 \begin{figure}
   \centering
@@ -2995,6 +2989,22 @@ $r$th solid line, as illustrated in figure~\ref{fig:path-4dCS}.
     corresponding path in $C_{1,n}$ detours around the punctures.}
   \label{fig:path-4dCS}
 \end{figure}
+
+
+For simplicity, let us set all $\theta^r = \theta_0$.  (Since
+$\CT_{\sigma,m}$ is independent of the spectral parameters $z_0$ and
+$w^r$, we do not lose anything by this specialization.)  According to
+the analysis of~\cite{Costello:2017dso}, framing anomaly requires that
+if a Wilson line curves by an angle $\varphi$, its coordinate on
+$S^1_{10}$ must be shifted by $-\eps N\varphi/2\pi$.  We can make use
+of this property to get a Wilson line supported on the cycle
+$\gamma_\sigma$: fix a small value $\varphi_0$ and let the Wilson line
+bends by the angle $\sigma^r\varphi_0$ right before it crosses the
+$r$th solid line, as illustrated in figure~\ref{fig:path-4dCS}.
+This quantum effect creates a curved path around punctures in
+$x^6$-$x^{10}$ direction in the original duality frame,
+which is really the one-cycle $\gamma_{\sigma}$.
+
 
 The trigonometric limit $\check{R}_9 \to 0$ is equivalent to the limit
 $R_{10} \to \infty$.  In this limit, $C_{1,n}$ is elongated by an
